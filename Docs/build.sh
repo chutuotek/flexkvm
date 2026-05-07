@@ -14,7 +14,7 @@ LUNR_BASE_SUPPORT=(
 )
 
 # Blacklist: tags to skip during mike deploy (space-separated)
-MIKE_BLACKLIST=(${MIKE_BLACKLIST:-v0.0.5 v0.0.6})
+MIKE_BLACKLIST=(${MIKE_BLACKLIST:-})
 
 # Colors
 GREEN='\033[0;32m'

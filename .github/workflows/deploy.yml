@@ -10,9 +10,9 @@ on:
       - '.github/workflows/deploy.yml'
   workflow_dispatch:
 
-# Blacklist: tags to skip during mike deploy
+# Blacklist: tags to skip during mike deploy (space-separated)
 env:
-  MIKE_BLACKLIST: "v0.0.5 v0.0.6"
+  MIKE_BLACKLIST: ""
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -75,9 +75,12 @@ jobs:
           BRANCH="gh-pages"
           REPO_ROOT=$(git rev-parse --show-toplevel)
           CURRENT_BRANCH=$(git -C "$REPO_ROOT" branch --show-current)
+          # Fallback to main if no branch (detached HEAD)
+          [ -z "$CURRENT_BRANCH" ] && CURRENT_BRANCH="main"
           DEPLOYED=0
 
           echo "=== Deploying historical versions from git tags ==="
+          echo "Current branch: $CURRENT_BRANCH"
 
           for tag in $(git -C "$REPO_ROOT" tag -l "v*" | sort -V); do
             git -C "$REPO_ROOT" show "$tag:Docs/mkdocs.yml" &>/dev/null || continue
@@ -91,7 +94,9 @@ jobs:
             DEPLOYED=$((DEPLOYED + 1))
           done
 
-          git -C "$REPO_ROOT" checkout "$CURRENT_BRANCH" 2>/dev/null
+          # Return to original branch
+          echo "Returning to branch: $CURRENT_BRANCH"
+          git -C "$REPO_ROOT" checkout "$CURRENT_BRANCH" 2>/dev/null || git -C "$REPO_ROOT" checkout main 2>/dev/null || true
           echo "Deployed $DEPLOYED historical versions"
 
       - name: Inject site_url into mkdocs.yml
