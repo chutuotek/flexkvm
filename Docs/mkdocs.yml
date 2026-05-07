@@ -1,0 +1,152 @@
+repo_name: kalous12/FlexKVM
+repo_url: https://github.com/kalous12/FlexKVM
+
+site_name: FlexKVM Docs
+site_description: Documentation for FlexKVM Productions
+site_author: ChuoTuoTEK
+copyright: Copyright &copy; 2026 ChuoTuoTEK
+  <br/>
+  <br/>
+theme:
+  name: material
+  language: zh
+  logo: images/chutuotek.ico
+  favicon: images/chutuotek.ico
+  features:
+    - navigation.expand
+    - navigation.indexes
+    - navigation.tabs
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - versioning
+    - content.code.copy      # 代码复制按钮
+    - content.tabs.link 
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+  - section-index
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: zh
+          default: true
+          name: 简体中文
+        - locale: en
+          name: English
+          nav_translations:
+            首页: Home
+            产品: Product
+            用户指南: User Guide
+            快速入门: Quick Start
+            常见问题: FAQ
+            故障排查: Troubleshooting
+            更新日志: Changelog
+            联系我们: Contact
+  - git-revision-date-localized:
+      type: datetime
+      timezone: Asia/Shanghai
+      fallback_to_build_date: true
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+
+extra:
+  # analytics:
+  #   provider: google
+  #   property: G-34T6Q5NL0V
+  version:
+    provider: mike
+    default: stable
+    alias: true
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://www.chutuotek.com
+    - icon: fontawesome/brands/github
+      link: https://github.com/kalous12/FlexKVM
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js
+
+markdown_extensions:
+  - markdown_checklist.extension
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - pymdownx.snippets:
+      base_path:
+        - docs
+        - ..
+        - ../..
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - admonition
+
+nav:
+  - 首页: index.md
+  - 产品: product/index.md
+  - 快速入门: quick_start/index.md
+  - 用户指南:
+    - 用户指南: user_guide/index.md
+    - 界面概览: user_guide/introduction.md
+    - 远程控制:
+      - 屏幕显示: user_guide/remote/screen.md
+      - 鼠标: user_guide/remote/mouse.md
+      - 键盘: user_guide/remote/keyboard.md
+      - 截图与录屏: user_guide/remote/screenshot.md
+      - 硬盘挂载: user_guide/remote/disk.md
+      - ATX电源控制: user_guide/remote/atx.md
+      - 网络唤醒 (WoL): user_guide/remote/wakeonlan.md
+    - 系统设置:
+      - EDID 配置: user_guide/system/edid.md
+      - USB 配置: user_guide/system/usb.md
+      - HTTPS 配置: user_guide/system/https.md
+      - 语言与主题: user_guide/system/language_theme.md
+      - 网络配置: user_guide/system/network.md
+      - 账号管理: user_guide/system/account.md
+      - 设备控制: user_guide/system/device_control.md
+    - 升级维护:
+      - 关于: user_guide/update/about.md
+      - 软件升级: user_guide/update/ota.md
+      - 日志与事件: user_guide/update/log_event.md
+      - 电源与重置: user_guide/update/reset.md
+    - 应用中心:
+      - Tailscale: user_guide/app/tailscale.md
+      - PicoClaw: user_guide/app/picoclaw.md
+  - 常见问题: faq/index.md
+  - 故障排查: troubleshooting/index.md
+  - 更新日志: changelog/index.md
+  - 联系我们: contact/index.md

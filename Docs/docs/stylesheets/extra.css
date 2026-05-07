@@ -1,0 +1,80 @@
+/* Make logo white */
+.md-header__button.md-logo img,
+.md-logo img {
+    filter: brightness(0) invert(1);
+}
+
+/* Make logo white in dark mode too */
+[data-md-color-scheme="slate"] .md-header__button.md-logo img,
+[data-md-color-scheme="slate"] .md-logo img {
+    filter: brightness(0) invert(1);
+}
+
+/* Language switcher on homepage */
+.lang-switcher {
+    text-align: center;
+    padding: 0.8rem 1rem;
+    margin: 1.5rem auto;
+    max-width: fit-content;
+    background: var(--md-default-fg-color--lightest);
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    border: 1px solid var(--md-default-fg-color--light);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.lang-switcher a {
+    margin: 0 0.3rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 1.5rem;
+    transition: all 0.25s ease;
+    font-weight: 500;
+}
+
+.lang-switcher a:hover {
+    background: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+}
+
+/* Make language selector more prominent */
+.md-select__inner {
+    border: 2px solid var(--md-primary-fg-color);
+}
+
+/* === Card Styles === */
+
+/* Grid cards container */
+.md-typeset .grid.cards {
+    gap: 0.8rem;
+}
+
+/* Individual card */
+.md-typeset .grid.cards > li {
+    transition: all 0.3s ease;
+    border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+/* Card hover effect */
+.md-typeset .grid.cards > li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border-color: var(--md-primary-fg-color);
+}
+
+/* Card link styling */
+.md-typeset .grid.cards > li > a {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Card description text */
+.md-typeset .grid.cards > li > p {
+    color: var(--md-default-fg-color--light);
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+}
+
+/* Emoji in cards */
+.md-typeset .grid.cards > li > a::before {
+    margin-right: 0.3rem;
+}
