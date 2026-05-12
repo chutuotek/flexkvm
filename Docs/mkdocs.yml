@@ -121,28 +121,38 @@ nav:
   - 快速入门: quick_start/index.md
   - 用户指南:
     - 用户指南: user_guide/index.md
-    - 界面概览: user_guide/introduction.md
+    - 设备:
+      - 包装清单: user_guide/device/packet.md
+      - 接口说明: user_guide/device/interface.md
+      - 物理与电气特性: user_guide/device/characteristics.md
     - 远程控制:
       - 屏幕显示: user_guide/remote/screen.md
       - 鼠标: user_guide/remote/mouse.md
       - 键盘: user_guide/remote/keyboard.md
-      - 截图与录屏: user_guide/remote/screenshot.md
-      - 硬盘挂载: user_guide/remote/disk.md
-      - ATX电源控制: user_guide/remote/atx.md
-      - 网络唤醒 (WoL): user_guide/remote/wakeonlan.md
+      - 截图: user_guide/remote/screenshot.md
+      - 录像: user_guide/remote/record.md
+    - 网络配置:
+      - 以太网: user_guide/network/eth.md
+      - WiFi 设置: user_guide/network/wifi.md
+      - 热点模式: user_guide/network/ap.md
     - 系统设置:
-      - EDID 配置: user_guide/system/edid.md
+      - 网络配置: user_guide/system/network.md
       - USB 配置: user_guide/system/usb.md
       - HTTPS 配置: user_guide/system/https.md
+      - SSH 远程访问: user_guide/system/ssh.md
+      - OLED 显示: user_guide/system/oled.md
+      - 时间设置: user_guide/system/time.md
       - 语言与主题: user_guide/system/language_theme.md
-      - 网络配置: user_guide/system/network.md
-      - 账号管理: user_guide/system/account.md
-      - 设备控制: user_guide/system/device_control.md
     - 升级维护:
-      - 关于: user_guide/update/about.md
       - 软件升级: user_guide/update/ota.md
+      - 账号管理: user_guide/update/acount.md
       - 日志与事件: user_guide/update/log_event.md
       - 电源与重置: user_guide/update/reset.md
+    - 高级功能:
+      - EDID 配置: user_guide/advance/edid.md
+      - 硬盘挂载: user_guide/advance/disk.md
+      - ATX 电源控制: user_guide/advance/atx.md
+      - 网络唤醒 (WoL): user_guide/advance/wakeonlan.md
     - 应用中心:
       - Tailscale: user_guide/app/tailscale.md
       - PicoClaw: user_guide/app/picoclaw.md

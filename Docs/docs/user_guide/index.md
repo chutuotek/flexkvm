@@ -6,20 +6,19 @@
 
 ## 目录
 
-### 界面概览
+### 设备
 
-- [界面概览](introduction.md) - Web 界面布局与功能导航
-
-### 硬件入门
-
-- [硬件介绍](hardware/introduct.md) - 产品硬件规格与接口说明
+- [包装清单](device/packet.md) - 开箱物品清单
+- [接口说明](device/interface.md) - 产品接口规格与指示灯状态
+- [物理与电气特性](device/characteristics.md) - 电源、功耗、尺寸与环境参数
 
 ### 远程控制
 
 - [屏幕显示](remote/screen.md) - WebRTC 视频流、画质调节、HDMI 状态
 - [鼠标](remote/mouse.md) - 鼠标模式切换、指针锁定、灵敏度设置
 - [键盘](remote/keyboard.md) - 键盘启用/禁用、虚拟键盘、文本粘贴
-- [截图与录屏](remote/screenshot.md) - 截取画面、录制视频
+- [截图](remote/screenshot.md) - 截取画面
+- [录像](remote/record.md) - 录制视频
 
 ### 网络配置
 
@@ -30,8 +29,7 @@
 ### 系统设置
 
 - [网络配置](system/network.md) - 网络状态总览
-- [USB 配置](system/usb.md) - USB 设备管理
-- [USB Gadget](system/usb_gadget.md) - Gadget 方案切换、自定义 USB 设备
+- [USB 配置](system/usb.md) - 自定义 USB 设备
 - [HTTPS 配置](system/https.md) - SSL 证书管理、自定义证书上传
 - [SSH 远程访问](system/ssh.md) - SSH 服务启用与配置
 - [OLED 显示](system/oled.md) - 屏幕亮度、息屏时间设置
@@ -40,7 +38,6 @@
 
 ### 升级维护
 
-- [关于](update/about.md) - 产品信息、版本号、社区资源
 - [软件升级](update/ota.md) - 在线升级、离线升级、版本切换
 - [账号管理](update/acount.md) - 密码修改、两步验证 (2FA)
 - [日志与事件](update/log_event.md) - 审计日志、系统日志查看
