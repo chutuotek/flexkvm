@@ -9,7 +9,7 @@
 
 屏幕按键的图标会根据显示状态的变化而变化，会有连接成功和连接失败两种状态。
 
-![显示按键](../../images/user_guide/remote/screen/web-screen-button-diff.webp)
+![显示按键区别](../../images/user_guide/remote/screen/web-screen-button-diff.webp)
 
 如上图所示，左边的图标表示为显示连接成功，右边的图标表示为显示连接失败。
 
@@ -38,6 +38,13 @@
 ![屏幕菜单](../../images/user_guide/remote/screen/web-screen-menu.webp)
 
 可以看到，屏幕菜单中包含了以下选项：
+
+- 当前状态
+- 分辨率
+- EDID
+- 码率控制模式
+- 画质
+- 重新连接
 
 ### 当前状态
 
