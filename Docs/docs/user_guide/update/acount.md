@@ -2,7 +2,7 @@
 
 点击"设置"按钮，进入设置界面，点击"账号"按钮，进入账号界面。如下图所示
 
-![账号界面](../../images/user_guide/update/account/acount-ui.png)
+![账号界面](../../images/user_guide/update/acount/acount-ui.png)
 
 可以看到有三个区块：
 
@@ -21,7 +21,7 @@
 
 密码是可以点击进入密码修改界面的，点击后，会弹出密码修改界面，如下图所示：
 
-![密码修改界面](../../images/user_guide/update/account/change-passwd.png)
+![密码修改界面](../../images/user_guide/update/acount/change-passwd.png)
 
 修改密码需要输入原密码，新密码，确认新密码，然后点击"确认"按钮，即可修改密码。
 
@@ -44,7 +44,7 @@
 - 重新生成2FA
 - 生成备用码
 
-![账号界面](../../images/user_guide/update/account/acount-ui-gen.png)
+![账号界面](../../images/user_guide/update/acount/acount-ui-gen.png)
 
 ### 状态
 
@@ -54,11 +54,11 @@
 
 点击之后会让你输入密码和2FA码（如果没启用2FA不需要填写），如下图所示:
 
-![2FA密码验证](../../images/user_guide/update/account/2fa-none-auth.png)
+![2FA密码验证](../../images/user_guide/update/acount/2fa-none-auth.png)
 
 输入密码后，点击"生成2FA"按钮，就会进入2fa配置页面，如下图所示:
 
-![2fa二维码](../../images/user_guide/update/account/2fa-qcode.png)
+![2fa二维码](../../images/user_guide/update/acount/2fa-qcode.png)
 
 可以看到，弹窗的中间弹出了一个二维码
 
@@ -68,7 +68,7 @@
 
 如果验证成功之后，会弹出一个新弹窗，如下所示:
 
-![2fa生成](../../images/user_guide/update/account/2fa-gen.png)
+![2fa生成](../../images/user_guide/update/acount/2fa-gen.png)
 
 可以看到弹窗显示了10个8位的备用码，你可以点击右上角的复制按钮，复制这些备用码
 
@@ -80,7 +80,7 @@
 
 点击之后，会弹出验证窗口，如下图所示:
 
-![2FA密码验证](../../images/user_guide/update/account/2fa-enable.png)
+![2FA密码验证](../../images/user_guide/update/acount/2fa-enable.png)
 
 需要输入密码和2FA码，点击确认即可开启/关闭2FA验证。
 
@@ -88,6 +88,6 @@
 
 点击之后，会弹出验证窗口，如下图所示:
 
-![2FA密码验证](../../images/user_guide/update/account/2fa-backup.png)
+![2FA密码验证](../../images/user_guide/update/acount/2fa-backup.png)
 
 需要输入密码和2FA码，点击确认即可生成备用码。
