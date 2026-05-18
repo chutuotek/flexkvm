@@ -125,6 +125,8 @@ nav:
       - 包装清单: guide/device/packet.md
       - 接口说明: guide/device/interface.md
       - 物理与电气特性: guide/device/characteristics.md
+      - 背板: guide/device/backplate.md
+      - 拓展: guide/device/extensibility.md
     - 远程控制:
       - 屏幕显示: guide/remote/screen.md
       - 鼠标: guide/remote/mouse.md

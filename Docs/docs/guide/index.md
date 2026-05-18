@@ -11,6 +11,8 @@
 - [包装清单](device/packet.md) - 开箱物品清单
 - [接口说明](device/interface.md) - 产品接口规格与指示灯状态
 - [物理与电气特性](device/characteristics.md) - 电源、功耗、尺寸与环境参数
+- [背板](device/backplate.md) - 磁吸背板、3.5mm机柜背板
+- [拓展](device/extensibility.md) - POE分离器等拓展配件
 
 ### 远程控制
 
