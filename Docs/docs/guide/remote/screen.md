@@ -1,6 +1,6 @@
 # 显示
 
-![显示按键](../../images/guide/remote/screen/web-screen-button.webp)
+![显示按键](./images/screen/web-screen-button.webp)
 
 - 上图的红色框框的位置为屏幕按键，左边的图标为一个显示器的图标，当前图标表示为显示连接成功。
 - 在连接成功的情况下，菜单栏下方的画面会显示远程连接的画面，上图的画面即为远程主机的画面（debian系统的桌面）。
@@ -9,7 +9,7 @@
 
 屏幕按键的图标会根据显示状态的变化而变化，会有连接成功和连接失败两种状态。
 
-![显示按键区别](../../images/guide/remote/screen/web-screen-button-diff.webp)
+![显示按键区别](./images/screen/web-screen-button-diff.webp)
 
 如上图所示，左边的图标表示为显示连接成功，右边的图标表示为显示连接失败。
 
@@ -19,23 +19,23 @@
 
 远程画面位于菜单栏下方，远程画面的大小会根据窗口的大小而改变，会出现下图的两种情况，这属于正常的。
 
-![网页较高画面](../../images/guide/remote/screen/web-screen-long.webp)
+![网页较高画面](./images/screen/web-screen-long.webp)
 
-![网页较宽画面](../../images/guide/remote/screen/web-screen-fat.webp)
+![网页较宽画面](./images/screen/web-screen-fat.webp)
 
 - 当HDMI没有接入时，远程画面会显示一个提示信息，提示信息为“远程画面未连接”，如下图所示：
 
-![HDMI没有接入画面提示](../../images/guide/remote/screen/web-screen-hdmi-out.webp)
+![HDMI没有接入画面提示](./images/screen/web-screen-hdmi-out.webp)
 
 - 当远程主机进入休眠状态或者hdmi连接信号丢失时，远程画面会显示一个提示信息，提示信息为“主机休眠中或者主机信号丢失”，如下图所示：
 
-![信号丢失画面提示](../../images/guide/remote/screen/web-screen-suspend.webp)
+![信号丢失画面提示](./images/screen/web-screen-suspend.webp)
 
 ## 屏幕菜单
 
 在菜单栏中，点击屏幕按键，会弹出屏幕菜单，如下图所示：
 
-![屏幕菜单](../../images/guide/remote/screen/web-screen-menu.webp)
+![屏幕菜单](./images/screen/web-screen-menu.webp)
 
 可以看到，屏幕菜单中包含了以下选项：
 
@@ -72,7 +72,7 @@
 
 如下图所示：
 
-![EDID](../../images/guide/remote/screen/web-screen-edid.webp)
+![EDID](./images/screen/web-screen-edid.webp)
 
 > 用户可以在设置中添加自己的edid配置，详情请参考[edid配置](../../guide/advance/edid.md)，配置之后下拉选择会多出"custom"选项
 
@@ -117,10 +117,10 @@
 
 ## 全屏
 
-![全屏](../../images/guide/remote/screen/web-screen-full.webp)
+![全屏](./images/screen/web-screen-full.webp)
 
 全屏按键位于菜单栏的最右侧，点击全屏按钮，会全屏显示远程画面，如下图所示：
 
-![全屏](../../images/guide/remote/screen/web-screen-fullscreen.webp)
+![全屏](./images/screen/web-screen-fullscreen.webp)
 
 使用esc键可以退出全屏模式。

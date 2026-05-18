@@ -2,7 +2,7 @@
 
 欢迎使用 FlexKVM！本指南将帮助您在短时间内快速上手使用 FlexKVM 远程管理设备。
 
-![主界面](../images/product/flexkvm展示图.webp)
+![主界面](../product/images/flexkvm展示图.webp)
 
 ---
 

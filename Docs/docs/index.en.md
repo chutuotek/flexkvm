@@ -52,11 +52,11 @@ FlexKVM is an efficient and flexible IP-KVM solution that provides complete remo
 <div class="grid cards" markdown style="text-align: center;">
 
 - **[💬 QQ Group]**
-    <br><img src="../images/qq.webp" width="200" style="display: block; margin: 0 auto;" />
+    <br><img src="images/qq.webp" width="200" style="display: block; margin: 0 auto;" />
     <a href="https://qm.qq.com/q/R5cNG8ARmW" target="_blank">789603489</a>
 
 - **[📱 Telegram]**
-    <br><img src="../images/telegram.webp" width="200" style="display: block; margin: 0 auto;" />
+    <br><img src="images/telegram.webp" width="200" style="display: block; margin: 0 auto;" />
     <a href="https://t.me/flexkvm" target="_blank">t.me/flexkvm</a>
 
 </div>

@@ -1,6 +1,6 @@
 # 鼠标
 
-![鼠标按键](../../images/guide/remote/mouse/web-mouse-button.webp)
+![鼠标按键](./images/mouse/web-mouse-button.webp)
 
 - 上图菜单栏中的红色框框为鼠标按键，左边的图标为一个简化的鼠标图标，当前图标表示为鼠标正常运行。
 
@@ -8,7 +8,7 @@
 
 鼠标按键的图标会根据当前鼠标状态而改变，会有已连接和未连接两种状态。
 
-![鼠标按键区别](../../images/guide/remote/mouse/web-mouse-button-diff.webp)
+![鼠标按键区别](./images/mouse/web-mouse-button-diff.webp)
 
 如上图所示，左边的图标表示鼠标已连接，右边的图标表示鼠标未连接。
 
@@ -16,7 +16,7 @@
 
 在菜单栏中，点击鼠标按键会弹出鼠标菜单，如下图所示：
 
-![鼠标菜单](../../images/guide/remote/mouse/web-mouse-menu.webp)
+![鼠标菜单](./images/mouse/web-mouse-menu.webp)
 
 可以看到，屏幕菜单中包含了以下选项：
 

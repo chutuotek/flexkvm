@@ -1,8 +1,8 @@
 # 接口
 
-![FlexKVM线框标注图正面](../images/product/flexkvm线框标注图正面.webp)
+![FlexKVM线框标注图正面](../product/images/flexkvm线框标注图正面.webp)
 
-![FlexKVM线框标注图反面](../images/product/flexkvm线框标注图反面.webp)
+![FlexKVM线框标注图反面](../product/images/flexkvm线框标注图反面.webp)
 
 1. 警告指示灯
 2. 状态指示灯
