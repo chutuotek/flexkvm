@@ -234,7 +234,7 @@ Click "⚡ Peripheral" menu:
 After basic setup, you can:
 
 - Read [Product Introduction](../product/index.md) for detailed hardware information
-- Read [User Guide](../user_guide/index.md) for all features
+- Read [User Guide](../guide/index.md) for all features
 - Check [FAQ](../faq/index.md) for common questions
 
 !!! question "Need help?"

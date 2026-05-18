@@ -1,6 +1,6 @@
 # 截图
 
-![截图按键](../../images/user_guide/remote/screenshot/web-screenshot.webp)
+![截图按键](../../images/guide/remote/screenshot/web-screenshot.webp)
 
 点击主页面的截图按键后，会将整个屏幕截图到浏览器的下载目录中，文件的命名格式如下：flexkvm-screenshot-YYYY-MM-DDTHH-MM-SS.webp。
 

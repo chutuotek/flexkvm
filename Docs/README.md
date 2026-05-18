@@ -84,7 +84,7 @@ Docs/
 │   ├── index.en.md   # 首页（英文）
 │   ├── changelog/    # 更新日志
 │   ├── product/      # 产品介绍
-│   ├── user_guide/   # 用户指南
+│   ├── guide/   # 用户指南
 │   └── ...
 ├── Changelog/        # 更新日志源文件（使用 snippets 引用）
 └── site/             # 构建输出目录

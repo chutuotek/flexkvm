@@ -257,7 +257,7 @@ FlexKVM 的 OLED 屏幕可以显示设备状态、网络连接状态、配网信
 完成基础设置后，您可以：
 
 - 深入了解产品[产品介绍](../product/index.md)
-- 深入了解[用户指南](../user_guide/index.md)
+- 深入了解[用户指南](../guide/index.md)
 - 查看[常见问题](../faq/index.md)
 
 !!! question "遇到问题？"

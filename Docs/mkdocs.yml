@@ -120,42 +120,47 @@ nav:
   - 产品: product/index.md
   - 快速入门: quick_start/index.md
   - 用户指南:
-    - 用户指南: user_guide/index.md
+    - 用户指南: guide/index.md
     - 设备:
-      - 包装清单: user_guide/device/packet.md
-      - 接口说明: user_guide/device/interface.md
-      - 物理与电气特性: user_guide/device/characteristics.md
+      - 包装清单: guide/device/packet.md
+      - 接口说明: guide/device/interface.md
+      - 物理与电气特性: guide/device/characteristics.md
     - 远程控制:
-      - 屏幕显示: user_guide/remote/screen.md
-      - 鼠标: user_guide/remote/mouse.md
-      - 键盘: user_guide/remote/keyboard.md
-      - 截图: user_guide/remote/screenshot.md
-      - 录像: user_guide/remote/record.md
-    - 网络配置:
-      - 以太网: user_guide/network/eth.md
-      - WiFi 设置: user_guide/network/wifi.md
-      - 热点模式: user_guide/network/ap.md
-    - 系统设置:
-      - 网络配置: user_guide/system/network.md
-      - USB 配置: user_guide/system/usb.md
-      - HTTPS 配置: user_guide/system/https.md
-      - SSH 远程访问: user_guide/system/ssh.md
-      - OLED 显示: user_guide/system/oled.md
-      - 时间设置: user_guide/system/time.md
-      - 语言与主题: user_guide/system/language_theme.md
-    - 升级维护:
-      - 软件升级: user_guide/update/ota.md
-      - 账号管理: user_guide/update/acount.md
-      - 日志与事件: user_guide/update/log_event.md
-      - 电源与重置: user_guide/update/reset.md
-    - 高级功能:
-      - EDID 配置: user_guide/advance/edid.md
-      - 硬盘挂载: user_guide/advance/disk.md
-      - ATX 电源控制: user_guide/advance/atx.md
-      - 网络唤醒 (WoL): user_guide/advance/wakeonlan.md
+      - 屏幕显示: guide/remote/screen.md
+      - 鼠标: guide/remote/mouse.md
+      - 键盘: guide/remote/keyboard.md
+      - 截图: guide/remote/screenshot.md
+      - 录像: guide/remote/record.md
+    - 账号:
+      - 登录: guide/acount/login.md
+      - 账号管理: guide/acount/acount.md
+    - 网络:
+      - 以太网: guide/network/eth.md
+      - WiFi: guide/network/wifi.md
+      - 热点模式: guide/network/ap.md
+      - 热点配网: guide/network/ap_province.md
+    - 系统:
+      - 硬盘挂载: guide/system/disk.md
+      - ATX 电源控制: guide/system/atx.md
+      - 网络唤醒 (WoL): guide/system/wakeonlan.md
+      - USB 配置: guide/system/usb.md
+      - HTTPS 配置: guide/system/https.md
+      - SSH 远程访问: guide/system/ssh.md
+      - OLED 显示: guide/system/oled.md
+      - 时间设置: guide/system/time.md
+      - EDID 配置: guide/system/edid.md
+    - 主题与语言:
+      - 主题: guide/theme/theme.md
+      - 语言: guide/theme/language.md
+    - 升级:
+      - 离线升级: guide/upgrade/ota_offline.md
+      - 在线升级: guide/upgrade/ota_online.md
+    - 维护:
+      - 日志: guide/maintenance/log.md
+      - 审计: guide/maintenance/audit.md
+      - 电源与重置: guide/maintenance/power_reset.md
     - 应用中心:
-      - Tailscale: user_guide/app/tailscale.md
-      - PicoClaw: user_guide/app/picoclaw.md
+      - Tailscale: guide/app/tailscale.md
   - 常见问题: faq/index.md
   - 故障排查: troubleshooting/index.md
   - 更新日志: changelog/index.md

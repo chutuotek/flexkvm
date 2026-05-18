@@ -16,7 +16,7 @@ FlexKVM is an efficient and flexible IP-KVM solution that provides complete remo
 
     Get started with FlexKVM in 5 minutes
 
-- **[📖 User Guide](user_guide/index.md)**
+- **[📖 User Guide](guide/index.md)**
 
     Complete feature documentation and configuration tutorials
 

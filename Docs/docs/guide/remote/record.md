@@ -1,10 +1,10 @@
 # 录像
 
-![录像按键](../../images/user_guide/remote/record/web-record.webp)
+![录像按键](../../images/guide/remote/record/web-record.webp)
 
 点击主页面的录像按钮后，原来录像的图标和按键就会变成录制指示器，右边会显示当前录制的时间，如下图所示
 
-![录制指示器](../../images/user_guide/remote/record/web-recording.webp)
+![录制指示器](../../images/guide/remote/record/web-recording.webp)
 
 点击录制指示器可以停止录像，停止录像后，会将录像文件保存到浏览器的下载目录中，文件的命名格式如下：flexkvm-recording-YYYY-MM-DDTHH-MM-SS.mp4
 

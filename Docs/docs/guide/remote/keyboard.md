@@ -1,6 +1,6 @@
 # 键盘
 
-![键盘按键](../../images/user_guide/remote/keyboard/web-keyboard-button.webp)
+![键盘按键](../../images/guide/remote/keyboard/web-keyboard-button.webp)
 
 - 上图菜单栏中的红色框框为键盘按键，左边的图标为一个简化的键盘图标，当前图标表示为键盘正常运行。
 
@@ -8,7 +8,7 @@
 
 键盘按键的图标会根据当前键盘状态而改变，会有已连接和未连接两种状态。
 
-![键盘按键区别](../../images/user_guide/remote/keyboard/web-keyboard-button-diff.webp)
+![键盘按键区别](../../images/guide/remote/keyboard/web-keyboard-button-diff.webp)
 
 如上图所示，左边的图标表示键盘已连接，右边的图标表示键盘未连接。
 
@@ -16,7 +16,7 @@
 
 在菜单栏中，点击键盘按键会弹出键盘菜单，如下图所示：
 
-![键盘菜单](../../images/user_guide/remote/keyboard/web-keyboard-menu.webp)
+![键盘菜单](../../images/guide/remote/keyboard/web-keyboard-menu.webp)
 
 可以看到，屏幕菜单中包含了以下选项：
 
@@ -42,7 +42,7 @@
 
 点击之后，显示画面中会弹出一个虚拟键盘，如下图所示：
 
-![虚拟键盘](../../images/user_guide/remote/keyboard/web-keyboard-virtual-keyboard.webp)
+![虚拟键盘](../../images/guide/remote/keyboard/web-keyboard-virtual-keyboard.webp)
 
 虚拟键盘支持有三种系统：
 

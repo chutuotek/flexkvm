@@ -16,7 +16,7 @@ FlexKVM 是一款高效、灵活的 IP-KVM 解决方案，通过 HDMI+USB 实现
 
     5 分钟快速上手 FlexKVM
 
-- **[📖 用户指南](user_guide/index.md)**
+- **[📖 用户指南](guide/index.md)**
 
     完整的功能说明和配置教程
 
