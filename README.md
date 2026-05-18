@@ -2,6 +2,8 @@
 
 an efficient, fun IP-KVM for flexible and simple remote management.
 
+官方网站: https://flexkvm.com
+
 ## CHANGELOG
 
 ### Stable
@@ -13,3 +15,5 @@ an efficient, fun IP-KVM for flexible and simple remote management.
 
 - [Changelog (English)](Changelog/Dev/CHANGELOG.md)
 - [更新日志 (中文)](Changelog/Dev/CHANGELOG_CN.md)
+
+## LICENSE
