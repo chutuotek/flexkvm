@@ -63,7 +63,7 @@
 
 - [日志](maintenance/log.md) - 系统日志
 - [审计](maintenance/audit.md) - 审计日志
-- [电源与重置](maintenance/power_reset.md) - 重启设备、恢复出厂设置
+- [重启与重置](maintenance/power_reset.md) - 重启设备、恢复出厂设置
 
 ### 应用中心
 

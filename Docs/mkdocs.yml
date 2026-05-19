@@ -161,7 +161,7 @@ nav:
     - 维护:
       - 日志: guide/maintenance/log.md
       - 审计: guide/maintenance/audit.md
-      - 电源与重置: guide/maintenance/power_reset.md
+      - 重启与重置: guide/maintenance/power_reset.md
     - 应用中心:
       - Tailscale: guide/app/tailscale.md
   - 常见问题: faq/index.md
