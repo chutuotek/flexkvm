@@ -134,8 +134,8 @@ nav:
       - 截图: guide/remote/screenshot.md
       - 录像: guide/remote/record.md
     - 账号:
-      - 登录: guide/acount/login.md
-      - 账号管理: guide/acount/acount.md
+      - 登录: guide/account/login.md
+      - 账号管理: guide/account/account.md
     - 网络:
       - 以太网: guide/network/eth.md
       - WiFi: guide/network/wifi.md

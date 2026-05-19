@@ -24,8 +24,8 @@
 
 ### 账号
 
-- [登录](acount/login.md) - 用户登录
-- [账号管理](acount/acount.md) - 密码修改、两步验证 (2FA)
+- [登录](account/login.md) - 用户登录
+- [账号管理](account/account.md) - 密码修改、两步验证 (2FA)
 
 ### 网络
 

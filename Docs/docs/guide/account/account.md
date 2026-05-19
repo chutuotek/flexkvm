@@ -2,7 +2,7 @@
 
 点击"设置"按钮，进入设置界面，点击"账号"按钮，进入账号界面。如下图所示
 
-![账号界面](./images/acount-ui.png)
+![账号界面](./images/account-ui.png)
 
 可以看到有三个区块：
 
@@ -44,7 +44,7 @@
 - 重新生成2FA
 - 生成备用码
 
-![账号界面](./images/acount-ui-gen.png)
+![账号界面](./images/account-ui-gen.png)
 
 ### 状态
 
