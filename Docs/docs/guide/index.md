@@ -36,15 +36,18 @@
 
 ### 系统
 
-- [硬盘挂载](system/disk.md) - TF 卡管理、USB Mass Storage 导出
-- [ATX 电源控制](system/atx.md) - 远程开关机、电源状态监控
-- [网络唤醒 (WoL)](system/wakeonlan.md) - 远程唤醒目标主机
 - [USB 配置](system/usb.md) - 自定义 USB 设备
 - [HTTPS 配置](system/https.md) - SSL 证书管理、自定义证书上传
 - [SSH 远程访问](system/ssh.md) - SSH 服务启用与配置
 - [OLED 显示](system/oled.md) - 屏幕亮度、息屏时间设置
 - [时间设置](system/time.md) - 时区配置、NTP 同步
 - [EDID 配置](system/edid.md) - 自定义 EDID 文件管理
+
+### 高级功能
+
+- [硬盘挂载](advanced/disk.md) - TF 卡管理、USB Mass Storage 导出
+- [ATX 电源控制](advanced/atx.md) - 远程开关机、电源状态监控
+- [网络唤醒 (WoL)](advanced/wakeonlan.md) - 远程唤醒目标主机
 
 ### 主题与语言
 

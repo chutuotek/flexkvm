@@ -142,15 +142,16 @@ nav:
       - 热点模式: guide/network/ap.md
       - 热点配网: guide/network/ap_province.md
     - 系统:
-      - 硬盘挂载: guide/system/disk.md
-      - ATX 电源控制: guide/system/atx.md
-      - 网络唤醒 (WoL): guide/system/wakeonlan.md
       - USB 配置: guide/system/usb.md
       - HTTPS 配置: guide/system/https.md
       - SSH 远程访问: guide/system/ssh.md
       - OLED 显示: guide/system/oled.md
       - 时间设置: guide/system/time.md
       - EDID 配置: guide/system/edid.md
+    - 高级功能:
+      - 硬盘挂载: guide/advanced/disk.md
+      - ATX 电源控制: guide/advanced/atx.md
+      - 网络唤醒 (WoL): guide/advanced/wakeonlan.md
     - 主题与语言:
       - 主题: guide/theme/theme.md
       - 语言: guide/theme/language.md
