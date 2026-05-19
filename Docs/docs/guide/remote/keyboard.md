@@ -1,6 +1,6 @@
 # 键盘
 
-![键盘按键](./images/keyboard/web-keyboard-button.webp)
+![键盘按键](./images/keyboard/keyboard_ui.webp)
 
 - 上图菜单栏中的红色框框为键盘按键，左边的图标为一个简化的键盘图标，当前图标表示为键盘正常运行。
 
@@ -8,15 +8,11 @@
 
 键盘按键的图标会根据当前键盘状态而改变，会有已连接和未连接两种状态。
 
-![键盘按键区别](./images/keyboard/web-keyboard-button-diff.webp)
-
-如上图所示，左边的图标表示键盘已连接，右边的图标表示键盘未连接。
-
 ## 键盘菜单
 
 在菜单栏中，点击键盘按键会弹出键盘菜单，如下图所示：
 
-![键盘菜单](./images/keyboard/web-keyboard-menu.webp)
+![键盘菜单](./images/keyboard/keyboard_button.webp)
 
 可以看到，屏幕菜单中包含了以下选项：
 
@@ -52,7 +48,7 @@
 
 默认是收起的状态，点击之后会展开，如下图所示：
 
-![粘贴文本](./images/keyboard/web-keyboard-paste-text.webp)
+![粘贴文本](./images/keyboard/paste.webp)
 
 会有一个输入框，你可以在输入框中添加你想要粘贴的文本，然后点击粘贴按钮，即可将文本粘贴到被控机器上。
 
@@ -62,7 +58,7 @@
 
 默认是收起的状态，点击之后会展开，如下图所示：
 
-![快捷键](./images/keyboard/web-keyboard-shortcut.webp)
+![快捷键](./images/keyboard/shotcut.webp)
 
 快捷键会根据"被控系统"的不同而发生改变，请选择你当前被控主机的系统。
 
@@ -73,7 +69,7 @@
 
 快捷键悬浮窗是这样的：
 
-![快捷键悬浮窗](./images/keyboard/web-keyboard-shortcut-window.webp)
+![快捷键悬浮窗](./images/keyboard/shotcut_float.webp)
 
 - 标题栏显示当前快捷键对应的系统
 - 按住标题栏可以拖动快捷键悬浮窗
@@ -83,7 +79,7 @@
 
 点击之后，显示画面中会弹出一个虚拟键盘，如下图所示：
 
-![虚拟键盘](./images/keyboard/web-keyboard-virtual-keyboard.webp)
+![虚拟键盘](./images/keyboard/keyboard_float.webp)
 
 虚拟键盘有两种模式：
 
