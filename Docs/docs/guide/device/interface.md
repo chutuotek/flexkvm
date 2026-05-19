@@ -1,26 +1,27 @@
 # 接口
 
-![FlexKVM线框标注图正面](../product/images/flexkvm线框标注图正面.webp)
+![FlexKVM线框标注图1](./images/flexkvm_interface_1.webp)
 
-![FlexKVM线框标注图反面](../product/images/flexkvm线框标注图反面.webp)
+- [1] 警告指示灯
+- [2] 状态指示灯
+- [3] 按键 A
+- [4] 按键 B
+- [5] HDMI 输入
+- [6] ATX 控制
+- [7] USB 供电开关
+- [8] USB 信号
+- [9] 电源指示灯
+- [10] TF卡槽
+- [11] 恢复出厂按键
+- [12] 复位按键
 
-1. 警告指示灯
-2. 状态指示灯
-3. 按键 A
-4. 按键 B
-5. HDMI 输入
-6. ATX 控制
-7. USB 供电开关
-8. USB 信号
-9. 电源指示灯
-10. TF 卡槽
-11. 恢复出厂按键
-12. 复位按键
-13. 拓展接口
-14. 显示屏
-15. 电源供电接口
-16. 百兆网口
-17. WiFi 天线
+![FlexKVM线框标注图1](./images/flexkvm_interface_2.webp)
+
+- [13] 拓展接口
+- [14] 显示屏
+- [15] 电源供电接口
+- [16] 百兆网口
+- [17] WiFi 天线
 
 
 ## 电源指示灯
