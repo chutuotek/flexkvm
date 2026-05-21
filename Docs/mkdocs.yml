@@ -60,6 +60,11 @@ plugins:
             常见问题: FAQ
             故障排查: Troubleshooting
             更新日志: Changelog
+            帮助与支持: Support
+            常见问题与排查: Help & Diagnostics
+            社区与联系: Community & Contact
+            建议反馈: Feedback
+            用户社群: Community
             联系我们: Contact
   - git-revision-date-localized:
       type: datetime
@@ -164,7 +169,13 @@ nav:
       - 重启与重置: guide/maintenance/power_reset.md
     - 应用中心:
       - Tailscale: guide/app/tailscale.md
-  - 常见问题: faq/index.md
-  - 故障排查: troubleshooting/index.md
+  - 常见问题与排查:
+    - 常见问题与排查: support/index.md
+    - 常见问题: support/faq/index.md
+    - 故障排查: support/troubleshooting/index.md
+  - 社区与联系:
+    - 社区与联系: community/index.md
+    - 建议反馈: community/feedback/index.md
+    - 用户社群: community/social/index.md
+    - 联系我们: community/contact/index.md
   - 更新日志: changelog/index.md
-  - 联系我们: contact/index.md

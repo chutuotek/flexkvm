@@ -8,66 +8,35 @@ FlexKVM 是一款高效、灵活的 IP-KVM 解决方案，通过 HDMI+USB 实现
 
 ---
 
-## 🎯 开始使用
+## 🚀 快速入门
 
-<div class="grid cards" markdown>
+5 分钟快速上手 FlexKVM
 
-- **[🚀 快速入门](quick_start/index.md)**
-
-    5 分钟快速上手 FlexKVM
-
-- **[📖 用户指南](guide/index.md)**
-
-    完整的功能说明和配置教程
-
-</div>
+[**开始使用 →**](quick_start/index.md)
 
 ---
 
-## ❓ 帮助
+## 📖 用户指南
 
-<div class="grid cards" markdown>
+完整的功能说明和配置教程
 
-- **[💬 常见问题](faq/index.md)**
-
-    高频问题快速解答
-
-- **[🔧 故障排查](troubleshooting/index.md)**
-
-    遇到问题？从这里找解决方案
-
-</div>
-
-??? warning "📝 反馈与建议"
-    遇到问题或有新想法？欢迎告诉我们
-
-    - **[🐛 反馈 Bug](https://github.com/kalous12/FlexKVM/issues)** — 提交 Bug 报告
-    - **[💡 功能建议](https://github.com/kalous12/FlexKVM/issues)** — 提出功能需求
-    - **[📞 其他问题](contact/index.md)** — 联系技术支持
+[**查看指南 →**](guide/index.md)
 
 ---
 
-## 💬 用户社群
+## ❓ 常见问题与排查
 
-<div class="grid cards" markdown style="text-align: center;">
+FAQ 快速解答 + 按症状排查故障
 
-- **[💬 QQ 群]**
-    <br><img src="images/qq.webp" width="200" style="display: block; margin: 0 auto;" />
-    <a href="https://qm.qq.com/q/R5cNG8ARmW" target="_blank">789603489</a>
-
-- **[📱 Telegram 群]**
-    <br><img src="images/telegram.webp" width="200" style="display: block; margin: 0 auto;" />
-    <a href="https://t.me/flexkvm" target="_blank">t.me/flexkvm</a>
-
-</div>
+[**获取帮助 →**](support/index.md)
 
 ---
 
-## 📝 更新日志
+## 💬 社区与联系
 
-查看版本更新历史和新功能
+反馈建议、用户社群、联系方式
 
-[**更新日志 →**](changelog/index.md)
+[**了解更多 →**](community/index.md)
 
 ---
 
@@ -79,8 +48,8 @@ FlexKVM 是一款高效、灵活的 IP-KVM 解决方案，通过 HDMI+USB 实现
 
 ---
 
-## 📧 联系我们
+## 📝 更新日志
 
-获取技术支持和商务合作
+查看版本更新历史和新功能
 
-[**联系我们 →**](contact/index.md)
+[**更新日志 →**](changelog/index.md)

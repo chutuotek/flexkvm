@@ -235,10 +235,10 @@ After basic setup, you can:
 
 - Read [Product Introduction](../product/index.md) for detailed hardware information
 - Read [User Guide](../guide/index.md) for all features
-- Check [FAQ](../faq/index.md) for common questions
+- Check [FAQ](../support/faq/index.md) for common questions
 
 !!! question "Need help?"
-    If you encounter issues during setup, please check [Troubleshooting](../troubleshooting/index.md) for help.
+    If you encounter issues during setup, please check [Troubleshooting](../support/troubleshooting/index.md) for help.
 
 ---
 

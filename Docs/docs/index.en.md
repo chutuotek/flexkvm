@@ -24,50 +24,39 @@ FlexKVM is an efficient and flexible IP-KVM solution that provides complete remo
 
 ---
 
-## ❓ Help
+## ❓ Help & Diagnostics
 
 <div class="grid cards" markdown>
 
-- **[💬 FAQ](faq/index.md)**
+- **[💬 FAQ](support/faq/index.md)**
 
     Quick answers to frequently asked questions
 
-- **[🔧 Troubleshooting](troubleshooting/index.md)**
+- **[🔧 Troubleshooting](support/troubleshooting/index.md)**
 
     Having trouble? Find solutions here
 
 </div>
 
-??? warning "📝 Feedback & Suggestions"
-    Found a bug or have an idea? Let us know
-
-    - **[🐛 Report Bug](https://github.com/kalous12/FlexKVM/issues)** — Submit a bug report
-    - **[💡 Feature Request](https://github.com/kalous12/FlexKVM/issues)** — Request a new feature
-    - **[📞 Other Issues](contact/index.md)** — Contact technical support
-
 ---
 
-## 💬 Community
+## 💬 Community & Contact
 
-<div class="grid cards" markdown style="text-align: center;">
+<div class="grid cards" markdown>
 
-- **[💬 QQ Group]**
-    <br><img src="images/qq.webp" width="200" style="display: block; margin: 0 auto;" />
-    <a href="https://qm.qq.com/q/R5cNG8ARmW" target="_blank">789603489</a>
+- **[📝 Feedback](community/feedback/index.md)**
 
-- **[📱 Telegram]**
-    <br><img src="images/telegram.webp" width="200" style="display: block; margin: 0 auto;" />
-    <a href="https://t.me/flexkvm" target="_blank">t.me/flexkvm</a>
+    Report bugs or request features
+
+- **[👥 Community](community/social/index.md)**
+
+    Join QQ group or Telegram
+
+- **[📧 Contact](community/contact/index.md)**
+
+    Technical support & business cooperation
 
 </div>
-
----
-
-## 📝 Changelog
-
-View version history and new features
-
-[**Changelog →**](changelog/index.md)
 
 ---
 
@@ -79,8 +68,8 @@ Get FlexKVM from official channels
 
 ---
 
-## 📧 Contact Us
+## 📝 Changelog
 
-Get technical support and business cooperation
+View version history and new features
 
-[**Contact Us →**](contact/index.md)
+[**Changelog →**](changelog/index.md)
