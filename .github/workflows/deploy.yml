@@ -1,4 +1,4 @@
-name: Deploy MkDocs to GitHub Pages
+name: Deploy MkDocs Documentation
 
 on:
   push:
@@ -60,26 +60,28 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Clean gh-pages branch
+      # =========================================================================
+      # Step 1: Build server version (no base URL)
+      # =========================================================================
+      - name: Build server version - Clean gh-pages-server branch
         run: |
-          BRANCH="gh-pages"
+          BRANCH="gh-pages-server"
           echo "=== Cleaning $BRANCH branch ==="
           if git show-ref --verify --quiet "refs/heads/$BRANCH" 2>/dev/null; then
             git branch -D "$BRANCH"
             echo "Deleted local $BRANCH branch"
           fi
 
-      - name: Deploy historical versions from git tags
+      - name: Build server version - Deploy from git tags
         run: |
           BLACKLIST="${{ env.MIKE_BLACKLIST }}"
-          BRANCH="gh-pages"
+          BRANCH="gh-pages-server"
           REPO_ROOT=$(git rev-parse --show-toplevel)
           CURRENT_BRANCH=$(git -C "$REPO_ROOT" branch --show-current)
-          # Fallback to main if no branch (detached HEAD)
           [ -z "$CURRENT_BRANCH" ] && CURRENT_BRANCH="main"
           DEPLOYED=0
 
-          echo "=== Deploying historical versions from git tags ==="
+          echo "=== Building server version from git tags ==="
           echo "Current branch: $CURRENT_BRANCH"
 
           for tag in $(git -C "$REPO_ROOT" tag -l "v*" | sort -V); do
@@ -94,49 +96,23 @@ jobs:
             DEPLOYED=$((DEPLOYED + 1))
           done
 
-          # Return to original branch
           echo "Returning to branch: $CURRENT_BRANCH"
           git -C "$REPO_ROOT" checkout "$CURRENT_BRANCH" 2>/dev/null || git -C "$REPO_ROOT" checkout main 2>/dev/null || true
           echo "Deployed $DEPLOYED historical versions"
 
-      - name: Inject site_url into mkdocs.yml
+      - name: Build server version - Deploy current as 'latest'
         run: |
-          echo "=== Injecting site_url into mkdocs.yml ==="
-          if ! grep -q "^site_url:" mkdocs.yml; then
-            sed -i '/^repo_url:/a site_url: https://chutuotek.github.io/FlexKVM/' mkdocs.yml
-            echo "site_url injected successfully"
-          else
-            echo "site_url already exists, skipping"
-          fi
-          # Inject sitemap hostname for material theme
-          if ! grep -q "sitemap:" mkdocs.yml; then
-            sed -i '/^extra:/a\  sitemap:\n    hostname: https://chutuotek.github.io/FlexKVM' mkdocs.yml
-            echo "sitemap hostname injected successfully"
-          else
-            echo "sitemap already configured, skipping"
-          fi
-          grep -E "^repo_url:|^site_url:|^  sitemap:" mkdocs.yml
+          echo "=== Deploying current version as 'latest' (server) ==="
+          mike deploy "latest" --branch gh-pages-server --ignore-remote
 
-      - name: Deploy current version as 'latest'
+      - name: Build server version - Export to out-server
         run: |
-          echo "=== Deploying current version as 'latest' ==="
-          mike deploy "latest" --branch gh-pages --ignore-remote
-
-      - name: Export to out directory
-        run: |
-          TEMP_DIR=".git/mike-temp"
-          git worktree add "$TEMP_DIR" gh-pages
-          rm -rf out
-          cp -r "$TEMP_DIR" out
-          git worktree remove "$TEMP_DIR" 2>/dev/null || rm -rf "$TEMP_DIR"
-          printf '<!DOCTYPE html>\n<html>\n<head>\n<meta charset="utf-8">\n<title>Redirecting...</title>\n<meta http-equiv="refresh" content="0; url=latest/">\n<script>window.location.href="latest/";</script>\n</head>\n<body>\n<p>Redirecting to <a href="latest/">latest/</a>...</p>\n</body>\n</html>\n' > out/index.html
-
-      - name: Prepare server build (strip GitHub Pages base URL)
-        run: |
+          TEMP_DIR=".git/mike-temp-server"
+          git worktree add "$TEMP_DIR" gh-pages-server
           rm -rf out-server
-          cp -r out out-server
-          find out-server -type f \( -name "*.html" -o -name "*.xml" -o -name "*.json" -o -name "*.js" \) \
-            -exec sed -i 's|https://chutuotek.github.io/FlexKVM||g' {} +
+          cp -r "$TEMP_DIR" out-server
+          git worktree remove "$TEMP_DIR" 2>/dev/null || rm -rf "$TEMP_DIR"
+          printf '<!DOCTYPE html>\n<html>\n<head>\n<meta charset="utf-8">\n<title>Redirecting...</title>\n<meta http-equiv="refresh" content="0; url=latest/">\n<script>window.location.href="latest/";</script>\n</head>\n<body>\n<p>Redirecting to <a href="latest/">latest/</a>...</p>\n</body>\n</html>\n' > out-server/index.html
 
       - name: Deploy to own server
         uses: easingthemes/ssh-deploy@v5.1.1
@@ -149,6 +125,75 @@ jobs:
           REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
           TARGET: ${{ secrets.REMOTE_TARGET }}
           SCRIPT: chown -R 1000:1000 ${{ secrets.REMOTE_TARGET }}
+
+      # =========================================================================
+      # Step 2: Build GitHub Pages version (with base URL)
+      # =========================================================================
+      - name: Build GitHub version - Clean gh-pages branch
+        run: |
+          BRANCH="gh-pages"
+          echo "=== Cleaning $BRANCH branch ==="
+          if git show-ref --verify --quiet "refs/heads/$BRANCH" 2>/dev/null; then
+            git branch -D "$BRANCH"
+            echo "Deleted local $BRANCH branch"
+          fi
+
+      - name: Build GitHub version - Deploy from git tags
+        run: |
+          BLACKLIST="${{ env.MIKE_BLACKLIST }}"
+          BRANCH="gh-pages"
+          REPO_ROOT=$(git rev-parse --show-toplevel)
+          CURRENT_BRANCH=$(git -C "$REPO_ROOT" branch --show-current)
+          [ -z "$CURRENT_BRANCH" ] && CURRENT_BRANCH="main"
+          DEPLOYED=0
+
+          echo "=== Building GitHub Pages version from git tags ==="
+          echo "Current branch: $CURRENT_BRANCH"
+
+          for tag in $(git -C "$REPO_ROOT" tag -l "v*" | sort -V); do
+            git -C "$REPO_ROOT" show "$tag:Docs/mkdocs.yml" &>/dev/null || continue
+            if echo "$BLACKLIST" | grep -qw "$tag"; then
+              echo "Skipped (blacklisted): $tag"
+              continue
+            fi
+            echo "Deploying: $tag"
+            git -C "$REPO_ROOT" checkout "$tag" 2>/dev/null || true
+            # Inject site_url for GitHub Pages before building
+            if ! grep -q "^site_url:" mkdocs.yml; then
+              sed -i '/^repo_url:/a site_url: https://chutuotek.github.io/FlexKVM/' mkdocs.yml
+            fi
+            mike deploy "$tag" --branch "$BRANCH" --ignore-remote || true
+            DEPLOYED=$((DEPLOYED + 1))
+          done
+
+          echo "Returning to branch: $CURRENT_BRANCH"
+          git -C "$REPO_ROOT" checkout "$CURRENT_BRANCH" 2>/dev/null || git -C "$REPO_ROOT" checkout main 2>/dev/null || true
+          echo "Deployed $DEPLOYED historical versions"
+
+      - name: Build GitHub version - Inject site_url for latest
+        run: |
+          echo "=== Injecting site_url into mkdocs.yml ==="
+          if ! grep -q "^site_url:" mkdocs.yml; then
+            sed -i '/^repo_url:/a site_url: https://chutuotek.github.io/FlexKVM/' mkdocs.yml
+            echo "site_url injected successfully"
+          else
+            echo "site_url already exists, skipping"
+          fi
+          grep -E "^repo_url:|^site_url:" mkdocs.yml
+
+      - name: Build GitHub version - Deploy current as 'latest'
+        run: |
+          echo "=== Deploying current version as 'latest' (GitHub) ==="
+          mike deploy "latest" --branch gh-pages --ignore-remote
+
+      - name: Build GitHub version - Export to out
+        run: |
+          TEMP_DIR=".git/mike-temp"
+          git worktree add "$TEMP_DIR" gh-pages
+          rm -rf out
+          cp -r "$TEMP_DIR" out
+          git worktree remove "$TEMP_DIR" 2>/dev/null || rm -rf "$TEMP_DIR"
+          printf '<!DOCTYPE html>\n<html>\n<head>\n<meta charset="utf-8">\n<title>Redirecting...</title>\n<meta http-equiv="refresh" content="0; url=latest/">\n<script>window.location.href="latest/";</script>\n</head>\n<body>\n<p>Redirecting to <a href="latest/">latest/</a>...</p>\n</body>\n</html>\n' > out/index.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
