@@ -1,10 +1,15 @@
 # 联系我们
 
-## 技术支持
-
-- **GitHub Issues**：[github.com/kalous12/FlexKVM/issues](https://github.com/kalous12/FlexKVM/issues)
-- **GitHub Discussions**：[github.com/kalous12/FlexKVM/discussions](https://github.com/kalous12/FlexKVM/discussions)
-
 ## 商务合作
 
-请通过官网联系：[www.chutuotek.com](https://www.chutuotek.com)
+联系电话：+86 15920203247
+邮箱：support@chutuotek.com
+QQ号：2797795537
+
+## 官方网站
+
+[www.chutuotek.com](https://www.chutuotek.com)
+
+## 社区
+
+[https://github.com/kalous12/FlexKVM](https://github.com/kalous12/FlexKVM)

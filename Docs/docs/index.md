@@ -44,7 +44,7 @@ FAQ 快速解答 + 按症状排查故障
 
 前往官方渠道购买 FlexKVM
 
-[**前往购买 →**](https://www.chutuotek.com)
+[**前往购买(淘宝) →**](https://item.taobao.com/item.htm?abbucket=6&id=1054030596204&mi_id=00008BWnqLdULrNG11gTJQ_aAbuaja1hsG2wEsvWt8k0OdY&ns=1&priceTId=214784a617793426928642876e1223&spm=a21n57.1.hoverItem.1&utparam=%7B%22aplus_abtest%22%3A%2298cabd3425f64d1b71d6fdd711e4981f%22%7D&xxc=taobaoSearch)
 
 ---
 
