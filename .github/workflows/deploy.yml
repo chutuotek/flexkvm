@@ -132,7 +132,7 @@ jobs:
           printf '<!DOCTYPE html>\n<html>\n<head>\n<meta charset="utf-8">\n<title>Redirecting...</title>\n<meta http-equiv="refresh" content="0; url=latest/">\n<script>window.location.href="latest/";</script>\n</head>\n<body>\n<p>Redirecting to <a href="latest/">latest/</a>...</p>\n</body>\n</html>\n' > out/index.html
 
       - name: Deploy to own server
-        uses: easingthemes/ssh-deploy@v5
+        uses: easingthemes/ssh-deploy@v5.1.1
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           ARGS: "-rlgoDzvc --delete"
