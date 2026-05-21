@@ -131,12 +131,19 @@ jobs:
           git worktree remove "$TEMP_DIR" 2>/dev/null || rm -rf "$TEMP_DIR"
           printf '<!DOCTYPE html>\n<html>\n<head>\n<meta charset="utf-8">\n<title>Redirecting...</title>\n<meta http-equiv="refresh" content="0; url=latest/">\n<script>window.location.href="latest/";</script>\n</head>\n<body>\n<p>Redirecting to <a href="latest/">latest/</a>...</p>\n</body>\n</html>\n' > out/index.html
 
+      - name: Prepare server build (strip GitHub Pages base URL)
+        run: |
+          rm -rf out-server
+          cp -r out out-server
+          find out-server -type f \( -name "*.html" -o -name "*.xml" -o -name "*.json" -o -name "*.js" \) \
+            -exec sed -i 's|https://kalous12.github.io/FlexKVM||g' {} +
+
       - name: Deploy to own server
         uses: easingthemes/ssh-deploy@v5.1.1
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           ARGS: "-rlgoDzvc --delete"
-          SOURCE: "./Docs/out/"
+          SOURCE: "./Docs/out-server/"
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
