@@ -103,14 +103,14 @@ jobs:
         run: |
           echo "=== Injecting site_url into mkdocs.yml ==="
           if ! grep -q "^site_url:" mkdocs.yml; then
-            sed -i '/^repo_url:/a site_url: https://kalous12.github.io/FlexKVM/' mkdocs.yml
+            sed -i '/^repo_url:/a site_url: https://chutuotek.github.io/FlexKVM/' mkdocs.yml
             echo "site_url injected successfully"
           else
             echo "site_url already exists, skipping"
           fi
           # Inject sitemap hostname for material theme
           if ! grep -q "sitemap:" mkdocs.yml; then
-            sed -i '/^extra:/a\  sitemap:\n    hostname: https://kalous12.github.io/FlexKVM' mkdocs.yml
+            sed -i '/^extra:/a\  sitemap:\n    hostname: https://chutuotek.github.io/FlexKVM' mkdocs.yml
             echo "sitemap hostname injected successfully"
           else
             echo "sitemap already configured, skipping"
@@ -136,7 +136,7 @@ jobs:
           rm -rf out-server
           cp -r out out-server
           find out-server -type f \( -name "*.html" -o -name "*.xml" -o -name "*.json" -o -name "*.js" \) \
-            -exec sed -i 's|https://kalous12.github.io/FlexKVM||g' {} +
+            -exec sed -i 's|https://chutuotek.github.io/FlexKVM||g' {} +
 
       - name: Deploy to own server
         uses: easingthemes/ssh-deploy@v5.1.1
