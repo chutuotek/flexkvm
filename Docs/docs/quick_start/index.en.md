@@ -244,5 +244,5 @@ After basic setup, you can:
 
 **Technical Support**
 
-- GitHub: https://github.com/kalous12/FlexKVM
-- Community: https://github.com/kalous12/FlexKVM/discussions
+- GitHub: https://github.com/chutuotek/flexkvm
+- Community: https://github.com/chutuotek/flexkvm/discussions

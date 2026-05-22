@@ -267,5 +267,5 @@ FlexKVM 的 OLED 屏幕可以显示设备状态、网络连接状态、配网信
 
 **技术支持**
 
-- GitHub: https://github.com/kalous12/FlexKVM
-- 社区讨论: https://github.com/kalous12/FlexKVM/discussions
+- GitHub: https://github.com/chutuotek/flexkvm
+- 社区讨论: https://github.com/chutuotek/flexkvm/discussions

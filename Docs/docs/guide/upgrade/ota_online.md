@@ -32,8 +32,8 @@
 
 下载源是用来选择下载固件地址的，目前有两个下载源：
 
-- [Github](https://github.com/kalous12/FlexKVM/releases)
-- [Gitee](https://gitee.com/kalous12/FlexKVM/releases)
+- [Github](https://github.com/chutuotek/flexkvm/releases)
+- [Gitee](https://gitee.com/chutuotek/flexkvm/releases)
 
 > 注意：如果是中国境内用户，建议选择Gitee下载源，在国内下载速度会更快。
 

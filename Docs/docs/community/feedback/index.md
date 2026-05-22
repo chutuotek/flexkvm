@@ -8,7 +8,7 @@
 
 发现 Bug？提交报告帮助我们改进产品。
 
-[**提交 Bug →**](https://github.com/kalous12/FlexKVM/issues)
+[**提交 Bug →**](https://github.com/chutuotek/flexkvm/issues)
 
 ---
 
@@ -16,7 +16,7 @@
 
 有新功能需求或改进建议？欢迎提出。
 
-[**提出建议 →**](https://github.com/kalous12/FlexKVM/issues)
+[**提出建议 →**](https://github.com/chutuotek/flexkvm/issues)
 
 ---
 
