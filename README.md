@@ -1,6 +1,6 @@
 # FlexKVM
 
-[![GitHub](https://img.shields.io/badge/GitHub-chutuotek/flexkvm-blue?logo=github)](https://github.com/chutuotek/FlexKVM)
+[![GitHub](https://img.shields.io/badge/GitHub-chutuotek/flexkvm-blue?logo=github)](https://github.com/chutuotek/flexkvm)
 [![官方网站](https://img.shields.io/badge/官方网站-flexkvm.com-green?logo=globe)](https://flexkvm.com)
 
 一款高效、灵活的 IP-KVM 解决方案，通过 HDMI+USB 实现完整的远程设备控制。
@@ -60,7 +60,7 @@ mkdocs serve
 
 ## 社区与支持
 
-- [GitHub Discussions](https://github.com/chutuotek/FlexKVM/discussions) - 问题讨论与建议反馈
+- [GitHub Discussions](https://github.com/chutuotek/flexkvm/discussions) - 问题讨论与建议反馈
 - [官方网站](https://flexkvm.com) - 更多产品信息
 
 ## License

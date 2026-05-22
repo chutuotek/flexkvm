@@ -1,5 +1,5 @@
-repo_name: chutuotek/FlexKVM
-repo_url: https://github.com/chutuotek/FlexKVM
+repo_name: chutuotek/flexkvm
+repo_url: https://github.com/chutuotek/flexkvm
 
 site_name: FlexKVM Docs
 site_description: Documentation for FlexKVM Productions
@@ -87,7 +87,7 @@ extra:
     - icon: fontawesome/solid/globe
       link: https://www.chutuotek.com
     - icon: fontawesome/brands/github
-      link: https://github.com/chutuotek/FlexKVM
+      link: https://github.com/chutuotek/flexkvm
 
 extra_css:
   - stylesheets/extra.css

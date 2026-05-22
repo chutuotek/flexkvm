@@ -159,7 +159,7 @@ jobs:
             git -C "$REPO_ROOT" checkout "$tag" 2>/dev/null || true
             # Inject site_url for GitHub Pages before building
             if ! grep -q "^site_url:" mkdocs.yml; then
-              sed -i '/^repo_url:/a site_url: https://chutuotek.github.io/FlexKVM/' mkdocs.yml
+              sed -i '/^repo_url:/a site_url: https://chutuotek.github.io/flexkvm/' mkdocs.yml
             fi
             mike deploy "$tag" --branch "$BRANCH" --ignore-remote || true
             DEPLOYED=$((DEPLOYED + 1))
@@ -173,7 +173,7 @@ jobs:
         run: |
           echo "=== Injecting site_url into mkdocs.yml ==="
           if ! grep -q "^site_url:" mkdocs.yml; then
-            sed -i '/^repo_url:/a site_url: https://chutuotek.github.io/FlexKVM/' mkdocs.yml
+            sed -i '/^repo_url:/a site_url: https://chutuotek.github.io/flexkvm/' mkdocs.yml
             echo "site_url injected successfully"
           else
             echo "site_url already exists, skipping"
