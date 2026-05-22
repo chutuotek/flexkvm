@@ -73,13 +73,14 @@ jobs:
         run: |
           BLACKLIST="${{ env.MIKE_BLACKLIST }}"
           BRANCH="gh-pages-server"
-          REPO_ROOT=$(git rev-parse --show-toplevel)
+          REPO_ROOT=$(cd .. && pwd)
           CURRENT_BRANCH=$(git -C "$REPO_ROOT" branch --show-current)
           [ -z "$CURRENT_BRANCH" ] && CURRENT_BRANCH="main"
           DEPLOYED=0
 
           echo "=== Building server version from git tags ==="
           echo "Current branch: $CURRENT_BRANCH"
+          echo "Repo root: $REPO_ROOT"
 
           for tag in $(git -C "$REPO_ROOT" tag -l "v*" | sort -V); do
             git -C "$REPO_ROOT" show "$tag:Docs/mkdocs.yml" &>/dev/null || continue
@@ -88,7 +89,7 @@ jobs:
               continue
             fi
             echo "Deploying: $tag"
-            git -C "$REPO_ROOT" checkout "$tag" 2>/dev/null || true
+            git -C "$REPO_ROOT" checkout "$tag"
             mike deploy "$tag" --branch "$BRANCH" --ignore-remote-status || true
             DEPLOYED=$((DEPLOYED + 1))
           done
@@ -160,13 +161,14 @@ jobs:
         run: |
           BLACKLIST="${{ env.MIKE_BLACKLIST }}"
           BRANCH="gh-pages"
-          REPO_ROOT=$(git rev-parse --show-toplevel)
+          REPO_ROOT=$(cd .. && pwd)
           CURRENT_BRANCH=$(git -C "$REPO_ROOT" branch --show-current)
           [ -z "$CURRENT_BRANCH" ] && CURRENT_BRANCH="main"
           DEPLOYED=0
 
           echo "=== Building GitHub Pages version from git tags ==="
           echo "Current branch: $CURRENT_BRANCH"
+          echo "Repo root: $REPO_ROOT"
 
           for tag in $(git -C "$REPO_ROOT" tag -l "v*" | sort -V); do
             git -C "$REPO_ROOT" show "$tag:Docs/mkdocs.yml" &>/dev/null || continue
@@ -175,7 +177,7 @@ jobs:
               continue
             fi
             echo "Deploying: $tag"
-            git -C "$REPO_ROOT" checkout "$tag" 2>/dev/null || true
+            git -C "$REPO_ROOT" checkout "$tag"
             # Inject site_url for GitHub Pages before building
             if ! grep -q "^site_url:" mkdocs.yml; then
               sed -i '/^repo_url:/a site_url: https://chutuotek.github.io/flexkvm/' mkdocs.yml
