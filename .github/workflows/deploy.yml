@@ -89,7 +89,7 @@ jobs:
             fi
             echo "Deploying: $tag"
             git -C "$REPO_ROOT" checkout "$tag" 2>/dev/null || true
-            mike deploy "$tag" --branch "$BRANCH" --ignore-remote || true
+            mike deploy "$tag" --branch "$BRANCH" --ignore-remote-status || true
             DEPLOYED=$((DEPLOYED + 1))
           done
 
@@ -101,7 +101,7 @@ jobs:
         working-directory: ../repo-server/Docs
         run: |
           echo "=== Deploying current version as 'latest' (server) ==="
-          mike deploy "latest" --branch gh-pages-server --ignore-remote
+          mike deploy "latest" --branch gh-pages-server --ignore-remote-status
 
       - name: Build server version - Export
         working-directory: ../repo-server/Docs
@@ -160,7 +160,7 @@ jobs:
             if ! grep -q "^site_url:" mkdocs.yml; then
               sed -i '/^repo_url:/a site_url: https://chutuotek.github.io/flexkvm/' mkdocs.yml
             fi
-            mike deploy "$tag" --branch "$BRANCH" --ignore-remote || true
+            mike deploy "$tag" --branch "$BRANCH" --ignore-remote-status || true
             DEPLOYED=$((DEPLOYED + 1))
           done
 
@@ -184,7 +184,7 @@ jobs:
         working-directory: ../repo-github/Docs
         run: |
           echo "=== Deploying current version as 'latest' (GitHub) ==="
-          mike deploy "latest" --branch gh-pages --ignore-remote
+          mike deploy "latest" --branch gh-pages --ignore-remote-status
 
       - name: Build GitHub version - Export
         working-directory: ../repo-github/Docs
