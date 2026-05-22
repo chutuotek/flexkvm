@@ -1,6 +1,6 @@
 # 接口
 
-![FlexKVM线框标注图1](./images/flexkvm_interface_1.webp)
+![FlexKVM线框图](./images/flexkvm_interface_1.webp)
 
 - [1] 警告指示灯
 - [2] 状态指示灯
@@ -8,18 +8,18 @@
 - [4] 按键 B
 - [5] HDMI 输入
 - [6] ATX 控制
-- [7] USB 供电开关
-- [8] USB 信号
+- [7] USB供电开关
+- [8] USB接口
 - [9] 电源指示灯
 - [10] TF卡槽
 - [11] 恢复出厂按键
 - [12] 复位按键
 
-![FlexKVM线框标注图1](./images/flexkvm_interface_2.webp)
+![FlexKVM线框图](./images/flexkvm_interface_2.webp)
 
 - [13] 拓展接口
 - [14] 显示屏
-- [15] 电源供电接口
+- [15] 电源接口
 - [16] 百兆网口
 - [17] WiFi 天线
 
@@ -46,7 +46,7 @@
 | 常亮 | 设备正常运行，HDMI 视频信号已锁定 |
 | 慢闪 | HDMI 输入信号丢失，请检查 HDMI 线缆及前端设备连接 |
 | 快闪 | USB 数据通道未连接，请检查 USB 数据线 |
-| 常灭 | 待机状态，视频信号未锁定 |
+| 常灭 | 系统没有正常启动 |
 
 > 慢闪频率约为 1 次/秒，快闪频率约为 5 次/秒。
 
