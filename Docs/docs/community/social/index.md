@@ -17,3 +17,9 @@
 <img src="../../images/telegram.webp" width="200" />
 
 <a href="https://t.me/flexkvm" target="_blank">t.me/flexkvm</a>
+
+## 微信公众号
+
+<img src="../../images/wechat-tool.jpg" width="200" />
+
+添加微信公众号，可以选择用户社群获取微信群二维码。

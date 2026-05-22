@@ -10,7 +10,7 @@
 
 - **:material-account-group: 用户社群**
 
-    加入 QQ 群或 Telegram，与其他用户交流
+    加入 QQ 群，微信群，Telegram，与其他用户交流
 
     [:octicons-arrow-right-24: 加入社群](social/index.md)
 
@@ -18,6 +18,6 @@
 
     技术支持与商务合作
 
-    [:octicons-arrow-right-24: 联系方式](contact/index.md)
+    [:octicons-arrow-right-24: 联系我们](contact/index.md)
 
 </div>
