@@ -89,12 +89,15 @@ jobs:
               continue
             fi
             echo "Deploying: $tag"
+            # Reset any local changes before checkout
+            git -C "$REPO_ROOT" checkout -- .
             git -C "$REPO_ROOT" checkout "$tag"
             mike deploy "$tag" --branch "$BRANCH" --ignore-remote-status || true
             DEPLOYED=$((DEPLOYED + 1))
           done
 
           echo "Returning to branch: $CURRENT_BRANCH"
+          git -C "$REPO_ROOT" checkout -- .
           git -C "$REPO_ROOT" checkout "$CURRENT_BRANCH" 2>/dev/null || git -C "$REPO_ROOT" checkout main 2>/dev/null || true
           echo "Deployed $DEPLOYED historical versions"
 
@@ -177,6 +180,8 @@ jobs:
               continue
             fi
             echo "Deploying: $tag"
+            # Reset any local changes before checkout
+            git -C "$REPO_ROOT" checkout -- .
             git -C "$REPO_ROOT" checkout "$tag"
             # Inject site_url for GitHub Pages before building
             if ! grep -q "^site_url:" mkdocs.yml; then
@@ -187,6 +192,7 @@ jobs:
           done
 
           echo "Returning to branch: $CURRENT_BRANCH"
+          git -C "$REPO_ROOT" checkout -- .
           git -C "$REPO_ROOT" checkout "$CURRENT_BRANCH" 2>/dev/null || git -C "$REPO_ROOT" checkout main 2>/dev/null || true
           echo "Deployed $DEPLOYED historical versions"
 
