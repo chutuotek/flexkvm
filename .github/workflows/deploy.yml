@@ -28,9 +28,6 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./Docs
 
     steps:
       - name: Checkout repository
@@ -61,18 +58,18 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
       # =========================================================================
-      # Step 1: Build server version (no base URL)
+      # Step 1: Build server version (isolated copy)
       # =========================================================================
-      - name: Build server version - Clean gh-pages-server branch
+      - name: Build server version - Prepare isolated workspace
         run: |
-          BRANCH="gh-pages-server"
-          echo "=== Cleaning $BRANCH branch ==="
-          if git show-ref --verify --quiet "refs/heads/$BRANCH" 2>/dev/null; then
-            git branch -D "$BRANCH"
-            echo "Deleted local $BRANCH branch"
-          fi
+          echo "=== Creating isolated workspace for server build ==="
+          cp -r . ../repo-server
+          cd ../repo-server
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Build server version - Deploy from git tags
+        working-directory: ../repo-server/Docs
         run: |
           BLACKLIST="${{ env.MIKE_BLACKLIST }}"
           BRANCH="gh-pages-server"
@@ -101,11 +98,13 @@ jobs:
           echo "Deployed $DEPLOYED historical versions"
 
       - name: Build server version - Deploy current as 'latest'
+        working-directory: ../repo-server/Docs
         run: |
           echo "=== Deploying current version as 'latest' (server) ==="
           mike deploy "latest" --branch gh-pages-server --ignore-remote
 
-      - name: Build server version - Export to out-server
+      - name: Build server version - Export
+        working-directory: ../repo-server/Docs
         run: |
           TEMP_DIR=".git/mike-temp-server"
           git worktree add "$TEMP_DIR" gh-pages-server
@@ -119,25 +118,25 @@ jobs:
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           ARGS: "-rlgoDzvc --delete"
-          SOURCE: "./Docs/out-server/"
+          SOURCE: "../repo-server/Docs/out-server/"
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
           TARGET: ${{ secrets.REMOTE_TARGET }}
 
       # =========================================================================
-      # Step 2: Build GitHub Pages version (with base URL)
+      # Step 2: Build GitHub Pages version (isolated copy)
       # =========================================================================
-      - name: Build GitHub version - Clean gh-pages branch
+      - name: Build GitHub version - Prepare isolated workspace
         run: |
-          BRANCH="gh-pages"
-          echo "=== Cleaning $BRANCH branch ==="
-          if git show-ref --verify --quiet "refs/heads/$BRANCH" 2>/dev/null; then
-            git branch -D "$BRANCH"
-            echo "Deleted local $BRANCH branch"
-          fi
+          echo "=== Creating isolated workspace for GitHub build ==="
+          cp -r . ../repo-github
+          cd ../repo-github
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Build GitHub version - Deploy from git tags
+        working-directory: ../repo-github/Docs
         run: |
           BLACKLIST="${{ env.MIKE_BLACKLIST }}"
           BRANCH="gh-pages"
@@ -170,6 +169,7 @@ jobs:
           echo "Deployed $DEPLOYED historical versions"
 
       - name: Build GitHub version - Inject site_url for latest
+        working-directory: ../repo-github/Docs
         run: |
           echo "=== Injecting site_url into mkdocs.yml ==="
           if ! grep -q "^site_url:" mkdocs.yml; then
@@ -181,11 +181,13 @@ jobs:
           grep -E "^repo_url:|^site_url:" mkdocs.yml
 
       - name: Build GitHub version - Deploy current as 'latest'
+        working-directory: ../repo-github/Docs
         run: |
           echo "=== Deploying current version as 'latest' (GitHub) ==="
           mike deploy "latest" --branch gh-pages --ignore-remote
 
-      - name: Build GitHub version - Export to out
+      - name: Build GitHub version - Export
+        working-directory: ../repo-github/Docs
         run: |
           TEMP_DIR=".git/mike-temp"
           git worktree add "$TEMP_DIR" gh-pages
@@ -197,7 +199,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./Docs/out
+          path: ../repo-github/Docs/out
 
   deploy:
     environment:
