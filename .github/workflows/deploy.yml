@@ -135,6 +135,26 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
+      - name: Build GitHub version - Inject site_url for latest
+        working-directory: ../repo-github/Docs
+        run: |
+          echo "=== Injecting site_url into mkdocs.yml ==="
+          if ! grep -q "^site_url:" mkdocs.yml; then
+            sed -i '/^repo_url:/a site_url: https://chutuotek.github.io/flexkvm/' mkdocs.yml
+            echo "site_url injected successfully"
+          else
+            echo "site_url already exists, skipping"
+          fi
+          grep -E "^repo_url:|^site_url:" mkdocs.yml
+
+      - name: Build GitHub version - Deploy current as 'latest' first
+        working-directory: ../repo-github/Docs
+        run: |
+          echo "=== Deploying current version as 'latest' (GitHub) - creating fresh branch ==="
+          # Delete any existing gh-pages branch to start fresh
+          git branch -D gh-pages 2>/dev/null || true
+          mike deploy "latest" --branch gh-pages --ignore-remote-status
+
       - name: Build GitHub version - Deploy from git tags
         working-directory: ../repo-github/Docs
         run: |
@@ -167,24 +187,6 @@ jobs:
           echo "Returning to branch: $CURRENT_BRANCH"
           git -C "$REPO_ROOT" checkout "$CURRENT_BRANCH" 2>/dev/null || git -C "$REPO_ROOT" checkout main 2>/dev/null || true
           echo "Deployed $DEPLOYED historical versions"
-
-      - name: Build GitHub version - Inject site_url for latest
-        working-directory: ../repo-github/Docs
-        run: |
-          echo "=== Injecting site_url into mkdocs.yml ==="
-          if ! grep -q "^site_url:" mkdocs.yml; then
-            sed -i '/^repo_url:/a site_url: https://chutuotek.github.io/flexkvm/' mkdocs.yml
-            echo "site_url injected successfully"
-          else
-            echo "site_url already exists, skipping"
-          fi
-          grep -E "^repo_url:|^site_url:" mkdocs.yml
-
-      - name: Build GitHub version - Deploy current as 'latest'
-        working-directory: ../repo-github/Docs
-        run: |
-          echo "=== Deploying current version as 'latest' (GitHub) ==="
-          mike deploy "latest" --branch gh-pages --ignore-remote-status
 
       - name: Build GitHub version - Export
         working-directory: ../repo-github/Docs
