@@ -58,12 +58,12 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
       # =========================================================================
-      # Step 1: Build server version (isolated copy)
+      # Step 1: Build server version (isolated clone)
       # =========================================================================
       - name: Build server version - Prepare isolated workspace
         run: |
           echo "=== Creating isolated workspace for server build ==="
-          cp -r . ../repo-server
+          git clone . ../repo-server --no-local
           cd ../repo-server
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -125,12 +125,12 @@ jobs:
           TARGET: ${{ secrets.REMOTE_TARGET }}
 
       # =========================================================================
-      # Step 2: Build GitHub Pages version (isolated copy)
+      # Step 2: Build GitHub Pages version (isolated clone)
       # =========================================================================
       - name: Build GitHub version - Prepare isolated workspace
         run: |
           echo "=== Creating isolated workspace for GitHub build ==="
-          cp -r . ../repo-github
+          git clone . ../repo-github --no-local
           cd ../repo-github
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
