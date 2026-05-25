@@ -1,18 +1,9 @@
-# Changelog
+# 更新日志
 
-<div class="grid cards" markdown>
+> 切换至 [测试版](dev.md) 更新记录
+>
+> 查看其他固件版本的文档？使用顶部导航栏的版本选择器切换。
 
-- **[Stable 版本](stable.md)**
+## 稳定版
 
-    ---
-
-    稳定版更新日志
-
-- **[Dev 版本](dev.md)**
-
-    ---
-
-    开发版更新日志
-
-</div>
-
+--8<-- "Changelog/Stable/CHANGELOG_CN.md:6"

@@ -1,17 +1,9 @@
 # Changelog
 
-<div class="grid cards" markdown>
+## Stable
 
-- **[Stable](stable.md)**
+--8<-- "Changelog/Stable/CHANGELOG.md:6"
 
-    ---
+---
 
-    Stable version changelog
-
-- **[Dev](dev.md)**
-
-    ---
-
-    Dev version changelog
-
-</div>
+See development changelog → [Dev](dev.en.md)
