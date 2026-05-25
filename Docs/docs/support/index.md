@@ -1,5 +1,7 @@
 # 常见问题与排查
 
+也试试在顶部**搜索栏**中输入关键词，大多数问题都能直接搜到。
+
 <div class="grid cards" markdown>
 
 - **:material-chat-question: 常见问题**

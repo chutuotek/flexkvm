@@ -6,8 +6,8 @@
 
 <div class="image-carousel">
   <div class="carousel-slides">
-    <img src="product/images/flexkvm展示图.webp" alt="FlexKVM 产品展示" class="carousel-slide active">
-    <img src="product/images/flexkvm尺寸图.webp" alt="FlexKVM 尺寸图" class="carousel-slide">
+    <img src="images/flexkvm展示图.webp" alt="FlexKVM 产品展示" class="carousel-slide active">
+    <img src="images/flexkvm尺寸图.webp" alt="FlexKVM 尺寸图" class="carousel-slide">
   </div>
   <button class="carousel-btn carousel-prev" aria-label="上一张"><svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg></button>
   <button class="carousel-btn carousel-next" aria-label="下一张"><svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></button>
@@ -63,6 +63,20 @@
     典型功耗 1.5W ~ 2.4W，铝合金被动散热，无风扇，7x24 小时安静运行。
 
 </div>
+
+---
+
+## 核心规格
+
+| 项目 | 参数 |
+|------|------|
+| 尺寸 | 65 × 46 × 22 mm |
+| 重量 | 约 100 g |
+| 电源 | 5V / 1A（USB Type-C） |
+| 典型功耗 | 1.5 W ~ 2.4 W |
+| 视频输入 | HDMI 1.4，最高 1920×1200@60Hz |
+| 网络 | 百兆有线 + WiFi 6（2.4G / 5G） |
+| 工作温度 | 0°C ~ 70°C |
 
 ---
 
@@ -137,5 +151,9 @@
     查看版本更新历史和新功能。
 
     [:octicons-arrow-right-24: 更新日志](changelog/index.md)
+
+</div>
+
+> 需要查看其他固件版本的文档？使用顶部导航栏的**版本选择器**切换。
 
 </div>

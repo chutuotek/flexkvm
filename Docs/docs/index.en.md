@@ -4,7 +4,7 @@
 
 FlexKVM is an efficient and flexible IP-KVM solution that provides complete remote device control via HDMI+USB. Supports WiFi, Ethernet, and Tailscale connections — manage your servers anytime, anywhere.
 
-[**Learn more →**](product/index.md)
+[**Learn more →**](guide/index.en.md)
 
 ---
 
