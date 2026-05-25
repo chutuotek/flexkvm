@@ -62,6 +62,12 @@ plugins:
             更新日志: Changelog
             帮助与支持: Support
             常见问题与排查: Help & Diagnostics
+            场景向导: Scenarios
+            远程重装系统: Remote OS Install
+            外网远程访问: Remote Access
+            日常运维: Daily Operations
+            安全加固: Security Hardening
+            问题反馈与建议: Feedback & Suggestions
             社区与联系: Community & Contact
             建议反馈: Feedback
             用户社群: Community
@@ -126,6 +132,12 @@ nav:
   - 快速入门: quick_start/index.md
   - 用户指南:
     - 用户指南: guide/index.md
+    - 场景向导:
+      - 远程重装系统: guide/scenarios/reinstall-os.md
+      - 外网远程访问: guide/scenarios/remote-access.md
+      - 日常运维: guide/scenarios/daily-ops.md
+      - 安全加固: guide/scenarios/security.md
+      - 问题反馈与建议: guide/scenarios/feedback.md
     - 设备:
       - 包装清单: guide/device/packet.md
       - 接口说明: guide/device/interface.md

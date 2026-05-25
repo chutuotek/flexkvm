@@ -1,10 +1,27 @@
 # 用户指南
 
-欢迎使用 FlexKVM 用户指南！本章节将帮助您了解 FlexKVM 的各种功能。
+欢迎使用 FlexKVM 用户指南！你可以按**场景任务**快速找到操作路径，也可以按**功能分类**查阅具体配置。
 
 ---
 
-## 目录
+## 场景向导
+
+带着具体任务来？从这里开始：
+
+| 场景 | 一句话 |
+|------|--------|
+| [首次部署](../quick_start/index.md) | 刚拿到设备，从接线到远程控制，5 分钟全流程 |
+| [远程重装系统](scenarios/reinstall-os.md) | ISO 挂载 → ATX 重启 → BIOS → 安装，人在千里之外搞定 |
+| [外网远程访问](scenarios/remote-access.md) | Tailscale/端口转发/自建 VPN，选最适合你的方案 |
+| [日常运维](scenarios/daily-ops.md) | 升级固件、查看日志、重启恢复，日常该做的事 |
+| [安全加固](scenarios/security.md) | 2FA、HTTPS 证书、SSH、审计，把设备安全做到位 |
+| [问题反馈与建议](scenarios/feedback.md) | 问题自查 → 收集诊断信息 → 提 Bug / 提建议，一条龙 |
+
+---
+
+## 功能参考
+
+按需查阅具体配置项：
 
 ### 设备
 
