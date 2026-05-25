@@ -199,3 +199,15 @@
 .carousel-dot:hover {
     background: rgba(255, 255, 255, 0.8);
 }
+
+/* === Table Styles === */
+
+.md-typeset__table {
+    border-collapse: collapse;
+}
+
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+    border-left: 1px solid var(--md-typeset-table-color);
+    border-right: 1px solid var(--md-typeset-table-color);
+}
