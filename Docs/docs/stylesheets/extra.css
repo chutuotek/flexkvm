@@ -78,3 +78,17 @@
 .md-typeset .grid.cards > li > a::before {
     margin-right: 0.3rem;
 }
+
+/* Hero action buttons */
+.hero-actions {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.hero-actions .md-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+}
