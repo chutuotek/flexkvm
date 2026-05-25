@@ -8,7 +8,7 @@ Tailscale 是一款基于 WireGuard 的零配置 VPN 组网工具，可以将 Fl
 
 ## 安装
 
-Tailscale 应用需要手动安装到设备中。将 Tailscale 二进制文件（`tailscale` 和 `tailscaled`）及签名文件放置到 `/userdata/user_app/tailscale/` 目录下。
+Tailscale 应用默认已经安装，无需手动安装。
 
 > 注意：FlexKVM 在启动时会校验应用签名和文件完整性。校验失败将无法使用 Tailscale 功能。
 
@@ -61,7 +61,7 @@ Tailscale 应用需要手动安装到设备中。将 Tailscale 二进制文件�
 
 登录成功后，点击"登录状态"按钮会弹出登出选项，点击"登出"即可从当前 Tailscale 网络中移除该设备。
 
-> 注意：登出后设备将从 Tailscale 网络中注销，所有 Tailscale IP 将被释放。如需重新连接，需要重新登录。
+> 注意：登出后设备将从 Tailscale 网络中注销，所有 Tailscale IP 将被释放。如需重新连接，需要重新登录。登出后可以立即重新登录，无需等待。
 
 ## 远程访问
 
