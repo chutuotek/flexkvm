@@ -112,7 +112,7 @@
 
 ---
 
-## 浏览文档
+## 文档资料
 
 <div class="grid cards" markdown>
 
