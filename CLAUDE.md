@@ -43,7 +43,6 @@ Docs/
 ├── docs/               # 文档源文件（中/英双语）
 │   ├── index.md        # 中文首页
 │   ├── index.en.md     # 英文首页（i18n 使用 suffix 模式）
-│   ├── product/        # 产品介绍
 │   ├── quick_start/    # 快速入门（核心文档）
 │   ├── guide/          # 用户指南（设备、远程控制、账号、网络、系统、高级功能等）
 │   ├── support/        # 常见问题与故障排查
