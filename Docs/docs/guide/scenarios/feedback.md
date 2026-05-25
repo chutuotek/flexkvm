@@ -4,19 +4,27 @@
 
 ---
 
-## 第一步：快速自查
+## 第一步：查常见问题
 
-在反馈之前，先花 1 分钟检查下面几项，很多问题在这一步就能解决：
+先去 [常见问题与排查](../../support/index.md) 页面看看你的问题是否已经有答案：
 
-| 症状 | 先试试 |
-|------|--------|
-| 画面卡住/无响应 | 点击屏幕菜单的**重新连接**，不行再[重启设备](../maintenance/power_reset.md) |
-| 连不上 Web 界面 | 检查 OLED 显示的 IP 是否和之前一样（DHCP 可能变了），确认设备和你电脑在同一个局域网 |
-| WiFi 连不上 | 确认是 2.4GHz 频段（5GHz 不支持配网），天线已安装 |
-| 键盘没反应 | 检查键盘菜单状态是否"已连接"，确认被控系统选对了（Windows/Linux/Mac） |
-| 忘记密码 | 用卡针按住恢复出厂按键约 5 秒重置，然后重新创建账户 |
+<div class="grid cards" markdown>
 
-更多问题排查见 [故障排查](../../support/troubleshooting/index.md)。
+- **:material-chat-question: 常见问题**
+
+    使用中的常见疑问和解答
+
+    [:octicons-arrow-right-24: 查看 FAQ](../../support/faq/index.md)
+
+- **:material-wrench: 故障排查**
+
+    按症状诊断，逐步定位问题
+
+    [:octicons-arrow-right-24: 开始排查](../../support/troubleshooting/index.md)
+
+</div>
+
+很多问题在这一步就能解决。
 
 ---
 
@@ -35,7 +43,7 @@
 | **复现频率** | 单次 / 偶尔 / 稳定复现 |
 | **问题描述** | 什么场景下触发、具体现象是什么 |
 
-### 系统日志（重要）
+### 系统日志
 
 在 Web 界面 → 设置 → 维护，导出：
 - 后端日志
