@@ -2,6 +2,14 @@
 
 FlexKVM 内置 SSH 服务器，支持通过 SSH 客户端远程登录设备进行带外管理（OOB Management）。
 
+## 前置条件
+
+使用 SSH 登录前，请确保：
+
+1. **已创建账户**：需要在 Web 界面首次访问时创建管理员账户（参见 [登录](../account/login.md)）
+2. **SSH 服务已启用**：默认启用，可在设置中关闭
+3. **网络已连接**：设备已通过以太网或 WiFi 连接到网络
+
 ![SSH 设置](./images/ssh/web-ssh-setting.webp)
 
 ## 启用 SSH
@@ -142,7 +150,7 @@ Network config:
 | `media mount` | 挂载虚拟媒体 |
 | `media unmount` | 卸载虚拟媒体 |
 
-> 提示：虚拟媒体功能需要配合 USB 配置使用，详情请参考 [USB 配置](./usb.md)。
+> 提示：虚拟媒体功能需要配合 USB 配置使用，详情请参考 [USB 配置](usb.md)。
 
 ### diag
 
