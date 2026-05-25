@@ -54,9 +54,8 @@ plugins:
           name: English
           nav_translations:
             首页: Home
-            产品: Product
-            用户指南: User Guide
             快速入门: Quick Start
+            用户指南: User Guide
             常见问题: FAQ
             故障排查: Troubleshooting
             更新日志: Changelog
@@ -128,7 +127,6 @@ markdown_extensions:
 
 nav:
   - 首页: index.md
-  - 产品: product/index.md
   - 快速入门: quick_start/index.md
   - 用户指南:
     - 用户指南: guide/index.md
