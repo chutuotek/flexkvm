@@ -4,7 +4,18 @@
 
 > 无需在被控主机上安装任何软件，无需公网 IP，只要网络可达，机房就在你手边。
 
-![FlexKVM](product/images/flexkvm展示图.webp)
+<div class="image-carousel">
+  <div class="carousel-slides">
+    <img src="product/images/flexkvm展示图.webp" alt="FlexKVM 产品展示" class="carousel-slide active">
+    <img src="product/images/flexkvm尺寸图.webp" alt="FlexKVM 尺寸图" class="carousel-slide">
+  </div>
+  <button class="carousel-btn carousel-prev" aria-label="上一张"><svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg></button>
+  <button class="carousel-btn carousel-next" aria-label="下一张"><svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></button>
+  <div class="carousel-dots">
+    <span class="carousel-dot active"></span>
+    <span class="carousel-dot"></span>
+  </div>
+</div>
 
 <div class="hero-actions" markdown>
 [快速入门 :octicons-rocket-24:](quick_start/index.md){ .md-button .md-button--primary }

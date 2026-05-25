@@ -32,3 +32,63 @@ document$.subscribe(function() {
     }
   });
 });
+
+// Image carousel
+document$.subscribe(function() {
+  const carousels = document.querySelectorAll('.image-carousel');
+  carousels.forEach(function(carousel) {
+    if (carousel.dataset.initialized) return;
+    carousel.dataset.initialized = '1';
+
+    const slides = carousel.querySelectorAll('.carousel-slide');
+    const dots = carousel.querySelectorAll('.carousel-dot');
+    const prevBtn = carousel.querySelector('.carousel-prev');
+    const nextBtn = carousel.querySelector('.carousel-next');
+    let current = 0;
+    let timer = null;
+    const interval = 5000;
+
+    function goTo(index) {
+      slides[current].classList.remove('active');
+      dots[current].classList.remove('active');
+      current = (index + slides.length) % slides.length;
+      slides[current].classList.add('active');
+      dots[current].classList.add('active');
+    }
+
+    function next() { goTo(current + 1); }
+    function prev() { goTo(current - 1); }
+
+    function startTimer() {
+      stopTimer();
+      timer = setInterval(next, interval);
+    }
+
+    function stopTimer() {
+      if (timer) { clearInterval(timer); timer = null; }
+    }
+
+    if (prevBtn) prevBtn.addEventListener('click', function() { prev(); startTimer(); });
+    if (nextBtn) nextBtn.addEventListener('click', function() { next(); startTimer(); });
+
+    dots.forEach(function(dot, i) {
+      dot.addEventListener('click', function() { goTo(i); startTimer(); });
+    });
+
+    carousel.addEventListener('mouseenter', stopTimer);
+    carousel.addEventListener('mouseleave', startTimer);
+
+    // Touch swipe support
+    let touchStartX = 0;
+    carousel.addEventListener('touchstart', function(e) { touchStartX = e.touches[0].clientX; });
+    carousel.addEventListener('touchend', function(e) {
+      const diff = touchStartX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 40) {
+        diff > 0 ? next() : prev();
+        startTimer();
+      }
+    });
+
+    startTimer();
+  });
+});
