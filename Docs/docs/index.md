@@ -19,7 +19,7 @@
 
 <div class="hero-actions" markdown>
 [快速入门 :octicons-rocket-24:](quick_start/index.md){ .md-button .md-button--primary }
-[了解更多 :material-book-open-page-variant:](guide/index.md){ .md-button }
+[用户指南 :material-book-open-page-variant:](guide/index.md){ .md-button }
 </div>
 
 ---
@@ -61,6 +61,14 @@
 - **:material-fan-off: 低功耗静音**
 
     典型功耗 1.5W ~ 2.4W，铝合金被动散热，无风扇，7x24 小时安静运行。
+
+- **:material-console-line: 串口与 GPIO 扩展**
+
+    提供 UART 串口通信与 GPIO 控制，满足嵌入式调试、工业自动化、看门狗等扩展需求。
+
+- **:material-magnet-on: 多场景部署**
+
+    磁吸背板 + 机柜夹双模式固定，桌面、机柜、工业现场即放即用。
 
 </div>
 
