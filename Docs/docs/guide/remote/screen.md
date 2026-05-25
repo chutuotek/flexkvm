@@ -74,7 +74,7 @@
 
 ![EDID](./images/screen/web-screen-edid.webp)
 
-> 用户可以在设置中添加自己的edid配置，详情请参考[edid配置](../../guide/advance/edid.md)，配置之后下拉选择会多出"custom"选项
+> 用户可以在设置中添加自己的edid配置，详情请参考[EDID 配置](../system/edid.md)，配置之后下拉选择会多出"custom"选项
 
 **default**为默认的edid配置，拥有非常丰富的分辨率组合，如下表格：
 
