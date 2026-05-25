@@ -128,11 +128,12 @@ FlexKVM 支持两种供电方式，请根据您的使用场景选择：
 ![连接电源接口线框图](./images/connect_power.webp)
 
 连接后：
+
 - **电源指示灯 [9]**（红色）亮起
 - 约 2 秒后，**OLED 显示屏 [14]** 显示 FlexKVM logo
 - 约 20 秒后，OLED 进入设备状态界面，**状态指示灯 [2]**（绿色）开始**快闪**（约 5 次/秒）
 
-![FlexKVM logo](./images/flexkvm_logo.webp)
+![FlexKVM logo](./images/chutuotek-oled.webp)
 
 ![设备状态显示界面](./images/device_status.webp)
 
@@ -148,7 +149,7 @@ FlexKVM 支持两种供电方式，请根据您的使用场景选择：
 - OLED 状态栏 USB 图标从 :material-close: 变为 :material-check:
 - 状态指示灯从快闪变为**慢闪**（约 1 次/秒）
 
-![连接USB，显示屏显示](./images/connect_usb_screen.webp)
+![连接USB，显示屏显示](./images/ucb_connected.webp)
 
 > 如果指示灯仍为快闪，请检查被控设备是否已开机、USB 线材是否支持数据传输。
 
@@ -162,7 +163,7 @@ FlexKVM 支持两种供电方式，请根据您的使用场景选择：
 - OLED 状态栏 HDMI 图标从 :material-close: 变为 :material-check:
 - 状态指示灯从慢闪变为**常亮**（绿色）
 
-![连接HDMI，显示屏显示](./images/connect_hdmi_screen.webp)
+![连接HDMI，显示屏显示](./images/hdmi_connected.webp)
 
 > ✅ **完成确认**：OLED 显示设备状态界面，状态指示灯绿色常亮。
 
@@ -174,11 +175,11 @@ FlexKVM 支持两种供电方式，请根据您的使用场景选择：
 
 #### 1. 打开 USB 供电开关
 
-将 **USB 供电开关 [7]** 拨到 **ON**（即 O 符号一侧），允许 USB 接口从被控设备取电。
+将 **USB 供电开关 [7]** 拨到符号 **I**，允许 USB 接口从被控设备取电。
 
 ![USB电源开关](./images/usb_power_switch.webp)
 
-> 开关拨到 **OFF**（I 符号一侧）时，USB 仅传输数据，不从被控设备取电。
+> 开关拨到符号 **O** 时，USB 仅传输数据，不从被控设备取电。
 
 #### 2. 连接 USB
 
