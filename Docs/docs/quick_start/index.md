@@ -38,7 +38,7 @@
 
 > 磁吸背板已预装在主机背面，开箱时确认即可。
 >
-> ATX 控制器和杜邦线用于远程开关机功能，快速上手阶段无需安装，后续可参考 [ATX 控制](../guide/device/atx.md) 进行配置。
+> ATX 控制器和杜邦线用于远程开关机功能，快速上手阶段无需安装，后续可参考 [ATX 控制](../guide/advanced/atx.md) 进行配置。
 
 ---
 
@@ -361,6 +361,7 @@ FlexKVM 会通过 USB 取电并自动启动：
 
 完成基础设置后，您可以：
 
+- **按场景继续**：[远程重装系统](../guide/scenarios/reinstall-os.md) · [外网访问](../guide/scenarios/remote-access.md) · [安全加固](../guide/scenarios/security.md)
 - 了解产品功能：[产品介绍](../product/index.md)
 - 深入学习配置：[用户指南](../guide/index.md)
 - 认识所有接口：[接口介绍](../guide/device/interface.md)
