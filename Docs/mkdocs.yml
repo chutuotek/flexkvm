@@ -134,11 +134,13 @@ nav:
       - 远程重装系统: guide/scenarios/reinstall-os.md
       - 外网远程访问: guide/scenarios/remote-access.md
       - 安全加固: guide/scenarios/security.md
+      - 文件传输: guide/scenarios/file-transfer.md
+      - 电源控制: guide/scenarios/power-control.md
     - 产品信息:
-      - 接口说明: guide/device/interface.md
-      - 物理与电气特性: guide/device/characteristics.md
-      - 背板: guide/device/backplate.md
-      - 拓展: guide/device/extensibility.md
+      - 接口说明: guide/hardware/interface.md
+      - 物理与电气特性: guide/hardware/characteristics.md
+      - 背板: guide/hardware/backplate.md
+      - 拓展: guide/hardware/extensibility.md
     - 工具栏:
       - 屏幕显示: guide/toolbar/screen.md
       - 鼠标: guide/toolbar/mouse.md

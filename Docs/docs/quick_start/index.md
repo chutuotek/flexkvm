@@ -73,7 +73,7 @@
 
 以下是快速上手过程中会用到的接口，了解它们的位置和用途即可。
 
-![FlexKVM 正面接口](../guide/device/images/flexkvm_interface_1.webp)
+![FlexKVM 正面接口](../guide/hardware/images/flexkvm_interface_1.webp)
 
 | 编号 | 名称 | 说明 |
 |:----:|------|------|
@@ -85,7 +85,7 @@
 | [8] | USB 接口 | 连接被控设备，传输键鼠信号 |
 | [9] | 电源指示灯（红色） | 亮 = 已供电，灭 = 未供电 |
 
-![FlexKVM 背面接口](../guide/device/images/flexkvm_interface_2.webp)
+![FlexKVM 背面接口](../guide/hardware/images/flexkvm_interface_2.webp)
 
 | 编号 | 名称 | 说明 |
 |:----:|------|------|
@@ -94,7 +94,7 @@
 | [16] | 百兆网口 | 连接路由器或交换机 |
 | [17] | WiFi 天线接口 | 天线出厂已安装，无需用户操作 |
 
-> 其他接口（按键 B、ATX 控制、TF 卡槽、恢复出厂、复位、拓展接口等）请参考 [接口介绍](../guide/device/interface.md)。
+> 其他接口（按键 B、ATX 控制、TF 卡槽、恢复出厂、复位、拓展接口等）请参考 [接口介绍](../guide/hardware/interface.md)。
 
 ### 状态指示灯速查表
 
@@ -439,6 +439,6 @@ FlexKVM 会通过 USB 取电并自动启动：
 
 - **按场景继续**：[远程重装系统](../guide/scenarios/reinstall-os.md) · [外网访问](../guide/scenarios/remote-access.md) · [安全加固](../guide/scenarios/security.md)
 - 深入学习配置：[用户指南](../guide/index.md)
-- 认识所有接口：[接口介绍](../guide/device/interface.md)
+- 认识所有接口：[接口介绍](../guide/hardware/interface.md)
 - 遇到问题：[常见问题与排查](../support/index.md)
 - 加入社群：[社区与联系](../community/index.md)
