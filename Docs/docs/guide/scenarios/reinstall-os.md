@@ -77,7 +77,7 @@
 
 > **热键按了没反应？** 检查两点：
 > 1. 键盘设置中的**被控系统**是否选对（Windows/Linux/MacOS）
-> 2. 如果处于全屏模式，ESC 键被浏览器拦截了，需要先退出全屏再操作，或者使用映射的 ESC（默认 Right Ctrl），参见 [Esc 映射](../remote/keyboard.md#esc映射)
+> 2. 如果处于全屏模式，ESC 键被浏览器拦截了，需要先退出全屏再操作，或者使用映射的 ESC（默认 Right Ctrl），参见 [Esc 映射](../toolbar/keyboard.md#esc映射)
 
 > **画面黑屏错过了？** 再点一次复位键短按重启，在重启画面亮起前就开始连续按 BIOS 热键。
 
