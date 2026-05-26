@@ -2,6 +2,8 @@
 
 欢迎使用 FlexKVM 用户指南。你可以按**场景任务**快速找到操作路径，也可以按**功能分类**查阅具体配置。不确定从哪里找？在顶部**搜索栏**输入关键词直接定位。
 
+> 开始前请确认已完成 [快速上手](../quick_start/index.md) 中的设备接线和网络配置，确保 FlexKVM 可正常访问。
+
 ---
 
 ## 场景向导
@@ -78,7 +80,7 @@
 
 - **:material-puzzle: 拓展**
 
-    POE 分离器等拓展配件
+    PoE 分离器、外接存储等拓展配件使用指南
 
     [:octicons-arrow-right-24: 查看](device/extensibility.md)
 
@@ -126,7 +128,7 @@
 
 - **:material-login: 登录**
 
-    用户登录
+    登录流程、会话管理、自动注销配置
 
     [:octicons-arrow-right-24: 查看](account/login.md)
 
@@ -156,13 +158,13 @@
 
 - **:material-access-point: 热点模式**
 
-    创建 WiFi 热点、频段与加密设置
+    将 FlexKVM 作为 WiFi 热点，供其他设备连接
 
     [:octicons-arrow-right-24: 查看](network/ap.md)
 
 - **:material-cellphone-wireless: 热点配网**
 
-    热点配网功能
+    通过手机/电脑连接 FlexKVM 热点，为设备配置 WiFi 网络
 
     [:octicons-arrow-right-24: 查看](network/ap_province.md)
 
@@ -174,7 +176,7 @@
 
 - **:material-usb: USB 配置**
 
-    自定义 USB 设备
+    模拟 USB 键盘/鼠标/存储设备，自定义设备类型与参数
 
     [:octicons-arrow-right-24: 查看](system/usb.md)
 
@@ -204,7 +206,7 @@
 
 - **:material-monitor-screenshot: EDID 配置**
 
-    自定义 EDID 文件管理
+    EDID（显示器识别数据）自定义管理，解决分辨率/兼容性问题
 
     [:octicons-arrow-right-24: 查看](system/edid.md)
 
@@ -258,13 +260,13 @@
 
 - **:material-file-download: 离线升级**
 
-    离线升级
+    下载固件包 → 上传至设备 → 手动升级，适用于无外网环境
 
     [:octicons-arrow-right-24: 查看](upgrade/ota_offline.md)
 
 - **:material-cloud-download: 在线升级**
 
-    在线升级
+    检查更新 → 一键升级，需设备可访问外网
 
     [:octicons-arrow-right-24: 查看](upgrade/ota_online.md)
 
@@ -276,13 +278,13 @@
 
 - **:material-text-box: 日志**
 
-    系统日志
+    查看系统运行日志，排查异常行为
 
     [:octicons-arrow-right-24: 查看](maintenance/log.md)
 
 - **:material-clipboard-check: 审计**
 
-    审计日志
+    记录用户操作行为，满足安全审计需求
 
     [:octicons-arrow-right-24: 查看](maintenance/audit.md)
 
