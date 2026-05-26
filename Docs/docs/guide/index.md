@@ -86,7 +86,7 @@
 
 </div>
 
-### 远程控制
+### 工具栏
 
 <div class="grid cards" markdown>
 
@@ -94,31 +94,49 @@
 
     WebRTC 视频流、画质调节、HDMI 状态
 
-    [:octicons-arrow-right-24: 查看](remote/screen.md)
+    [:octicons-arrow-right-24: 查看](toolbar/screen.md)
 
 - **:material-mouse: 鼠标**
 
     鼠标模式切换、指针锁定、灵敏度设置
 
-    [:octicons-arrow-right-24: 查看](remote/mouse.md)
+    [:octicons-arrow-right-24: 查看](toolbar/mouse.md)
 
 - **:material-keyboard: 键盘**
 
     键盘启用/禁用、虚拟键盘、文本粘贴
 
-    [:octicons-arrow-right-24: 查看](remote/keyboard.md)
+    [:octicons-arrow-right-24: 查看](toolbar/keyboard.md)
 
 - **:material-camera: 截图**
 
     截取画面
 
-    [:octicons-arrow-right-24: 查看](remote/screenshot.md)
+    [:octicons-arrow-right-24: 查看](toolbar/screenshot.md)
 
 - **:material-video: 录像**
 
     录制视频
 
-    [:octicons-arrow-right-24: 查看](remote/record.md)
+    [:octicons-arrow-right-24: 查看](toolbar/record.md)
+
+- **:material-power: ATX 电源控制**
+
+    远程开关机、电源状态监控
+
+    [:octicons-arrow-right-24: 查看](toolbar/atx.md)
+
+- **:material-power-standby: 网络唤醒 (WoL)**
+
+    远程唤醒目标主机
+
+    [:octicons-arrow-right-24: 查看](toolbar/wakeonlan.md)
+
+- **:material-harddisk: 硬盘挂载**
+
+    TF 卡管理、USB Mass Storage 导出
+
+    [:octicons-arrow-right-24: 查看](toolbar/disk.md)
 
 </div>
 
@@ -212,45 +230,15 @@
 
 </div>
 
-### 高级功能
-
-<div class="grid cards" markdown>
-
-- **:material-harddisk: 硬盘挂载**
-
-    TF 卡管理、USB Mass Storage 导出
-
-    [:octicons-arrow-right-24: 查看](advanced/disk.md)
-
-- **:material-power: ATX 电源控制**
-
-    远程开关机、电源状态监控
-
-    [:octicons-arrow-right-24: 查看](advanced/atx.md)
-
-- **:material-power-standby: 网络唤醒 (WoL)**
-
-    远程唤醒目标主机
-
-    [:octicons-arrow-right-24: 查看](advanced/wakeonlan.md)
-
-</div>
-
 ### 主题与语言
 
 <div class="grid cards" markdown>
 
-- **:material-palette: 主题**
+- **:material-palette: 主题与语言**
 
-    界面主题切换
+    界面主题切换、强调色、显示语言设置
 
     [:octicons-arrow-right-24: 查看](theme/theme.md)
-
-- **:material-translate: 语言**
-
-    界面语言切换
-
-    [:octicons-arrow-right-24: 查看](theme/language.md)
 
 </div>
 

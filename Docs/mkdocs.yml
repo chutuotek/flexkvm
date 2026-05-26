@@ -142,12 +142,15 @@ nav:
       - 物理与电气特性: guide/device/characteristics.md
       - 背板: guide/device/backplate.md
       - 拓展: guide/device/extensibility.md
-    - 远程控制:
-      - 屏幕显示: guide/remote/screen.md
-      - 鼠标: guide/remote/mouse.md
-      - 键盘: guide/remote/keyboard.md
-      - 截图: guide/remote/screenshot.md
-      - 录像: guide/remote/record.md
+    - 工具栏:
+      - 屏幕显示: guide/toolbar/screen.md
+      - 鼠标: guide/toolbar/mouse.md
+      - 键盘: guide/toolbar/keyboard.md
+      - 截图: guide/toolbar/screenshot.md
+      - 录像: guide/toolbar/record.md
+      - ATX 电源控制: guide/toolbar/atx.md
+      - 网络唤醒 (WoL): guide/toolbar/wakeonlan.md
+      - 硬盘挂载: guide/toolbar/disk.md
     - 账号:
       - 登录: guide/account/login.md
       - 账号管理: guide/account/account.md
@@ -163,13 +166,8 @@ nav:
       - OLED 显示: guide/system/oled.md
       - 时间设置: guide/system/time.md
       - EDID 配置: guide/system/edid.md
-    - 高级功能:
-      - 硬盘挂载: guide/advanced/disk.md
-      - ATX 电源控制: guide/advanced/atx.md
-      - 网络唤醒 (WoL): guide/advanced/wakeonlan.md
-    - 主题与语言:
-      - 主题: guide/theme/theme.md
-      - 语言: guide/theme/language.md
+
+    - 主题与语言: guide/theme/theme.md
     - 升级:
       - 离线升级: guide/upgrade/ota_offline.md
       - 在线升级: guide/upgrade/ota_online.md
