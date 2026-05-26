@@ -1,6 +1,6 @@
 # 用户指南
 
-欢迎使用 FlexKVM 用户指南。你可以按**场景任务**快速找到操作路径，也可以按**功能分类**查阅具体配置。不确定从哪里找？在顶部**搜索栏**输入关键词直接定位。
+欢迎使用 FlexKVM 用户指南。确定你的目标，选择对应入口。不确定从哪里找？在顶部**搜索栏**输入关键词直接定位。
 
 > 开始前请确认已完成 [快速上手](../quick_start/index.md) 中的设备接线和网络配置，确保 FlexKVM 可正常访问。
 
@@ -24,41 +24,21 @@
 
     [:octicons-arrow-right-24: 开始配置](scenarios/remote-access.md)
 
-- **:material-refresh: 日常运维**
-
-    升级固件、查看日志、重启恢复，日常该做的事。
-
-    [:octicons-arrow-right-24: 查看清单](scenarios/daily-ops.md)
-
 - **:material-shield-lock: 安全加固**
 
     2FA、HTTPS 证书、SSH、审计，把设备安全做到位。
 
     [:octicons-arrow-right-24: 开始加固](scenarios/security.md)
 
-- **:material-bug: 问题反馈与建议**
-
-    问题自查 → 收集诊断信息 → 提 Bug / 提建议。
-
-    [:octicons-arrow-right-24: 提交反馈](scenarios/feedback.md)
-
 </div>
 
 ---
 
-## 功能参考
+## 产品信息
 
-按需查阅具体配置项：
-
-### 设备
+FlexKVM 硬件规格与配件参考：
 
 <div class="grid cards" markdown>
-
-- **:material-package-variant: 包装清单**
-
-    开箱物品清单
-
-    [:octicons-arrow-right-24: 查看](device/packet.md)
 
 - **:material-connection: 接口说明**
 
@@ -86,7 +66,11 @@
 
 </div>
 
-### 工具栏
+---
+
+## 工具栏
+
+远程桌面顶部的操作按钮，用于操控被控设备：
 
 <div class="grid cards" markdown>
 
@@ -139,6 +123,12 @@
     [:octicons-arrow-right-24: 查看](toolbar/disk.md)
 
 </div>
+
+---
+
+## 设置
+
+系统配置与参数调整，对应桌面设置弹窗（齿轮图标）：
 
 ### 账号
 
@@ -295,3 +285,7 @@
     [:octicons-arrow-right-24: 查看](app/tailscale.md)
 
 </div>
+
+---
+
+[:octicons-bug-24: 问题反馈与建议](scenarios/feedback.md){ .md-button } [:octicons-home-24: 返回首页](../index.md){ .md-button } [:octicons-rocket-24: 快速上手](../quick_start/index.md){ .md-button }
