@@ -152,30 +152,30 @@ nav:
       - 硬盘挂载: guide/toolbar/disk.md
     - 设置:
       - 账号:
-        - 登录: guide/account/login.md
-        - 账号管理: guide/account/account.md
+        - 登录: guide/settings/account/login.md
+        - 账号管理: guide/settings/account/account.md
       - 网络:
-        - 以太网: guide/network/eth.md
-        - WiFi: guide/network/wifi.md
-        - 热点模式: guide/network/ap.md
-        - 热点配网: guide/network/ap_province.md
+        - 以太网: guide/settings/network/eth.md
+        - WiFi: guide/settings/network/wifi.md
+        - 热点模式: guide/settings/network/ap.md
+        - 热点配网: guide/settings/network/ap_province.md
       - 系统:
-        - USB 配置: guide/system/usb.md
-        - HTTPS 配置: guide/system/https.md
-        - SSH 远程访问: guide/system/ssh.md
-        - OLED 显示: guide/system/oled.md
-        - 时间设置: guide/system/time.md
-        - EDID 配置: guide/system/edid.md
-      - 主题与语言: guide/theme/theme.md
+        - USB 配置: guide/settings/system/usb.md
+        - HTTPS 配置: guide/settings/system/https.md
+        - SSH 远程访问: guide/settings/system/ssh.md
+        - OLED 显示: guide/settings/system/oled.md
+        - 时间设置: guide/settings/system/time.md
+        - EDID 配置: guide/settings/system/edid.md
+      - 主题与语言: guide/settings/theme/theme.md
       - 升级:
-        - 离线升级: guide/upgrade/ota_offline.md
-        - 在线升级: guide/upgrade/ota_online.md
+        - 离线升级: guide/settings/upgrade/ota_offline.md
+        - 在线升级: guide/settings/upgrade/ota_online.md
       - 维护:
-        - 日志: guide/maintenance/log.md
-        - 审计: guide/maintenance/audit.md
-        - 重启与重置: guide/maintenance/power_reset.md
+        - 日志: guide/settings/maintenance/log.md
+        - 审计: guide/settings/maintenance/audit.md
+        - 重启与重置: guide/settings/maintenance/power_reset.md
       - 应用中心:
-        - Tailscale: guide/app/tailscale.md
+        - Tailscale: guide/settings/app/tailscale.md
   - 常见问题与排查:
     - 常见问题与排查: support/index.md
     - 常见问题: support/faq/index.md

@@ -34,7 +34,7 @@ Tailscale 基于 WireGuard 构建，把你所有的设备组成一个加密的�
 
 登录成功后，界面会显示 Tailscale IP（通常是 `100.x.x.x`）和连接状态。
 
-详细配置参见 [Tailscale](../app/tailscale.md)。
+详细配置参见 [Tailscale](../settings/app/tailscale.md)。
 
 ---
 
@@ -75,4 +75,4 @@ Tailscale 基于 WireGuard 构建，把你所有的设备组成一个加密的�
 
 - 外网访问开启了，建议加固安全 → [安全加固](security.md)
 - 需要从外网重装系统？→ [远程重装系统](reinstall-os.md)
-- Tailscale 使用遇到问题？→ [Tailscale 文档](../app/tailscale.md)
+- Tailscale 使用遇到问题？→ [Tailscale 文档](../settings/app/tailscale.md)

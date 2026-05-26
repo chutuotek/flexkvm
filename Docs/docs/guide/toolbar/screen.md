@@ -71,7 +71,7 @@ EDID 选择器用于切换 EDID 配置，预设两个选项：
 
 ![EDID](./images/screen/web-screen-edid.webp)
 
-> 在设置中添加自定义 EDID 配置后，下拉选项会出现"custom"。详见 [EDID 配置](../system/edid.md)。
+> 在设置中添加自定义 EDID 配置后，下拉选项会出现"custom"。详见 [EDID 配置](../settings/system/edid.md)。
 
 **default** 为默认 EDID 配置，支持以下分辨率：
 

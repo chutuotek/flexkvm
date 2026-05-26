@@ -8,7 +8,7 @@ FlexKVM 预设了两个 EDID 配置：**default** 和 **1080p**，同时支持�
 
 在菜单栏中点击屏幕按键，弹出屏幕菜单后点击 EDID 选择器即可切换，如下图所示：
 
-![EDID 切换](./images/../../toolbar/images/screen/web-screen-edid.webp)
+![EDID 切换](../../toolbar/images/screen/web-screen-edid.webp)
 
 可选 EDID 列表：
 

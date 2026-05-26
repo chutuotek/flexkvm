@@ -138,13 +138,13 @@ FlexKVM 硬件规格与配件参考：
 
     登录流程、会话管理、自动注销配置
 
-    [:octicons-arrow-right-24: 查看](account/login.md)
+    [:octicons-arrow-right-24: 查看](settings/account/login.md)
 
 - **:material-account-cog: 账号管理**
 
     密码修改、两步验证 (2FA)
 
-    [:octicons-arrow-right-24: 查看](account/account.md)
+    [:octicons-arrow-right-24: 查看](settings/account/account.md)
 
 </div>
 
@@ -156,25 +156,25 @@ FlexKVM 硬件规格与配件参考：
 
     DHCP/静态 IP、网关 DNS 配置
 
-    [:octicons-arrow-right-24: 查看](network/eth.md)
+    [:octicons-arrow-right-24: 查看](settings/network/eth.md)
 
 - **:material-wifi: WiFi**
 
     WiFi 连接、保存网络管理
 
-    [:octicons-arrow-right-24: 查看](network/wifi.md)
+    [:octicons-arrow-right-24: 查看](settings/network/wifi.md)
 
 - **:material-access-point: 热点模式**
 
     将 FlexKVM 作为 WiFi 热点，供其他设备连接
 
-    [:octicons-arrow-right-24: 查看](network/ap.md)
+    [:octicons-arrow-right-24: 查看](settings/network/ap.md)
 
 - **:material-cellphone-wireless: 热点配网**
 
     通过手机/电脑连接 FlexKVM 热点，为设备配置 WiFi 网络
 
-    [:octicons-arrow-right-24: 查看](network/ap_province.md)
+    [:octicons-arrow-right-24: 查看](settings/network/ap_province.md)
 
 </div>
 
@@ -186,37 +186,37 @@ FlexKVM 硬件规格与配件参考：
 
     模拟 USB 键盘/鼠标/存储设备，自定义设备类型与参数
 
-    [:octicons-arrow-right-24: 查看](system/usb.md)
+    [:octicons-arrow-right-24: 查看](settings/system/usb.md)
 
 - **:material-lock: HTTPS 配置**
 
     SSL 证书管理、自定义证书上传
 
-    [:octicons-arrow-right-24: 查看](system/https.md)
+    [:octicons-arrow-right-24: 查看](settings/system/https.md)
 
 - **:material-console: SSH 远程访问**
 
     SSH 服务启用与配置
 
-    [:octicons-arrow-right-24: 查看](system/ssh.md)
+    [:octicons-arrow-right-24: 查看](settings/system/ssh.md)
 
 - **:material-monitor-star: OLED 显示**
 
     屏幕亮度、息屏时间设置
 
-    [:octicons-arrow-right-24: 查看](system/oled.md)
+    [:octicons-arrow-right-24: 查看](settings/system/oled.md)
 
 - **:material-clock: 时间设置**
 
     时区配置、NTP 同步
 
-    [:octicons-arrow-right-24: 查看](system/time.md)
+    [:octicons-arrow-right-24: 查看](settings/system/time.md)
 
 - **:material-monitor-screenshot: EDID 配置**
 
     EDID（显示器识别数据）自定义管理，解决分辨率/兼容性问题
 
-    [:octicons-arrow-right-24: 查看](system/edid.md)
+    [:octicons-arrow-right-24: 查看](settings/system/edid.md)
 
 </div>
 
@@ -228,7 +228,7 @@ FlexKVM 硬件规格与配件参考：
 
     界面主题切换、强调色、显示语言设置
 
-    [:octicons-arrow-right-24: 查看](theme/theme.md)
+    [:octicons-arrow-right-24: 查看](settings/theme/theme.md)
 
 </div>
 
@@ -240,13 +240,13 @@ FlexKVM 硬件规格与配件参考：
 
     下载固件包 → 上传至设备 → 手动升级，适用于无外网环境
 
-    [:octicons-arrow-right-24: 查看](upgrade/ota_offline.md)
+    [:octicons-arrow-right-24: 查看](settings/upgrade/ota_offline.md)
 
 - **:material-cloud-download: 在线升级**
 
     检查更新 → 一键升级，需设备可访问外网
 
-    [:octicons-arrow-right-24: 查看](upgrade/ota_online.md)
+    [:octicons-arrow-right-24: 查看](settings/upgrade/ota_online.md)
 
 </div>
 
@@ -258,19 +258,19 @@ FlexKVM 硬件规格与配件参考：
 
     查看系统运行日志，排查异常行为
 
-    [:octicons-arrow-right-24: 查看](maintenance/log.md)
+    [:octicons-arrow-right-24: 查看](settings/maintenance/log.md)
 
 - **:material-clipboard-check: 审计**
 
     记录用户操作行为，满足安全审计需求
 
-    [:octicons-arrow-right-24: 查看](maintenance/audit.md)
+    [:octicons-arrow-right-24: 查看](settings/maintenance/audit.md)
 
 - **:material-restart: 重启与重置**
 
     重启设备、恢复出厂设置
 
-    [:octicons-arrow-right-24: 查看](maintenance/power_reset.md)
+    [:octicons-arrow-right-24: 查看](settings/maintenance/power_reset.md)
 
 </div>
 
@@ -282,7 +282,7 @@ FlexKVM 硬件规格与配件参考：
 
     VPN 远程访问、穿透 NAT
 
-    [:octicons-arrow-right-24: 查看](app/tailscale.md)
+    [:octicons-arrow-right-24: 查看](settings/app/tailscale.md)
 
 </div>
 
