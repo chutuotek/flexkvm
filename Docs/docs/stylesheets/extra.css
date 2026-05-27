@@ -1,3 +1,9 @@
+/* Center all images */
+.md-typeset img {
+    display: block;
+    margin: 0 auto;
+}
+
 /* Make logo white */
 .md-header__button.md-logo img,
 .md-logo img {
