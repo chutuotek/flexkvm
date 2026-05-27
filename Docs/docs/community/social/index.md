@@ -28,6 +28,6 @@
 
 获取最新产品资讯、教程更新，以及微信群二维码。
 
-<img src="../../images/wechat-tool.jpg" width="200" />
+<img src="../../images/wechat-tool.webp" width="200" />
 
 扫描上方二维码关注微信公众号，在公众号菜单栏选择「用户社群」→「微信群」获取最新群二维码。

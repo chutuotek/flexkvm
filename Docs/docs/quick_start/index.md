@@ -158,7 +158,7 @@ FlexKVM 支持两种供电方式，请根据您的使用场景选择：
 - **电源指示灯 [9]**（红色）亮起
 - 约 2 秒后，**OLED 显示屏 [14]** 显示 FlexKVM logo
 
-![FlexKVM logo](./images/chutuotek-oled.webp)
+![FlexKVM logo](./images/oled_startup_logo.webp)
 
 - 约 20 秒后，OLED 进入设备状态界面
 - **状态指示灯 [2]**（绿色）开始**快闪**（约 5 次/秒）
@@ -179,7 +179,7 @@ FlexKVM 支持两种供电方式，请根据您的使用场景选择：
 - OLED 状态栏 USB 图标少了:material-close:的符号
 - 状态指示灯从快闪变为**慢闪**（约 1 次/秒）
 
-![连接USB，显示屏显示](./images/ucb_connected.webp)
+![连接USB，显示屏显示](./images/usb_connected.webp)
 
 > 排查：如果指示灯仍为快闪，请检查被控设备是否已正常开机、USB 线材是否支持数据传输。
 
@@ -227,11 +227,11 @@ FlexKVM 会通过 USB 取电并自动启动：
 - 电源指示灯亮起
 - 约 2 秒后 OLED 显示 logo，约 20 秒后进入设备状态界面
 
-![FlexKVM logo](./images/chutuotek-oled.webp)
+![FlexKVM logo](./images/oled_startup_logo.webp)
 
 - 状态指示灯变为**慢闪**（约 1 次/秒），USB 图标启用
 
-![连接USB，显示屏显示](./images/ucb_connected.webp)
+![连接USB，显示屏显示](./images/usb_connected.webp)
 
 > 如果设备未启动，请检查被控设备 USB 口供电是否足够（需 5V/1A 及以上），以及 USB 供电开关是否已拨到 **I**。
 
@@ -309,17 +309,17 @@ FlexKVM 会通过 USB 取电并自动启动：
 
 长按**按键 A [3]** 3~6 秒，OLED 显示 AP 图标后松开，进入热点配网模式。
 
-![配网模式](./images/ap_province.webp)
+![配网模式](./images/oled_hotspot_mode.webp)
 
 > 不到 3 秒不会触发；超过 6 秒则返回主界面。如果误操作，松开按键重试即可。
 
 松开按键后，会进入配网等待界面:
 
-![配网等待界面](./images/ap_screen_waiting.webp)
+![配网等待界面](./images/oled_hotspot_loading.webp)
 
 等待约 12 秒，OLED 会显示热点名称、密码和 IP 地址。
 
-![配网界面](./images/ap_screen.webp)
+![配网界面](./images/oled_hotspot_ready.webp)
 
 #### 2. 连接热点
 
@@ -332,6 +332,18 @@ FlexKVM 会通过 USB 取电并自动启动：
   - Android 用户也可在通知栏中点击"登录网络"来打开门户页
 - **电脑**：手动打开浏览器，访问 `192.168.10.1`
 
+##### 手机演示
+
+首先，手机连接到 FlexKVM 的热点。
+
+![手机连接热点](./images/phone_connect_wifi.webp)
+
+然后，手机会自动弹出浏览器门户页，点击"登录到WLAN网络" 或者使用浏览器访问ip地址。
+
+![手机自动弹出浏览器门户页](./images/phone_auto_open_browser.webp)
+
+点击"信任"或"继续"进入用户登录界面。
+
 > 由于使用自签名证书，浏览器会提示"不安全"或"证书无效"，这是正常现象。各浏览器的跳过方法见下方 [浏览器访问](#浏览器访问) 中的表格。
 
 #### 3. 验证身份
@@ -341,9 +353,11 @@ FlexKVM 会通过 USB 取电并自动启动：
 - **首次使用**：创建管理员账户（参见 [首次创建账户](#首次创建账户)）
 - **已有账户**：输入账号密码登录（参见 [登录已有账户](#登录已有账户)）
 
-![配网页面](../images/ap_province_web.webp)
+![创建账户](../images/flexkvm_create_account.webp)
 
 > 配网场景下创建账户或登录后，将进入**配网配置页面**而非主界面。完成账户创建或登录后，请返回本节继续第 4 步（连接 WiFi）。
+
+![手机配网页面](./images/phone_hotspot_web.webp)
 
 #### 4. 连接 WiFi
 
@@ -353,30 +367,25 @@ FlexKVM 会通过 USB 取电并自动启动：
 2. 选择要连接的 WiFi，输入密码
 3. 点击连接
 
-![刷新wifi列表](./images/ap_mode_refresh.webp)
+![手机配网页面](./images/phone_wifi_refresh.webp)
 
-![输入密码](./images/ap_mode_connect_wifi.webp)
+![输入密码](./images/phone_wifi_connect.webp)
 
-连接成功后，页面提示成功，同时 OLED 上也会显示新的 IP 地址。
+连接成功后，wifi卡片会显示已连接
 
-![连接成功](./images/ap_mode_connect_success.webp)
-
-![oled显示ip](./images/screen_show_ip.webp)
-
-> 您也可以在 WIFI 卡片中点击设置按钮，查看已获取的 IP 地址。
->
-> ![网页显示ip](./images/web_show_ip.webp)
->
-> **连接失败排查**：
-> - 确认 WiFi 密码输入正确
-> - 确认 WiFi 为 2.4GHz 频段（不支持 5GHz）
-> - 尝试重启设备后重新配网
+![手机配网页面](./images/phone_wifi_connect_success.webp)
 
 #### 5. 退出配网
 
 点击页面右上角的**保存**按钮，设备自动退出配网模式并重启网络。
 
-![退出配网](./images/ap_mode_exit.webp)
+![退出配网页面](./images/phone_save_exit.webp)
+
+确认后，设备会自动退出配网模式并重启网络。
+
+可以看到，设备已经获取到了IP地址，并且警告指示灯已经熄灭。
+
+![设备显示wifi](./images/oled_wifi_connected.webp)
 
 > ✅ **完成确认**：OLED 显示设备 IP 地址，警告指示灯 [1] 熄灭。
 
@@ -396,7 +405,9 @@ FlexKVM 会通过 USB 取电并自动启动：
     | Firefox | 点击"高级" → "接受风险并继续" |
     | Safari | 点击"显示详细信息" → "访问此网站" |
 
-![安全提示](../images/flexkvm_security_warning.webp)
+![安全提示1](../images/flexkvm_security_warning.webp)
+
+![安全提示2](../images/flexkvm_security_enter.webp)
 
 > **无法打开页面？** 如果浏览器提示"无法连接"或长时间加载：
 > 1. 确认控制端和 FlexKVM 连接的是**同一个路由器**
