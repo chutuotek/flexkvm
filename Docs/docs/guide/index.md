@@ -68,59 +68,71 @@ FlexKVM 硬件规格与配件参考：
 
 ---
 
-## 工具栏
+## 菜单栏
 
-远程桌面顶部的操作按钮，用于操控被控设备：
+远程桌面顶部的操作按钮，用于操控被控主机：
 
 <div class="grid cards" markdown>
 
-- **:material-monitor: 屏幕显示**
+- **:material-monitor: 远程画面**
 
-    WebRTC 视频流、画质调节、HDMI 状态
+    查看远程画面，调整画质和分辨率
 
     [:octicons-arrow-right-24: 查看](toolbar/screen.md)
 
 - **:material-mouse: 鼠标**
 
-    鼠标模式切换、指针锁定、灵敏度设置
+    切换鼠标模式（绝对/相对），调节灵敏度和滚轮
 
     [:octicons-arrow-right-24: 查看](toolbar/mouse.md)
 
 - **:material-keyboard: 键盘**
 
-    键盘启用/禁用、虚拟键盘、文本粘贴
+    输入文字、发送快捷键、虚拟键盘
 
     [:octicons-arrow-right-24: 查看](toolbar/keyboard.md)
 
 - **:material-camera: 截图**
 
-    截取画面
+    一键截取当前画面保存为图片
 
     [:octicons-arrow-right-24: 查看](toolbar/screenshot.md)
 
 - **:material-video: 录像**
 
-    录制视频
+    录制远程画面保存为视频
 
     [:octicons-arrow-right-24: 查看](toolbar/record.md)
 
 - **:material-power: ATX 电源控制**
 
-    远程开关机、电源状态监控
+    远程开关机、强制关机、重启
 
     [:octicons-arrow-right-24: 查看](toolbar/atx.md)
 
 - **:material-power-standby: 网络唤醒 (WoL)**
 
-    远程唤醒目标主机
+    远程唤醒局域网内已关机的设备
 
     [:octicons-arrow-right-24: 查看](toolbar/wakeonlan.md)
 
 - **:material-harddisk: 硬盘挂载**
 
-    TF 卡管理、USB Mass Storage 导出
+    TF 卡文件管理，虚拟光驱/USB 导出
 
     [:octicons-arrow-right-24: 查看](toolbar/disk.md)
+
+- **:material-microphone: 音频**
+
+    控制麦克风和扬声器，传输声音
+
+    [:octicons-arrow-right-24: 查看](toolbar/audio.md)
+
+- **:material-chip: 外设 IO**
+
+    GPIO 引脚控制和 UART 串口终端
+
+    [:octicons-arrow-right-24: 查看](toolbar/io.md)
 
 </div>
 
