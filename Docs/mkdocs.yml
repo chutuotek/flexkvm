@@ -71,6 +71,12 @@ plugins:
             建议反馈: Feedback
             用户社群: Community
             联系我们: Contact
+            远程画面: Remote Video
+            音频: Audio
+            外设 IO: Peripheral IO
+            LED 指示灯: LED Indicator
+            截图设置: Screenshot Settings
+            录像设置: Recording Settings
   - git-revision-date-localized:
       type: datetime
       timezone: Asia/Shanghai
@@ -142,7 +148,7 @@ nav:
       - 背板: guide/hardware/backplate.md
       - 拓展: guide/hardware/extensibility.md
     - 工具栏:
-      - 屏幕显示: guide/toolbar/screen.md
+      - 远程画面: guide/toolbar/screen.md
       - 鼠标: guide/toolbar/mouse.md
       - 键盘: guide/toolbar/keyboard.md
       - 截图: guide/toolbar/screenshot.md
@@ -150,6 +156,8 @@ nav:
       - ATX 电源控制: guide/toolbar/atx.md
       - 网络唤醒 (WoL): guide/toolbar/wakeonlan.md
       - 硬盘挂载: guide/toolbar/disk.md
+      - 音频: guide/toolbar/audio.md
+      - 外设 IO: guide/toolbar/io.md
     - 设置:
       - 账号:
         - 登录: guide/settings/account/login.md
@@ -160,12 +168,15 @@ nav:
         - 热点模式: guide/settings/network/ap.md
         - 热点配网: guide/settings/network/ap_province.md
       - 系统:
+        - 时间设置: guide/settings/system/time.md
+        - OLED 显示: guide/settings/system/oled.md
+        - LED 指示灯: guide/settings/system/led.md
+        - EDID 配置: guide/settings/system/edid.md
         - USB 配置: guide/settings/system/usb.md
+        - 截图设置: guide/settings/system/screenshot.md
+        - 录像设置: guide/settings/system/recording.md
         - HTTPS 配置: guide/settings/system/https.md
         - SSH 远程访问: guide/settings/system/ssh.md
-        - OLED 显示: guide/settings/system/oled.md
-        - 时间设置: guide/settings/system/time.md
-        - EDID 配置: guide/settings/system/edid.md
       - 主题与语言: guide/settings/theme/theme.md
       - 升级:
         - 离线升级: guide/settings/upgrade/ota_offline.md
