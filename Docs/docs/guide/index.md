@@ -36,7 +36,7 @@
 
 ## 产品信息
 
-FlexKVM 硬件规格与配件参考：
+FlexKVM 硬件规格、接线与配件参考：
 
 <div class="grid cards" markdown>
 
@@ -51,6 +51,18 @@ FlexKVM 硬件规格与配件参考：
     电源、功耗、尺寸与环境参数
 
     [:octicons-arrow-right-24: 查看](hardware/characteristics.md)
+
+- **:material-power-plug: ATX 硬件接线**
+
+    ATX 控制器接线步骤与主板插针对照
+
+    [:octicons-arrow-right-24: 查看](hardware/atx-wiring.md)
+
+- **:material-sd: TF 卡与存储**
+
+    TF 卡规格、文件系统支持与安装
+
+    [:octicons-arrow-right-24: 查看](hardware/storage.md)
 
 - **:material-checkerboard: 背板**
 

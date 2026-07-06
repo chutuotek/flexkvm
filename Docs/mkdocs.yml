@@ -77,6 +77,8 @@ plugins:
             LED 指示灯: LED Indicator
             截图设置: Screenshot Settings
             录像设置: Recording Settings
+            ATX 硬件接线: ATX Wiring
+            TF 卡与存储: TF Card & Storage
   - git-revision-date-localized:
       type: datetime
       timezone: Asia/Shanghai
@@ -145,6 +147,8 @@ nav:
     - 产品信息:
       - 接口说明: guide/hardware/interface.md
       - 物理与电气特性: guide/hardware/characteristics.md
+      - ATX 硬件接线: guide/hardware/atx-wiring.md
+      - TF 卡与存储: guide/hardware/storage.md
       - 背板: guide/hardware/backplate.md
       - 拓展: guide/hardware/extensibility.md
     - 工具栏:
