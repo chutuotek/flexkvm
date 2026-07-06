@@ -14,7 +14,7 @@ FlexKVM 可以创建 WiFi 热点（AP），供其他设备连接。热点模式�
 |:---:|------|
 | 默认状态 | 关闭 |
 | 接口名称 | ap0 |
-| 默认 SSID | FlexKVM-Network |
+| 默认 SSID | FlexKVM-AP |
 | 默认密码 | 12345678 |
 
 > 提示：启用热点后，其他设备可以搜索并连接到该 WiFi 热点，通过热点分配的 IP 地址访问 FlexKVM 管理界面。
@@ -27,7 +27,7 @@ FlexKVM 可以创建 WiFi 热点（AP），供其他设备连接。热点模式�
 
 | 配置项 | 说明 | 默认值 | 可选值 |
 |------|------|:---:|------|
-| SSID | WiFi 热点名称 | FlexKVM-Network | 自定义字符串 |
+| SSID | WiFi 热点名称 | FlexKVM-AP | 自定义字符串 |
 | 密码 | WiFi 热点密码 | 12345678 | 8~63 位字符 |
 | 加密方式 | 无线安全协议 | WPA_WPA2 | WPA / WPA2 / WPA3 / 开放 |
 | 频段 | 工作频率 | 2.4GHz | 2.4GHz / 5GHz |
