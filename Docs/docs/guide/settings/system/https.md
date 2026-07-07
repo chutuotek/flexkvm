@@ -4,7 +4,7 @@ FlexKVM 支持 HTTPS 加密访问，提供自签名证书和自定义证书两�
 
 进入 **设置 → 系统**，找到 HTTPS 配置区块。
 
-![HTTPS 设置](./images/setting_https.webp)
+![HTTPS 设置](./images//https/setting_https.webp)
 
 ## 证书模式
 
