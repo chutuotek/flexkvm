@@ -2,20 +2,20 @@
 
 控制被控主机的鼠标指针，支持不同的操作模式和灵敏度调节。
 
-![鼠标按键](./images/mouse/mouse_ui.webp)
-
 ## 鼠标按键
 
 菜单栏中的鼠标按键图标反映当前状态：
 
-- **鼠标图标**：鼠标已连接
-- **鼠标禁用图标**：鼠标未连接或被关闭
+| 图标 | 含义 |
+|------|------|
+| ![](./icon/mouse/mouse.svg) | 鼠标已连接 |
+| ![](./icon/mouse/mouse-off.svg) | 鼠标未连接或被关闭 |
 
 ## 鼠标菜单
 
 点击鼠标按键弹出菜单：
 
-![鼠标菜单](./images/mouse/mouse_button.webp)
+![鼠标菜单](./images/mouse/mouse.webp)
 
 ### 状态
 

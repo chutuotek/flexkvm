@@ -342,26 +342,31 @@
     | Safari | 点击"显示详细信息" → "访问此网站" |
     | 移动端浏览器 | 操作路径与桌面端不同，通常点击"高级"或"详细信息"后即可继续访问 |
 
-![安全提示1](../images/flexkvm_security_warning.webp)
+![安全提示1](../images/ssl_warning.webp)
 
 - 点击左下角的"高级"按钮
 
-![安全提示2](../images/flexkvm_security_enter.webp)
+![安全提示2](../images/ssl_confirm.webp)
 
 - 点击"继续访问（不安全）"或"接受风险并继续"
 
 > **无法打开页面？** 如果浏览器提示"无法连接"或长时间加载：
+>
 > 1. 确认控制端和 FlexKVM 连接的是**同一个路由器**
+>
 > 2. 确认输入的 IP 地址与 OLED 显示的完全一致（注意 `https://` 前缀）
+>
 > 3. 尝试在控制端 ping 该 IP 地址，确认网络可达
+>
 > 4. 如果使用热点配网，确认手机/电脑仍连接在 FlexKVM 热点上，未自动切换回其他 WiFi
+>
 > 5. 尝试使用浏览器的无痕/隐私模式打开，排除浏览器缓存或 HSTS 设置干扰
 
 ### 首次创建账户
 
 首次访问时需要创建管理员账户：
 
-![创建账户](../images/flexkvm_create_account.webp)
+![创建账户](../images/flexkvm_register.webp)
 
 | 项目 | 要求 |
 |------|------|
@@ -385,7 +390,7 @@
 
 登录成功后即可看到 FlexKVM 主界面，开始远程管理您的被控设备。
 
-![主界面](../images/flexkvm_main.webp)
+![主界面](../images/flexkvm_desktop.webp)
 
 ---
 

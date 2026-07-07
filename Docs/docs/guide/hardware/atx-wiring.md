@@ -44,5 +44,5 @@ FlexKVM 通电启动后，打开 Web 界面的外设菜单，如果设备名显�
 
 ## 相关文档
 
-- [ATX 电源控制（Web 操作）](../toolbar/atx.md)
+- [外设（Web 操作）](../toolbar/atx.md)
 - [接口说明（ATX 控制接口规格）](../hardware/interface.md)

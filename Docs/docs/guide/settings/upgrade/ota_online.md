@@ -2,7 +2,7 @@
 
 进入"设置" → "升级"。
 
-![升级界面](./images/upgrade_ui.webp)
+![升级界面](./images/setting_ota_online.webp)
 
 ## 升级前准备
 
@@ -80,7 +80,7 @@
 
 点击"立即升级"，需验证用户信息：
 
-![验证用户信息](./images/ota_verify.webp)
+![用户验证框](../images/setting_verify.webp)
 
 输入密码（如已开启 2FA 还需验证码），验证通过后开始升级：
 

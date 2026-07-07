@@ -2,9 +2,9 @@
 
 进入"设置" → "外观"，可切换语言和主题。
 
-![外观界面](./images/theme.webp)
-
 ## 语言
+
+![语言设置](./images/setting_language.webp)
 
 FlexKVM 支持多种语言，可通过下拉框切换：
 
@@ -12,6 +12,8 @@ FlexKVM 支持多种语言，可通过下拉框切换：
 - 英文
 
 ## 主题
+
+![主题设置](./images/setting_theme.webp)
 
 FlexKVM 支持三种主题：
 

@@ -30,6 +30,24 @@
 
     [:octicons-arrow-right-24: 开始加固](scenarios/security.md)
 
+- **:material-folder-move: 文件传输**
+
+    通过 TF 卡和 USB 导出，把文件送进或取出被控设备。
+
+    [:octicons-arrow-right-24: 开始操作](scenarios/file-transfer.md)
+
+- **:material-power-cycle: 电源控制**
+
+    远程开机、关机、重启，配合 ATX 和 WoL 完整控制电源。
+
+    [:octicons-arrow-right-24: 开始操作](scenarios/power-control.md)
+
+- **:material-tools: 日常运维**
+
+    升级固件、审计记录、重启恢复等日常操作清单。
+
+    [:octicons-arrow-right-24: 开始操作](scenarios/daily-ops.md)
+
 </div>
 
 ---
@@ -39,6 +57,12 @@
 FlexKVM 硬件规格、接线与配件参考：
 
 <div class="grid cards" markdown>
+
+- **:material-package-variant-closed: 包装清单**
+
+    开箱配件一览，确认收货内容
+
+    [:octicons-arrow-right-24: 查看](hardware/packet.md)
 
 - **:material-connection: 接口说明**
 
@@ -84,6 +108,8 @@ FlexKVM 硬件规格、接线与配件参考：
 
 远程桌面顶部的操作按钮，用于操控被控主机：
 
+![FlexKVM 桌面](../images/flexkvm_desktop.webp)
+
 <div class="grid cards" markdown>
 
 - **:material-monitor: 远程画面**
@@ -116,7 +142,7 @@ FlexKVM 硬件规格、接线与配件参考：
 
     [:octicons-arrow-right-24: 查看](toolbar/record.md)
 
-- **:material-power: ATX 电源控制**
+- **:material-power: 外设**
 
     远程开关机、强制关机、重启
 
@@ -128,7 +154,7 @@ FlexKVM 硬件规格、接线与配件参考：
 
     [:octicons-arrow-right-24: 查看](toolbar/wakeonlan.md)
 
-- **:material-harddisk: 硬盘挂载**
+- **:material-harddisk: 镜像**
 
     TF 卡文件管理，虚拟光驱/USB 导出
 
@@ -140,7 +166,7 @@ FlexKVM 硬件规格、接线与配件参考：
 
     [:octicons-arrow-right-24: 查看](toolbar/audio.md)
 
-- **:material-chip: 外设 IO**
+- **:material-chip: IO**
 
     GPIO 引脚控制和 UART 串口终端
 
@@ -206,11 +232,47 @@ FlexKVM 硬件规格、接线与配件参考：
 
 <div class="grid cards" markdown>
 
+- **:material-clock: 时间设置**
+
+    时区配置、NTP 同步
+
+    [:octicons-arrow-right-24: 查看](settings/system/time.md)
+
+- **:material-monitor-star: OLED 显示**
+
+    屏幕亮度、息屏时间设置
+
+    [:octicons-arrow-right-24: 查看](settings/system/oled.md)
+
+- **:material-led-outline: LED设置**
+
+    FlexKVM 设备上 LED的开关控制
+
+    [:octicons-arrow-right-24: 查看](settings/system/led.md)
+
+- **:material-monitor-screenshot: EDID 配置**
+
+    EDID（显示器识别数据）自定义管理，解决分辨率/兼容性问题
+
+    [:octicons-arrow-right-24: 查看](settings/system/edid.md)
+
 - **:material-usb: USB 配置**
 
     模拟 USB 键盘/鼠标/存储设备，自定义设备类型与参数
 
     [:octicons-arrow-right-24: 查看](settings/system/usb.md)
+
+- **:material-camera-burst: 截图设置**
+
+    截图默认格式与画质配置
+
+    [:octicons-arrow-right-24: 查看](settings/system/screenshot.md)
+
+- **:material-video-box: 录像设置**
+
+    录像默认参数与静音录制配置
+
+    [:octicons-arrow-right-24: 查看](settings/system/recording.md)
 
 - **:material-lock: HTTPS 配置**
 
@@ -223,24 +285,6 @@ FlexKVM 硬件规格、接线与配件参考：
     SSH 服务启用与配置
 
     [:octicons-arrow-right-24: 查看](settings/system/ssh.md)
-
-- **:material-monitor-star: OLED 显示**
-
-    屏幕亮度、息屏时间设置
-
-    [:octicons-arrow-right-24: 查看](settings/system/oled.md)
-
-- **:material-clock: 时间设置**
-
-    时区配置、NTP 同步
-
-    [:octicons-arrow-right-24: 查看](settings/system/time.md)
-
-- **:material-monitor-screenshot: EDID 配置**
-
-    EDID（显示器识别数据）自定义管理，解决分辨率/兼容性问题
-
-    [:octicons-arrow-right-24: 查看](settings/system/edid.md)
 
 </div>
 

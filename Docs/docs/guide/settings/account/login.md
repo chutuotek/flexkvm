@@ -23,7 +23,7 @@ FlexKVM 使用 HTTPS 协议保护登录安全，首次访问时需要创建管�
 
 首次访问会显示账户创建界面：
 
-![创建账户](../../../images/flexkvm_create_account.webp)
+![创建账户](../../../images/flexkvm_register.webp)
 
 | 项目 | 要求 | 示例 |
 |------|------|------|

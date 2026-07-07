@@ -4,6 +4,8 @@
 
 进入 **设置 → 系统**，找到截图设置区块。
 
+![screenshot 设置](./images/screenshot/setting_screenshot.webp)
+
 ## 格式
 
 | 选项 | 说明 |
@@ -12,6 +14,8 @@
 | JPG | 有损压缩，文件较小 |
 
 ## 画质
+
+![screenshot jpg 设置](./images/screenshot/setting_screenshot_jpg.webp)
 
 仅对 JPG 格式生效：
 

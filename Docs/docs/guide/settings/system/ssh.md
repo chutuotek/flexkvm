@@ -125,7 +125,7 @@ flexkvm> power status
 Power status: on
 ```
 
-> 注意：电源控制功能需要配合 ATX 电源控制模块使用，详情请参考 [ATX 电源控制](../../toolbar/atx.md)。
+> 注意：电源控制功能需要配合 外设模块使用，详情请参考 [外设](../../toolbar/atx.md)。
 
 ### network
 

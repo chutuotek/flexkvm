@@ -2,7 +2,16 @@
 
 远程唤醒局域网内已关机的设备——就像走过去按下电源键一样，只不过你在千里之外。
 
-![WoL 菜单](./images/wakeonlan/web-wol-menu.webp)
+## 网络唤醒按键
+
+
+| 图标                              | 含义                              |
+| ----------------------------------- | ----------------------------------- |
+| ![](./icon/wol/ethernet-port.svg) | 网络唤醒（WoL），唤醒局域网内设备 |
+
+点击菜单栏中的网口图标打开 WoL 管理菜单。
+
+![WoL 菜单](./images/wol/wol.webp)
 
 ## 前提条件
 
@@ -23,7 +32,7 @@
 
 > 设备名称不能重复，最多添加 5 台。
 
-![添加设备](./images/wakeonlan/web-wol-add.webp)
+![添加设备](./images/wol/wol_add.webp)
 
 ### 唤醒设备
 
@@ -35,11 +44,12 @@
 
 ## 如何查看 MAC 地址
 
-| 系统 | 命令 |
-|------|------|
-| Windows | 打开命令行，输入 `ipconfig /all`，找到"物理地址" |
-| Linux | 打开终端，输入 `ip addr` 或 `ifconfig` |
-| macOS | 打开终端，输入 `ifconfig` |
+
+| 系统    | 命令                                            |
+| --------- | ------------------------------------------------- |
+| Windows | 打开命令行，输入`ipconfig /all`，找到"物理地址" |
+| Linux   | 打开终端，输入`ip addr` 或 `ifconfig`           |
+| macOS   | 打开终端，输入`ifconfig`                        |
 
 ## 常见问题
 

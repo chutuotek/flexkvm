@@ -22,7 +22,7 @@ FlexKVM 内置了一个多分辨率 EDID 和多个固定分辨率 EDID，同时�
 
 在菜单栏中点击屏幕按键，弹出屏幕菜单后点击 EDID 选择器即可切换，如下图所示：
 
-![EDID 切换](../../toolbar/images/screen/web-screen-edid.webp)
+![EDID 切换](../../toolbar/images/screen/remote_edid.webp)
 
 如果用户上传了自定义 EDID，列表中会额外出现 **custom** 选项。
 
@@ -30,15 +30,15 @@ FlexKVM 内置了一个多分辨率 EDID 和多个固定分辨率 EDID，同时�
 
 ## 自定义 EDID
 
-进入 **设置 → 系统**，可以看到 EDID 配置区块：
+进入 **设置 → 系统**，可以看到 EDID 配置区块
 
-![EDID 设置](./images/time_oled_edid_ui.webp)
+![EDID 编辑框](./images/edid/setting_edid.webp)
 
 ### 添加自定义 EDID
 
 点击"自定义 EDID"按钮，会弹出 EDID 编辑框：
 
-![EDID 编辑框](./images/edid/edid_edit.webp)
+![EDID 编辑框](./images/edid/setting_edid_edit.webp)
 
 在编辑框中输入 EDID 原始数据（十六进制 HEX 格式），点击确认即可提交。
 

@@ -4,6 +4,11 @@
     margin: 0 auto;
 }
 
+/* Toolbar icon SVGs — use currentColor strokes rendered via <img>, need manual dark mode adaptation */
+[data-md-color-scheme="slate"] img[src*="/icon/"] {
+    filter: invert(1);
+}
+
 /* Make logo white */
 .md-header__button.md-logo img,
 .md-logo img {

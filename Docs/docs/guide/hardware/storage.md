@@ -22,5 +22,5 @@ TF 卡槽位于设备侧面。装入时请确保金属触点朝向正确（通�
 
 ## 相关文档
 
-- [硬盘挂载（Web 操作）](../toolbar/disk.md)
+- [镜像（Web 操作）](../toolbar/disk.md)
 - [远程重装系统](../scenarios/reinstall-os.md)

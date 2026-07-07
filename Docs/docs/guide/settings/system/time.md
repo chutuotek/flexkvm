@@ -4,7 +4,7 @@
 
 进入 **设置 → 系统**，找到时间设置区块。
 
-![时间设置](./images/time_oled_edid_ui.webp)
+![时间设置](./images/time/setting_time.webp)
 
 ## 设置时区
 
@@ -15,8 +15,6 @@
 | 可选范围 | UTC-12 ~ UTC+14 |
 | 默认值 | UTC+8（北京时间） |
 | 生效方式 | 选择后即时生效 |
-
-![时区选择](./images/time/timezone.webp)
 
 选择器下方会显示当前设备时间，每秒自动刷新：
 

@@ -1,8 +1,8 @@
 # 离线升级
 
-进入"设置" → "升级"，离线升级为第一个区块。
+进入"设置" → "升级"
 
-![升级界面](./images/upgrade_ui.webp)
+![升级界面](./images/setting_ota_offline.webp)
 
 区块内包含两个卡片：
 
@@ -13,9 +13,9 @@
 
 点击上传，选择 OTA 镜像文件。上传时卡片下方显示进度条：
 
-![上传进度条](./images/offline_upload.webp)
+![上传进度条](./images/setting_ota_offline_upload.webp)
 
-> OTA 镜像文件命名为 `update_ota.tar`，上传时注意文件名。
+> OTA 镜像文件命名为 `xxxxx.tar`，上传时注意文件名。
 
 上传成功后，升级卡片从灰色变为可用。
 
@@ -23,11 +23,11 @@
 
 点击升级，弹出上传包验证框：
 
-![升级包验证框](./images/offline_check.webp)
+![升级包验证框](./images/setting_ota_offline_upload.webp)
 
 验证框显示镜像文件的 SHA-256 校验值。确认固件无误后，点击升级，弹出用户验证框：
 
-![用户验证框](./images/ota_verify.webp)
+![用户验证框](../images/setting_verify.webp)
 
 - 输入密码
 - 如已开启 2FA，需输入验证码

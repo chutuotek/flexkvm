@@ -47,9 +47,9 @@
 
 ## 步骤 2：通过工具栏控制电源
 
-在 FlexKVM 桌面界面顶部的工具栏中，点击 **ATX 电源控制** 图标：
+在 FlexKVM 桌面界面顶部的工具栏中，点击 **外设** 图标：
 
-![ATX 电源控制](../toolbar/images/atx/web-atx-menu.webp)
+![外设](../toolbar/images/atx/web-atx-menu.webp)
 
 
 | 操作 | 点击         | 效果                          |
@@ -113,4 +113,4 @@ ATX 控制的是物理开关，WoL 则是通过网络数据包唤醒设备。两
 | WoL 唤不醒       | BIOS 未开启、关机后网口灯灭 | 进入 BIOS 确认 WoL 已开启，检查 ErP 是否关闭 |
 | ATX 控制器不识别 | 排线未插紧                  | 重新插拔 ATX 控制器的 Type-C 排线            |
 
-详细的接线和配置说明见 [ATX 电源控制](../toolbar/atx.md) 和 [网络唤醒 (WoL)](../toolbar/wakeonlan.md)。
+详细的接线和配置说明见 [外设](../toolbar/atx.md) 和 [网络唤醒 (WoL)](../toolbar/wakeonlan.md)。

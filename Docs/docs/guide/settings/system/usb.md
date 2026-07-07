@@ -4,7 +4,7 @@ FlexKVM 通过 USB 连接到被控主机，模拟键盘、鼠标和存储设备�
 
 进入 **设置 → 系统**，找到 USB 配置区块。
 
-![USB 配置](./images/ssh_https_usb.webp)
+![USB 配置](./images/usb/setting_usb.webp)
 
 ## 切换设备标识
 
@@ -18,7 +18,7 @@ FlexKVM 通过 USB 连接到被控主机，模拟键盘、鼠标和存储设备�
 
 点击"自定义设备标识"按钮，弹出配置窗口：
 
-![自定义设备标识](./images/usb/setting.webp)
+![自定义设备标识](./images/usb/setting_usb_add.webp)
 
 需要填写四个字段：
 
