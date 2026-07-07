@@ -146,15 +146,15 @@
 连接后：
 
 - 🔴 **电源灯 [9] 常亮** 
-- 约 2 秒后，**OLED 显示屏 [14]** 显示 FlexKVM logo
+- 约 2 秒后，**OLED 显示屏 [14]** 显示 "楚拓电子" logo
 
-![FlexKVM logo](./images/oled_startup_logo.webp)
+![FlexKVM logo](./images/oled_logo.webp)
 
 - 约 20 秒后（首次启动可能稍长，30 秒内属正常），OLED 进入设备状态界面
 - 🟢 **状态灯 快闪**
 - 🔴 **警告灯 慢闪**
 
-![设备状态显示界面](./images/device_status.webp)
+![设备状态显示界面](./images/oled_init.webp)
 
 > 排查：如果 OLED 无显示或 🔴 电源灯 [9] 不亮，可能是电源适配器供电不足，请使用 5V/1A 以上的适配器。
 >
@@ -171,7 +171,7 @@
 - OLED 状态栏 :material-usb: USB 图标显示已连接（:material-close: 符号消失）
 - 🟢 状态灯 从快闪变为**慢闪**
 
-![连接USB，显示屏显示](./images/usb_connected.webp)
+![连接USB，显示屏显示](./images/oled_usb_connected.webp)
 
 > 排查：如果 🟢 状态灯 仍为快闪，请检查被控设备是否已正常开机、USB 线材是否支持数据传输（包装内三根 USB Type-C 线均支持数据传输；若使用自备线材，请确认其为数据线而非仅充电线，部分仅充电线无法传输键鼠信号）。
 
@@ -186,7 +186,7 @@
 - OLED 状态栏 :material-hdmi-port: HDMI 图标显示已连接（:material-close: 符号消失）
 - 🟢 状态灯 从**慢闪**变为**常亮**
 
-![连接HDMI，显示屏显示](./images/hdmi_connected.webp)
+![连接HDMI，显示屏显示](./images/oled_hdmi_connected.webp)
 
 ---
 
@@ -233,6 +233,8 @@
 - OLED 状态栏网络图标启用，并显示 `waiting`
 - 一般 **5 秒内**自动获取 IP 地址，OLED 显示 IP（如 `E192.168.1.100`，前缀 `E` 表示 Ethernet 有线网络；在浏览器访问时只需输入数字部分，如 `192.168.1.100`,将 192.168.1.100 替换为 OLED 显示的实际IP），🔴 **警告灯** 熄灭。
 
+![连接网线，显示屏显示](./images/oled_eth_connected.webp)
+
 > **长时间未获取 IP 的排查步骤**：
 > 1. 网口灯不亮 → 检查网线两端是否插紧、尝试更换网线
 > 2. 网口灯亮但不闪烁 → 检查路由器端口是否正常、尝试更换端口
@@ -250,17 +252,17 @@
 
 长按**按键 A [3]** 3~6 秒，OLED 显示 AP 图标后 :material-access-point: 松开，进入热点配网模式。
 
-![配网模式](./images/oled_hotspot_mode.webp)
+![配网模式](./images/oled_provision_switch.webp)
 
 > 不到 3 秒不会触发；超过 6 秒则返回主界面。如果误操作，松开按键重试即可。
 
 松开按键后，会进入配网等待界面:
 
-![配网等待界面](./images/oled_hotspot_loading.webp)
+![配网等待界面](./images/oled_provision_start.webp)
 
 等待约 12 秒（设备正在生成 WiFi 热点，请耐心等待），OLED 会显示热点名称、密码和 IP 地址。
 
-![配网界面](./images/oled_hotspot_ready.webp)
+![配网界面](./images/oled_provision.webp)
 
 #### 2. 连接热点
 
@@ -279,17 +281,17 @@
 
 首先，手机连接到 FlexKVM 的热点。
 
-![手机连接热点](./images/phone_connect_wifi.webp)
+![手机连接热点](./images/phone_connect_provision.webp)
 
 然后，手机会自动弹出浏览器门户页，点击"登录到WLAN网络" 或者使用浏览器访问ip地址。
 
-![手机自动弹出浏览器门户页](./images/phone_auto_open_browser.webp)
+![手机自动弹出浏览器门户页](./images/phone_trust_ssl.webp)
 
 点击"信任"或"继续"进入用户登录界面。
 
 > 由于使用自签名证书，浏览器会提示"不安全"或"证书无效"，这是正常现象。各浏览器的跳过方法见下方 [浏览器访问](#浏览器访问) 中的表格。
 
-![手机配网页面](./images/phone_hotspot_web.webp)
+![手机配网页面](./images/web_list_wifi.webp)
 
 #### 3. 连接 WiFi
 
@@ -300,22 +302,23 @@
 在 **WIFI** 卡片中操作：
 
 
-1. 点击要连接的 WiFi，输入密码
-2. 点击**连接**按键
+点击要连接的 WiFi，点击**连接**按键
 
-![手机配网页面](./images/phone_wifi_refresh.webp)
+![手机配网页面](./images/web_connect_wifi.webp)
 
-![输入密码](./images/phone_wifi_connect.webp)
+如果wifi需要密码，输入密码后点击**连接**，（开放wifi会跳过输入密码的步骤）
+
+![输入密码](./images/web_connecting_wifi.webp)
 
 连接成功后，wifi卡片会显示已连接
 
-![手机配网页面](./images/phone_wifi_connect_success.webp)
+![手机配网页面](./images/web_connected_wifi.webp)
 
 #### 4. 退出配网
 
 点击页面右上角的**保存**按钮，设备自动退出配网模式并重启网络。
 
-![退出配网页面](./images/phone_save_exit.webp)
+![退出配网页面](./images/web_save.webp)
 
 确认后，设备会自动退出配网模式并重启网络。
 
