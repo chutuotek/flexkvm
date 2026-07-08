@@ -4,7 +4,7 @@ FlexKVM 通过以太网口连接到局域网，支持 DHCP 和静态 IP 两种�
 
 进入"设置" → "网络"，可以看到有线网络设置区块，如下图所示：
 
-![以太网设置](./images/eth/web-eth-setting.webp)
+![以太网设置](./images/eth/setting_eth.webp)
 
 ## 启用/禁用
 
@@ -33,6 +33,8 @@ FlexKVM 通过以太网口连接到局域网，支持 DHCP 和静态 IP 两种�
 
 ### 详情信息
 
+![以太网详情信息](./images/eth/setting_eth_info.webp)
+
 只读展示当前网络信息：
 
 | 信息项 | 说明 |
@@ -47,7 +49,11 @@ FlexKVM 通过以太网口连接到局域网，支持 DHCP 和静态 IP 两种�
 
 支持两种 IP 获取模式：
 
+![以太网 DHCP](./images/eth/setting_eth_static_off.webp)
+
 **DHCP（默认）**：由路由器自动分配 IP 地址、网关和 DNS，无需手动配置。
+
+![以太网 STATIC](./images/eth/setting_eth_static_on.webp)
 
 **静态 IP**：手动设置固定的网络参数。
 
@@ -61,6 +67,8 @@ FlexKVM 通过以太网口连接到局域网，支持 DHCP 和静态 IP 两种�
 | DNS3 | 第二备用 DNS 服务器 | 否 |
 
 > 注意：切换为静态 IP 模式后请确保参数与当前网络环境兼容，否则可能导致设备断网。
+
+点击"保存"按钮保存配置，并自动生效。
 
 ### 配置验证
 
@@ -78,7 +86,12 @@ FlexKVM 通过以太网口连接到局域网，支持 DHCP 和静态 IP 两种�
 
 支持自定义网络接口的 MAC 地址。
 
-- **默认状态**：使用设备出厂 MAC 地址
-- **自定义 MAC**：格式为 `AA:BB:CC:DD:EE:FF`（6 组十六进制数，以冒号分隔）
+![以太网 mac off](./images/eth/setting_eth_mac_off.webp)
+
+**默认状态**：使用设备出厂 MAC 地址，mac地址会在设备包装盒上标明。
+
+![以太网 mac on](./images/eth/setting_eth_mac_setting.webp)
+
+**自定义 MAC**：格式为 `AA:BB:CC:DD:EE:FF`（6 组十六进制数，以冒号分隔）
 
 > 警告：修改 MAC 地址可能导致网络连接中断。部分路由器可能拒绝识别新的 MAC 地址，请谨慎使用。MAC 地址修改后立即生效，无需重启设备。

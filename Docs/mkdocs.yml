@@ -172,7 +172,6 @@ nav:
         - 以太网: guide/settings/network/eth.md
         - WiFi: guide/settings/network/wifi.md
         - 热点模式: guide/settings/network/ap.md
-        - 热点配网: guide/settings/network/ap_province.md
       - 系统:
         - 时间设置: guide/settings/system/time.md
         - OLED 显示: guide/settings/system/oled.md

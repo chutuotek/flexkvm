@@ -4,13 +4,7 @@ Tailscale 是一款基于 WireGuard 的零配置 VPN 组网工具，可以将 Fl
 
 进入"设置" → "应用中心"，可以看到 Tailscale 配置区块，如下图所示：
 
-![Tailscale 设置](./images/tailscale/web-tailscale-setting.webp)
-
-## 安装
-
-Tailscale 应用默认已经安装，无需手动安装。
-
-> 注意：FlexKVM 在启动时会校验应用签名和文件完整性。校验失败将无法使用 Tailscale 功能。
+![Tailscale 设置](./images/tailscale/setting_tailscale.webp)
 
 ## 启用服务
 
@@ -21,8 +15,6 @@ Tailscale 应用默认已经安装，无需手动安装。
 | 默认状态 | 关闭 |
 | 生效方式 | 点击开关后立即生效 |
 
-![Tailscale 开关](./images/tailscale/web-tailscale-enable.webp)
-
 启用后可以在描述文字中看到 Tailscale 版本号。
 
 > 提示：如果 Tailscale 应用未安装，开关将不可用，界面会显示"Tailscale 不可用"的提示。
@@ -31,13 +23,25 @@ Tailscale 应用默认已经安装，无需手动安装。
 
 启用 Tailscale 服务后，点击"登录状态"按钮开始登录流程：
 
-![Tailscale 登录](./images/tailscale/web-tailscale-login.webp)
+![Tailscale 登录按键](./images/tailscale/setting_tailscale_wait.webp)
 
-系统会执行 `tailscale login` 命令，界面会显示一条登录链接：
+点击登录按键，会在获取登录链接，需要等待几秒钟获取。
 
-![登录链接](./images/tailscale/web-tailscale-link.webp)
+![Tailscale 登录链接](./images/tailscale/setting_tailscale_login.webp)
 
-在浏览器中打开该链接，完成 Tailscale 账号的授权认证。登录超时时间为 600 秒。
+点击登录链接，会创建一个新网页,需要根据你的环境选择登录。
+
+![Tailscale 登录账号](./images/tailscale/setting_tailscale_login_web.webp)
+
+完成账号登录后，点击"Connect"按钮，允许设备组网
+
+![Tailscale 连接](./images/tailscale/setting_tailscale_connect.webp)
+
+组网成功后会返回tailscale 管理界面，显示当前设备已加入 Tailscale 网络。
+
+这时设备已经成功登录，可以正常使用 Tailscale 提供的远程访问功能。
+
+![Tailscale 登录成功](./images/tailscale/setting_tailscale_scuess.webp)
 
 > 提示：登录过程中可以随时关闭页面，登录操作在后台异步执行。
 
@@ -52,8 +56,6 @@ Tailscale 应用默认已经安装，无需手动安装。
 | Tailscale IP | 分配的 Tailscale IP 地址（100.x.x.x） |
 | 连接状态 | 在线 / 离线 |
 | 密钥到期时间 | Tailscale 节点密钥的到期日期和时间 |
-
-![连接信息](./images/tailscale/web-tailscale-info.webp)
 
 点击右上角的刷新按钮可以更新连接状态。
 

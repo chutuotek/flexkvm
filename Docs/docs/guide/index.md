@@ -220,12 +220,6 @@ FlexKVM 硬件规格、接线与配件参考：
 
     [:octicons-arrow-right-24: 查看](settings/network/ap.md)
 
-- **:material-cellphone-wireless: 热点配网**
-
-    通过手机/电脑连接 FlexKVM 热点，为设备配置 WiFi 网络
-
-    [:octicons-arrow-right-24: 查看](settings/network/ap_province.md)
-
 </div>
 
 ### 系统
