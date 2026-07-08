@@ -16,7 +16,7 @@
 2. 用手机验证器应用（Google Authenticator / Microsoft Authenticator）扫描显示的二维码
 3. 输入验证器显示的 6 位验证码完成绑定
 
-![2FA设置](../../images/2fa-gen.webp)
+![2FA设置](../settings/account/images/2fa-gen.webp)
 
 绑定后每次登录都需要输入 6 位动态验证码。
 

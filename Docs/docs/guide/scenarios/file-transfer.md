@@ -45,7 +45,7 @@ FlexKVM 支持两种 USB 导出模式，选哪个取决于你要传什么：
 
 在 FlexKVM 工具栏中点击 **镜像** 图标，进入镜像管理界面：
 
-![镜像菜单](../toolbar/images/disk/web-image-menu.webp)
+![镜像菜单](../toolbar/images/disk/disk.webp)
 
 1. 在"选择分区"下拉框中选中 TF 卡分区
 2. 点击 **共享** 按钮

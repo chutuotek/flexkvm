@@ -2,6 +2,8 @@
 
 FlexKVM 内置 SSH 服务器，支持通过 SSH 客户端远程登录设备进行带外管理（OOB Management）。
 
+SSH 采用密码认证（不支持密钥），同一时间只允许一个会话连接。登录失败超过 3 次将自动断开连接，防止暴力破解。
+
 ## 前置条件
 
 使用 SSH 登录前，请确保：
@@ -10,11 +12,11 @@ FlexKVM 内置 SSH 服务器，支持通过 SSH 客户端远程登录设备进�
 2. **SSH 服务已启用**：默认启用，可在设置中关闭
 3. **网络已连接**：设备已通过以太网或 WiFi 连接到网络
 
-![SSH 设置](./images/ssh/web-ssh-setting.webp)
-
 ## 启用 SSH
 
 进入 **设置 → 系统**，可以看到 SSH 设置区块。点击开关即可开启或关闭 SSH 服务。
+
+![SSH 设置](./images/ssh/setting_ssh.webp)
 
 > 注意：SSH 服务默认启用，监听端口为 **22**。关闭后所有已连接的 SSH 会话将被断开。
 
@@ -34,40 +36,20 @@ ssh <用户名>@<设备IP地址>
 
 **两步验证**：如果账号开启了 2FA，登录时会分两步：
 
-1. 输入密码 → 密码正确后，提示输入验证码
+1. 输入密码 → 密码正确后，提示输入 TOTP 验证码
 2. 输入 6 位 TOTP 验证码（或 8 位备用码）→ 验证通过后进入管理界面
 
 > 未开启 2FA 的账号只需输入密码即可登录。
 
 连接成功后，会进入 FlexKVM 的 SSH 管理界面：
 
-![SSH 终端](./images/ssh/web-ssh-terminal.webp)
-
 ```
-FlexKVM SSH OOB Management
-Version: 1.0
+flexkvm-6jzdd SSH OOB Management
+Version: 1.1
 Type 'help' for available commands.
 
-flexkvm>
+admin@flexkvm-6jzdd#
 ```
-
-## 权限系统
-
-SSH 命令分为两个权限等级：
-
-| 权限等级 | 说明 |
-|:---:|------|
-| 查看权限 | 可执行查看类命令，如 `system`、`diag`、`help` |
-| 控制权限 | 可执行所有命令，包括电源控制、网络配置等 |
-
-用户角色与权限的对应关系：
-
-| 角色 | 权限范围 |
-|:---:|------|
-| 管理员 | 拥有查看权限和控制权限，可执行所有命令 |
-| 普通用户 | 仅拥有查看权限，无法执行控制类命令 |
-
-> 注意：普通用户执行 `help` 时只会显示有权限的命令，控制类命令会被隐藏。
 
 ## 可用命令
 
@@ -78,18 +60,20 @@ SSH 命令分为两个权限等级：
 显示可用命令列表及简要说明。
 
 ```
-flexkvm> help
+admin@flexkvm-6jzdd# help
 Available commands:
 
   power      Power control: on/off/reboot/status
-  network    Network management: show/config
-  media      Virtual media: mount/unmount/list
-  diag       Diagnosis: logs/status/info
+  network    Network management: show
+  media      Virtual media: list
+  diag       Diagnosis: info/status
   system     System information: version/info
+  reset      Factory reset: reset/reset all
   help       Show available commands
   exit       Exit SSH session
 
 Type 'help <command>' for detailed usage.
+admin@flexkvm-6jzdd#
 ```
 
 ### system
@@ -102,58 +86,76 @@ Type 'help <command>' for detailed usage.
 | `system version` | 仅显示版本号 |
 
 ```
-flexkvm> system info
+admin@flexkvm-6jzdd# system info
 FlexKVM IP-KVM System
-Version: v0.1.0
-SSH Module: v1.0 (OOB Management)
+Version: v0.1.2
+SSH Module: v1.1 (OOB Management)
 Port: 22
+```
+
+```
+admin@flexkvm-6jzdd# system version
+FlexKVM Version: v0.1.2
 ```
 
 ### power
 
-远程电源控制命令。
+远程电源控制命令，需要配合 ATX 外设模块使用。
 
 | 子命令 | 说明 |
 |------|------|
-| `power on` | 远程开机 |
-| `power off` | 远程关机 |
-| `power reboot` | 远程重启 |
-| `power status` | 查看电源状态 |
+| `power on` | 远程开机（短按电源键） |
+| `power off` | 远程关机（长按电源键） |
+| `power reboot` | 远程重启（短按复位键） |
+| `power status` | 查看电源状态和 ATX 信息 |
 
 ```
-flexkvm> power status
-Power status: on
+admin@flexkvm-6jzdd# power status
+=== Power Status ===
+ATX Device:  connected
+Power LED:   ON
+HDD LED:     ON
+Power SW:    released
+Reset SW:    released
+Short press: 200 ms
+Long press:  1000 ms
 ```
 
-> 注意：电源控制功能需要配合 外设模块使用，详情请参考 [外设](../../toolbar/atx.md)。
+> 注意：电源控制功能需要配合外设模块使用，详情请参考 [外设](../../toolbar/atx.md)。
 
 ### network
 
-网络配置管理命令。
+查看网络配置信息。
 
 | 子命令 | 说明 |
 |------|------|
-| `network show` | 查看当前网络配置 |
+| `network show` | 查看当前网络配置（WiFi / 以太网状态） |
 
 ```
-flexkvm> network show
-Network config:
-  Interface: eth0
-  Mode: dhcp
-  IP: 192.168.1.100
-  Netmask: 255.255.255.0
-  Gateway: 192.168.1.1
+admin@flexkvm-6jzdd# network show
+=== WiFi (wlan0) ===
+Status:  down
+MAC:     78:16:5D:11:10:01
+DHCP:    no
 ```
 
 ### media
 
-虚拟媒体管理命令。
+查看虚拟媒体状态。
 
 | 子命令 | 说明 |
 |------|------|
-| `media list` | 列出已挂载的虚拟媒体 |
-| `media mount` | 挂载虚拟媒体 |
-| `media unmount` | 卸载虚拟媒体 |
+| `media list` | 查看虚拟媒体状态（类型、挂载信息） |
+
+```
+admin@flexkvm-6jzdd# media list
+=== Virtual Media ===
+Status:      enabled
+Media type:  Flash
+Write mode:  read-write
+Mounted:     no
+Image path:  (not set)
+```
 
 > 提示：虚拟媒体功能需要配合 USB 配置使用，详情请参考 [USB 配置](usb.md)。
 
@@ -164,15 +166,50 @@ Network config:
 | 子命令 | 说明 |
 |------|------|
 | `diag info` | 查看系统信息 |
-| `diag status` | 查看硬件状态 |
-| `diag logs` | 查看系统日志 |
+| `diag status` | 查看硬件状态（ATX 电源、以太网连接） |
+
+```
+admin@flexkvm-6jzdd# diag info
+=== System Information ===
+Product:  FlexKVM IP-KVM
+Version:  v0.1.2
+SSH Port: 22
+```
+
+```
+admin@flexkvm-6jzdd# diag status
+=== Hardware Status ===
+ATX Power:  connected
+Power LED:  ON
+HDD LED:    ON
+```
+
+### reset
+
+恢复出厂设置命令（需要密码二次验证）。
+
+| 子命令 | 说明 |
+|------|------|
+| `reset` | 恢复出厂设置，**保留审计日志** |
+| `reset all` | 深度恢复出厂设置，**清除所有数据包括审计日志** |
+
+执行 `reset` 或 `reset all` 后，系统会要求输入当前用户的密码进行二次确认，验证通过后才会执行恢复操作。
+
+```
+admin@flexkvm-6jzdd# reset
+
+--- Password Verification ---
+Enter password to confirm:
+```
+
+> 注意：恢复出厂设置操作不可撤销，执行前请确认。
 
 ### exit
 
 退出当前 SSH 会话。
 
 ```
-flexkvm> exit
+admin@flexkvm-6jzdd# exit
 Goodbye!
 ```
 
@@ -185,7 +222,7 @@ SSH 终端支持以下键盘操作：
 | 快捷键 | 功能 |
 |:---:|------|
 | `Tab` | 命令自动补全 |
-| `↑` / `↓` | 浏览命令历史记录 |
+| `↑` / `↓` | 浏览命令历史记录（最多 32 条） |
 | `Ctrl+A` | 光标移动到行首 |
 | `Ctrl+E` | 光标移动到行尾 |
 | `Ctrl+K` | 删除光标到行尾的内容 |
@@ -196,32 +233,3 @@ SSH 终端支持以下键盘操作：
 
 > 提示：命令历史最多保存 32 条记录，重复命令不会重复添加。
 
-## 安全机制
-
-SSH 服务内置了多层安全保护：
-
-### 认证保护
-
-- **密码哈希验证**：使用 SHA256 加盐哈希验证密码，不存储明文密码
-- **认证尝试限制**：默认最多允许 3 次认证尝试（可配置范围 1~10 次）
-- **指数退避延迟**：认证失败后自动增加等待时间，防止暴力破解
-- **认证超时**：认证阶段最长等待 60 秒，超时后自动断开连接
-
-### 会话保护
-
-- **单会话限制**：同一时间只允许一个 SSH 会话，新连接会被拒绝
-- **会话锁定**：使用互斥锁保护会话状态，防止竞态条件
-
-### 主机密钥
-
-首次连接时系统自动生成主机密钥，用于验证设备身份，无需手动配置。
-
-### 审计记录
-
-所有 SSH 登录尝试和操作都会记录到审计日志中，包括：
-
-- 认证成功/失败事件
-- SSH 服务的启用和禁用操作
-- 命令执行记录
-
-详情请参考 [审计日志](../maintenance/audit.md)。

@@ -4,7 +4,7 @@ FlexKVM 设备本身带有一块 OLED 屏幕，用于显示设备状态信息（
 
 进入 **设置 → 系统**，找到 OLED 设置区块。
 
-![OLED 设置](./images/setting_oled.webp)
+![OLED 设置](./images/oled/setting_oled.webp)
 
 ## 亮度
 
