@@ -1,5 +1,7 @@
 repo_name: chutuotek/flexkvm
 repo_url: https://github.com/chutuotek/flexkvm
+exclude_docs: |
+  *.png
 
 site_name: FlexKVM Docs
 site_description: Documentation for FlexKVM Productions
@@ -66,19 +68,58 @@ plugins:
             外网远程访问: Remote Access
             日常运维: Daily Operations
             安全加固: Security Hardening
-            问题反馈与建议: Feedback & Suggestions
+            电源控制: Power Control
+            文件传输: File Transfer
+            问题反馈: Feedback
+            网络: Network
+            以太网: Ethernet
+            WiFi: Wi-Fi
+            热点模式: AP Mode
+            Tailscale 异地组网: Tailscale VPN
+            网络唤醒 (WoL): Wake-on-LAN (WoL)
+            HTTPS 证书: HTTPS Certificate
+            SSH 远程访问: SSH Remote Access
+            远程画面: Remote Display
+            查看远程画面: View Remote Screen
+            截图: Screenshot
+            录像: Recording
+            键盘与鼠标: Keyboard & Mouse
+            鼠标: Mouse
+            键盘: Keyboard
+            音频: Audio
+            存储与镜像: Storage & ISO Image
+            TF 卡管理: TF Card Management
+            ISO 镜像挂载: ISO Image Mount
+            外设: Peripherals
+            ATX 电源控制: ATX Power Control
+            系统配置: System Configuration
+            关于设备: About Device
+            账号与安全: Account & Security
+            登录管理: Login Management
+            账号安全: Account Security
+            外观与显示: Appearance & Display
+            时间与日期: Time & Date
+            USB 配置: USB Configuration
+            固件升级: Firmware Upgrade
+            在线升级: Online Upgrade
+            离线升级: Offline Upgrade
+            维护与诊断: Maintenance & Diagnostics
+            系统日志: System Logs
+            操作审计: Audit Logs
+            重启与重置: Reboot & Reset
+            扩展 IO: Peripheral IO
+            UART 串口终端: UART Serial Terminal
+            GPIO 引脚控制: GPIO Control
+            硬件参考: Hardware Reference
+            包装清单: Package Contents
+            接口说明: Interface Overview
+            物理与电气特性: Specifications
+            拓展配件: Accessories & Expansion
             社区与联系: Community & Contact
             建议反馈: Feedback
             用户社群: Community
             联系我们: Contact
-            远程画面: Remote Video
-            音频: Audio
-            IO: Peripheral IO
             LED 设置: LED Settings
-            截图设置: Screenshot Settings
-            录像设置: Recording Settings
-            ATX 硬件接线: ATX Wiring
-            TF 卡与存储: TF Card & Storage
   - git-revision-date-localized:
       type: datetime
       timezone: Asia/Shanghai
@@ -145,52 +186,51 @@ nav:
       - 文件传输: guide/scenarios/file-transfer.md
       - 电源控制: guide/scenarios/power-control.md
       - 日常运维: guide/scenarios/daily-ops.md
-    - 产品信息:
-      - 包装清单: guide/hardware/packet.md
-      - 接口说明: guide/hardware/interface.md
-      - 物理与电气特性: guide/hardware/characteristics.md
-      - ATX 硬件接线: guide/hardware/atx-wiring.md
-      - TF 卡与存储: guide/hardware/storage.md
-      - 拓展: guide/hardware/extensibility.md
-    - 工具栏:
-      - 远程画面: guide/toolbar/screen.md
-      - 鼠标: guide/toolbar/mouse.md
-      - 键盘: guide/toolbar/keyboard.md
-      - 截图: guide/toolbar/screenshot.md
-      - 录像: guide/toolbar/record.md
-      - 外设: guide/toolbar/atx.md
-      - 网络唤醒 (WoL): guide/toolbar/wakeonlan.md
-      - 镜像: guide/toolbar/disk.md
-      - 音频: guide/toolbar/audio.md
-      - IO: guide/toolbar/io.md
-    - 设置:
-      - 账号:
-        - 登录: guide/settings/account/login.md
-        - 账号管理: guide/settings/account/account.md
-      - 网络:
-        - 以太网: guide/settings/network/eth.md
-        - WiFi: guide/settings/network/wifi.md
-        - 热点模式: guide/settings/network/ap.md
-      - 系统:
-        - 时间设置: guide/settings/system/time.md
-        - OLED 显示: guide/settings/system/oled.md
-        - LED 设置: guide/settings/system/led.md
-        - EDID 配置: guide/settings/system/edid.md
-        - USB 配置: guide/settings/system/usb.md
-        - 截图设置: guide/settings/system/screenshot.md
-        - 录像设置: guide/settings/system/recording.md
-        - HTTPS 配置: guide/settings/system/https.md
-        - SSH 远程访问: guide/settings/system/ssh.md
-      - 主题与语言: guide/settings/theme/theme.md
-      - 升级:
-        - 离线升级: guide/settings/upgrade/ota_offline.md
-        - 在线升级: guide/settings/upgrade/ota_online.md
-      - 维护:
-        - 日志: guide/settings/maintenance/log.md
-        - 审计: guide/settings/maintenance/audit.md
-        - 重启与重置: guide/settings/maintenance/power_reset.md
-      - 应用中心:
-        - Tailscale: guide/settings/app/tailscale.md
+      - 问题反馈: guide/scenarios/feedback.md
+    - 网络:
+      - 以太网: guide/network/eth.md
+      - WiFi: guide/network/wifi.md
+      - 热点模式: guide/network/ap.md
+      - Tailscale 异地组网: guide/network/tailscale.md
+      - 网络唤醒 (WoL): guide/network/wol.md
+      - HTTPS 证书: guide/network/https.md
+      - SSH 远程访问: guide/network/ssh.md
+    - 远程画面:
+      - 查看远程画面: guide/display/screen.md
+      - 截图: guide/display/screenshot.md
+      - 录像: guide/display/recording.md
+    - 键盘与鼠标:
+      - 鼠标: guide/input/mouse.md
+      - 键盘: guide/input/keyboard.md
+    - 音频: guide/audio/index.md
+    - 存储与镜像:
+      - TF 卡管理: guide/storage/tf-card.md
+      - ISO 镜像挂载: guide/storage/disk.md
+    - 外设:
+      - ATX 电源控制: guide/peripherals/atx/index.md
+    - 系统配置:
+      - 关于设备: guide/system/about.md
+      - 账号与安全:
+        - 登录管理: guide/system/account/login.md
+        - 账号安全: guide/system/account/account.md
+      - 外观与显示: guide/system/appearance.md
+      - 时间与日期: guide/system/time.md
+      - USB 配置: guide/system/usb.md
+      - 固件升级:
+        - 在线升级: guide/system/upgrade/online.md
+        - 离线升级: guide/system/upgrade/offline.md
+      - 维护与诊断:
+        - 系统日志: guide/system/maintenance/log.md
+        - 操作审计: guide/system/maintenance/audit.md
+        - 重启与重置: guide/system/maintenance/reset.md
+    - 扩展 IO:
+      - UART 串口终端: guide/io/uart.md
+      - GPIO 引脚控制: guide/io/gpio.md
+  - 硬件参考:
+    - 包装清单: guide/hardware/packet.md
+    - 接口说明: guide/hardware/interface.md
+    - 物理与电气特性: guide/hardware/characteristics.md
+    - 拓展配件: guide/hardware/extensibility.md
   - 常见问题与排查:
     - 常见问题与排查: support/index.md
     - 常见问题: support/faq/index.md

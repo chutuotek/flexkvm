@@ -209,9 +209,19 @@ compress_files() {
     echo -e "${BLUE}$(format_size $before_size) -> $(format_size $after_size) (saved $ratio%)${NC}"
 }
 
+strip_png_from_site() {
+    local target_dir="${1:-$SITE_DIR}"
+    local count=$(find "$target_dir" -name '*.png' -type f 2>/dev/null | wc -l)
+    if [ "$count" -gt 0 ]; then
+        find "$target_dir" -name '*.png' -type f -delete 2>/dev/null
+        echo -e "${BLUE}Removed $count PNG files from $target_dir${NC}"
+    fi
+}
+
 build_site() {
     echo -e "${GREEN}=== Building site ===${NC}"
     mkdocs build || { echo -e "${YELLOW}Build failed!${NC}"; exit 1; }
+    strip_png_from_site
     print_summary
 }
 
@@ -298,6 +308,8 @@ mike_deploy() {
     cp -r "$temp_dir" out
 
     git worktree remove "$temp_dir" 2>/dev/null || rm -rf "$temp_dir"
+
+    strip_png_from_site out
 
     # Create redirect index.html at root
     cat > out/index.html << 'EOF'
