@@ -134,7 +134,7 @@
 
 - **:material-console: SSH 远程访问**
 
-    通过 SSH 命令行登入 FlexKVM
+    通过 SSH 命令行进行带外管理（OOB）
 
     [:octicons-arrow-right-24: 查看](network/ssh.md)
 
