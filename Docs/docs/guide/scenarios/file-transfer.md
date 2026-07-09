@@ -107,3 +107,7 @@ FlexKVM 支持两种 USB 导出模式，选哪个取决于你要传什么：
 | 传驱动光盘镜像 | 文件共享 | `.iso` 驱动光盘 |
 
 详细操作说明见 [镜像](../storage/disk.md)。
+
+---
+
+[:octicons-arrow-left-24: 返回用户指南](../index.md)

@@ -35,7 +35,7 @@
 
 ![文件下载进度条](./images/maintenance_log_progress.webp)
 
-进度条到达 100% 且校验通过后，文件保存到所选目录。文件命名格式：`log-YYYY-MM-DDTHH-MM-SS.tar.gz`
+进度条到达 100% 且校验通过后，文件保存到所选目录。如果校验失败，请重新下载。文件命名格式：`log-YYYY-MM-DDTHH-MM-SS.tar.gz`
 
 - YYYY：年
 - MM：月
@@ -51,3 +51,7 @@
 用于下载当前浏览器的日志，供设备厂商调试。
 
 点击"WEB 日志"卡片，日志文件自动下载到浏览器下载目录，文件名为 `flexkvm-web-xxxxxxxxx.log`（`xxxxxxxxx` 为时间戳）。
+
+---
+
+[:octicons-arrow-left-24: 返回用户指南](../../index.md)
