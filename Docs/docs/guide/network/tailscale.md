@@ -73,3 +73,7 @@ Tailscale 是一款基于 WireGuard 的零配置 VPN 组网工具，可以将 Fl
 - **SSH 管理**：通过 `ssh <用户名>@<Tailscale-IP>` 远程登录
 
 > 提示：Tailscale 可以穿透 NAT 和防火墙，即使 FlexKVM 和访问端不在同一局域网也能建立连接。非常适合在外网环境下安全访问设备。
+
+---
+
+[:octicons-arrow-left-24: 返回用户指南](../index.md)

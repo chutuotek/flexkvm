@@ -46,3 +46,7 @@ FlexKVM 的 USB 连接包含以下功能模块：
 | 大容量存储 | USB Mass Storage，用于虚拟媒体挂载 |
 
 > USB 设备标识的修改会影响所有上述功能模块。
+
+---
+
+[:octicons-arrow-left-24: 返回用户指南](../../index.md)

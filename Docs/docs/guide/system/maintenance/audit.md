@@ -38,3 +38,7 @@
 进度条到达 100% 且校验通过后，文件保存到所选目录。文件命名格式：`audit-log-{ISO时间戳}.log`
 
 例如：`audit-log-2026-05-19T09-33-10.log`
+
+---
+
+[:octicons-arrow-left-24: 返回用户指南](../../index.md)

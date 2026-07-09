@@ -135,3 +135,7 @@ FlexKVM 支持通过 WiFi 连接到无线网络，可以扫描周围的 WiFi 网
 1. 调整 FlexKVM 或路由器的位置
 2. 使用 WiFi 信号放大器
 3. 改用以太网有线连接
+
+---
+
+[:octicons-arrow-left-24: 返回用户指南](../index.md)

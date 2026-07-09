@@ -129,3 +129,7 @@ FlexKVM 通电启动后，打开 Web 界面的外设菜单，如果设备名显�
 
 **ATX 控制器不识别？**
 → 重新插拔 ATX 控制器的 Type-C 排线，确认 OLED 上显示 ATX 图标。
+
+---
+
+[:octicons-arrow-left-24: 返回用户指南](../../index.md)
