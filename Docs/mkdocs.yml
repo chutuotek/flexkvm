@@ -112,7 +112,7 @@ plugins:
             扩展 IO: Peripheral IO
             UART 串口终端: UART Serial Terminal
             GPIO 引脚控制: GPIO Control
-            硬件参考: Hardware Reference
+            硬件参考: Product Overview
             包装清单: Package Contents
             接口说明: Interface Overview
             物理与电气特性: Specifications
@@ -181,6 +181,11 @@ nav:
   - 快速入门: quick_start/index.md
   - 用户指南:
     - 用户指南: guide/index.md
+    - 产品概览:
+      - 包装清单: guide/product/packet.md
+      - 接口说明: guide/product/interface.md
+      - 物理与电气特性: guide/product/characteristics.md
+      - 拓展配件: guide/product/extensibility.md
     - 场景向导:
       - 远程重装系统: guide/scenarios/reinstall-os.md
       - 外网远程访问: guide/scenarios/remote-access.md
@@ -230,11 +235,6 @@ nav:
     - 扩展 IO:
       - UART 串口终端: guide/io/uart.md
       - GPIO 引脚控制: guide/io/gpio.md
-  - 硬件参考:
-    - 包装清单: guide/hardware/packet.md
-    - 接口说明: guide/hardware/interface.md
-    - 物理与电气特性: guide/hardware/characteristics.md
-    - 拓展配件: guide/hardware/extensibility.md
   - 常见问题与排查:
     - 常见问题与排查: support/index.md
     - 常见问题: support/faq/index.md

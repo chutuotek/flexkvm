@@ -6,7 +6,7 @@
 
 ---
 
-## 硬件参考
+## 产品概览
 
 产品规格、接口定义与配件信息。
 
@@ -16,25 +16,25 @@
 
     开箱配件一览，确认收货内容
 
-    [:octicons-arrow-right-24: 查看](hardware/packet.md)
+    [:octicons-arrow-right-24: 查看](product/packet.md)
 
 - **:material-connection: 接口说明**
 
     产品接口规格与指示灯状态
 
-    [:octicons-arrow-right-24: 查看](hardware/interface.md)
+    [:octicons-arrow-right-24: 查看](product/interface.md)
 
 - **:material-thermometer: 物理与电气特性**
 
     电源、功耗、尺寸与环境参数
 
-    [:octicons-arrow-right-24: 查看](hardware/characteristics.md)
+    [:octicons-arrow-right-24: 查看](product/characteristics.md)
 
 - **:material-puzzle: 拓展配件**
 
     磁吸背板 / 导轨卡扣 / PoE 供电 / DIY 背板
 
-    [:octicons-arrow-right-24: 查看](hardware/extensibility.md)
+    [:octicons-arrow-right-24: 查看](product/extensibility.md)
 
 </div>
 

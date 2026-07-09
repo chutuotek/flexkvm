@@ -74,7 +74,7 @@
 
 以下是快速上手过程中会用到的接口，了解它们的位置和用途即可。
 
-![FlexKVM 正面接口](../guide/hardware/images/flexkvm_interface_1.webp)
+![FlexKVM 正面接口](../guide/product/images/flexkvm_interface_1.webp)
 
 | 编号 | 名称 | 说明 |
 |:----:|------|------|
@@ -86,7 +86,7 @@
 | [8] | USB 接口 | 连接被控设备，传输键鼠信号 |
 | [9] | 🔴 电源灯 | 亮 = 已供电，灭 = 未供电 |
 
-![FlexKVM 背面接口](../guide/hardware/images/flexkvm_interface_2.webp)
+![FlexKVM 背面接口](../guide/product/images/flexkvm_interface_2.webp)
 
 | 编号 | 名称 | 说明 |
 |:----:|------|------|
@@ -95,7 +95,7 @@
 | [16] | 百兆网口 | 连接路由器或交换机 |
 | [17] | WiFi 天线接口 | 天线出厂已安装，无需用户操作 |
 
-> 编号 4、6、10~13 为按键 B、ATX 控制、TF 卡槽、恢复出厂、复位等接口，快速上手阶段无需使用，详见 [接口介绍](../guide/hardware/interface.md)。
+> 编号 4、6、10~13 为按键 B、ATX 控制、TF 卡槽、恢复出厂、复位等接口，快速上手阶段无需使用，详见 [接口介绍](../guide/product/interface.md)。
 
 ### 状态灯速查表
 
@@ -407,7 +407,7 @@
 
 完成基础设置后，建议按以下顺序继续：
 
-1. **认识所有接口** → [接口介绍](../guide/hardware/interface.md)（了解设备全部功能，为后续配置打好基础）
+1. **认识所有接口** → [接口介绍](../guide/product/interface.md)（了解设备全部功能，为后续配置打好基础）
 2. **按场景深入** → [远程重装系统](../guide/scenarios/reinstall-os.md) · [外网访问](../guide/scenarios/remote-access.md) · [安全加固](../guide/scenarios/security.md)
 3. **深入学习配置** → [用户指南](../guide/index.md)
 4. **遇到问题** → [常见问题与排查](../support/index.md)
