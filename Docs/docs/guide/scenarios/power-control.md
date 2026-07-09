@@ -49,7 +49,7 @@
 
 在 FlexKVM 桌面界面顶部的工具栏中，点击 **外设** 图标：
 
-![外设](../power/images/atx/atx.webp)
+![外设](../peripherals/atx/images/atx/atx.webp)
 
 
 | 操作 | 点击         | 效果                          |
