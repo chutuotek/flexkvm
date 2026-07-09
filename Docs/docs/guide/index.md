@@ -250,13 +250,25 @@ TF 卡管理、ISO 镜像挂载为虚拟光驱、文件传输。
 
     设备信息、固件版本、社区资源
 
-    [:octicons-arrow-right-24: 查看](system/about.md))
+    [:octicons-arrow-right-24: 查看](system/about.md)
 
-- **:material-palette: 外观与显示**
+- **:material-palette: 外观**
 
-    界面主题、语言、OLED 屏幕亮度、LED 指示灯
+    界面主题、语言、强调色
 
     [:octicons-arrow-right-24: 查看](system/appearance.md)
+
+- **:material-monitor-screenshot: OLED 屏幕**
+
+    亮度调节、休眠时间、屏幕唤醒
+
+    [:octicons-arrow-right-24: 查看](system/oled.md)
+
+- **:material-led-on: LED 指示灯**
+
+    控制设备指示灯开关
+
+    [:octicons-arrow-right-24: 查看](system/led.md)
 
 - **:material-clock: 时间与日期**
 

@@ -97,7 +97,9 @@ plugins:
             账号与安全: Account & Security
             登录管理: Login Management
             账号安全: Account Security
-            外观与显示: Appearance & Display
+            外观: Appearance
+            OLED 屏幕: OLED Screen
+            LED 指示灯: LED Indicator
             时间与日期: Time & Date
             USB 配置: USB Configuration
             固件升级: Firmware Upgrade
@@ -213,7 +215,9 @@ nav:
       - 账号与安全:
         - 登录管理: guide/system/account/login.md
         - 账号安全: guide/system/account/account.md
-      - 外观与显示: guide/system/appearance.md
+      - 外观: guide/system/appearance.md
+      - OLED 屏幕: guide/system/oled.md
+      - LED 指示灯: guide/system/led.md
       - 时间与日期: guide/system/time.md
       - USB 配置: guide/system/usb.md
       - 固件升级:
