@@ -88,15 +88,9 @@ FlexKVM 硬件规格、接线与配件参考：
 
     [:octicons-arrow-right-24: 查看](hardware/storage.md)
 
-- **:material-checkerboard: 背板**
-
-    磁吸背板、3.5mm 机柜背板
-
-    [:octicons-arrow-right-24: 查看](hardware/backplate.md)
-
 - **:material-puzzle: 拓展**
 
-    PoE 分离器、外接存储等拓展配件使用指南
+    磁吸背板 / 35mm 导轨卡扣 / PoE 供电、DIY 背板设计
 
     [:octicons-arrow-right-24: 查看](hardware/extensibility.md)
 

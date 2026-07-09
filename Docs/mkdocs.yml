@@ -151,7 +151,6 @@ nav:
       - 物理与电气特性: guide/hardware/characteristics.md
       - ATX 硬件接线: guide/hardware/atx-wiring.md
       - TF 卡与存储: guide/hardware/storage.md
-      - 背板: guide/hardware/backplate.md
       - 拓展: guide/hardware/extensibility.md
     - 工具栏:
       - 远程画面: guide/toolbar/screen.md
