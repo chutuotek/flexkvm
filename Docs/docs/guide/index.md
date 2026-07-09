@@ -6,6 +6,40 @@
 
 ---
 
+## 硬件参考
+
+产品规格、接口定义与配件信息。
+
+<div class="grid cards" markdown>
+
+- **:material-package-variant-closed: 包装清单**
+
+    开箱配件一览，确认收货内容
+
+    [:octicons-arrow-right-24: 查看](hardware/packet.md)
+
+- **:material-connection: 接口说明**
+
+    产品接口规格与指示灯状态
+
+    [:octicons-arrow-right-24: 查看](hardware/interface.md)
+
+- **:material-thermometer: 物理与电气特性**
+
+    电源、功耗、尺寸与环境参数
+
+    [:octicons-arrow-right-24: 查看](hardware/characteristics.md)
+
+- **:material-puzzle: 拓展配件**
+
+    磁吸背板 / 导轨卡扣 / PoE 供电 / DIY 背板
+
+    [:octicons-arrow-right-24: 查看](hardware/extensibility.md)
+
+</div>
+
+---
+
 ## 场景向导
 
 带着具体任务来？从这里开始：
@@ -52,293 +86,221 @@
 
 ---
 
-## 产品信息
+## 功能导航
 
-FlexKVM 硬件规格、接线与配件参考：
-
-<div class="grid cards" markdown>
-
-- **:material-package-variant-closed: 包装清单**
-
-    开箱配件一览，确认收货内容
-
-    [:octicons-arrow-right-24: 查看](hardware/packet.md)
-
-- **:material-connection: 接口说明**
-
-    产品接口规格与指示灯状态
-
-    [:octicons-arrow-right-24: 查看](hardware/interface.md)
-
-- **:material-thermometer: 物理与电气特性**
-
-    电源、功耗、尺寸与环境参数
-
-    [:octicons-arrow-right-24: 查看](hardware/characteristics.md)
-
-- **:material-power-plug: ATX 硬件接线**
-
-    ATX 控制器接线步骤与主板插针对照
-
-    [:octicons-arrow-right-24: 查看](hardware/atx-wiring.md)
-
-- **:material-sd: TF 卡与存储**
-
-    TF 卡规格、文件系统支持与安装
-
-    [:octicons-arrow-right-24: 查看](hardware/storage.md)
-
-- **:material-puzzle: 拓展**
-
-    磁吸背板 / 35mm 导轨卡扣 / PoE 供电、DIY 背板设计
-
-    [:octicons-arrow-right-24: 查看](hardware/extensibility.md)
-
-</div>
-
----
-
-## 菜单栏
-
-远程桌面顶部的操作按钮，用于操控被控主机：
-
-![FlexKVM 桌面](../images/flexkvm_desktop.webp)
-
-<div class="grid cards" markdown>
-
-- **:material-monitor: 远程画面**
-
-    查看远程画面，调整画质和分辨率
-
-    [:octicons-arrow-right-24: 查看](toolbar/screen.md)
-
-- **:material-mouse: 鼠标**
-
-    切换鼠标模式（绝对/相对），调节灵敏度和滚轮
-
-    [:octicons-arrow-right-24: 查看](toolbar/mouse.md)
-
-- **:material-keyboard: 键盘**
-
-    输入文字、发送快捷键、虚拟键盘
-
-    [:octicons-arrow-right-24: 查看](toolbar/keyboard.md)
-
-- **:material-camera: 截图**
-
-    一键截取当前画面保存为图片
-
-    [:octicons-arrow-right-24: 查看](toolbar/screenshot.md)
-
-- **:material-video: 录像**
-
-    录制远程画面保存为视频
-
-    [:octicons-arrow-right-24: 查看](toolbar/record.md)
-
-- **:material-power: 外设**
-
-    远程开关机、强制关机、重启
-
-    [:octicons-arrow-right-24: 查看](toolbar/atx.md)
-
-- **:material-power-standby: 网络唤醒 (WoL)**
-
-    远程唤醒局域网内已关机的设备
-
-    [:octicons-arrow-right-24: 查看](toolbar/wakeonlan.md)
-
-- **:material-harddisk: 镜像**
-
-    TF 卡文件管理，虚拟光驱/USB 导出
-
-    [:octicons-arrow-right-24: 查看](toolbar/disk.md)
-
-- **:material-microphone: 音频**
-
-    控制麦克风和扬声器，传输声音
-
-    [:octicons-arrow-right-24: 查看](toolbar/audio.md)
-
-- **:material-chip: IO**
-
-    GPIO 引脚控制和 UART 串口终端
-
-    [:octicons-arrow-right-24: 查看](toolbar/io.md)
-
-</div>
-
----
-
-## 设置
-
-系统配置与参数调整，对应桌面设置弹窗（齿轮图标）：
-
-### 账号
-
-<div class="grid cards" markdown>
-
-- **:material-login: 登录**
-
-    登录流程、会话管理、自动注销配置
-
-    [:octicons-arrow-right-24: 查看](settings/account/login.md)
-
-- **:material-account-cog: 账号管理**
-
-    密码修改、两步验证 (2FA)
-
-    [:octicons-arrow-right-24: 查看](settings/account/account.md)
-
-</div>
+按功能分类查阅，了解每个功能的完整操作和配置方法。
 
 ### 网络
+
+如何让 FlexKVM 接入网络，以及如何从远程访问它。
 
 <div class="grid cards" markdown>
 
 - **:material-lan: 以太网**
 
-    DHCP/静态 IP、网关 DNS 配置
+    DHCP / 静态 IP 配置，网关与 DNS 设置
 
-    [:octicons-arrow-right-24: 查看](settings/network/eth.md)
+    [:octicons-arrow-right-24: 查看](network/eth.md)
 
 - **:material-wifi: WiFi**
 
-    WiFi 连接、保存网络管理
+    无线网络连接与管理
 
-    [:octicons-arrow-right-24: 查看](settings/network/wifi.md)
+    [:octicons-arrow-right-24: 查看](network/wifi.md)
 
 - **:material-access-point: 热点模式**
 
-    将 FlexKVM 作为 WiFi 热点，供其他设备连接
+    FlexKVM 作为 WiFi 热点，供其他设备直连
 
-    [:octicons-arrow-right-24: 查看](settings/network/ap.md)
+    [:octicons-arrow-right-24: 查看](network/ap.md)
 
-</div>
+- **:material-vpn: Tailscale 异地组网**
 
-### 系统
+    无需公网 IP，端到端加密远程访问
 
-<div class="grid cards" markdown>
+    [:octicons-arrow-right-24: 查看](network/tailscale.md)
 
-- **:material-clock: 时间设置**
+- **:material-power-standby: 网络唤醒 (WoL)**
 
-    时区配置、NTP 同步
+    通过网络魔术包远程唤醒已关机的设备
 
-    [:octicons-arrow-right-24: 查看](settings/system/time.md)
+    [:octicons-arrow-right-24: 查看](network/wol.md)
 
-- **:material-monitor-star: OLED 显示**
+- **:material-lock: HTTPS 证书**
 
-    屏幕亮度、息屏时间设置
+    自签名 / 自定义证书，加密 Web 管理页面
 
-    [:octicons-arrow-right-24: 查看](settings/system/oled.md)
-
-- **:material-led-outline: LED设置**
-
-    FlexKVM 设备上 LED的开关控制
-
-    [:octicons-arrow-right-24: 查看](settings/system/led.md)
-
-- **:material-monitor-screenshot: EDID 配置**
-
-    EDID（显示器识别数据）自定义管理，解决分辨率/兼容性问题
-
-    [:octicons-arrow-right-24: 查看](settings/system/edid.md)
-
-- **:material-usb: USB 配置**
-
-    模拟 USB 键盘/鼠标/存储设备，自定义设备类型与参数
-
-    [:octicons-arrow-right-24: 查看](settings/system/usb.md)
-
-- **:material-camera-burst: 截图设置**
-
-    截图默认格式与画质配置
-
-    [:octicons-arrow-right-24: 查看](settings/system/screenshot.md)
-
-- **:material-video-box: 录像设置**
-
-    录像默认参数与静音录制配置
-
-    [:octicons-arrow-right-24: 查看](settings/system/recording.md)
-
-- **:material-lock: HTTPS 配置**
-
-    SSL 证书管理、自定义证书上传
-
-    [:octicons-arrow-right-24: 查看](settings/system/https.md)
+    [:octicons-arrow-right-24: 查看](network/https.md)
 
 - **:material-console: SSH 远程访问**
 
-    SSH 服务启用与配置
+    通过 SSH 命令行登入 FlexKVM
 
-    [:octicons-arrow-right-24: 查看](settings/system/ssh.md)
-
-</div>
-
-### 主题与语言
-
-<div class="grid cards" markdown>
-
-- **:material-palette: 主题与语言**
-
-    界面主题切换、强调色、显示语言设置
-
-    [:octicons-arrow-right-24: 查看](settings/theme/theme.md)
+    [:octicons-arrow-right-24: 查看](network/ssh.md)
 
 </div>
 
-### 升级
+### 远程画面
+
+查看被控主机画面，截取屏幕、录制视频。
 
 <div class="grid cards" markdown>
 
-- **:material-file-download: 离线升级**
+- **:material-monitor: 查看远程画面**
 
-    下载固件包 → 上传至设备 → 手动升级，适用于无外网环境
+    连接会话、切换分辨率与画质、EDID 配置、全屏显示
 
-    [:octicons-arrow-right-24: 查看](settings/upgrade/ota_offline.md)
+    [:octicons-arrow-right-24: 查看](display/screen.md)
 
-- **:material-cloud-download: 在线升级**
+- **:material-camera: 截图**
 
-    检查更新 → 一键升级，需设备可访问外网
+    一键截取当前画面，支持 PNG / JPG 格式
 
-    [:octicons-arrow-right-24: 查看](settings/upgrade/ota_online.md)
+    [:octicons-arrow-right-24: 查看](display/screenshot.md)
+
+- **:material-video: 录像**
+
+    录制远程画面为视频文件，多项参数可调
+
+    [:octicons-arrow-right-24: 查看](display/recording.md)
 
 </div>
 
-### 维护
+### 键盘与鼠标
+
+控制被控主机的输入设备。
 
 <div class="grid cards" markdown>
 
-- **:material-text-box: 日志**
+- **:material-mouse: 鼠标**
 
-    查看系统运行日志，排查异常行为
+    绝对/相对模式切换、灵敏度调节、滚轮方向
 
-    [:octicons-arrow-right-24: 查看](settings/maintenance/log.md)
+    [:octicons-arrow-right-24: 查看](input/mouse.md)
 
-- **:material-clipboard-check: 审计**
+- **:material-keyboard: 键盘**
 
-    记录用户操作行为，满足安全审计需求
+    文字输入、快捷键发送、虚拟键盘、粘贴文本
 
-    [:octicons-arrow-right-24: 查看](settings/maintenance/audit.md)
-
-- **:material-restart: 重启与重置**
-
-    重启设备、恢复出厂设置
-
-    [:octicons-arrow-right-24: 查看](settings/maintenance/power_reset.md)
+    [:octicons-arrow-right-24: 查看](input/keyboard.md)
 
 </div>
 
-### 应用中心
+### 音频
+
+双向音频传输，把被控主机的系统声音传回浏览器，操作端麦克风输出到被控主机。
 
 <div class="grid cards" markdown>
 
-- **:material-vpn: Tailscale**
+- **:material-headset: 音频**
 
-    VPN 远程访问、穿透 NAT
+    麦克风与扬声器控制，双向音频传输
 
-    [:octicons-arrow-right-24: 查看](settings/app/tailscale.md)
+    [:octicons-arrow-right-24: 查看详情](audio/index.md)
+
+</div>
+
+### 存储与镜像
+
+TF 卡管理、ISO 镜像挂载为虚拟光驱、文件传输。
+
+<div class="grid cards" markdown>
+
+- **:material-sd: TF 卡管理**
+
+    规格要求、文件系统支持、文件浏览与管理
+
+    [:octicons-arrow-right-24: 查看](storage/tf-card.md)
+
+- **:material-disc: ISO 镜像挂载**
+
+    上传 ISO → 挂载为虚拟光驱 → 远程重装系统
+
+    [:octicons-arrow-right-24: 查看](storage/disk.md)
+
+</div>
+
+### 外设
+
+连接外部模块扩展设备功能，如 ATX 电源控制、KVM 切换器等。
+
+<div class="grid cards" markdown>
+
+- **:material-power: ATX 电源控制**
+
+    硬件接线、正常开关机、强制重启、强制断电
+
+    [:octicons-arrow-right-24: 查看](peripherals/atx/index.md)
+
+</div>
+
+### 系统配置
+
+设备本身的参数调整。对应桌面中的设置面板（齿轮图标）。
+
+<div class="grid cards" markdown>
+
+- **:material-account-cog: 账号与安全**
+
+    登录流程、密码修改、两步验证 (2FA)
+
+    [:octicons-arrow-right-24: 查看](system/account/login.md)
+
+- **:material-information: 关于设备**
+
+    设备信息、固件版本、社区资源
+
+    [:octicons-arrow-right-24: 查看](system/about.md))
+
+- **:material-palette: 外观与显示**
+
+    界面主题、语言、OLED 屏幕亮度、LED 指示灯
+
+    [:octicons-arrow-right-24: 查看](system/appearance.md)
+
+- **:material-clock: 时间与日期**
+
+    时区设置、NTP 自动同步
+
+    [:octicons-arrow-right-24: 查看](system/time.md)
+
+- **:material-usb: USB 配置**
+
+    模拟 USB 键盘/鼠标/存储设备，自定义设备类型
+
+    [:octicons-arrow-right-24: 查看](system/usb.md)
+
+- **:material-cloud-download: 固件升级**
+
+    在线升级 / 离线升级，版本更新方式选择
+
+    [:octicons-arrow-right-24: 查看](system/upgrade/online.md)
+
+- **:material-text-box: 维护与诊断**
+
+    系统日志、操作审计、重启与恢复出厂设置
+
+    [:octicons-arrow-right-24: 查看](system/maintenance/log.md)
+
+</div>
+
+### 扩展 IO
+
+通过 GPIO 和 UART 串口连接外部硬件设备，适合嵌入式调试和工业控制场景。
+
+<div class="grid cards" markdown>
+
+- **:material-console-line: UART 串口终端**
+
+    串口通信参数配置，与被控设备命令行交互
+
+    [:octicons-arrow-right-24: 查看](io/uart.md)
+
+- **:material-chip: GPIO 引脚控制**
+
+    引脚电平输入检测与输出控制，连接传感器等外设
+
+    [:octicons-arrow-right-24: 查看](io/gpio.md)
 
 </div>
 

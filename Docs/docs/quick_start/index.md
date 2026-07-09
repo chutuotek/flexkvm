@@ -46,7 +46,7 @@
 
 > 磁吸背板已预装在主机背面，开箱时确认即可。
 >
-> ATX 控制器和杜邦线用于远程开关机功能，快速上手阶段无需安装，后续可参考 [ATX 控制](../guide/toolbar/atx.md) 进行配置。
+> ATX 控制器和杜邦线用于远程开关机功能，快速上手阶段无需安装，后续可参考 [ATX 控制](../guide/peripherals/atx/index.md) 进行配置。
 
 ---
 
@@ -225,7 +225,7 @@
 
 将网线一端连接路由器或交换机，另一端连接 FlexKVM 的**百兆网口 [16]**。
 
-![连接网线](./images/connect_network.webp)
+<!-- 截图待补充 ![连接网络](./images/connect_network.webp) -->
 
 连接后：
 
@@ -240,7 +240,7 @@
 > 2. 网口灯亮但不闪烁 → 检查路由器端口是否正常、尝试更换端口
 > 3. OLED 显示 `waiting` 超过 20 秒 → 确认路由器 DHCP 已开启、确认路由器 IP 地址池未耗尽
 > 4. 以上均正常但仍无 IP → 尝试使用 [热点配网](#热点配网) 通过 WiFi 连接
-> 5. 无 WiFi 环境 → 检查路由器 DHCP 设置，或参考 [网络设置](../guide/network/index.md) 为 FlexKVM 配置静态 IP
+> 5. 无 WiFi 环境 → 检查路由器 DHCP 设置，或参考 [网络设置](../guide/network/eth.md) 为 FlexKVM 配置静态 IP
 
 ---
 

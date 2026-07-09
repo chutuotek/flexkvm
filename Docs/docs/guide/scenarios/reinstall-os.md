@@ -9,7 +9,7 @@
 | FlexKVM 已正常联网 | 参考 [快速入门](../../quick_start/index.md) |
 | TF 卡（MicroSD） | 存放系统 ISO 镜像，建议 ≥ 16GB |
 | 读卡器 | 电脑上把 ISO 写入 TF 卡用 |
-| ATX 控制器已连接 | 远程控制开关机和重启，接线见 [外设](../toolbar/atx.md) |
+| ATX 控制器已连接 | 远程控制开关机和重启，接线见 [外设](../peripherals/atx/index.md) |
 | 系统 ISO 镜像 | 你要安装的操作系统镜像文件 |
 
 ---
@@ -49,7 +49,7 @@
 
 > 如果共享列表已有不需要的项目，先取消再重新共享。
 
-详细操作参考 [镜像](../toolbar/disk.md)。
+详细操作参考 [镜像](../storage/disk.md)。
 
 > **验证**：被控设备在 BIOS/UEFI 的启动项中能看到 USB CD-ROM 设备。
 
@@ -61,7 +61,7 @@
 
 在 Web 界面菜单栏点击电源图标，点击复位键**短按**重启被控设备。
 
-![电源按键](../../../images/atx/web-atx-power.webp)
+<!-- 截图待补充 ![电源按键](../../../images/atx/web-atx-power.webp) -->
 
 ### 3.2 进入 BIOS
 
@@ -77,7 +77,7 @@
 
 > **热键按了没反应？** 检查两点：
 > 1. 键盘设置中的**被控系统**是否选对（Windows/Linux/MacOS）
-> 2. 如果处于全屏模式，ESC 键被浏览器拦截了，需要先退出全屏再操作，或者使用映射的 ESC（默认 Right Ctrl），参见 [Esc 映射](../toolbar/keyboard.md#esc映射)
+> 2. 如果处于全屏模式，ESC 键被浏览器拦截了，需要先退出全屏再操作，或者使用映射的 ESC（默认 Right Ctrl），参见 [Esc 映射](../input/keyboard.md#esc映射)
 
 > **画面黑屏错过了？** 再点一次复位键短按重启，在重启画面亮起前就开始连续按 BIOS 热键。
 

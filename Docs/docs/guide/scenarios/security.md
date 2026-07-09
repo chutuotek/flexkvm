@@ -16,7 +16,7 @@
 2. 用手机验证器应用（Google Authenticator / Microsoft Authenticator）扫描显示的二维码
 3. 输入验证器显示的 6 位验证码完成绑定
 
-![2FA设置](../settings/account/images/2fa-gen.webp)
+![2FA设置](../system/account/images/2fa-gen.webp)
 
 绑定后每次登录都需要输入 6 位动态验证码。
 
@@ -24,11 +24,11 @@
 
 ### 2FA 对 SSH 的影响
 
-SSH 登录不需要 2FA 验证码，仅需账号密码。如果需要更严格的 SSH 安全控制，可以关闭 SSH 服务，详见 [SSH](../settings/system/ssh.md)。
+SSH 登录不需要 2FA 验证码，仅需账号密码。如果需要更严格的 SSH 安全控制，可以关闭 SSH 服务，详见 [SSH](../network/ssh.md)。
 
 ### 账户管理
 
-定期修改密码、管理多用户权限，详见 [账号管理](../settings/account/account.md)。
+定期修改密码、管理多用户权限，详见 [账号管理](../system/account/account.md)。
 
 ---
 
@@ -44,7 +44,7 @@ SSH 登录不需要 2FA 验证码，仅需账号密码。如果需要更严格�
 
 > 一般需要配合域名使用（Let's Encrypt 免费证书）。如果没有域名，可以保持自签名证书——安全性一样，只是浏览器会警告。
 
-详见 [HTTPS 配置](../settings/system/https.md)。
+详见 [HTTPS 配置](../network/https.md)。
 
 ---
 
@@ -56,7 +56,7 @@ SSH 默认启用，监听 22 端口。生产环境建议：
 - **限制认证尝试次数**：默认 3 次，可在 SSH 服务配置中调整（范围 1~10）
 - **认证失败自动延迟**：多次失败后自动增加等待时间，防止暴力破解
 
-SSH 详细配置和可用命令见 [SSH 远程访问](../settings/system/ssh.md)。
+SSH 详细配置和可用命令见 [SSH 远程访问](../network/ssh.md)。
 
 ---
 
@@ -91,4 +91,4 @@ SSH 详细配置和可用命令见 [SSH 远程访问](../settings/system/ssh.md)
 
 - 需要查看或导出日志？→ [日常运维](daily-ops.md)
 - 如何在外网安全访问？→ [外网远程访问](remote-access.md)
-- 忘记密码怎么办？→ 只能恢复出厂设置重置，详见 [重启与重置](../settings/maintenance/power_reset.md)
+- 忘记密码怎么办？→ 只能恢复出厂设置重置，详见 [重启与重置](../system/maintenance/reset.md)

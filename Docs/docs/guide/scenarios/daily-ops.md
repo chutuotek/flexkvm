@@ -35,7 +35,7 @@ FlexKVM 固件分两种升级方式：
 
 如果设备没联网，在电脑上下载固件包放入 TF 卡，插入设备后在升级界面选择离线升级。
 
-详细操作见 [离线升级](../settings/upgrade/ota_offline.md) 和 [在线升级](../settings/upgrade/ota_online.md)。
+详细操作见 [离线升级](../system/upgrade/offline.md) 和 [在线升级](../system/upgrade/online.md)。
 
 ---
 
@@ -45,7 +45,7 @@ Web 界面 → 设置 → 维护 → 审计，可以查看和导出审计记录�
 
 审计日志记录所有关键操作：谁在什么时候登录、执行了什么命令、配置了什么变更。
 
-> 如果设备涉及多人使用或处于生产环境，建议定期导出审计日志留档。详细说明见 [审计](../settings/maintenance/audit.md)。
+> 如果设备涉及多人使用或处于生产环境，建议定期导出审计日志留档。详细说明见 [审计](../system/maintenance/audit.md)。
 
 ---
 
@@ -71,7 +71,7 @@ Web 界面 → 设置 → 维护 → 重启。重启大约需要 20~30 秒，期
 
 > 固件版本不会降级，恢复出厂只清除配置数据。
 
-详细说明见 [重启与重置](../settings/maintenance/power_reset.md)。
+详细说明见 [重启与重置](../system/maintenance/reset.md)。
 
 ---
 
