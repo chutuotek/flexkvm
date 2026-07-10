@@ -18,6 +18,8 @@
 >
 > OLED 屏幕正常情况下会有倒计时提示，倒计时到0s的时候可以松手就会进行重置
 
+![FlexKVM线框图](./images/oled_reset.webp)
+
 详见[物理按键](../interaction/button.md)。
 
 ## 软件重置

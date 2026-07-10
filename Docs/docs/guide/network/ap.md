@@ -24,16 +24,16 @@ FlexKVM 可以创建 WiFi 热点（AP），供其他设备直接连接访问管�
 
 热点模式的 IP 地址会显示为 **Axxx.xxx.xxx.xxx**，其中 **A** 表示 AP 接口。
 
-> 更多 OLED 状态说明详见 [OLED 屏幕](../interaction/oled.md)。
+![AP oled](./images/ap/oled_ap_connected.webp)
 
 ## 按键切换
 
 可通过按键 B 在热点模式与 [WiFi](./wifi.md) 模式之间快速切换：
 
-| 当前模式 | 操作 | 切换结果 | 等待时间 |
-|:--------:|:----:|:--------:|:--------:|
-| WiFi 模式 | 长按按键 B 约 3 秒，OLED 显示热点图标后松开 | 关闭 WiFi，开启热点模式 | 约 10 秒 |
-| 热点模式 | 长按按键 B 约 3 秒，OLED 显示 WiFi 图标后松开 | 关闭热点，恢复 WiFi | 3~4 秒 |
+| 当前模式 | 操作 | 切换结果 | OLED 图标 | 等待时间 |
+|:--------:|:----:|:--------:|:--------:|:--------:|
+| WiFi 模式 | 长按按键 B 约 3 秒，OLED 显示热点图标后松开 | 关闭 WiFi，开启热点模式 | ![热点图标](./images/ap/oled_ap_icon.webp){ width="80" } | 约 10 秒 |
+| 热点模式 | 长按按键 B 约 3 秒，OLED 显示 WiFi 图标后松开 | 关闭热点，恢复 WiFi | ![WiFi 图标](./images/wifi/oled_wifi_icon.webp){ width="80" } | 3~4 秒 |
 
 > 按键 B 切换的是热点模式与 WiFi 模式，与[配网模式](./provision.md)（按键 A）不同。配网模式用于首次联网或故障恢复。
 
