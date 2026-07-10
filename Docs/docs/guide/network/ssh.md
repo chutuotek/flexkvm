@@ -2,7 +2,7 @@
 
 FlexKVM 内置 SSH 服务器，支持通过 SSH 客户端远程登录设备进行带外管理（OOB Management）。
 
-SSH 采用密码认证（不支持密钥），同一时间只允许一个会话连接。登录失败超过 3 次将自动断开连接，防止暴力破解。
+SSH 采用密码认证（不支持密钥），同一时间只允许一个会话连接，有新的连接接入时现有会话会被断开。登录失败超过 3 次将自动断开连接并在短暂延迟后允许重试，防止暴力破解。
 
 ## 前置条件
 
@@ -27,6 +27,8 @@ SSH 采用密码认证（不支持密钥），同一时间只允许一个会话�
 ```bash
 ssh <用户名>@<设备IP地址>
 ```
+
+> Windows 用户可直接使用 PowerShell 或 CMD（系统自带 OpenSSH 客户端）。
 
 - **用户名**：FlexKVM 的账号名称
 - **密码**：FlexKVM 的账号密码
@@ -53,25 +55,44 @@ admin@flexkvm-6jzdd#
 
 ## 可用命令
 
-输入 `help` 查看完整命令列表。常用命令速查：
+输入 `help` 查看完整命令列表。常用命令按分类速查：
+
+### ATX 电源控制
+
+> 需配合 ATX 硬件模块，详见 [外设](../peripherals/atx/index.md)。
 
 | 命令 | 说明 | 示例 |
 |------|------|------|
 | `atx power short\|long` | 短按/长按电源键 | `atx power short` |
 | `atx reset` | 短按复位键 | `atx reset` |
 | `atx status` | 查看 ATX 及电源状态 | `atx status` |
-| `network show` | 查看网络接口信息 | `network show eth` |
+
+### GPIO 控制
+
+> 详见 [扩展 IO](../io/gpio.md)。
+
+| 命令 | 说明 | 示例 |
+|------|------|------|
 | `gpio status` | 查看 GPIO 引脚状态 | `gpio status a` |
 | `gpio enable\|disable` | 启用/禁用 GPIO | `gpio enable a` |
 | `gpio direction` | 设置引脚方向 | `gpio direction a out` |
 | `gpio level` | 设置输出电平 | `gpio level a 1` |
+
+### 网络工具
+
+| 命令 | 说明 | 示例 |
+|------|------|------|
+| `network show` | 查看网络接口信息 | `network show eth` |
 | `ping` | 网络连通性测试 | `ping 192.168.1.1 4` |
+
+### 系统管理
+
+| 命令 | 说明 | 示例 |
+|------|------|------|
 | `system info` | 查看固件版本 | `system info` |
 | `reset` | 恢复出厂（保留日志） | `reset` |
 | `reset all` | 深度恢复（清除全部） | `reset all` |
 | `exit` | 退出会话 | `exit` 或 `Ctrl+D` |
-
-> ATX 命令需配合硬件模块，详见 [外设](../peripherals/atx/index.md)。GPIO 命令详见 [扩展 IO](../io/gpio.md)。
 
 ## 终端操作
 
@@ -90,6 +111,16 @@ SSH 终端支持以下键盘操作：
 | `Backspace` | 删除光标前一个字符 |
 
 > 提示：命令历史最多保存 32 条记录，重复命令不会重复添加。
+
+## 故障排查
+
+| 现象 | 可能原因 | 解决方法 |
+|------|----------|----------|
+| `Connection refused` | SSH 服务未启用 | 进入 Web 界面「设置 → 系统」检查 SSH 开关是否开启 |
+| `Connection timed out` | IP 地址错误或网络不通 | 确认连接 IP 与 OLED 显示的 IP 一致，尝试 `ping` 设备地址 |
+| `Permission denied` | 用户名或密码错误 | 确认使用 Web 界面的账号和密码，注意大小写 |
+| 登录后立即断开 | 已有其他 SSH 会话在线 | 等待原会话超时或关闭后再重试 |
+| 输错密码后被断开 | 失败超过 3 次触发保护 | 重新建立 SSH 连接即可重试 |
 
 ---
 
