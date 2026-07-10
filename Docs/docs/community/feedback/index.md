@@ -30,7 +30,7 @@ FlexKVM版本：v0.1.2
 
 **系统日志提取**
 
-文章: [系统日志](../../guide/system/maintenance/log.md)
+文章: [系统日志](../../guide/maintenance/log.md)
 
 当您反馈问题时，您可以根据上面的文章来提取系统日志，以便我们更好地了解问题。
 
