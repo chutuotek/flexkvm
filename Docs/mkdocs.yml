@@ -192,17 +192,18 @@ nav:
       - 接口说明: guide/product/interface.md
       - 物理与电气特性: guide/product/characteristics.md
       - 拓展配件: guide/product/extensibility.md
-    - 设备交互:
-      - OLED 屏幕: guide/interaction/oled.md
-      - LED 指示灯: guide/interaction/led.md
-      - 物理按键: guide/interaction/button.md
     - 场景向导:
       - 远程重装系统: guide/scenarios/reinstall-os.md
       - 外网远程访问: guide/scenarios/remote-access.md
       - 文件传输: guide/scenarios/file-transfer.md
       - 电源控制: guide/scenarios/power-control.md
       - 日常运维: guide/scenarios/daily-ops.md
+      - 安全加固: guide/scenarios/security.md
       - 问题反馈: guide/scenarios/feedback.md
+    - 设备交互:
+      - OLED 屏幕: guide/interaction/oled.md
+      - LED 指示灯: guide/interaction/led.md
+      - 物理按键: guide/interaction/button.md
     - 网络:
       - 配网模式: guide/network/provision.md
       - 以太网: guide/network/eth.md
@@ -230,22 +231,20 @@ nav:
       - 外观: guide/system/appearance.md
       - 时间与日期: guide/system/time.md
       - USB 配置: guide/system/usb.md
-      - 维护与诊断:
-        - 系统日志: guide/system/maintenance/log.md
-        - 操作审计: guide/system/maintenance/audit.md
+      - 蓝牙: guide/system/bluetooth.md
     - 安全设置:
       - 账号管理:
         - 登录管理: guide/security/account/login.md
         - 账号安全: guide/security/account/account.md
       - SSH 远程访问: guide/security/ssh.md
       - HTTPS 证书: guide/security/https.md
-      - 安全加固: guide/security/overview.md
+      - 操作审计: guide/security/audit.md
     - 系统维护:
-      - 固件升级:
-        - 在线升级: guide/maintenance/upgrade/online.md
-        - 离线升级: guide/maintenance/upgrade/offline.md
+      - 在线升级: guide/maintenance/upgrade-online.md
+      - 离线升级: guide/maintenance/upgrade-offline.md
       - 重启设备: guide/maintenance/reboot.md
       - 恢复出厂设置: guide/maintenance/factory-reset.md
+      - 系统日志: guide/maintenance/log.md
       - 线刷镜像: guide/maintenance/flash.md
   - 常见问题与排查:
     - 常见问题与排查: support/index.md

@@ -41,4 +41,4 @@
 
 ---
 
-[:octicons-arrow-left-24: 返回用户指南](../../index.md)
+[:octicons-arrow-left-24: 返回用户指南](../index.md)

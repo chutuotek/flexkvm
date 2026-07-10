@@ -278,11 +278,17 @@ TF 卡规格、挂载分区、共享为 U 盘或虚拟光驱，用于文件传�
 
     [:octicons-arrow-right-24: 查看](security/https.md)
 
+- **:material-text-box-search: 操作审计**
+
+    系统与用户操作事件记录，追溯操作历史
+
+    [:octicons-arrow-right-24: 查看](security/audit.md)
+
 - **:material-shield-lock: 安全加固**
 
     2FA、HTTPS、SSH 安全配置最佳实践
 
-    [:octicons-arrow-right-24: 查看](security/overview.md)
+    [:octicons-arrow-right-24: 查看](scenarios/security.md)
 
 </div>
 
@@ -316,11 +322,17 @@ TF 卡规格、挂载分区、共享为 U 盘或虚拟光驱，用于文件传�
 
     [:octicons-arrow-right-24: 查看](system/usb.md)
 
+- **:material-bluetooth: 蓝牙**
+
+    蓝牙功能（开发中）
+
+    [:octicons-arrow-right-24: 查看](system/bluetooth.md)
+
 - **:material-text-box: 维护与诊断**
 
-    系统日志、操作审计
+    系统日志，用于排查系统异常
 
-    [:octicons-arrow-right-24: 查看](system/maintenance/log.md)
+    [:octicons-arrow-right-24: 查看](maintenance/log.md)
 
 </div>
 
@@ -334,7 +346,7 @@ TF 卡规格、挂载分区、共享为 U 盘或虚拟光驱，用于文件传�
 
     在线升级 / 离线升级，版本更新方式选择
 
-    [:octicons-arrow-right-24: 查看](maintenance/upgrade/online.md)
+    [:octicons-arrow-right-24: 查看](maintenance/upgrade-online.md)
 
 - **:material-restart: 重启设备**
 
