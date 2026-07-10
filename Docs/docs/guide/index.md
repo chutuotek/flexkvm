@@ -38,36 +38,6 @@
 
 </div>
 
----
-
-## 设备交互
-
-了解设备上的 OLED 屏幕、LED 指示灯和物理按键。
-
-<div class="grid cards" markdown>
-
-- **:material-monitor-screenshot: OLED 屏幕**
-
-    显示内容、状态参考、亮度与休眠设置
-
-    [:octicons-arrow-right-24: 查看](interaction/oled.md)
-
-- **:material-led-on: LED 指示灯**
-
-    状态灯 / 警告灯 / 电源灯颜色与含义速查
-
-    [:octicons-arrow-right-24: 查看](interaction/led.md)
-
-- **:material-gesture: 物理按键**
-
-    按键 A / B / 复位 / 恢复出厂操作说明
-
-    [:octicons-arrow-right-24: 查看](interaction/button.md)
-
-</div>
-
----
-
 ## 场景向导
 
 带着具体任务来？从这里开始：
@@ -259,6 +229,32 @@ TF 卡管理、ISO 镜像挂载为虚拟光驱、文件传输。
     硬件接线、正常开关机、强制重启、强制断电
 
     [:octicons-arrow-right-24: 查看](peripherals/atx/index.md)
+
+</div>
+
+### 设备交互
+
+了解设备上的 OLED 屏幕、LED 指示灯和物理按键。
+
+<div class="grid cards" markdown>
+
+- **:material-monitor-screenshot: OLED 屏幕**
+
+    显示内容、状态参考、亮度与休眠设置
+
+    [:octicons-arrow-right-24: 查看](interaction/oled.md)
+
+- **:material-led-on: LED 指示灯**
+
+    状态灯 / 警告灯 / 电源灯颜色与含义速查
+
+    [:octicons-arrow-right-24: 查看](interaction/led.md)
+
+- **:material-gesture: 物理按键**
+
+    按键 A / B / 复位 / 恢复出厂操作说明
+
+    [:octicons-arrow-right-24: 查看](interaction/button.md)
 
 </div>
 
