@@ -56,12 +56,6 @@
 
     [:octicons-arrow-right-24: 开始配置](scenarios/remote-access.md)
 
-- **:material-shield-lock: 安全加固**
-
-    2FA、HTTPS 证书、SSH、审计，把设备安全做到位。
-
-    [:octicons-arrow-right-24: 开始加固](scenarios/security.md)
-
 - **:material-folder-move: 文件传输**
 
     通过 TF 卡和 USB 导出，把文件送进或取出被控设备。
@@ -149,18 +143,6 @@
     通过网络魔术包远程唤醒已关机的设备
 
     [:octicons-arrow-right-24: 查看](network/wol.md)
-
-- **:material-lock: HTTPS 证书**
-
-    自签名 / 自定义证书，加密 Web 管理页面
-
-    [:octicons-arrow-right-24: 查看](network/https.md)
-
-- **:material-console: SSH 远程访问**
-
-    通过 SSH 命令行进行带外管理（OOB）
-
-    [:octicons-arrow-right-24: 查看](network/ssh.md)
 
 </div>
 
@@ -272,17 +254,43 @@ TF 卡规格、挂载分区、共享为 U 盘或虚拟光驱，用于文件传�
 
 </div>
 
+### 安全设置
+
+访问控制与通信加密，保护设备安全。
+
+<div class="grid cards" markdown>
+
+- **:material-account-cog: 账号管理**
+
+    登录流程、密码修改、两步验证 (2FA)、备用码
+
+    [:octicons-arrow-right-24: 查看](security/account/login.md)
+
+- **:material-console: SSH 远程访问**
+
+    通过 SSH 命令行进行带外管理（OOB）
+
+    [:octicons-arrow-right-24: 查看](security/ssh.md)
+
+- **:material-lock: HTTPS 证书**
+
+    自签名 / 自定义证书，加密 Web 管理页面
+
+    [:octicons-arrow-right-24: 查看](security/https.md)
+
+- **:material-shield-lock: 安全加固**
+
+    2FA、HTTPS、SSH 安全配置最佳实践
+
+    [:octicons-arrow-right-24: 查看](security/overview.md)
+
+</div>
+
 ### 系统配置
 
 设备本身的参数调整。对应桌面中的设置面板（齿轮图标）。
 
 <div class="grid cards" markdown>
-
-- **:material-account-cog: 账号与安全**
-
-    登录流程、密码修改、两步验证 (2FA)
-
-    [:octicons-arrow-right-24: 查看](system/account/login.md)
 
 - **:material-information: 关于设备**
 

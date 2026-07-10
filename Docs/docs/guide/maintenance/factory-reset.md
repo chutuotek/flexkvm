@@ -50,7 +50,7 @@
 
 > `reset`会保留审计记录，`reset all` 会删除审计记录，一般情况下使用 `reset` 即可。
 
-详见 [SSH 远程访问](../network/ssh.md#系统管理)。
+详见 [SSH 远程访问](../security/ssh.md#系统管理)。
 
 ### 重置过程
 

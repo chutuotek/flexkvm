@@ -98,7 +98,8 @@ plugins:
             ATX 电源控制: ATX Power Control
             系统配置: System Configuration
             关于设备: About Device
-            账号与安全: Account & Security
+            安全设置: Security Settings
+            账号管理: Account Management
             登录管理: Login Management
             账号安全: Account Security
             外观: Appearance
@@ -198,7 +199,6 @@ nav:
     - 场景向导:
       - 远程重装系统: guide/scenarios/reinstall-os.md
       - 外网远程访问: guide/scenarios/remote-access.md
-      - 安全加固: guide/scenarios/security.md
       - 文件传输: guide/scenarios/file-transfer.md
       - 电源控制: guide/scenarios/power-control.md
       - 日常运维: guide/scenarios/daily-ops.md
@@ -210,8 +210,6 @@ nav:
       - 热点模式: guide/network/ap.md
       - Tailscale 异地组网: guide/network/tailscale.md
       - 网络唤醒 (WoL): guide/network/wol.md
-      - HTTPS 证书: guide/network/https.md
-      - SSH 远程访问: guide/network/ssh.md
     - 远程画面:
       - 查看远程画面: guide/display/screen.md
       - 截图: guide/display/screenshot.md
@@ -229,15 +227,19 @@ nav:
       - GPIO 引脚控制: guide/io/gpio.md
     - 系统配置:
       - 关于设备: guide/system/about.md
-      - 账号与安全:
-        - 登录管理: guide/system/account/login.md
-        - 账号安全: guide/system/account/account.md
       - 外观: guide/system/appearance.md
       - 时间与日期: guide/system/time.md
       - USB 配置: guide/system/usb.md
       - 维护与诊断:
         - 系统日志: guide/system/maintenance/log.md
         - 操作审计: guide/system/maintenance/audit.md
+    - 安全设置:
+      - 账号管理:
+        - 登录管理: guide/security/account/login.md
+        - 账号安全: guide/security/account/account.md
+      - SSH 远程访问: guide/security/ssh.md
+      - HTTPS 证书: guide/security/https.md
+      - 安全加固: guide/security/overview.md
     - 系统维护:
       - 固件升级:
         - 在线升级: guide/maintenance/upgrade/online.md
