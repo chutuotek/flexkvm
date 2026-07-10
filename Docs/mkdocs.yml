@@ -221,6 +221,9 @@ nav:
       - 存储管理: guide/storage/disk.md
     - 外设:
       - ATX 电源控制: guide/peripherals/atx/index.md
+    - 扩展 IO:
+      - UART 串口终端: guide/io/uart.md
+      - GPIO 引脚控制: guide/io/gpio.md
     - 系统配置:
       - 关于设备: guide/system/about.md
       - 账号与安全:
@@ -236,9 +239,6 @@ nav:
         - 系统日志: guide/system/maintenance/log.md
         - 操作审计: guide/system/maintenance/audit.md
         - 重启与重置: guide/system/maintenance/reset.md
-    - 扩展 IO:
-      - UART 串口终端: guide/io/uart.md
-      - GPIO 引脚控制: guide/io/gpio.md
   - 常见问题与排查:
     - 常见问题与排查: support/index.md
     - 常见问题: support/faq/index.md

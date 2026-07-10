@@ -252,6 +252,26 @@ TF 卡规格、挂载分区、共享为 U 盘或虚拟光驱，用于文件传�
 
 </div>
 
+### 扩展 IO
+
+通过 GPIO 和 UART 串口连接外部硬件设备，适合嵌入式调试和工业控制场景。
+
+<div class="grid cards" markdown>
+
+- **:material-console-line: UART 串口终端**
+
+    串口通信参数配置，与被控设备命令行交互
+
+    [:octicons-arrow-right-24: 查看](io/uart.md)
+
+- **:material-chip: GPIO 引脚控制**
+
+    引脚电平输入检测与输出控制，连接传感器等外设
+
+    [:octicons-arrow-right-24: 查看](io/gpio.md)
+
+</div>
+
 ### 系统配置
 
 设备本身的参数调整。对应桌面中的设置面板（齿轮图标）。
@@ -299,26 +319,6 @@ TF 卡规格、挂载分区、共享为 U 盘或虚拟光驱，用于文件传�
     系统日志、操作审计、重启与恢复出厂设置
 
     [:octicons-arrow-right-24: 查看](system/maintenance/log.md)
-
-</div>
-
-### 扩展 IO
-
-通过 GPIO 和 UART 串口连接外部硬件设备，适合嵌入式调试和工业控制场景。
-
-<div class="grid cards" markdown>
-
-- **:material-console-line: UART 串口终端**
-
-    串口通信参数配置，与被控设备命令行交互
-
-    [:octicons-arrow-right-24: 查看](io/uart.md)
-
-- **:material-chip: GPIO 引脚控制**
-
-    引脚电平输入检测与输出控制，连接传感器等外设
-
-    [:octicons-arrow-right-24: 查看](io/gpio.md)
 
 </div>
 
