@@ -80,7 +80,7 @@
 
 点击"立即升级"，需验证用户信息：
 
-![用户验证框](../../system/images/setting_verify.webp)
+![用户验证框](../system/images/setting_verify.webp)
 
 输入密码（如已开启 2FA 还需验证码），验证通过后开始升级：
 
@@ -97,4 +97,4 @@
 
 ---
 
-[:octicons-arrow-left-24: 返回用户指南](../../index.md)
+[:octicons-arrow-left-24: 返回用户指南](../index.md)

@@ -27,7 +27,7 @@
 
 验证框显示镜像文件的 SHA-256 校验值。确认固件无误后，点击升级，弹出用户验证框：
 
-![用户验证框](../../system/images/setting_verify.webp)
+![用户验证框](../system/images/setting_verify.webp)
 
 - 输入密码
 - 如已开启 2FA，需输入验证码
@@ -49,4 +49,4 @@
 
 ---
 
-[:octicons-arrow-left-24: 返回用户指南](../../index.md)
+[:octicons-arrow-left-24: 返回用户指南](../index.md)
