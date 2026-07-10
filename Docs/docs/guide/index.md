@@ -40,41 +40,9 @@
 
 ## 场景向导
 
-带着具体任务来？从这里开始：
+场景向导内容补充中，敬请期待。
 
-<div class="grid cards" markdown>
-
-- **:material-cloud-download: 远程重装系统**
-
-    ISO 挂载 → ATX 重启 → BIOS → 安装，人在千里之外搞定。
-
-    [:octicons-arrow-right-24: 开始操作](scenarios/reinstall-os.md)
-
-- **:material-earth: 外网远程访问**
-
-    使用 Tailscale 实现外网访问，无需公网 IP。
-
-    [:octicons-arrow-right-24: 开始配置](scenarios/remote-access.md)
-
-- **:material-folder-move: 文件传输**
-
-    通过 TF 卡和 USB 导出，把文件送进或取出被控设备。
-
-    [:octicons-arrow-right-24: 开始操作](scenarios/file-transfer.md)
-
-- **:material-power-cycle: 电源控制**
-
-    远程开机、关机、重启，配合 ATX 和 WoL 完整控制电源。
-
-    [:octicons-arrow-right-24: 开始操作](scenarios/power-control.md)
-
-- **:material-tools: 日常运维**
-
-    升级固件、审计记录、重启恢复等日常操作清单。
-
-    [:octicons-arrow-right-24: 开始操作](scenarios/daily-ops.md)
-
-</div>
+[:octicons-arrow-right-24: 查看](scenarios/index.md)
 
 ---
 
@@ -284,11 +252,6 @@ TF 卡规格、挂载分区、共享为 U 盘或虚拟光驱，用于文件传�
 
     [:octicons-arrow-right-24: 查看](security/audit.md)
 
-- **:material-shield-lock: 安全加固**
-
-    2FA、HTTPS、SSH 安全配置最佳实践
-
-    [:octicons-arrow-right-24: 查看](scenarios/security.md)
 
 </div>
 
@@ -370,4 +333,4 @@ TF 卡规格、挂载分区、共享为 U 盘或虚拟光驱，用于文件传�
 
 ---
 
-[:octicons-bug-24: 问题反馈与建议](scenarios/feedback.md){ .md-button } [:octicons-home-24: 返回首页](../index.md){ .md-button } [:octicons-rocket-24: 快速上手](../quick_start/index.md){ .md-button }
+[:octicons-bug-24: 问题反馈与建议](../community/feedback/index.md){ .md-button } [:octicons-home-24: 返回首页](../index.md){ .md-button } [:octicons-rocket-24: 快速上手](../quick_start/index.md){ .md-button }

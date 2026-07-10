@@ -192,14 +192,7 @@ nav:
       - 接口说明: guide/product/interface.md
       - 物理与电气特性: guide/product/characteristics.md
       - 拓展配件: guide/product/extensibility.md
-    - 场景向导:
-      - 远程重装系统: guide/scenarios/reinstall-os.md
-      - 外网远程访问: guide/scenarios/remote-access.md
-      - 文件传输: guide/scenarios/file-transfer.md
-      - 电源控制: guide/scenarios/power-control.md
-      - 日常运维: guide/scenarios/daily-ops.md
-      - 安全加固: guide/scenarios/security.md
-      - 问题反馈: guide/scenarios/feedback.md
+    - 场景向导: guide/scenarios/index.md
     - 设备交互:
       - OLED 屏幕: guide/interaction/oled.md
       - LED 指示灯: guide/interaction/led.md
