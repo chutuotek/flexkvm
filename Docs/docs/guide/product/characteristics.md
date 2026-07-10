@@ -8,7 +8,7 @@
 | 以太网 | 10/100M 自适应 |
 | WiFi | WiFi 6，双频 2.4GHz / 5GHz |
 | USB 数据接口 | USB 2.0 OTG |
-| TF 卡 | 最高 512GB |
+| TF 卡 | MicroSD 卡 |
 | OLED 屏幕 | 128×64，单色 |
 | 扩展接口 | 5pin 排针，UART + GPIO，3.3V 电平 |
 | 散热方式 | 铝合金被动散热，无风扇 |
