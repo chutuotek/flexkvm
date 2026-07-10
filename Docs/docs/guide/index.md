@@ -198,7 +198,7 @@ TF 卡规格、挂载分区、共享为 U 盘或虚拟光驱，用于文件传�
 
     硬件接线、正常开关机、强制重启、强制断电
 
-    [:octicons-arrow-right-24: 查看](peripherals/atx/index.md)
+    [:octicons-arrow-right-24: 查看](peripherals/atx.md)
 
 </div>
 

@@ -2,6 +2,8 @@
 
 通过 ATX 硬件模块远程控制被控主机的电源——开机、关机、强制关机和重启，就像亲手按下机箱上的按钮一样。
 
+![atx](./images/atx_not_connect.webp)
+
 ---
 
 ## 前置条件
@@ -110,6 +112,8 @@ ATX 控制器串接在机箱面板按键与主板之间，既能透传开机、�
 ### 连接到 FlexKVM
 
 使用 **USB Type-C 数据线** 将 ATX 控制器连接到 FlexKVM 的 **ATX 接口**。
+
+![atx](./images/atx_connected.webp)
 
 连接后：
 

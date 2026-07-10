@@ -9,7 +9,7 @@
 | FlexKVM 已正常联网 | 参考 [快速入门](../../quick_start/index.md) |
 | TF 卡（MicroSD） | 存放系统 ISO 镜像，建议 ≥ 16GB |
 | 读卡器 | 电脑上把 ISO 写入 TF 卡用 |
-| ATX 控制器已连接 | 远程控制开关机和重启，接线见 [外设](../peripherals/atx/index.md) |
+| ATX 控制器已连接 | 远程控制开关机和重启，接线见 [外设](../peripherals/atx.md) |
 | 系统 ISO 镜像 | 你要安装的操作系统镜像文件 |
 
 ---

@@ -215,7 +215,7 @@ nav:
     - 存储与镜像:
       - 存储管理: guide/storage/disk.md
     - 外设:
-      - ATX 电源控制: guide/peripherals/atx/index.md
+      - ATX 电源控制: guide/peripherals/atx.md
     - 扩展 IO:
       - UART 串口终端: guide/io/uart.md
       - GPIO 引脚控制: guide/io/gpio.md

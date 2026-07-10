@@ -59,7 +59,7 @@ admin@flexkvm-6jzdd#
 
 ### ATX 电源控制
 
-> 需配合 ATX 硬件模块，详见 [外设](../peripherals/atx/index.md)。
+> 需配合 ATX 硬件模块，详见 [外设](../peripherals/atx.md)。
 
 | 命令 | 说明 | 示例 |
 |------|------|------|
