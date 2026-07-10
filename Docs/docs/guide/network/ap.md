@@ -22,7 +22,9 @@ FlexKVM 可以创建 WiFi 热点（AP），供其他设备直接连接访问管�
 
 当热点模式启用时，OLED 状态栏会显示热点图标。通过按键 B 切换模式时，OLED 会短暂显示切换后的模式图标。
 
-热点模式的 IP 地址会显示为 **Axxx.xxx.xxx.xxx**，其中 **A** 表示 AP 接口，**xxx.xxx.xxx.xxx** 表示当前分配的 IPv4 地址。
+热点模式的 IP 地址会显示为 **Axxx.xxx.xxx.xxx**，其中 **A** 表示 AP 接口。
+
+> 更多 OLED 状态说明详见 [OLED 屏幕](../interaction/oled.md)。
 
 ## 按键切换
 

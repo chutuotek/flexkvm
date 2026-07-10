@@ -104,7 +104,7 @@
 
 1. AP 配置统一生效
 2. 设备自动退出配网模式并重启网络
-3. OLED 显示屏显示设备 IP 地址，🔴 警告灯熄灭
+3. OLED 显示屏显示设备 IP 地址，🔴 警告灯熄灭（详见 [LED 指示灯](../interaction/led.md)）
 
 ![保存退出](../../quick_start/images/web_save.webp)
 

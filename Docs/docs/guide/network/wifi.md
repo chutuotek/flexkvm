@@ -20,11 +20,13 @@ FlexKVM 支持 802.11 a/b/g/n/ac/ax（兼容 WiFi 2/3/4/5/6）双频无线网络
 
 ![OLED 网络图标](../../quick_start/images/oled_wifi_connected.webp)
 
-WiFi 的 IP 地址会显示为 **Wxxx.xxx.xxx.xxx**，其中 **W** 表示 WiFi 接口，**xxx.xxx.xxx.xxx** 表示当前分配的 IPv4 地址。
+WiFi 的 IP 地址会显示为 **Wxxx.xxx.xxx.xxx**，其中 **W** 表示 WiFi 接口。
 
 > 在获取 IP 地址时会显示 **W Loading...**，如果超过 10s 没有获取到 IP 地址，请检查 WiFi 连接是否正常，或者网络配置是否正确。
 >
 > 如果没有连接 WiFi，OLED 显示屏上的网络图标上的"X"会显示。
+>
+> 更多 OLED 状态说明详见 [OLED 屏幕](../interaction/oled.md)。
 
 ## 按键切换
 

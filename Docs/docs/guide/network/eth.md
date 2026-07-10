@@ -22,11 +22,13 @@ FlexKVM 的百兆有线网口提供稳定可靠的有线网络连接，与 [WiFi
 
 ![OLED 网络图标](../../quick_start/images/oled_eth_connected.webp)
 
-以太网的 IP 地址会显示为 **Exxx.xxx.xxx.xxx**，其中 **E** 表示以太网接口，**xxx.xxx.xxx.xxx** 表示当前分配的 IPv4 地址。
+以太网的 IP 地址会显示为 **Exxx.xxx.xxx.xxx**，其中 **E** 表示以太网接口。
 
 > 在获取 IP 地址时会显示 **E Loading...**，如果超过 10s 没有获取到 IP 地址，请检查网线是否连接正常，或者网络配置是否正确。
 >
 > 如果没有插入网线，OLED 显示屏上的网络图标上的"X"会显示。
+>
+> 更多 OLED 状态说明详见 [OLED 屏幕](../interaction/oled.md)。
 
 ## 软件配置
 

@@ -64,6 +64,10 @@ plugins:
             帮助与支持: Support
             常见问题与排查: Help & Diagnostics
             场景向导: Scenarios
+            设备交互: Device Interaction
+            OLED 屏幕: OLED Screen
+            LED 指示灯: LED Indicator
+            物理按键: Physical Buttons
             远程重装系统: Remote OS Install
             外网远程访问: Remote Access
             日常运维: Daily Operations
@@ -99,8 +103,6 @@ plugins:
             登录管理: Login Management
             账号安全: Account Security
             外观: Appearance
-            OLED 屏幕: OLED Screen
-            LED 指示灯: LED Indicator
             时间与日期: Time & Date
             USB 配置: USB Configuration
             固件升级: Firmware Upgrade
@@ -187,6 +189,10 @@ nav:
       - 接口说明: guide/product/interface.md
       - 物理与电气特性: guide/product/characteristics.md
       - 拓展配件: guide/product/extensibility.md
+    - 设备交互:
+      - OLED 屏幕: guide/interaction/oled.md
+      - LED 指示灯: guide/interaction/led.md
+      - 物理按键: guide/interaction/button.md
     - 场景向导:
       - 远程重装系统: guide/scenarios/reinstall-os.md
       - 外网远程访问: guide/scenarios/remote-access.md
@@ -223,8 +229,6 @@ nav:
         - 登录管理: guide/system/account/login.md
         - 账号安全: guide/system/account/account.md
       - 外观: guide/system/appearance.md
-      - OLED 屏幕: guide/system/oled.md
-      - LED 指示灯: guide/system/led.md
       - 时间与日期: guide/system/time.md
       - USB 配置: guide/system/usb.md
       - 固件升级:
