@@ -93,8 +93,7 @@ plugins:
             键盘: Keyboard
             音频: Audio
             存储与镜像: Storage & ISO Image
-            TF 卡管理: TF Card Management
-            ISO 镜像挂载: ISO Image Mount
+            存储管理: Storage Management
             外设: Peripherals
             ATX 电源控制: ATX Power Control
             系统配置: System Configuration
@@ -219,8 +218,7 @@ nav:
       - 键盘: guide/input/keyboard.md
     - 音频: guide/audio/index.md
     - 存储与镜像:
-      - TF 卡管理: guide/storage/tf-card.md
-      - ISO 镜像挂载: guide/storage/disk.md
+      - 存储管理: guide/storage/disk.md
     - 外设:
       - ATX 电源控制: guide/peripherals/atx/index.md
     - 系统配置:

@@ -226,19 +226,13 @@
 
 ### 存储与镜像
 
-TF 卡管理、ISO 镜像挂载为虚拟光驱、文件传输。
+TF 卡规格、挂载分区、共享为 U 盘或虚拟光驱，用于文件传输和远程重装系统。
 
 <div class="grid cards" markdown>
 
-- **:material-sd: TF 卡管理**
+- **:material-sd: 存储管理**
 
-    规格要求、文件系统支持、文件浏览与管理
-
-    [:octicons-arrow-right-24: 查看](storage/tf-card.md)
-
-- **:material-disc: ISO 镜像挂载**
-
-    上传 ISO → 挂载为虚拟光驱 → 远程重装系统
+    规格要求、分区挂载、USB 共享、文件传输与远程重装系统
 
     [:octicons-arrow-right-24: 查看](storage/disk.md)
 
