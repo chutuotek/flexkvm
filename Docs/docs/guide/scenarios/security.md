@@ -91,4 +91,4 @@ SSH 详细配置和可用命令见 [SSH 远程访问](../network/ssh.md)。
 
 - 需要查看或导出日志？→ [日常运维](daily-ops.md)
 - 如何在外网安全访问？→ [外网远程访问](remote-access.md)
-- 忘记密码怎么办？→ 只能恢复出厂设置重置，详见 [重启与重置](../system/maintenance/reset.md)
+- 忘记密码怎么办？→ 只能恢复出厂设置重置，详见 [恢复出厂设置](../maintenance/factory-reset.md)

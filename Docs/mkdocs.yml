@@ -110,7 +110,10 @@ plugins:
             维护与诊断: Maintenance & Diagnostics
             系统日志: System Logs
             操作审计: Audit Logs
-            重启与重置: Reboot & Reset
+            系统维护: System Maintenance
+            重启设备: Reboot
+            恢复出厂设置: Factory Reset
+            线刷镜像: Flash Firmware
             扩展 IO: Peripheral IO
             UART 串口终端: UART Serial Terminal
             GPIO 引脚控制: GPIO Control
@@ -232,13 +235,16 @@ nav:
       - 外观: guide/system/appearance.md
       - 时间与日期: guide/system/time.md
       - USB 配置: guide/system/usb.md
-      - 固件升级:
-        - 在线升级: guide/system/upgrade/online.md
-        - 离线升级: guide/system/upgrade/offline.md
       - 维护与诊断:
         - 系统日志: guide/system/maintenance/log.md
         - 操作审计: guide/system/maintenance/audit.md
-        - 重启与重置: guide/system/maintenance/reset.md
+    - 系统维护:
+      - 固件升级:
+        - 在线升级: guide/maintenance/upgrade/online.md
+        - 离线升级: guide/maintenance/upgrade/offline.md
+      - 重启设备: guide/maintenance/reboot.md
+      - 恢复出厂设置: guide/maintenance/factory-reset.md
+      - 线刷镜像: guide/maintenance/flash.md
   - 常见问题与排查:
     - 常见问题与排查: support/index.md
     - 常见问题: support/faq/index.md

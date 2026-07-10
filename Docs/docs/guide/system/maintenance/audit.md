@@ -4,7 +4,7 @@
 
 进入"设置" → "维护"：
 
-![维护界面](./images/maintenance_ui.webp)
+![维护界面](./images/setting_audit.webp)
 
 审计位于第一个组，点击"审计日志"弹出审计日志窗口：
 

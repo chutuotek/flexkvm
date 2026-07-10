@@ -308,17 +308,43 @@ TF 卡规格、挂载分区、共享为 U 盘或虚拟光驱，用于文件传�
 
     [:octicons-arrow-right-24: 查看](system/usb.md)
 
+- **:material-text-box: 维护与诊断**
+
+    系统日志、操作审计
+
+    [:octicons-arrow-right-24: 查看](system/maintenance/log.md)
+
+</div>
+
+### 系统维护
+
+设备固件升级、重启与恢复出厂设置等系统级维护操作。
+
+<div class="grid cards" markdown>
+
 - **:material-cloud-download: 固件升级**
 
     在线升级 / 离线升级，版本更新方式选择
 
-    [:octicons-arrow-right-24: 查看](system/upgrade/online.md)
+    [:octicons-arrow-right-24: 查看](maintenance/upgrade/online.md)
 
-- **:material-text-box: 维护与诊断**
+- **:material-restart: 重启设备**
 
-    系统日志、操作审计、重启与恢复出厂设置
+    软件重启与硬件复位按键操作
 
-    [:octicons-arrow-right-24: 查看](system/maintenance/log.md)
+    [:octicons-arrow-right-24: 查看](maintenance/reboot.md)
+
+- **:material-factory: 恢复出厂设置**
+
+    软件重置与硬件恢复出厂按键，清除所有数据
+
+    [:octicons-arrow-right-24: 查看](maintenance/factory-reset.md)
+
+- **:material-usb-flash-drive: 线刷镜像**
+
+    设备变砖时通过线刷方式恢复
+
+    [:octicons-arrow-right-24: 查看](maintenance/flash.md)
 
 </div>
 

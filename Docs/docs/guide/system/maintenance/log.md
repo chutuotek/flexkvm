@@ -4,7 +4,7 @@
 
 进入"设置" → "维护"：
 
-![维护界面](./images/maintenance_ui.webp)
+![维护界面](./images/setting_log.webp)
 
 系统日志在第二个组中，包含两个卡片：
 

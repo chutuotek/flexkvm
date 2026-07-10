@@ -15,7 +15,7 @@
 
 ![上传进度条](./images/setting_ota_offline_upload.webp)
 
-> OTA 镜像文件命名为 `xxxxx.tar`，上传时注意文件名。
+> OTA 镜像文件为 `.tar` 格式，从 [FlexKVM 发布页](https://github.com/chutuotek/flexkvm/releases) 下载（如 `flexkvm-v1.0.0.tar`）。
 
 上传成功后，升级卡片从灰色变为可用。
 
@@ -27,7 +27,7 @@
 
 验证框显示镜像文件的 SHA-256 校验值。确认固件无误后，点击升级，弹出用户验证框：
 
-![用户验证框](../images/setting_verify.webp)
+![用户验证框](../../system/images/setting_verify.webp)
 
 - 输入密码
 - 如已开启 2FA，需输入验证码
