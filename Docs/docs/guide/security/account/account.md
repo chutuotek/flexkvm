@@ -58,7 +58,7 @@
 
 输入密码后，点击"生成2FA"按钮，就会进入2fa配置页面，如下图所示:
 
-![2fa二维码](./images/2fa-qcode.webp)
+![2fa二维码](./images/setting_2fa_gen.webp)
 
 可以看到，弹窗的中间弹出了一个二维码
 
@@ -94,8 +94,11 @@
 
 点击之后，会弹出验证窗口，如下图所示:
 
+![2FA密码验证](./images/setting_verify_2fa.webp)
 
 需要输入密码和2FA码，点击确认即可生成备用码。
+
+![2fa生成](./images/2fa-gen.webp)
 
 ---
 
