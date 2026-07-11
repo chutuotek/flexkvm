@@ -64,6 +64,7 @@ plugins:
             帮助与支持: Support
             常见问题与排查: Help & Diagnostics
             场景向导: Scenarios
+            场景导航: Scenarios
             远程开关机: Remote Power Control
             产品概览: Product Overview
             设备交互: Device Interaction
@@ -87,7 +88,7 @@ plugins:
             HTTPS 证书: HTTPS Certificate
             SSH 远程访问: SSH Remote Access
             远程交互: Remote Interaction
-            查看远程画面: View Remote Screen
+            远程画面: Remote Display
             截图: Screenshot
             录像: Recording
             鼠标: Mouse
@@ -118,9 +119,6 @@ plugins:
             重启设备: Reboot
             恢复出厂设置: Factory Reset
             线刷镜像: Flash Firmware
-            UART 串口终端: UART Serial Terminal
-            GPIO 引脚控制: GPIO Control
-            硬件参考: Product Overview
             包装清单: Package Contents
             接口说明: Interface Overview
             物理与电气特性: Specifications
@@ -129,7 +127,6 @@ plugins:
             建议反馈: Feedback
             用户社群: Community
             联系我们: Contact
-            LED 设置: LED Settings
   - git-revision-date-localized:
       type: datetime
       timezone: Asia/Shanghai
@@ -188,12 +185,14 @@ nav:
   - 首页: index.md
   - 快速入门: quick_start/index.md
   - 用户指南:
+    - 用户指南: guide/index.md
     - 产品概览:
       - 包装清单: guide/product/packet.md
       - 接口说明: guide/product/interface.md
       - 物理与电气特性: guide/product/characteristics.md
       - 拓展配件: guide/product/extensibility.md
     - 场景向导:
+        - 场景导航: guide/scenarios/index.md
         - 外网远程访问: guide/scenarios/remote-access.md
         - 远程重装系统: guide/scenarios/reinstall-os.md
         - 远程开关机: guide/scenarios/power-control.md
@@ -213,7 +212,7 @@ nav:
       - Tailscale 异地组网: guide/network/tailscale.md
       - 网络唤醒 (WoL): guide/network/wol.md
     - 远程交互:
-      - 查看远程画面: guide/remote/screen.md
+      - 远程画面: guide/remote/screen.md
       - 截图: guide/remote/screenshot.md
       - 录像: guide/remote/recording.md
       - 键盘: guide/remote/keyboard.md
@@ -244,6 +243,7 @@ nav:
       - 系统日志: guide/maintenance/log.md
       - 线刷镜像: guide/maintenance/flash.md
   - 常见问题与排查:
+    - 常见问题与排查: support/index.md
     - 常见问题: support/faq/index.md
     - 故障排查: support/troubleshooting/index.md
   - 社区与联系:
