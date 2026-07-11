@@ -133,14 +133,16 @@ EDID 相当于告诉被控主机"我是一台什么样的显示器"——支持�
 提交成功后，EDID 下拉列表中会出现 **custom** 选项，选择即可应用。
 
 ```
-示例格式:
+示例格式（前 16 字节，共需 128 字节）:
 00 FF FF FF FF FF FF 00 0E 94 66 66 88 88 88 88
-...
+（此处省略后续 112 字节，实际使用时请粘贴完整的 EDID 数据）
 ```
 
-> 上传失败时检查格式要求，确认 HEX 编码正确、文件头匹配、校验和为 0。
+> 上面的示例**不能直接使用**——它只是一个格式示意。获取完整 EDID 的方法：
 >
-> 在 Linux 上可以用 `cat /sys/class/drm/card0-HDMI-A-1/edid | xxd -p` 获取当前显示器的 EDID 数据。
+> - **Linux**：`cat /sys/class/drm/card0-HDMI-A-1/edid | xxd -p` 可获取当前显示器的 EDID
+> - **Windows**：使用 [MonitorInfoView](https://www.nirsoft.net/utils/monitor_info_view.html) 等工具导出
+> - 也可从显示器厂商或 EDID 编辑工具获取完整数据
 
 ## 全屏
 
