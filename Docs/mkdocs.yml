@@ -64,6 +64,7 @@ plugins:
             帮助与支持: Support
             常见问题与排查: Help & Diagnostics
             场景向导: Scenarios
+            产品概览: Product Overview
             设备交互: Device Interaction
             OLED 屏幕: OLED Screen
             LED 指示灯: LED Indicator
@@ -105,6 +106,7 @@ plugins:
             外观: Appearance
             时间与日期: Time & Date
             USB 配置: USB Configuration
+            蓝牙: Bluetooth
             固件升级: Firmware Upgrade
             在线升级: Online Upgrade
             离线升级: Offline Upgrade
@@ -186,7 +188,6 @@ nav:
   - 首页: index.md
   - 快速入门: quick_start/index.md
   - 用户指南:
-    - 用户指南: guide/index.md
     - 产品概览:
       - 包装清单: guide/product/packet.md
       - 接口说明: guide/product/interface.md
@@ -240,11 +241,9 @@ nav:
       - 系统日志: guide/maintenance/log.md
       - 线刷镜像: guide/maintenance/flash.md
   - 常见问题与排查:
-    - 常见问题与排查: support/index.md
     - 常见问题: support/faq/index.md
     - 故障排查: support/troubleshooting/index.md
   - 社区与联系:
-    - 社区与联系: community/index.md
     - 建议反馈: community/feedback/index.md
     - 用户社群: community/social/index.md
     - 联系我们: community/contact/index.md
