@@ -64,6 +64,8 @@ plugins:
             帮助与支持: Support
             常见问题与排查: Help & Diagnostics
             场景向导: Scenarios
+            场景导航: Scenarios
+            远程开关机: Remote Power Control
             产品概览: Product Overview
             设备交互: Device Interaction
             OLED 屏幕: OLED Screen
@@ -193,7 +195,15 @@ nav:
       - 接口说明: guide/product/interface.md
       - 物理与电气特性: guide/product/characteristics.md
       - 拓展配件: guide/product/extensibility.md
-    - 场景向导: guide/scenarios/index.md
+    - 场景向导:
+        - 场景导航: guide/scenarios/index.md
+        - 外网远程访问: guide/scenarios/remote-access.md
+        - 远程重装系统: guide/scenarios/reinstall-os.md
+        - 远程开关机: guide/scenarios/power-control.md
+        - 文件传输: guide/scenarios/file-transfer.md
+        - 安全加固: guide/scenarios/security.md
+        - 日常运维: guide/scenarios/daily-ops.md
+        - 问题反馈: guide/scenarios/feedback.md
     - 设备交互:
       - OLED 屏幕: guide/interaction/oled.md
       - LED 指示灯: guide/interaction/led.md
