@@ -1,51 +1,49 @@
 # 离线升级
 
-进入"设置" → "升级"
+设备没联网也能升级固件——在电脑上下载固件包放 TF 卡，插进设备后上传升级。
+
+进设置 → 升级。
 
 ![升级界面](./images/setting_ota_offline.webp)
 
-区块内包含两个卡片：
+## 下载固件包
 
-- 上传镜像
-- 升级
+在电脑上从以下任一地址下载 OTA 镜像文件（`.tar` 格式）：
+
+| 下载源 | 地址 | 适合 |
+|--------|------|------|
+| GitHub | [github.com/chutuotek/flexkvm/releases](https://github.com/chutuotek/flexkvm/releases) | 海外用户 |
+| Gitee | [gitee.com/chutuotek/flexkvm/releases](https://gitee.com/chutuotek/flexkvm/releases) | 国内用户，速度更快 |
+
+在发布页找到目标版本，下载 `.tar` 固件包（如 `flexkvm-v1.0.0.tar`），放入 TF 卡。把 TF 卡插入 FlexKVM。
 
 ## 上传镜像
 
-点击上传，选择 OTA 镜像文件。上传时卡片下方显示进度条：
+进设置 → 升级 → 点**上传** → 在 TF 卡中选中固件包。
 
 ![上传进度条](./images/setting_ota_offline_upload.webp)
 
-> OTA 镜像文件为 `.tar` 格式，从 [FlexKVM 发布页](https://github.com/chutuotek/flexkvm/releases) 下载（如 `flexkvm-v1.0.0.tar`）。
-
-上传成功后，升级卡片从灰色变为可用。
+> **验证**：上传完成后校验通过，升级卡片从灰色变可用。
 
 ## 升级
 
-点击升级，弹出上传包验证框：
+点升级 → 弹窗显示镜像 SHA-256 校验值。确认无误后点升级 → 输入密码（开了 2FA 还要验证码）：
 
 ![升级包验证框](./images/setting_ota_offline_upload.webp)
 
-验证框显示镜像文件的 SHA-256 校验值。确认固件无误后，点击升级，弹出用户验证框：
-
 ![用户验证框](../system/images/setting_verify.webp)
 
-- 输入密码
-- 如已开启 2FA，需输入验证码
-
-验证通过后显示升级进度：
+验证通过后开始升级：
 
 ![升级进度](./images/ota_upgrade.webp)
 
-升级成功后显示提示：
+> **验证**：升级中 OLED 显示升级图标，🔴 警告灯快速闪烁。完成后设备自动重启，OLED 重新显示 IP。
+
+升级成功：
 
 ![升级成功](./images/ota_upgrade_success.webp)
 
-> 升级期间请保持电源稳定，断电可能导致升级失败。升级完成后设备自动重启。
->
-> OTA 升级只能升级到更高版本，不支持降级和同级升级。
-
-- 升级过程中，OLED 显示升级图标，🔴 警告灯快速闪烁
-- 升级完成后，🔴 警告灯常亮，设备重启
+> OTA 只能升到更高版本，不支持降级和同级覆盖。⚠️ 升级期间保持电源稳定，断电可能导致升级失败。
 
 ---
 
