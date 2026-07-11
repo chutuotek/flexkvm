@@ -122,7 +122,7 @@ WiFi 连上后，OLED 网络图标的"X"消失，第二行显示 IP 地址。IP 
 
 只读展示当前网络参数：IP 地址、MAC 地址、子网掩码、网关、DNS1~3。
 
-**IPv4 配置**
+### IPv4 配置
 
 ![WiFi DHCP](./images/wifi/setting_wifi_static_off.webp)
 
@@ -145,7 +145,7 @@ WiFi 连上后，OLED 网络图标的"X"消失，第二行显示 IP 地址。IP 
 
 点保存，立即生效。
 
-**MAC 地址**
+### MAC 地址
 
 ![WiFi MAC 默认](./images/wifi/setting_wifi_mac_off.webp)
 
