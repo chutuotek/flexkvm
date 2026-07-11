@@ -64,7 +64,6 @@ plugins:
             帮助与支持: Support
             常见问题与排查: Help & Diagnostics
             场景向导: Scenarios
-            场景导航: Scenarios
             远程开关机: Remote Power Control
             产品概览: Product Overview
             设备交互: Device Interaction
@@ -87,18 +86,18 @@ plugins:
             网络唤醒 (WoL): Wake-on-LAN (WoL)
             HTTPS 证书: HTTPS Certificate
             SSH 远程访问: SSH Remote Access
-            远程画面: Remote Display
+            远程交互: Remote Interaction
             查看远程画面: View Remote Screen
             截图: Screenshot
             录像: Recording
-            键盘与鼠标: Keyboard & Mouse
             鼠标: Mouse
             键盘: Keyboard
             音频: Audio
-            存储与镜像: Storage & ISO Image
+            外设与扩展: Peripherals & Expansion
             存储管理: Storage Management
-            外设: Peripherals
             ATX 电源控制: ATX Power Control
+            UART 串口终端: UART Serial Terminal
+            GPIO 引脚控制: GPIO Control
             系统配置: System Configuration
             关于设备: About Device
             安全设置: Security Settings
@@ -119,7 +118,6 @@ plugins:
             重启设备: Reboot
             恢复出厂设置: Factory Reset
             线刷镜像: Flash Firmware
-            扩展 IO: Peripheral IO
             UART 串口终端: UART Serial Terminal
             GPIO 引脚控制: GPIO Control
             硬件参考: Product Overview
@@ -196,7 +194,6 @@ nav:
       - 物理与电气特性: guide/product/characteristics.md
       - 拓展配件: guide/product/extensibility.md
     - 场景向导:
-        - 场景导航: guide/scenarios/index.md
         - 外网远程访问: guide/scenarios/remote-access.md
         - 远程重装系统: guide/scenarios/reinstall-os.md
         - 远程开关机: guide/scenarios/power-control.md
@@ -215,19 +212,18 @@ nav:
       - 热点模式: guide/network/ap.md
       - Tailscale 异地组网: guide/network/tailscale.md
       - 网络唤醒 (WoL): guide/network/wol.md
-    - 远程画面:
-      - 查看远程画面: guide/display/screen.md
-      - 截图: guide/display/screenshot.md
-      - 录像: guide/display/recording.md
-    - 键盘与鼠标:
-      - 鼠标: guide/input/mouse.md
-      - 键盘: guide/input/keyboard.md
-    - 音频: guide/audio/index.md
-    - 存储管理: guide/storage/disk.md
-    - ATX 电源控制: guide/peripherals/atx.md
-    - 扩展 IO:
-      - UART 串口终端: guide/io/uart.md
-      - GPIO 引脚控制: guide/io/gpio.md
+    - 远程交互:
+      - 查看远程画面: guide/remote/screen.md
+      - 截图: guide/remote/screenshot.md
+      - 录像: guide/remote/recording.md
+      - 键盘: guide/remote/keyboard.md
+      - 鼠标: guide/remote/mouse.md
+      - 音频: guide/remote/audio.md
+    - 外设与扩展:
+      - 存储管理: guide/peripherals/disk.md
+      - ATX 电源控制: guide/peripherals/atx.md
+      - UART 串口终端: guide/peripherals/uart.md
+      - GPIO 引脚控制: guide/peripherals/gpio.md
     - 系统配置:
       - 关于设备: guide/system/about.md
       - 外观: guide/system/appearance.md

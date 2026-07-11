@@ -124,19 +124,19 @@
 
     连接会话、切换分辨率与画质、EDID 配置、全屏显示
 
-    [:octicons-arrow-right-24: 查看](display/screen.md)
+    [:octicons-arrow-right-24: 查看](remote/screen.md)
 
 - **:material-camera: 截图**
 
     一键截取当前画面，支持 PNG / JPG 格式
 
-    [:octicons-arrow-right-24: 查看](display/screenshot.md)
+    [:octicons-arrow-right-24: 查看](remote/screenshot.md)
 
 - **:material-video: 录像**
 
     录制远程画面为视频文件，多项参数可调
 
-    [:octicons-arrow-right-24: 查看](display/recording.md)
+    [:octicons-arrow-right-24: 查看](remote/recording.md)
 
 </div>
 
@@ -150,13 +150,13 @@
 
     绝对/相对模式切换、灵敏度调节、滚轮方向
 
-    [:octicons-arrow-right-24: 查看](input/mouse.md)
+    [:octicons-arrow-right-24: 查看](remote/mouse.md)
 
 - **:material-keyboard: 键盘**
 
     文字输入、快捷键发送、虚拟键盘、粘贴文本
 
-    [:octicons-arrow-right-24: 查看](input/keyboard.md)
+    [:octicons-arrow-right-24: 查看](remote/keyboard.md)
 
 </div>
 
@@ -170,7 +170,7 @@
 
     麦克风与扬声器控制，双向音频传输
 
-    [:octicons-arrow-right-24: 查看详情](audio/index.md)
+    [:octicons-arrow-right-24: 查看详情](remote/audio.md)
 
 </div>
 
@@ -184,7 +184,7 @@ TF 卡规格、挂载分区、共享为 U 盘或虚拟光驱，用于文件传�
 
     规格要求、分区挂载、USB 共享、文件传输与远程重装系统
 
-    [:octicons-arrow-right-24: 查看](storage/disk.md)
+    [:octicons-arrow-right-24: 查看](peripherals/disk.md)
 
 </div>
 
@@ -212,13 +212,13 @@ TF 卡规格、挂载分区、共享为 U 盘或虚拟光驱，用于文件传�
 
     串口通信参数配置，与被控设备命令行交互
 
-    [:octicons-arrow-right-24: 查看](io/uart.md)
+    [:octicons-arrow-right-24: 查看](peripherals/uart.md)
 
 - **:material-chip: GPIO 引脚控制**
 
     引脚电平输入检测与输出控制，连接传感器等外设
 
-    [:octicons-arrow-right-24: 查看](io/gpio.md)
+    [:octicons-arrow-right-24: 查看](peripherals/gpio.md)
 
 </div>
 
