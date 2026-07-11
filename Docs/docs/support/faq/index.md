@@ -130,4 +130,4 @@ FlexKVM 使用自签名 SSL 证书，浏览器无法验证其合法性，属于�
 
 ---
 
-没有找到你的问题？试试在顶部搜索栏输入关键词，或前往 [故障排查](../troubleshooting/index.md) 按症状定位。
+没有找到你的问题？试试在顶部搜索栏输入关键词，或前往 [故障排查](../troubleshooting/index.md) 按症状定位。如需提交 Bug 或建议，请参考 [问题反馈与建议](../../guide/scenarios/feedback.md)。
