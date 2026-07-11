@@ -1,75 +1,193 @@
 # FlexKVM
 
-## 👋 Welcome to FlexKVM
+**Plug-and-play hardware-level out-of-band management.** Connect it to your target host's HDMI and USB ports, and you can view the screen, control keyboard and mouse, manage power, and mount ISOs — all from your browser or via Tailscale. Even if the target OS is crashed, has no graphics driver, or isn't even installed yet.
 
-FlexKVM is an efficient and flexible IP-KVM solution that provides complete remote device control via HDMI+USB. Supports WiFi, Ethernet, and Tailscale connections — manage your servers anytime, anywhere.
+> No software to install on the target host. No public IP needed. As long as there's a network path, the server room is at your fingertips.
 
-[**Learn more →**](guide/index.en.md)
+<div class="image-carousel">
+  <div class="carousel-slides">
+    <img src="images/product/generated_26.webp" alt="FlexKVM Product 7" class="carousel-slide active">
+    <img src="images/product/generated_19.webp" alt="FlexKVM Product 1" class="carousel-slide">
+    <img src="images/product/generated_20.webp" alt="FlexKVM Product 2" class="carousel-slide">
+    <img src="images/product/generated_21.webp" alt="FlexKVM Product 3" class="carousel-slide">
+    <img src="images/product/generated_22.webp" alt="FlexKVM Product 4" class="carousel-slide">
+    <img src="images/product/generated_23.webp" alt="FlexKVM Product 5" class="carousel-slide">
+    <img src="images/product/generated_24.webp" alt="FlexKVM Product 6" class="carousel-slide">
+  </div>
+  <button class="carousel-btn carousel-prev" aria-label="Previous"><svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg></button>
+  <button class="carousel-btn carousel-next" aria-label="Next"><svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></button>
+  <div class="carousel-dots">
+    <span class="carousel-dot active"></span>
+    <span class="carousel-dot"></span>
+    <span class="carousel-dot"></span>
+    <span class="carousel-dot"></span>
+    <span class="carousel-dot"></span>
+    <span class="carousel-dot"></span>
+    <span class="carousel-dot"></span>
+  </div>
+</div>
+
+<div class="hero-actions" markdown>
+[Quick Start :octicons-rocket-24:](quick_start/index.md){ .md-button .md-button--primary }
+[User Guide :material-book-open-page-variant:](guide/index.md){ .md-button }
+</div>
 
 ---
 
-## 🎯 Getting Started
+## What It Solves
+
+| Pain Point | FlexKVM's Solution |
+|------------|-------------------|
+| Server crashed, SSH/RDP down — have to haul a monitor to the server room | Hardware-level HDMI capture — see the screen remotely even when the OS is crashed |
+| Headless device BIOS needs tweaking — always need to connect a monitor | Remote keyboard & mouse control all the way to BIOS/UEFI — operate as if you're sitting right there |
+| Remote site system failure — sending someone on-site is expensive and slow | Built-in Tailscale mesh VPN — headquarters can remotely reinstall the OS |
+| No network on-site — can't remotely access the device | Built-in WiFi 6 hotspot — connect your phone or laptop directly, no need to wait for network setup |
+
+---
+
+## Key Features
 
 <div class="grid cards" markdown>
 
-- **[🚀 Quick Start](quick_start/index.md)**
+- **:material-monitor-eye: Remote Desktop Control**
 
-    Get started with FlexKVM in 5 minutes
+    Pure hardware HDMI capture, up to 1920x1200@60Hz. No dependency on OS, graphics drivers, or remote services — BIOS, blue screens, safe mode are all visible.
 
-- **[📖 User Guide](guide/index.md)**
+- **:material-headset: Bidirectional Audio**
 
-    Complete feature documentation and configuration tutorials
+    Emulates a USB audio device. Target host's system audio streams back to your browser; your microphone outputs to the target host. Hear beep codes during diagnostics — like sitting next to the machine.
+
+- **:material-power: Remote Power Control**
+
+    ATX control interface for remote power management — normal shutdown, force restart, force power-off.
+
+- **:material-disc: Virtual USB Drive**
+
+    Mount ISO images from TF card as virtual CD-ROM for remote OS installation and maintenance — no on-site personnel needed.
+
+- **:material-vpn: Mesh VPN (Tailscale)**
+
+    Built-in Tailscale client. No public IP, no port forwarding — end-to-end encrypted virtual network out of the box.
+
+- **:material-wifi-arrow-left-right: Dual-Network Redundancy**
+
+    5GHz band dedicated to video — low latency, no stutter. 100M Ethernet as the fallback. One link drops, the other takes over automatically.
+
+- **:material-access-point-network: WiFi 6 Hotspot**
+
+    No network in the rack? Customer won't let you on their LAN? FlexKVM is its own WiFi 6 hotspot. Connect your phone and complete OS installs, BIOS tweaks, and troubleshooting — zero infrastructure dependency.
+
+- **:material-fan-off: Low Power, Silent**
+
+    Typical 1.5W–2.4W consumption. Aluminum passive cooling, fanless, 24/7 quiet operation.
+
+- **:material-console-line: Serial & GPIO Expansion**
+
+    UART serial communication and GPIO control for embedded debugging, industrial automation, and watchdog applications.
+
+- **:material-magnet-on: Multi-Scene Deployment**
+
+    Magnetic backplate + DIN rail clip — desktop, rack, or industrial field, just put it down and go.
+
+- **:material-sd: External Storage**
+
+    TF card support for external storage — plug and play, compatible with FAT32, exFAT, ext4, and more.
+
+- **:material-package-variant-closed: Ultra Compact**
+
+    Just 65 × 46 × 22 mm, ~100g — take it anywhere.
 
 </div>
 
 ---
 
-## ❓ Help & Diagnostics
+## Core Specs
+
+| Item | Spec |
+|------|------|
+| Dimensions | 65 × 46 × 22 mm |
+| Weight | ~100g |
+| Power | 5V / 1A (USB Type-C) |
+| Typical power | 1.5W ~ 2.4W |
+| Video input | HDMI 1.4, up to 1920×1200@60Hz |
+| Audio | USB Audio emulation (playback + recording), WebRTC bidirectional |
+| Network | 100M Ethernet + WiFi 6 dual-band (2.4G / 5G) + WiFi 6 hotspot |
+| Operating temp | 0°C ~ 70°C |
+
+---
+
+## Who Uses FlexKVM
 
 <div class="grid cards" markdown>
 
-- **[💬 FAQ](support/faq/index.md)**
+- **:material-server: Enterprise IT / Data Centers**
 
-    Quick answers to frequently asked questions
+    Server crashed? View blue screens, enter BIOS, remotely reinstall the OS from your office — no more emergency trips to the server room.
 
-- **[🔧 Troubleshooting](support/troubleshooting/index.md)**
+- **:material-home: Homelab & Enthusiasts**
 
-    Having trouble? Find solutions here
+    NAS, soft router, all-in-one without a monitor? No more hauling a TV over for boot issues. Remotely adjust boot order and reinstall any time.
+
+- **:material-satellite-uplink: Edge Computing & IoT**
+
+    Base station, unmanned server room, remote site failure — maintain from HQ via Tailscale. Downtime compressed from hours to minutes.
+
+- **:material-robot: Embedded & Industrial Automation**
+
+    Industrial PC, PLC locked in a cabinet — FlexKVM captures HDMI + UART serial dual-channel debugging. Quickly pinpoint production line faults.
 
 </div>
 
 ---
 
-## 💬 Community & Contact
+## Documentation
 
 <div class="grid cards" markdown>
 
-- **[📝 Feedback](community/feedback/index.md)**
+- **:material-rocket-launch: Quick Start**
 
-    Report bugs or request features
+    From wiring to remote control in 5 minutes, with illustrated step-by-step instructions.
 
-- **[👥 Community](community/social/index.md)**
+    [:octicons-arrow-right-24: Get Started](quick_start/index.md)
 
-    Join QQ group or Telegram
+- **:material-book-open-page-variant: User Guide**
 
-- **[📧 Contact](community/contact/index.md)**
+    Complete feature documentation and configuration tutorials — browse by scenario or by function.
 
-    Technical support & business cooperation
+    [:octicons-arrow-right-24: Browse Guide](guide/index.md)
+
+- **:material-chat-question: Help & Diagnostics**
+
+    Quick FAQ answers + symptom-based troubleshooting.
+
+    [:octicons-arrow-right-24: Get Help](support/index.md)
+
+- **:material-account-group: Community & Contact**
+
+    Feedback, join the community, contact us.
+
+    [:octicons-arrow-right-24: Learn More](community/index.md)
 
 </div>
 
 ---
 
-## 🛒 Purchase
+## Purchase & Updates
 
-Get FlexKVM from official channels
+<div class="grid cards" markdown>
 
-[**Buy Now →**](https://www.chutuotek.com)
+- **:material-cart: Buy FlexKVM**
 
----
+    Available from official channels.
 
-## 📝 Changelog
+    [:octicons-arrow-right-24: Buy Now](https://item.taobao.com/item.htm?id=1054030596204)
 
-View version history and new features
+- **:material-text-box-multiple: Changelog**
 
-[**Changelog →**](changelog/index.md)
+    Version history and new features.
+
+    [:octicons-arrow-right-24: Changelog](changelog/index.md)
+
+</div>
+
+> Need documentation for a different firmware version? Use the **version selector** in the top navigation bar.
