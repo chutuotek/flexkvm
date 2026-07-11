@@ -291,11 +291,6 @@ TF 卡规格、挂载分区、共享为 U 盘或虚拟光驱，用于文件传�
 
     [:octicons-arrow-right-24: 查看](system/bluetooth.md)
 
-- **:material-text-box: 维护与诊断**
-
-    系统日志，用于排查系统异常
-
-    [:octicons-arrow-right-24: 查看](maintenance/log.md)
 
 </div>
 
@@ -328,6 +323,12 @@ TF 卡规格、挂载分区、共享为 U 盘或虚拟光驱，用于文件传�
     设备变砖时通过线刷方式恢复
 
     [:octicons-arrow-right-24: 查看](maintenance/flash.md)
+
+- **:material-text-box: 系统日志**
+
+    系统日志，用于排查系统异常
+
+    [:octicons-arrow-right-24: 查看](maintenance/log.md)
 
 </div>
 

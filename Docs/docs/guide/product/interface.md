@@ -46,8 +46,6 @@ FlexKVM 上有四个物理按键，详细操作见[物理按键](../interaction/
 
 ## HDMI 输入
 
-## HDMI 输入
-
 - **规格**：标准 HDMI Type-A 接口，兼容 HDMI 1.4。
 - **功能**：接收受控主机的 HDMI 视频信号，最高支持 1920x1200@60fps 输入。
 
