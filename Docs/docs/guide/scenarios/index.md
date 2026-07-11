@@ -2,68 +2,75 @@
 
 不用从头啃完所有文档。这里按**你想做的事**组织——选一个场景，跟着走完就行。
 
-> 还没完成首次接线和联网？先去 [快速入门](../../quick_start/index.md)，5 分钟搞定再回来。
+> 开始前请确认已完成 [快速上手](../../quick_start/index.md) 中的设备接线和网络配置。
 
 ---
 
-## 我想从外面访问设备
+## 远程访问与控制
 
-FlexKVM 提供两种远程访问方案，按你的实际情况选：
+从任何地方访问和控制你的被控设备。
 
-| 场景 | 方案 | 一句话 |
-|------|------|--------|
-| 人在设备旁边，但现场没网 | **热点直连** | FlexKVM 自建 WiFi 6 热点，手机连上就能操作 |
-| 人在公司/出差，设备在机房/家里 | **Tailscale 组网** | 免费 VPN，无需公网 IP，端到端加密 |
+<div class="grid cards" markdown>
 
-[:octicons-arrow-right-24: 外网远程访问](remote-access.md)
+- **:material-wifi-arrow-left-right: 外网远程访问**
 
----
+    人在公司、设备在家？热点直连 + Tailscale 组网，无需公网 IP。
 
-## 我要重装被控设备的系统
+    [:octicons-arrow-right-24: 开始配置](remote-access.md)
 
-系统崩溃、想换操作系统、或者新装一台机器——全套流程从准备镜像到安装完成，包括 BIOS 设置和常见坑点。
+- **:material-power: 远程开关机**
 
-[:octicons-arrow-right-24: 远程重装系统](reinstall-os.md)
+    ATX 物理控制电源 + WoL 网络唤醒，人在外面也能开机。
 
----
+    [:octicons-arrow-right-24: 查看接线](power-control.md)
 
-## 我要远程开关机 / 重启被控设备
+</div>
 
-被控设备关机了人在外面？通过 ATX 控制器物理控制电源（就像亲手按机箱按钮），配合 WoL 网络唤醒实现完整远程电源管理。
+## 系统安装与文件传输
 
-[:octicons-arrow-right-24: 远程开关机](power-control.md)
+给远程设备重装系统，或者在 FlexKVM 和被控设备之间传文件。
 
----
+<div class="grid cards" markdown>
 
-## 我要在设备和被控主机之间传文件
+- **:material-disc: 远程重装系统**
 
-需要给被控设备装驱动、传脚本、拿日志？把 TF 卡变成远程 U 盘或虚拟光驱，不用人跑机房。
+    从准备 ISO 镜像到 BIOS 启动、系统安装完成的全流程。
 
-[:octicons-arrow-right-24: 文件传输](file-transfer.md)
+    [:octicons-arrow-right-24: 开始重装](reinstall-os.md)
 
----
+- **:material-folder-move: 文件传输**
 
-## 我要加固设备安全
+    TF 卡变远程 U 盘或虚拟光驱，传驱动、脚本、日志、ISO 镜像。
 
-设备暴露在公网或多用户环境？从最关键的 2FA 双因素认证开始，到 HTTPS 证书、SSH 加固、审计日志——按优先级逐项配置。
+    [:octicons-arrow-right-24: 查看方法](file-transfer.md)
 
-[:octicons-arrow-right-24: 安全加固](security.md)
+</div>
 
----
+## 安全与维护
 
-## 日常运维做什么
+保护设备安全，保持固件更新，出了问题知道怎么反馈。
 
-设备已经稳定运行了，这篇覆盖日常你会反复做的事：升级固件、导出审计日志、重启恢复，附月度检查清单。
+<div class="grid cards" markdown>
 
-[:octicons-arrow-right-24: 日常运维](daily-ops.md)
+- **:material-shield-lock: 安全加固**
 
----
+    2FA 双因素认证、HTTPS 证书、SSH 加固、审计日志——按优先级逐项配置。
 
-## 遇到问题 / 有功能建议
+    [:octicons-arrow-right-24: 加固安全](security.md)
 
-Bug 反馈、功能建议、如何写好反馈让开发者快速定位——含反馈模板和诊断信息收集指南。
+- **:material-tools: 日常运维**
 
-[:octicons-arrow-right-24: 问题反馈与建议](feedback.md)
+    升级固件、导出审计日志、重启恢复，附月度检查清单。
+
+    [:octicons-arrow-right-24: 运维指南](daily-ops.md)
+
+- **:material-bug: 问题反馈与建议**
+
+    Bug 反馈模板、诊断信息收集、功能建议——让开发者快速定位问题。
+
+    [:octicons-arrow-right-24: 提交反馈](feedback.md)
+
+</div>
 
 ---
 
@@ -79,4 +86,4 @@ Bug 反馈、功能建议、如何写好反馈让开发者快速定位——含�
 
 ---
 
-[:octicons-arrow-left-24: 返回用户指南](../index.md)
+[:octicons-bug-24: 问题反馈](feedback.md){ .md-button } [:octicons-home-24: 返回首页](../../index.md){ .md-button } [:octicons-book-open-page-variant: 用户指南](../index.md){ .md-button }
