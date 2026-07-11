@@ -22,7 +22,7 @@
 
 | Possible cause | Solution |
 |---------------|----------|
-| DHCP not responding | Try using a [static IP](../../guide/network/wifi.md#ipv4-configuration) |
+| DHCP not responding | Try using a [static IP](../../guide/network/wifi.md#ipv4-配置) |
 | Weak signal | Move closer to the router or use 5GHz |
 | MAC address filter | Check if the router has MAC filtering enabled |
 | Wrong password | Re-enter the password, check for uppercase/lowercase and special characters |
