@@ -86,4 +86,4 @@
 
 ---
 
-[:octicons-bug-24: 问题反馈](feedback.md){ .md-button } [:octicons-home-24: 返回首页](../../index.md){ .md-button } [:octicons-book-open-page-variant: 用户指南](../index.md){ .md-button }
+[:octicons-bug-24: 问题反馈](feedback.md){ .md-button } [:octicons-home-24: 返回首页](../../index.md){ .md-button } [:material-book-open-page-variant: 用户指南](../index.md){ .md-button }

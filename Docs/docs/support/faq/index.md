@@ -44,7 +44,7 @@ IPMI 等企业带外方案需要主板原生支持，价格昂贵、配置复杂
 
 ### 远程画面卡顿或延迟怎么办？
 
-尝试降低画质（画面菜单中调整），或点击"重新连接"。如果网络环境较差，建议使用 5GHz WiFi 或有线网络。详见 [远程画面](../../guide/display/screen.md)。
+尝试降低画质（画面菜单中调整），或点击"重新连接"。如果网络环境较差，建议使用 5GHz WiFi 或有线网络。详见 [远程画面](../../guide/remote/screen.md)。
 
 ### 能在 BIOS/UEFI 界面操作吗？
 
@@ -92,7 +92,7 @@ FlexKVM 对被控设备**完全透明**——它模拟标准 USB 键盘鼠标和
 
 ### TF 卡支持哪些文件系统？
 
-支持 FAT32、exFAT、ext4、NTFS。推荐使用 exFAT（无 4GB 单文件限制）。详见 [存储管理](../../guide/storage/disk.md)。
+支持 FAT32、exFAT、ext4、NTFS。推荐使用 exFAT（无 4GB 单文件限制）。详见 [存储管理](../../guide/peripherals/disk.md)。
 
 ### 如何远程重装操作系统？
 

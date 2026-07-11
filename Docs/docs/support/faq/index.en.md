@@ -44,7 +44,7 @@ Chrome, Edge, and Firefox are recommended. Other browsers may have compatibility
 
 ### The remote screen is laggy or delayed. What can I do?
 
-Try lowering the video quality in the display menu, or click "Reconnect". For better performance, use 5GHz WiFi or a wired Ethernet connection. See [Remote Display](../../guide/display/screen.md).
+Try lowering the video quality in the display menu, or click "Reconnect". For better performance, use 5GHz WiFi or a wired Ethernet connection. See [Remote Display](../../guide/remote/screen.md).
 
 ### Can I access the BIOS/UEFI?
 
@@ -92,7 +92,7 @@ One FlexKVM manages one target host. For multiple hosts, equip each with its own
 
 ### Which file systems does the TF card support?
 
-FAT32, exFAT, ext4, and NTFS. exFAT is recommended (no 4GB single-file limit). See [Storage Management](../../guide/storage/disk.md).
+FAT32, exFAT, ext4, and NTFS. exFAT is recommended (no 4GB single-file limit). See [Storage Management](../../guide/peripherals/disk.md).
 
 ### How do I remotely reinstall the OS?
 
