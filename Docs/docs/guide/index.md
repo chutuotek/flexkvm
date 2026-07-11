@@ -114,13 +114,13 @@
 
 </div>
 
-### 远程画面
+### 远程交互
 
-查看被控主机画面，截取屏幕、录制视频。
+查看被控主机画面，控制键鼠，传输音频。
 
 <div class="grid cards" markdown>
 
-- **:material-monitor: 查看远程画面**
+- **:material-monitor: 远程画面**
 
     连接会话、切换分辨率与画质、EDID 配置、全屏显示
 
@@ -138,33 +138,17 @@
 
     [:octicons-arrow-right-24: 查看](remote/recording.md)
 
-</div>
-
-### 键盘与鼠标
-
-控制被控主机的输入设备。
-
-<div class="grid cards" markdown>
-
-- **:material-mouse: 鼠标**
-
-    绝对/相对模式切换、灵敏度调节、滚轮方向
-
-    [:octicons-arrow-right-24: 查看](remote/mouse.md)
-
 - **:material-keyboard: 键盘**
 
     文字输入、快捷键发送、虚拟键盘、粘贴文本
 
     [:octicons-arrow-right-24: 查看](remote/keyboard.md)
 
-</div>
+- **:material-mouse: 鼠标**
 
-### 音频
+    绝对/相对模式切换、灵敏度调节、滚轮方向
 
-双向音频传输，把被控主机的系统声音传回浏览器，操作端麦克风输出到被控主机。
-
-<div class="grid cards" markdown>
+    [:octicons-arrow-right-24: 查看](remote/mouse.md)
 
 - **:material-headset: 音频**
 
@@ -174,39 +158,23 @@
 
 </div>
 
-### 存储与镜像
+### 外设与扩展
 
-TF 卡规格、挂载分区、共享为 U 盘或虚拟光驱，用于文件传输和远程重装系统。
+TF 卡存储、ATX 电源控制、UART 串口、GPIO 引脚——物理外接的扩展能力。
 
 <div class="grid cards" markdown>
 
 - **:material-sd: 存储管理**
 
-    规格要求、分区挂载、USB 共享、文件传输与远程重装系统
+    TF 卡规格、分区挂载、USB 共享、文件传输与远程重装系统
 
     [:octicons-arrow-right-24: 查看](peripherals/disk.md)
-
-</div>
-
-### 外设
-
-连接外部模块扩展设备功能，如 ATX 电源控制、KVM 切换器等。
-
-<div class="grid cards" markdown>
 
 - **:material-power: ATX 电源控制**
 
     硬件接线、正常开关机、强制重启、强制断电
 
     [:octicons-arrow-right-24: 查看](peripherals/atx.md)
-
-</div>
-
-### 扩展 IO
-
-通过 GPIO 和 UART 串口连接外部硬件设备，适合嵌入式调试和工业控制场景。
-
-<div class="grid cards" markdown>
 
 - **:material-console-line: UART 串口终端**
 
