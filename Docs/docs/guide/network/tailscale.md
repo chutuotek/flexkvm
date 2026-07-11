@@ -32,7 +32,7 @@ Tailscale 是预装在 FlexKVM 里的 VPN 组网工具——把你的设备加�
 
 > **验证**：页面自动跳回管理界面，显示设备已加入。登录过程中可以随时关页面，后台异步执行。
 
-![Tailscale 登录成功](./images/tailscale/setting_tailscale_scuess.webp)
+![Tailscale 登录成功](./images/tailscale/setting_tailscale_success.webp)
 
 ## 连接信息
 

@@ -39,7 +39,7 @@ ATX 控制器排线上每根线都有标签，对照接到主板：
 
 > 不确定？翻主板说明书"前置面板接口"章节，或搜主板型号 + `front panel pinout`。
 
-![10-1 面板插针](./images/atx/atx_pannel.webp)
+![10-1 面板插针](./images/atx/atx_panel.webp)
 
 ### 接线原理
 
