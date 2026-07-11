@@ -220,4 +220,4 @@ FlexKVM 可以通过选配配件将 ATX 控制器固定在机箱内部，配件�
 
 ---
 
-[:octicons-arrow-left-24: 返回用户指南](../../index.md)
+[:octicons-arrow-left-24: 返回用户指南](../index.md)
