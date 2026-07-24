@@ -20,11 +20,11 @@ No. FlexKVM has Tailscale built-in — as long as the device can access the inte
 
 ### Can I use WiFi and Ethernet at the same time?
 
-Yes, they work as redundant backups. If one link goes down, the other takes over automatically — unplug the Ethernet cable and the video keeps streaming, keyboard and mouse keep working.
+Yes, both can be online simultaneously. If either network fails, control is unaffected. We recommend placing them on different subnets — for example, Ethernet on `192.168.1.x` and WiFi on `192.168.2.x`.
 
 ### How do I find FlexKVM's IP address?
 
-Check the OLED screen. Ethernet IP shows as `Exxx.xxx.xxx.xxx`, WiFi IP shows as `Wxxx.xxx.xxx.xxx`. See [OLED Screen](../../guide/interaction/oled.md).
+Check the OLED screen. Ethernet IP shows as `Exxx.xxx.xxx.xxx`, WiFi IP shows as `Wxxx.xxx.xxx.xxx`, and hotspot IP shows as `Axxx.xxx.xxx.xxx`. See [OLED Screen](../../guide/interaction/oled.md).
 
 ### What is provisioning mode and when do I need it?
 
@@ -40,7 +40,7 @@ Yes. Your phone temporarily disconnects from the internet while connected to the
 
 ### Which browsers are supported?
 
-Chrome, Edge, and Firefox are recommended. Other browsers may have compatibility issues (e.g., display problems).
+Chrome and Edge are recommended. Other browsers may have compatibility issues (e.g., display problems).
 
 ### The remote screen is laggy or delayed. What can I do?
 
@@ -129,3 +129,5 @@ FlexKVM uses a self-signed SSL certificate. Your browser cannot verify it, which
 ---
 
 Still have questions? Try searching at the top of the page, or go to [Troubleshooting](../troubleshooting/index.md) for symptom-based diagnostics.
+
+To submit a bug or suggestion, see [Feedback & Suggestions](../../guide/scenarios/feedback.md).

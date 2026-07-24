@@ -60,15 +60,13 @@ In addition to the included items, you'll need to provide:
 | Ethernet cable | Wired network | Not needed if using hotspot provisioning |
 | Powered-on target host (PC/server) | The device to be managed | Must have HDMI output and USB port |
 | HDMI adapter | Adapt non-standard HDMI ports | **Required** if the target host uses Mini/Micro HDMI — you must provide your own adapter or converter cable |
-| Control device (computer or phone with internet) | Configure device, remotely access | Windows / macOS / Linux supported. Chrome / Edge / Firefox recommended |
+| Control device (computer or phone with internet) | Configure device, remotely access | Windows / macOS / Linux supported. Chrome / Edge recommended |
 
 > No USB power adapter? You can power FlexKVM from the target host's USB port, but if the target host shuts down, FlexKVM loses power and remote power-on becomes impossible.
 >
-> Chrome / Edge / Firefox are recommended. Other browsers may have compatibility issues (e.g., display problems).
+> Chrome / Edge are recommended. Other browsers may have compatibility issues (e.g., display problems).
 >
 > FlexKVM and your control device (computer/phone) must be on the **same local network** (connected to the same router) to communicate. Verify your network environment before proceeding.
->
-> **Exception**: When using [hotspot provisioning](#hotspot-provisioning) below, your phone/computer connects directly to the FlexKVM hotspot for initial configuration — no need to be on the same network beforehand. Once configured and connected to WiFi, you can access the device normally over the LAN.
 
 ---
 
@@ -244,10 +242,15 @@ After connection:
 ![Ethernet connected on OLED](./images/oled_eth_connected.webp)
 
 > **Troubleshooting — no IP after a long wait**:
+>
 > 1. Ethernet light off → check both ends of the cable, try a different cable
+>
 > 2. Ethernet light on but not blinking → check the router port, try a different port
+>
 > 3. OLED shows `waiting` for over 20s → verify router DHCP is enabled, verify router IP pool is not exhausted
+>
 > 4. All above OK but still no IP → try [Hotspot Provisioning](#hotspot-provisioning) to connect via WiFi
+>
 > 5. No WiFi available → check router DHCP settings, or see [Network Settings](../guide/network/eth.md) to configure a static IP
 
 ---

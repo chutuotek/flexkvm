@@ -1,6 +1,8 @@
 # Troubleshooting
 
-> Can't find the issue below? Try searching with a keyword at the top of the page, or collect diagnostic information and [submit feedback](../faq/index.md).
+> Don't panic — step-by-step diagnosis often finds the issue quickly. If none of the steps below resolve the problem, collect diagnostic information and [submit feedback](../../guide/scenarios/feedback.md) — the dev team will help.
+
+Try searching for symptom keywords in the **search bar** at the top of the page first (e.g., "can't connect", "video lag", "upgrade failed").
 
 ---
 
@@ -22,10 +24,18 @@
 
 | Possible cause | Solution |
 |---------------|----------|
-| DHCP not responding | Try using a [static IP](../../guide/network/wifi.en.md#ipv4-configuration) |
+| DHCP not responding | Try using a [static IP](../../guide/network/wifi.md#ipv4-configuration) |
 | Weak signal | Move closer to the router or use 5GHz |
 | MAC address filter | Check if the router has MAC filtering enabled |
 | Wrong password | Re-enter the password, check for uppercase/lowercase and special characters |
+
+### Tailscale remote connection failed
+
+| Possible cause | Solution |
+|---------------|----------|
+| Client device doesn't have Tailscale | Install Tailscale on the accessing device and log into the same account |
+| Device not logged in to Tailscale | Check Tailscale login status under Settings → App Center |
+| Tailscale service not enabled | Ensure the Tailscale toggle is on |
 
 ---
 
@@ -78,6 +88,10 @@
 | Can't click in black bars | Black bars are outside the video area — try fullscreen mode |
 | Sensitivity wrong | Adjust sensitivity in mouse settings |
 
+### High input latency
+
+Same causes as video lag. Try lowering video quality, using wired Ethernet, or 5GHz WiFi.
+
 ---
 
 ## Audio Issues
@@ -95,6 +109,10 @@
 2. Confirm the target host's playback device is set to **FlexKVM Audio**
 3. Check if the target host has audio output
 
+### Audio noise or delay
+
+This is normal for network transmission. Try improving your network environment.
+
 ---
 
 ## ATX Power Control Issues
@@ -109,6 +127,10 @@
 
 Some motherboards have "Restore on AC Power Loss" enabled in BIOS. Enter BIOS and disable this option.
 
+### ATX controller not recognized
+
+Re-plug the ATX controller's USB Type-C data cable, and check that the ATX icon appears on the OLED. If still not recognized, try a different USB data cable (charge-only cables won't work).
+
 ---
 
 ## Storage Issues
@@ -121,6 +143,14 @@ Check if the file system is supported. FAT32 and exFAT have the best compatibili
 
 Make sure the file is in `.img` or `.iso` format. Other formats cannot be mounted as a virtual drive.
 
+### Upload interrupted midway
+
+Refresh the page and re-upload. Resume is not currently supported.
+
+### System installation failed midway
+
+Check whether you toggled mouse, keyboard, or audio during installation — these actions cause the virtual CD-ROM to briefly disconnect.
+
 ---
 
 ## Upgrade Issues
@@ -129,7 +159,7 @@ Make sure the file is in `.img` or `.iso` format. Other formats cannot be mounte
 
 | Possible cause | Solution |
 |---------------|----------|
-| Unstable network | Switch download source (GitHub/Gitee), or try offline upgrade |
+| Unstable network | Switch download source (GitHub/Gitee/Gitcode), or try offline upgrade |
 | Power instability | Use a dedicated power adapter during upgrade |
 | Firmware checksum error | Re-download the package and try again |
 
@@ -150,6 +180,8 @@ Make sure the uploaded firmware file is complete and not corrupted. If the devic
 | Fast blink (4/s) | USB not connected or host off | Check USB cable, ensure target host is on |
 | Solid on | Normal | ✅ No action needed |
 
+> Priority: fast blink > slow blink > solid on. When both USB and HDMI are disconnected, the LED shows fast blink.
+
 ### Red warning LED
 
 | State | Meaning | Action |
@@ -167,7 +199,7 @@ When in doubt, try rebooting FlexKVM first:
 - **Software reboot**: Web interface → Settings → Maintenance → Reboot
 - **Hardware reset**: Press the reset button on the device
 
-Rebooting does not clear any configuration.
+Rebooting does not clear any configuration. If the problem persists after a reboot, check the corresponding section above.
 
 ---
 
