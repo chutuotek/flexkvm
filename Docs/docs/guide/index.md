@@ -40,9 +40,49 @@
 
 ## 场景向导
 
-场景向导内容补充中，敬请期待。
+按你想做的事组织——选一个场景，跟着走完就行。
 
-[:octicons-arrow-right-24: 查看](scenarios/index.md)
+<div class="grid cards" markdown>
+
+- **:material-wifi-arrow-left-right: 外网远程访问**
+
+    人在外面，设备在家/机房？热点直连 + Tailscale 组网，无需公网 IP。
+
+    [:octicons-arrow-right-24: 开始配置](scenarios/remote-access.md)
+
+- **:material-power: 远程开关机**
+
+    ATX 物理控制电源 + WoL 网络唤醒，随时随地开机/关机/重启。
+
+    [:octicons-arrow-right-24: 查看接线](scenarios/power-control.md)
+
+- **:material-disc: 远程重装系统**
+
+    从 ISO 镜像准备到 BIOS 引导，纯远程完成系统安装。
+
+    [:octicons-arrow-right-24: 开始重装](scenarios/reinstall-os.md)
+
+- **:material-folder-move: 文件传输**
+
+    TF 卡变远程 U 盘或虚拟光驱，传驱动、脚本、日志、ISO 镜像。
+
+    [:octicons-arrow-right-24: 查看方法](scenarios/file-transfer.md)
+
+- **:material-shield-lock: 安全加固**
+
+    2FA 双因素认证、HTTPS 证书、SSH、审计日志——按优先级逐项配置。
+
+    [:octicons-arrow-right-24: 加固安全](scenarios/security.md)
+
+- **:material-tools: 日常运维**
+
+    升级固件、导出审计日志、重启恢复，附月度检查清单。
+
+    [:octicons-arrow-right-24: 运维指南](scenarios/daily-ops.md)
+
+</div>
+
+不知道该从哪开始？查看 [场景向导首页](scenarios/index.md) 的推荐阅读路线。
 
 ---
 

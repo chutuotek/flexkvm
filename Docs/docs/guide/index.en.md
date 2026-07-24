@@ -42,7 +42,47 @@ Specs, interfaces, and accessory information.
 
 Task-oriented guides. Pick what you're trying to do — each one walks you through it from start to finish.
 
-[:octicons-arrow-right-24: Browse scenarios](scenarios/index.md)
+<div class="grid cards" markdown>
+
+- **:material-wifi-arrow-left-right: Remote Access**
+
+    Device at home, you're at work? Hotspot direct + Tailscale VPN — no public IP needed.
+
+    [:octicons-arrow-right-24: Configure](scenarios/remote-access.md)
+
+- **:material-power: Remote Power Control**
+
+    ATX physical power control + WoL network wake — power on/off/reboot from anywhere.
+
+    [:octicons-arrow-right-24: Wire it up](scenarios/power-control.md)
+
+- **:material-disc: Remote OS Install**
+
+    Full workflow: prepare ISO → boot from BIOS → install OS — all remote.
+
+    [:octicons-arrow-right-24: Start installing](scenarios/reinstall-os.md)
+
+- **:material-folder-move: File Transfer**
+
+    TF card as remote USB drive or virtual CD-ROM — transfer drivers, scripts, logs, ISO images.
+
+    [:octicons-arrow-right-24: View methods](scenarios/file-transfer.md)
+
+- **:material-shield-lock: Security Hardening**
+
+    2FA, HTTPS certificates, SSH hardening, audit logs — prioritized checklist.
+
+    [:octicons-arrow-right-24: Harden security](scenarios/security.md)
+
+- **:material-tools: Daily Operations**
+
+    Firmware upgrades, audit log export, reboot & reset — with monthly checklist.
+
+    [:octicons-arrow-right-24: Ops guide](scenarios/daily-ops.md)
+
+</div>
+
+Not sure where to start? Check the [Scenarios home](scenarios/index.md) for recommended reading paths.
 
 ---
 

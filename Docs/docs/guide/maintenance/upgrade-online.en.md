@@ -30,10 +30,14 @@ Choose the firmware download location:
 
 - [GitHub](https://github.com/chutuotek/flexkvm/releases) — International users
 - [Gitee](https://gitee.com/chutuotek/flexkvm/releases) — Users in China, faster
+- [Gitcode](https://gitcode.com/chutuotek/flexkvm/releases) — Users in China, faster
 
 ## Current Version
 
 Shows the current firmware version (e.g., `v0.1.0`).
+
+Stable release: `v0.x.x`
+Beta release: `v0.x.x-Beta.x`
 
 ## Check for Updates
 

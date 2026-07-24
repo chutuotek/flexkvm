@@ -9,7 +9,7 @@ Plug in an Ethernet cable and the device gets a stable wired connection. The 100
 | Item | Details |
 |:----:|---------|
 | Interface | RJ-45 |
-| Speed | 10Mbps / 100Mbps, auto-negotiation (100M port — negotiating to 100Mbps with a gigabit router is normal) |
+| Speed | 10M/100Mbps, auto-negotiation (100M port — negotiating to 100Mbps with a gigabit router is normal) |
 | Default state | Enabled |
 | MAC address | See packaging box label: ETH: xx:xx:xx:xx:xx:xx |
 | PoE | Not supported — requires external PoE splitter module |

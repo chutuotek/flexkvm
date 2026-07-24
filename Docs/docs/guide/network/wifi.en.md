@@ -18,7 +18,22 @@ Connect to WiFi for wireless networking. Supports 2.4GHz and 5GHz dual-band — 
 
 After WiFi connects, the "X" on the OLED network icon disappears and the second line shows the IP address. IP prefix is **W** (e.g., `W192.168.1.100`), W = Wireless.
 
+![OLED network icon](../../quick_start/images/oled_wifi_connected.webp)
+
 While acquiring IP, the display shows **W Loading...**. If it takes more than 10s → check WiFi connection or router DHCP.
+
+> When WiFi is disconnected, the network icon always has an "X". More OLED status info → [OLED Screen](../interaction/oled.md).
+
+## Button Switch
+
+Long-press **Button B** for about 3 seconds to quickly toggle between WiFi and [AP Mode](./ap.md):
+
+| Current mode | Action | Result | OLED icon | Wait time |
+|:------------:|:------:|:------:|:---------:|:---------:|
+| WiFi mode | Long-press Button B ~3s, release when OLED shows hotspot icon | Turns off WiFi, turns on hotspot | ![Hotspot icon](./images/ap/oled_ap_icon.webp){ width="80" } | ~10 seconds |
+| Hotspot mode | Long-press Button B ~3s, release when OLED shows WiFi icon | Turns off hotspot, restores WiFi | ![WiFi icon](./images/wifi/oled_wifi_icon.webp){ width="80" } | 3~4 seconds |
+
+> Button B toggles WiFi/hotspot. [Provisioning Mode](./provision.md) (Button A) is a **temporary** hotspot for first-time setup or recovery. They are different.
 
 ## Software Configuration
 
@@ -26,39 +41,82 @@ Go to Web interface → Settings → **Network**.
 
 ![WiFi settings](./images/wifi/setting_wifi.webp)
 
+### Scan Networks
+
+Click the refresh button to scan manually, or wait for the device to auto-scan every 40 seconds. The button rotates while scanning, and the list auto-updates when complete.
+
 ### Enable / Disable
 
 Click the card's toggle on the right. Turning off WiFi disables the wireless interface. Saved networks and configurations are preserved.
 
 > Turning off both WiFi and Ethernet means you can't access the device. Keep at least one enabled.
 
-### Saved Networks
+### Network Cards
 
-![Saved networks](./images/wifi/setting_wificard_saved.webp)
+Scanned WiFi networks are shown as a card list. Each card displays: SSID, signal strength (four bars), frequency band (2.4G / 5G / dual-band), security type, and status label.
 
-Shows saved WiFi networks. Click a network card to expand — shows connection status, signal strength, frequency band, IP address, and security type:
+Click a card to expand action buttons. Available actions vary by card state:
 
-![Network details](./images/wifi/setting_wifi_info.webp)
+**Connected**
 
-Click the gear icon to view or modify IP config and MAC address.
+![WiFi connected](./images/wifi/setting_wificard_connected.webp)
 
-Click the trash icon on a network card to forget it.
+- **Disconnect**: Disconnect from the current network
+- **Settings**: Open network configuration dialog (IP mode, DNS, MAC)
+
+**Saved (not connected)**
+
+![WiFi saved](./images/wifi/setting_wificard_saved.webp)
+
+- **Connect**: Connect to this network
+- **Forget**: Remove from saved list
+- **Settings**: Open network configuration dialog
+
+**Unsaved**
+
+![WiFi unsaved](./images/wifi/setting_wificard_unsaved.webp)
+
+- **Connect**: Connect to this network
 
 > Each saved network can have independent IP configuration — settings auto-switch when you change WiFi networks.
 
-### Scan & Connect
+### Connect to a Network
 
-If no networks are saved, or to join a new one, click the WiFi card to scan nearby networks:
+Expand the target network card, then proceed by network type:
 
-![Scan nearby networks](./images/wifi/setting_wificard_unsaved.webp)
+**Open network**: Expand the card → click Connect. No password needed.
 
-Each result shows SSID, signal strength, security type, and frequency band. Click a network → enter the password (if required) → connect.
+**Encrypted network**: Expand the card → click Connect → enter password → confirm.
+
+![Connect WiFi](../../quick_start/images/web_connect_wifi.webp)
+
+![Connecting to WiFi](../../quick_start/images/web_connecting_wifi.webp)
+
+Connection status is displayed:
+
+![WiFi connection status](./images/wifi/web_connecting_wifi2.webp)
+
+Connected:
+
+![WiFi connected](./images/wifi/setting_wificard_connected.webp)
 
 > **Verify**: After connecting → the card shows a "Connected" label and IP address. Password and config are auto-saved for next boot.
 
+**Manually add a network**
+
+Click the **+** button at the top of the list, then fill in SSID, security type, and password:
+
+![Add WiFi](./images/wifi/setting_wifi_add.webp)
+
+| Field | Description |
+|-------|-------------|
+| Network name (SSID) | WiFi name |
+| Security type | Open / WPA / WPA2 / WPA3 |
+| Password | Required for encrypted networks |
+
 ### Network Configuration
 
-Click the gear icon on a network card to open the configuration dialog (three tabs):
+Click the **Settings** button on a saved network card to open the configuration dialog (three tabs):
 
 **Details**
 
@@ -115,11 +173,21 @@ Format: `AA:BB:CC:DD:EE:FF` (six groups of hex, colon-separated).
 
 | Symptom | Likely cause | Try this first |
 |---------|-------------|----------------|
-| Can't find WiFi network | Too far from router, hidden SSID | Move closer to the router |
-| Connection fails | Wrong password | Re-enter, check case and special characters |
+| Can't find network | WiFi disabled, antenna not installed | Check switch, ensure antenna is attached |
+| Wrong password | Typo | Re-enter, check case and special characters |
+| Connection timeout | Weak signal, router MAC filter | Move closer to router, check router settings |
 | No IP after connecting | DHCP not responding | Try static IP, or check router DHCP |
-| Frequent disconnects | Weak signal, interference | Switch to 5GHz or move closer to router |
-| Forgot WiFi password | Password saved on device (can't view) | Forget the network and reconnect with password, or check router admin page |
+| Frequent disconnects | Weak signal, interference | Switch to 5GHz or use wired instead |
+
+### Signal Strength Recommendations
+
+A stable connection requires at least **level 2 (two bars)**:
+
+- **Level 3–4**: Stable, suitable for video
+- **Level 2**: Basically usable, occasional lag
+- **Level 1 or below**: Unstable, not recommended
+
+Weak signal? Try: reposition the device, add a WiFi extender, or use wired Ethernet.
 
 ---
 

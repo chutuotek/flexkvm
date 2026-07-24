@@ -78,8 +78,6 @@ WiFi 连上后，OLED 网络图标的"X"消失，第二行显示 IP 地址。IP 
 
 - **连接**：连到这个网络
 
-卡片排序：已连接/连接中 > 已保存 > 其余按信号强度降序。
-
 > 每个已保存的网络可以有独立的 IP 配置，换 WiFi 时自动切换。
 
 ### 连接网络
@@ -97,6 +95,10 @@ WiFi 连上后，OLED 网络图标的"X"消失，第二行显示 IP 地址。IP 
 连接中会显示状态：
 
 ![WiFi 连接状态](./images/wifi/web_connecting_wifi2.webp)
+
+连接成功：
+
+![WiFi 已连接](./images/wifi/setting_wificard_connected.webp)
 
 > **验证**：连接成功 → 卡片显示「已连接」标签和 IP 地址。密码和配置自动保存，下次开机自动重连。
 

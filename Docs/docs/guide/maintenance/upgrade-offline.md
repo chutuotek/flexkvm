@@ -14,8 +14,9 @@
 |--------|------|------|
 | GitHub | [github.com/chutuotek/flexkvm/releases](https://github.com/chutuotek/flexkvm/releases) | 海外用户 |
 | Gitee | [gitee.com/chutuotek/flexkvm/releases](https://gitee.com/chutuotek/flexkvm/releases) | 国内用户，速度更快 |
+| Gitcode | [gitcode.com/chutuotek/flexkvm/releases](https://gitcode.com/chutuotek/flexkvm/releases) | 国内用户，速度更快 |
 
-在发布页找到目标版本，下载 `.tar` 固件包（如 `flexkvm-v1.0.0.tar`），放入 TF 卡。把 TF 卡插入 FlexKVM。
+在发布页找到目标版本，下载 `.tar` 固件包（如 `flexkvm-v0.1.2.tar`）。
 
 ## 上传镜像
 
@@ -29,7 +30,7 @@
 
 点升级 → 弹窗显示镜像 SHA-256 校验值。确认无误后点升级 → 输入密码（开了 2FA 还要验证码）：
 
-![升级包验证框](./images/setting_ota_offline_upload.webp)
+![升级包验证框](./images/setting_ota_offline_check.webp)
 
 ![用户验证框](../system/images/setting_verify.webp)
 

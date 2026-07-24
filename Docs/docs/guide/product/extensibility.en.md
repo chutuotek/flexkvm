@@ -15,15 +15,13 @@ FlexKVM's backplate is designed to be replaceable. The backplate and the main bo
 
 > You can also DIY your own backplate to suit specific use cases.
 
-User-contributed DIY backplate designs:
-
-- None yet
+Screw holes are M3.5mm — use M3.5×4mm screws for mounting, otherwise you may damage the FlexKVM PCB.
 
 ### Magnetic Backplate
 
 > The magnetic backplate is included free with the base bundle.
 
-![FlexKVM with magnetic backplate](./images/magnet.webp)
+![Magnetic backplate](./images/magnet.webp)
 
 The magnetic backplate is 3D-printed with four N52 magnets. With the magnetic backplate installed, FlexKVM attaches to any metal surface — such as server cases and metal cabinets — for quick mounting and portability.
 
@@ -31,7 +29,7 @@ The magnetic backplate is 3D-printed with four N52 magnets. With the magnetic ba
 
 > This accessory must be purchased separately or as part of a bundle.
 
-![FlexKVM with DIN rail clip](./images/35mm.webp)
+![35mm DIN rail clip](./images/35mm.webp)
 
 The 35mm DIN rail clip snaps onto standard 35mm DIN rails (C45).
 

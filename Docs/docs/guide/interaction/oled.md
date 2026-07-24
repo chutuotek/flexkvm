@@ -47,13 +47,23 @@ FlexKVM 正面有一块 128×64 单色 OLED 屏，显示设备状态、网络信
 | **W**xxx.xxx.xxx.xxx | WiFi |
 | **A**xxx.xxx.xxx.xxx | AP 热点 |
 
-获取 IP 中显示 Loading：**E Loading...**（超 10 秒查网线）/ **W Loading...**（超 10 秒查 WiFi）。
+获取 IP 中显示 Loading：**E Loading...** / **W Loading...**。
+
+如果获取ip超过 10 秒依然显示 Loading，需要检查一下当前的网络支不支持动态获取 IP。
 
 **系统版本**（底部一行）：如 `v0.1.2` 或 `v0.1.3-Beta.1`。
 
 ### 配网界面
 
+![配网界面](../../quick_start/images/oled_provision.webp)
+
 长按按键 A 进入配网模式时，OLED 显示热点名称、随机密码和 IP `192.168.10.1`。详见[配网模式](../network/provision.md)。
+
+### 恢复出厂设置界面
+
+![恢复出厂设置界面](../maintenance/images/oled_reset.webp)
+
+长按恢复出厂按键 1s 后，oled上会显示恢复出厂设置倒计时，倒计时到0之后释放按键，设备会恢复出厂。详见[恢复出厂设置](../maintenance/factory-reset.md)。
 
 ---
 

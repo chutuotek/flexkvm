@@ -30,10 +30,14 @@
 
 - [GitHub](https://github.com/chutuotek/flexkvm/releases) — 海外用户
 - [Gitee](https://gitee.com/chutuotek/flexkvm/releases) — 国内用户，速度快
+- [Gitcode](https://gitcode.com/chutuotek/flexkvm/releases) — 国内用户，速度快
 
 ## 当前版本
 
 显示当前固件版本号（如 `v0.1.0`）。
+
+稳定版：`v0.x.x`
+测试版：`v0.x.x-Beta.x`
 
 ## 检查更新
 

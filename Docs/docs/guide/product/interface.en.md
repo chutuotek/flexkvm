@@ -76,24 +76,13 @@ FlexKVM has four physical buttons. For detailed operation, see [Physical Buttons
 
 > **Caution**: Interface logic level is 3.3V. Do not connect 5V signals — this will damage the device.
 
-**UART Interface**
-
 | Label | Name | Function |
 |:-----:|:----:|----------|
-| T | TXD | Data transmit |
-| R | RXD | Data receive |
-| G | GND | Signal ground |
-
-When wiring, connect FlexKVM's TXD to the target device's RXD, RXD to the target device's TXD, and GND to GND.
-
-**GPIO Interface**
-
-| Label | Name | Function |
-|:-----:|:----:|----------|
+| T | UART TXD | Serial data transmit |
+| R | UART RXD | Serial data receive |
+| G | GND | Ground |
 | A | GPIOA | General-purpose I/O |
 | B | GPIOB | General-purpose I/O |
-
-Supports input/output mode switching.
 
 ## Display
 

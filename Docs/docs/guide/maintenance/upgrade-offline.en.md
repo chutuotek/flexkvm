@@ -14,8 +14,9 @@ Download the OTA image file (`.tar` format) from either source on your computer:
 |--------|-----|----------|
 | GitHub | [github.com/chutuotek/flexkvm/releases](https://github.com/chutuotek/flexkvm/releases) | International users |
 | Gitee | [gitee.com/chutuotek/flexkvm/releases](https://gitee.com/chutuotek/flexkvm/releases) | Users in China, faster |
+| Gitcode | [gitcode.com/chutuotek/flexkvm/releases](https://gitcode.com/chutuotek/flexkvm/releases) | Users in China, faster |
 
-On the releases page, find the target version and download the `.tar` firmware package (e.g., `flexkvm-v1.0.0.tar`). Copy it to a TF card, then insert the TF card into FlexKVM.
+On the releases page, find the target version and download the `.tar` firmware package (e.g., `flexkvm-v0.1.2.tar`).
 
 ## Upload Image
 
@@ -29,7 +30,7 @@ Go to Settings → Upgrade → click **Upload** → select the firmware package 
 
 Click Upgrade - a dialog shows the image SHA-256 checksum. Confirm it's correct, then click Upgrade - enter password (with 2FA enabled, also enter verification code):
 
-![Upgrade package verification](./images/setting_ota_offline_upload.webp)
+![Upgrade package verification](./images/setting_ota_offline_check.webp)
 
 ![User verification](../system/images/setting_verify.webp)
 

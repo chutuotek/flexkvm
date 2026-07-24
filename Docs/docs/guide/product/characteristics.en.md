@@ -26,7 +26,7 @@
 
 | Parameter | Value |
 |:---------:|:-----:|
-| Dimensions | 65 × 46 × 22 mm |
+| Dimensions | 65 × 46 × 22 mm (excl. antenna) |
 | Weight | ~100g |
 
 ## Environmental

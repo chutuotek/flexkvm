@@ -4,7 +4,11 @@ Save the current remote display as an image — useful for documenting critical 
 
 ## How to Capture
 
-Click the screenshot icon :material-camera: in the top bar.
+Click the screenshot icon in the top bar.
+
+| Icon | Status |
+|------|--------|
+| ![](../icon/screenshot/camera.svg) | Click to capture a screenshot |
 
 > **Verification**: A successful screenshot triggers a "Screenshot captured" toast notification at the top. The file auto-saves to your browser's download directory. If there's no display signal, the screenshot will fail.
 

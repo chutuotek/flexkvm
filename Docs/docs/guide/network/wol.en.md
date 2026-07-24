@@ -1,6 +1,6 @@
 # Wake-on-LAN (WoL)
 
-Wake-on-LAN supports only Ethernet, not Wi-Fi. FlexKVM and the target device must be on the **same LAN**.
+Wake-on-LAN supports only Ethernet. FlexKVM and the target device must be on the **same LAN**.
 
 ## Prerequisites
 
