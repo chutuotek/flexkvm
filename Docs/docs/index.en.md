@@ -45,77 +45,6 @@
 
 ---
 
-## Key Features
-
-<div class="grid cards" markdown>
-
-- **:material-monitor-eye: Remote Desktop Control**
-
-    Pure hardware HDMI capture, up to 1920x1200@60Hz. No dependency on OS, graphics drivers, or remote services — BIOS, blue screens, safe mode are all visible.
-
-- **:material-headset: Bidirectional Audio**
-
-    Emulates a USB audio device. Target host's system audio streams back to your browser; your microphone outputs to the target host. Hear beep codes during diagnostics — like sitting next to the machine.
-
-- **:material-power: Remote Power Control**
-
-    ATX control interface for remote power management — normal shutdown, force restart, force power-off.
-
-- **:material-disc: Virtual USB Drive**
-
-    Mount ISO images from TF card as virtual CD-ROM for remote OS installation and maintenance — no on-site personnel needed.
-
-- **:material-vpn: Mesh VPN (Tailscale)**
-
-    Built-in Tailscale client. No public IP, no port forwarding — end-to-end encrypted virtual network out of the box.
-
-- **:material-wifi-arrow-left-right: Dual-Network Redundancy**
-
-    5GHz band dedicated to video — low latency, no stutter. 100M Ethernet as the fallback. One link drops, the other takes over automatically.
-
-- **:material-access-point-network: WiFi 6 Hotspot**
-
-    No network in the rack? Customer won't let you on their LAN? FlexKVM is its own WiFi 6 hotspot. Connect your phone and complete OS installs, BIOS tweaks, and troubleshooting — zero infrastructure dependency.
-
-- **:material-fan-off: Low Power, Silent**
-
-    Typical 1.5W–2.4W consumption. Aluminum passive cooling, fanless, 24/7 quiet operation.
-
-- **:material-console-line: Serial & GPIO Expansion**
-
-    UART serial communication and GPIO control for embedded debugging, industrial automation, and watchdog applications.
-
-- **:material-magnet-on: Multi-Scene Deployment**
-
-    Magnetic backplate + DIN rail clip — desktop, rack, or industrial field, just put it down and go.
-
-- **:material-sd: External Storage**
-
-    TF card support for external storage — plug and play, compatible with FAT32, exFAT, ext4, and more.
-
-- **:material-package-variant-closed: Ultra Compact**
-
-    Just 65 × 46 × 22 mm, ~100g — take it anywhere.
-
-</div>
-
----
-
-## Core Specs
-
-| Item | Spec |
-|------|------|
-| Dimensions | 65 × 46 × 22 mm |
-| Weight | ~100g |
-| Power | 5V / 1A (USB Type-C) |
-| Typical power | 1.5W ~ 2.4W |
-| Video input | HDMI 1.4, up to 1920×1200@60Hz |
-| Audio | USB Audio emulation (playback + recording), WebRTC bidirectional |
-| Network | 100M Ethernet + WiFi 6 dual-band (2.4G / 5G) + WiFi 6 hotspot |
-| Operating temp | 0°C ~ 70°C |
-
----
-
 ## Who Uses FlexKVM
 
 <div class="grid cards" markdown>
@@ -137,6 +66,80 @@
     Industrial PC, PLC locked in a cabinet — FlexKVM captures HDMI + UART serial dual-channel debugging. Quickly pinpoint production line faults.
 
 </div>
+
+---
+
+## Key Features
+
+<div class="grid cards" markdown>
+
+- **:material-monitor-eye: Remote Desktop Control**
+
+    Pure hardware HDMI capture, up to 1920x1200@60Hz. No dependency on OS, graphics drivers, or remote services — BIOS, blue screens, safe mode are all visible.
+
+- **:material-headset: Bidirectional Audio**
+
+    Emulates a USB audio device. Target host's system audio streams back to your browser; your microphone outputs to the target host.
+
+- **:material-power: Remote Power Control**
+
+    ATX control interface for remote power management — normal shutdown, force restart, force power-off.
+
+- **:material-disc: Virtual Optical Drive**
+
+    Use TF card as a virtual CD-ROM — supports bidirectional file transfer, remote OS installation, and more.
+
+- **:material-vpn: Mesh VPN (Tailscale)**
+
+    Built-in Tailscale client. No public IP, no port forwarding — end-to-end encrypted virtual network out of the box.
+
+- **:material-wifi-arrow-left-right: Dual-Network Redundancy**
+
+    Dual-band WiFi 6 + 100M Ethernet. Both links online simultaneously — if either fails, control is unaffected.
+
+- **:material-access-point-network: WiFi 6 Hotspot**
+
+    No network in the rack? Customer won't let you on their LAN? FlexKVM is its own WiFi 6 hotspot. Connect your phone and complete OS installs, BIOS tweaks, and troubleshooting — zero infrastructure dependency.
+
+- **:material-fan-off: Low Power, Silent**
+
+    Typical 1.5W–2.4W consumption. Fanless, 24/7 quiet operation.
+
+- **:material-console-line: Serial & GPIO Expansion**
+
+    UART serial communication and GPIO control for embedded debugging, industrial automation, and watchdog applications.
+
+- **:material-magnet-on: Multi-Scene Deployment**
+
+    Magnetic backplate / 35mm DIN rail clip / custom backplate — multiple mounting options for desktop, rack, and industrial environments.
+
+- **:material-radiator: Aluminum Passive Cooling**
+
+    Aluminum alloy chassis passive cooling — fanless, zero noise, no dust buildup, suitable for high-temperature environments.
+
+- **:material-package-variant-closed: Ultra Compact**
+
+    Just 65 × 46 × 22 mm, ~100g — take it anywhere.
+
+</div>
+
+---
+
+## Core Specs
+
+| Item | Spec |
+|------|------|
+| Dimensions | 65 × 46 × 22 mm (excl. antenna) |
+| Weight | ~100g |
+| Power | 5V / 1A (USB Type-C) |
+| Typical power | 1.5W ~ 2.4W |
+| Video input | HDMI 1.4, up to 1920×1200@60Hz |
+| Audio | Bidirectional audio |
+| Wireless | Dual-band WiFi 6 |
+| Wired | RJ-45 100M Ethernet |
+| External storage | Up to 512GB TF card |
+| Expansion | 2× GPIO + 1× UART serial |
+| Operating temp | 0°C ~ 70°C |
 
 ---
 
