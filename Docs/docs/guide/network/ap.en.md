@@ -1,6 +1,6 @@
 # AP Mode
 
-FlexKVM creates its own WiFi hotspot — your phone or computer connects directly to access the management interface. No router needed, no dependency on on-site network. Long-press Button B for ~3 seconds to toggle on/off.
+FlexKVM creates its own WiFi hotspot — your phone or computer connects directly to access the management interface. No router needed, no dependency on on-site network. Long-press Button B for 6–9 seconds to toggle on/off.
 
 - Default SSID: `FlexKVM-AP`
 - Default password: `12345678`
@@ -13,7 +13,7 @@ FlexKVM creates its own WiFi hotspot — your phone or computer connects directl
 |:----:|---------|
 | Wireless protocol | 802.11 a/b/g/n/ac/ax |
 | Band | 2.4GHz / 5GHz |
-| Antenna | SMA female (shared with WiFi) |
+| Antenna | SMA male (shared with WiFi) |
 | Default state | Off |
 
 ## OLED Display
@@ -24,14 +24,14 @@ When the hotspot is active, the OLED status bar shows the hotspot icon and the I
 
 ## Button Toggle
 
-Long-press **Button B** for ~3 seconds to toggle between hotspot and [WiFi](./wifi.md):
+Long-press **Button B** for 6–9 seconds (stage 2) to toggle between hotspot and [WiFi](./wifi.md):
 
 | Current mode | Action | Result | OLED icon | Wait time |
 |:-----------:|--------|--------|:---------:|:---------:|
-| WiFi | Hold Button B ~3s, release when OLED shows hotspot icon | WiFi off, hotspot on | ![Hotspot icon](./images/ap/oled_ap_icon.webp){ width="80" } | ~10s |
-| Hotspot | Hold Button B ~3s, release when OLED shows WiFi icon | Hotspot off, WiFi restored | ![WiFi icon](./images/wifi/oled_wifi_icon.webp){ width="80" } | 3–4s |
+| WiFi | Hold Button B 6s, release when OLED shows hotspot icon | WiFi off, hotspot on | ![Hotspot icon](./images/ap/oled_ap_icon.webp){ width="80" } | ~10s |
+| Hotspot | Hold Button B 6s, release when OLED shows WiFi icon | Hotspot off, WiFi restored | ![WiFi icon](./images/wifi/oled_wifi_icon.webp){ width="80" } | 3–4s |
 
-> Button B toggles between AP Mode and WiFi Mode. [Provisioning Mode](./provision.md) (Button A) creates a **temporary** hotspot for first-time setup or recovery.
+> Button B long-press has three stages: 3–6s toggles [Ethernet Direct Mode](./eth-server.md), 6–9s toggles hotspot/WiFi, 9s+ returns home. See [Physical Buttons](../interaction/button.md).
 
 ## Software Configuration
 

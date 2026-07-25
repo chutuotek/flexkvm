@@ -1,6 +1,6 @@
 # Ethernet
 
-Plug in an Ethernet cable and the device gets a stable wired connection. The 100M Ethernet port and [WiFi](./wifi.md) provide mutual backup — each link has its own IP, either one can reach the management interface, and if one drops the other keeps working. Supports DHCP (auto) and static IP.
+Plug in an Ethernet cable and the device gets a stable wired connection. The 100M Ethernet port and [WiFi](./wifi.md) provide mutual backup — each link has its own IP, either one can reach the management interface, and if one drops the other keeps working. Supports DHCP (auto) and static IP. No router? Try [Ethernet Direct Mode](./eth-server.md) — one cable to your computer, the device becomes a DHCP server.
 
 > When using Ethernet and WiFi together, place them on different subnets to avoid routing conflicts. For example, Ethernet on `192.168.1.x`, WiFi on `192.168.2.x`.
 
