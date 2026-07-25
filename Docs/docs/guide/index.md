@@ -128,6 +128,12 @@
 
     [:octicons-arrow-right-24: 查看](network/eth.md)
 
+- **:material-server-network: 以太网直连模式**
+
+    网线直连电脑，设备变身 DHCP 服务器，无需路由器
+
+    [:octicons-arrow-right-24: 查看](network/eth-server.md)
+
 - **:material-wifi: WiFi**
 
     无线网络连接与管理

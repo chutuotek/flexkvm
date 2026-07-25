@@ -128,6 +128,12 @@ How to get FlexKVM online and access it remotely.
 
     [:octicons-arrow-right-24: View](network/eth.md)
 
+- **:material-server-network: Ethernet Direct Mode**
+
+    Direct cable to computer — device acts as DHCP server, no router needed
+
+    [:octicons-arrow-right-24: View](network/eth-server.md)
+
 - **:material-wifi: WiFi**
 
     Wireless network connection and management
