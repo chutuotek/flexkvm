@@ -41,7 +41,7 @@
 | Server crashed, SSH/RDP down — have to haul a monitor to the server room | Hardware-level HDMI capture — see the screen remotely even when the OS is crashed |
 | Headless device BIOS needs tweaking — always need to connect a monitor | Remote keyboard & mouse control all the way to BIOS/UEFI — operate as if you're sitting right there |
 | Remote site system failure — sending someone on-site is expensive and slow | Built-in Tailscale mesh VPN — headquarters can remotely reinstall the OS |
-| No network on-site — can't remotely access the device | Built-in WiFi 6 hotspot — connect your phone or laptop directly, no need to wait for network setup |
+| No network on-site — can't remotely access the device | Ethernet Direct (DHCP server) + WiFi 6 hotspot dual-channel — connect via phone or laptop, no router needed |
 
 ---
 
@@ -97,9 +97,9 @@
 
     Dual-band WiFi 6 + 100M Ethernet. Both links online simultaneously — if either fails, control is unaffected.
 
-- **:material-access-point-network: WiFi 6 Hotspot**
+- **:material-lan-connect: Network-Free Control**
 
-    No network in the rack? Customer won't let you on their LAN? FlexKVM is its own WiFi 6 hotspot. Connect your phone and complete OS installs, BIOS tweaks, and troubleshooting — zero infrastructure dependency.
+    No router? No problem. Ethernet Direct Mode (DHCP server) + WiFi 6 hotspot — two channels, zero infrastructure. OS installs, BIOS tweaks, troubleshooting — all without a network.
 
 - **:material-fan-off: Low Power, Silent**
 
