@@ -34,24 +34,85 @@ Four lines, three sections:
 | USB | USB signal normal? |
 | TF card | TF card inserted? |
 | ATX | ATX module connected? |
-| Ethernet | Wired connection status |
+| Ethernet | Wired connection status (normal / Direct Mode — two icons) |
 | WiFi | WiFi disconnected / connected / hotspot active (three states) |
 
 Icon normal = connected. Icon with X overlaid = not connected.
 
-**IP address** (middle two lines): IP prefix indicates interface type —
+**IP address** (middle two lines): IP prefix indicates interface type and IP assignment method —
 
-| Display | Interface |
-|---------|:---------:|
-| **E**xxx.xxx.xxx.xxx | Ethernet |
-| **W**xxx.xxx.xxx.xxx | WiFi |
-| **A**xxx.xxx.xxx.xxx | AP hotspot |
+| Display | Interface | IP method |
+|---------|:---------:|:---------:|
+| **E**xxx.xxx.xxx.xxx | Ethernet | DHCP |
+| <strong><u>E</u></strong>xxx.xxx.xxx.xxx | Ethernet | Static IP (inverse) |
+| **S**xxx.xxx.xxx.xxx | Ethernet | Direct Mode (DHCP Server) |
+| **W**xxx.xxx.xxx.xxx | WiFi | DHCP |
+| <strong><u>W</u></strong>xxx.xxx.xxx.xxx | WiFi | Static IP (inverse) |
+| **A**xxx.xxx.xxx.xxx | AP hotspot | — |
 
 While acquiring an IP address, the display shows **E Loading...** or **W Loading...**.
+
+> **E** = DHCP, normal display; <strong><u>E</u></strong> = Static IP, inverse display (white on black). Direct Mode shows **S**.
 
 If the IP hasn't been acquired after 10 seconds, check whether your current network supports dynamic IP assignment.
 
 **System version** (bottom line): e.g., `v0.1.2` or `v0.1.3-Beta.1`.
+
+### Info Sub-pages
+
+On the main screen, **short-press Button A** to cycle through 6 sub-pages showing detailed device information. **Short-press Button B** to return to the main screen at any time. The screen automatically resets to the main page after sleep.
+
+#### ETH Info
+
+Ethernet interface details:
+
+| Line | Content |
+|:-----|---------|
+| Line 2 | `ETH` + mode label (DHCP / STATIC / DIRECT) |
+| Line 3 | IP address (or DISABLE / NOT CONECT / Loading) |
+| Line 4 | MAC address |
+
+Mode labels: DHCP (dynamic), STATIC (manual configuration), DIRECT (DHCP Server mode).
+
+#### WiFi Info
+
+WiFi interface details:
+
+| Line | Content |
+|:-----|---------|
+| Line 2 | `WiFi` + signal strength (e.g. `WiFi -45`) + mode label |
+| Line 3 | IP address (or DISABLE / NOT CONECT / Loading) |
+| Line 4 | MAC address |
+
+#### AP Info
+
+Hotspot configuration:
+
+| Line | Content |
+|:-----|---------|
+| Line 2 | Band (2.4G / 5G) + WiFi6 indicator |
+| Line 3 | SSID (hotspot name) |
+| Line 4 | Password |
+
+#### HDMI Info
+
+Video input parameters:
+
+| Line | Content |
+|:-----|---------|
+| Line 2 | `HDMI` + quality level (LOW / MED / HIGH / ULTRA) |
+| Line 3 | Resolution@refresh rate (e.g. `1920x1080@60Hz`, `--x--` when no signal) |
+| Line 4 | Link status (LINK / No Signal / NOT LINK) |
+
+#### System Info
+
+Device identification:
+
+| Line | Content |
+|:-----|---------|
+| Line 2 | Product name |
+| Line 3 | Hostname |
+| Line 4 | Serial number (SN) |
 
 ### Provisioning Screen
 

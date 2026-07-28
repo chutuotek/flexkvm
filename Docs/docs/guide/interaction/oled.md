@@ -34,24 +34,85 @@ FlexKVM 正面有一块 128×64 单色 OLED 屏，显示设备状态、网络信
 | USB | USB 信号是否正常 |
 | TF 卡 | TF 卡是否插入 |
 | ATX | ATX 模块是否连接 |
-| 有线网络 | 有线连接状态 |
+| 有线网络 | 有线连接状态（普通模式 / 直连模式两种图标） |
 | 无线网络 | WiFi 未连 / 已连 / 热点已开（三种状态） |
 
 图标正常显示 = 已连接，图标上有 X = 未连接。
 
-**IP 地址**（中间两行）：IP 前缀标识接口类型——
+**IP 地址**（中间两行）：IP 前缀标识接口类型和 IP 获取方式——
 
-| 显示 | 接口 |
-|:---|:---:|
-| **E**xxx.xxx.xxx.xxx | 以太网 |
-| **W**xxx.xxx.xxx.xxx | WiFi |
-| **A**xxx.xxx.xxx.xxx | AP 热点 |
+| 显示 | 接口 | IP 方式 |
+|:---|:---:|:---:|
+| **E**xxx.xxx.xxx.xxx | 以太网 | DHCP |
+| <strong><u>E</u></strong>xxx.xxx.xxx.xxx | 以太网 | 静态 IP（反色） |
+| **S**xxx.xxx.xxx.xxx | 以太网 | 直连模式（DHCP Server） |
+| **W**xxx.xxx.xxx.xxx | WiFi | DHCP |
+| <strong><u>W</u></strong>xxx.xxx.xxx.xxx | WiFi | 静态 IP（反色） |
+| **A**xxx.xxx.xxx.xxx | AP 热点 | — |
 
 获取 IP 中显示 Loading：**E Loading...** / **W Loading...**。
+
+> **E** = DHCP 模式，正常显示；<strong><u>E</u></strong> = 静态 IP 模式，反色显示（黑底白字）。直连模式下显示 **S**。
 
 如果获取ip超过 10 秒依然显示 Loading，需要检查一下当前的网络支不支持动态获取 IP。
 
 **系统版本**（底部一行）：如 `v0.1.2` 或 `v0.1.3-Beta.1`。
+
+### 信息子页面
+
+在主界面**短按按键 A** 可循环切换 6 个子页面，查看详细设备信息。**短按按键 B** 随时返回主界面。息屏后自动复位到主界面。
+
+#### ETH 信息
+
+显示以太网接口详情：
+
+| 行 | 内容 |
+|:---|------|
+| 第 2 行 | `ETH` + 模式标签（DHCP / STATIC / DIRECT） |
+| 第 3 行 | IP 地址（或 DISABLE / NOT CONECT / Loading） |
+| 第 4 行 | MAC 地址 |
+
+模式标签：DHCP 自动获取、STATIC 静态配置、DIRECT 直连模式（DHCP Server）。
+
+#### WiFi 信息
+
+显示 WiFi 接口详情：
+
+| 行 | 内容 |
+|:---|------|
+| 第 2 行 | `WiFi` + 信号强度（如 `WiFi -45`） + 模式标签 |
+| 第 3 行 | IP 地址（或 DISABLE / NOT CONECT / Loading） |
+| 第 4 行 | MAC 地址 |
+
+#### AP 信息
+
+显示热点配置：
+
+| 行 | 内容 |
+|:---|------|
+| 第 2 行 | 频段（2.4G / 5G）+ WiFi6 标识 |
+| 第 3 行 | SSID（热点名称） |
+| 第 4 行 | 密码 |
+
+#### HDMI 信息
+
+显示视频输入参数：
+
+| 行 | 内容 |
+|:---|------|
+| 第 2 行 | `HDMI` + 画质等级（LOW / MED / HIGH / ULTRA） |
+| 第 3 行 | 分辨率@帧率（如 `1920x1080@60Hz`，无信号时 `--x--`） |
+| 第 4 行 | 链路状态（LINK / No Signal / NOT LINK） |
+
+#### 系统信息
+
+显示设备标识：
+
+| 行 | 内容 |
+|:---|------|
+| 第 2 行 | 产品名称 |
+| 第 3 行 | 主机名 |
+| 第 4 行 | 序列号（SN） |
 
 ### 配网界面
 

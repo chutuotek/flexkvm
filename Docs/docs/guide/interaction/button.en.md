@@ -6,35 +6,41 @@ FlexKVM has four physical buttons for provisioning, mode switching, and system m
 
 | Button | Action | Function | When to use |
 |:------:|--------|----------|-------------|
-| Button A | Hold 3–6s | Enter hotspot provisioning mode | First-time setup or recovery after misconfiguration |
-| Button A | Hold >6s | Return to home screen (cancel provisioning) | Accidental press — cancel the action |
-| Button B | Hold 3–6s | Toggle Ethernet Direct Mode | No router available — direct Ethernet to computer |
-| Button B | Hold 6–9s | Toggle WiFi ↔ Hotspot mode | Quick hotspot on/off without Web interface |
-| Button B | Hold 9s+ | Return to home screen (cancel action) | Accidental press — cancel |
+| Button A | Short press | Cycle through OLED sub-pages | View ETH/WiFi/AP/HDMI/system info |
+| Button A | Hold 1–3s, then release | Enter hotspot provisioning mode | First-time setup or recovery after misconfiguration |
+| Button A | Hold >3s, then release | Return to home screen (cancel provisioning) | Accidental press — cancel the action |
+| Button B | Short press | Return to home screen (from sub-pages) | Exit MAC/HDMI detail pages |
+| Button B | Hold 1–3s | Toggle Ethernet Direct Mode | No router available — direct Ethernet to computer |
+| Button B | Hold 3–5s | Toggle WiFi ↔ Hotspot mode | Quick hotspot on/off without Web interface |
+| Button B | Hold 5s+ | Return to home screen (cancel action) | Accidental press — cancel |
 | Reset button | Short press | Force reboot | System unresponsive or abnormal |
 | Factory reset button | Hold 15s | Restore factory settings | Transferring device, unrecoverable configuration |
 
 ## Button Details
 
-### Button A — Provisioning
+### Button A — Provisioning + Info Viewer
 
-Hold 3–6s to enter provisioning mode. Release when the OLED shows the AP icon → the device creates a temporary WiFi hotspot. Holding less than 3s won't trigger the action; holding more than 6s returns to the home screen. See [Provisioning Mode](../network/provision.md).
+**Short press**: Cycles through OLED sub-pages — Home → ETH MAC → WiFi MAC → AP → HDMI → System Info → Home. Use to quickly check network details, video parameters, and system information.
 
-### Button B — Three-Stage Toggle
+**Hold**: Two stages — after 1s the OLED shows the AP provisioning icon, release to enter provisioning mode; keep holding to 3s and the OLED switches to the HOME preview icon, release to return to the home screen (cancel). See [Provisioning Mode](../network/provision.md).
 
-Hold Button B — the OLED shows mode previews in sequence. Release to trigger the corresponding action:
+### Button B — Three-Stage Toggle + Back
+
+**Short press**: Returns to the home screen from any sub-page (MAC address / HDMI / system info, etc.).
+
+**Hold**: Hold Button B — the OLED shows mode previews in sequence. Release to trigger the corresponding action:
 
 | Hold duration | Action | OLED preview | Wait |
 |:------------:|--------|:----------:|:----:|
-| 3–6s | Toggle Ethernet Direct Mode | **ETH SERVER** or **ETH CLIENT** | ~5s |
-| 6–9s | Toggle WiFi ↔ Hotspot mode | WiFi or AP full-screen icon | 3–10s |
-| 9s+ | Return to home screen (cancel) | HOME full-screen icon | Instant |
+| 1–3s | Toggle Ethernet Direct Mode | **ETH SERVER** or **ETH CLIENT** icon | ~5s |
+| 3–5s | Toggle WiFi ↔ Hotspot mode | WiFi or AP icon | 3–10s |
+| 5s+ | Return to home screen (cancel) | HOME icon | Instant |
 
-**Stage 1 (3–6s)**: Toggle Ethernet [Direct Mode](../network/eth-server.md). Currently Ethernet client → shows "ETH SERVER", release to enable Direct Mode. Currently Direct Mode → shows "ETH CLIENT", release to restore normal Ethernet.
+**Stage 1 (1–3s)**: Toggle Ethernet [Direct Mode](../network/eth-server.md). Currently Ethernet client → shows ETH Server icon, release to enable Direct Mode. Currently Direct Mode → shows ETH Client icon, release to restore normal Ethernet.
 
-**Stage 2 (6–9s)**: Toggle WiFi and [AP Mode](../network/ap.md). Currently WiFi → shows AP icon, release to turn off WiFi and enable hotspot. Currently hotspot → shows WiFi icon, release to turn off hotspot and restore WiFi.
+**Stage 2 (3–5s)**: Toggle WiFi and [AP Mode](../network/ap.md). Currently hotspot → shows WiFi icon, release to turn off hotspot and restore WiFi. Currently WiFi or both off → shows AP icon, release to turn off WiFi and enable hotspot.
 
-**Stage 3 (9s+)**: Return to home screen — no action is taken. For canceling an accidental hold.
+**Stage 3 (5s+)**: Return to home screen — no action is taken. For canceling an accidental hold.
 
 > The OLED preview updates immediately at each stage. Keep holding to advance to the next stage.
 
