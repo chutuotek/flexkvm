@@ -77,6 +77,13 @@ FlexKVM 正面有一块 128×64 单色 OLED 屏，显示设备状态、网络信
 
 模式标签：DHCP 自动获取、STATIC 静态配置、DIRECT 直连模式（DHCP Server）。
 
+```
+ ETH              DHCP
+ 192.168.1.100
+ AA:BB:CC:DD:EE:FF
+ G192.168.1.1
+```
+
 #### WiFi 信息
 
 显示 WiFi 接口详情：
@@ -88,6 +95,13 @@ FlexKVM 正面有一块 128×64 单色 OLED 屏，显示设备状态、网络信
 | 第 3 行 | SSID（前缀 `S:`，如 `S:MyWiFi`） |
 | 第 4 行 | MAC 地址 |
 
+```
+ WiFi -55        STATIC
+ 10.0.0.55
+ S:MyOfficeWiFi
+ AA:BB:CC:DD:EE:FF
+```
+
 #### AP 信息
 
 显示热点配置：
@@ -98,6 +112,13 @@ FlexKVM 正面有一块 128×64 单色 OLED 屏，显示设备状态、网络信
 | 第 2 行 | SSID（前缀 `S:`，如 `S:FlexKVM-AP`） |
 | 第 3 行 | 密码（前缀 `P:`） |
 | 第 4 行 | IP 地址（或 DISABLE） |
+
+```
+ AP  WIFI6      5G
+ S:FlexKVM-AP
+ P:12345678
+ 192.168.10.1
+```
 
 #### HDMI 信息
 
@@ -112,6 +133,13 @@ FlexKVM 正面有一块 128×64 单色 OLED 屏，显示设备状态、网络信
 
 流状态说明：**Streaming** — 用户在线 + HDMI 已链接，编码器正在推流；**IDLE** — HDMI 已链接但无用户连接，编码器待机；**OFFLINE** — HDMI 未检测到或链路未建立。
 
+```
+ HDMI          HIGH
+ 1920x1080@60Hz
+ Streaming
+ LINK
+```
+
 #### 系统信息
 
 显示设备标识：
@@ -122,6 +150,13 @@ FlexKVM 正面有一块 128×64 单色 OLED 屏，显示设备状态、网络信
 | 第 2 行 | 产品名称（如 `FlexKVM`） |
 | 第 3 行 | 主机名 |
 | 第 4 行 | 序列号（SN） |
+
+```
+ SYSTEM
+ FlexKVM
+ flexkvm
+ FS10251810001CN5
+```
 
 ### 配网界面
 

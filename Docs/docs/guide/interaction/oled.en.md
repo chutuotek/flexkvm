@@ -77,6 +77,13 @@ Ethernet interface details:
 
 Mode labels: DHCP (dynamic), STATIC (manual configuration), DIRECT (DHCP Server mode).
 
+```
+ ETH              DHCP
+ 192.168.1.100
+ AA:BB:CC:DD:EE:FF
+ G192.168.1.1
+```
+
 #### WiFi Info
 
 WiFi interface details:
@@ -88,6 +95,13 @@ WiFi interface details:
 | Line 3 | SSID (prefix `S:`, e.g. `S:MyWiFi`) |
 | Line 4 | MAC address |
 
+```
+ WiFi -55        STATIC
+ 10.0.0.55
+ S:MyOfficeWiFi
+ AA:BB:CC:DD:EE:FF
+```
+
 #### AP Info
 
 Hotspot configuration:
@@ -98,6 +112,13 @@ Hotspot configuration:
 | Line 2 | SSID (prefix `S:`, e.g. `S:FlexKVM-AP`) |
 | Line 3 | Password (prefix `P:`) |
 | Line 4 | IP address (or DISABLE) |
+
+```
+ AP  WIFI6      5G
+ S:FlexKVM-AP
+ P:12345678
+ 192.168.10.1
+```
 
 #### HDMI Info
 
@@ -112,6 +133,13 @@ Video input parameters:
 
 Stream states: **Streaming** — user online + HDMI linked, encoder actively streaming; **IDLE** — HDMI linked but no user connected, encoder on standby; **OFFLINE** — HDMI not detected or link not established.
 
+```
+ HDMI          HIGH
+ 1920x1080@60Hz
+ Streaming
+ LINK
+```
+
 #### System Info
 
 Device identification:
@@ -122,6 +150,13 @@ Device identification:
 | Line 2 | Product name (e.g. `FlexKVM`) |
 | Line 3 | Hostname |
 | Line 4 | Serial number (SN) |
+
+```
+ SYSTEM
+ FlexKVM
+ flexkvm
+ FS10251810001CN5
+```
 
 ### Provisioning Screen
 
