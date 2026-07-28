@@ -22,7 +22,7 @@ No network on-site, customer won't let you on their LAN, rack isn't wired yet �
 ### Steps
 
 1. Power on FlexKVM (USB Type-C, 5V/1A)
-2. Long-press **Button B** on the device for ~3 seconds — release when the OLED shows the hotspot icon
+2. Long-press **Button B** on the device for 3–5 seconds — release when the OLED shows the hotspot icon
 3. On your phone or computer, search for WiFi networks and find `FlexKVM-AP`
 4. Enter password `12345678` to connect
 5. Open browser and go to `https://192.168.4.1` (fixed management address in hotspot mode)
@@ -32,7 +32,7 @@ No network on-site, customer won't let you on their LAN, rack isn't wired yet �
 
 ### When you're done
 
-Go to **Settings → Network → AP Mode** and turn off the hotspot, or long-press Button B for 3 seconds again to switch back to WiFi. If left on, the hotspot stays active — draws power and occupies the channel.
+Go to **Settings → Network → AP Mode** and turn off the hotspot, or long-press Button B for 3–5 seconds again to switch back to WiFi. If left on, the hotspot stays active — draws power and occupies the channel.
 
 > SSID, password, band, channel, max clients, and all other settings → [AP Mode](../network/ap.md)
 
@@ -83,7 +83,7 @@ Turn off WiFi on your phone and use 4G/5G. Then open a browser to FlexKVM's Tail
 
 **Hotspot direct won't connect?**
 
-→ Make sure Button B was held for 3 seconds (OLED must show the hotspot icon). If you can't find it scanning, try adding the WiFi manually — SSID is `FlexKVM-AP`.
+→ Make sure Button B was held for 3–5 seconds (OLED must show the hotspot icon). If you can't find it scanning, try adding the WiFi manually — SSID is `FlexKVM-AP`.
 
 **Tailscale won't connect?**
 

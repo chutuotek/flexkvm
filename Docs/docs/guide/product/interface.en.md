@@ -40,7 +40,7 @@ FlexKVM has four physical buttons. For detailed operation, see [Physical Buttons
 | # | Name | Basic function |
 |:--:|:----:|----------------|
 | [3] | Button A | Press and hold 1–3s to enter hotspot provisioning mode |
-| [4] | Button B | Hold 3s to toggle WiFi ↔ AP mode |
+| [4] | Button B | Hold 3–5s to toggle WiFi ↔ AP mode |
 | [11] | Factory reset button | Hold 15s to restore factory settings |
 | [12] | Reset button | Press briefly to force a reboot |
 

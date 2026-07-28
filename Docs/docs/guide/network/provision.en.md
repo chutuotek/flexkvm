@@ -12,7 +12,7 @@ Provisioning mode creates a **temporary** WiFi hotspot — when the device has n
 
 ## Difference from Button B
 
-| Feature | Button A (1–3s) | Button B (1s) |
+| Feature | Button A (1–3s) | Button B (3–5s) |
 |---------|:---:|:---:|
 | Mode triggered | Provisioning mode (temporary) | AP hotspot (persistent) |
 | Purpose | First setup / recovery | Daily hotspot toggle |
