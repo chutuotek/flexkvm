@@ -14,7 +14,7 @@ Go to Settings → About.
 | System version | Current firmware version, e.g., `v0.1.2`. Upgrade → [Firmware Upgrade](../maintenance/upgrade-online.md) |
 | Serial number (SN) | Unique identifier — provide when contacting technical support |
 
-> The serial number can be found on the packaging box or in Settings → About.
+> The serial number can be found on the packaging box or in Settings → About. You can also view it on the OLED — short-press Button A on the home screen to cycle to the System Info sub-page.
 
 ## Community & Contact
 
