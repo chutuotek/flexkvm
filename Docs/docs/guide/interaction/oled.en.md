@@ -60,9 +60,9 @@ If the IP hasn't been acquired after 10 seconds, check whether your current netw
 
 ### Info Sub-pages
 
-On the main screen, **short-press Button A** to cycle through 6 sub-pages showing detailed device information. **Short-press Button B** to return to the main screen at any time. The screen automatically resets to the main page after sleep.
+On the main screen, **short-press Button A** to cycle through 6 sub-pages: `Home → ETH Info → WiFi Info → AP Info → HDMI Info → System Info → Home`. **Short-press Button B** to return to the main screen at any time. The screen automatically resets to the main page after sleep.
 
-> Line 1 of each sub-page displays the page title (e.g. `ETH INFO`, `WiFi INFO`, etc.). Lines 2–4 show the detailed content.
+Sub-pages use a full-screen 4-line layout (no status bar), with content starting from line 1.
 
 #### ETH Info
 
@@ -70,9 +70,10 @@ Ethernet interface details:
 
 | Line | Content |
 |:-----|---------|
-| Line 2 | `ETH` + mode label (DHCP / STATIC / DIRECT) |
-| Line 3 | IP address (or DISABLE / NOT CONNECT / Loading) |
-| Line 4 | MAC address |
+| Line 1 | `ETH` (left) + mode label (right: DHCP / STATIC / DIRECT) |
+| Line 2 | IP address (or DISABLE / NOT CONNECT / Loading) |
+| Line 3 | MAC address |
+| Line 4 | Gateway (prefix `G`, e.g. `G192.168.1.1`) |
 
 Mode labels: DHCP (dynamic), STATIC (manual configuration), DIRECT (DHCP Server mode).
 
@@ -82,8 +83,9 @@ WiFi interface details:
 
 | Line | Content |
 |:-----|---------|
-| Line 2 | `WiFi` + signal strength (e.g. `WiFi -45`) + mode label |
-| Line 3 | IP address (or DISABLE / NOT CONNECT / Loading) |
+| Line 1 | `WiFi` + signal strength (e.g. `WiFi -45`) + mode label (right) |
+| Line 2 | IP address (or DISABLE / NOT CONNECT / Loading) |
+| Line 3 | SSID (prefix `S:`, e.g. `S:MyWiFi`) |
 | Line 4 | MAC address |
 
 #### AP Info
@@ -92,9 +94,10 @@ Hotspot configuration:
 
 | Line | Content |
 |:-----|---------|
-| Line 2 | Band (2.4G / 5G) + WiFi6 indicator |
-| Line 3 | SSID (hotspot name) |
-| Line 4 | Password |
+| Line 1 | `AP` + WiFi6 indicator + band (2.4G / 5G) |
+| Line 2 | SSID (prefix `S:`, e.g. `S:FlexKVM-AP`) |
+| Line 3 | Password (prefix `P:`) |
+| Line 4 | IP address (or DISABLE) |
 
 #### HDMI Info
 
@@ -102,9 +105,12 @@ Video input parameters:
 
 | Line | Content |
 |:-----|---------|
-| Line 2 | `HDMI` + quality level (LOW / MED / HIGH / ULTRA) |
-| Line 3 | Resolution@refresh rate (e.g. `1920x1080@60Hz`, `--x--` when no signal) |
+| Line 1 | `HDMI` (left) + quality level (right-aligned: LOW / MED / HIGH / ULTRA) |
+| Line 2 | Resolution@refresh rate (e.g. `1920x1080@60Hz`, `--x--` when no signal) |
+| Line 3 | Stream state (Streaming / IDLE / OFFLINE) |
 | Line 4 | Link status (LINK / No Signal / NOT LINK) |
+
+Stream states: **Streaming** — user online + HDMI linked, encoder actively streaming; **IDLE** — HDMI linked but no user connected, encoder on standby; **OFFLINE** — HDMI not detected or link not established.
 
 #### System Info
 
@@ -112,7 +118,8 @@ Device identification:
 
 | Line | Content |
 |:-----|---------|
-| Line 2 | Product name |
+| Line 1 | `SYSTEM` title |
+| Line 2 | Product name (e.g. `FlexKVM`) |
 | Line 3 | Hostname |
 | Line 4 | Serial number (SN) |
 
