@@ -22,7 +22,7 @@ No network on-site, customer won't let you on their LAN, rack isn't wired yet �
 ### Steps
 
 1. Power on FlexKVM (USB Type-C, 5V/1A)
-2. Long-press **Button B** on the device for 3–5 seconds — release when the OLED shows the hotspot icon
+2. Long-press **Button B** on the device for 3–5 seconds — release when the OLED shows the hotspot icon (Button B has three hold stages; at 1–3s the OLED flashes ETH SERVER/CLIENT preview — ignore it and keep holding to reach stage 2)
 3. On your phone or computer, search for WiFi networks and find `FlexKVM-AP`
 4. Enter password `12345678` to connect
 5. Open browser and go to `https://192.168.4.1` (fixed management address in hotspot mode)

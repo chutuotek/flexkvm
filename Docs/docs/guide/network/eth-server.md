@@ -47,8 +47,8 @@ FlexKVM 变身一台 DHCP 服务器——用一根网线直连电脑，电脑自
 
 | 当前模式 | 操作 | 切换结果 | OLED 预览 | 等待时间 |
 |:--------:|:----:|:--------:|:--------:|:--------:|
-| 以太网客户端 | 长按 B 1 秒后，OLED 显示 "ETH SERVER" 后松开 | 关 DHCP 客户端，开直连模式 | ETH SERVER 文字 | 约 5 秒 |
-| 直连模式 | 长按 B 1 秒后，OLED 显示 "ETH CLIENT" 后松开 | 关直连模式，恢复 DHCP 客户端 | ETH CLIENT 文字 | 约 5 秒 |
+| 以太网客户端 | 长按 B 1~3 秒，OLED 显示 "ETH SERVER" 后松开 | 关 DHCP 客户端，开直连模式 | ETH SERVER 文字 | 约 5 秒 |
+| 直连模式 | 长按 B 1~3 秒，OLED 显示 "ETH CLIENT" 后松开 | 关直连模式，恢复 DHCP 客户端 | ETH CLIENT 文字 | 约 5 秒 |
 
 > 继续长按不松手：3~5 秒进入 WiFi/热点切换预览，5 秒后进入返回首页预览。详见[物理按键](../interaction/button.md)。
 

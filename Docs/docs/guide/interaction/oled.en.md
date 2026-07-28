@@ -62,6 +62,8 @@ If the IP hasn't been acquired after 10 seconds, check whether your current netw
 
 On the main screen, **short-press Button A** to cycle through 6 sub-pages showing detailed device information. **Short-press Button B** to return to the main screen at any time. The screen automatically resets to the main page after sleep.
 
+> Line 1 of each sub-page displays the page title (e.g. `ETH INFO`, `WiFi INFO`, etc.). Lines 2–4 show the detailed content.
+
 #### ETH Info
 
 Ethernet interface details:
@@ -69,7 +71,7 @@ Ethernet interface details:
 | Line | Content |
 |:-----|---------|
 | Line 2 | `ETH` + mode label (DHCP / STATIC / DIRECT) |
-| Line 3 | IP address (or DISABLE / NOT CONECT / Loading) |
+| Line 3 | IP address (or DISABLE / NOT CONNECT / Loading) |
 | Line 4 | MAC address |
 
 Mode labels: DHCP (dynamic), STATIC (manual configuration), DIRECT (DHCP Server mode).
@@ -81,7 +83,7 @@ WiFi interface details:
 | Line | Content |
 |:-----|---------|
 | Line 2 | `WiFi` + signal strength (e.g. `WiFi -45`) + mode label |
-| Line 3 | IP address (or DISABLE / NOT CONECT / Loading) |
+| Line 3 | IP address (or DISABLE / NOT CONNECT / Loading) |
 | Line 4 | MAC address |
 
 #### AP Info

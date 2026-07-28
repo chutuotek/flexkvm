@@ -16,7 +16,7 @@ Provisioning mode creates a **temporary** WiFi hotspot — when the device has n
 |---------|:---:|:---:|
 | Mode triggered | Provisioning mode (temporary) | AP hotspot (persistent) |
 | Purpose | First setup / recovery | Daily hotspot toggle |
-| Exit method | Click Save in provisioning page, or long-press Button A or B | Long-press Button B again |
+| Exit method | Click Save in provisioning page, or long-press Button A >3s / Button B >5s to force exit | Long-press Button B 3–5s again |
 
 ## Enter Provisioning Mode
 

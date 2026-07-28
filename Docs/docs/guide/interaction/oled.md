@@ -62,6 +62,8 @@ FlexKVM 正面有一块 128×64 单色 OLED 屏，显示设备状态、网络信
 
 在主界面**短按按键 A** 可循环切换 6 个子页面，查看详细设备信息。**短按按键 B** 随时返回主界面。息屏后自动复位到主界面。
 
+> 子页面第 1 行显示页面标题（如 `ETH INFO`、`WiFi INFO` 等），第 2~4 行显示具体内容。
+
 #### ETH 信息
 
 显示以太网接口详情：
@@ -69,7 +71,7 @@ FlexKVM 正面有一块 128×64 单色 OLED 屏，显示设备状态、网络信
 | 行 | 内容 |
 |:---|------|
 | 第 2 行 | `ETH` + 模式标签（DHCP / STATIC / DIRECT） |
-| 第 3 行 | IP 地址（或 DISABLE / NOT CONECT / Loading） |
+| 第 3 行 | IP 地址（或 DISABLE / NOT CONNECT / Loading） |
 | 第 4 行 | MAC 地址 |
 
 模式标签：DHCP 自动获取、STATIC 静态配置、DIRECT 直连模式（DHCP Server）。
@@ -81,7 +83,7 @@ FlexKVM 正面有一块 128×64 单色 OLED 屏，显示设备状态、网络信
 | 行 | 内容 |
 |:---|------|
 | 第 2 行 | `WiFi` + 信号强度（如 `WiFi -45`） + 模式标签 |
-| 第 3 行 | IP 地址（或 DISABLE / NOT CONECT / Loading） |
+| 第 3 行 | IP 地址（或 DISABLE / NOT CONNECT / Loading） |
 | 第 4 行 | MAC 地址 |
 
 #### AP 信息

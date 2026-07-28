@@ -47,8 +47,8 @@ Long-press **Button B** has three stages. Release at the first stage (1–3s) to
 
 | Current mode | Action | Result | OLED preview | Wait time |
 |:-----------:|--------|--------|:----------:|:---------:|
-| Ethernet client | Hold B 1s, release when OLED shows "ETH SERVER" | DHCP client off, Direct Mode on | ETH SERVER text | ~5s |
-| Direct Mode | Hold B 1s, release when OLED shows "ETH CLIENT" | Direct Mode off, DHCP client restored | ETH CLIENT text | ~5s |
+| Ethernet client | Hold B 1–3s, release when OLED shows "ETH SERVER" | DHCP client off, Direct Mode on | ETH SERVER text | ~5s |
+| Direct Mode | Hold B 1–3s, release when OLED shows "ETH CLIENT" | Direct Mode off, DHCP client restored | ETH CLIENT text | ~5s |
 
 > Keeping the button held: 3–5s enters WiFi/hotspot toggle preview, 5s+ enters return-to-home preview. See [Physical Buttons](../interaction/button.md).
 
