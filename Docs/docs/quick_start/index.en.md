@@ -218,12 +218,30 @@ After network configuration:
 
 ### Choose Connection Method
 
-| Method | When to use | Difficulty |
-|--------|-------------|------------|
-| Wired network | Ethernet available, plug and play | ⭐ Easy |
-| Hotspot provisioning | Wireless, no Ethernet available | ⭐⭐ Moderate |
+Determine whether a router is available:
 
-> After configuration, FlexKVM and your control device must be on the **same local network** (connected to the same router) to communicate. When using hotspot provisioning, your phone/computer will first connect to the FlexKVM hotspot for configuration — no need to be on the same network beforehand.
+| Environment | Condition | Options |
+|:---:|------|------|
+| **With router** | Router / switch available | Wired network, Hotspot provisioning |
+| **Without router** | No router | Direct connect, AP hotspot |
+
+#### With Router
+
+FlexKVM and your control device connect to the **same router** and communicate over the LAN.
+
+| Method | When to use | How | Difficulty |
+|--------|-------------|-----|:--:|
+| Wired network | Ethernet available | Plug cable into router | ⭐ |
+| Hotspot provisioning | No Ethernet | Press Button A, configure WiFi | ⭐⭐ |
+
+#### Without Router
+
+FlexKVM provides its own network — connect your computer or phone directly.
+
+| Method | When to use | How | Difficulty |
+|--------|-------------|-----|:--:|
+| Direct connect | PC has Ethernet port | Press Button B, cable to PC | ⭐ |
+| AP hotspot | Phone / laptop | Press Button B, connect to FlexKVM WiFi | ⭐ |
 
 ---
 
@@ -337,6 +355,84 @@ You can now see the device has obtained an IP address, and the 🔴 Warning LED 
 ![Device showing WiFi IP](./images/oled_wifi_connected.webp)
 
 > ✅ **Confirmation**: OLED shows device IP address, 🔴 Warning LED off.
+
+---
+
+### Direct Connect
+
+Connect FlexKVM directly to your computer with a single Ethernet cable — no router needed.
+
+**1. Enable Direct Connect Mode**
+
+Long-press **Button B [3]** for 1–3 seconds and release when the OLED shows the `ETH SERVER` icon.
+
+![Direct connect OLED](../guide/network/images/eth/eth_server.webp)
+
+> Less than 1s won't trigger; more than 3s moves to the next stage (AP hotspot toggle); beyond 5s returns to the home screen. If you miss the window, release and try again.
+
+**2. Connect to Your Computer**
+
+Plug one end of the Ethernet cable into FlexKVM's **Ethernet port [16]** and the other end into your computer's Ethernet port.
+
+After connection:
+
+- Your computer automatically gets a `192.168.100.x` IP address (the computer's Ethernet must be set to DHCP — usually the default)
+- The OLED network icon switches to the direct connect icon, and the IP prefix changes to **S** (e.g., `S192.168.100.1`), S = Server
+- 🔴 **Warning LED** turns off
+
+**3. Access the Device**
+
+Open `https://192.168.100.1` in your computer's browser.
+
+> **Troubleshooting**:
+>
+> - Computer doesn't get an IP → check the cable connection, verify the Ethernet port is set to DHCP
+> - IP is not in 192.168.100.x → the computer may still be connected to another network (e.g., WiFi); turn off WiFi and keep only the wired connection
+> - Can ping but page won't open → clear browser cache, or try incognito mode
+
+**4. Exit Direct Connect Mode**
+
+Long-press **Button B [3]** for 1–3 seconds again and release when the OLED shows `ETH CLIENT` to restore normal Ethernet mode.
+
+> For detailed configuration (changing subnet, Web UI toggle, etc.), see [Ethernet Direct Connect Mode](../guide/network/eth-server.md).
+
+---
+
+### AP Hotspot
+
+FlexKVM creates its own WiFi hotspot — connect your phone or laptop directly, no router or Ethernet cable needed.
+
+**1. Enable the Hotspot**
+
+Long-press **Button B [3]** for 3–5 seconds and release when the OLED shows the hotspot icon.
+
+> Button B long-press has three stages: 1–3s first flashes `ETH SERVER`/`ETH CLIENT` (direct connect toggle) — ignore it and keep holding. Release when the hotspot icon appears. Beyond 5s returns to the home screen.
+
+**2. Connect to the Hotspot**
+
+From your phone or computer:
+
+- Search for and connect to the `FlexKVM-AP` WiFi hotspot
+- Enter password `12345678`
+
+After connection:
+
+- The OLED shows the hotspot icon, and the IP prefix changes to **A** (e.g., `A192.168.4.1`), A = Access Point
+- 🔴 **Warning LED** turns off
+
+**3. Access the Device**
+
+Open `https://192.168.4.1` in your browser.
+
+> While connected to the FlexKVM hotspot, your phone/computer will lose internet access. Remember to turn off the hotspot when done.
+
+**4. Exit Hotspot Mode**
+
+Long-press **Button B [3]** for 3–5 seconds again and release when the OLED shows the WiFi icon to turn off the hotspot and restore WiFi mode.
+
+> You can also disable it in Web UI → Settings → **Network** → Hotspot card.
+>
+> For detailed configuration (SSID, password, band, etc.), see [AP Hotspot Mode](../guide/network/ap.md).
 
 ---
 
