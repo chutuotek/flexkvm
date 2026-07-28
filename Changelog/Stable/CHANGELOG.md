@@ -3,6 +3,28 @@
 - language: en-US
 - Author: ZEROK
 
+## v0.1.4 (2026-07-28)
+
+### New
+
+- OLED home screen: short-press Button A to cycle through 6 info sub-pages (ETH, WiFi, AP, HDMI, System), short-press Button B to return
+- OLED now distinguishes DHCP vs Static IP with inverse text display
+- OLED System Info sub-page shows product name, hostname, and serial number
+- OLED HDMI sub-page shows resolution, refresh rate, quality, and link status
+- Web static IP form auto-fills with current configuration
+
+### Improvements
+
+- Button A/B long-press responds faster, now triggers at 1 second
+- AP hotspot settings apply immediately after saving, no manual restart needed
+- OLED auto-resets sub-page state on sleep, returns to home screen on wake
+- OLED page icons and network status indicators are clearer and more consistent
+
+### Fixes
+
+- Fixed AP hotspot settings not applying until service restart
+- Fixed stale WiFi configuration left behind after failed connections
+
 ## v0.1.3 (2026-07-25)
 
 ### New Features
