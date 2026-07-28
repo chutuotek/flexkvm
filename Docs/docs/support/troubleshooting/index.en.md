@@ -18,7 +18,7 @@ Try searching for symptom keywords in the **search bar** at the top of the page 
 | 4. Try incognito mode | Open in a private/incognito window to rule out cache issues |
 | 5. Check device power | Is the OLED display working? Is the red power LED on? |
 
-> If none of the above works, press and hold **Button A** for 3~6 seconds to enter [Provisioning Mode](../../guide/network/provision.md) and reconfigure the network.
+> If none of the above works, press and hold **Button A** for 1~3 seconds to enter [Provisioning Mode](../../guide/network/provision.md) and reconfigure the network.
 
 ### WiFi connected but no IP address
 

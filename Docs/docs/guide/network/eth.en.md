@@ -91,7 +91,7 @@ Default uses the factory MAC (printed on the packaging box). You can also set a 
 
 Format: `AA:BB:CC:DD:EE:FF` (six groups of hex, colon-separated).
 
-> ⚠️ Changing the MAC takes effect immediately and may cause disconnection. Some routers refuse to recognize a new MAC. If you can't reconnect after changing it, use [Provisioning Mode](./provision.md) (long-press Button A 3–6s) to recover.
+> ⚠️ Changing the MAC takes effect immediately and may cause disconnection. Some routers refuse to recognize a new MAC. If you can't reconnect after changing it, use [Provisioning Mode](./provision.md) (long-press Button A 1–3s) to recover.
 
 ### Verification
 

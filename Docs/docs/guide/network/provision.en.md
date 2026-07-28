@@ -1,6 +1,6 @@
 # Provisioning Mode
 
-Provisioning mode creates a **temporary** WiFi hotspot — when the device has no network or a misconfiguration prevents access, long-press Button A for 3–6s to enter. Configure the network, save, and exit. Unlike [AP Mode](./ap.md): provisioning mode auto-closes after configuration; AP mode stays on continuously.
+Provisioning mode creates a **temporary** WiFi hotspot — when the device has no network or a misconfiguration prevents access, long-press Button A for 1–3s to enter. Configure the network, save, and exit. Unlike [AP Mode](./ap.md): provisioning mode auto-closes after configuration; AP mode stays on continuously.
 
 ## When to Use
 
@@ -12,7 +12,7 @@ Provisioning mode creates a **temporary** WiFi hotspot — when the device has n
 
 ## Difference from Button B
 
-| Feature | Button A (3–6s) | Button B (3s) |
+| Feature | Button A (1–3s) | Button B (1s) |
 |---------|:---:|:---:|
 | Mode triggered | Provisioning mode (temporary) | AP hotspot (persistent) |
 | Purpose | First setup / recovery | Daily hotspot toggle |
@@ -21,12 +21,12 @@ Provisioning mode creates a **temporary** WiFi hotspot — when the device has n
 ## Enter Provisioning Mode
 
 1. Make sure the device is powered on and the OLED is lit
-2. Long-press **Button A** for 3–6 seconds
+2. Long-press **Button A** for 1–3 seconds
 3. Release when the OLED shows the AP icon :material-access-point:
 
 ![Provisioning mode switch](../../quick_start/images/oled_provision_switch.webp)
 
-> Holding less than 3s won't trigger; holding more than 6s returns to home. If you miss the timing, release and try again.
+> Holding less than 1s won't trigger; holding more than 3s returns to home. If you miss the timing, release and try again.
 
 After releasing, the standby screen appears. After ~12 seconds, the OLED shows the hotspot name, random password, and IP address:
 

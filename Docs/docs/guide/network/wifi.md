@@ -26,12 +26,12 @@ WiFi 连上后，OLED 网络图标的"X"消失，第二行显示 IP 地址。IP 
 
 ## 按键切换
 
-长按**按键 B** 约 6 秒，在 WiFi 和[热点模式](./ap.md)之间快速切换：
+长按**按键 B** 约 3~5 秒，在 WiFi 和[热点模式](./ap.md)之间快速切换：
 
 | 当前模式 | 操作 | 切换结果 | OLED 图标 | 等待时间 |
 |:--------:|:----:|:--------:|:--------:|:--------:|
-| WiFi 模式 | 长按按键 B 6 秒，OLED 显示热点图标后松开 | 关 WiFi，开热点 | ![热点图标](./images/ap/oled_ap_icon.webp){ width="80" } | 约 10 秒 |
-| 热点模式 | 长按按键 B 6 秒，OLED 显示 WiFi 图标后松开 | 关热点，恢复 WiFi | ![WiFi 图标](./images/wifi/oled_wifi_icon.webp){ width="80" } | 3~4 秒 |
+| WiFi 模式 | 长按按键 B 3~5 秒，OLED 显示热点图标后松开 | 关 WiFi，开热点 | ![热点图标](./images/ap/oled_ap_icon.webp){ width="80" } | 约 10 秒 |
+| 热点模式 | 长按按键 B 3~5 秒，OLED 显示 WiFi 图标后松开 | 关热点，恢复 WiFi | ![WiFi 图标](./images/wifi/oled_wifi_icon.webp){ width="80" } | 3~4 秒 |
 
 > 按键 B 切换 WiFi/热点，[配网模式](./provision.md)（按键 A）是**临时**热点，用于首次联网或故障恢复。两者不同。
 
@@ -157,7 +157,7 @@ WiFi 连上后，OLED 网络图标的"X"消失，第二行显示 IP 地址。IP 
 
 格式：`AA:BB:CC:DD:EE:FF`（六组十六进制，冒号分隔）。
 
-> ⚠️ 修改 MAC 后立即生效，可能导致断网。部分路由器会拒绝识别新 MAC。如果改完连不上了，用[配网模式](./provision.md)（长按按键 A 3~6 秒）恢复。
+> ⚠️ 修改 MAC 后立即生效，可能导致断网。部分路由器会拒绝识别新 MAC。如果改完连不上了，用[配网模式](./provision.md)（长按按键 A 1~3 秒）恢复。
 
 ### 配置验证
 

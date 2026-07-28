@@ -26,12 +26,12 @@ While acquiring IP, the display shows **W Loading...**. If it takes more than 10
 
 ## Button Switch
 
-Long-press **Button B** for about 6 seconds to quickly toggle between WiFi and [AP Mode](./ap.md):
+Long-press **Button B** for about 3–5 seconds to quickly toggle between WiFi and [AP Mode](./ap.md):
 
 | Current mode | Action | Result | OLED icon | Wait time |
 |:------------:|:------:|:------:|:---------:|:---------:|
-| WiFi mode | Long-press Button B ~6s, release when OLED shows hotspot icon | Turns off WiFi, turns on hotspot | ![Hotspot icon](./images/ap/oled_ap_icon.webp){ width="80" } | ~10 seconds |
-| Hotspot mode | Long-press Button B ~6s, release when OLED shows WiFi icon | Turns off hotspot, restores WiFi | ![WiFi icon](./images/wifi/oled_wifi_icon.webp){ width="80" } | 3~4 seconds |
+| WiFi mode | Long-press Button B 3–5s, release when OLED shows hotspot icon | Turns off WiFi, turns on hotspot | ![Hotspot icon](./images/ap/oled_ap_icon.webp){ width="80" } | ~10 seconds |
+| Hotspot mode | Long-press Button B 3–5s, release when OLED shows WiFi icon | Turns off hotspot, restores WiFi | ![WiFi icon](./images/wifi/oled_wifi_icon.webp){ width="80" } | 3~4 seconds |
 
 > Button B toggles WiFi/hotspot. [Provisioning Mode](./provision.md) (Button A) is a **temporary** hotspot for first-time setup or recovery. They are different.
 
@@ -157,7 +157,7 @@ Default uses the factory MAC address (printed on the packaging box). You can als
 
 Format: `AA:BB:CC:DD:EE:FF` (six groups of hex, colon-separated).
 
-> ⚠️ Changing the MAC takes effect immediately and may cause disconnection. Some routers refuse to recognize a new MAC. If you can't reconnect after changing it, use [Provisioning Mode](./provision.md) (long-press Button A 3–6s) to recover.
+> ⚠️ Changing the MAC takes effect immediately and may cause disconnection. Some routers refuse to recognize a new MAC. If you can't reconnect after changing it, use [Provisioning Mode](./provision.md) (long-press Button A 1–3s) to recover.
 
 ### Verification
 

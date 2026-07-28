@@ -28,7 +28,7 @@ Check the OLED screen. Ethernet IP shows as `Exxx.xxx.xxx.xxx`, WiFi IP shows as
 
 ### What is provisioning mode and when do I need it?
 
-Provisioning mode creates a temporary WiFi hotspot from FlexKVM for first-time network setup or recovery when network misconfiguration makes the device unreachable. Press and hold **Button A** for 3~6 seconds to enter. See [Provisioning Mode](../../guide/network/provision.md).
+Provisioning mode creates a temporary WiFi hotspot from FlexKVM for first-time network setup or recovery when network misconfiguration makes the device unreachable. Press and hold **Button A** for 1~3 seconds to enter. See [Provisioning Mode](../../guide/network/provision.md).
 
 ### Will my phone lose internet when connected to the FlexKVM hotspot?
 

@@ -80,7 +80,7 @@ Here are the interfaces you'll use during quick start. Just know where they are 
 |:--:|------|-------------|
 | [1] | 🔴 Warning LED | Reflects network and system status — see quick-reference table below |
 | [2] | 🟢 Status LED | Reflects device connection status — the primary indicator of whether the device is working properly |
-| [3] | Button A | Hold 3–6s to enter hotspot provisioning mode; hold >6s to return to home |
+| [3] | Button A | Hold 1–3s to enter hotspot provisioning mode; hold >3s to return to home |
 | [5] | HDMI input | Connect to target host's HDMI output |
 | [7] | USB power switch | Controls whether USB port draws power from target host |
 | [8] | USB port | Connect to target host for keyboard/mouse signals |
@@ -261,11 +261,11 @@ Use this when no Ethernet cable is available and you need WiFi connectivity.
 
 #### 1. Enter Provisioning Mode
 
-Long-press **Button A [3]** for 3–6 seconds. Release when the OLED shows the AP icon :material-access-point: to enter hotspot provisioning mode.
+Long-press **Button A [3]** for 1–3 seconds. Release when the OLED shows the AP icon :material-access-point: to enter hotspot provisioning mode.
 
 ![Provisioning mode](./images/oled_provision_switch.webp)
 
-> Less than 3s won't trigger; more than 6s returns to the home screen. If you miss the window, release and try again.
+> Less than 1s won't trigger; more than 3s returns to the home screen. If you miss the window, release and try again.
 
 After releasing the button, the provisioning standby screen appears:
 
