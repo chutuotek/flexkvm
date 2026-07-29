@@ -299,10 +299,10 @@ Use your phone or computer to search for and connect to the hotspot shown on the
 
 After connecting:
 
-- **Phone**: The browser captive portal should pop up automatically — tap "Trust" or "Continue"
-  - If it doesn't pop up: manually open a browser and go to `192.168.10.1`
+- **Phone**: The browser captive portal should pop up automatically — tap to enter the provisioning page
+  - If it doesn't pop up: manually open a browser and go to `http://192.168.10.1`
   - Android users can also tap "Sign in to network" in the notification bar to open the portal
-- **Computer**: Manually open a browser and go to `192.168.10.1`
+- **Computer**: Manually open a browser and go to `http://192.168.10.1`
 
 > Your phone/computer will temporarily lose internet connectivity while connected to the FlexKVM hotspot. It will automatically restore after provisioning is complete.
 
@@ -312,13 +312,9 @@ First, connect your phone to the FlexKVM hotspot.
 
 ![Phone connecting to hotspot](./images/phone_connect_provision.webp)
 
-The phone will automatically open the browser captive portal. Tap "Sign in to Wi-Fi network" or use the browser to visit the IP address.
+The phone will automatically open the browser captive portal. Tap "Sign in to Wi-Fi network" to enter the provisioning page.
 
-![Phone captive portal](./images/phone_trust_ssl.webp)
-
-Tap "Trust" or "Continue" to reach the login screen.
-
-> The provisioning page also uses a self-signed certificate — the "Not Secure" browser warning is normal. Tap "Advanced" → "Proceed" to continue. See [Browser Access](#browser-access) below for browser-specific instructions.
+> If it doesn't pop up, manually go to `http://192.168.10.1`.
 
 ![Phone provisioning page](./images/web_list_wifi.webp)
 

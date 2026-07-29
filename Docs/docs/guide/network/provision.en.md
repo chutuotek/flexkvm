@@ -36,9 +36,9 @@ After releasing, the standby screen appears. After ~12 seconds, the OLED shows t
 
 ## Connect to the Hotspot
 
-**Phone**: Find the FlexKVM hotspot in WiFi settings → enter the password shown on OLED → a captive portal page opens automatically in the browser — tap "Trust" or "Continue". If it doesn't pop up, manually go to `192.168.10.1`. Android users can also tap "Sign in to network" in the notification bar.
+**Phone**: Find the FlexKVM hotspot in WiFi settings → enter the password shown on OLED → a captive portal page opens automatically in the browser — tap to enter the provisioning page. If it doesn't pop up, manually go to `http://192.168.10.1`. Android users can also tap "Sign in to network" in the notification bar.
 
-**Computer**: Connect to the hotspot → open a browser and go to `192.168.10.1`.
+**Computer**: Connect to the hotspot → open a browser and go to `http://192.168.10.1`.
 
 ![Phone connecting to hotspot](../../quick_start/images/phone_connect_provision.webp)
 
