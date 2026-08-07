@@ -36,6 +36,8 @@ Enter password → click "Generate 2FA" → QR code appears:
 2. The app displays a 6-digit verification code
 3. Enter the code → confirm
 
+> ⏱️ The generated key expires after **10 minutes** — if you don't complete the verification code confirmation in time, it fails with "2FA key expired, generate again" and you must regenerate.
+
 After successful verification, 10 eight-digit backup codes are shown:
 
 ![2FA generated](./images/2fa-gen.webp)
@@ -51,6 +53,8 @@ After successful verification, 10 eight-digit backup codes are shown:
 ![2FA password verification](./images/2fa-enable.webp)
 
 Enter password and 2FA code → confirm.
+
+> You must generate a key first (see "Generate 2FA" above) before enabling 2FA — enabling without a generated key fails.
 
 ### Regenerate 2FA / Generate Backup Codes
 

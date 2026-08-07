@@ -50,9 +50,19 @@ You'll need to enter a 6-digit verification code. Open your authenticator app �
 | Wrong 2FA code | Verify time sync, wait for a new code |
 | Account locked | Temporarily locked after repeated failures — wait a few minutes and retry |
 
+## Multi-Device Login & Preemption
+
+Only one user can be online at a time. When another user is already online, a new login attempt shows:
+
+| Scenario | Prompt & behavior |
+|----------|-------------------|
+| Another user online, trying to log in | Dialog: "User **{{username}}** is currently logged in. Do you want to log in?" — click **Confirm** to take over (the online user is kicked); click **Cancel** to return to the login page; auto-cancels after 30 seconds without action |
+| Kicked out by another user | Dialog: "You have been kicked out, please log in again" (includes the kicker's username) — re-login required |
+| Same account refreshed in another tab | Current tab pauses reconnection and auto-resumes when you return to it |
+
 ## Logout
 
-Click your username in the top-right corner → "Logout". Logging out doesn't close the remote display, but any further interaction requires re-login.
+Click your username in the top-right corner → "Logout". The server revokes all credentials for this account (other logged-in sessions become invalid immediately); old credentials cannot be reused. Logging out doesn't close the remote display, but any further interaction requires re-login.
 
 ---
 
