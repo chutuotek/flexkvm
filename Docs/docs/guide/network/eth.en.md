@@ -56,7 +56,7 @@ Click the gear icon on the left side of the card to open the configuration dialo
 
 ![Ethernet details](./images/eth/setting_eth_info.webp)
 
-Read-only display of current parameters: IP address, MAC address, subnet mask, gateway, DNS1–3.
+Read-only display of current parameters: IP address, IPv6 address, MAC address, subnet mask, gateway, DNS1–3.
 
 **IPv4 Configuration**
 

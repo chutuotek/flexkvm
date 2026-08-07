@@ -14,6 +14,10 @@ Tailscale 是预装在 FlexKVM 里的 VPN 组网工具——把你的设备加�
 
 ## 登录
 
+登录模式支持**网页登录**和 **Authkey 接入**两种，通过"登录模式"单选切换。登录前可填写**登录服务器**——留空使用 Tailscale 官方控制面，填写自建 headscale 服务地址可接入自建服务器（输入 `http://` 开头的地址会提示明文传输风险，建议使用 `https://`）。
+
+### 网页登录（默认）
+
 点**登录状态**按钮开始登录：
 
 ![Tailscale 登录按键](./images/tailscale/setting_tailscale_wait.webp)
@@ -34,6 +38,16 @@ Tailscale 是预装在 FlexKVM 里的 VPN 组网工具——把你的设备加�
 
 ![Tailscale 登录成功](./images/tailscale/setting_tailscale_success.webp)
 
+### Authkey 接入
+
+适用于 headscale 自建服务器或免浏览器交互的自动化接入场景（如预授权密钥 `tskey-auth-...`）：
+
+1. 登录模式选 **Authkey 接入**
+2. 在 Authkey 框中粘贴预授权密钥（以 `tskey-auth-` 开头）
+3. 点登录
+
+> 密钥为一次性使用，登录成功后立即清除、不保存在设备上。登录失败会直接显示后端返回的原因（如密钥无效、已过期）。
+
 ## 连接信息
 
 登录成功后界面显示：
@@ -45,6 +59,7 @@ Tailscale 是预装在 FlexKVM 里的 VPN 组网工具——把你的设备加�
 | Tailscale IP | 分配的 IP（`100.x.x.x`） |
 | 连接状态 | 在线 / 离线 |
 | 密钥到期时间 | 节点密钥的到期日期和时间 |
+| 登录服务器 | 官方（controlplane.tailscale.com）或自建 headscale 地址 |
 
 点刷新按钮更新连接状态。
 

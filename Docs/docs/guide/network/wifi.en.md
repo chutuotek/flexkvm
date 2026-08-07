@@ -122,7 +122,7 @@ Click the **Settings** button on a saved network card to open the configuration 
 
 ![WiFi details](./images/wifi/setting_wifi_info.webp)
 
-Read-only display of current network parameters: IP address, MAC address, subnet mask, gateway, DNS1–3.
+Read-only display of current network parameters: IP address, IPv6 address, MAC address, subnet mask, gateway, DNS1–3.
 
 ### IPv4 Configuration
 

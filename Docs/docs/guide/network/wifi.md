@@ -122,7 +122,7 @@ WiFi 连上后，OLED 网络图标的"X"消失，第二行显示 IP 地址。IP 
 
 ![WiFi 详情信息](./images/wifi/setting_wifi_info.webp)
 
-只读展示当前网络参数：IP 地址、MAC 地址、子网掩码、网关、DNS1~3。
+只读展示当前网络参数：IP 地址、IPv6 地址、MAC 地址、子网掩码、网关、DNS1~3。
 
 ### IPv4 配置
 

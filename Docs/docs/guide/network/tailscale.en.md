@@ -14,6 +14,10 @@ Toggle the switch to enable — takes effect immediately. Once enabled, the desc
 
 ## Login
 
+Two login modes are supported — **Web Login** and **Authkey Login** — switched via the "Login Mode" radio. Before logging in you can fill in the **Login Server** — leave it empty to use the official Tailscale control plane, or enter a self-hosted headscale server address to join your own server (an `http://` address shows a plaintext-transmission warning; `https://` is recommended).
+
+### Web Login (default)
+
 Click the **Login Status** button to start:
 
 ![Tailscale login button](./images/tailscale/setting_tailscale_wait.webp)
@@ -34,6 +38,16 @@ After signing in, click **Connect** to authorize the device to join your Tailsca
 
 ![Tailscale login success](./images/tailscale/setting_tailscale_success.webp)
 
+### Authkey Login
+
+For self-hosted headscale servers or browser-free automated onboarding (e.g. pre-authorized keys `tskey-auth-...`):
+
+1. Switch login mode to **Authkey Login**
+2. Paste the pre-authorized key (starts with `tskey-auth-`) into the Authkey field
+3. Click login
+
+> The key is single-use — cleared immediately after successful login and never stored on the device. Login failures show the backend's reason directly (e.g. invalid or expired key).
+
 ## Connection Info
 
 After successful login, the interface shows:
@@ -45,6 +59,7 @@ After successful login, the interface shows:
 | Tailscale IP | Assigned IP (`100.x.x.x`) |
 | Connection status | Online / Offline |
 | Key expiry | Expiration date and time of the node key |
+| Login server | Official (controlplane.tailscale.com) or self-hosted headscale address |
 
 Click the refresh button to update connection status.
 

@@ -56,7 +56,7 @@
 
 ![以太网详情信息](./images/eth/setting_eth_info.webp)
 
-只读展示当前参数：IP 地址、MAC 地址、子网掩码、网关、DNS1~3。
+只读展示当前参数：IP 地址、IPv6 地址、MAC 地址、子网掩码、网关、DNS1~3。
 
 **IPv4 配置**
 
