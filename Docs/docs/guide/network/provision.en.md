@@ -28,7 +28,7 @@ Provisioning mode creates a **temporary** WiFi hotspot — when the device has n
 
 > Holding less than 1s won't trigger; holding more than 3s returns to home. If you miss the timing, release and try again.
 
-After releasing, the standby screen appears. After ~12 seconds, the OLED shows the hotspot name, random password, and IP address:
+After releasing, the standby screen appears. After ~12 seconds, the OLED shows the hotspot name, random password (8 digits), and IP address:
 
 ![Provisioning standby](../../quick_start/images/oled_provision_start.webp)
 
