@@ -42,6 +42,8 @@ Enter your username and password → click Login.
 
 You'll need to enter a 6-digit verification code. Open your authenticator app → find the FlexKVM entry → enter the code. Codes refresh every 30 seconds — if it expires, wait for the next one.
 
+When the device clock deviates significantly from the current time (e.g. RTC drift after power loss), a calibration prompt appears after login — follow it to calibrate the device time and the code will pass.
+
 ### Login Failed
 
 | Issue | What to do |

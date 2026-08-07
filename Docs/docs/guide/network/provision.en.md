@@ -48,6 +48,8 @@ After releasing, the standby screen appears. After ~12 seconds, the OLED shows t
 
 After entering the provisioning page, you'll see the same network settings as the normal Web interface:
 
+> When the device clock is inaccurate (e.g. RTC drift after power loss), a calibration prompt appears after connecting to the provisioning page — click **Confirm** to calibrate the device time to the current time. Calibration doesn't require login and doesn't affect provisioning.
+
 ### Wired Network
 
 DHCP / Static IP, custom MAC, etc. See [Ethernet](./eth.md).

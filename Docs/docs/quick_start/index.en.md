@@ -497,6 +497,8 @@ After logging in, you'll see the FlexKVM main interface. You can now start manag
 
 ![Main interface](../images/flexkvm_desktop.webp)
 
+> After prolonged power-off, the device RTC time may drift. When the device clock deviates over 60 seconds from the current time, a calibration prompt appears after login — click **Confirm** to calibrate the device time; the login credential refreshes automatically.
+
 ---
 
 ## Daily Use
