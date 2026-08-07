@@ -23,6 +23,20 @@ Status messages when the display is abnormal:
 | "Remote display not connected" | HDMI not plugged in or target host powered off |
 | "Host is sleeping" | Host in sleep mode or HDMI signal interrupted |
 
+### Touchscreen Gestures
+
+On touch devices, the following gestures are supported on the video area — all mapped to remote mouse operations (default browser gestures like pinch-zoom and scroll are disabled on the video area):
+
+| Gesture | Action |
+|---------|--------|
+| Single-finger tap | Left mouse click |
+| Single-finger double tap (two taps within 400 ms) | Mouse double-click |
+| Single-finger hold still (~1.2 s) | Right mouse click |
+| Single-finger press and hold (~0.5 s), then move | Left button pressed and move (drag) |
+| Two-finger vertical swipe | Scroll wheel (speed follows the mouse scroll setting) |
+
+> Moving immediately after pressing is treated as cursor movement (browsing) — it does not trigger drag or right-click.
+
 ## Display Menu
 
 Click the display icon in the top bar to open the menu.
