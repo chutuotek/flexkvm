@@ -60,65 +60,9 @@ If the IP hasn't been acquired after 10 seconds, check whether your current netw
 
 ### Info Sub-pages
 
-On the main screen, **short-press Button A** to cycle through 6 sub-pages: `Home → ETH Info → WiFi Info → AP Info → HDMI Info → System Info → Home`. **Short-press Button B** to return to the main screen at any time. The screen automatically resets to the main page after sleep.
+On the main screen, **short-press Button A** to cycle through 7 sub-pages: `Home → HDMI Info → System Info → ETH Info → ETH IPv6 → WiFi Info → WiFi IPv6 → AP Info → Home`. **Short-press Button B** to return to the main screen at any time. The screen automatically resets to the main page after sleep.
 
 Sub-pages use a full-screen 4-line layout (no status bar), with content starting from line 1.
-
-#### ETH Info
-
-Ethernet interface details:
-
-| Line | Content |
-|:-----|---------|
-| Line 1 | `ETH` (left) + mode label (right: DHCP / STATIC / DIRECT) |
-| Line 2 | IP address (or DISABLE / NOT CONNECT / Loading) |
-| Line 3 | MAC address |
-| Line 4 | Gateway (prefix `G`, e.g. `G192.168.1.1`) |
-
-Mode labels: DHCP (dynamic), STATIC (manual configuration), DIRECT (DHCP Server mode).
-
-```
- ETH              DHCP
- 192.168.1.100
- AA:BB:CC:DD:EE:FF
- G192.168.1.1
-```
-
-#### WiFi Info
-
-WiFi interface details:
-
-| Line | Content |
-|:-----|---------|
-| Line 1 | `WiFi` + signal strength (e.g. `WiFi -45`) + mode label (right) |
-| Line 2 | IP address (or DISABLE / NOT CONNECT / Loading) |
-| Line 3 | SSID (prefix `S:`, e.g. `S:MyWiFi`) |
-| Line 4 | MAC address |
-
-```
- WiFi -55        STATIC
- 10.0.0.55
- S:MyOfficeWiFi
- AA:BB:CC:DD:EE:FF
-```
-
-#### AP Info
-
-Hotspot configuration:
-
-| Line | Content |
-|:-----|---------|
-| Line 1 | `AP` + WiFi6 indicator + band (2.4G / 5G) |
-| Line 2 | SSID (prefix `S:`, e.g. `S:FlexKVM-AP`) |
-| Line 3 | Password (prefix `P:`) |
-| Line 4 | IP address (or DISABLE) |
-
-```
- AP  WIFI6      5G
- S:FlexKVM-AP
- P:12345678
- 192.168.10.1
-```
 
 #### HDMI Info
 
@@ -156,6 +100,94 @@ Device identification:
  FlexKVM
  flexkvm
  FS10251810001CN5
+```
+
+#### ETH Info
+
+Ethernet interface details:
+
+| Line | Content |
+|:-----|---------|
+| Line 1 | `ETH` (left) + mode label (right: DHCP / STATIC / DIRECT) |
+| Line 2 | IP address (or DISABLE / NOT CONNECT / Loading) |
+| Line 3 | MAC address |
+| Line 4 | Gateway (prefix `G`, e.g. `G192.168.1.1`) |
+
+Mode labels: DHCP (dynamic), STATIC (manual configuration), DIRECT (DHCP Server mode).
+
+```
+ ETH              DHCP
+ 192.168.1.100
+ AA:BB:CC:DD:EE:FF
+ G192.168.1.1
+```
+
+#### ETH IPv6
+
+Ethernet IPv6 address (shows `NO IPV6` when absent):
+
+| Line | Content |
+|:-----|---------|
+| Line 1 | `ETH IPV6` title |
+| Lines 2–4 | IPv6 address, split across 3 lines (max 16 chars per line) |
+
+```
+ ETH IPV6
+ 240e:390:8b7
+ 8:1a3c:1234:56
+ 78:90ab
+```
+
+#### WiFi Info
+
+WiFi interface details:
+
+| Line | Content |
+|:-----|---------|
+| Line 1 | `WiFi` + signal strength (e.g. `WiFi -45`) + mode label (right) |
+| Line 2 | IP address (or DISABLE / NOT CONNECT / Loading) |
+| Line 3 | SSID (prefix `S:`, e.g. `S:MyWiFi`) |
+| Line 4 | MAC address |
+
+```
+ WiFi -55        STATIC
+ 10.0.0.55
+ S:MyOfficeWiFi
+ AA:BB:CC:DD:EE:FF
+```
+
+#### WiFi IPv6
+
+WiFi IPv6 address (shows `NO IPV6` when absent):
+
+| Line | Content |
+|:-----|---------|
+| Line 1 | `WIFI IPV6` title |
+| Lines 2–4 | IPv6 address, split across 3 lines (max 16 chars per line) |
+
+```
+ WIFI IPV6
+ 240e:390:8b7
+ 8:1a3c:1234:56
+ 78:90ab
+```
+
+#### AP Info
+
+Hotspot configuration:
+
+| Line | Content |
+|:-----|---------|
+| Line 1 | `AP` + WiFi6 indicator + band (2.4G / 5G) |
+| Line 2 | SSID (prefix `S:`, e.g. `S:FlexKVM-AP`) |
+| Line 3 | Password (prefix `P:`) |
+| Line 4 | IP address (or DISABLE) |
+
+```
+ AP  WIFI6      5G
+ S:FlexKVM-AP
+ P:12345678
+ 192.168.10.1
 ```
 
 ### Provisioning Screen

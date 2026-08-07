@@ -6,10 +6,10 @@ FlexKVM has four physical buttons for provisioning, mode switching, and system m
 
 | Button | Action | Function | When to use |
 |:------:|--------|----------|-------------|
-| Button A | Short press | Cycle through OLED sub-pages | View ETH/WiFi/AP/HDMI/system info |
+| Button A | Short press | Cycle through OLED sub-pages | View HDMI/system/ETH/WiFi/AP info |
 | Button A | Hold 1–3s, then release | Enter hotspot provisioning mode | First-time setup or recovery after misconfiguration |
 | Button A | Hold >3s, then release | Return to home screen (cancel provisioning) | Accidental press — cancel the action |
-| Button B | Short press | Return to home screen (from sub-pages) | Exit ETH/WiFi/AP/HDMI/System Info detail pages |
+| Button B | Short press | Return to home screen (from sub-pages) | Exit HDMI/System/ETH/WiFi/AP Info detail pages |
 | Button B | Hold 1–3s | Toggle Ethernet Direct Mode | No router available — direct Ethernet to computer |
 | Button B | Hold 3–5s | Toggle WiFi ↔ Hotspot mode | Quick hotspot on/off without Web interface |
 | Button B | Hold 5s+ | Return to home screen (cancel action) | Accidental press — cancel |
@@ -20,13 +20,13 @@ FlexKVM has four physical buttons for provisioning, mode switching, and system m
 
 ### Button A — Provisioning + Info Viewer
 
-**Short press**: Cycles through OLED sub-pages — Home → ETH Info → WiFi Info → AP Info → HDMI Info → System Info → Home. Use to quickly check network details, video parameters, and system information.
+**Short press**: Cycles through OLED sub-pages — Home → HDMI Info → System Info → ETH Info → ETH IPv6 → WiFi Info → WiFi IPv6 → AP Info → Home. Use to quickly check video parameters, system information, and network details.
 
 **Hold**: Two stages — after 1s the OLED shows the AP provisioning icon, release to enter provisioning mode; keep holding to 3s and the OLED switches to the HOME preview icon, release to return to the home screen (cancel). See [Provisioning Mode](../network/provision.md).
 
 ### Button B — Three-Stage Toggle + Back
 
-**Short press**: Returns to the home screen from any info sub-page (ETH Info / WiFi Info / AP Info / HDMI Info / System Info, etc.).
+**Short press**: Returns to the home screen from any info sub-page (HDMI Info / System Info / ETH Info / ETH IPv6 / WiFi Info / WiFi IPv6 / AP Info, etc.).
 
 **Hold**: Hold Button B — the OLED shows mode previews in sequence. Release to trigger the corresponding action:
 

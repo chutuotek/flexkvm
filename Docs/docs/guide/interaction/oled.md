@@ -60,65 +60,9 @@ FlexKVM 正面有一块 128×64 单色 OLED 屏，显示设备状态、网络信
 
 ### 信息子页面
 
-在主界面**短按按键 A** 可循环切换 6 个子页面，查看详细设备信息：`主页 → ETH 信息 → WiFi 信息 → AP 信息 → HDMI 信息 → 系统信息 → 主页`。**短按按键 B** 随时返回主界面。息屏后自动复位到主界面。
+在主界面**短按按键 A** 可循环切换 7 个子页面，查看详细设备信息：`主页 → HDMI 信息 → 系统信息 → ETH 信息 → ETH IPv6 → WiFi 信息 → WiFi IPv6 → AP 信息 → 主页`。**短按按键 B** 随时返回主界面。息屏后自动复位到主界面。
 
 子页面采用全屏 4 行布局（不使用图标栏），内容从第 1 行开始。
-
-#### ETH 信息
-
-显示以太网接口详情：
-
-| 行 | 内容 |
-|:---|------|
-| 第 1 行 | `ETH`（左）+ 模式标签（右：DHCP / STATIC / DIRECT） |
-| 第 2 行 | IP 地址（或 DISABLE / NOT CONNECT / Loading） |
-| 第 3 行 | MAC 地址 |
-| 第 4 行 | Gateway（前缀 `G`，如 `G192.168.1.1`） |
-
-模式标签：DHCP 自动获取、STATIC 静态配置、DIRECT 直连模式（DHCP Server）。
-
-```
- ETH              DHCP
- 192.168.1.100
- AA:BB:CC:DD:EE:FF
- G192.168.1.1
-```
-
-#### WiFi 信息
-
-显示 WiFi 接口详情：
-
-| 行 | 内容 |
-|:---|------|
-| 第 1 行 | `WiFi` + 信号强度（如 `WiFi -45`）+ 模式标签（右） |
-| 第 2 行 | IP 地址（或 DISABLE / NOT CONNECT / Loading） |
-| 第 3 行 | SSID（前缀 `S:`，如 `S:MyWiFi`） |
-| 第 4 行 | MAC 地址 |
-
-```
- WiFi -55        STATIC
- 10.0.0.55
- S:MyOfficeWiFi
- AA:BB:CC:DD:EE:FF
-```
-
-#### AP 信息
-
-显示热点配置：
-
-| 行 | 内容 |
-|:---|------|
-| 第 1 行 | `AP` + WiFi6 标识 + 频段（2.4G / 5G） |
-| 第 2 行 | SSID（前缀 `S:`，如 `S:FlexKVM-AP`） |
-| 第 3 行 | 密码（前缀 `P:`） |
-| 第 4 行 | IP 地址（或 DISABLE） |
-
-```
- AP  WIFI6      5G
- S:FlexKVM-AP
- P:12345678
- 192.168.10.1
-```
 
 #### HDMI 信息
 
@@ -156,6 +100,94 @@ FlexKVM 正面有一块 128×64 单色 OLED 屏，显示设备状态、网络信
  FlexKVM
  flexkvm
  FS10251810001CN5
+```
+
+#### ETH 信息
+
+显示以太网接口详情：
+
+| 行 | 内容 |
+|:---|------|
+| 第 1 行 | `ETH`（左）+ 模式标签（右：DHCP / STATIC / DIRECT） |
+| 第 2 行 | IP 地址（或 DISABLE / NOT CONNECT / Loading） |
+| 第 3 行 | MAC 地址 |
+| 第 4 行 | Gateway（前缀 `G`，如 `G192.168.1.1`） |
+
+模式标签：DHCP 自动获取、STATIC 静态配置、DIRECT 直连模式（DHCP Server）。
+
+```
+ ETH              DHCP
+ 192.168.1.100
+ AA:BB:CC:DD:EE:FF
+ G192.168.1.1
+```
+
+#### ETH IPv6
+
+显示以太网 IPv6 地址（无地址时显示 `NO IPV6`）：
+
+| 行 | 内容 |
+|:---|------|
+| 第 1 行 | `ETH IPV6` 标题 |
+| 第 2~4 行 | IPv6 地址，分 3 行显示（每行最多 16 字符） |
+
+```
+ ETH IPV6
+ 240e:390:8b7
+ 8:1a3c:1234:56
+ 78:90ab
+```
+
+#### WiFi 信息
+
+显示 WiFi 接口详情：
+
+| 行 | 内容 |
+|:---|------|
+| 第 1 行 | `WiFi` + 信号强度（如 `WiFi -45`）+ 模式标签（右） |
+| 第 2 行 | IP 地址（或 DISABLE / NOT CONNECT / Loading） |
+| 第 3 行 | SSID（前缀 `S:`，如 `S:MyWiFi`） |
+| 第 4 行 | MAC 地址 |
+
+```
+ WiFi -55        STATIC
+ 10.0.0.55
+ S:MyOfficeWiFi
+ AA:BB:CC:DD:EE:FF
+```
+
+#### WiFi IPv6
+
+显示 WiFi IPv6 地址（无地址时显示 `NO IPV6`）：
+
+| 行 | 内容 |
+|:---|------|
+| 第 1 行 | `WIFI IPV6` 标题 |
+| 第 2~4 行 | IPv6 地址，分 3 行显示（每行最多 16 字符） |
+
+```
+ WIFI IPV6
+ 240e:390:8b7
+ 8:1a3c:1234:56
+ 78:90ab
+```
+
+#### AP 信息
+
+显示热点配置：
+
+| 行 | 内容 |
+|:---|------|
+| 第 1 行 | `AP` + WiFi6 标识 + 频段（2.4G / 5G） |
+| 第 2 行 | SSID（前缀 `S:`，如 `S:FlexKVM-AP`） |
+| 第 3 行 | 密码（前缀 `P:`） |
+| 第 4 行 | IP 地址（或 DISABLE） |
+
+```
+ AP  WIFI6      5G
+ S:FlexKVM-AP
+ P:12345678
+ 192.168.10.1
 ```
 
 ### 配网界面
