@@ -25,9 +25,11 @@ TF 卡槽在设备侧面，电源灯下方。金属触点朝向电源灯，推�
 
 | 图标 | 含义 |
 |------|------|
-| ![](../icon/image/hard-drive.svg) | TF 卡已插入 |
+| ![](../icon/image/hard-drive.svg) | TF 卡已插入，空闲 |
 | ![](../icon/image/hard-drive-off.svg) | TF 卡没插 |
-| ![](../icon/image/server.svg) | 正通过 USB 共享给主机 |
+| ![](../icon/image/upload.svg) | 文件上传中 |
+| ![](../icon/image/download.svg) | 文件下载中 |
+| ![](../icon/image/server.svg) | 正通过 USB 共享给主机 / 导出镜像中 |
 
 四种用法：
 

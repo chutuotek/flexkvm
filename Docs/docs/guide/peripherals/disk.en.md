@@ -25,9 +25,11 @@ Click the disk image icon in the top bar to open the management interface.
 
 | Icon | Meaning |
 |------|---------|
-| ![](../icon/image/hard-drive.svg) | TF card inserted |
+| ![](../icon/image/hard-drive.svg) | TF card inserted, idle |
 | ![](../icon/image/hard-drive-off.svg) | No TF card |
-| ![](../icon/image/server.svg) | Currently shared to host via USB |
+| ![](../icon/image/upload.svg) | File upload in progress |
+| ![](../icon/image/download.svg) | File download in progress |
+| ![](../icon/image/server.svg) | Currently shared to host via USB / exporting image |
 
 Four operations:
 
