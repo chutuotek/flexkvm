@@ -3,6 +3,34 @@
 - language: en-US
 - Author: ZEROK
 
+## v0.1.5 (2026-08-08)
+
+### Added
+
+- OLED main screen adds ETH/WiFi IPv6 info sub-pages (7 sub-pages total)
+- OLED sub-page order adjusted: HDMI and System Info moved to the front (pages 2/3)
+- Touchscreen gestures: single-finger tap/double-tap, long-press right-click, two-finger scroll, long-press drag
+- Tailscale Authkey login and headscale self-hosted server support
+- Multi-device login preemption prompt and kicked-out notification
+- IPv6 address display in Ethernet/WiFi detail panels
+- Logout immediately invalidates other logged-in sessions
+- TF menu icon reflects file upload/download transfer state in real time
+- Up to 5 NTP time sources can be configured
+- On entering provisioning mode or after a successful login, if the client time and FlexKVM time differ by more than 60 seconds, you will be asked whether to sync the time
+
+### Improved
+
+- Better remote display compatibility and quality in browsers like Firefox
+- Auto-reconnect after network drop or device reboot
+- Provisioning mode switched to HTTP to avoid self-signed certificate warnings
+- Provisioning hotspot password changed to 8 random digits for easier entry
+
+### Fixed
+
+- 2FA binding must be completed within 10 minutes of generation, otherwise regenerate
+- Fixed multiple stability and security issues
+- Fixed Ethernet status always showing as connected on the web interface
+
 ## v0.1.4 (2026-07-28)
 
 ### New
