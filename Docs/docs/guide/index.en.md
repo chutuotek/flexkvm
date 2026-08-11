@@ -324,6 +324,12 @@ Firmware upgrades, reboot, factory reset, and other system-level operations.
 
     [:octicons-arrow-right-24: View](maintenance/upgrade-online.md)
 
+- **:material-package-up: App Update**
+
+    Update installed apps (e.g. Tailscale) — multiple download sources with auto-verification
+
+    [:octicons-arrow-right-24: View](maintenance/upgrade-app.md)
+
 - **:material-restart: Reboot**
 
     Software reboot and hardware reset button

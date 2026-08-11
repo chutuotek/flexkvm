@@ -326,6 +326,12 @@ TF 卡存储、ATX 电源控制、UART 串口、GPIO 引脚——物理外接的
 
     [:octicons-arrow-right-24: 查看](maintenance/upgrade-online.md)
 
+- **:material-package-up: 应用更新**
+
+    更新已安装应用（如 Tailscale），支持多下载源与自动校验
+
+    [:octicons-arrow-right-24: 查看](maintenance/upgrade-app.md)
+
 - **:material-restart: 重启设备**
 
     软件重启与硬件复位按键操作

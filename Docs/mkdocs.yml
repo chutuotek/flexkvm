@@ -114,6 +114,7 @@ plugins:
             固件升级: Firmware Upgrade
             在线升级: Online Upgrade
             离线升级: Offline Upgrade
+            应用更新: App Update
             维护与诊断: Maintenance & Diagnostics
             系统日志: System Logs
             操作审计: Audit Logs
@@ -242,6 +243,7 @@ nav:
     - 系统维护:
       - 在线升级: guide/maintenance/upgrade-online.md
       - 离线升级: guide/maintenance/upgrade-offline.md
+      - 应用更新: guide/maintenance/upgrade-app.md
       - 重启设备: guide/maintenance/reboot.md
       - 恢复出厂设置: guide/maintenance/factory-reset.md
       - 系统日志: guide/maintenance/log.md
