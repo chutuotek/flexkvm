@@ -85,6 +85,7 @@ plugins:
             WiFi: Wi-Fi
             热点模式: AP Mode
             Tailscale 异地组网: Tailscale VPN
+            mDNS 服务发现: mDNS Discovery
             网络唤醒 (WoL): Wake-on-LAN (WoL)
             HTTPS 证书: HTTPS Certificate
             SSH 远程访问: SSH Remote Access
@@ -212,6 +213,7 @@ nav:
       - WiFi: guide/network/wifi.md
       - 热点模式: guide/network/ap.md
       - Tailscale 异地组网: guide/network/tailscale.md
+      - mDNS 服务发现: guide/network/mdns.md
       - 网络唤醒 (WoL): guide/network/wol.md
     - 远程交互:
       - 远程画面: guide/remote/screen.md

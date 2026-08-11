@@ -152,6 +152,12 @@ How to get FlexKVM online and access it remotely.
 
     [:octicons-arrow-right-24: View](network/tailscale.md)
 
+- **:material-magnify-scan: mDNS Discovery**
+
+    Access FlexKVM by hostname — no need to memorize the IP address
+
+    [:octicons-arrow-right-24: View](network/mdns.md)
+
 - **:material-power-standby: Wake-on-LAN (WoL)**
 
     Remotely wake powered-off devices via magic packet

@@ -152,6 +152,12 @@
 
     [:octicons-arrow-right-24: 查看](network/tailscale.md)
 
+- **:material-magnify-scan: mDNS 服务发现**
+
+    通过主机名访问 FlexKVM，无需记忆 IP 地址
+
+    [:octicons-arrow-right-24: 查看](network/mdns.md)
+
 - **:material-power-standby: 网络唤醒 (WoL)**
 
     通过网络魔术包远程唤醒已关机的设备

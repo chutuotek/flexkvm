@@ -437,6 +437,9 @@ Long-press **Button B [3]** for 3–5 seconds again and release when the OLED sh
 ### Browser Access
 
 1. Enter `https://<device-IP>` in your browser's address bar (use the IP shown on the OLED, e.g., `https://192.168.1.100`)
+
+> **Don't want to memorize the IP?** You can also access FlexKVM via its mDNS hostname: just enter `flexkvm-xxxx.local` in your browser (find the hostname on the OLED system info screen — see [mDNS Discovery](../guide/network/mdns.md))
+
 2. Since the device uses a self-signed certificate, your browser will show a security warning. Follow the steps for your browser:
 
     | Browser | Steps |
