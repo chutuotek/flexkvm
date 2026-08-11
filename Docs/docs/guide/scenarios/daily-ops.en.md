@@ -17,7 +17,7 @@ Firmware updates bring new features and security fixes. Check monthly.
 
 Go to Web interface → Settings → Upgrade:
 
-1. Select a **download source** (Gitee for China, GitHub for international)
+1. Select a **download source** (default Gitcode, Gitee also for China, GitHub for international)
 2. Click **Check for Updates**
 3. If a new version is available → click **Download Package** → wait for download and verification
 4. Click **Upgrade Now** → enter password to confirm
@@ -30,7 +30,7 @@ Go to Web interface → Settings → Upgrade:
 
 ### Offline Upgrade
 
-Device has no internet: download the firmware package (`.tar`) from the [FlexKVM Releases page](https://github.com/chutuotek/flexkvm/releases) on a computer → copy to TF card → insert into FlexKVM → Upgrade interface → select Offline Upgrade → upload → start.
+Device has no internet: download the firmware package (`.tar`) from the [Gitcode Releases page](https://gitcode.com/chutuotek/flexkvm/releases) (Gitee/GitHub also available) on a computer → copy to TF card → insert into FlexKVM → Upgrade interface → select Offline Upgrade → upload → start.
 
 > SHA-256 verification, firmware package format → [Offline Upgrade](../maintenance/upgrade-offline.md)
 

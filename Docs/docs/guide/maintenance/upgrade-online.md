@@ -28,9 +28,9 @@
 
 选固件下载地址：
 
-- [GitHub](https://github.com/chutuotek/flexkvm/releases) — 海外用户
+- [Gitcode](https://gitcode.com/chutuotek/flexkvm/releases) — 默认源，国内用户速度快
 - [Gitee](https://gitee.com/chutuotek/flexkvm/releases) — 国内用户，速度快
-- [Gitcode](https://gitcode.com/chutuotek/flexkvm/releases) — 国内用户，速度快
+- [GitHub](https://github.com/chutuotek/flexkvm/releases) — 海外用户
 
 ## 当前版本
 
@@ -85,7 +85,7 @@
 
 | 现象 | 可能原因 | 先试这个 |
 |------|----------|---------|
-| 下载失败 | 网络不稳 | 切下载源（GitHub ↔ Gitee），或用[离线升级](upgrade-offline.md) |
+| 下载失败 | 网络不稳 | 切下载源（Gitcode ↔ Gitee），或用[离线升级](upgrade-offline.md) |
 | 校验失败 | 下载包损坏 | 删掉重新下载 |
 | 升级中卡住 | — | 耐心等，别断电。超过 10 分钟没反应再排查 |
 | 升级后起不来 | 升级中断电了 | 见[线刷镜像](flash.md)恢复 |

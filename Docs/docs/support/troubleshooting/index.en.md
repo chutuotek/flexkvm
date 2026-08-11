@@ -159,7 +159,7 @@ Check whether you toggled mouse, keyboard, or audio during installation — thes
 
 | Possible cause | Solution |
 |---------------|----------|
-| Unstable network | Switch download source (GitHub/Gitee/Gitcode), or try offline upgrade |
+| Unstable network | Switch download source (default Gitcode, or Gitee/GitHub), or try offline upgrade |
 | Power instability | Use a dedicated power adapter during upgrade |
 | Firmware checksum error | Re-download the package and try again |
 

@@ -12,9 +12,9 @@ Download the OTA image file (`.tar` format) from either source on your computer:
 
 | Source | URL | Best for |
 |--------|-----|----------|
-| GitHub | [github.com/chutuotek/flexkvm/releases](https://github.com/chutuotek/flexkvm/releases) | International users |
+| Gitcode | [gitcode.com/chutuotek/flexkvm/releases](https://gitcode.com/chutuotek/flexkvm/releases) | Default source, faster for users in China |
 | Gitee | [gitee.com/chutuotek/flexkvm/releases](https://gitee.com/chutuotek/flexkvm/releases) | Users in China, faster |
-| Gitcode | [gitcode.com/chutuotek/flexkvm/releases](https://gitcode.com/chutuotek/flexkvm/releases) | Users in China, faster |
+| GitHub | [github.com/chutuotek/flexkvm/releases](https://github.com/chutuotek/flexkvm/releases) | International users |
 
 On the releases page, find the target version and download the `.tar` firmware package (e.g., `flexkvm-v0.1.2.tar`).
 

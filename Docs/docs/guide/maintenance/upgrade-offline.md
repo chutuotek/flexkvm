@@ -12,9 +12,9 @@
 
 | 下载源 | 地址 | 适合 |
 |--------|------|------|
-| GitHub | [github.com/chutuotek/flexkvm/releases](https://github.com/chutuotek/flexkvm/releases) | 海外用户 |
+| Gitcode | [gitcode.com/chutuotek/flexkvm/releases](https://gitcode.com/chutuotek/flexkvm/releases) | 默认源，国内用户速度更快 |
 | Gitee | [gitee.com/chutuotek/flexkvm/releases](https://gitee.com/chutuotek/flexkvm/releases) | 国内用户，速度更快 |
-| Gitcode | [gitcode.com/chutuotek/flexkvm/releases](https://gitcode.com/chutuotek/flexkvm/releases) | 国内用户，速度更快 |
+| GitHub | [github.com/chutuotek/flexkvm/releases](https://github.com/chutuotek/flexkvm/releases) | 海外用户 |
 
 在发布页找到目标版本，下载 `.tar` 固件包（如 `flexkvm-v0.1.2.tar`）。
 

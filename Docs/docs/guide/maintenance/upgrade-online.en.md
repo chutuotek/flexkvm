@@ -28,9 +28,9 @@ Want early access to new features? Enable the beta option to receive beta update
 
 Choose the firmware download location:
 
-- [GitHub](https://github.com/chutuotek/flexkvm/releases) — International users
+- [Gitcode](https://gitcode.com/chutuotek/flexkvm/releases) — Default source, faster for users in China
 - [Gitee](https://gitee.com/chutuotek/flexkvm/releases) — Users in China, faster
-- [Gitcode](https://gitcode.com/chutuotek/flexkvm/releases) — Users in China, faster
+- [GitHub](https://github.com/chutuotek/flexkvm/releases) — International users
 
 ## Current Version
 
@@ -85,7 +85,7 @@ Upgrade success:
 
 | Symptom | Likely cause | Try this first |
 |---------|-------------|----------------|
-| Download failed | Unstable network | Switch download source (GitHub ↔ Gitee), or use [Offline Upgrade](upgrade-offline.md) |
+| Download failed | Unstable network | Switch download source (Gitcode ↔ Gitee), or use [Offline Upgrade](upgrade-offline.md) |
 | Verification failed | Corrupted download | Delete and re-download |
 | Stuck during upgrade | — | Be patient, don't power off. If unresponsive for 10+ minutes, then troubleshoot |
 | Won't boot after upgrade | Power loss during upgrade | See [Flash Firmware](flash.md) for recovery |
