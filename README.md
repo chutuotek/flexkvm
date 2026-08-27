@@ -39,31 +39,27 @@ FlexKVM 是一款即插即用的带外管理设备。将它接入目标主机的
 - [Changelog (English)](Changelog/Dev/CHANGELOG.md)
 - [更新日志 (中文)](Changelog/Dev/CHANGELOG_CN.md)
 
-## 本地构建文档
-
-本项目使用 MkDocs + Material for MkDocs 构建文档：
-
-```bash
-# 安装依赖
-cd Docs && ./build.sh i
-
-# 本地预览
-mkdocs serve
-
-# 构建网站
-./build.sh
-```
-
-详见 [Docs/README.md](Docs/README.md)。
-
 ## 购买
 
 - [淘宝官方店铺](https://item.taobao.com/item.htm?id=1054030596204)
 
 ## 社区与支持
 
-- [GitHub Discussions](https://github.com/chutuotek/flexkvm/discussions) - 问题讨论与建议反馈
-- [官方网站](https://flexkvm.com) - 更多产品信息
+| 渠道 | 用途 |
+|------|------|
+| [GitHub Issues](https://github.com/chutuotek/flexkvm/issues) | Bug 反馈与功能建议，便于跟踪处理 |
+| [GitHub Discussions](https://github.com/chutuotek/flexkvm/discussions) | 问题讨论与建议反馈 |
+| [QQ 群：789603489](https://qm.qq.com/q/R5cNG8ARmW) | 国内用户实时交流 |
+| [Telegram 群](https://t.me/flexkvm) | 海外用户交流 |
+| [官方网站](https://flexkvm.com) | 更多产品信息 |
+
+**扫码加入社群：**
+
+| QQ 群 | 微信群 | 楚拓电子公众号 | Telegram 群 |
+|-------|--------|-----------|------------|
+| <img src="img/qrcode_1787800473910.jpg" width="200" alt="QQ 群二维码" /> | <img src="img/FlexKVM_wechat.jpg" width="200" alt="微信群二维码" /> | <img src="img/FlexKVM_wechat_oa.webp" width="200" alt="楚拓电子公众号二维码" /> | <img src="img/FlexKVM_telegram.webp" width="200" alt="Telegram 群二维码" /> |
+
+反馈 Bug 时请附上系统版本、浏览器版本、问题描述与日志，格式参考[建议与反馈](https://flexkvm.com/latest/community/feedback/)。
 
 ## License
 
