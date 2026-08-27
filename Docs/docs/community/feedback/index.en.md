@@ -57,9 +57,9 @@ If you have suggestions, questions, or bug reports, please reach out via:
 - Email
 - GitHub / Gitee
 - QQ Group
-- WeChat Official Account
+- ChuoTuoTEK WeChat Official Account
 
-> Note: If your issue involves sensitive information (enterprise data, public IPs, etc.), please use email or WeChat Official Account for feedback.
+> Note: If your issue involves sensitive information (enterprise data, public IPs, etc.), please use email or the ChuoTuoTEK WeChat Official Account for feedback.
 
 ### Email
 
@@ -82,4 +82,4 @@ Post your issues in the [QQ Group](../social/index.en.md#qq-group) or join discu
 
 ### WeChat Official Account
 
-Follow the [WeChat Official Account](../social/index.en.md#wechat-official-account) and send your issue via direct message.
+Follow the [WeChat Official Account (ChuoTuoTEK)](../social/index.en.md#wechat-official-account) and send your issue via direct message.

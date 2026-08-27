@@ -7,7 +7,7 @@
 | Technical issues | QQ Group / Telegram | Fast response, real-time communication |
 | Bug reports | GitHub / Gitee Issues | Easy to track progress |
 | Business inquiries | Phone / WeChat / Email | One-on-one communication |
-| Privacy-sensitive matters | Email / WeChat Official Account | Information security assured |
+| Privacy-sensitive matters | Email / ChuoTuoTEK Official Account | Information security assured |
 
 ## Business Inquiries
 

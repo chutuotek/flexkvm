@@ -30,4 +30,4 @@ Get the latest product news, tutorial updates, and WeChat group QR codes.
 
 <img src="../../images/wechat-tool.webp" width="200" />
 
-Scan the QR code above to follow the WeChat Official Account. Then go to the menu: "User Community" → "WeChat Group" to get the latest group QR code.
+Scan the QR code above to follow the ChuoTuoTEK WeChat Official Account (楚拓电子公众号). Then go to the menu: "User Community" → "WeChat Group" to get the latest group QR code.
