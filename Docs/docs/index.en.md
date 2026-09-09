@@ -81,6 +81,10 @@
 
     Emulates a USB audio device. Target host's system audio streams back to your browser; your microphone outputs to the target host.
 
+- **:material-robot: AI Remote Control**
+
+    Built-in Agent API and MCP service — AI clients such as Claude and OpenClaw can take screenshots and control keyboard/mouse automatically for unattended operations.
+
 - **:material-power: Remote Power Control**
 
     ATX control interface for remote power management — normal shutdown, force restart, force power-off.
