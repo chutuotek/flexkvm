@@ -29,32 +29,25 @@ Adjust in Settings → System → **Recording Settings**.
 
 ![Recording settings](./images/record/setting_record.webp)
 
-### Mute Recording
+| Setting | Options | Description |
+|---------|---------|-------------|
+| Mute Recording | On/Off | When enabled, the video contains no audio |
+| Audio Bitrate | 64 / 128 / 192 / 256 kbps | Adjustable when not muted; higher bitrate, better audio and larger files |
+| Container Format | WebM / MP4 / MKV | MP4 has the best compatibility; WebM is the browser-native format |
+| Video Codec | Listed per container | Auto-detects codecs available on this machine, labeled (hardware)/(software); hardware encoding uses less CPU |
+| Resolution | Auto / 1080p / 720p / 480p | "Auto" follows the remote display |
+| Frame Rate | Auto / 60 / 30 / 24 / 15 fps | "Auto" follows the remote display |
+| Video Quality | 1–8 Mbps | Higher is sharper and larger |
 
-When enabled, the video contains no audio.
-
-### Video Format
-
-| Format | When to use |
-|--------|-------------|
-| WebM (VP9+Opus) | Default, good quality |
-| WebM (VP8+Opus) | Legacy device compatibility |
-| MP4 (H.264) | Best compatibility — plays on most media players |
-
-### Video Quality
-
-| Quality | Bitrate | When to use |
-|---------|:-------:|-------------|
-| Low | 1 Mbps | Smallest file possible |
-| Medium | 2 Mbps | Daily recording |
-| High | 4 Mbps | More detail |
-| Ultra | 8 Mbps | Best quality |
+> The container format matches the video file extension (.webm / .mp4 / .mkv). The codec is how the picture gets compressed: hardware-labeled codecs use dedicated hardware and save the most CPU. Recording is based on WebCodecs: codecs unsupported by this machine never appear in the list, and a saved format that is no longer supported falls back to an available one.
 
 ---
 
 **No audio in recording?** → Check if mute recording is enabled, and whether the host has audio output.
 
 **File won't play?** → Switch to MP4 (H.264) for best compatibility.
+
+**Stuttering or high CPU during recording?** → Pick a codec labeled (hardware), or lower the resolution/frame rate/quality.
 
 **Laggy or dropped frames?** → Lower the resolution or quality in [Remote Display](screen.md) to reduce encoding load.
 

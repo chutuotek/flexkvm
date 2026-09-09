@@ -22,6 +22,7 @@ Status messages when the display is abnormal:
 |---------|-------|
 | "Remote display not connected" | HDMI not plugged in or target host powered off |
 | "Host is sleeping" | Host in sleep mode or HDMI signal interrupted |
+| "Negotiating signal…" | HDMI just plugged in or resolution changed — video parameters are being negotiated, recovers automatically |
 
 ### Touchscreen Gestures
 
@@ -48,6 +49,7 @@ Click the display icon in the top bar to open the menu.
 | Status | Meaning |
 |--------|---------|
 | Connected | Normal |
+| Negotiating | HDMI just plugged in or resolution changed, video parameters being negotiated |
 | Signal lost | Host sleeping or HDMI disconnected |
 | Not connected | Connection never established |
 
@@ -100,15 +102,24 @@ Controls the balance between display responsiveness and bandwidth. Range: 1–10
 
 > Not sure? Keep the default of 1.
 
-### Reconnect
+### Reconnect & Simulated Unplug
 
-Disconnect the current video connection and re-establish it. Try this when the display is laggy or glitching.
+Two groups of actions at the bottom of the display menu:
 
-## Custom EDID
+| Button | Purpose |
+|--------|---------|
+| Reconnect | Disconnect the current video connection and re-establish it. Try this when the display is laggy or glitching |
+| Unplug monitor / Plug monitor | Simulate physically unplugging the display so the host re-detects it. Use when the host fails to recognize the display or outputs nothing |
+
+> After unplugging, the host acts as if the display was removed; click "Plug monitor" to restore. HDMI hotplug detection is event-driven, so status updates promptly.
+
+## EDID Configuration
 
 Go to Settings → **System** → EDID Configuration.
 
 ![EDID config](./images/edid/setting_edid.webp)
+
+### Custom EDID
 
 Click "Custom EDID" and enter EDID data in HEX format:
 
@@ -130,9 +141,39 @@ Format example (first 16 bytes; 128 bytes total needed):
 
 > Getting EDID: Linux: `cat /sys/class/drm/card0-HDMI-A-1/edid | xxd -p`. Windows: use tools like MonitorInfoView. Or obtain from your display manufacturer.
 
+### Delete Custom EDID
+
+Click "Delete Custom EDID" and confirm — the **custom** option disappears from the EDID list in the display menu. If the EDID is currently in use, switch to another one first.
+
+### EDID Modify (Override Selected Fields)
+
+Don't want to upload a full EDID? Enable "EDID Modify" to override only the selected fields on top of the default EDID:
+
+!!! note "Screenshot placeholder"
+
+    TODO: screenshot of the EDID Modify dialog (`images/edid/setting_edid_modify.webp`).
+
+| Field | Description |
+|-------|-------------|
+| Manufacturer | 3-letter manufacturer ID (e.g., `DEL`), auto-uppercased |
+| Monitor Name | Monitor name shown in the operating system (printable ASCII) |
+| Serial String | Monitor serial number string (printable ASCII) |
+| Product Code | Numeric product code; 0 keeps the original value |
+
+Fields left empty keep their original values. After saving, the host sees the modified info when it reads the EDID — useful for making the host recognize the device as a specific monitor (multi-screen management, capture/casting software that identifies displays by name, etc.).
+
 ## Fullscreen
 
-Click the fullscreen button at the far right of the top bar, or press `F11`. Press `Esc` or `F11` again to exit.
+Two fullscreen modes (also switchable from the display menu's fullscreen button):
+
+| Mode | Shortcut | Effect |
+|------|----------|--------|
+| Toolbar fullscreen | `F11` | Display fills the whole screen, menu bar stays visible |
+| Picture fullscreen | `Ctrl+F11` | Menu bar hidden, picture only |
+
+- Press a shortcut when not in fullscreen to enter that mode; press the same shortcut again to exit.
+- While in fullscreen, pressing the other shortcut switches modes directly.
+- Press `Esc` to exit fullscreen as well.
 
 ![fullscreen](./images/screen/remote_full.webp)
 

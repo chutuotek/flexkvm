@@ -62,6 +62,8 @@ How to use: Click the remote display to enter control (browser requests pointer 
 
 **Scroll reverse**: When enabled, scroll direction is inverted.
 
+**Move throttling**: On by default; limits the rate of mouse move events (default 125 Hz — events merged every 8 ms), adjustable via "Throttle rate" (10–500 Hz). Noticeably reduces browser and USB load with high-report-rate mice (e.g., 1000 Hz gaming mice); when off, move events are reported at full rate for maximum responsiveness.
+
 ### Disable / Enable
 
 Click "Disable" → status changes to disabled. Click "Enable" to restore.
