@@ -1,6 +1,6 @@
 # HTTPS Configuration
 
-FlexKVM encrypts access via HTTPS, offering two certificate modes: self-signed and custom.
+FlexKVM encrypts access via HTTPS, offering self-signed certificates (including user sub-CA) and custom certificates.
 
 Go to Settings → System → HTTPS Configuration.
 
@@ -17,7 +17,56 @@ The dropdown shows the remaining validity period of the current certificate.
 
 ### Self-Signed Certificate
 
-Auto-generated on first boot. The communication is encrypted, but browsers don't trust the certificate and will show a "Not Secure" warning. To remove the warning, upload a CA-signed custom certificate. The system auto-renews before expiry.
+Auto-generated on first boot — the device has a built-in CA and issues a separate certificate for each access address (IP/domain). Communication is encrypted, but browsers don't trust the certificate and will show a "Not Secure" warning. Ways to remove the warning:
+
+#### Download CA Certificate
+
+Click "Download CA Certificate", import the issued CA into the system and trust it — the warning disappears. Once trusted, you can also "Add to Home Screen / install as an app" (PWA) to open the console offline.
+
+=== "iPhone / iPad"
+
+    1. Open the device page in **Safari** (a hostname is recommended, e.g. `https://flexkvm-xxxx.local`), go to Settings → System → HTTPS Configuration, and click **Download CA Certificate** — Safari reports "Profile Downloaded"
+    2. Open Settings → General → **VPN & Device Management** → tap the downloaded certificate profile → **Install**
+    3. Open Settings → General → About → **Certificate Trust Settings** → enable **full trust** for the certificate
+    4. Reopen the device page — the warning is gone; now you can "Add to Home Screen" to install the PWA
+
+    !!! tip "Apple devices: access via mDNS hostname"
+
+        When accessing via IP address, an iPhone/iPad may fail to add the PWA to the Home Screen — use the mDNS hostname (e.g. `flexkvm-xxxx.local`) instead. See [mDNS Discovery](../network/mdns.en.md) for how to find the hostname.
+
+=== "Windows"
+
+    1. Double-click the downloaded certificate file, choose "Local Machine" as the store location
+    2. Choose "Place all certificates in the following store" → browse to **Trusted Root Certification Authorities**
+    3. Finish the import and restart the browser
+
+=== "macOS"
+
+    1. Double-click the downloaded certificate to import it into Keychain Access
+    2. Double-click the certificate → expand "Trust" → choose "Always Trust"
+
+=== "Linux"
+
+    ```bash
+    # Debian / Ubuntu
+    sudo cp ca.crt /usr/local/share/ca-certificates/flexkvm-ca.crt
+    sudo update-ca-certificates
+    # Fedora / RHEL
+    sudo cp ca.crt /etc/pki/ca-trust/source/anchors/
+    sudo update-ca-trust
+    ```
+
+You can also upload a CA-signed [custom certificate](#custom-certificate). The system auto-renews before expiry, and falls back to the self-signed certificate if a custom certificate becomes invalid — access is not interrupted.
+
+### User Sub-CA
+
+Deploying many devices? Importing certificates one by one is tedious. The deployer can issue a sub-CA from their own root CA and upload it via "Import User Sub-CA" — once clients trust the deployer's root CA, every device with that sub-CA is warning-free.
+
+!!! note "Screenshot placeholder"
+
+    TODO: screenshot of "Download CA Certificate / Import User Sub-CA" in HTTPS settings (`images/https/setting_https_userca.webp`).
+
+> User sub-CA targets fleet deployments. For a single device, "Download CA Certificate" is enough.
 
 ### Custom Certificate
 
@@ -39,6 +88,7 @@ Click "Configure Custom HTTPS Certificate" to upload files:
 | Browser address bar | Visit `https://<device-IP>` — look for the 🔒 icon |
 | Certificate details | Click 🔒 to verify it's your uploaded custom certificate |
 | Validity period | HTTPS settings page shows remaining valid time |
+| Trust effective | After importing the CA certificate, the browser no longer warns when visiting the device |
 
 ## Ports
 
@@ -57,6 +107,8 @@ Click "Configure Custom HTTPS Certificate" to upload files:
 |---------|-------------|----------------|
 | Upload says mismatched | Private key and certificate aren't a pair | Verify the private key corresponds to this certificate |
 | Browser still warns after upload | Still using self-signed certificate | Confirm you've switched to custom certificate mode |
+| Browser still warns after importing CA | Certificate not in the trusted store | Import into the OS/browser "Trusted Root Certification Authorities" store, then restart the browser |
+| Browser still warns after importing user sub-CA | Client doesn't trust the deployer's root CA | Trust the deployer's root CA on the client first |
 | File won't upload | Format is not PEM | Convert to PEM using OpenSSL |
 
 ---
