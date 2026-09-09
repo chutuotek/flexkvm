@@ -34,6 +34,20 @@ IPMI 等企业带外方案需要主板原生支持，价格昂贵、配置复杂
 
 会。手机连接 FlexKVM 热点期间会暂时断开互联网连接，配网完成后保存退出即可自动恢复。
 
+### 浏览器打开 flexkvm-xxxx.local 没反应？
+
+按顺序检查：
+
+1. **同一局域网**：访问设备与 FlexKVM 要连同一个路由器（或直连热点）
+2. **Windows** 需安装 [Apple Bonjour](https://support.apple.com/downloads/bonjour-for-windows) 才能解析 `.local` 域名（macOS / iOS / Linux / Android 原生支持）
+3. **开了 VPN / 代理（梯子）**：代理接管 DNS 后 `.local` 可能解析失败，先关闭代理再试，或把 `*.local` 设为直连
+
+详见 [mDNS 服务发现](../../guide/network/mdns.md)。
+
+### AI 客户端（Claude 等）连接设备时报 TLS / 证书错误？
+
+设备默认使用自签名 HTTPS 证书。在运行 AI 客户端的电脑上，把设备 CA 证书导入系统信任（设置 → 系统 → HTTPS 配置 → 下载 CA 证书），导入方法见 [HTTPS 证书](../../guide/security/https.md)。Agent 配置详见 [AI Agent 控制](../../guide/remote/agent.md)。
+
 ---
 
 ## 远程画面与操作

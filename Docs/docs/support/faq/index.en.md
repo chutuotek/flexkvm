@@ -34,6 +34,20 @@ Provisioning mode creates a temporary WiFi hotspot from FlexKVM for first-time n
 
 Yes. Your phone temporarily disconnects from the internet while connected to the FlexKVM hotspot. It will automatically restore after provisioning is complete.
 
+### The browser won't open flexkvm-xxxx.local
+
+Check in order:
+
+1. **Same LAN**: the accessing device and FlexKVM must be on the same router (or directly connected to the hotspot)
+2. **Windows** needs [Apple Bonjour](https://support.apple.com/downloads/bonjour-for-windows) to resolve `.local` domains (macOS / iOS / Linux / Android support it natively)
+3. **VPN / proxy running**: proxies that take over DNS can break `.local` resolution — turn off the proxy and retry, or add `*.local` to the direct-connect rules
+
+See [mDNS Discovery](../../guide/network/mdns.en.md) for details.
+
+### AI clients (Claude etc.) report TLS / certificate errors when connecting?
+
+The device uses a self-signed HTTPS certificate by default. On the machine running the AI client, import and trust the device CA certificate (Settings → System → HTTPS Configuration → Download CA Certificate). See [HTTPS Certificate](../../guide/security/https.en.md) for the import steps and [AI Agent Control](../../guide/remote/agent.en.md) for Agent setup.
+
 ---
 
 ## Remote Display & Control
