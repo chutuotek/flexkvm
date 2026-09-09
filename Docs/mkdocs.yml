@@ -96,6 +96,7 @@ plugins:
             鼠标: Mouse
             键盘: Keyboard
             音频: Audio
+            AI Agent 控制: AI Agent Control
             外设与扩展: Peripherals & Expansion
             存储管理: Storage Management
             ATX 电源控制: ATX Power Control
@@ -103,6 +104,7 @@ plugins:
             GPIO 引脚控制: GPIO Control
             系统配置: System Configuration
             关于设备: About Device
+            状态监控: Status Monitor
             安全设置: Security Settings
             账号管理: Account Management
             登录管理: Login Management
@@ -110,7 +112,6 @@ plugins:
             外观: Appearance
             时间与日期: Time & Date
             USB 配置: USB Configuration
-            蓝牙: Bluetooth
             固件升级: Firmware Upgrade
             在线升级: Online Upgrade
             离线升级: Offline Upgrade
@@ -223,6 +224,7 @@ nav:
       - 键盘: guide/remote/keyboard.md
       - 鼠标: guide/remote/mouse.md
       - 音频: guide/remote/audio.md
+      - AI Agent 控制: guide/remote/agent.md
     - 外设与扩展:
       - 存储管理: guide/peripherals/disk.md
       - ATX 电源控制: guide/peripherals/atx.md
@@ -230,10 +232,10 @@ nav:
       - GPIO 引脚控制: guide/peripherals/gpio.md
     - 系统配置:
       - 关于设备: guide/system/about.md
+      - 状态监控: guide/system/status.md
       - 外观: guide/system/appearance.md
       - 时间与日期: guide/system/time.md
       - USB 配置: guide/system/usb.md
-      - 蓝牙: guide/system/bluetooth.md
     - 安全设置:
       - 登录管理: guide/security/account/login.md
       - 账号安全: guide/security/account/account.md

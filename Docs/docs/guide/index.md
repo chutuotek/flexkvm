@@ -208,6 +208,12 @@
 
     [:octicons-arrow-right-24: 查看详情](remote/audio.md)
 
+- **:material-robot: AI Agent 控制**
+
+    生成 API Key，OpenClaw / Claude Code 等通过 Skill 或 MCP 控制键鼠与截屏
+
+    [:octicons-arrow-right-24: 查看](remote/agent.md)
+
 </div>
 
 ### 外设与扩展
@@ -287,6 +293,12 @@ TF 卡存储、ATX 电源控制、UART 串口、GPIO 引脚——物理外接的
 
     [:octicons-arrow-right-24: 查看](system/about.md)
 
+- **:material-activity: 状态监控**
+
+    温度/CPU/内存/网络速率实时曲线，历史回看与 CSV 导出
+
+    [:octicons-arrow-right-24: 查看](system/status.md)
+
 - **:material-palette: 外观**
 
     界面主题、语言、强调色
@@ -304,12 +316,6 @@ TF 卡存储、ATX 电源控制、UART 串口、GPIO 引脚——物理外接的
     模拟 USB 键盘/鼠标/存储设备，自定义设备类型
 
     [:octicons-arrow-right-24: 查看](system/usb.md)
-
-- **:material-bluetooth: 蓝牙**
-
-    蓝牙功能（开发中）
-
-    [:octicons-arrow-right-24: 查看](system/bluetooth.md)
 
 
 </div>

@@ -208,6 +208,12 @@ View the target host's display, control keyboard and mouse, stream audio.
 
     [:octicons-arrow-right-24: View](remote/audio.md)
 
+- **:material-robot: AI Agent Control**
+
+    Generate an API Key and let OpenClaw / Claude Code and others control keyboard/mouse and take screenshots via Skill or MCP
+
+    [:octicons-arrow-right-24: View](remote/agent.md)
+
 </div>
 
 ### Peripherals & Expansion
@@ -286,6 +292,12 @@ Device-level parameter adjustments, corresponding to the Settings panel (gear ic
 
     [:octicons-arrow-right-24: View](system/about.md)
 
+- **:material-activity: Status Monitor**
+
+    Live temperature/CPU/memory/network-rate curves, history review and CSV export
+
+    [:octicons-arrow-right-24: View](system/status.md)
+
 - **:material-palette: Appearance**
 
     UI theme, language, accent color
@@ -303,12 +315,6 @@ Device-level parameter adjustments, corresponding to the Settings panel (gear ic
     Emulate USB keyboard/mouse/storage, customize device type
 
     [:octicons-arrow-right-24: View](system/usb.md)
-
-- **:material-bluetooth: Bluetooth**
-
-    Bluetooth functionality (under development)
-
-    [:octicons-arrow-right-24: View](system/bluetooth.md)
 
 </div>
 
