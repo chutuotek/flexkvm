@@ -62,7 +62,32 @@ Set parameters → click Start → a terminal window opens for direct interactio
 
 Terminal layout: top-left shows current serial configuration (e.g., `115200 8N1`), status indicator next to baud rate (🟢 connected / 🔴 disconnected), right side has export log / clear / disconnect buttons.
 
+### Ways to Open the Terminal
+
+| Mode | Description |
+|------|-------------|
+| Floating window | Overlay inside the main UI, visible while you keep working; click "Open in new window" to move it to a standalone tab |
+| New page | Standalone browser tab (`/terminal`) showing the terminal full page — good for a second screen or long-running monitoring |
+
+The "start mode" remembers your last choice. If the browser blocks the popup, just open `/terminal` manually.
+
+> Only one window can use the serial port at a time. Click Disconnect in the owning window to release it; while occupied the terminal shows "Serial port is occupied by another window, waiting for release…".
+
 > Parameters can't be changed while connected. Disconnect first if you need to change them.
+
+### Disconnect Reasons
+
+Disconnections now show the specific reason instead of a generic failure:
+
+| Message | Meaning | What to do |
+|---------|---------|------------|
+| Serial port is occupied by another window, waiting for release… | Another tab is using the port | Disconnect in the owning window, or close it |
+| Serial port not enabled, enable it in the main UI first | UART not started | Start it from the IO menu in the main UI |
+| Main session lost, waiting to reconnect… | Main connection dropped briefly | Auto-reconnects, just wait |
+| Session replaced by another login | Same account logged in elsewhere | Log in again |
+| Serial port disconnected / failed to open | Device-side error or busy port | Check wiring and parameters, then start again |
+
+> Transient network drops reconnect automatically; auto-reconnect only stops after repeated failures, with a clear message.
 
 ---
 

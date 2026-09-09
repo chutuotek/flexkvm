@@ -61,6 +61,8 @@ Select partition → click **Mount** → file list, partition size, upload/unmou
 
 > Some partition formats may be incompatible with mounting. If it fails, try exFAT.
 
+**Uploads / downloads can be cancelled anytime**: click **Cancel** during a transfer — uploads stop sending and wait for the device to clean up; downloads discard the incomplete file. Cancellation shows "Cancelled" instead of a failure error; failures are reported with their specific cause.
+
 ### Single File Sharing
 
 Mount a partition first → check a `.img` or `.iso` file → click **Share File**. The host will recognize it as a virtual CD-ROM.
@@ -86,7 +88,7 @@ Mount a partition first → check a `.img` or `.iso` file → click **Share File
 
 **Shared CD-ROM not recognized by host?** → Make sure the file is `.img` or `.iso`. Other formats can't be shared as a virtual CD-ROM.
 
-**Upload interrupted?** → Refresh the page and re-upload. Resume is not currently supported.
+**Upload interrupted?** → Refresh the page and re-upload. Resume is not currently supported. Cancellations and failures are reported separately — a cancellation is not an error.
 
 **OS install failed halfway?** → Did you toggle mouse, keyboard, or audio during installation? These actions cause a brief virtual CD-ROM disconnect.
 
