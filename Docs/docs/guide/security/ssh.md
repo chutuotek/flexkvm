@@ -69,6 +69,8 @@ admin@flexkvm-6jzdd#
 |------|------|
 | `network show` | 查看网络接口信息 |
 | `ping` | 连通性测试 |
+| `mdns status` | 查看 mDNS 服务发现状态 |
+| `mdns enable\|disable` | 启用/禁用 mDNS 服务发现 |
 
 ### 系统管理
 

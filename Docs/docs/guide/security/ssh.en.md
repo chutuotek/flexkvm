@@ -69,6 +69,8 @@ Type `help` for the full list. Quick reference:
 |---------|-------------|
 | `network show` | View network interface info |
 | `ping` | Connectivity test |
+| `mdns status` | View mDNS discovery status |
+| `mdns enable\|disable` | Enable/disable mDNS discovery |
 
 ### System Management
 

@@ -44,6 +44,7 @@ With hostname `flexkvm-abc123`, for example:
 - The accessing device and FlexKVM must be on the **same LAN** (same router, or directly connected to the FlexKVM hotspot)
 - **Windows**: install [Apple Bonjour](https://support.apple.com/downloads/bonjour-for-windows) (bundled with iTunes) to resolve `.local` domains
 - **macOS / iOS / Linux / Android**: supported natively, no extra setup needed
+- **VPN / proxy software**: proxies that take over the system DNS can break `.local` resolution. If the hostname won't open, turn off the proxy and retry, or add `*.local` and the device IP to the proxy's direct-connect rules
 - `.local` is a reserved domain for mDNS and cannot be resolved by public DNS; for cross-subnet access, use the IP address or [Tailscale](tailscale.md)
 
 ## Enable / Disable

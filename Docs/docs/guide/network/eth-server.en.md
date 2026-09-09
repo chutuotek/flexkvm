@@ -67,6 +67,8 @@ Toggle "Direct Mode" on, set the subnet segment (0–254), and click save — ta
 | Direct Mode | Toggle switch | Off | — |
 | Subnet segment | Third octet of IP (`x` in `192.168.x.1`) | 100 | 0–254 |
 
+> The Direct Mode subnet must not be the same as the AP hotspot subnet — both interfaces cannot be `192.168.x.1` at the same time; the toggle won't save on conflict, pick another segment number.
+
 > If you can't connect after changing the subnet segment, normal Ethernet mode will attempt to restore DHCP automatically. Remember to refresh the IP on your computer.
 > If still unable to connect, use [Provisioning Mode](./provision.md) (long-press Button A 1–3s) to recover.
 
@@ -88,6 +90,7 @@ Toggle "Direct Mode" on, set the subnet segment (0–254), and click save — ta
 | Got an IP but not 192.168.x.x | Computer may be connected to another network | Turn off computer WiFi, keep only wired |
 | Can ping but page won't load | Browser cache or proxy | Clear cache, disable proxy, try incognito mode |
 | Can't connect after changing subnet segment | Computer still holds old IP | Disable then re-enable Ethernet on computer, or `ipconfig /release && /renew` |
+| Subnet segment won't save | Conflicts with the AP hotspot subnet | Pick another segment (both cannot be `192.168.x.1`) |
 | Switching between Direct Mode and normal Ethernet keeps failing | Stale route table entries | Wait ~10s for auto-recovery, or reboot the device |
 
 ---
