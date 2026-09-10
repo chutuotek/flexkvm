@@ -18,7 +18,7 @@ FlexKVM creates its own WiFi hotspot — your phone or computer connects directl
 
 ## OLED Display
 
-When the hotspot is active, the OLED status bar shows the hotspot icon and the IP prefix is **A** (e.g., `A192.168.4.1`), A = Access Point.
+When the hotspot is active, the OLED status bar shows the hotspot icon and the IP prefix is **A** (e.g., `A192.168.10.1`), A = Access Point.
 
 ![AP OLED](./images/ap/oled_ap_connected.webp)
 

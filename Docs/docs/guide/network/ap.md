@@ -18,7 +18,7 @@ FlexKVM 自建一个 WiFi 热点，手机或电脑直接连上来就能访问管
 
 ## OLED 显示
 
-热点开启后，OLED 状态栏显示热点图标，IP 前缀为 **A**（如 `A192.168.4.1`），A = Access Point。
+热点开启后，OLED 状态栏显示热点图标，IP 前缀为 **A**（如 `A192.168.10.1`），A = Access Point。
 
 ![AP oled](./images/ap/oled_ap_connected.webp)
 

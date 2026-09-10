@@ -413,12 +413,12 @@ From your phone or computer:
 
 After connection:
 
-- The OLED shows the hotspot icon, and the IP prefix changes to **A** (e.g., `A192.168.4.1`), A = Access Point
+- The OLED shows the hotspot icon, and the IP prefix changes to **A** (e.g., `A192.168.10.1`), A = Access Point
 - 🔴 **Warning LED** turns off
 
 **3. Access the Device**
 
-Open `https://192.168.4.1` in your browser.
+Open `https://192.168.10.1` in your browser.
 
 > While connected to the FlexKVM hotspot, your phone/computer will lose internet access. Remember to turn off the hotspot when done.
 
