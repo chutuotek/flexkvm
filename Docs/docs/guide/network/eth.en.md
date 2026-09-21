@@ -44,13 +44,14 @@ The card shows the current status:
 
 | Status | Meaning |
 |--------|---------|
-| Connected, IP: x.x.x.x | Normal |
+| Connected: x.x.x.x | DHCP obtained an address; normal |
+| Connected (Static): x.x.x.x | Static IP mode |
 | Cable not connected | Interface enabled but no cable plugged in |
-| Disabled | Interface is turned off |
+| Network not enabled | Interface is turned off |
 
 ### Network Configuration
 
-Click the gear icon on the left side of the card to open the configuration dialog (three tabs):
+Click the gear icon on the left side of the card to open the configuration dialog (four tabs: Details / IPv4 / Direct Mode / MAC Address):
 
 **Details**
 

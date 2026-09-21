@@ -4,7 +4,7 @@ Tailscale is a VPN mesh tool pre-installed in FlexKVM — join your devices into
 
 > Before using, sign up for an account at [tailscale.com](https://tailscale.com).
 
-Go to Web interface → Settings → **App Center**.
+Go to Web interface → Settings → **App**.
 
 ![Tailscale settings](./images/tailscale/setting_tailscale.webp)
 
@@ -14,7 +14,7 @@ Toggle the switch to enable — takes effect immediately. Once enabled, the desc
 
 ## Login
 
-Two login modes are supported — **Web Login** and **Authkey Login** — switched via the "Login Mode" radio. Before logging in you can fill in the **Login Server** — leave it empty to use the official Tailscale control plane, or enter a self-hosted headscale server address to join your own server (an `http://` address shows a plaintext-transmission warning; `https://` is recommended).
+Two login options are supported — **Web Login** and **Authkey** — switched via the radio buttons. Before logging in you can fill in the **Login Server** — leave it empty to use the official Tailscale control plane, or enter a self-hosted headscale server address to join your own server (an `http://` address shows a plaintext-transmission warning; `https://` is recommended).
 
 ### Web Login (default)
 
@@ -42,7 +42,7 @@ After signing in, click **Connect** to authorize the device to join your Tailsca
 
 For self-hosted headscale servers or browser-free automated onboarding (e.g. pre-authorized keys `tskey-auth-...`):
 
-1. Switch login mode to **Authkey Login**
+1. Select **Authkey**
 2. Paste the pre-authorized key (starts with `tskey-auth-`) into the Authkey field
 3. Click login
 
@@ -55,10 +55,10 @@ After successful login, the interface shows:
 | Info | Description |
 |------|-------------|
 | Device ID | Unique identifier of this node in the Tailscale network |
-| Tailnet name | Current network name |
+| Creator name | Current network name |
 | Tailscale IP | Assigned IP (`100.x.x.x`) |
 | Connection status | Online / Offline |
-| Key expiry | Expiration date and time of the node key |
+| Key expires | Expiration date and time of the node key |
 | Login server | Official (controlplane.tailscale.com) or self-hosted headscale address |
 
 Click the refresh button to update connection status.

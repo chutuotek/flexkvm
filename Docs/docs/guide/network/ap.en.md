@@ -53,13 +53,13 @@ Click the gear icon on the left side of the card:
 
 | Setting | Description | Default | Options |
 |---------|-------------|:-------:|---------|
-| SSID | Hotspot name | FlexKVM-AP | Custom |
+| Network Name (SSID) | Hotspot name | FlexKVM-AP | Custom |
 | Password | Connection password | 12345678 | 8–63 chars |
-| Encryption | Security protocol | WPA_WPA2 | WPA / WPA2 / WPA3 / Open |
-| Band | Operating frequency | 2.4GHz | 2.4GHz / 5GHz |
-| WiFi 6 | 802.11ax | Off | On / Off |
-| Channel | Wireless channel | Auto | 2.4G: 0–11, 5G: 36–165 |
-| Max clients | Simultaneous connection limit | 2 | 1–64 |
+| Security | Security protocol | WPA_WPA2 | Open / WPA / WPA2 / WPA3 / WPA/WPA2 / WPA2/WPA3 |
+| 5G Band | Enable the 5GHz band | Off | On / Off |
+| WiFi6 | 802.11ax | Off | On / Off |
+| Channel | Wireless channel | AUTO | 2.4G: 1–11, 5G: 36–165 |
+| Max Clients | Simultaneous client limit | 3 | 1–5 |
 
 > Configuration changes take effect immediately. In provisioning mode, AP config changes are staged and applied when you save and exit.
 

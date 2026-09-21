@@ -47,8 +47,8 @@ Long-press **Button B** has three stages. Release at the first stage (1–3s) to
 
 | Current mode | Action | Result | OLED preview | Wait time |
 |:-----------:|--------|--------|:----------:|:---------:|
-| Ethernet client | Hold B 1–3s, release when OLED shows "ETH SERVER" | DHCP client off, Direct Mode on | ETH SERVER text | ~5s |
-| Direct Mode | Hold B 1–3s, release when OLED shows "ETH CLIENT" | Direct Mode off, DHCP client restored | ETH CLIENT text | ~5s |
+| Ethernet client | Hold B 1–3s, release when OLED switches to the Direct Mode icon | DHCP client off, Direct Mode on | Direct Mode icon | ~5s |
+| Direct Mode | Hold B 1–3s, release when OLED switches back to the Ethernet icon | Direct Mode off, DHCP client restored | Ethernet icon | ~5s |
 
 > Keeping the button held: 3–5s enters WiFi/hotspot toggle preview, 5s+ enters return-to-home preview. See [Physical Buttons](../interaction/button.md).
 
@@ -60,11 +60,11 @@ Go to Web interface → Settings → **Network** → click the gear icon on the 
 
 ### Enable / Disable
 
-Toggle "Direct Mode" on, set the subnet segment (0–254), and click save — takes effect immediately.
+Toggle "Direct Mode Enabled" on, set the subnet segment (0–254), and click save — takes effect immediately.
 
 | Setting | Description | Default | Range |
 |---------|-------------|:-------:|:-----:|
-| Direct Mode | Toggle switch | Off | — |
+| Direct Mode Enabled | Toggle switch | Off | — |
 | Subnet segment | Third octet of IP (`x` in `192.168.x.1`) | 100 | 0–254 |
 
 > The Direct Mode subnet must not be the same as the AP hotspot subnet — both interfaces cannot be `192.168.x.1` at the same time; the toggle won't save on conflict, pick another segment number.
