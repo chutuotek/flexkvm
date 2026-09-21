@@ -64,7 +64,7 @@ Only one user can be online at a time. When another user is already online, a ne
 
 ## Logout
 
-Click your username in the top-right corner → "Logout". The server revokes all credentials for this account (other logged-in sessions become invalid immediately); old credentials cannot be reused. Logging out doesn't close the remote display, but any further interaction requires re-login.
+Go to **Settings → Account** and click **Logout** under **Other**. The server revokes all credentials for this account (other logged-in sessions become invalid immediately); old credentials cannot be reused. Logging out doesn't close the remote display, but any further interaction requires re-login.
 
 ---
 
