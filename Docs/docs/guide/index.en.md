@@ -6,6 +6,18 @@ Welcome to the FlexKVM User Guide. Know what you want to do? Pick your entry poi
 
 ---
 
+## UI Overview
+
+<div class="grid cards" markdown>
+
+- **:material-monitor-dashboard: UI Overview**
+
+    All 12 menu bar buttons and 12 settings tabs in one page
+
+    [:octicons-arrow-right-24: View](overview.md)
+
+</div>
+
 ## Product Overview
 
 Specs, interfaces, and accessory information.
@@ -18,7 +30,7 @@ Specs, interfaces, and accessory information.
 
     [:octicons-arrow-right-24: View](product/packet.md)
 
-- **:material-connection: Interface Reference**
+- **:material-connection: Interface Overview**
 
     Port specs and LED indicator states
 
@@ -102,7 +114,7 @@ The OLED screen, LED indicators, and physical buttons on the device itself.
 
     [:octicons-arrow-right-24: View](interaction/oled.md)
 
-- **:material-led-on: LED Indicator**
+- **:material-led-on: LED Indicators**
 
     Status / Warning / Power LED colors and meanings — quick reference
 
@@ -122,13 +134,19 @@ How to get FlexKVM online and access it remotely.
 
 <div class="grid cards" markdown>
 
-- **:material-lan: Ethernet**
+- **:material-lan-connect: Provisioning Mode**
+
+    Temporary hotspot for first-time setup or recovery after misconfiguration
+
+    [:octicons-arrow-right-24: View](network/provision.md)
+
+- **:material-lan: Wired Network**
 
     DHCP / Static IP, gateway and DNS settings
 
     [:octicons-arrow-right-24: View](network/eth.md)
 
-- **:material-server-network: Ethernet Direct Mode**
+- **:material-server-network: Direct Mode**
 
     Direct cable to computer — device acts as DHCP server, no router needed
 
@@ -140,13 +158,13 @@ How to get FlexKVM online and access it remotely.
 
     [:octicons-arrow-right-24: View](network/wifi.md)
 
-- **:material-access-point: AP Mode**
+- **:material-access-point: AP Hotspot**
 
     Use FlexKVM as a WiFi hotspot for direct connections
 
     [:octicons-arrow-right-24: View](network/ap.md)
 
-- **:material-vpn: Tailscale VPN**
+- **:material-vpn: Tailscale**
 
     No public IP needed — end-to-end encrypted remote access
 
@@ -254,11 +272,17 @@ Access control and communication encryption to protect your device.
 
 <div class="grid cards" markdown>
 
-- **:material-account-cog: Account Management**
+- **:material-login: Login Management**
 
-    Login flow, password change, two-factor authentication (2FA), backup codes
+    Login flow, first-time account creation, password and 2FA verification
 
     [:octicons-arrow-right-24: View](security/account/login.md)
+
+- **:material-account-cog: Account Security**
+
+    Username, password change, 2FA verification and backup codes, logout
+
+    [:octicons-arrow-right-24: View](security/account/account.md)
 
 - **:material-console: SSH Remote Access**
 
@@ -324,11 +348,17 @@ Firmware upgrades, reboot, factory reset, and other system-level operations.
 
 <div class="grid cards" markdown>
 
-- **:material-cloud-download: Firmware Upgrade**
+- **:material-cloud-download: Online Upgrade**
 
-    Online / offline upgrade — choose your update method
+    Check for and install new firmware from a download source when the device has internet
 
     [:octicons-arrow-right-24: View](maintenance/upgrade-online.md)
+
+- **:material-package-down: Offline Upgrade**
+
+    Upload a firmware package from your computer when the device has no internet
+
+    [:octicons-arrow-right-24: View](maintenance/upgrade-offline.md)
 
 - **:material-package-up: App Update**
 
