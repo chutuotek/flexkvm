@@ -34,12 +34,12 @@ FlexKVM 默认开启 mDNS，目前开放三种服务：
 | 服务 | 访问方式 |
 |------|----------|
 | Web 页面 | 浏览器打开 `flexkvm-xxxx.local`，自动跳转到 `https://` 加密访问 |
-| SSH | 终端执行 `ssh root@flexkvm-xxxx.local` |
+| SSH | 终端执行 `ssh <用户名>@flexkvm-xxxx.local` |
 
 以主机名 `flexkvm-abc123` 为例：
 
 - 浏览器访问 `flexkvm-abc123.local`，或直接输入 `https://flexkvm-abc123.local`
-- 终端执行 `ssh root@flexkvm-abc123.local`
+- 终端执行 `ssh admin@flexkvm-abc123.local`
 
 ## 系统要求
 
@@ -51,7 +51,7 @@ FlexKVM 默认开启 mDNS，目前开放三种服务：
 
 ## 启用 / 关闭
 
-进 **设置 → 网络 → mDNS**，开关"启用 mDNS 发现"：
+"启用 mDNS 发现"开关：
 
 - **开启**（默认）：局域网设备可通过主机名自动发现 FlexKVM
 - **关闭**：通过主机名访问失效，只能使用 IP 地址访问

@@ -34,12 +34,12 @@ Connect your computer / phone to the **same network** as FlexKVM (wired or Wi-Fi
 | Service | How to access |
 |---------|---------------|
 | Web UI | Open `flexkvm-xxxx.local` in your browser — it automatically redirects to `https://` |
-| SSH | Run `ssh root@flexkvm-xxxx.local` in your terminal |
+| SSH | Run `ssh <username>@flexkvm-xxxx.local` in your terminal |
 
 With hostname `flexkvm-abc123`, for example:
 
 - Browser: `flexkvm-abc123.local`, or directly `https://flexkvm-abc123.local`
-- Terminal: `ssh root@flexkvm-abc123.local`
+- Terminal: `ssh admin@flexkvm-abc123.local`
 
 ## Requirements
 
@@ -51,7 +51,7 @@ With hostname `flexkvm-abc123`, for example:
 
 ## Enable / Disable
 
-Go to **Settings → Network → mDNS** and toggle "Enable mDNS Discovery":
+Toggle "Enable mDNS Discovery":
 
 - **On** (default): LAN devices can discover FlexKVM by hostname
 - **Off**: hostname access stops working; use the IP address instead
