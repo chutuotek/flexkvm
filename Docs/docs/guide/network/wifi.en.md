@@ -86,6 +86,8 @@ Expand the target network card, then proceed by network type:
 
 **Open network**: Expand the card → click Connect. No password needed.
 
+**OWE network**: Expand the card → click Connect. No password needed (opportunistic encryption; traffic is encrypted).
+
 **Encrypted network**: Expand the card → click Connect → enter password → confirm.
 
 ![Connect WiFi](../../quick_start/images/web_connect_wifi.webp)
@@ -111,8 +113,10 @@ Click the **+** button at the top of the list, then fill in SSID, security type,
 | Field | Description |
 |-------|-------------|
 | Network name (SSID) | WiFi name |
-| Security type | Open / WPA / WPA2 / WPA3 |
-| Password | Required for encrypted networks |
+| Security type | Open / WPA / WPA2 / WPA3 / WPA-WPA2 / WPA2-WPA3 / OWE |
+| Password | Required for password-based networks; leave blank for Open and OWE |
+
+> **OWE (Enhanced Open)**: opportunistic encryption for public or guest networks — no password; the client and hotspot negotiate a key automatically.
 
 ### Network Configuration
 
