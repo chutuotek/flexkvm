@@ -153,7 +153,7 @@ sudo tailscale set --relay-server-port=""
 > 如果 VPS 处于端口转发、负载均衡（NLB）等无法自动发现端口的网络环境，可以用 `--relay-server-static-endpoints` 手动声明公网端点：
 >
 > ```bash
-> sudo tailscale set --relay-server-port=40000 --relay-server-static-endpoints="[公网IP]：40000"
+> sudo tailscale set --relay-server-port=40000 --relay-server-static-endpoints="[公网IP]:40000"
 > ```
 
 ### 5. 在管理控制台授权
