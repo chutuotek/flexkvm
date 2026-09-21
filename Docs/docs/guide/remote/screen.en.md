@@ -2,7 +2,7 @@
 
 View the target host's screen, adjust resolution, quality, and EDID. The display is captured via HDMI at the hardware level — BIOS, blue screens, and safe mode are all visible, independent of the operating system.
 
-Click **Video** in the menu bar to open the display menu.
+> Where: **Video** in the menu bar
 
 ## Display Status
 

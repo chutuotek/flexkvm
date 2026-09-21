@@ -2,7 +2,7 @@
 
 FlexKVM transmits audio bidirectionally between the target host and your browser via a USB virtual sound card (UAC) — the host's system audio streams back to your computer, and your microphone goes to the host. When enabled, an audio device called **FlexKVM Audio** appears on the target host.
 
-Click **Audio** in the menu bar to open the audio menu.
+> Where: **Audio** in the menu bar
 
 > Toggling audio causes a brief USB disconnect/reconnect — mouse, keyboard, and disk mount will briefly drop and recover. This is normal.
 

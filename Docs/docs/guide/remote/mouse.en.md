@@ -2,7 +2,7 @@
 
 Control the target host's mouse pointer. Supports absolute and relative modes, with adjustable sensitivity and scroll direction.
 
-Click **Mouse** in the menu bar to open the mouse menu.
+> Where: **Mouse** in the menu bar
 
 ## Mouse Status
 

@@ -52,7 +52,7 @@ Only affects JPG:
 
 **Screenshot not working?** → Check if your browser is blocking downloads.
 
-**Blurry image?** → Screenshot resolution matches the remote display. For sharper screenshots, increase the remote display resolution first.
+**Blurry image?** → Screenshot resolution matches the remote display. For sharper screenshots, increase the [remote display](screen.md) resolution first.
 
 ---
 
