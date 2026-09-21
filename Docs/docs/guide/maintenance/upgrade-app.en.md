@@ -1,6 +1,6 @@
 # App Update
 
-Apps installed on FlexKVM (such as Tailscale) are updated separately — [Firmware Upgrade](upgrade-online.md) updates the system, App Update updates apps. The two don't affect each other.
+Apps installed on FlexKVM (such as Tailscale) are updated separately — [Online Upgrade](upgrade-online.md) updates the system, App Update updates apps. The two don't affect each other.
 
 > Where: Settings → App → App Updates
 
@@ -31,7 +31,7 @@ Click **Check for Updates** to fetch the latest version info for each app from t
 | Not installed | The app is not installed on this device |
 | New version available | A newer remote version exists, showing version number and changelog |
 | Up to date | The installed version is the latest |
-| Requires OTA firmware upgrade | The new version needs a newer firmware — [upgrade the firmware](upgrade-online.md) first |
+| Requires OTA firmware upgrade | The new version needs a newer firmware — [run an online upgrade](upgrade-online.md) first |
 | Not checked | Not checked yet, or the last check failed |
 
 ## Download & Install
@@ -51,7 +51,7 @@ App update does **not require a device reboot**; a failed install automatically 
 | Check failed | Network issue or source unavailable | Switch download source, or retry later |
 | Download failed | Unstable network | Switch download source and download again |
 | Verification failed | Corrupted package | Download again |
-| App not compatible | Firmware too old | [Upgrade the firmware](upgrade-online.md) first |
+| App not compatible | Firmware too old | [Run an online upgrade](upgrade-online.md) first |
 
 ---
 

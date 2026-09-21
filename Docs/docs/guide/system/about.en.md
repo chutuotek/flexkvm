@@ -11,7 +11,7 @@ View device information, firmware version, and community resources.
 | Item | Description |
 |:-----|-------------|
 | Model | e.g., `FlexKVM` |
-| System version | Current firmware version, e.g., `v0.1.6`. Upgrade → [Firmware Upgrade](../maintenance/upgrade-online.md) |
+| System version | Current firmware version, e.g., `v0.1.6`. Upgrade → [Online Upgrade](../maintenance/upgrade-online.md) |
 | SN | Unique identifier — provide when contacting technical support |
 
 > The serial number can be found on the packaging box or in Settings → About. You can also view it on the OLED — short-press Button A on the home screen to cycle to the System Info sub-page.
