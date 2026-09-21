@@ -160,11 +160,9 @@ Click "Delete Custom EDID" and confirm — the **custom** option disappears from
 
 ### EDID Modify (Override Selected Fields)
 
-Don't want to upload a full EDID? Enable "EDID Modify" to override only the selected fields on top of the default EDID:
+Don't want to upload a full EDID? Enable "Enable EDID Modify" to override only the selected fields on top of the default EDID:
 
-!!! note "Screenshot placeholder"
-
-    TODO: screenshot of the EDID Modify dialog (`images/edid/setting_edid_modify.webp`).
+![EDID Modify](./images/edid/setting_edid_modify.webp)
 
 | Field | Description |
 |-------|-------------|

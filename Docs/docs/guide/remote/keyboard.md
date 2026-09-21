@@ -37,22 +37,22 @@
 
 > 只支持英文字符（字母、数字、符号），不支持中文。最长 4096 字符。粘贴速度约 20 字符/秒。
 
-- **跳过非英文字符**：开启后自动过滤中文等非 ASCII 字符。关闭则遇到会报错。
-- **添加到快速文本**：把当前文字存起来，下次一键发送。
+- **跳过非ASCII字符**：开启后自动过滤中文等非 ASCII 字符。关闭则遇到时报错。
+- **添加到快捷文本**：把当前文字存起来，下次一键发送。
 
-### 快速文本
+### 快捷文本
 
 把常用文字（密码、命令、模板）存起来，一键发送。
 
-![快速文本](./images/keyboard/keyboard_quicktext.webp)
+![快捷文本](./images/keyboard/keyboard_quicktext.webp)
 
 **添加**：点 **+** → 填名称（最长 32 字符）和内容（最长 4096 字符）。最多 10 条。
 
-![快速文本添加](./images/keyboard/keyboard_quicktext_add.webp)
+![快捷文本添加](./images/keyboard/keyboard_quicktext_add.webp)
 
 **使用**：每条可预览（眼睛图标）、编辑（铅笔）、发送、取消。拖拽排序。点图钉按钮变悬浮窗，可以拖到顺手位置。
 
-![快速文本悬浮窗](./images/keyboard/keyboard_quicktext_float.webp)
+![快捷文本悬浮窗](./images/keyboard/keyboard_quicktext_float.webp)
 
 ### 快捷键
 
@@ -96,10 +96,10 @@
 
 | 你的系统 | 映射到 |
 |----------|--------|
-| Windows / Linux | Right Ctrl |
-| macOS | Right Option |
+| Windows / Linux | 右 Ctrl |
+| macOS | 右 Option |
 
-可选：Right Ctrl、Right Option、Pause，或禁用。
+可选：右 Ctrl、右 Option、Scroll Lock、Pause，或禁用。
 
 ### 关闭与开启
 

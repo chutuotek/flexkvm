@@ -160,11 +160,9 @@ EDID 告诉被控主机"我是什么样的显示器"——支持什么分辨率�
 
 ### EDID 修改（覆盖指定字段）
 
-不想上传完整 EDID？开启"EDID 修改"，在默认 EDID 的基础上只覆盖指定字段：
+不想上传完整 EDID？开启"启用EDID修改"，在默认 EDID 的基础上只覆盖指定字段：
 
-!!! note "截图占位"
-
-    待补充：EDID 修改弹窗截图（`images/edid/setting_edid_modify.webp`）。
+![EDID 修改](./images/edid/setting_edid_modify.webp)
 
 | 字段 | 说明 |
 |------|------|

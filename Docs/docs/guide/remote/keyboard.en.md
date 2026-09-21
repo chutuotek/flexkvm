@@ -37,7 +37,7 @@ Expand to type or paste text, then click send to the target host. You can click 
 
 > ASCII characters only (letters, numbers, symbols). Chinese characters are not supported. Max 4096 characters. Paste speed is ~20 chars/sec.
 
-- **Skip non-ASCII characters**: When enabled, auto-filters Chinese and other non-ASCII characters. When disabled, encountering them triggers an error.
+- **Skip non-ASCII**: When enabled, auto-filters Chinese and other non-ASCII characters. When disabled, encountering them triggers an error.
 - **Add to Quick Text**: Save the current text for one-click sending later.
 
 ### Quick Text
@@ -99,7 +99,7 @@ In fullscreen or relative mouse mode, `Esc` is captured by the browser. Esc mapp
 | Windows / Linux | Right Ctrl |
 | macOS | Right Option |
 
-Options: Right Ctrl, Right Option, Pause, or Disabled.
+Options: Right Ctrl, Right Option, Scroll Lock, Pause, or Disabled.
 
 ### Disable / Enable
 

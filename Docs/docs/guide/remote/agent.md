@@ -6,9 +6,7 @@
 
 进设置 → **Agent**。
 
-!!! note "截图占位"
-
-    待补充：设置 → Agent 页面截图（`images/agent/setting_agent.webp`）。
+![Agent 设置](./images/agent/setting_agent.webp)
 
 | 操作 | 说明 |
 |------|------|
@@ -154,13 +152,18 @@ export FlexKVM_TOKEN="sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
     任何支持 Streamable HTTP 传输、可自定义请求头的 MCP 客户端都能接入，按上面"配置项"表填写 URL 与认证头即可。密钥建议走环境变量，避免明文写入配置文件。
 
-!!! note "截图占位"
+`claude mcp list` 里 flexkvm 显示为已连接：
 
-    待补充：Claude Code `claude mcp list` 显示 flexkvm 已连接的截图（`images/agent/mcp_list.webp`）。
+```bash
+$ claude mcp list
+Checking MCP server health…
+
+flexkvm: https://<设备地址>/api/v1/mcp (HTTP) - ✔ Connected
+```
 
 ## HTTPS 证书提示
 
-设备默认使用自签名 HTTPS 证书。客户端报 TLS / `self-signed certificate` 错误时，在客户端所在机器导入设备 CA 证书并设为信任即可（设置 → 安全 → HTTPS 配置 → 下载 CA 证书），详见 [HTTPS 证书](../security/https.md)。临时调试可用 `curl -k` 跳过校验（flexkvm-skill 的脚本已内置）。
+设备默认使用自签名 HTTPS 证书。客户端报 TLS / `self-signed certificate` 错误时，在客户端所在机器导入设备 CA 证书并设为信任即可（设置 → 安全 → HTTPS → 下载 CA 证书），详见 [HTTPS 证书](../security/https.md)。临时调试可用 `curl -k` 跳过校验（flexkvm-skill 的脚本已内置）。
 
 ## 与用户协同
 

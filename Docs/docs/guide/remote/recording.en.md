@@ -25,14 +25,14 @@ e.g., `flexkvm-recording-2026-05-12T21-44-20.webm`
 
 ## Recording Settings
 
-Adjust in Settings → Capture → **Recording Settings**.
+Adjust in Settings → Capture → **Recording**.
 
 ![Recording settings](./images/record/setting_record.webp)
 
 | Setting | Options | Description |
 |---------|---------|-------------|
 | Mute Recording | On/Off | When enabled, the video contains no audio |
-| Container Format | WebM / MKV | Listed according to browser support; WebM is the browser-native format |
+| Container | WebM / MKV | Listed according to browser support; WebM is the browser-native format |
 | Video Codec | Listed per container | Auto-detects codecs available on this machine, labeled (hardware)/(software); hardware encoding uses less CPU |
 | Video Quality | Low / Medium / High / Ultra (1 / 2 / 4 / 8 Mbps) | Higher is sharper and larger |
 

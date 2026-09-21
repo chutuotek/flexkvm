@@ -10,7 +10,7 @@ Click the screenshot icon in the top bar.
 |------|--------|
 | ![](../icon/screenshot/camera.svg) | Click to capture a screenshot |
 
-> **Verification**: A successful screenshot triggers a "Screenshot captured" toast notification at the top. The file auto-saves to your browser's download directory. If there's no display signal, the screenshot will fail.
+> **Verification**: A successful screenshot triggers a "Screenshot captured" toast notification at the top. The file auto-saves to your browser's download directory. If there's no display signal, the screenshot fails.
 
 ## File Naming
 
@@ -20,7 +20,7 @@ e.g., `flexkvm-screenshot-2026-05-12T21-44-20.png`
 
 ## Format & Quality
 
-Adjust in Settings → Capture → **Screenshot Settings**.
+Adjust in Settings → Capture → **Screenshot**.
 
 ![Screenshot settings](./images/screenshot/setting_screenshot.webp)
 
@@ -31,7 +31,7 @@ Adjust in Settings → Capture → **Screenshot Settings**.
 | PNG | Lossless, best quality, larger file |
 | JPG | Lossy, smaller file |
 
-### Quality
+### Image Quality
 
 Only affects JPG:
 

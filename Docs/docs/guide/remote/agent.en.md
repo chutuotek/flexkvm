@@ -6,9 +6,7 @@ Hand the device to an AI client: after enabling Agent and generating an API Key,
 
 Go to Settings → **Agent**.
 
-!!! note "Screenshot placeholder"
-
-    TODO: screenshot of Settings → Agent (`images/agent/setting_agent.webp`).
+![Agent settings](./images/agent/setting_agent.webp)
 
 | Action | Description |
 |------|------|
@@ -154,13 +152,18 @@ Available tools: `state`, `screenshot`, `type_text`, `press_key`, `mouse_move` /
 
     Any MCP client supporting Streamable HTTP transport with custom headers can connect — fill in the URL and auth header from the table above. Prefer environment variables over plaintext secrets in config files.
 
-!!! note "Screenshot placeholder"
+`claude mcp list` shows flexkvm as connected:
 
-    TODO: screenshot of `claude mcp list` showing flexkvm connected (`images/agent/mcp_list.webp`).
+```bash
+$ claude mcp list
+Checking MCP server health…
+
+flexkvm: https://<device-address>/api/v1/mcp (HTTP) - ✔ Connected
+```
 
 ## HTTPS Certificate Note
 
-The device uses a self-signed HTTPS certificate by default. If the client reports a TLS / `self-signed certificate` error, import the device CA certificate into the client machine's trust store (Settings → Security → HTTPS Configuration → Download CA Certificate) — see [HTTPS Certificate](../security/https.en.md). For quick debugging, `curl -k` skips verification (already built into the flexkvm-skill scripts).
+The device uses a self-signed HTTPS certificate by default. If the client reports a TLS / `self-signed certificate` error, import the device CA certificate into the client machine's trust store (Settings → Security → HTTPS → Download CA Certificate) — see [HTTPS Certificate](../security/https.md). For quick debugging, `curl -k` skips verification (already built into the flexkvm-skill scripts).
 
 ## Working Alongside Users
 

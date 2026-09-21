@@ -27,17 +27,17 @@ Click the audio icon to open the menu.
 | Not connected | Refresh the page or reconnect the remote display to restore |
 | Disabled | Audio function is turned off |
 
-### Audio Switch
+### Enable Sound Card
 
 Master toggle. When enabled, a FlexKVM Audio device appears on the target host. When disabled, the sound card is removed — both microphone and speaker stop.
 
-### Microphone
+### Mic Input
 
 When enabled, your computer's microphone audio is sent to the target host.
 
-> On first use, the browser will request microphone permission — click "Allow".
+> On first use, the browser requests microphone permission — click "Allow".
 
-### Speaker
+### Speaker Output
 
 When enabled, you can hear the target host's audio.
 
