@@ -62,7 +62,9 @@ FlexKVM 上有四个物理按键，详细操作见[物理按键](../interaction/
 ## USB 供电开关
 
 - **规格**：拨动开关。
-- **功能**：控制 USB Data 接口的电源输入。拨到 **ON** 时，允许通过 USB Data 接口为整机供电；拨到 **OFF** 时，关闭该接口的电源输入。
+- **功能**：控制 USB Data 接口的电源输入。拨到 **I** 时，允许通过 USB Data 接口为整机供电；拨到 **O** 时，关闭该接口的电源输入。
+
+![USB 供电开关](../../quick_start/images/usb_power_switch.webp)
 
 ## TF 卡槽
 

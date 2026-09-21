@@ -62,7 +62,9 @@ FlexKVM has four physical buttons. For detailed operation, see [Physical Buttons
 ## USB Power Switch
 
 - **Spec**: Toggle switch.
-- **Function**: Controls power input from the USB Data port. Set to **ON** to allow the USB Data port to power the entire device; set to **OFF** to disable power input from this port.
+- **Function**: Controls power input from the USB Data port. Set to **I** to allow the USB Data port to power the entire device; set to **O** to disable power input from this port.
+
+![USB power switch](../../quick_start/images/usb_power_switch.webp)
 
 ## TF Card Slot
 

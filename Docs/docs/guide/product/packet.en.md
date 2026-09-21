@@ -20,7 +20,15 @@ After opening the package, verify all items are present against the checklist be
 
 ## Extra Accessories
 
-If you selected additional accessories at purchase, verify them against the packing slip.
+If you selected additional accessories at purchase, verify them against the table below.
+
+| Accessory | Description |
+|-----------|-------------|
+| Magnetic backplate | Included free with the basic package; pre-installed on the back of the unit |
+| 35mm DIN rail clip | Purchase separately or as part of a bundle; mounts on 35mm DIN rails (C45) |
+| PoE splitter module | Purchase separately; isolates PoE power from the network to power the device |
+
+> Accessory purposes and installation → [Accessories & Expansion](extensibility.md).
 
 ---
 
