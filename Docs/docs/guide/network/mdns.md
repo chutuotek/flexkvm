@@ -2,6 +2,8 @@
 
 mDNS（多播 DNS）让局域网内的设备**通过主机名自动发现 FlexKVM**，无需记忆 IP 地址。在浏览器或终端中输入 `<主机名>.local` 即可访问，IP 地址变了也不影响。
 
+> 入口：设置 → 网络 → mDNS
+
 FlexKVM 默认开启 mDNS，目前开放三种服务：
 
 | 服务 | mDNS 类型 | 端口 |
@@ -41,7 +43,7 @@ FlexKVM 默认开启 mDNS，目前开放三种服务：
 
 ## 系统要求
 
-- 访问设备与 FlexKVM 必须在**同一局域网**内（连接同一路由器，或直连 FlexKVM 热点）
+- 控制端与 FlexKVM 必须在**同一局域网**内（连接同一路由器，或直连 FlexKVM 热点）
 - **Windows**：需安装 [Apple Bonjour](https://support.apple.com/downloads/bonjour-for-windows)（安装 iTunes 会自带）才能解析 `.local` 域名
 - **macOS / iOS / Linux / Android**：系统原生支持，无需额外配置
 - **VPN / 代理软件（梯子）**：代理接管系统 DNS 后 `.local` 域名可能解析失败。主机名打不开时先关闭代理再试，或在代理规则里把 `*.local` 和设备 IP 设为直连

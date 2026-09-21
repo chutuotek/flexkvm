@@ -1,6 +1,8 @@
-# Ethernet Direct Mode
+# Direct Mode
 
 FlexKVM becomes a DHCP server — connect a computer directly with a single Ethernet cable, and the computer automatically gets an IP to access the management interface. No router needed, no dependency on on-site network. Long-press Button B for 1–3 seconds to toggle on.
+
+> Where: Settings → Network → Ethernet → Direct Mode
 
 > In Direct Mode, the device assigns IPs in the range `192.168.x.2 ~ 192.168.x.254` to the connected computer (`x` defaults to 100, i.e., default subnet `192.168.100.x`).
 > The subnet segment `x` is configurable and defaults to 100.
@@ -31,7 +33,7 @@ No router on site? No network? One cable to your laptop, and you can still manag
 └──────────┘                        └──────────────┘
 ```
 
-Combined with [WiFi AP Mode](./ap.md), you get **wired direct + WiFi hotspot** dual insurance — connect via laptop on Ethernet or phone on WiFi, either way works without a router.
+Combined with [AP Hotspot](./ap.md), you get **wired direct + WiFi hotspot** dual insurance — connect via laptop on Ethernet or phone on WiFi, either way works without a router.
 
 ## OLED Display
 
@@ -54,7 +56,7 @@ Long-press **Button B** has three stages. Release at the first stage (1–3s) to
 
 ## Software Configuration
 
-Go to Web interface → Settings → **Network** → click the gear icon on the Ethernet card → **Direct Mode** tab.
+Click the gear icon on the Ethernet card → **Direct Mode** tab.
 
 ![Direct Mode settings](./images/eth/setting_eth_server.webp)
 

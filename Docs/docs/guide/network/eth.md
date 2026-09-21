@@ -1,8 +1,10 @@
-# 以太网
+# 有线网络
 
-插上网线，设备就能稳定联网。百兆有线口和 [WiFi](./wifi.md) 互为备份——两条链路各有一个 IP，任意一个都能访问管理界面，一条断了另一条照样连。支持 DHCP 自动获取和静态 IP 两种方式。没有路由器？试试[以太网直连模式](./eth-server.md)——一根网线直连电脑，设备变身 DHCP 服务器。
+插上网线，设备就能稳定联网。百兆有线口和 [WiFi](./wifi.md) 互为备份——两条链路各有一个 IP，任意一个都能访问管理界面，一条断了另一条照样连。支持 DHCP 自动获取和静态 IP 两种方式。没有路由器？试试[直连模式](./eth-server.md)——一根网线直连电脑，设备变身 DHCP 服务器。
 
-> 同时用以太网和 WiFi 时，把两者放在不同网段可避免路由冲突。比如以太网用 `192.168.1.x`，WiFi 用 `192.168.2.x`。
+> 入口：设置 → 网络 → 有线网络
+
+> 同时用有线网络和 WiFi 时，把两者放在不同网段可避免路由冲突。比如有线网络用 `192.168.1.x`，WiFi 用 `192.168.2.x`。
 
 ## 规格
 
@@ -28,15 +30,13 @@
 
 ## 软件配置
 
-进 Web 界面 → 设置 → **网络**。
-
 ![有线网络设置](./images/eth/setting_eth.webp)
 
 ### 启用与禁用
 
-点卡片右侧开关。禁用后以太网接口关闭。已保存的配置保留。
+点卡片右侧开关。禁用后有线网络接口关闭。已保存的配置保留。
 
-> 同时关掉以太网和 WiFi 就没法访问设备了。至少留一种。
+> 同时关掉有线网络和 WiFi 就没法访问设备了。至少留一种。
 
 ### 网络状态
 
@@ -61,11 +61,11 @@
 
 **IPv4 配置**
 
-![以太网 DHCP](./images/eth/setting_eth_static_off.webp)
+![有线网络 DHCP](./images/eth/setting_eth_static_off.webp)
 
 **DHCP（默认）**：路由器自动分配。
 
-![以太网 STATIC](./images/eth/setting_eth_static_on.webp)
+![有线网络 STATIC](./images/eth/setting_eth_static_on.webp)
 
 **静态 IP**：手动设置固定参数。
 
@@ -84,11 +84,11 @@
 
 **MAC 地址**
 
-![以太网 mac off](./images/eth/setting_eth_mac_off.webp)
+![有线网络 mac off](./images/eth/setting_eth_mac_off.webp)
 
 默认使用出厂 MAC（包装盒贴纸上有）。也可以自定义：
 
-![以太网 mac on](./images/eth/setting_eth_mac_setting.webp)
+![有线网络 mac on](./images/eth/setting_eth_mac_setting.webp)
 
 格式：`AA:BB:CC:DD:EE:FF`（六组十六进制，冒号分隔）。
 

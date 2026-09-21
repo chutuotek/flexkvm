@@ -2,9 +2,9 @@
 
 Tailscale is a VPN mesh tool pre-installed in FlexKVM — join your devices into one encrypted virtual network. No public IP needed, no router port forwarding to configure. The free tier supports 100 devices.
 
-> Before using, sign up for an account at [tailscale.com](https://tailscale.com).
+> Where: Settings → App → Tailscale
 
-Go to Web interface → Settings → **App**.
+> Before using, sign up for an account at [tailscale.com](https://tailscale.com).
 
 ![Tailscale settings](./images/tailscale/setting_tailscale.webp)
 
@@ -176,7 +176,7 @@ Open [Tailscale admin console](https://login.tailscale.com/admin/acls/file) → 
 
 #### 6. Verify
 
-On the accessing device (e.g., your computer):
+On the control device (e.g., your computer):
 
 ```bash
 tailscale status

@@ -1,6 +1,8 @@
-# 热点模式
+# AP 热点
 
 FlexKVM 自建一个 WiFi 热点，手机或电脑直接连上来就能访问管理界面——不需要路由器、不依赖现场网络。长按按键 B 3~5 秒后释放即可开关。
+
+> 入口：设置 → 网络 → AP网络
 
 - 默认 SSID：`FlexKVM-AP`
 - 默认密码：`12345678`
@@ -29,13 +31,11 @@ FlexKVM 自建一个 WiFi 热点，手机或电脑直接连上来就能访问管
 | 当前模式 | 操作 | 切换结果 | OLED 图标 | 等待时间 |
 |:--------:|:----:|:--------:|:--------:|:--------:|
 | WiFi 模式 | 长按按键 B 3~5 秒，OLED 显示热点图标后松开 | 关 WiFi，开热点 | ![热点图标](./images/ap/oled_ap_icon.webp){ width="80" } | 约 10 秒 |
-| 热点模式 | 长按按键 B 3~5 秒，OLED 显示 WiFi 图标后松开 | 关热点，恢复 WiFi | ![WiFi 图标](./images/wifi/oled_wifi_icon.webp){ width="80" } | 3~4 秒 |
+| AP 热点 | 长按按键 B 3~5 秒，OLED 显示 WiFi 图标后松开 | 关热点，恢复 WiFi | ![WiFi 图标](./images/wifi/oled_wifi_icon.webp){ width="80" } | 3~4 秒 |
 
-> 按键 B 长按分三阶段：1~3 秒切换[以太网直连模式](./eth-server.md)，3~5 秒切换热点/WiFi，5 秒后返回。详见[物理按键](../interaction/button.md)。
+> 按键 B 长按分三阶段：1~3 秒切换[直连模式](./eth-server.md)，3~5 秒切换热点/WiFi，5 秒后返回。详见[物理按键](../interaction/button.md)。
 
 ## 软件配置
-
-进 Web 界面 → 设置 → **网络**。
 
 ![AP 设置](./images/ap/setting_ap.webp)
 

@@ -1,6 +1,8 @@
-# Ethernet
+# Wired Network
 
-Plug in an Ethernet cable and the device gets a stable wired connection. The 100M Ethernet port and [WiFi](./wifi.md) provide mutual backup — each link has its own IP, either one can reach the management interface, and if one drops the other keeps working. Supports DHCP (auto) and static IP. No router? Try [Ethernet Direct Mode](./eth-server.md) — one cable to your computer, the device becomes a DHCP server.
+Plug in an Ethernet cable and the device gets a stable wired connection. The 100M Ethernet port and [WiFi](./wifi.md) provide mutual backup — each link has its own IP, either one can reach the management interface, and if one drops the other keeps working. Supports DHCP (auto) and static IP. No router? Try [Direct Mode](./eth-server.md) — one cable to your computer, the device becomes a DHCP server.
+
+> Where: Settings → Network → Ethernet
 
 > When using Ethernet and WiFi together, place them on different subnets to avoid routing conflicts. For example, Ethernet on `192.168.1.x`, WiFi on `192.168.2.x`.
 
@@ -27,8 +29,6 @@ While acquiring IP, the display shows **E Loading...**. If it takes more than 20
 > When no Ethernet cable is plugged in, the "X" stays on the network icon. More OLED info → [OLED Screen](../interaction/oled.md).
 
 ## Software Configuration
-
-Go to Web interface → Settings → **Network**.
 
 ![Ethernet settings](./images/eth/setting_eth.webp)
 

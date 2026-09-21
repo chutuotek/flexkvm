@@ -2,6 +2,8 @@
 
 Connect to WiFi for wireless networking. Supports 2.4GHz and 5GHz dual-band — 2.4G penetrates walls better and covers wider areas; 5G has lower latency, ideal for video. Works as mutual backup with [Ethernet](./eth.md) — each link has its own IP, either one can reach the management interface, and if one drops the other keeps working.
 
+> Where: Settings → Network → WiFi
+
 > When using Ethernet and WiFi together, place them on different subnets to avoid routing conflicts. For example, Ethernet on `192.168.1.x`, WiFi on `192.168.2.x`.
 
 ## Specifications
@@ -26,18 +28,16 @@ While acquiring IP, the display shows **W Loading...**. If it takes more than 10
 
 ## Button Switch
 
-Long-press **Button B** for about 3–5 seconds to quickly toggle between WiFi and [AP Mode](./ap.md):
+Long-press **Button B** for about 3–5 seconds to quickly toggle between WiFi and [AP Hotspot](./ap.md):
 
 | Current mode | Action | Result | OLED icon | Wait time |
 |:------------:|:------:|:------:|:---------:|:---------:|
 | WiFi mode | Long-press Button B 3–5s, release when OLED shows hotspot icon | Turns off WiFi, turns on hotspot | ![Hotspot icon](./images/ap/oled_ap_icon.webp){ width="80" } | ~10 seconds |
-| Hotspot mode | Long-press Button B 3–5s, release when OLED shows WiFi icon | Turns off hotspot, restores WiFi | ![WiFi icon](./images/wifi/oled_wifi_icon.webp){ width="80" } | 3~4 seconds |
+| AP hotspot | Long-press Button B 3–5s, release when OLED shows WiFi icon | Turns off hotspot, restores WiFi | ![WiFi icon](./images/wifi/oled_wifi_icon.webp){ width="80" } | 3~4 seconds |
 
 > Button B toggles WiFi/hotspot. [Provisioning Mode](./provision.md) (Button A) is a **temporary** hotspot for first-time setup or recovery. They are different.
 
 ## Software Configuration
-
-Go to Web interface → Settings → **Network**.
 
 ![WiFi settings](./images/wifi/setting_wifi.webp)
 

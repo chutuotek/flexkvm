@@ -1,6 +1,8 @@
 # Provisioning Mode
 
-Provisioning mode creates a **temporary** WiFi hotspot — when the device has no network or a misconfiguration prevents access, long-press Button A for 1–3s to enter. Configure the network, save, and exit. Unlike [AP Mode](./ap.md): provisioning mode auto-closes after configuration; AP mode stays on continuously.
+Provisioning mode creates a **temporary** WiFi hotspot — when the device has no network or a misconfiguration prevents access, long-press Button A for 1–3s to enter. Configure the network, save, and exit. Unlike [AP Hotspot](./ap.md): provisioning mode auto-closes after configuration; the AP hotspot stays on continuously.
+
+> Where: long-press **Button A** for 1–3s to enter provisioning mode, join the hotspot shown on the OLED, then open `http://192.168.10.1` in a browser
 
 ## When to Use
 
@@ -16,7 +18,7 @@ Provisioning mode creates a **temporary** WiFi hotspot — when the device has n
 |---------|:---:|:---:|
 | Mode triggered | Provisioning mode (temporary) | AP hotspot (persistent) |
 | Purpose | First setup / recovery | Daily hotspot toggle |
-| Exit method | Click Save in provisioning page, or long-press Button A / B for 1s to force exit | Long-press Button B 3–5s again |
+| Exit method | Click Save in the provisioning page; or long-press Button A / B for 1s+ to force exit (without saving) | Long-press Button B 3–5s again |
 
 ## Enter Provisioning Mode
 
@@ -76,7 +78,7 @@ Configure hotspot parameters (SSID, password, band, etc.). **Changes are staged 
 
 ![AP config](./images/ap/setting_ap.webp)
 
-See [AP Mode](./ap.md).
+See [AP Hotspot](./ap.md).
 
 ## Save & Exit
 

@@ -1,10 +1,12 @@
 # Wake-on-LAN (WoL)
 
-Wake-on-LAN supports only Ethernet. FlexKVM and the target device must be on the **same LAN**.
+Wake-on-LAN supports only Ethernet. FlexKVM and the target host must be on the **same LAN**.
+
+> Where: **Wake on LAN** in the menu bar
 
 ## Prerequisites
 
-The target device must:
+The target host must:
 
 - Have a motherboard and BIOS that support and have Wake-on-LAN enabled
 - Be connected **via Ethernet cable** (WiFi not supported)
@@ -22,10 +24,6 @@ Enter the target host's BIOS (press Del / F2 during boot) and find these options
 | ErP / EuP Ready | **Disabled** (must be off) |
 
 > BIOS layouts vary widely between motherboards. If you can't find these options, check the motherboard manual or contact the manufacturer.
-
-## WoL Entry
-
-In FlexKVM's top bar, click the network port icon:
 
 ![WoL menu](./images/wol/wol.webp)
 
@@ -68,7 +66,7 @@ Click the trash icon to remove it from the list.
 
 **Can I wake across networks?**
 
-→ No. FlexKVM and the target device must be on the same LAN.
+→ No. FlexKVM and the target host must be on the same LAN.
 
 ---
 

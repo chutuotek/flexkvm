@@ -1,6 +1,8 @@
-# AP Mode
+# AP Hotspot
 
 FlexKVM creates its own WiFi hotspot — your phone or computer connects directly to access the management interface. No router needed, no dependency on on-site network. Long-press Button B for 3–5 seconds to toggle on/off.
+
+> Where: Settings → Network → AP Network
 
 - Default SSID: `FlexKVM-AP`
 - Default password: `12345678`
@@ -31,11 +33,9 @@ Long-press **Button B** for 3–5 seconds (stage 2) to toggle between hotspot an
 | WiFi | Hold Button B 3–5s, release when OLED shows hotspot icon | WiFi off, hotspot on | ![Hotspot icon](./images/ap/oled_ap_icon.webp){ width="80" } | ~10s |
 | Hotspot | Hold Button B 3–5s, release when OLED shows WiFi icon | Hotspot off, WiFi restored | ![WiFi icon](./images/wifi/oled_wifi_icon.webp){ width="80" } | 3–4s |
 
-> Button B long-press has three stages: 1–3s toggles [Ethernet Direct Mode](./eth-server.md), 3–5s toggles hotspot/WiFi, 5s+ returns home. See [Physical Buttons](../interaction/button.md).
+> Button B long-press has three stages: 1–3s toggles [Direct Mode](./eth-server.md), 3–5s toggles hotspot/WiFi, 5s+ returns home. See [Physical Buttons](../interaction/button.md).
 
 ## Software Configuration
-
-Go to Web interface → Settings → **Network**.
 
 ![AP settings](./images/ap/setting_ap.webp)
 
