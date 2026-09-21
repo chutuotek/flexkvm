@@ -91,6 +91,19 @@ Four levels — higher is sharper, but consumes more bandwidth:
 
 > Bandwidth is approximate and varies with screen content. If it's laggy, lower the quality.
 
+### Codec
+
+Choose the video codec (H.264 / H.265):
+
+| Codec | Description |
+|-------|-------------|
+| H.264 (default) | Best compatibility; supported by all browsers |
+| H.265 (HEVC) | ~30% lower bitrate at the same quality; the browser must support H.265 |
+
+- Disabled when no HDMI signal is present.
+- Switching while streaming → brief black screen, then automatic renegotiation; when idle the setting is saved and takes effect on the next start.
+- Browser does not support the selected codec → streaming fails; switch back to H.264.
+
 ### GOP
 
 Controls the balance between display responsiveness and bandwidth. Range: 1–10.
