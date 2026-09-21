@@ -17,7 +17,7 @@
 
 进 Web 界面 → 设置 → 升级：
 
-1. 选**下载源**（默认 Gitcode，国内也可选 Gitee，海外选 GitHub）
+1. 选**下载源**（默认 GitCode，国内也可选 Gitee，海外选 GitHub）
 2. 点**检查更新**
 3. 有新版本 → 点**下载安装包** → 等待下载和校验
 4. 点**立即升级** → 输入密码确认
@@ -30,7 +30,7 @@
 
 ### 离线升级
 
-设备没联网：在电脑上从 [Gitcode 发布页](https://gitcode.com/chutuotek/flexkvm/releases)（也可选 Gitee/GitHub）下载固件包（`.tar`）→ 进升级界面 → 点"上传升级包"选该文件 → 点"升级"开始。
+设备没联网：在电脑上从 [GitCode 发布页](https://gitcode.com/chutuotek/flexkvm/releases)（也可选 Gitee/GitHub）下载固件包（`.tar`）→ 进升级界面 → 点"上传升级包"选该文件 → 点"升级"开始。
 
 > SHA-256 校验、固件包格式要求 → [离线升级](../maintenance/upgrade-offline.md)
 

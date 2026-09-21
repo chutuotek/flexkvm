@@ -28,7 +28,7 @@
 
 选固件下载地址：
 
-- [Gitcode](https://gitcode.com/chutuotek/flexkvm/releases) — 默认源，国内用户速度快
+- [GitCode](https://gitcode.com/chutuotek/flexkvm/releases) — 默认源，国内用户速度快
 - [Gitee](https://gitee.com/chutuotek/flexkvm/releases) — 国内用户，速度快
 - [GitHub](https://github.com/chutuotek/flexkvm/releases) — 海外用户
 

@@ -12,7 +12,7 @@ Download the OTA image file (`.tar` format) from either source on your computer:
 
 | Source | URL | Best for |
 |--------|-----|----------|
-| Gitcode | [gitcode.com/chutuotek/flexkvm/releases](https://gitcode.com/chutuotek/flexkvm/releases) | Faster for users in China |
+| GitCode | [gitcode.com/chutuotek/flexkvm/releases](https://gitcode.com/chutuotek/flexkvm/releases) | Faster for users in China |
 | Gitee | [gitee.com/chutuotek/flexkvm/releases](https://gitee.com/chutuotek/flexkvm/releases) | Users in China, faster |
 | GitHub | [github.com/chutuotek/flexkvm/releases](https://github.com/chutuotek/flexkvm/releases) | International users |
 

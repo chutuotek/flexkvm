@@ -28,7 +28,7 @@ Want early access to new features? Enable the beta option to receive beta update
 
 Choose the firmware download location:
 
-- [Gitcode](https://gitcode.com/chutuotek/flexkvm/releases) — Default source, faster for users in China
+- [GitCode](https://gitcode.com/chutuotek/flexkvm/releases) — Default source, faster for users in China
 - [Gitee](https://gitee.com/chutuotek/flexkvm/releases) — Users in China, faster
 - [GitHub](https://github.com/chutuotek/flexkvm/releases) — International users
 
