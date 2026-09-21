@@ -56,20 +56,20 @@ plugins:
           name: English
           nav_translations:
             首页: Home
-            快速入门: Quick Start
+            快速开始: Quick Start
             用户指南: User Guide
+            界面总览: UI Overview
             常见问题: FAQ
             故障排查: Troubleshooting
             更新日志: Changelog
             帮助与支持: Support
             常见问题与排查: Help & Diagnostics
             场景向导: Scenarios
-            场景导航: Scenarios
             远程开关机: Remote Power Control
             产品概览: Product Overview
             设备交互: Device Interaction
             OLED 屏幕: OLED Screen
-            LED 指示灯: LED Indicator
+            LED 指示灯: LED Indicators
             物理按键: Physical Buttons
             远程重装系统: Remote OS Install
             外网远程访问: Remote Access
@@ -80,11 +80,11 @@ plugins:
             问题反馈: Feedback
             网络: Network
             配网模式: Provisioning Mode
-            以太网: Ethernet
-            以太网直连模式: Ethernet Direct Mode
-            WiFi: Wi-Fi
-            热点模式: AP Mode
-            Tailscale 异地组网: Tailscale VPN
+            有线网络: Wired Network
+            直连模式: Direct Mode
+            WiFi: WiFi
+            AP 热点: AP Hotspot
+            Tailscale: Tailscale
             mDNS 服务发现: mDNS Discovery
             网络唤醒 (WoL): Wake-on-LAN (WoL)
             HTTPS 证书: HTTPS Certificate
@@ -106,7 +106,6 @@ plugins:
             关于设备: About Device
             状态监控: Status Monitor
             安全设置: Security Settings
-            账号管理: Account Management
             登录管理: Login Management
             账号安全: Account Security
             外观: Appearance
@@ -130,7 +129,7 @@ plugins:
             社区与联系: Community & Contact
             建议反馈: Feedback
             用户社群: Community
-            联系我们: Contact
+            联系我们: Contact Us
   - git-revision-date-localized:
       type: datetime
       timezone: Asia/Shanghai
@@ -187,16 +186,17 @@ markdown_extensions:
 
 nav:
   - 首页: index.md
-  - 快速入门: quick_start/index.md
+  - 快速开始: quick_start/index.md
   - 用户指南:
     - 用户指南: guide/index.md
+    - 界面总览: guide/overview.md
     - 产品概览:
       - 包装清单: guide/product/packet.md
       - 接口说明: guide/product/interface.md
       - 物理与电气特性: guide/product/characteristics.md
       - 拓展配件: guide/product/extensibility.md
     - 场景向导:
-        - 场景导航: guide/scenarios/index.md
+        - 场景向导: guide/scenarios/index.md
         - 外网远程访问: guide/scenarios/remote-access.md
         - 远程重装系统: guide/scenarios/reinstall-os.md
         - 远程开关机: guide/scenarios/power-control.md
@@ -210,11 +210,11 @@ nav:
       - 物理按键: guide/interaction/button.md
     - 网络:
       - 配网模式: guide/network/provision.md
-      - 以太网: guide/network/eth.md
-      - 以太网直连模式: guide/network/eth-server.md
+      - 有线网络: guide/network/eth.md
+      - 直连模式: guide/network/eth-server.md
       - WiFi: guide/network/wifi.md
-      - 热点模式: guide/network/ap.md
-      - Tailscale 异地组网: guide/network/tailscale.md
+      - AP 热点: guide/network/ap.md
+      - Tailscale: guide/network/tailscale.md
       - mDNS 服务发现: guide/network/mdns.md
       - 网络唤醒 (WoL): guide/network/wol.md
     - 远程交互:

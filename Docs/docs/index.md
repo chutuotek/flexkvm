@@ -1,8 +1,8 @@
 # FlexKVM
 
-**即插即用的硬件级带外管理设备。** 将它接入目标主机的 HDMI 和 USB，你就能通过浏览器或 Tailscale 网络，随时随地查看屏幕、控制键鼠、开关电源、挂载 ISO —— 即使目标系统宕机、无显卡驱动、甚至未安装操作系统。
+**即插即用的硬件级带外管理设备。** 将它接入被控设备的 HDMI 和 USB，你就能通过浏览器或 Tailscale 网络，随时随地查看屏幕、控制键鼠、开关电源、挂载 ISO —— 即使目标系统宕机、无显卡驱动、甚至未安装操作系统。
 
-> 无需在被控主机上安装任何软件，无需公网 IP，只要网络可达，机房就在你手边。
+> 无需在被控设备上安装任何软件，无需公网 IP，只要网络可达，机房就在你手边。
 
 <div class="image-carousel">
   <div class="carousel-slides">
@@ -28,7 +28,7 @@
 </div>
 
 <div class="hero-actions" markdown>
-[快速入门 :octicons-rocket-24:](quick_start/index.md){ .md-button .md-button--primary }
+[快速开始 :octicons-rocket-24:](quick_start/index.md){ .md-button .md-button--primary }
 [用户指南 :material-book-open-page-variant:](guide/index.md){ .md-button }
 </div>
 
@@ -79,7 +79,7 @@
 
 - **:material-headset: 双向音频**
 
-    模拟 USB 音频设备，被控主机的系统声音实时传回浏览器，操作端麦克风输出到被控主机。
+    模拟 USB 音频设备，被控设备的系统声音实时传回浏览器，控制端麦克风输出到被控设备。
 
 - **:material-robot: AI 远程控制**
 
@@ -91,7 +91,7 @@
 
 - **:material-disc: 虚拟光驱**
 
-    使用TF卡做为虚拟光驱，能实现文件双向传输，远程安装系统等功能。
+    使用 TF 卡做为虚拟光驱，能实现文件双向传输，远程安装系统等功能。
 
 - **:material-vpn: 异地组网（Tailscale）**
 
@@ -151,7 +151,7 @@
 
 <div class="grid cards" markdown>
 
-- **:material-rocket-launch: 快速入门**
+- **:material-rocket-launch: 快速开始**
 
     5 分钟从接线到远程控制，带图的完整流程。
 

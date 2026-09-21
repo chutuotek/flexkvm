@@ -2,9 +2,21 @@
 
 欢迎使用 FlexKVM 用户指南。确定你的目标，选择对应入口。不确定从哪里找？在顶部**搜索栏**输入关键词直接定位。
 
-> 开始前请确认已完成 [快速上手](../quick_start/index.md) 中的设备接线和网络配置，确保 FlexKVM 可正常访问。
+> 开始前请确认已完成 [快速开始](../quick_start/index.md) 中的设备接线和网络配置，确保 FlexKVM 可正常访问。
 
 ---
+
+## 先认识界面
+
+<div class="grid cards" markdown>
+
+- **:material-monitor-dashboard: 界面总览**
+
+    菜单栏 12 个按钮与设置面板 12 个 tab 一次讲完
+
+    [:octicons-arrow-right-24: 查看](overview.md)
+
+</div>
 
 ## 产品概览
 
@@ -122,13 +134,19 @@
 
 <div class="grid cards" markdown>
 
-- **:material-lan: 以太网**
+- **:material-lan-connect: 配网模式**
+
+    临时热点，用于首次联网或网络配错后恢复连接
+
+    [:octicons-arrow-right-24: 查看](network/provision.md)
+
+- **:material-lan: 有线网络**
 
     DHCP / 静态 IP 配置，网关与 DNS 设置
 
     [:octicons-arrow-right-24: 查看](network/eth.md)
 
-- **:material-server-network: 以太网直连模式**
+- **:material-server-network: 直连模式**
 
     网线直连电脑，设备变身 DHCP 服务器，无需路由器
 
@@ -140,13 +158,13 @@
 
     [:octicons-arrow-right-24: 查看](network/wifi.md)
 
-- **:material-access-point: 热点模式**
+- **:material-access-point: AP 热点**
 
     FlexKVM 作为 WiFi 热点，供其他设备直连
 
     [:octicons-arrow-right-24: 查看](network/ap.md)
 
-- **:material-vpn: Tailscale 异地组网**
+- **:material-vpn: Tailscale**
 
     无需公网 IP，端到端加密远程访问
 
@@ -168,7 +186,7 @@
 
 ### 远程交互
 
-查看被控主机画面，控制键鼠，传输音频。
+查看被控设备画面，控制键鼠，传输音频。
 
 <div class="grid cards" markdown>
 
@@ -254,11 +272,17 @@ TF 卡存储、ATX 电源控制、UART 串口、GPIO 引脚——物理外接的
 
 <div class="grid cards" markdown>
 
-- **:material-account-cog: 账号管理**
+- **:material-login: 登录管理**
 
-    登录流程、密码修改、两步验证 (2FA)、备用码
+    登录流程、首次创建账号、密码与 2FA 登录验证
 
     [:octicons-arrow-right-24: 查看](security/account/login.md)
+
+- **:material-account-cog: 账号安全**
+
+    用户名、修改密码、2FA 验证与备用码、退出登录
+
+    [:octicons-arrow-right-24: 查看](security/account/account.md)
 
 - **:material-console: SSH 远程访问**
 
@@ -326,11 +350,17 @@ TF 卡存储、ATX 电源控制、UART 串口、GPIO 引脚——物理外接的
 
 <div class="grid cards" markdown>
 
-- **:material-cloud-download: 固件升级**
+- **:material-cloud-download: 在线升级**
 
-    在线升级 / 离线升级，版本更新方式选择
+    设备能上网时，选下载源检查并安装新固件
 
     [:octicons-arrow-right-24: 查看](maintenance/upgrade-online.md)
+
+- **:material-package-down: 离线升级**
+
+    设备没网时，把本机固件包上传到设备升级
+
+    [:octicons-arrow-right-24: 查看](maintenance/upgrade-offline.md)
 
 - **:material-package-up: 应用更新**
 
@@ -366,4 +396,4 @@ TF 卡存储、ATX 电源控制、UART 串口、GPIO 引脚——物理外接的
 
 ---
 
-[:octicons-bug-24: 问题反馈与建议](../community/feedback/index.md){ .md-button } [:octicons-home-24: 返回首页](../index.md){ .md-button } [:octicons-rocket-24: 快速上手](../quick_start/index.md){ .md-button }
+[:octicons-bug-24: 问题反馈](../community/feedback/index.md){ .md-button } [:octicons-home-24: 返回首页](../index.md){ .md-button } [:octicons-rocket-24: 快速开始](../quick_start/index.md){ .md-button }

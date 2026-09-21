@@ -364,4 +364,4 @@ Firmware upgrades, reboot, factory reset, and other system-level operations.
 
 ---
 
-[:octicons-bug-24: Feedback & Suggestions](../community/feedback/index.md){ .md-button } [:octicons-home-24: Back to Home](../index.md){ .md-button } [:octicons-rocket-24: Quick Start](../quick_start/index.md){ .md-button }
+[:octicons-bug-24: Feedback](../community/feedback/index.md){ .md-button } [:octicons-home-24: Back to Home](../index.md){ .md-button } [:octicons-rocket-24: Quick Start](../quick_start/index.md){ .md-button }
