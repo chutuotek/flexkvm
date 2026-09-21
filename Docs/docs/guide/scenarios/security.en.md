@@ -10,7 +10,7 @@ This is the best security-for-effort measure. Even if your password is leaked, a
 
 ### How to enable
 
-Go to Web interface → Settings → Account → click "Enable" in the **2FA Authentication** area:
+Go to Web interface → Settings → Account → click "Generate 2FA" in the **2FA** area:
 
 1. Install an authenticator app on your phone (Google Authenticator / Microsoft Authenticator)
 2. Scan the QR code shown on screen → the app adds a FlexKVM entry with a 6-digit code
@@ -22,28 +22,29 @@ Go to Web interface → Settings → Account → click "Enable" in the **2FA Aut
 
 ### Impact on SSH
 
-SSH login does not require 2FA — just username and password. For stricter SSH security, disable the SSH service — see [P3](#p3-harden-ssh).
+With 2FA enabled, SSH login is also two-step: enter your username and password first, then the TOTP code or a backup recovery code. For stricter SSH security, disable the SSH service — see [P3](#p3-harden-ssh).
 
 > Change password, regenerate 2FA, manage backup codes → [Account Security](../security/account/account.md)
 
 ---
 
-## P2: Upload HTTPS Certificate
+## P2: Configure a Trusted HTTPS Certificate
 
-FlexKVM uses a self-signed certificate by default — browsers will show a "Not Secure" warning, but the communication itself is encrypted. Upload your own SSL certificate to remove the warning.
+FlexKVM uses a self-signed certificate by default — browsers will show a "Not Secure" warning, but the communication itself is encrypted. Configure your own certificate to remove the warning.
 
 ### How to do it
 
-Go to Web interface → Settings → Advanced → HTTPS:
+Go to Web interface → Settings → Security → HTTPS:
 
-1. Prepare your SSL certificate file (`.crt`) and private key file (`.key`), PEM format
-2. Upload both files → switch to "Custom Certificate" mode
+1. Prepare your certificate and private key in PEM format
+2. Click "Custom Certificate", paste the certificate and private key into the two text boxes → save
+3. Select "Custom Certificate" in the certificate mode dropdown
 
 > **Verify**: The browser address bar shows a 🔒 icon.
 >
 > This generally requires a domain name (Let's Encrypt free certificates work great). Without a domain, a self-signed cert provides the same security — the browser warning is just cosmetic.
 
-> Certificate format conversion, upload failure troubleshooting → [HTTPS Certificate](../security/https.md)
+> Certificate format conversion, configuration failure troubleshooting → [HTTPS Certificate](../security/https.md)
 
 ---
 
@@ -53,7 +54,7 @@ SSH is enabled by default, listening on port 22. If you don't need it, turn it o
 
 ### Don't need SSH → Turn it off
 
-Go to Web interface → Settings → Advanced → SSH → toggle off.
+Go to Web interface → Settings → Security → SSH → turn off the "Enable SSH" toggle.
 
 ### Need SSH → Tighten
 

@@ -11,7 +11,7 @@ Firmware updates bring new features and security fixes. Check monthly.
 | Method | When to use | What you need |
 |--------|-------------|---------------|
 | Online upgrade | Device has internet | Network connection |
-| Offline upgrade | Device has no internet | TF card + computer to download firmware package |
+| Offline upgrade | Device has no internet | Computer to download the firmware package |
 
 ### Online Upgrade
 
@@ -30,7 +30,7 @@ Go to Web interface → Settings → Upgrade:
 
 ### Offline Upgrade
 
-Device has no internet: download the firmware package (`.tar`) from the [Gitcode Releases page](https://gitcode.com/chutuotek/flexkvm/releases) (Gitee/GitHub also available) on a computer → copy to TF card → insert into FlexKVM → Upgrade interface → select Offline Upgrade → upload → start.
+Device has no internet: download the firmware package (`.tar`) from the [Gitcode Releases page](https://gitcode.com/chutuotek/flexkvm/releases) (Gitee/GitHub also available) on a computer → open the Upgrade interface → click "Upload Upgrade Package" and select that file → click "Upgrade" to start.
 
 > SHA-256 verification, firmware package format → [Offline Upgrade](../maintenance/upgrade-offline.md)
 
@@ -48,7 +48,7 @@ Web interface → Settings → Maintenance → Audit. Records all key operations
 
 Device feels slow or the display is laggy? Try a reboot first — it fixes most transient issues.
 
-- **Web interface**: Settings → Maintenance → Reboot → confirm. After ~20–30 seconds, the OLED shows the IP again — you can reconnect.
+- **Web interface**: Settings → Maintenance → Reboot Device → confirm. After ~20–30 seconds, the OLED shows the IP again — you can reconnect.
 - **Hardware**: Short-press the **reset button** on the device for an instant reboot — no config is lost.
 
 > Rebooting does not clear any data, settings, or accounts. Use it freely.

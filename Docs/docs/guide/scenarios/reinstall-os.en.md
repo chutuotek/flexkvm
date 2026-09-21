@@ -67,7 +67,7 @@ Check the ISO file → click **Share File**.
 
 ### 3.1 Reboot the Target Host
 
-In FlexKVM's top bar, click the power icon → short-press the reset button. The target host begins rebooting.
+In FlexKVM's top bar, click the **peripherals** icon → short-press the reset button. The target host begins rebooting.
 
 ### 3.2 Press the BIOS Hotkey
 

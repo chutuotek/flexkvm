@@ -1,6 +1,6 @@
 # Remote Power Control
 
-Front panel buttons are mapped to FlexKVM's ATX controller, letting you power on/off or reset the host as if you were pressing the case buttons yourself.
+FlexKVM gives you two ways to control power remotely: the **ATX controller** (physically wired, like pressing the case buttons yourself) and **Wake-on-LAN (WoL)** (pure software — send a magic packet to wake the host).
 
 > **Only want WoL without opening the case?** Skip to [Step 3](#step-3-configure-wake-on-lan-wol). Prerequisite: the target host has an Ethernet cable plugged in and WoL is enabled in BIOS.
 
