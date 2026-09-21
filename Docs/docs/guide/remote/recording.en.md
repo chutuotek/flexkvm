@@ -2,9 +2,11 @@
 
 Record the remote display as a video file — useful for documenting operations or keeping evidence.
 
+> Where: **Recording** in the menu bar; recording parameters under Settings → Capture → Recording
+
 ## How to Record
 
-Use the recording icon in the top bar:
+Click the **Recording** icon:
 
 | Icon | State |
 |------|-------|
@@ -33,10 +35,10 @@ Adjust in Settings → Capture → **Recording**.
 |---------|---------|-------------|
 | Mute Recording | On/Off | When enabled, the video contains no audio |
 | Container | WebM / MKV | Listed according to browser support; WebM is the browser-native format |
-| Video Codec | Listed per container | Auto-detects codecs available on this machine, labeled (hardware)/(software); hardware encoding uses less CPU |
+| Video Codec | Listed per container | Auto-detects codecs available on the control device, labeled (hardware)/(software); hardware encoding uses less CPU |
 | Video Quality | Low / Medium / High / Ultra (1 / 2 / 4 / 8 Mbps) | Higher is sharper and larger |
 
-> The container format matches the video file extension (.webm / .mkv). The codec is how the picture gets compressed: hardware-labeled codecs use dedicated hardware and save the most CPU. Recording is based on WebCodecs: codecs unsupported by this machine never appear in the list, and a saved format that is no longer supported falls back to an available one.
+> The container format matches the video file extension (.webm / .mkv). The codec is how the picture gets compressed: hardware-labeled codecs use dedicated hardware and save the most CPU. Recording is based on WebCodecs: codecs unsupported by the control device never appear in the list, and a saved format that is no longer supported falls back to an available one.
 
 ---
 

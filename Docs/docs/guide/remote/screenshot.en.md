@@ -2,9 +2,11 @@
 
 Save the current remote display as an image — useful for documenting critical screens.
 
+> Where: **Screenshot** in the menu bar; format and quality under Settings → Capture → Screenshot
+
 ## How to Capture
 
-Click the screenshot icon in the top bar.
+Click the **Screenshot** icon.
 
 | Icon | Status |
 |------|--------|

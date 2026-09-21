@@ -2,9 +2,11 @@
 
 View the target host's screen, adjust resolution, quality, and EDID. The display is captured via HDMI at the hardware level — BIOS, blue screens, and safe mode are all visible, independent of the operating system.
 
+Click **Video** in the menu bar to open the display menu.
+
 ## Display Status
 
-The display icon in the top bar reflects current state:
+The display icon in the menu bar reflects current state:
 
 | Icon | Meaning |
 |------|---------|
@@ -40,7 +42,7 @@ On touch devices, the following gestures are supported on the video area — all
 
 ## Display Menu
 
-Click the display icon in the top bar to open the menu.
+Click the display icon in the menu bar to open the menu.
 
 ![remote-menu](./images/screen/remote_menu.webp)
 

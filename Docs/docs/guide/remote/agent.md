@@ -2,9 +2,9 @@
 
 把设备交给 AI 客户端操作：启用 Agent 并生成 API Key 后，OpenClaw、Claude Code、Codex、DSH 等 AI 客户端可以通过 **Skill** 或 **MCP** 两种方式控制键鼠、截屏，适合自动化巡检、批量配置、无人值守操作等场景。
 
-## 开启 Agent
+> 入口：设置 → Agent
 
-进设置 → **Agent**。
+## 开启 Agent
 
 ![Agent 设置](./images/agent/setting_agent.webp)
 
@@ -86,7 +86,7 @@ export FlexKVM_TOKEN="sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 直接对 AI 说人话：
 
 ```text
-看一下目标机现在的屏幕
+看一下被控设备现在的屏幕
 打开记事本，输入 hello，保存到桌面
 把桌面上的 setup.exe 装上，过程中截图给我确认
 ```
@@ -191,7 +191,7 @@ flexkvm: https://<设备地址>/api/v1/mcp (HTTP) - ✔ Connected
 
 **连接报 TLS / 证书错误？** → 设备是自签名证书，把设备 CA 导入系统信任（见上文"HTTPS 证书提示"）。
 
-**AI 操作没反应？** → 事件批次总时长超过 60 秒会超时停止；确认被控主机键鼠工作正常（如 BIOS 界面可正常输入）。
+**AI 操作没反应？** → 事件批次总时长超过 60 秒会超时停止；确认被控设备键鼠工作正常（如 BIOS 界面可正常输入）。
 
 ---
 

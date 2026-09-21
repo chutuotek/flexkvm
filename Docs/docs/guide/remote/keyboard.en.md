@@ -2,9 +2,11 @@
 
 Send text, shortcuts, and key combinations to the target host. FlexKVM emulates a standard USB keyboard, compatible with all operating systems.
 
+Click **Keyboard** in the menu bar to open the keyboard menu.
+
 ## Keyboard Status
 
-The keyboard icon in the top bar reflects state:
+The keyboard icon in the menu bar reflects state:
 
 | Icon | Meaning |
 |------|---------|

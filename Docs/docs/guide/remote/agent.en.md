@@ -2,9 +2,9 @@
 
 Hand the device to an AI client: after enabling Agent and generating an API Key, AI clients such as OpenClaw, Claude Code, Codex, and DSH can control the keyboard/mouse and take screenshots through **Skill** or **MCP** — useful for automated inspection, batch configuration, and unattended operation.
 
-## Enable Agent
+> Where: Settings → Agent
 
-Go to Settings → **Agent**.
+## Enable Agent
 
 ![Agent settings](./images/agent/setting_agent.webp)
 
@@ -86,7 +86,7 @@ export FlexKVM_TOKEN="sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 Just talk to the AI in plain language:
 
 ```text
-Show me the target machine's screen
+Show me the target host's screen
 Open Notepad, type hello, and save it to the desktop
 Install setup.exe from the desktop, confirm each step with a screenshot
 ```
@@ -191,7 +191,7 @@ The device uses a self-signed HTTPS certificate by default. If the client report
 
 **TLS / certificate errors?** → The device uses a self-signed certificate — import the device CA into the system trust store (see "HTTPS Certificate Note" above).
 
-**AI actions do nothing?** → Event batches exceeding 60 seconds stop with a timeout; confirm the host keyboard/mouse works (e.g., typing is visible in the BIOS screen).
+**AI actions do nothing?** → Event batches exceeding 60 seconds stop with a timeout; confirm the target host's keyboard/mouse works (e.g., typing is visible in the BIOS screen).
 
 ---
 

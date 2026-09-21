@@ -2,9 +2,11 @@
 
 Control the target host's mouse pointer. Supports absolute and relative modes, with adjustable sensitivity and scroll direction.
 
+Click **Mouse** in the menu bar to open the mouse menu.
+
 ## Mouse Status
 
-The mouse icon in the top bar reflects state:
+The mouse icon in the menu bar reflects state:
 
 | Icon | Meaning |
 |------|---------|
