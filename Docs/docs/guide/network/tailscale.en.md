@@ -18,7 +18,7 @@ Two login options are supported — **Web Login** and **Authkey** — switched v
 
 ### Web Login (default)
 
-Click the **Login Status** button to start:
+Click the **Login** button on the **Login State** row to start:
 
 ![Tailscale login button](./images/tailscale/setting_tailscale_wait.webp)
 

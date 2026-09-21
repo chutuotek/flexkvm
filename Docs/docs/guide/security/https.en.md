@@ -104,11 +104,11 @@ Click "Custom Certificate" and paste the PEM content into the two text boxes:
 
 | Symptom | Likely cause | Try this first |
 |---------|-------------|----------------|
-| Upload says mismatched | Private key and certificate aren't a pair | Verify the private key corresponds to this certificate |
-| Browser still warns after upload | Still using self-signed certificate | Confirm you've switched to custom certificate mode |
+| Save says mismatched | Private key and certificate aren't a pair | Verify the private key corresponds to this certificate |
+| Browser still warns after saving | Still using self-signed certificate | Confirm you've switched to custom certificate mode |
 | Browser still warns after importing CA | Certificate not in the trusted store | Import into the OS/browser "Trusted Root Certification Authorities" store, then restart the browser |
 | Browser still warns after importing user sub-CA | Client doesn't trust the deployer's root CA | Trust the deployer's root CA on the client first |
-| File won't upload | Format is not PEM | Convert to PEM using OpenSSL |
+| Format error after pasting | Not PEM format | Convert to PEM with OpenSSL (`.pfx` and `.jks` can't be pasted directly) |
 
 ---
 

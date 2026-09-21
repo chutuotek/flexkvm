@@ -18,7 +18,7 @@ Tailscale 是预装在 FlexKVM 里的 VPN 组网工具——把你的设备加�
 
 ### Web 登录（默认）
 
-点**登录状态**按钮开始登录：
+点**登录状态**行右侧的**登录**按钮开始登录：
 
 ![Tailscale 登录按键](./images/tailscale/setting_tailscale_wait.webp)
 
