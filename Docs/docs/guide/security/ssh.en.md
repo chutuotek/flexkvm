@@ -12,7 +12,7 @@ FlexKVM has a built-in SSH server for remote command-line device management — 
 
 ## Enable / Disable
 
-Go to Settings → System → SSH Settings.
+Go to Settings → Security → SSH Settings.
 
 ![SSH settings](./images/ssh/setting_ssh.webp)
 
@@ -98,7 +98,7 @@ Type `help` for the full list. Quick reference:
 
 | Symptom | Likely cause | Try this first |
 |---------|-------------|----------------|
-| `Connection refused` | SSH service not enabled | Check SSH toggle in Settings → System |
+| `Connection refused` | SSH service not enabled | Check SSH toggle in Settings → Security |
 | `Connection timed out` | Wrong IP or network unreachable | Verify IP matches OLED, try pinging |
 | `Permission denied` | Wrong username or password | Use the same credentials as the Web interface; check case |
 | Disconnected immediately after login | Another SSH session is active | Close the other session or wait for timeout |

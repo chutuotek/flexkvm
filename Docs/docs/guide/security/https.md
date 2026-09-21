@@ -2,7 +2,7 @@
 
 FlexKVM 用 HTTPS 加密访问，提供自签名证书（含用户子 CA）和自定义证书两种模式。
 
-进设置 → 系统 → HTTPS 配置。
+进设置 → 安全 → HTTPS 配置。
 
 ![HTTPS 设置](./images/https/setting_https.webp)
 
@@ -25,7 +25,7 @@ FlexKVM 用 HTTPS 加密访问，提供自签名证书（含用户子 CA）和�
 
 === "iPhone / iPad"
 
-    1. 用 **Safari** 打开设备页面（建议用主机名，如 `https://flexkvm-xxxx.local`），进设置 → 系统 → HTTPS 配置，点**下载 CA 证书**——Safari 提示"已下载描述文件"
+    1. 用 **Safari** 打开设备页面（建议用主机名，如 `https://flexkvm-xxxx.local`），进设置 → 安全 → HTTPS 配置，点**下载 CA 证书**——Safari 提示"已下载描述文件"
     2. 打开 设置 → 通用 → **VPN 与设备管理** → 点选刚下载的证书描述文件 → **安装**
     3. 打开 设置 → 通用 → 关于本机 → **证书信任设置** → 为该证书开启**完全信任**
     4. 重新打开设备页面，警告消失；此时可"添加到主屏幕"安装 PWA

@@ -46,7 +46,7 @@ IPMI 等企业带外方案需要主板原生支持，价格昂贵、配置复杂
 
 ### AI 客户端（Claude 等）连接设备时报 TLS / 证书错误？
 
-设备默认使用自签名 HTTPS 证书。在运行 AI 客户端的电脑上，把设备 CA 证书导入系统信任（设置 → 系统 → HTTPS 配置 → 下载 CA 证书），导入方法见 [HTTPS 证书](../../guide/security/https.md)。Agent 配置详见 [AI Agent 控制](../../guide/remote/agent.md)。
+设备默认使用自签名 HTTPS 证书。在运行 AI 客户端的电脑上，把设备 CA 证书导入系统信任（设置 → 安全 → HTTPS 配置 → 下载 CA 证书），导入方法见 [HTTPS 证书](../../guide/security/https.md)。Agent 配置详见 [AI Agent 控制](../../guide/remote/agent.md)。
 
 ---
 

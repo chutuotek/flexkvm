@@ -2,7 +2,7 @@
 
 FlexKVM encrypts access via HTTPS, offering self-signed certificates (including user sub-CA) and custom certificates.
 
-Go to Settings → System → HTTPS Configuration.
+Go to Settings → Security → HTTPS Configuration.
 
 ![HTTPS settings](./images/https/setting_https.webp)
 
@@ -25,7 +25,7 @@ Click "Download CA Certificate", import the issued CA into the system and trust 
 
 === "iPhone / iPad"
 
-    1. Open the device page in **Safari** (a hostname is recommended, e.g. `https://flexkvm-xxxx.local`), go to Settings → System → HTTPS Configuration, and click **Download CA Certificate** — Safari reports "Profile Downloaded"
+    1. Open the device page in **Safari** (a hostname is recommended, e.g. `https://flexkvm-xxxx.local`), go to Settings → Security → HTTPS Configuration, and click **Download CA Certificate** — Safari reports "Profile Downloaded"
     2. Open Settings → General → **VPN & Device Management** → tap the downloaded certificate profile → **Install**
     3. Open Settings → General → About → **Certificate Trust Settings** → enable **full trust** for the certificate
     4. Reopen the device page — the warning is gone; now you can "Add to Home Screen" to install the PWA

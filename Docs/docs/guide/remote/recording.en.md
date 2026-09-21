@@ -25,7 +25,7 @@ e.g., `flexkvm-recording-2026-05-12T21-44-20.mp4`
 
 ## Recording Settings
 
-Adjust in Settings → System → **Recording Settings**.
+Adjust in Settings → Capture → **Recording Settings**.
 
 ![Recording settings](./images/record/setting_record.webp)
 

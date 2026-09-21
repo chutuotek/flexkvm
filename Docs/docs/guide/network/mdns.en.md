@@ -49,7 +49,7 @@ With hostname `flexkvm-abc123`, for example:
 
 ## Enable / Disable
 
-Go to **Settings → System → mDNS** and toggle "Enable mDNS Discovery":
+Go to **Settings → Network → mDNS** and toggle "Enable mDNS Discovery":
 
 - **On** (default): LAN devices can discover FlexKVM by hostname
 - **Off**: hostname access stops working; use the IP address instead

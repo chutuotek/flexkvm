@@ -160,7 +160,7 @@ Available tools: `state`, `screenshot`, `type_text`, `press_key`, `mouse_move` /
 
 ## HTTPS Certificate Note
 
-The device uses a self-signed HTTPS certificate by default. If the client reports a TLS / `self-signed certificate` error, import the device CA certificate into the client machine's trust store (Settings → System → HTTPS Configuration → Download CA Certificate) — see [HTTPS Certificate](../security/https.en.md). For quick debugging, `curl -k` skips verification (already built into the flexkvm-skill scripts).
+The device uses a self-signed HTTPS certificate by default. If the client reports a TLS / `self-signed certificate` error, import the device CA certificate into the client machine's trust store (Settings → Security → HTTPS Configuration → Download CA Certificate) — see [HTTPS Certificate](../security/https.en.md). For quick debugging, `curl -k` skips verification (already built into the flexkvm-skill scripts).
 
 ## Working Alongside Users
 

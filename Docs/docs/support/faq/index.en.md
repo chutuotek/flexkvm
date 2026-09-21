@@ -46,7 +46,7 @@ See [mDNS Discovery](../../guide/network/mdns.en.md) for details.
 
 ### AI clients (Claude etc.) report TLS / certificate errors when connecting?
 
-The device uses a self-signed HTTPS certificate by default. On the machine running the AI client, import and trust the device CA certificate (Settings → System → HTTPS Configuration → Download CA Certificate). See [HTTPS Certificate](../../guide/security/https.en.md) for the import steps and [AI Agent Control](../../guide/remote/agent.en.md) for Agent setup.
+The device uses a self-signed HTTPS certificate by default. On the machine running the AI client, import and trust the device CA certificate (Settings → Security → HTTPS Configuration → Download CA Certificate). See [HTTPS Certificate](../../guide/security/https.en.md) for the import steps and [AI Agent Control](../../guide/remote/agent.en.md) for Agent setup.
 
 ---
 

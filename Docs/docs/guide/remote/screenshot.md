@@ -20,7 +20,7 @@
 
 ## 格式与画质
 
-在设置 → 系统 → **截图设置** 中调整。
+在设置 → 采集 → **截图设置** 中调整。
 
 ![截图设置](./images/screenshot/setting_screenshot.webp)
 

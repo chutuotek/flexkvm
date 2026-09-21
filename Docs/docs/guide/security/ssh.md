@@ -12,7 +12,7 @@ FlexKVM 内置 SSH 服务器，可以通过命令行远程管理设备——带�
 
 ## 启用与关闭
 
-进设置 → 系统 → SSH 设置。
+进设置 → 安全 → SSH 设置。
 
 ![SSH 设置](./images/ssh/setting_ssh.webp)
 
@@ -98,7 +98,7 @@ admin@flexkvm-6jzdd#
 
 | 现象 | 可能原因 | 先试这个 |
 |------|----------|---------|
-| `Connection refused` | SSH 服务没开 | 进设置 → 系统检查 SSH 开关 |
+| `Connection refused` | SSH 服务没开 | 进设置 → 安全检查 SSH 开关 |
 | `Connection timed out` | IP 不对或网络不通 | 确认 IP 和 OLED 一致，ping 一下 |
 | `Permission denied` | 用户名或密码错 | 确认用 Web 界面的账号密码，注意大小写 |
 | 登录后立刻断开 | 已有其他 SSH 会话 | 关掉原会话或等超时 |

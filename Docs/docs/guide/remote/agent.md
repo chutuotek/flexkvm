@@ -160,7 +160,7 @@ export FlexKVM_TOKEN="sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 ## HTTPS 证书提示
 
-设备默认使用自签名 HTTPS 证书。客户端报 TLS / `self-signed certificate` 错误时，在客户端所在机器导入设备 CA 证书并设为信任即可（设置 → 系统 → HTTPS 配置 → 下载 CA 证书），详见 [HTTPS 证书](../security/https.md)。临时调试可用 `curl -k` 跳过校验（flexkvm-skill 的脚本已内置）。
+设备默认使用自签名 HTTPS 证书。客户端报 TLS / `self-signed certificate` 错误时，在客户端所在机器导入设备 CA 证书并设为信任即可（设置 → 安全 → HTTPS 配置 → 下载 CA 证书），详见 [HTTPS 证书](../security/https.md)。临时调试可用 `curl -k` 跳过校验（flexkvm-skill 的脚本已内置）。
 
 ## 与用户协同
 

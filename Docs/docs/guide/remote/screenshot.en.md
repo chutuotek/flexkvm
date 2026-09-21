@@ -20,7 +20,7 @@ e.g., `flexkvm-screenshot-2026-05-12T21-44-20.png`
 
 ## Format & Quality
 
-Adjust in Settings → System → **Screenshot Settings**.
+Adjust in Settings → Capture → **Screenshot Settings**.
 
 ![Screenshot settings](./images/screenshot/setting_screenshot.webp)
 
