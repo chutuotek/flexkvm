@@ -14,7 +14,7 @@ FlexKVM encrypts access via HTTPS, supporting three modes: self-signed certifica
 | custom | Uses the imported custom certificate |
 | user-ca | Uses the certificate issued by the imported user sub-CA |
 
-The dropdown only lists available modes — custom certificate and user sub-CA must be imported below first, so before importing the dropdown only has `self-signed`. Below the selector, the remaining validity period of the current certificate is shown (e.g. `348天过期`).
+The dropdown only lists available modes — custom certificate and user sub-CA must be imported below first, so before importing the dropdown only has `self-signed`. Below the selector, the remaining validity period of the current certificate is shown (e.g. `348 days remaining`).
 
 ### Self-Signed Certificate
 
