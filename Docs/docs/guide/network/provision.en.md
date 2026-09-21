@@ -82,7 +82,7 @@ See [AP Hotspot](./ap.md).
 
 ## Save & Exit
 
-When all networks are configured, tap **Save** in the top-right corner:
+When all networks are configured, tap **Save**:
 
 1. AP configuration takes effect
 2. Device exits provisioning mode and restarts networking

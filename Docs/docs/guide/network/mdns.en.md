@@ -29,7 +29,7 @@ On the OLED home screen, **press button A twice** to enter the system info scree
 
 ## Access via mDNS
 
-Connect your computer / phone to the **same network** as FlexKVM (wired or Wi-Fi), then replace `flexkvm-xxxx` with the device's actual hostname and use the `.local` domain:
+Connect your computer / phone to the **same network** as FlexKVM (wired or WiFi), then replace `flexkvm-xxxx` with the device's actual hostname and use the `.local` domain:
 
 | Service | How to access |
 |---------|---------------|

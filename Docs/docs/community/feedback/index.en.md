@@ -8,7 +8,7 @@ A good bug report helps us quickly locate and fix issues.
 
 When reporting bugs via email, please provide the following information:
 
-- **FlexKVM system version**: Log into FlexKVM Web interface, click the Settings icon → "About" to view
+- **FlexKVM system version**: Log into FlexKVM Web interface, click **Settings** in the menu bar → **About** to view
 - **OS version**: Your computer's operating system version
 - **Browser version**: The browser version you use to access FlexKVM
 - **Time of occurrence**: When did the issue occur? This helps developers narrow it down
@@ -48,7 +48,7 @@ No need for extensive detail — feel free to share any ideas. This includes but
 - Experiences with similar products on other platforms — what features worked well, what didn't
 - Your vision of an ideal IP-KVM device
 
-`Your suggestions may be implemented in future releases — stay tuned!`
+**Your suggestions may be implemented in future releases — stay tuned!**
 
 ## Feedback Channels
 

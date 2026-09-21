@@ -320,7 +320,7 @@ The phone will automatically open the browser captive portal. Tap "Sign in to Wi
 
 Once on the provisioning page, nearby WiFi networks are scanned automatically, and re-scanned every 40 seconds.
 
-> To re-scan immediately, tap the refresh button (🔄 icon) at the top right of the WiFi card.
+> To re-scan immediately, tap the refresh icon (🔄) on the WiFi card.
 
 On the **WiFi** card:
 
@@ -338,7 +338,7 @@ After connecting successfully, the WiFi card shows "Connected."
 
 #### 4. Exit Provisioning
 
-Tap the **Save** button in the top-right corner. The device exits provisioning mode and restarts networking.
+Tap **Save**. The device exits provisioning mode and restarts networking.
 
 ![Exit provisioning page](./images/web_save.webp)
 
