@@ -6,7 +6,7 @@ After powering on, the OLED cycles through: boot logo → device status screen �
 
 ## OLED Settings
 
-Go to Settings → System → OLED Display Settings.
+Go to Settings → System → OLED Settings.
 
 ![OLED Settings](./images/oled/setting_oled.webp)
 
@@ -200,7 +200,7 @@ When entering provisioning mode (long-press Button A), the OLED shows the hotspo
 
 ![Factory reset screen](../maintenance/images/oled_reset.webp)
 
-After holding the factory reset button for 1 second, the OLED displays a factory reset countdown. Release the button when the countdown reaches 0 to restore factory settings. See [Factory Reset](../maintenance/factory-reset.md).
+After holding the factory reset button for 15 seconds, the OLED displays a factory reset countdown. Release the button when the countdown reaches 0 to restore factory settings. See [Factory Reset](../maintenance/factory-reset.md).
 
 ---
 

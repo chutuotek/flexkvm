@@ -6,7 +6,7 @@ FlexKVM 正面有一块 128×64 单色 OLED 屏，显示设备状态、网络信
 
 ## OLED 设置
 
-进设置 → 系统 → OLED 屏幕设置。
+进设置 → 系统 → OLED设置。
 
 ![OLED 设置](./images/oled/setting_oled.webp)
 
@@ -54,7 +54,7 @@ FlexKVM 正面有一块 128×64 单色 OLED 屏，显示设备状态、网络信
 
 > **E** = DHCP 模式，正常显示；<strong><u>E</u></strong> = 静态 IP 模式，反色显示（黑底白字）。直连模式下显示 **S**。
 
-如果获取ip超过 10 秒依然显示 Loading，需要检查一下当前的网络支不支持动态获取 IP。
+如果获取 IP 超过 10 秒依然显示 Loading，需要检查一下当前的网络支不支持动态获取 IP。
 
 **系统版本**（底部一行）：如 `v0.1.2` 或 `v0.1.3-Beta.1`。
 
@@ -200,7 +200,7 @@ FlexKVM 正面有一块 128×64 单色 OLED 屏，显示设备状态、网络信
 
 ![恢复出厂设置界面](../maintenance/images/oled_reset.webp)
 
-长按恢复出厂按键 1s 后，oled上会显示恢复出厂设置倒计时，倒计时到0之后释放按键，设备会恢复出厂。详见[恢复出厂设置](../maintenance/factory-reset.md)。
+长按恢复出厂按键 15 秒后，OLED 显示恢复出厂设置倒计时，倒计时归零后释放按键，设备恢复出厂。详见[恢复出厂设置](../maintenance/factory-reset.md)。
 
 ---
 
