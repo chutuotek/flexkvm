@@ -2,7 +2,7 @@
 
 System logs are for vendor troubleshooting of system anomalies. You don't need them for daily use — only when something goes wrong.
 
-Go to Settings → Maintenance.
+> Where: Settings → Maintenance → System Log
 
 ![Maintenance interface](./images/setting_log.webp)
 

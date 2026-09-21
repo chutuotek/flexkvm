@@ -2,9 +2,11 @@
 
 Device feeling slow or display laggy? Try a reboot first — it fixes most transient issues.
 
+> Where: Settings → Maintenance → Device → Reboot Device
+
 ## Software Reboot
 
-Go to Settings → Maintenance → click the "Reboot Device" card → confirm.
+Click the "Reboot Device" card → confirm.
 
 ![Reboot interface](images/setting_reset.webp)
 

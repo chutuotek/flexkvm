@@ -2,6 +2,8 @@
 
 Restore FlexKVM to its factory state.
 
+> Where: Settings → Maintenance → Device → Restore Factory Mode
+
 **Will clear**: Accounts, passwords, 2FA keys, WiFi configuration, custom settings.
 
 **Will not clear**: Audit logs (preserved in both hardware and software resets), firmware version (not downgraded).
@@ -20,7 +22,7 @@ Use when you can't access the Web interface. Use a SIM ejector pin to hold the *
 
 ## Software Reset
 
-Go to Settings → Maintenance → click the "Restore Factory Mode" card → enter password to confirm → device auto-reboots.
+Click the "Restore Factory Mode" card → enter password to confirm → device auto-reboots.
 
 ![Factory reset interface](images/setting_reset.webp)
 

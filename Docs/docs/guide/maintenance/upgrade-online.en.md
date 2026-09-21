@@ -2,6 +2,8 @@
 
 If the device has internet access, you can upgrade firmware online. New versions bring security fixes and new features — check monthly; it takes about 5 minutes.
 
+> Where: Settings → Upgrade → Online Upgrade
+
 ---
 
 ## Before You Upgrade
@@ -13,8 +15,6 @@ If the device has internet access, you can upgrade firmware online. New versions
 | Device idle | The device will reboot during upgrade — don't perform other operations. |
 
 ---
-
-Go to Web interface → Settings → **Upgrade**.
 
 ![Upgrade interface](./images/setting_ota_online.webp)
 

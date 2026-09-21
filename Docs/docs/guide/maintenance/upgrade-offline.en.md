@@ -2,7 +2,7 @@
 
 You can upgrade firmware even without internet access — download the firmware package on your computer and upload that local file straight to the device; no TF card involved.
 
-Go to Settings → Upgrade.
+> Where: Settings → Upgrade → Offline Upgrade
 
 ![Upgrade interface](./images/setting_ota_offline.webp)
 
@@ -20,7 +20,7 @@ On the releases page, find the target version and download the `.tar` firmware p
 
 ## Upload Image
 
-Go to Settings → Upgrade → click **Upload Upgrade Package** → select the `.tar` firmware package on your computer.
+Click **Upload Upgrade Package** → select the `.tar` firmware package on your computer.
 
 ![Upload Upgrade Package progress](./images/setting_ota_offline_upload.webp)
 

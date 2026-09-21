@@ -2,7 +2,7 @@
 
 Apps installed on FlexKVM (such as Tailscale) are updated separately — [Firmware Upgrade](upgrade-online.md) updates the system, App Update updates apps. The two don't affect each other.
 
-Go to Web interface → Settings → **App** → App Update.
+> Where: Settings → App → App Updates
 
 ## Download Source
 
