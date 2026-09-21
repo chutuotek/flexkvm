@@ -24,10 +24,10 @@ Click "Custom Device Identity":
 |-------|--------|-------------|
 | Vendor ID | 4 hex digits (`0x046d`) | USB Vendor ID |
 | Product ID | 4 hex digits (`0xc52b`) | USB Product ID |
-| Manufacturer | ASCII only, max 64 chars | Manufacturer name |
-| Product | ASCII only, max 64 chars | Product name |
+| Manufacturer | English, max 64 characters | Vendor name |
+| Product Name | English, max 64 characters | Product name |
 
-> All fields required. VID/PID must start with `0x`. After submitting, a **custom** option appears in the list — select it to apply.
+> All fields are required. VID/PID must start with `0x`; Manufacturer and Product Name allow only English letters, numbers, spaces, hyphens and underscores. After submitting, a **custom** option appears in the list — select it to apply.
 
 ## USB Device Functions
 
