@@ -2,7 +2,7 @@
 
 Adjust FlexKVM's interface theme, language, and accent color.
 
-Go to Settings and find the corresponding setting sections.
+> Where: Settings → Appearance
 
 ## Language
 

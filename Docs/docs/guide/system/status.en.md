@@ -2,7 +2,7 @@
 
 Watch the device run in real time — temperature, CPU, memory, network rate, and uptime — with history curves by date and CSV export. Use it to diagnose slowdowns, network bottlenecks, or unexpected reboots.
 
-Go to Settings → **Status**.
+> Where: Settings → Status
 
 ![Status monitor](./images/status/setting_status.webp)
 

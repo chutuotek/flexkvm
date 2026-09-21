@@ -2,7 +2,7 @@
 
 Set your timezone — the system time auto-syncs via NTP. When the device clock deviates significantly from the current time, a calibration prompt appears after connecting.
 
-Go to Settings → System → Time.
+> Where: Settings → System → Time
 
 ![Time settings](./images/time/setting_time.webp)
 
@@ -25,7 +25,7 @@ The device RTC can drift or lose time after power loss or prolonged offline use,
 
 ## NTP Time Sources
 
-The system auto-syncs time with the built-in NTP server by default. Custom time sources can be added in Time Settings:
+The system auto-syncs time with the built-in NTP server by default. Custom time sources can be added on the Time & Date page:
 
 - Enter a hostname or IP, e.g. `ntp.aliyun.com`
 - Up to 5 sources; duplicates are flagged

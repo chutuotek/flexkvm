@@ -2,7 +2,7 @@
 
 查看设备信息、固件版本和社区资源。
 
-进设置 → 关于。
+> 入口：设置 → 关于
 
 ![关于](./images/about/setting_about.webp)
 

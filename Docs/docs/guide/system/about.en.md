@@ -2,7 +2,7 @@
 
 View device information, firmware version, and community resources.
 
-Go to Settings → About.
+> Where: Settings → About
 
 ![About](./images/about/setting_about.webp)
 
