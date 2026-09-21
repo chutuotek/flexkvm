@@ -57,7 +57,7 @@ In addition to the included items, you'll need to provide:
 | Item | Purpose | Notes |
 |------|---------|-------|
 | USB power adapter (5V/1A or higher) | Independent power supply | **Recommended** for best stability |
-| Ethernet cable | Wired network | Not needed if using hotspot provisioning |
+| Ethernet cable | Wired network | Not needed if using provisioning mode |
 | Powered-on target host (PC/server) | The device to be managed | Must have HDMI output and USB port |
 | HDMI adapter | Adapt non-standard HDMI ports | **Required** if the target host uses Mini/Micro HDMI — you must provide your own adapter or converter cable |
 | Control device (computer or phone with internet) | Configure device, remotely access | Windows / macOS / Linux supported. Chrome / Edge recommended |
@@ -66,7 +66,7 @@ In addition to the included items, you'll need to provide:
 >
 > Chrome / Edge are recommended. Other browsers may have compatibility issues (e.g., display problems).
 >
-> FlexKVM and your control device (computer/phone) must be on the **same local network** (connected to the same router) to communicate. Verify your network environment before proceeding.
+> **When both the control device and FlexKVM are connected to a router**, they must be on the **same local network** to communicate. Without a router, use [Direct Mode](#direct-mode) or [AP Hotspot](#ap-hotspot) instead. Verify your network environment before proceeding.
 
 ---
 
@@ -80,7 +80,7 @@ Here are the interfaces you'll use during quick start. Just know where they are 
 |:--:|------|-------------|
 | [1] | 🔴 Warning LED | Reflects network and system status — see the Warning LED quick-reference table |
 | [2] | 🟢 Status LED | Reflects device connection status — the primary indicator of whether the device is working properly |
-| [3] | Button A | Hold 1–3s to enter hotspot provisioning mode; hold >3s to return to home |
+| [3] | Button A | Hold 1–3s to enter provisioning mode; hold >3s to return to home |
 | [5] | HDMI input | Connect to target host's HDMI output |
 | [7] | USB power switch | Controls whether USB port draws power from target host |
 | [8] | USB port | Connect to target host for keyboard/mouse signals |
@@ -95,7 +95,7 @@ Here are the interfaces you'll use during quick start. Just know where they are 
 | [16] | Ethernet port | Connect to router or switch |
 | [17] | WiFi antenna | Pre-installed at factory — no user action needed |
 
-> Numbers 4, 6, 10–13 (Button B, ATX control, TF card slot, factory reset, reset button) are not needed during quick start. See [Interface Reference](../guide/product/interface.md) for details.
+> Numbers 4, 6, 10–13 are **Button B**, ATX control, TF card slot, factory reset button, reset button, and expansion port. **Button B** is used in the "Direct Mode" and "AP Hotspot" steps below; the remaining interfaces need no action at this stage. See [Interface Overview](../guide/product/interface.md) for details.
 
 ### Status LED Quick Reference
 
@@ -121,8 +121,8 @@ Here are the interfaces you'll use during quick start. Just know where they are 
 | State | Frequency | Meaning | What to do |
 |-------|-----------|---------|------------|
 | Off | — | Network connected, everything normal | ✅ All good, no action needed |
-| Slow blink | 1/s | **Network not connected** or **in hotspot provisioning mode** | ✅ Normal — will turn off after network is configured |
-| Fast blink | 4/s | Urgent event (OTA upgrade, factory reset, etc.) | ⚠️ You won't see this during quick start |
+| Slow blink | 1/s | **Network not connected** or **in provisioning mode** | ✅ Normal — will turn off after network is configured |
+| Fast blink | 4/s | Urgent event (firmware upgrade, factory reset, etc.) | ⚠️ You won't see this during quick start |
 | Solid on | — | Critical system error | ❌ Reboot the device; if it persists, contact support |
 
 > During quick start, only **slow blink** and **off** matter.
@@ -222,8 +222,8 @@ Determine whether a router is available:
 
 | Environment | Condition | Options |
 |:---:|------|------|
-| **With router** | Router / switch available | Wired network, Hotspot provisioning |
-| **Without router** | No router | Direct connect, AP hotspot |
+| **With router** | Router / switch available | Wired network, Provisioning mode |
+| **Without router** | No router | Direct Mode, AP Hotspot |
 
 #### With Router
 
@@ -232,7 +232,7 @@ FlexKVM and your control device connect to the **same router** and communicate o
 | Method | When to use | How | Difficulty |
 |--------|-------------|-----|:--:|
 | Wired network | Ethernet available | Plug cable into router | ⭐ |
-| Hotspot provisioning | No Ethernet | Press Button A, configure WiFi | ⭐⭐ |
+| Provisioning mode | No Ethernet | Press Button A, configure WiFi | ⭐⭐ |
 
 #### Without Router
 
@@ -240,7 +240,7 @@ FlexKVM provides its own network — connect your computer or phone directly.
 
 | Method | When to use | How | Difficulty |
 |--------|-------------|-----|:--:|
-| Direct connect | PC has Ethernet port | Press Button B, cable to PC | ⭐ |
+| Direct Mode | PC has Ethernet port | Press Button B, cable to PC | ⭐ |
 | AP hotspot | Phone / laptop | Press Button B, connect to FlexKVM WiFi | ⭐ |
 
 ---
@@ -265,19 +265,19 @@ After connection:
 >
 > 3. OLED shows `E Loading...` for over 20s → verify router DHCP is enabled, verify router IP pool is not exhausted
 >
-> 4. All above OK but still no IP → try [Hotspot Provisioning](#hotspot-provisioning) to connect via WiFi
+> 4. All above OK but still no IP → try [Provisioning Mode](#provisioning-mode) to connect via WiFi
 >
 > 5. No WiFi available → check router DHCP settings, or see [Network Settings](../guide/network/eth.md) to configure a static IP
 
 ---
 
-### Hotspot Provisioning
+### Provisioning Mode
 
 Use this when no Ethernet cable is available and you need WiFi connectivity.
 
 #### 1. Enter Provisioning Mode
 
-Long-press **Button A [3]** for 1–3 seconds. Release when the OLED shows the AP icon :material-access-point: to enter hotspot provisioning mode.
+Long-press **Button A [3]** for 1–3 seconds. Release when the OLED shows the AP icon :material-access-point: to enter provisioning mode.
 
 ![Provisioning mode](./images/oled_provision_switch.webp)
 
@@ -318,9 +318,9 @@ The phone will automatically open the browser captive portal. Tap "Sign in to Wi
 
 #### 3. Connect to WiFi
 
-Once on the provisioning page, nearby WiFi networks are automatically scanned.
+Once on the provisioning page, nearby WiFi networks are scanned automatically, and re-scanned every 40 seconds.
 
-> Tap the refresh button (🔄 icon) on the WiFi card to re-scan.
+> To re-scan immediately, tap the refresh button (🔄 icon) at the top right of the WiFi card.
 
 On the **WiFi** card:
 
@@ -338,13 +338,9 @@ After connecting successfully, the WiFi card shows "Connected."
 
 #### 4. Exit Provisioning
 
-Tap the **Save** button in the top-right corner. The device will automatically exit provisioning mode and restart networking.
+Tap the **Save** button in the top-right corner. The device exits provisioning mode and restarts networking.
 
 ![Exit provisioning page](./images/web_save.webp)
-
-After confirming, the device exits provisioning mode and restarts its network.
-
-The device has obtained an IP address, and the 🔴 Warning LED has turned off.
 
 ![Device showing WiFi IP](./images/oled_wifi_connected.webp)
 
@@ -352,13 +348,13 @@ The device has obtained an IP address, and the 🔴 Warning LED has turned off.
 
 ---
 
-### Direct Connect
+### Direct Mode
 
 Connect FlexKVM directly to your computer with a single Ethernet cable — no router needed.
 
-**1. Enable Direct Connect Mode**
+**1. Enable Direct Mode**
 
-Long-press **Button B [3]** for 1–3 seconds and release when the OLED switches to the direct connect icon.
+Long-press **Button B [4]** for 1–3 seconds and release when the OLED switches to the direct connect icon.
 
 ![Direct connect OLED](../guide/network/images/eth/eth_server.webp)
 
@@ -384,11 +380,11 @@ Open `https://192.168.100.1` in your computer's browser.
 > - IP is not in 192.168.100.x → the computer may still be connected to another network (e.g., WiFi); turn off WiFi and keep only the wired connection
 > - Can ping but page won't open → clear browser cache, or try incognito mode
 
-**4. Exit Direct Connect Mode**
+**4. Exit Direct Mode**
 
-Long-press **Button B [3]** for 1–3 seconds again and release when the OLED switches back to the Ethernet icon to restore normal Ethernet mode.
+Long-press **Button B [4]** for 1–3 seconds again and release when the OLED switches back to the Ethernet icon to restore normal Ethernet mode.
 
-> For detailed configuration (changing subnet, Web UI toggle, etc.), see [Ethernet Direct Connect Mode](../guide/network/eth-server.md).
+> For detailed configuration (changing subnet, Web UI toggle, etc.), see [Direct Mode](../guide/network/eth-server.md).
 
 ---
 
@@ -398,7 +394,7 @@ FlexKVM creates its own WiFi hotspot — connect your phone or laptop directly, 
 
 **1. Enable the Hotspot**
 
-Long-press **Button B [3]** for 3–5 seconds and release when the OLED shows the hotspot icon.
+Long-press **Button B [4]** for 3–5 seconds and release when the OLED shows the hotspot icon.
 
 > Button B long-press has three stages: 1–3s first flashes the direct connect/Ethernet icons (direct connect toggle) — ignore it and keep holding. Release when the hotspot icon appears. Beyond 5s returns to the home screen.
 
@@ -420,13 +416,13 @@ Open `https://192.168.10.1` in your browser.
 
 > While connected to the FlexKVM hotspot, your phone/computer will lose internet access. Remember to turn off the hotspot when done.
 
-**4. Exit Hotspot Mode**
+**4. Exit AP Hotspot**
 
-Long-press **Button B [3]** for 3–5 seconds again and release when the OLED shows the WiFi icon to turn off the hotspot and restore WiFi mode.
+Long-press **Button B [4]** for 3–5 seconds again and release when the OLED shows the WiFi icon to turn off the hotspot and restore WiFi mode.
 
 > You can also disable it in Web UI → Settings → **Network** → AP Network card.
 >
-> For detailed configuration (SSID, password, channel, etc.), see [AP Hotspot Mode](../guide/network/ap.md).
+> For detailed configuration (SSID, password, channel, etc.), see [AP Hotspot](../guide/network/ap.md).
 
 ---
 
@@ -464,7 +460,7 @@ Long-press **Button B [3]** for 3–5 seconds again and release when the OLED sh
 >
 > 3. Try pinging the IP from your control device to verify network reachability
 >
-> 4. If using hotspot provisioning, make sure your phone/computer is still connected to the FlexKVM hotspot and hasn't automatically switched back to another WiFi
+> 4. If using provisioning mode, make sure your phone/computer is still connected to the FlexKVM hotspot and hasn't automatically switched back to another WiFi
 >
 > 5. Try a private/incognito browser window to rule out cache or HSTS issues
 
@@ -512,8 +508,9 @@ After initial setup, daily use is simple: enter `https://<device-IP>` in your br
 
 After completing basic setup, here's the recommended path:
 
-1. **Get to know all interfaces** → [Interface Reference](../guide/product/interface.md) — understand the full capabilities before diving deeper
-2. **Explore by scenario** → [Remote OS Install](../guide/scenarios/reinstall-os.md) · [Remote Access](../guide/scenarios/remote-access.md) · [Security Hardening](../guide/scenarios/security.md)
-3. **Deep dive into features** → [User Guide](../guide/index.md)
-4. **Having trouble?** → [Help & Diagnostics](../support/index.md)
-5. **Join the community** → [Community & Contact](../community/index.md)
+1. **Get to know the interface** → [Interface Overview](../guide/overview.md) (all 12 menu bar buttons and 12 settings tabs in one pass)
+2. **Get to know all interfaces** → [Interface Reference](../guide/product/interface.md) — understand the full capabilities before diving deeper
+3. **Explore by scenario** → [Remote OS Install](../guide/scenarios/reinstall-os.md) · [Remote Access](../guide/scenarios/remote-access.md) · [Security Hardening](../guide/scenarios/security.md)
+4. **Deep dive into features** → [User Guide](../guide/index.md)
+5. **Having trouble?** → [Help & Diagnostics](../support/index.md)
+6. **Join the community** → [Community & Contact](../community/index.md)
