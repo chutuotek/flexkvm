@@ -4,9 +4,7 @@
 
 进设置 → **状态**。
 
-!!! note "截图占位"
-
-    待补充：设置 → 状态页面截图（`images/status/setting_status.webp`）。
+![状态监控](./images/status/setting_status.webp)
 
 ## 监控指标
 

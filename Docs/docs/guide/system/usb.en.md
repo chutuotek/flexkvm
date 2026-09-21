@@ -2,7 +2,7 @@
 
 FlexKVM emulates a keyboard, mouse, and storage device via USB. You can customize the device identity — what name and vendor info appears in the target host's Device Manager.
 
-Go to Settings → System → USB Configuration.
+Go to Settings → System → USB Config.
 
 ![USB configuration](./images/usb/setting_usb.webp)
 

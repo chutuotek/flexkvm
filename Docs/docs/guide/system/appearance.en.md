@@ -8,7 +8,7 @@ Go to Settings and find the corresponding setting sections.
 
 ![Language settings](./images/theme/setting_language.webp)
 
-Use the dropdown to switch between Simplified Chinese and English.
+Use the dropdown to switch between English and 简体中文.
 
 ## Theme
 
@@ -16,13 +16,13 @@ Use the dropdown to switch between Simplified Chinese and English.
 
 | Theme | Description |
 |-------|-------------|
-| Dark | Dark background, light text — good for low light |
 | Light | Light background, dark text — good for bright light |
+| Dark | Dark background, light text — good for low light |
 | Auto (default) | Follows your system setting automatically |
 
 ## Accent Color
 
-The accent color is applied to buttons, links, selections, and other elements. The default is blue. Click a color swatch to switch to: Blue, Cyan, Light Green, Amber, Orange, Red, Magenta, Purple, or Gray.
+The accent color is applied to buttons, links, selections, and other elements. The default is blue. Click a color swatch to switch to: Blue, Teal, Green, Gold, Orange, Red, Pink, Purple, or Gray.
 
 ---
 

@@ -2,7 +2,7 @@
 
 Set your timezone — the system time auto-syncs via NTP. When the device clock deviates significantly from the current time, a calibration prompt appears after connecting.
 
-Go to Settings → System → Time Settings.
+Go to Settings → System → Time.
 
 ![Time settings](./images/time/setting_time.webp)
 

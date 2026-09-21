@@ -4,9 +4,7 @@ Watch the device run in real time — temperature, CPU, memory, network rate, an
 
 Go to Settings → **Status**.
 
-!!! note "Screenshot placeholder"
-
-    TODO: screenshot of Settings → Status (`images/status/setting_status.webp`).
+![Status monitor](./images/status/setting_status.webp)
 
 ## Metrics
 
