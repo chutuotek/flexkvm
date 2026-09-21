@@ -38,7 +38,7 @@ Yes. Your phone temporarily disconnects from the internet while connected to the
 
 Check in order:
 
-1. **Same LAN**: the accessing device and FlexKVM must be on the same router (or directly connected to the hotspot)
+1. **Same LAN**: your control device and FlexKVM must be on the same router (or directly connected to the hotspot)
 2. **Windows** needs [Apple Bonjour](https://support.apple.com/downloads/bonjour-for-windows) to resolve `.local` domains (macOS / iOS / Linux / Android support it natively)
 3. **VPN / proxy running**: proxies that take over DNS can break `.local` resolution — turn off the proxy and retry, or add `*.local` to the direct-connect rules
 
@@ -46,7 +46,7 @@ See [mDNS Discovery](../../guide/network/mdns.en.md) for details.
 
 ### AI clients (Claude etc.) report TLS / certificate errors when connecting?
 
-The device uses a self-signed HTTPS certificate by default. On the machine running the AI client, import and trust the device CA certificate (Settings → Security → HTTPS Configuration → Download CA Certificate). See [HTTPS Certificate](../../guide/security/https.en.md) for the import steps and [AI Agent Control](../../guide/remote/agent.en.md) for Agent setup.
+The device uses a self-signed HTTPS certificate by default. On the machine running the AI client, import and trust the device CA certificate (Settings → Security → HTTPS → Download CA Certificate). See [HTTPS Certificate](../../guide/security/https.en.md) for the import steps and [AI Agent Control](../../guide/remote/agent.en.md) for Agent setup.
 
 ---
 
@@ -144,4 +144,4 @@ FlexKVM uses a self-signed SSL certificate. Your browser cannot verify it, which
 
 Still have questions? Try searching at the top of the page, or go to [Troubleshooting](../troubleshooting/index.md) for symptom-based diagnostics.
 
-To submit a bug or suggestion, see [Feedback & Suggestions](../../guide/scenarios/feedback.md).
+To submit a bug or suggestion, see [Feedback](../../guide/scenarios/feedback.md).

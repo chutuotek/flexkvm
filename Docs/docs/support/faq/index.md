@@ -20,11 +20,11 @@ IPMI 等企业带外方案需要主板原生支持，价格昂贵、配置复杂
 
 ### WiFi 和有线网络可以同时使用吗？会冲突吗？
 
-可以同时使用，双网同时在线，任一网络发生故障，不影响控制。建议将两者配置在不同网段，例如以太网用 `192.168.1.x`，WiFi 用 `192.168.2.x`。
+可以同时使用，双网同时在线，任一网络发生故障，不影响控制。建议将两者配置在不同网段，例如有线网络用 `192.168.1.x`，WiFi 用 `192.168.2.x`。
 
 ### 如何查看 FlexKVM 的 IP 地址？
 
-在设备的 OLED 屏幕上看。以太网 IP 显示为 `Exxx.xxx.xxx.xxx`，WiFi IP 显示为 `Wxxx.xxx.xxx.xxx`，热点 IP 显示为 `Axxx.xxx.xxx.xxx`，直连模式 IP 显示为 `Sxxx.xxx.xxx.xxx`。详见 [OLED 屏幕](../../guide/interaction/oled.md)。
+在设备的 OLED 屏幕上看。有线网络 IP 显示为 `Exxx.xxx.xxx.xxx`，WiFi IP 显示为 `Wxxx.xxx.xxx.xxx`，热点 IP 显示为 `Axxx.xxx.xxx.xxx`，直连模式 IP 显示为 `Sxxx.xxx.xxx.xxx`。详见 [OLED 屏幕](../../guide/interaction/oled.md)。
 
 ### 什么是配网模式？什么时候需要使用？
 
@@ -38,7 +38,7 @@ IPMI 等企业带外方案需要主板原生支持，价格昂贵、配置复杂
 
 按顺序检查：
 
-1. **同一局域网**：访问设备与 FlexKVM 要连同一个路由器（或直连热点）
+1. **同一局域网**：控制端与 FlexKVM 要连同一个路由器（或直连热点）
 2. **Windows** 需安装 [Apple Bonjour](https://support.apple.com/downloads/bonjour-for-windows) 才能解析 `.local` 域名（macOS / iOS / Linux / Android 原生支持）
 3. **开了 VPN / 代理（梯子）**：代理接管 DNS 后 `.local` 可能解析失败，先关闭代理再试，或把 `*.local` 设为直连
 
@@ -46,7 +46,7 @@ IPMI 等企业带外方案需要主板原生支持，价格昂贵、配置复杂
 
 ### AI 客户端（Claude 等）连接设备时报 TLS / 证书错误？
 
-设备默认使用自签名 HTTPS 证书。在运行 AI 客户端的电脑上，把设备 CA 证书导入系统信任（设置 → 安全 → HTTPS 配置 → 下载 CA 证书），导入方法见 [HTTPS 证书](../../guide/security/https.md)。Agent 配置详见 [AI Agent 控制](../../guide/remote/agent.md)。
+设备默认使用自签名 HTTPS 证书。在运行 AI 客户端的电脑上，把设备 CA 证书导入系统信任（设置 → 安全 → HTTPS → 下载 CA 证书），导入方法见 [HTTPS 证书](../../guide/security/https.md)。Agent 配置详见 [AI Agent 控制](../../guide/remote/agent.md)。
 
 ---
 
@@ -66,15 +66,15 @@ IPMI 等企业带外方案需要主板原生支持，价格昂贵、配置复杂
 
 ### 同时开启音频或虚拟光驱会导致 USB 断开？
 
-开启或关闭音频、切换 USB 设备标识时，USB 会短暂断开并重新连接，被控主机上的鼠标、键盘和磁盘挂载会短暂失效后恢复。这是正常现象，系统安装过程中请勿操作音频开关。
+开启或关闭音频、切换 USB 设备标识时，USB 会短暂断开并重新连接，被控设备上的鼠标、键盘和磁盘挂载会短暂失效后恢复。这是正常现象，系统安装过程中请勿操作音频开关。
 
 ---
 
 ## 电源与硬件
 
-### 目标主机需要安装软件或驱动吗？
+### 被控设备需要安装软件或驱动吗？
 
-不需要。FlexKVM 对目标主机来说就是一个标准的 USB 键盘、鼠标和 U 盘，即插即用，兼容所有主流操作系统。
+不需要。FlexKVM 对被控设备来说就是一个标准的 USB 键盘、鼠标和 U 盘，即插即用，兼容所有主流操作系统。
 
 ### FlexKVM 支持哪些操作系统？
 
@@ -98,7 +98,7 @@ FlexKVM 对被控设备**完全透明**——它模拟标准 USB 键盘鼠标和
 
 ### 可以同时控制多台设备吗？
 
-一台 FlexKVM 管理一台目标主机。管理多台设备时，每台主机配备一台 FlexKVM，通过同一 Tailscale 网络分别访问。
+一台 FlexKVM 管理一台被控设备。管理多台设备时，每台被控设备配备一台 FlexKVM，通过同一 Tailscale 网络分别访问。
 
 ---
 
@@ -110,7 +110,7 @@ FlexKVM 对被控设备**完全透明**——它模拟标准 USB 键盘鼠标和
 
 ### 如何远程重装操作系统？
 
-通过 FlexKVM 的虚拟光驱功能，将系统 ISO 镜像挂载为 USB 光驱，被控主机从光驱启动即可安装。详细步骤参考 [远程重装系统](../../guide/scenarios/reinstall-os.md)。
+通过 FlexKVM 的虚拟光驱功能，将系统 ISO 镜像挂载为 USB 光驱，被控设备从光驱启动即可安装。详细步骤参考 [远程重装系统](../../guide/scenarios/reinstall-os.md)。
 
 ---
 
@@ -118,7 +118,7 @@ FlexKVM 对被控设备**完全透明**——它模拟标准 USB 键盘鼠标和
 
 ### 忘记了登录密码怎么办？
 
-账户信息存储在设备本地，忘记密码后无法找回，需要通过恢复出厂设置重新创建。详见 [恢复出厂设置](../../guide/maintenance/factory-reset.md)。
+账号信息存储在设备本地，忘记密码后无法找回，需要通过恢复出厂设置重新创建。详见 [恢复出厂设置](../../guide/maintenance/factory-reset.md)。
 
 ### 如何开启两步验证（2FA）？
 
@@ -139,9 +139,9 @@ FlexKVM 使用自签名 SSL 证书，浏览器无法验证其合法性，属于�
 1. 确认控制端和 FlexKVM 连接的是**同一个路由器**
 2. 确认输入的 IP 地址与 OLED 显示的完全一致（注意 `https://` 前缀）
 3. 在控制端 `ping` 该 IP 地址，确认网络可达
-4. 如使用热点配网，确认手机/电脑仍连接在 FlexKVM 热点上，未自动切换回其他 WiFi
+4. 如使用配网模式，确认手机/电脑仍连接在 FlexKVM 热点上，未自动切换回其他 WiFi
 5. 尝试使用浏览器的无痕/隐私模式打开
 
 ---
 
-没有找到你的问题？试试在顶部搜索栏输入关键词，或前往 [故障排查](../troubleshooting/index.md) 按症状定位。如需提交 Bug 或建议，请参考 [问题反馈与建议](../../guide/scenarios/feedback.md)。
+没有找到你的问题？试试在顶部搜索栏输入关键词，或前往 [故障排查](../troubleshooting/index.md) 按症状定位。如需提交 Bug 或建议，请参考 [问题反馈](../../guide/scenarios/feedback.md)。
