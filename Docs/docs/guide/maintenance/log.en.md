@@ -26,9 +26,9 @@ Click download → choose directory → wait for progress bar to reach 100% and 
 
 ![Download progress](./images/maintenance_log_progress.webp)
 
-## WEB Logs
+## Web Log
 
-Click the "WEB Log" card → the current browser log auto-downloads to your browser's download directory. Filename: `flexkvm-web-xxxxxxxxx.log` (`xxxxxxxxx` is a timestamp). Intended for vendor debugging.
+Click the "Web Log" card → the current browser log auto-downloads to your browser's download directory. Filename: `flexkvm-web-xxxxxxxxx.log` (`xxxxxxxxx` is a timestamp). Intended for vendor debugging.
 
 ---
 

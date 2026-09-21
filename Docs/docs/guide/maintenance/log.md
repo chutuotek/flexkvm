@@ -26,9 +26,9 @@
 
 ![文件下载进度条](./images/maintenance_log_progress.webp)
 
-## WEB 日志
+## Web 日志
 
-点"WEB 日志"卡片 → 当前浏览器日志自动下载到浏览器下载目录。文件名：`flexkvm-web-xxxxxxxxx.log`（`xxxxxxxxx` 为时间戳）。给厂商调试用。
+点"Web 日志"卡片 → 当前浏览器日志自动下载到浏览器下载目录。文件名：`flexkvm-web-xxxxxxxxx.log`（`xxxxxxxxx` 为时间戳）。给厂商调试用。
 
 ---
 

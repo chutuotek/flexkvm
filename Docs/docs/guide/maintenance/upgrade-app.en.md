@@ -55,4 +55,4 @@ App update does **not require a device reboot**; a failed install automatically 
 
 ---
 
-[:octicons-arrow-left-24: Back to User Guide](../index.en.md)
+[:octicons-arrow-left-24: Back to User Guide](../index.md)

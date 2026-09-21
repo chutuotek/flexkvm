@@ -1,6 +1,6 @@
 # 离线升级
 
-设备没联网也能升级固件——在电脑上下载固件包放 TF 卡，插进设备后上传升级。
+设备没联网也能升级固件——在电脑上下载固件包，浏览器直接把本机文件上传到设备升级，不需要 TF 卡。
 
 进设置 → 升级。
 
@@ -12,7 +12,7 @@
 
 | 下载源 | 地址 | 适合 |
 |--------|------|------|
-| Gitcode | [gitcode.com/chutuotek/flexkvm/releases](https://gitcode.com/chutuotek/flexkvm/releases) | 默认源，国内用户速度更快 |
+| Gitcode | [gitcode.com/chutuotek/flexkvm/releases](https://gitcode.com/chutuotek/flexkvm/releases) | 国内用户速度更快 |
 | Gitee | [gitee.com/chutuotek/flexkvm/releases](https://gitee.com/chutuotek/flexkvm/releases) | 国内用户，速度更快 |
 | GitHub | [github.com/chutuotek/flexkvm/releases](https://github.com/chutuotek/flexkvm/releases) | 海外用户 |
 
@@ -20,9 +20,9 @@
 
 ## 上传镜像
 
-进设置 → 升级 → 点**上传** → 在 TF 卡中选中固件包。
+进设置 → 升级 → 点"上传升级包" → 选电脑上的 `.tar` 固件包。
 
-![上传进度条](./images/setting_ota_offline_upload.webp)
+![上传升级包进度](./images/setting_ota_offline_upload.webp)
 
 > **验证**：上传完成后校验通过，升级卡片从灰色变可用。
 

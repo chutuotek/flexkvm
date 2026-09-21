@@ -20,7 +20,7 @@ Use when you can't access the Web interface. Use a SIM ejector pin to hold the *
 
 ## Software Reset
 
-Go to Settings → Maintenance → click the "Factory Reset" card → enter password to confirm → device auto-reboots.
+Go to Settings → Maintenance → click the "Restore Factory Mode" card → enter password to confirm → device auto-reboots.
 
 ![Factory reset interface](images/setting_reset.webp)
 

@@ -1,6 +1,6 @@
 # Offline Upgrade
 
-You can upgrade firmware even without internet access — download the firmware package on a computer, put it on a TF card, insert it into the device, and upload for upgrade.
+You can upgrade firmware even without internet access — download the firmware package on your computer and upload that local file straight to the device; no TF card involved.
 
 Go to Settings → Upgrade.
 
@@ -12,7 +12,7 @@ Download the OTA image file (`.tar` format) from either source on your computer:
 
 | Source | URL | Best for |
 |--------|-----|----------|
-| Gitcode | [gitcode.com/chutuotek/flexkvm/releases](https://gitcode.com/chutuotek/flexkvm/releases) | Default source, faster for users in China |
+| Gitcode | [gitcode.com/chutuotek/flexkvm/releases](https://gitcode.com/chutuotek/flexkvm/releases) | Faster for users in China |
 | Gitee | [gitee.com/chutuotek/flexkvm/releases](https://gitee.com/chutuotek/flexkvm/releases) | Users in China, faster |
 | GitHub | [github.com/chutuotek/flexkvm/releases](https://github.com/chutuotek/flexkvm/releases) | International users |
 
@@ -20,9 +20,9 @@ On the releases page, find the target version and download the `.tar` firmware p
 
 ## Upload Image
 
-Go to Settings → Upgrade → click **Upload** → select the firmware package on the TF card.
+Go to Settings → Upgrade → click **Upload Upgrade Package** → select the `.tar` firmware package on your computer.
 
-![Upload progress](./images/setting_ota_offline_upload.webp)
+![Upload Upgrade Package progress](./images/setting_ota_offline_upload.webp)
 
 > **Verify**: After upload, verification passes and the upgrade card becomes active (no longer grayed out).
 

@@ -85,7 +85,7 @@ Upgrade success:
 
 | Symptom | Likely cause | Try this first |
 |---------|-------------|----------------|
-| Download failed | Unstable network | Switch download source (Gitcode ↔ Gitee), or use [Offline Upgrade](upgrade-offline.md) |
+| Download failed | Unstable network | Switch download source (GitHub / Gitee / GitCode), or use [Offline Upgrade](upgrade-offline.md) |
 | Verification failed | Corrupted download | Delete and re-download |
 | Stuck during upgrade | — | Be patient, don't power off. If unresponsive for 10+ minutes, then troubleshoot |
 | Won't boot after upgrade | Power loss during upgrade | See [Flash Firmware](flash.md) for recovery |
