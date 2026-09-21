@@ -78,7 +78,7 @@ Here are the interfaces you'll use during quick start. Just know where they are 
 
 | # | Name | Description |
 |:--:|------|-------------|
-| [1] | 🔴 Warning LED | Reflects network and system status — see quick-reference table below |
+| [1] | 🔴 Warning LED | Reflects network and system status — see the Warning LED quick-reference table |
 | [2] | 🟢 Status LED | Reflects device connection status — the primary indicator of whether the device is working properly |
 | [3] | Button A | Hold 1–3s to enter hotspot provisioning mode; hold >3s to return to home |
 | [5] | HDMI input | Connect to target host's HDMI output |
@@ -125,7 +125,7 @@ Here are the interfaces you'll use during quick start. Just know where they are 
 | Fast blink | 4/s | Urgent event (OTA upgrade, factory reset, etc.) | ⚠️ You won't see this during quick start |
 | Solid on | — | Critical system error | ❌ Reboot the device; if it persists, contact support |
 
-> During quick start, you'll only see **slow blink** and **off**.
+> During quick start, only **slow blink** and **off** matter.
 >
 > For detailed LED information, see [LED Indicator](../guide/interaction/led.md).
 
@@ -249,12 +249,10 @@ FlexKVM provides its own network — connect your computer or phone directly.
 
 Connect one end of the Ethernet cable to your router or switch, and the other end to FlexKVM's **Ethernet port [16]**.
 
-<!-- Screenshot to be added ![Connect network](./images/connect_network.webp) -->
-
 After connection:
 
 - Ethernet port lights turn on and blink
-- OLED status bar network icon activates and shows `waiting`
+- OLED status bar network icon activates and shows `E Loading...`
 - Usually obtains an IP address within **5 seconds**; OLED displays the IP (e.g., `E192.168.1.100`, prefix `E` = Ethernet; when accessing in a browser, enter only the numeric part, e.g. `192.168.1.100` — replace with the actual IP shown on OLED), 🔴 **Warning LED** turns off.
 
 ![Ethernet connected on OLED](./images/oled_eth_connected.webp)
@@ -265,7 +263,7 @@ After connection:
 >
 > 2. Ethernet light on but not blinking → check the router port, try a different port
 >
-> 3. OLED shows `waiting` for over 20s → verify router DHCP is enabled, verify router IP pool is not exhausted
+> 3. OLED shows `E Loading...` for over 20s → verify router DHCP is enabled, verify router IP pool is not exhausted
 >
 > 4. All above OK but still no IP → try [Hotspot Provisioning](#hotspot-provisioning) to connect via WiFi
 >
@@ -346,7 +344,7 @@ Tap the **Save** button in the top-right corner. The device will automatically e
 
 After confirming, the device exits provisioning mode and restarts its network.
 
-You can now see the device has obtained an IP address, and the 🔴 Warning LED has turned off.
+The device has obtained an IP address, and the 🔴 Warning LED has turned off.
 
 ![Device showing WiFi IP](./images/oled_wifi_connected.webp)
 
@@ -360,7 +358,7 @@ Connect FlexKVM directly to your computer with a single Ethernet cable — no ro
 
 **1. Enable Direct Connect Mode**
 
-Long-press **Button B [3]** for 1–3 seconds and release when the OLED shows the `ETH SERVER` icon.
+Long-press **Button B [3]** for 1–3 seconds and release when the OLED switches to the direct connect icon.
 
 ![Direct connect OLED](../guide/network/images/eth/eth_server.webp)
 
@@ -388,7 +386,7 @@ Open `https://192.168.100.1` in your computer's browser.
 
 **4. Exit Direct Connect Mode**
 
-Long-press **Button B [3]** for 1–3 seconds again and release when the OLED shows `ETH CLIENT` to restore normal Ethernet mode.
+Long-press **Button B [3]** for 1–3 seconds again and release when the OLED switches back to the Ethernet icon to restore normal Ethernet mode.
 
 > For detailed configuration (changing subnet, Web UI toggle, etc.), see [Ethernet Direct Connect Mode](../guide/network/eth-server.md).
 
@@ -402,7 +400,7 @@ FlexKVM creates its own WiFi hotspot — connect your phone or laptop directly, 
 
 Long-press **Button B [3]** for 3–5 seconds and release when the OLED shows the hotspot icon.
 
-> Button B long-press has three stages: 1–3s first flashes `ETH SERVER`/`ETH CLIENT` (direct connect toggle) — ignore it and keep holding. Release when the hotspot icon appears. Beyond 5s returns to the home screen.
+> Button B long-press has three stages: 1–3s first flashes the direct connect/Ethernet icons (direct connect toggle) — ignore it and keep holding. Release when the hotspot icon appears. Beyond 5s returns to the home screen.
 
 **2. Connect to the Hotspot**
 
@@ -426,9 +424,9 @@ Open `https://192.168.10.1` in your browser.
 
 Long-press **Button B [3]** for 3–5 seconds again and release when the OLED shows the WiFi icon to turn off the hotspot and restore WiFi mode.
 
-> You can also disable it in Web UI → Settings → **Network** → Hotspot card.
+> You can also disable it in Web UI → Settings → **Network** → AP Network card.
 >
-> For detailed configuration (SSID, password, band, etc.), see [AP Hotspot Mode](../guide/network/ap.md).
+> For detailed configuration (SSID, password, channel, etc.), see [AP Hotspot Mode](../guide/network/ap.md).
 
 ---
 
