@@ -1,4 +1,4 @@
-# Feedback & Suggestions
+# Feedback
 
 Running into issues? Have a feature idea? Follow this flow — you'll get answers faster, and developers can pinpoint problems quicker.
 
@@ -47,7 +47,7 @@ Self-diagnosis didn't help? Before submitting feedback, gather this info — it 
 
 Go to Web interface → Settings → Maintenance, export two logs:
 
-- **Backend logs** (Log Management → Download)
+- **System logs** (Log Management → Download)
 - **Web logs** (Web Log card → auto-download)
 
 > ⚠️ **Export immediately after the issue occurs** — don't reboot first. Rebooting clears critical diagnostic information.

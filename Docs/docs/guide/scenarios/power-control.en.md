@@ -53,7 +53,7 @@ Plug the ATX controller's Type-C cable into FlexKVM's **ATX port**.
 
 ## Step 2: Control Power from the Web Interface
 
-In FlexKVM's top bar, click the **peripherals** icon to expand the ATX panel:
+In FlexKVM's menu bar, click the **peripherals** icon to expand the ATX panel:
 
 | What you want | Action |
 |---------------|--------|
@@ -92,7 +92,7 @@ Enter the target host's BIOS via FlexKVM's remote display (press Del / F2 during
 
 ### 3.2 Add a WoL Device
 
-In FlexKVM's top bar, click the **Wake-on-LAN** icon:
+In FlexKVM's menu bar, click the **Wake-on-LAN** icon:
 
 1. Click **+** to add a device
 2. Enter a device name (e.g., `OfficePC`, ASCII and numbers only) and MAC address (e.g., `AA:BB:CC:DD:EE:FF`)
@@ -114,7 +114,7 @@ In the WoL device list, click the lightning icon → FlexKVM sends a Magic Packe
 
 | Issue | Most likely cause | Try this first |
 |-------|-------------------|----------------|
-| Power button does nothing | Dupont wires loose or wrong position | Check motherboard headers, confirm `atx` shows in peripherals panel |
+| Power button does nothing | Dupont wires loose or wrong position | Check motherboard headers, confirm `atx` shows in peripherals menu |
 | WoL won't wake | ErP not disabled in BIOS | Enter BIOS and confirm ErP is Disabled |
 | Turns back on after shutdown | "Restore on AC Power Loss" enabled in BIOS | BIOS → Power Management → disable Restore on AC Power Loss |
 | ATX controller not detected | Type-C cable loose | Re-plug, confirm ATX icon appears on OLED |

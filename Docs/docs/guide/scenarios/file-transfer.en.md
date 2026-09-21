@@ -1,4 +1,4 @@
-# Remote File Transfer
+# File Transfer
 
 The target host needs drivers, scripts, or logs — and you're not there. FlexKVM turns the TF card into a "remote USB drive" or "virtual CD-ROM" for the target host — bidirectional file transfer.
 
@@ -41,7 +41,7 @@ TF card into FlexKVM → mount partition → in the file list, click **Upload** 
 
 ### 2. Share to the Target Host
 
-FlexKVM top bar → click **disk image** icon → select TF card partition → click **Share**.
+FlexKVM menu bar → click **disk image** icon → select TF card partition → click **Share**.
 
 > **Verify**: The target host's file explorer (Windows) or desktop (macOS) shows a new USB storage device.
 
@@ -76,7 +76,7 @@ Put the `.iso` / `.img` file on the TF card (computer pre-load or browser upload
 
 ### 2. Mount and Share
 
-1. TF card into FlexKVM → top bar click **disk image** icon
+1. TF card into FlexKVM → menu bar click **disk image** icon
 2. Select partition → click **Mount** → file list appears
 3. Check the `.iso` / `.img` file to share → click **Share File**
 

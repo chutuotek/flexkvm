@@ -39,7 +39,7 @@ Drag your downloaded system ISO image onto the TF card.
 
 Insert the TF card into FlexKVM's side slot (metal contacts facing up toward the power LED, push until you feel a click).
 
-> **Verify**: In the Web interface, click the disk image icon in the top bar — the popup menu should show the TF card's partition info. Don't see it? → Make sure the TF card is formatted as exFAT or FAT32 (NTFS is read-only).
+> **Verify**: In the Web interface, click the disk image icon in the menu bar — the popup menu should show the TF card's partition info. Don't see it? → Make sure the TF card is formatted as exFAT or FAT32 (NTFS is read-only).
 
 ---
 
@@ -67,7 +67,7 @@ Check the ISO file → click **Share File**.
 
 ### 3.1 Reboot the Target Host
 
-In FlexKVM's top bar, click the **peripherals** icon → short-press the reset button. The target host begins rebooting.
+In FlexKVM's menu bar, click the **peripherals** icon → short-press the reset button. The target host begins rebooting.
 
 ### 3.2 Press the BIOS Hotkey
 

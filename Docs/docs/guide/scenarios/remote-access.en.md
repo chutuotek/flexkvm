@@ -1,6 +1,6 @@
 # Remote Access
 
-Device at home, you're at the office? Need to manage a server in a colo from a business trip? FlexKVM doesn't need a public IP or router configuration — **hotspot direct** and **Tailscale VPN** are two ways to connect securely from outside, both set up in minutes.
+Device at home, you're at the office? Need to manage a server in a colo from a business trip? FlexKVM doesn't need a public IP or router configuration — **AP hotspot direct** and **Tailscale VPN** are two ways to connect securely from outside, both set up in minutes.
 
 ---
 
@@ -11,30 +11,30 @@ Device at home, you're at the office? Need to manage a server in a colo from a b
 | Near the device, but no network available | **Hotspot direct** | FlexKVM creates its own WiFi 6 hotspot — connect your phone and manage |
 | Away from the device, it's in a remote location | **Tailscale VPN** | Free VPN, end-to-end encrypted — works anywhere with internet |
 
-> Try hotspot direct first (zero config, instant), set up Tailscale later if needed.
+> Try AP hotspot direct first (zero config, instant), set up Tailscale later if needed.
 
 ---
 
-## Option 1: WiFi 6 Hotspot Direct
+## Option 1: AP Hotspot Direct
 
 No network on-site, customer won't let you on their LAN, rack isn't wired yet — FlexKVM becomes a WiFi 6 hotspot. Your phone or laptop connects directly and you're in control.
 
 ### Steps
 
 1. Power on FlexKVM (USB Type-C, 5V/1A)
-2. Long-press **Button B** on the device for 3–5 seconds — release when the OLED shows the hotspot icon (Button B has three hold stages; at 1–3s the OLED flashes ETH SERVER/CLIENT preview — ignore it and keep holding to reach stage 2)
+2. Long-press **Button B** on the device for 3–5 seconds — release when the OLED shows the hotspot icon (Button B has three hold stages; at 1–3s the OLED flashes the direct connect/Ethernet icon — ignore it and keep holding to reach stage 2)
 3. On your phone or computer, search for WiFi networks and find `FlexKVM-AP`
 4. Enter password `12345678` to connect
-5. Open browser and go to `https://192.168.10.1` (fixed management address in hotspot mode)
+5. Open browser and go to `https://192.168.10.1` (fixed management address in AP Hotspot mode)
 6. Log in → remote display appears
 
 > **Verify**: OLED status bar shows the hotspot icon, IP prefix is `A` (e.g., `A192.168.10.1`).
 
 ### When you're done
 
-Go to **Settings → Network → AP Mode** and turn off the hotspot, or long-press Button B for 3–5 seconds again to switch back to WiFi. If left on, the hotspot stays active — draws power and occupies the channel.
+Go to **Settings → Network → AP Network card** and turn off the hotspot, or long-press Button B for 3–5 seconds again to switch back to WiFi. If left on, the hotspot stays active — draws power and occupies the channel.
 
-> SSID, password, band, channel, max clients, and all other settings → [AP Mode](../network/ap.md)
+> SSID, password, 5G Band (toggle), channel, max clients, and all other settings → [AP Hotspot](../network/ap.md)
 
 ---
 
@@ -52,7 +52,7 @@ Install the Tailscale client on your control computer or phone too, and log in w
 
 ### Step 2: Enable on FlexKVM
 
-Go to Web interface → Settings → **App Center**, find the Tailscale section:
+Go to Web interface → Settings → **App**, find the Tailscale section:
 
 1. Toggle the Tailscale switch on → service starts
 2. Click **Login Status** → a login link appears

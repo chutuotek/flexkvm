@@ -63,7 +63,7 @@ Forgot your password, transferring the device, or want a clean start — restore
 
 **How**: Use a SIM ejector pin to hold the **factory reset button** (RST hole) on FlexKVM. The OLED shows a countdown — release after about 15 seconds when it reaches zero.
 
-> ⚠️ **Clears all data**: accounts, passwords, WiFi config, 2FA keys, custom settings. Firmware version is not downgraded.
+> ⚠️ **Clears**: accounts, passwords, 2FA keys, WiFi config, custom settings. **Does not clear**: audit logs, firmware version. To clear audit logs too, use the SSH `reset all` command.
 >
 > You can also reset from the Web interface or SSH (SSH supports two levels: keep or clear logs) → [Factory Reset](../maintenance/factory-reset.md)
 
@@ -79,14 +79,14 @@ Once the device is stable, spend 5 minutes each month:
 | Export audit logs | Keep records for reference |
 | Verify remote access works | Avoid surprises when you really need it |
 
-> When something goes wrong, **export system logs first, then reboot** — logs help developers identify the root cause. See [Feedback & Suggestions](feedback.md) for how. For daily operations, you only need audit logs — you can ignore system logs until something breaks.
+> When something goes wrong, **export system logs first, then reboot** — logs help developers identify the root cause. See [Feedback](feedback.md) for how. For daily operations, you only need audit logs — you can ignore system logs until something breaks.
 
 ---
 
 ## Next Steps
 
 - Worried about unauthorized access → [Security Hardening](security.md)
-- Need to reinstall a remote host → [Remote OS Install](remote-access.md)
+- Need to reinstall a remote host → [Remote OS Install](reinstall-os.md)
 - Manage devices from outside → [Remote Access](remote-access.md)
 
 ---

@@ -64,7 +64,7 @@ Secure your device, keep firmware current, and know how to report issues.
 
     [:octicons-arrow-right-24: Ops guide](daily-ops.md)
 
-- **:material-bug: Feedback & Suggestions**
+- **:material-bug: Feedback**
 
     Bug report template, diagnostic info collection, feature requests — help devs identify issues fast.
 
@@ -82,7 +82,7 @@ Secure your device, keep firmware current, and know how to report issues.
 | Device going to a colo, you won't be on-site | Remote Access → Remote Power Control → Security Hardening |
 | About to reinstall a remote machine | Remote OS Install → File Transfer |
 | Already stable, want maintenance | Daily Operations → Security Hardening |
-| Something's wrong | Feedback & Suggestions (start with how to collect diagnostics) |
+| Something's wrong | Feedback (start with how to collect diagnostics) |
 
 ---
 
