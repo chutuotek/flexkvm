@@ -22,7 +22,7 @@ After WiFi connects, the "X" on the OLED network icon disappears and the second 
 
 ![OLED network icon](../../quick_start/images/oled_wifi_connected.webp)
 
-While acquiring IP, the display shows **W Loading...**. If it takes more than 10s → check WiFi connection or router DHCP.
+While acquiring IP, the display shows **W Loading...**. If it takes more than 20s → check WiFi connection or router DHCP.
 
 > When WiFi is disconnected, the network icon always has an "X". More OLED status info → [OLED Screen](../interaction/oled.md).
 

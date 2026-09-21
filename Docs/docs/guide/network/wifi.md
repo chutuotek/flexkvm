@@ -22,7 +22,7 @@ WiFi 连上后，OLED 网络图标的"X"消失，第二行显示 IP 地址。IP 
 
 ![OLED 网络图标](../../quick_start/images/oled_wifi_connected.webp)
 
-获取 IP 时显示 **W Loading...**。超过 10 秒没拿到 IP → 检查 WiFi 连接或路由器 DHCP。
+获取 IP 时显示 **W Loading...**。超过 20 秒没拿到 IP → 检查 WiFi 连接或路由器 DHCP。
 
 > 没连 WiFi 时，网络图标上一直有"X"。更多 OLED 状态说明 → [OLED 屏幕](../interaction/oled.md)。
 
