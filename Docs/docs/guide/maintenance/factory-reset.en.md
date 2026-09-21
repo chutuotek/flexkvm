@@ -14,7 +14,7 @@ After reset completes, the device **auto-reboots**. During the process, the OLED
 
 ## Hardware Reset
 
-Use when you can't access the Web interface. Use a SIM ejector pin to hold the **factory reset button** (RST hole). The OLED shows a countdown — release after about 15 seconds when it reaches zero → device auto-reboots.
+Use when you can't access the Web interface. Use a SIM ejector pin to hold the **factory reset button**; after about 1s the OLED shows a countdown starting at 14. Keep holding until it reaches zero (about 15s), then release once the OLED shows RESET → device auto-reboots. **Releasing early cancels it** and clears nothing.
 
 ![FlexKVM diagram](./images/oled_reset.webp)
 

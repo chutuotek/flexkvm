@@ -61,7 +61,7 @@ Device feels slow or the display is laggy? Try a reboot first — it fixes most 
 
 Forgot your password, transferring the device, or want a clean start — restore to factory state.
 
-**How**: Use a SIM ejector pin to hold the **factory reset button** (RST hole) on FlexKVM. The OLED shows a countdown — release after about 15 seconds when it reaches zero.
+**How**: Use a SIM ejector pin to hold the **factory reset button** on FlexKVM. After about 1s the OLED shows a countdown starting at 14; keep holding until it reaches zero (about 15s), then release. Releasing early cancels it.
 
 > ⚠️ **Clears**: accounts, passwords, 2FA keys, WiFi config, custom settings. **Does not clear**: audit logs, firmware version. To clear audit logs too, use the SSH `reset all` command.
 >
