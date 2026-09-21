@@ -200,7 +200,7 @@ FlexKVM 正面有一块 128×64 单色 OLED 屏，显示设备状态、网络信
 
 ![恢复出厂设置界面](../maintenance/images/oled_reset.webp)
 
-长按恢复出厂按键 15 秒后，OLED 显示恢复出厂设置倒计时，倒计时归零后释放按键，设备恢复出厂。详见[恢复出厂设置](../maintenance/factory-reset.md)。
+按住恢复出厂按键约 1 秒，OLED 显示 **RESET MODE** 与倒计时（从 14 开始）；继续按住到归零（共约 15 秒），OLED 显示 **RESET**，此时松开按键才执行恢复出厂。中途松开即取消。详见[恢复出厂设置](../maintenance/factory-reset.md)。
 
 ---
 

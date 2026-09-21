@@ -200,7 +200,7 @@ When entering provisioning mode (long-press Button A), the OLED shows the hotspo
 
 ![Factory reset screen](../maintenance/images/oled_reset.webp)
 
-After holding the factory reset button for 15 seconds, the OLED displays a factory reset countdown. Release the button when the countdown reaches 0 to restore factory settings. See [Factory Reset](../maintenance/factory-reset.md).
+After holding the factory reset button for about 1s, the OLED shows **RESET MODE** with a countdown starting at 14. Keep holding until it reaches zero (about 15s) — the OLED then shows **RESET**, and releasing the button at that point performs the reset. Releasing early cancels it. See [Factory Reset](../maintenance/factory-reset.md).
 
 ---
 

@@ -41,7 +41,7 @@ FlexKVM has four physical buttons. For detailed operation, see [Physical Buttons
 |:--:|:----:|----------------|
 | [3] | Button A | Hold 1–3s to enter provisioning mode |
 | [4] | Button B | Hold 1–3s for Direct Mode; 3–5s to toggle WiFi ↔ AP hotspot; after 5s, return to the main screen |
-| [11] | Factory reset button | Hold 15s to restore factory settings |
+| [11] | Factory reset button | Hold 15s to restore factory settings (countdown appears on the OLED after 1s; releasing early cancels) |
 | [12] | Reset button | Press briefly to force a reboot |
 
 ## HDMI Input

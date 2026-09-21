@@ -14,7 +14,7 @@ FlexKVM has four physical buttons for provisioning, mode switching, and system m
 | Button B | Hold 3–5s | Toggle WiFi ↔ AP Hotspot mode | Quick AP hotspot on/off without the Web interface |
 | Button B | Hold 5s+ | Return to home screen (cancel action) | Accidental press — cancel |
 | Reset button | Short press | Force reboot | System unresponsive or abnormal |
-| Factory reset button | Hold 15s | Restore factory settings | Transferring device, unrecoverable configuration |
+| Factory reset button | Hold 1s for the countdown, release at 15s | Restore factory settings | Transferring device, unrecoverable configuration |
 
 ## Button Details
 
@@ -50,7 +50,7 @@ A short press reboots the system immediately — no configuration is lost. Use w
 
 ### Factory Reset Button
 
-Hold 15s → OLED shows countdown → release after countdown reaches zero. During the clear process, 🟢 Status LED and 🔴 Warning LED fast-blink together; the device auto-reboots when clearing is complete.
+Hold for **1s** → the OLED enters RESET MODE and the countdown starts at **14**; keep holding as it counts down to zero (15s total) → the OLED shows RESET → **release** to run the reset. **Releasing early cancels it** and clears nothing. During the clear process, 🟢 Status LED and 🔴 Warning LED fast-blink together; the device auto-reboots when clearing is complete.
 
 **Will be cleared**: network settings, accounts, passwords, certificates, and other configurations. **Will not be cleared**: audit logs, firmware version.
 
