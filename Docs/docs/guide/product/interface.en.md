@@ -1,4 +1,4 @@
-# Interface Reference
+# Interface Overview
 
 ![FlexKVM diagram](./images/flexkvm_interface_1.webp)
 
@@ -39,8 +39,8 @@ FlexKVM has four physical buttons. For detailed operation, see [Physical Buttons
 
 | # | Name | Basic function |
 |:--:|:----:|----------------|
-| [3] | Button A | Press and hold 1–3s to enter hotspot provisioning mode |
-| [4] | Button B | Hold 3–5s to toggle WiFi ↔ AP mode |
+| [3] | Button A | Hold 1–3s to enter provisioning mode |
+| [4] | Button B | Hold 1–3s for Direct Mode; 3–5s to toggle WiFi ↔ AP hotspot; after 5s, return to the main screen |
 | [11] | Factory reset button | Hold 15s to restore factory settings |
 | [12] | Reset button | Press briefly to force a reboot |
 
@@ -52,7 +52,7 @@ FlexKVM has four physical buttons. For detailed operation, see [Physical Buttons
 ## ATX Port
 
 - **Spec**: USB Type-C.
-- **Function**: Connects to ATX controller for remote power on/off, force reboot, and normal shutdown.
+- **Function**: Connects to ATX controller for remote power on/off, force reboot, and normal shutdown of the target host.
 
 ## USB Port
 
@@ -104,7 +104,7 @@ FlexKVM has four physical buttons. For detailed operation, see [Physical Buttons
 ## WiFi Antenna
 
 - **Spec**: SMA male, dual-band 2.4GHz / 5GHz.
-- **Function**: Connects to external WiFi antenna for wireless network access.
+- **Function**: Connects to external WiFi antenna for WiFi access.
 
 ---
 
