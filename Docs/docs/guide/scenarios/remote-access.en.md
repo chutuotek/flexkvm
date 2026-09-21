@@ -55,7 +55,7 @@ Install the Tailscale client on your control computer or phone too, and log in w
 Go to Web interface → Settings → **App**, find the Tailscale section:
 
 1. Toggle the Tailscale switch on → service starts
-2. Click **Login Status** → a login link appears
+2. Click the **Login** button on the **Login State** row → a login link appears
 3. Open the link in your browser → authorize the device to join your Tailscale network
 
 > **Verify**: The interface shows a Tailscale IP (typically `100.x.x.x`) and **Online** status.

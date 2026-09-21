@@ -114,7 +114,7 @@ Two LEDs at the top of the panel directly connect to the motherboard:
 
 > ⚠️ Force power-off and reset may cause data loss. When the system is responsive, prefer short press for graceful shutdown.
 
-Long-press duration is adjustable: click the expand arrow next to the power button → adjust the "Long-press shutdown" slider (1s~10s).
+Long-press duration is adjustable: click the expand arrow next to the power button → adjust the "Long Press" slider (1s~10s).
 
 ![Expanded settings interface](./images/atx/atx_setting.webp)
 
