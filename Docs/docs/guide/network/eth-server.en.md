@@ -19,6 +19,8 @@ FlexKVM becomes a DHCP server — connect a computer directly with a single Ethe
 | Client count | 1 (direct connection to a single computer) |
 | Default state | Off |
 
+> Direct Mode and normal wired network mode are mutually exclusive — enabling Direct Mode automatically disables DHCP client mode.
+
 ## Typical Scenarios
 
 ### 🖥️ Direct Connection to Laptop
