@@ -34,7 +34,7 @@ Try searching for symptom keywords in the **search bar** at the top of the page 
 | Possible cause | Solution |
 |---------------|----------|
 | Client device doesn't have Tailscale | Install Tailscale on the accessing device and log into the same account |
-| Device not logged in to Tailscale | Check Tailscale login status under Settings → App Center |
+| Device not logged in to Tailscale | Check Tailscale login status under Settings → App |
 | Tailscale service not enabled | Ensure the Tailscale toggle is on |
 
 ---

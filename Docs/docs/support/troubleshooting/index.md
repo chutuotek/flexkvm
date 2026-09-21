@@ -34,7 +34,7 @@
 | 可能原因 | 解决方法 |
 |---------|---------|
 | 访问端未安装 Tailscale | 在需要访问的设备上也安装 Tailscale 并登录同一账号 |
-| 设备未登录 Tailscale | 在设置→应用中心检查 Tailscale 登录状态 |
+| 设备未登录 Tailscale | 在设置→应用检查 Tailscale 登录状态 |
 | Tailscale 服务未启用 | 确认 Tailscale 开关已打开 |
 
 ---

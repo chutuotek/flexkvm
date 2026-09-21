@@ -24,7 +24,7 @@ IPMI 等企业带外方案需要主板原生支持，价格昂贵、配置复杂
 
 ### 如何查看 FlexKVM 的 IP 地址？
 
-在设备的 OLED 屏幕上看。以太网 IP 显示为 `Exxx.xxx.xxx.xxx`，WiFi IP 显示为 `Wxxx.xxx.xxx.xxx`, 热点 IP 显示为 `Axxx.xxx.xxx.xxx`。详见 [OLED 屏幕](../../guide/interaction/oled.md)。
+在设备的 OLED 屏幕上看。以太网 IP 显示为 `Exxx.xxx.xxx.xxx`，WiFi IP 显示为 `Wxxx.xxx.xxx.xxx`，热点 IP 显示为 `Axxx.xxx.xxx.xxx`，直连模式 IP 显示为 `Sxxx.xxx.xxx.xxx`。详见 [OLED 屏幕](../../guide/interaction/oled.md)。
 
 ### 什么是配网模式？什么时候需要使用？
 

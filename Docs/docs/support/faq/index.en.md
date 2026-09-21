@@ -24,7 +24,7 @@ Yes, both can be online simultaneously. If either network fails, control is unaf
 
 ### How do I find FlexKVM's IP address?
 
-Check the OLED screen. Ethernet IP shows as `Exxx.xxx.xxx.xxx`, WiFi IP shows as `Wxxx.xxx.xxx.xxx`, and hotspot IP shows as `Axxx.xxx.xxx.xxx`. See [OLED Screen](../../guide/interaction/oled.md).
+Check the OLED screen. Ethernet IP shows as `Exxx.xxx.xxx.xxx`, WiFi IP as `Wxxx.xxx.xxx.xxx`, hotspot IP as `Axxx.xxx.xxx.xxx`, and Direct Mode IP as `Sxxx.xxx.xxx.xxx`. See [OLED Screen](../../guide/interaction/oled.md).
 
 ### What is provisioning mode and when do I need it?
 
