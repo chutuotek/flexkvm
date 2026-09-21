@@ -80,18 +80,18 @@ Tailscale 登录成功后，**在你要访问 FlexKVM 的设备上也装 Tailsca
 
 ## Peer Relay：用 VPS 搭建加速中继
 
-直连失败时，Tailscale 默认会回退到官方 DERP 中继服务器。官方服务器大多在海外，国内访问延迟很高。**Peer Relay** 是 Tailscale 的节点中继功能——让 tailnet 中任意一台设备(比如你的 VPS)充当高性能中继：走 UDP 转发、速度接近直连，比 DERP 快得多。
+直连失败时，Tailscale 默认会回退到官方 DERP 中继服务器。官方服务器大多在海外，国内访问延迟很高。**Peer Relay** 是 Tailscale 的节点中继功能——让 tailnet 中任意一台设备（比如你的 VPS）充当高性能中继：走 UDP 转发、速度接近直连，比 DERP 快得多。
 
-Tailscale 的连接优先级：**直连 → Peer Relay → DERP**。FlexKVM 预装的 Tailscale 已支持该功能(v1.86 以上即可)，中继节点会被自动发现，无需在 FlexKVM 上做任何配置。
+Tailscale 的连接优先级：**直连 → Peer Relay → DERP**。FlexKVM 预装的 Tailscale 已支持该功能（v1.86 以上即可），中继节点会被自动发现，无需在 FlexKVM 上做任何配置。
 
 ### 前置条件
 
 | 条件 | 说明 |
 |------|------|
 | 一台 VPS | 有公网 IP，建议选择离你较近的机房；Linux 系统 |
-| 管理权限 | Tailscale 账号需为 Owner / Admin / Network admin(需要改 ACL) |
+| 管理权限 | Tailscale 账号需为 Owner / Admin / Network admin（需要改 ACL） |
 | 同一 tailnet | VPS 与 FlexKVM 登录同一 Tailscale 账号 |
-| UDP 端口 | VPS 需开放 UDP 40000(中继端口)和 41641(Tailscale 默认端口)，见下文 |
+| UDP 端口 | VPS 需开放 UDP 40000（中继端口）和 41641（Tailscale 默认端口），见下文 |
 
 > Peer Relay 对所有套餐可用，免费版同样支持。中继流量仍是 WireGuard 端到端加密，数据不会在 VPS 上被看到。
 
@@ -99,7 +99,7 @@ Tailscale 的连接优先级：**直连 → Peer Relay → DERP**。FlexKVM 预�
 
 #### 1. 在管理控制台创建中继设备 tag
 
-打开 [Tailscale 管理控制台](https://login.tailscale.com/admin/acls/file)的 Access Controls(JSON)，在现有文件的 `tagOwners` 字段中追加(没有该字段就新建)：
+打开 [Tailscale 管理控制台](https://login.tailscale.com/admin/acls/file)的 Access Controls（JSON），在现有文件的 `tagOwners` 字段中追加（没有该字段就新建）：
 
 ```json
 "tagOwners": {
@@ -119,14 +119,14 @@ curl -fsSL https://tailscale.com/install.sh | sh
 sudo tailscale up --hostname=relay-01 --advertise-tags=tag:relay
 ```
 
-- `--hostname`：自定义中继设备名称(如 `relay-01`)
+- `--hostname`：自定义中继设备名称（如 `relay-01`）
 - `--advertise-tags`：声明该设备为中继设备，必须填第 1 步创建的 tag
 
 终端会打印登录链接，浏览器打开并登录，确认 VPS 与 FlexKVM 在同一个 tailnet。
 
 ### 3. 开放 UDP 端口
 
-需要放行两个 UDP 端口(中继端口以 40000 为例，可自行修改)：
+需要放行两个 UDP 端口（中继端口以 40000 为例，可自行修改）：
 
 - **40000**：Peer Relay 中继端口，必须与第 4 步设置的值一致
 - **41641**：Tailscale 默认的 WireGuard 端口，其他设备需要靠它连上 VPS
@@ -150,7 +150,7 @@ sudo tailscale set --relay-server-port=40000
 sudo tailscale set --relay-server-port=""
 ```
 
-> 如果 VPS 处于端口转发、负载均衡(NLB)等无法自动发现端口的网络环境，可以用 `--relay-server-static-endpoints` 手动声明公网端点：
+> 如果 VPS 处于端口转发、负载均衡（NLB）等无法自动发现端口的网络环境，可以用 `--relay-server-static-endpoints` 手动声明公网端点：
 >
 > ```bash
 > sudo tailscale set --relay-server-port=40000 --relay-server-static-endpoints="[公网IP]：40000"
@@ -158,7 +158,7 @@ sudo tailscale set --relay-server-port=""
 
 ### 5. 在管理控制台授权
 
-打开 [Tailscale 管理控制台](https://login.tailscale.com/admin/acls/file)的 Access Controls(JSON)，在现有 `grants` 数组**末尾追加**以下条目(原来已有的规则全部保留，不要动)：
+打开 [Tailscale 管理控制台](https://login.tailscale.com/admin/acls/file)的 Access Controls（JSON），在现有 `grants` 数组**末尾追加**以下条目（原来已有的规则全部保留，不要动）：
 
 ```json
 {
@@ -168,15 +168,15 @@ sudo tailscale set --relay-server-port=""
 }
 ```
 
-- `src`：允许使用中继的设备，**逐个填入**这些设备的 Tailscale IP(如 FlexKVM 和你的电脑)，多个 IP 用逗号分隔
-- `dst`：中继设备，填第 1 步创建的 `tag:relay`(不想用 tag 的话，也可以直接填 VPS 的 Tailscale IP)
+- `src`：允许使用中继的设备，**逐个填入**这些设备的 Tailscale IP（如 FlexKVM 和你的电脑），多个 IP 用逗号分隔
+- `dst`：中继设备，填第 1 步创建的 `tag:relay`（不想用 tag 的话，也可以直接填 VPS 的 Tailscale IP）
 
 > 只把真正需要加速的设备加进 `src`，不要用 `"src": ["*"]`——本来不需要中继的设备也会被路由到中继，白白多一跳，增加延迟。
-> 如果你的 tailnet 之前没配置过 ACL(设备默认互通)，只需追加这一条，不需要再加其他规则。
+> 如果你的 tailnet 之前没配置过 ACL（设备默认互通），只需追加这一条，不需要再加其他规则。
 
 ### 6. 验证
 
-在**控制端设备**(如你的电脑)上执行：
+在**控制端设备**（如你的电脑）上执行：
 
 ```bash
 tailscale status
