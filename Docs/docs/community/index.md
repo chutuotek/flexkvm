@@ -2,7 +2,7 @@
 
 <div class="grid cards" markdown>
 
-- **:material-bug: 建议与反馈**
+- **:material-bug: 建议反馈**
 
     报告 Bug，提交功能建议
 

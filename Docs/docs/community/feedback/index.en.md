@@ -1,4 +1,4 @@
-# Feedback & Suggestions
+# Feedback
 
 Thank you for helping us improve FlexKVM! Your feedback helps us improve the product and user experience.
 
@@ -14,7 +14,7 @@ When reporting bugs via email, please provide the following information:
 - **Time of occurrence**: When did the issue occur? This helps developers narrow it down
 - **Frequency**: Once / Occasional / Intermittent / Always reproducible
 - **Detailed description**: What scenario triggers the issue and what exactly happens
-- **Attachments**: Screenshots, system logs, web logs, etc.
+- **Attachments**: Screenshots, system logs, Web logs, etc.
 
 Example:
 
@@ -25,7 +25,7 @@ Browser version: Chrome 148.0.7778.178 (Official Build) (64-bit)
 Time of occurrence: 2026-05-22 10:20
 Frequency: Always reproducible
 Issue description: Virtual keyboard becomes unresponsive; refreshing the page restores normal behavior
-Attachments: Screenshots, system logs, web logs
+Attachments: Screenshots, system logs, Web logs
 ```
 
 **Extracting System Logs**
@@ -36,7 +36,7 @@ When reporting issues, include system logs from the time the issue occurred so w
 
 Files to include:
 
-- Backend logs
+- System logs
 - Web logs
 
 ## Suggestions
