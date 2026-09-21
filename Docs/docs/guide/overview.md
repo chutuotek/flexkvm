@@ -47,7 +47,7 @@
 |:---:|--------|------|
 | **关于** | 型号、系统版本、设备序列号、社区与文档入口 | [关于设备](system/about.md) |
 | **状态** | 温度 / CPU / 内存 / 网络速率曲线，历史回看与 CSV 导出 | [状态监控](system/status.md) |
-| **网络** | mDNS、有线网络、AP网络、WiFi网络 | [配网模式](network/provision.md) · [有线网络](network/eth.md) · [直连模式](network/eth-server.md) · [WiFi](network/wifi.md) · [AP 热点](network/ap.md) · [mDNS](network/mdns.md) |
+| **网络** | mDNS、有线网络、AP网络、WiFi网络 | [有线网络](network/eth.md) · [直连模式](network/eth-server.md) · [WiFi](network/wifi.md) · [AP 热点](network/ap.md) · [mDNS](network/mdns.md) |
 | **外观** | 语言、主题（浅色 / 深色 / 自动）、强调色 | [外观](system/appearance.md) |
 | **应用** | 已装应用更新（如 Tailscale）、下载源 | [Tailscale](network/tailscale.md) · [应用更新](maintenance/upgrade-app.md) |
 | **Agent** | 开关 Agent、生成与作废 API Key，供 AI 客户端接入 | [AI Agent 控制](remote/agent.md) |

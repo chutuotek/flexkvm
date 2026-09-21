@@ -98,7 +98,7 @@ FlexKVM 正面有一块 128×64 单色 OLED 屏，显示设备状态、网络信
 ```
  SYSTEM
  FlexKVM
- flexkvm
+ flexkvm-abc123
  FS10251810001CN5
 ```
 

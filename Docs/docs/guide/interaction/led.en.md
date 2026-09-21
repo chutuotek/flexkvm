@@ -1,6 +1,6 @@
 # LED Indicators
 
-FlexKVM has three indicator LEDs showing power, connection, and network status. The 🟢 Status LED and 🔴 Warning LED can be turned off in settings (to reduce light pollution).
+FlexKVM has three indicator LEDs showing power, connection, and network status. All three can be turned off in settings (to reduce light pollution).
 
 > Where: Settings → System → LED Settings
 

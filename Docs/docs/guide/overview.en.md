@@ -47,7 +47,7 @@ Click **Settings** in the menu bar to open the settings panel. Twelve tabs on th
 |:---:|--------|------|
 | **About** | Model, system version, serial number, community and doc links | [About Device](system/about.md) |
 | **Status** | Temperature / CPU / memory / network rate curves, history and CSV export | [Status Monitor](system/status.md) |
-| **Network** | mDNS, wired network, AP network, WiFi network | [Provisioning Mode](network/provision.md) · [Wired Network](network/eth.md) · [Direct Mode](network/eth-server.md) · [WiFi](network/wifi.md) · [AP Hotspot](network/ap.md) · [mDNS](network/mdns.md) |
+| **Network** | mDNS, wired network, AP network, WiFi network | [Wired Network](network/eth.md) · [Direct Mode](network/eth-server.md) · [WiFi](network/wifi.md) · [AP Hotspot](network/ap.md) · [mDNS](network/mdns.md) |
 | **Appearance** | Language, theme (Light / Dark / Auto), accent color | [Appearance](system/appearance.md) |
 | **App** | Updates for installed apps (e.g. Tailscale) and download source | [Tailscale](network/tailscale.md) · [App Update](maintenance/upgrade-app.md) |
 | **Agent** | Enable Agent, generate and revoke the API Key for AI clients | [AI Agent Control](remote/agent.md) |

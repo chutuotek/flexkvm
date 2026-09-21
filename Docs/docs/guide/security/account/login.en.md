@@ -58,7 +58,7 @@ Only one user can be online at a time. When another user is already online, a ne
 
 | Scenario | Prompt & behavior |
 |----------|-------------------|
-| Another user online, trying to log in | Dialog: "User **{{username}}** is currently logged in. Do you want to log in?" — click **Confirm** to take over (the online user is kicked); click **Cancel** to return to the login page; auto-cancels after 30 seconds without action |
+| Another user online, trying to log in | Dialog: "User **<username>** is currently logged in. Do you want to log in?" — click **Confirm** to take over (the online user is kicked); click **Cancel** to return to the login page; auto-cancels after 30 seconds without action |
 | Kicked out by another user | Dialog: "You have been kicked out, please log in again" (includes the kicker's username) — re-login required |
 | Same account refreshed in another tab | Current tab pauses reconnection and auto-resumes when you return to it |
 

@@ -91,7 +91,7 @@ Optional accessories can mount the ATX controller inside the case: full-height U
 ### Enable
 
 1. Open the **Interface** menu
-2. Toggle the switch in the top-right corner of the panel
+2. Toggle the switch in the panel
 3. When properly connected, the device name `atx` will appear
 
 ### Status Indicators

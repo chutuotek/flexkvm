@@ -98,7 +98,7 @@ Device identification:
 ```
  SYSTEM
  FlexKVM
- flexkvm
+ flexkvm-abc123
  FS10251810001CN5
 ```
 
