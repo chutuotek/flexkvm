@@ -2,7 +2,7 @@
 
 Audit logs record important system operations — who did what and when. Divided into system events and user operation events, used for tracing activity history and troubleshooting.
 
-Go to Settings → Maintenance.
+> Where: Settings → Maintenance → Audit
 
 ![Maintenance interface](./images/setting_audit.webp)
 
@@ -12,7 +12,7 @@ Click "Audit Log" to open the window:
 
 ## Log Categories
 
-- **System events** `[sys]`: Network config changes, OTA upgrades, factory resets, SSH auth failures, etc.
+- **System events** `[sys]`: Network config changes, firmware upgrades, factory resets, SSH auth failures, etc.
 - **User events** `[usr]`: Login/logout, account management, USB control, video settings, network config, system reboot, etc.
 
 Format: `[YYYY-MM-DD HH:MM:SS UTC] [sys|usr] log content`

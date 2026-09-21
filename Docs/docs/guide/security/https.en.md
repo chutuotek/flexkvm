@@ -1,8 +1,8 @@
-# HTTPS Configuration
+# HTTPS Certificate
 
 FlexKVM encrypts access via HTTPS, supporting three modes: self-signed certificate, custom certificate, and user sub-CA.
 
-Go to Settings → Security → HTTPS.
+> Where: Settings → Security → HTTPS
 
 ![HTTPS settings](./images/https/setting_https.webp)
 

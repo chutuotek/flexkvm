@@ -1,8 +1,8 @@
-# Account Management
+# Account Security
 
 Manage your FlexKVM login account — change password, enable/disable 2FA, manage backup codes.
 
-Go to Settings → Account.
+> Where: Settings → Account
 
 ![Account interface](./images/account-ui.webp)
 

@@ -1,4 +1,4 @@
-# Login
+# Login Management
 
 FlexKVM uses HTTPS to protect login. On first access, create an admin account. After that, log in with your username and password.
 

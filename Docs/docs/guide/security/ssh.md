@@ -1,18 +1,18 @@
-# SSH
+# SSH 远程访问
 
 FlexKVM 内置 SSH 服务器，可以通过命令行远程管理设备——带外管理（OOB）。用密码认证，同一时间只允许一个会话。
+
+> 入口：设置 → 安全 → SSH
 
 > 失败超过 3 次自动断开，短暂延迟后才能重试——防暴力破解。
 
 ## 开始之前
 
-- 已在 Web 界面创建了管理员账户（→ [登录](./account/login.md)）
+- 已在 Web 界面创建了管理员账号（→ [登录](./account/login.md)）
 - SSH 服务已启用（默认开启）
 - 设备已联网
 
 ## 启用与关闭
-
-进设置 → 安全 → SSH。
 
 ![SSH 设置](./images/ssh/setting_ssh.webp)
 
@@ -26,8 +26,8 @@ ssh <用户名>@<设备IP>
 
 端口 22（默认）。Windows 自带 OpenSSH，PowerShell 或 CMD 直接能用。
 
-- **用户名**：FlexKVM 账户名
-- **密码**：FlexKVM 账户密码
+- **用户名**：FlexKVM 账号名
+- **密码**：FlexKVM 账号密码
 - **不支持密钥登录**
 
 **开了 2FA？** 登录分两步：先输入密码 → 密码正确后提示输入 6 位 TOTP 验证码（或 8 位备用码）→ 验证通过后进入。没开 2FA 只需密码。
@@ -98,7 +98,7 @@ admin@flexkvm-6jzdd#
 
 | 现象 | 可能原因 | 先试这个 |
 |------|----------|---------|
-| `Connection refused` | SSH 服务没开 | 进设置 → 安全 → SSH 检查开关 |
+| `Connection refused` | SSH 服务没开 | 检查 SSH 开关 |
 | `Connection timed out` | IP 不对或网络不通 | 确认 IP 和 OLED 一致，ping 一下 |
 | `Permission denied` | 用户名或密码错 | 确认用 Web 界面的账号密码，注意大小写 |
 | 登录后立刻断开 | 已有其他 SSH 会话 | 关掉原会话或等超时 |
