@@ -2,6 +2,8 @@
 
 FlexKVM has three indicator LEDs showing power, connection, and network status. The 🟢 Status LED and 🔴 Warning LED can be turned off in settings (to reduce light pollution).
 
+> Where: Settings → System → LED Settings
+
 ## 🔴 Power LED — Power Status
 
 | State | Meaning |
@@ -27,8 +29,8 @@ Reflects HDMI and USB connection state:
 | State | Frequency | Meaning |
 |:-----:|:---------:|---------|
 | Off | — | Network connected, normal |
-| Slow blink | 1 Hz | Network disconnected, or in hotspot provisioning mode |
-| Fast blink | 4 Hz | OTA upgrade in progress — do not power off |
+| Slow blink | 1 Hz | Network disconnected, or in provisioning mode |
+| Fast blink | 4 Hz | Firmware upgrade in progress — do not power off |
 | Solid on | — | Critical system error — reboot or contact support |
 
 ## Combined States
@@ -38,8 +40,6 @@ Reflects HDMI and USB connection state:
 | 🟢 Status LED + 🔴 Warning LED **both fast-blinking** | Factory reset in progress |
 
 ## Turn Off LEDs
-
-Go to Settings → System → LED Settings.
 
 ![LED Settings](./images/led/setting_led.webp)
 

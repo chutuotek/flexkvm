@@ -4,9 +4,9 @@ FlexKVM has a 128×64 monochrome OLED display on the front that shows device sta
 
 After powering on, the OLED cycles through: boot logo → device status screen → auto-sleep (after 60 seconds of inactivity). Press Button A or B to wake. Auto-sleep is disabled in provisioning mode.
 
-## OLED Settings
+> Where: Settings → System → OLED Settings
 
-Go to Settings → System → OLED Settings.
+## OLED Settings
 
 ![OLED Settings](./images/oled/setting_oled.webp)
 
