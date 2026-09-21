@@ -1,8 +1,8 @@
 # HTTPS 配置
 
-FlexKVM 用 HTTPS 加密访问，提供自签名证书（含用户子 CA）和自定义证书两种模式。
+FlexKVM 用 HTTPS 加密访问，支持自签名证书、自定义证书、用户子 CA 三种模式。
 
-进设置 → 安全 → HTTPS 配置。
+进设置 → 安全 → HTTPS。
 
 ![HTTPS 设置](./images/https/setting_https.webp)
 
@@ -10,10 +10,11 @@ FlexKVM 用 HTTPS 加密访问，提供自签名证书（含用户子 CA）和�
 
 | 模式 | 说明 |
 |------|------|
-| 自签名证书 | 系统自动生成，默认启用 |
-| 自定义证书 | 用户上传的 CA 签名证书 |
+| self-signed | 系统自动生成，默认启用 |
+| custom | 使用导入的自定义证书 |
+| user-ca | 使用导入的用户子 CA 签发的证书 |
 
-下拉列表显示当前证书剩余有效时间。
+下拉里只列出可用的模式——自定义证书和用户子 CA 要先在下方导入，导入前下拉只有 `self-signed`。选择器下方显示当前证书的剩余有效期（如 `348天过期`）。
 
 ### 自签名证书
 
@@ -49,10 +50,10 @@ FlexKVM 用 HTTPS 加密访问，提供自签名证书（含用户子 CA）和�
 
     ```bash
     # Debian / Ubuntu
-    sudo cp ca.crt /usr/local/share/ca-certificates/flexkvm-ca.crt
+    sudo cp flexkvm-ca.crt /usr/local/share/ca-certificates/flexkvm-ca.crt
     sudo update-ca-certificates
     # Fedora / RHEL
-    sudo cp ca.crt /etc/pki/ca-trust/source/anchors/
+    sudo cp flexkvm-ca.crt /etc/pki/ca-trust/source/anchors/
     sudo update-ca-trust
     ```
 
@@ -62,19 +63,17 @@ FlexKVM 用 HTTPS 加密访问，提供自签名证书（含用户子 CA）和�
 
 批量部署多台设备时，逐台导入证书很麻烦。部署者可用自己的根 CA 为设备签发子 CA，点"导入用户子 CA"上传——客户端信任部署者的根 CA 后，所有导入该子 CA 的设备都免警告。
 
-!!! note "截图占位"
-
-    待补充：HTTPS 设置页"下载 CA 证书 / 导入用户子 CA"截图（`images/https/setting_https_userca.webp`）。
+![导入用户子 CA](./images/https/setting_https_userca.webp)
 
 > 用户子 CA 面向批量运维场景，单台设备用"下载 CA 证书"就够了。
 
 ### 自定义证书
 
-点"配置自定义 HTTPS 证书"上传文件：
+点"自定义证书"，把 PEM 内容分别粘贴到两个文本框：
 
-![证书上传](./images/https/setting_https_custom.webp)
+![自定义证书](./images/https/setting_https_custom.webp)
 
-| 字段 | 说明 |
+| 文本框 | 说明 |
 |------|------|
 | 私钥 (Private Key) | PEM 格式 RSA 或 EC 私钥（`-----BEGIN PRIVATE KEY-----` 开头） |
 | 证书 (Certificate) | PEM 格式 X.509 证书（`-----BEGIN CERTIFICATE-----` 开头） |
@@ -86,7 +85,7 @@ FlexKVM 用 HTTPS 加密访问，提供自签名证书（含用户子 CA）和�
 | 验证项 | 方法 |
 |--------|------|
 | 浏览器地址栏 | 访问 `https://设备IP`，看有没有 🔒 |
-| 证书详情 | 点 🔒 查看是否是上传的自定义证书 |
+| 证书详情 | 点 🔒 查看是否是配置的自定义证书 |
 | 有效期限 | HTTPS 设置页显示剩余有效时间 |
 | 信任生效 | 导入 CA 证书后访问设备，浏览器不再提示"不安全" |
 

@@ -22,7 +22,7 @@ Two-factor authentication — requires a dynamic verification code in addition t
 
 ### Status
 
-Shows current 2FA status: Enabled / Disabled.
+Shows current 2FA status: Not Generated / Disabled / Enabled.
 
 ### Generate 2FA
 

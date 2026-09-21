@@ -12,7 +12,7 @@ FlexKVM has a built-in SSH server for remote command-line device management — 
 
 ## Enable / Disable
 
-Go to Settings → Security → SSH Settings.
+Go to Settings → Security → SSH.
 
 ![SSH settings](./images/ssh/setting_ssh.webp)
 
