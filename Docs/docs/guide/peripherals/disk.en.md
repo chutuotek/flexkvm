@@ -2,6 +2,8 @@
 
 FlexKVM uses a TF card (MicroSD) for local storage expansion, supporting file management, virtual CD-ROM, and USB export. The two most common scenarios: sharing an ISO image as a virtual CD-ROM for remote OS installation, and transferring files between the TF card and the target host.
 
+> Where: **Mirror** in the menu bar
+
 ## TF Card Requirements
 
 | Item | Requirement |
@@ -18,8 +20,6 @@ The TF card slot is on the side of the device, below the power LED. Insert with 
 ![OLED showing TF connected](./images/disk/oled_tf_connected.webp)
 
 ## Disk Image Menu
-
-Click the disk image icon in the top bar to open the management interface.
 
 ![Disk image menu](./images/disk/disk.webp)
 

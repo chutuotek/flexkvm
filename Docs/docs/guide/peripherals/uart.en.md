@@ -1,6 +1,8 @@
 # UART Serial Terminal
 
-Interact with target devices (routers, embedded development boards, switches) via serial console.
+Interact with target hosts (routers, embedded development boards, switches) via serial console.
+
+> Where: **IO** in the menu bar → UART
 
 > For embedded debugging, industrial control, and other specialized scenarios. Regular users typically don't need this.
 
@@ -10,7 +12,7 @@ Interact with target devices (routers, embedded development boards, switches) vi
 |----------|-------|
 | FlexKVM | Completed [Quick Start](../../quick_start/index.md) wiring and network setup |
 | 2.54mm Dupont wires (female) | At least 3 |
-| Target device | Supports serial communication; parameters (baud rate, etc.) must be confirmed in advance |
+| Target host | Supports serial communication; parameters (baud rate, etc.) must be confirmed in advance |
 
 ## Pinout
 
@@ -20,16 +22,16 @@ FlexKVM's UART interface is a 3-pin header with letter labels beside each pin:
 
 | Silkscreen | Pin | Description |
 |:----------:|:---:|-------------|
-| T | TXD | Data transmit → connect to target device **RX** |
-| R | RXD | Data receive → connect to target device **TX** |
-| G | GND | Ground — common ground with target device |
+| T | TXD | Data transmit → connect to target host **RX** |
+| R | RXD | Data receive → connect to target host **TX** |
+| G | GND | Ground — common ground with target host |
 
-> UART cross-connect: FlexKVM TXD → target device RXD, FlexKVM RXD → target device TXD, GND interconnected. Only these three wires are needed.
+> UART cross-connect: FlexKVM TXD → target host RXD, FlexKVM RXD → target host TXD, GND interconnected. Only these three wires are needed.
 
 ## Wiring
 
 ```
-FlexKVM                 Target Device
+FlexKVM                 Target Host
   TXD ───────────────→ RXD
   RXD ←─────────────── TXD
   GND ──────────────── GND
@@ -37,13 +39,13 @@ FlexKVM                 Target Device
 
 ## Software Configuration
 
-Top bar → click chip icon → IO menu → **UART Serial Terminal**.
+Menu bar → click chip icon → IO menu → **UART Serial Terminal**.
 
 ![UART interface](images/io_uart.webp)
 
 ### Communication Parameters
 
-Set parameters after enabling UART. **Parameters must match the target device exactly**, otherwise you'll get garbled output or no communication:
+Set parameters after enabling UART. **Parameters must match the target host exactly**, otherwise you'll get garbled output or no communication:
 
 | Parameter | Default | Common values |
 |-----------|:-------:|---------------|
@@ -93,11 +95,11 @@ Disconnections now show the specific reason instead of a generic failure:
 
 ## FAQ
 
-**Garbled output?** → Parameters don't match the target device — baud rate mismatch is the most common cause. Verify the device's parameters and reconfigure.
+**Garbled output?** → Parameters don't match the target host — baud rate mismatch is the most common cause. Verify the device's parameters and reconfigure.
 
-**Can't connect?** → Confirm the target device's serial port is enabled and the wiring is correct (TXD→RXD, RXD←TXD, GND interconnected).
+**Can't connect?** → Confirm the target host's serial port is enabled and the wiring is correct (TXD→RXD, RXD←TXD, GND interconnected).
 
-**No response to commands?** → Confirm the target device is in a state that accepts commands. Some devices only respond to serial input during specific phases.
+**No response to commands?** → Confirm the target host is in a state that accepts commands. Some devices only respond to serial input during specific phases.
 
 ---
 

@@ -2,6 +2,8 @@
 
 After wiring the ATX controller, you can remotely control the target host's power — power on, shutdown, force power-off, reboot — just as if you were pressing the buttons on the case yourself.
 
+> Where: **Interface** in the menu bar
+
 ---
 
 ## Before You Begin
@@ -78,9 +80,7 @@ Optional accessories can mount the ATX controller inside the case: full-height U
 
 ## Software Configuration
 
-Click the **Peripherals** icon in the top bar.
-
-![Peripherals menu](./images/atx/atx.webp)
+![Interface menu](./images/atx/atx.webp)
 
 | Icon | Meaning |
 |:----:|---------|
@@ -90,7 +90,7 @@ Click the **Peripherals** icon in the top bar.
 
 ### Enable
 
-1. Click the Peripherals icon in the top bar
+1. Open the **Interface** menu
 2. Toggle the switch in the top-right corner of the panel
 3. When properly connected, the device name `atx` will appear
 
@@ -122,7 +122,7 @@ Long-press duration is adjustable: click the expand arrow next to the power butt
 
 ## FAQ
 
-**Power button not responding?** → Check if Dupont wires are securely connected and if the motherboard header position is correct. In the peripherals panel, confirm the device name shows `atx`.
+**Power button not responding?** → Check if Dupont wires are securely connected and if the motherboard header position is correct. In the Interface menu, confirm the device name shows `atx`.
 
 **Host powers on immediately after shutdown?** → BIOS has "Restore on AC Power Loss" enabled. Enter BIOS and disable this option.
 

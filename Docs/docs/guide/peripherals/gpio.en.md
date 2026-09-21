@@ -2,6 +2,8 @@
 
 FlexKVM provides two independent GPIO pins for connecting external hardware — switches, sensors, relays, etc. — for input detection or output control.
 
+> Where: **IO** in the menu bar → GPIO
+
 > ⚠️ Pin voltage is **3.3V**. Do not connect 5V or higher-voltage devices — this will damage the device.
 
 > For industrial control, custom hardware integration, and other specialized scenarios. Regular users typically don't need this.
@@ -49,7 +51,7 @@ GND ─────────────────────────�
 
 ## Software Configuration
 
-Top bar → click chip icon → IO menu → **GPIO Control**.
+Menu bar → click chip icon → IO menu → **GPIO Control**.
 
 ![GPIO interface](images/io.webp)
 
