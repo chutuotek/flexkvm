@@ -16,7 +16,7 @@
 
 ## 引脚说明
 
-FlexKVM 的 UART 接口为 3 pin 排针，引脚旁有字母标识：
+UART 使用 5pin 拓展排针中的 3 根（T / R / G），引脚旁有字母标识：
 
 ![IO UART](images/product_io.webp)
 

@@ -16,7 +16,7 @@ Interact with target hosts (routers, embedded development boards, switches) via 
 
 ## Pinout
 
-FlexKVM's UART interface is a 3-pin header with letter labels beside each pin:
+UART uses 3 of the 5 pins on the expansion header (T / R / G), with letter labels beside each pin:
 
 ![IO UART](images/product_io.webp)
 
