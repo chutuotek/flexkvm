@@ -83,7 +83,7 @@ What developers see: no version info, no trigger steps, no logs — they can onl
 **✅ Good feedback (copy this format):**
 
 ```
-FlexKVM version: v0.1.2 (Settings → About → System Version)
+FlexKVM version: v0.2.0 (Settings → About → System Version)
 OS version: Windows 11 23H2
 Browser version: Chrome 148.0.7778.178
 Time of issue: 2026-05-25 14:30
