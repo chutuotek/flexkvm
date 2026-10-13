@@ -10,16 +10,18 @@ Click "Audit Log" to open the window:
 
 ![Audit log interface](./images/maintenance_audit.webp)
 
-## Log Categories
+## Log Content
 
-- **System events** `[sys]`: Network config changes, firmware upgrades, factory resets, SSH auth failures, etc.
-- **User events** `[usr]`: Login/logout, account management, USB control, video settings, network config, system reboot, etc.
+Each entry is prefixed with a UTC timestamp and the operator (system events have no operator, only a timestamp):
 
-Format: `[YYYY-MM-DD HH:MM:SS UTC] [sys|usr] log content`
+- **User actions**: `[YYYY-MM-DD HH:MM:SS UTC] [username] log content` — login/logout, account management, USB control, video settings, network config, system reboot, etc.
+- **System events**: `[YYYY-MM-DD HH:MM:SS UTC] log content` — network config changes, firmware upgrades, factory resets, SSH auth failures, etc.
+
+> Up to 10,000 entries are kept; the oldest are dropped once the limit is exceeded (the "Dropped" count at the top of the window is the cumulative number dropped).
 
 ## Viewing Logs
 
-50 entries per page, with pagination. The top of the window shows total records, total pages, and current page count. Click refresh to get the latest.
+50 entries per page, with pagination. The top of the window shows total records, dropped count, and total pages. Click refresh to get the latest.
 
 ## Download Logs
 
