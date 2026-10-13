@@ -17,7 +17,7 @@ Click the **Recording** icon:
 
 **Stop**: Click the timer → "Recording saved" toast → video auto-saves to your browser's download directory.
 
-> Recording doesn't stop automatically — you must click Stop manually. Closing the browser or refreshing the page also stops it. If the video stream disconnects unexpectedly, recording stops automatically (no notification).
+> Recording doesn't stop automatically — you must click Stop manually. Closing the browser or refreshing the page stops it (unsaved parts are discarded). **A sleeping host or HDMI disconnect does not stop recording**: the timer keeps running while the picture is lost, and recording resumes into the same file once the signal returns.
 
 ## File Naming
 

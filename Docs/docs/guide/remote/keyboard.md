@@ -29,7 +29,7 @@
 
 ### 被控系统
 
-告诉 FlexKVM 被控设备是什么系统——快捷键和虚拟键盘布局会相应调整。默认 **Windows**，可选 Linux 或 macOS。
+告诉 FlexKVM 被控设备是什么系统——快捷键和虚拟键盘布局相应调整。默认 **Windows**，可选 Linux 或 macOS。
 
 ### 粘贴文本
 

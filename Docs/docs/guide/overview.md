@@ -17,7 +17,7 @@
 | **截图** | 把当前远程画面存成图片 | [截图](remote/screenshot.md) |
 | **录像** | 把远程画面录成视频 | [录像](remote/recording.md) |
 | **音频** | 开关声卡、麦克风输入、扬声器输出 | [音频](remote/audio.md) |
-| **画面** | 分辨率、画质、GOP、编码、EDID、全屏、重新连接 | [远程画面](remote/screen.md) |
+| **画面** | 分辨率、画质、GOP、编码、EDID、拔出/插入显示器、重新连接 | [远程画面](remote/screen.md) |
 | **键盘** | 文本输入、快捷键、虚拟键盘、粘贴文本 | [键盘](remote/keyboard.md) |
 | **鼠标** | 绝对 / 相对模式、灵敏度、滚轮反转 | [鼠标](remote/mouse.md) |
 | **镜像** | TF 卡分区挂载与共享，被控设备看到虚拟 U 盘或虚拟光驱 | [存储管理](peripherals/disk.md) |
@@ -58,7 +58,7 @@
 | **维护** | 审计、系统日志、Web 日志、重启设备、恢复出厂模式 | [操作审计](security/audit.md) · [系统日志](maintenance/log.md) · [重启设备](maintenance/reboot.md) · [恢复出厂设置](maintenance/factory-reset.md) |
 | **账号** | 用户名、修改密码、2FA验证、退出登录 | [账号安全](security/account/account.md) · [登录管理](security/account/login.md) |
 
-> 设置面板与远程画面同页共存——切 tab 不会断开视频流、键鼠或主 WebSocket，可以边看画面边改配置。部分设置（改 MAC、切静态 IP）会短暂断网，见对应页面说明。
+> 设置面板与远程画面同页共存——切 tab 不会断开视频流、键鼠或主 WebSocket，可以边看画面边改配置。部分设置（改 MAC、切静态 IP）短暂断网，见对应页面说明。
 
 ---
 

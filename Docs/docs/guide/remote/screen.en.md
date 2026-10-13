@@ -177,7 +177,7 @@ Fields left empty keep their original values. After saving, the host sees the mo
 
 ## Fullscreen
 
-Two fullscreen modes (also switchable from the display menu's fullscreen button):
+Two fullscreen modes (also switchable via the **Fullscreen** button at the far right of the menu bar):
 
 | Mode | Shortcut | Effect |
 |------|----------|--------|

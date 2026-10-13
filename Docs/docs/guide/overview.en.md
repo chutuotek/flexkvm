@@ -17,7 +17,7 @@ Twelve buttons from left to right. Click one to open its **menu**:
 | **Screenshot** | Save the current remote display as an image | [Screenshot](remote/screenshot.md) |
 | **Recording** | Record the remote display to a video file | [Recording](remote/recording.md) |
 | **Audio** | Toggle sound card, mic input, speaker output | [Audio](remote/audio.md) |
-| **Video** | Resolution, quality, GOP, codec, EDID, fullscreen, reconnect | [Remote Display](remote/screen.md) |
+| **Video** | Resolution, quality, GOP, codec, EDID, unplug/plug monitor, reconnect | [Remote Display](remote/screen.md) |
 | **Keyboard** | Text input, shortcuts, virtual keyboard, paste text | [Keyboard](remote/keyboard.md) |
 | **Mouse** | Absolute / relative mode, sensitivity, scroll reverse | [Mouse](remote/mouse.md) |
 | **Mirror** | Mount and share TF card partitions; the target sees a virtual USB drive or virtual CD-ROM | [Storage Management](peripherals/disk.md) |

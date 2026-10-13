@@ -56,7 +56,7 @@ When enabled, the mouse micro-moves periodically to prevent the host from going 
 How to use: Click the remote display to enter control (browser requests pointer lock) → move mouse → press `Esc` to exit.
 
 > In non-fullscreen relative mode, `Esc` is captured. Need to send `Esc` to the host? → [Esc Mapping](./keyboard.en.md#esc-mapping).
-> In fullscreen relative mode, `Esc` works normally; a long press will exit fullscreen. Press `F11` to re-enter fullscreen.
+> In fullscreen relative mode, `Esc` works normally; a long press will exit fullscreen. Press `F11` (toolbar fullscreen) or `Ctrl+F11` (picture fullscreen) to re-enter — see [Remote Display](screen.md#fullscreen).
 
 **Sensitivity** (relative mode only): Adjustable range 0.2–3.0, step 0.2. 1.0 = normal speed.
 
