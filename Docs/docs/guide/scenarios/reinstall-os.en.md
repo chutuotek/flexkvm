@@ -39,7 +39,7 @@ Drag your downloaded system ISO image onto the TF card.
 
 Insert the TF card into FlexKVM's side slot (metal contacts facing up toward the power LED, push until you feel a click).
 
-> **Verify**: In the Web interface, click the disk image icon in the menu bar — the popup menu should show the TF card's partition info. Don't see it? → Make sure the TF card is formatted as exFAT or FAT32 (NTFS is read-only).
+> **Verify**: In the Web interface, click the disk image icon in the menu bar — the popup menu should show the TF card's partition info. Don't see it? → Make sure the TF card is formatted as exFAT or FAT32. NTFS is not supported — convert it to exFAT first.
 
 ---
 

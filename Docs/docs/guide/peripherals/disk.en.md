@@ -9,7 +9,7 @@ FlexKVM uses a TF card (MicroSD) for local storage expansion, supporting file ma
 | Item | Requirement |
 |------|-------------|
 | Card type | MicroSD (TF) card |
-| Filesystem | FAT32 / exFAT / ext4 / NTFS (exFAT recommended — no 4GB limit) |
+| Filesystem | FAT32 / exFAT / ext4 (exFAT recommended — no 4GB limit; NTFS not supported) |
 
 ## Installation
 
@@ -59,7 +59,7 @@ Select partition → click **Mount** → file list, partition size, upload/unmou
 
 ![Partition mount](./images/disk/disk_mount.webp)
 
-> Some partition formats may be incompatible with mounting. If it fails, try exFAT.
+> The partition must use a supported filesystem (FAT32 / exFAT / ext4). If mounting fails, reformat as exFAT — NTFS partitions cannot be mounted.
 
 **Uploads / downloads can be cancelled anytime**: click **Cancel** during a transfer — uploads stop sending and wait for the device to clean up; downloads discard the incomplete file. Cancellation shows "Cancelled" instead of a failure error; failures are reported with their specific cause.
 
@@ -84,7 +84,7 @@ Mount a partition first → check a `.img` or `.iso` file → click **Share File
 
 ## FAQ
 
-**TF card not detected?** → Check the filesystem. FAT32 and exFAT have the best compatibility.
+**TF card not detected?** → Check the filesystem. FAT32, exFAT and ext4 are supported, with exFAT the most compatible; reformat NTFS cards as exFAT first.
 
 **Shared CD-ROM not recognized by host?** → Make sure the file is `.img` or `.iso`. Other formats can't be shared as a virtual CD-ROM.
 
