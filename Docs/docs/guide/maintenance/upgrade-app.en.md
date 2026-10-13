@@ -8,10 +8,11 @@ Apps installed on FlexKVM (such as Tailscale) are updated separately — [Online
 
 Choose where to download app packages from:
 
-- **GitCode** — Default source, faster for users in China
-- Gitee — Users in China, faster
-- GitHub — International users
+- **Gitee** — Default source, faster for users in China
+- **GitHub** — International users
 
+> App updates have only these two sources. If a package isn't found on one, try the other.
+>
 > Switching the download source clears already-downloaded packages — check for updates again afterwards.
 
 ## Check for Updates
