@@ -7,6 +7,8 @@ FlexKVM creates its own WiFi hotspot — your phone or computer connects directl
 - Default SSID: `FlexKVM-AP`
 - Default password: `12345678`
 
+> This is not the same hotspot as the temporary `flexkvm-conf` used by [Provisioning Mode](./provision.md), whose password is the 8-digit random number on the OLED.
+
 > The hotspot and WiFi share the same wireless module — running both simultaneously impacts performance. Turn off the hotspot when you're done.
 
 ## Specifications

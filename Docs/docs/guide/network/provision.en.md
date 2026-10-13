@@ -18,7 +18,9 @@ Provisioning mode creates a **temporary** WiFi hotspot — when the device has n
 |---------|:---:|:---:|
 | Mode triggered | Provisioning mode (temporary) | AP hotspot (persistent) |
 | Purpose | First setup / recovery | Daily hotspot toggle |
-| Exit method | Click Save in the provisioning page; or long-press Button A / B for 1s+ to force exit (without saving) | Long-press Button B 3–5s again |
+| Exit method | Click Save in the provisioning page; or long-press Button A for 3s+ (Button B for 5s+) to return home without saving | Long-press Button B 3–5s again |
+
+> For the full staged behaviour of Buttons A and B, see [Physical Buttons](../interaction/button.md): Button A held 1–3s enters provisioning mode, 3s+ returns home; Button B held 1–3s switches Direct Mode, 3–5s toggles WiFi/hotspot, 5s+ returns home.
 
 ## Enter Provisioning Mode
 
@@ -30,7 +32,7 @@ Provisioning mode creates a **temporary** WiFi hotspot — when the device has n
 
 > Holding less than 1s won't trigger; holding more than 3s returns to home. If you miss the timing, release and try again.
 
-After releasing, the standby screen appears. After ~12 seconds, the OLED shows the hotspot name, random password (8 digits), and IP address:
+After releasing, the standby screen appears. After ~12 seconds, the OLED shows the hotspot name `flexkvm-conf`, random password (8 digits), and IP address:
 
 ![Provisioning standby](../../quick_start/images/oled_provision_start.webp)
 
@@ -38,7 +40,9 @@ After releasing, the standby screen appears. After ~12 seconds, the OLED shows t
 
 ## Connect to the Hotspot
 
-**Phone**: Find the FlexKVM hotspot in WiFi settings → enter the password shown on OLED → a captive portal page opens automatically in the browser — tap to enter the provisioning page. If it doesn't pop up, manually go to `http://192.168.10.1`. Android users can also tap "Sign in to network" in the notification bar.
+**Phone**: Find the `flexkvm-conf` hotspot in WiFi settings → enter the password shown on OLED → a captive portal page opens automatically in the browser — tap to enter the provisioning page. If it doesn't pop up, manually go to `http://192.168.10.1`. Android users can also tap "Sign in to network" in the notification bar.
+
+> The provisioning hotspot is always named `flexkvm-conf` and its password is the 8-digit random number on the OLED. It is a different hotspot from the [AP hotspot](./ap.md) default `FlexKVM-AP` / `12345678`.
 
 **Computer**: Connect to the hotspot → open a browser and go to `http://192.168.10.1`.
 
