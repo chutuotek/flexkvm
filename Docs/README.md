@@ -49,21 +49,26 @@ mkdocs serve
 ### 3. 构建网站
 
 ```bash
-./build.sh
+./build.sh b
 ```
 
-构建结果输出到 `site/` 目录
+构建结果输出到 `site/` 目录。
+
+> `./build.sh` 不带参数只显示帮助信息，不会构建——构建请用 `b`（或生产用 `o`）。
 
 ## 构建命令
 
 | 命令 | 说明 |
 |------|------|
 | `./build.sh i` | 安装 MkDocs 和所有依赖 |
-| `./build.sh` | 仅构建网站（包含中英文） |
-| `./build.sh c` | 构建 + gzip 压缩 |
-| `./build.sh w` | 构建 + 清理无用文件 |
+| `./build.sh b` | 构建网站（包含中英文） |
+| `./build.sh r` | 构建 + 清理无用文件 |
 | `./build.sh o` | 构建 + 压缩 + 清理（推荐生产环境） |
-| `./build.sh --help` | 显示帮助信息 |
+| `./build.sh c` | 仅清理 `site/` 和 `out/` |
+| `./build.sh mb` | mike 部署所有 git 标签版本 + 当前为 latest |
+| `./build.sh mr` | 同 `mb`，附带清理 |
+| `./build.sh mo` | 同 `mr`，附带 ICP 备案信息（生产环境） |
+| `./build.sh h` | 显示帮助信息（不带参数同样是帮助） |
 
 ## 版本控制 (mike)
 

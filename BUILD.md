@@ -20,10 +20,12 @@ cd Docs
 mkdocs serve
 
 # 构建网站
-./build.sh
+./build.sh b
 ```
 
 构建结果输出到 `site/` 目录。
+
+> `./build.sh` 不带参数只显示帮助信息，不会构建。
 
 ## 构建命令
 
@@ -33,7 +35,8 @@ mkdocs serve
 | `./build.sh b` | 仅构建网站（包含中英文） |
 | `./build.sh r` | 构建 + 清理无用文件 |
 | `./build.sh o` | 构建 + 压缩 + 清理（推荐生产环境） |
-| `./build.sh mr` | mike 部署所有 git 标签版本 + 当前为 latest，输出到 `out/` |
+| `./build.sh c` | 仅清理 `site/` 和 `out/` |
+| `./build.sh mb` / `mr` / `mo` | mike 部署 git 标签版本 + 当前为 latest，输出到 `out/`（`mo` 附 ICP 备案信息） |
 | `./build.sh -h` | 显示帮助信息 |
 
 ## 版本控制（mike）
