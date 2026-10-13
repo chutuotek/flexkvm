@@ -23,6 +23,8 @@ The device RTC can drift or lose time after power loss or prolonged offline use,
 - **Confirm**: sets the device time to the current time and refreshes the login credential automatically — no need to log in again
 - **Cancel**: dismisses the prompt for this connection
 
+> Deviations under 60 seconds show no prompt, and this page has no manual time entry. Such small drift is corrected by NTP: first check the time zone (a wrong zone shifts time by hours, not tens of seconds), then keep the device online and let it sync. If 2FA codes keep failing, verify the time zone before retrying the login.
+
 ## NTP Time Sources
 
 The system auto-syncs time with the built-in NTP server by default. Custom time sources can be added on the Time & Date page:

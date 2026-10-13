@@ -10,6 +10,8 @@ FlexKVM emulates a keyboard, mouse, and storage device via USB. You can customiz
 
 The dropdown lists built-in identities and any custom ones you've created. After selecting, USB auto-restarts to apply the new configuration.
 
+> ⚠️ Switching identity re-enumerates USB: keyboard, mouse, audio and mass storage (any mounted image) drop briefly and then recover. **Do not do this while installing an OS** — the installation will be interrupted.
+
 ![Device identity switch](./images/usb/select.webp)
 
 > Host BIOS or OS having compatibility issues with a specific USB device? Try switching to a different preset identity.
