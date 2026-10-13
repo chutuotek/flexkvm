@@ -436,13 +436,13 @@ Long-press **Button B [4]** for 3–5 seconds again and release when the OLED sh
 
 2. Since the device uses a self-signed certificate, your browser will show a security warning. Follow the steps for your browser:
 
-    | Browser | Steps |
-    |---------|-------|
-    | Chrome | Click "Advanced" → "Proceed to (unsafe)" |
-    | Edge | Click "Advanced" → "Continue to this site (unsafe)" |
-    | Firefox | Click "Advanced" → "Accept the Risk and Continue" |
-    | Safari | Click "Show Details" → "Visit This Website" |
-    | Mobile browsers | Path differs from desktop; typically tap "Advanced" or "Details" to proceed |
+| Browser | Steps |
+|---------|-------|
+| Chrome | Click "Advanced" → "Proceed to (unsafe)" |
+| Edge | Click "Advanced" → "Continue to this site (unsafe)" |
+| Firefox | Click "Advanced" → "Accept the Risk and Continue" |
+| Safari | Click "Show Details" → "Visit This Website" |
+| Mobile browsers | Path differs from desktop; typically tap "Advanced" or "Details" to proceed |
 
 ![SSL warning 1](../images/ssl_warning.webp)
 
