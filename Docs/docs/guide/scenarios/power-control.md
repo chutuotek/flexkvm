@@ -95,7 +95,7 @@ ATX 管物理开关，WoL 管网络唤醒——两个配合能覆盖所有场景
 在 FlexKVM 菜单栏点**网络唤醒**图标：
 
 1. 点 **+** 添加设备
-2. 填设备名称（如 `OfficePC`，只支持英文和数字）和 MAC 地址（如 `AA:BB:CC:DD:EE:FF`）
+2. 填设备名称（如 `OfficePC`，1~63 个字符，可用字母、数字、空格、连字符和下划线）和 MAC 地址（如 `AA:BB:CC:DD:EE:FF`）
 3. 确认保存
 
 > MAC 地址在哪看？Windows：`ipconfig /all` 里的"物理地址"。Linux：`ip addr`。

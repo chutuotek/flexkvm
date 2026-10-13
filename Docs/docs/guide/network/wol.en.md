@@ -30,7 +30,7 @@ Enter the target host's BIOS (press Del / F2 during boot) and find these options
 ## Add a Device
 
 1. Click the **+** button
-2. Enter a device name (ASCII and numbers only, max 32 chars, must be unique)
+2. Enter a device name (1–63 characters; letters, numbers, spaces, hyphens and underscores; no leading/trailing space; must be unique)
 3. Enter the MAC address (format: `AA:BB:CC:DD:EE:FF`)
 4. Confirm
 
