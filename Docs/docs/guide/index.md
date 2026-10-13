@@ -317,7 +317,7 @@ TF 卡存储、ATX 电源控制、UART 串口、GPIO 引脚——物理外接的
 
     [:octicons-arrow-right-24: 查看](system/about.md)
 
-- **:material-activity: 状态监控**
+- **:material-chart-line: 状态监控**
 
     温度/CPU/内存/网络速率实时曲线，历史回看与 CSV 导出
 

@@ -4,7 +4,7 @@ exclude_docs: |
   *.png
 
 site_name: FlexKVM Docs
-site_description: Documentation for FlexKVM Productions
+site_description: FlexKVM 硬件级带外管理设备官方文档：快速开始、功能配置、远程访问、故障排查与更新日志
 site_author: ChuoTuoTEK
 copyright: Copyright &copy; 2026 ChuoTuoTEK
   <br/>

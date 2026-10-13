@@ -316,7 +316,7 @@ Device-level parameter adjustments, corresponding to the Settings panel (gear ic
 
     [:octicons-arrow-right-24: View](system/about.md)
 
-- **:material-activity: Status Monitor**
+- **:material-chart-line: Status Monitor**
 
     Live temperature/CPU/memory/network-rate curves, history review and CSV export
 

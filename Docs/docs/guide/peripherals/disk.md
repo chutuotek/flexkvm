@@ -9,6 +9,7 @@ FlexKVM 通过 TF 卡（MicroSD）扩展本地存储，支持文件管理、虚�
 | 项目 | 要求 |
 |------|------|
 | 卡类型 | MicroSD（TF）卡 |
+| 容量 | 无硬性上限 |
 | 文件系统 | FAT32 / exFAT / ext4（exFAT 推荐，无 4GB 限制；NTFS 不支持） |
 
 ## 安装

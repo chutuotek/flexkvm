@@ -75,7 +75,7 @@
 
 - **:material-monitor-eye: 远程桌面控制**
 
-    纯硬件捕获 HDMI 信号，最高 1920x1200@60Hz。不依赖操作系统、显卡驱动或远程服务 —— BIOS、蓝屏、安全模式都能看见。
+    纯硬件捕获 HDMI 信号，最高 1920×1200@60Hz。不依赖操作系统、显卡驱动或远程服务 —— BIOS、蓝屏、安全模式都能看见。
 
 - **:material-headset: 双向音频**
 
@@ -83,7 +83,7 @@
 
 - **:material-robot: AI 远程控制**
 
-    内置 Agent 接口与 MCP 服务，Claude、OpenClaw 等 AI 客户端可自动截屏、控制键鼠，实现无人值守运维。
+    内置 Agent 接口与 MCP 服务，Claude Code、OpenClaw 等 AI 客户端可自动截屏、控制键鼠，实现无人值守运维。
 
 - **:material-power: 远程开关机**
 
@@ -91,7 +91,7 @@
 
 - **:material-disc: 虚拟光驱**
 
-    使用 TF 卡做为虚拟光驱，能实现文件双向传输，远程安装系统等功能。
+    使用 TF 卡作为虚拟光驱，能实现文件双向传输，远程安装系统等功能。
 
 - **:material-vpn: 异地组网（Tailscale）**
 
@@ -99,7 +99,7 @@
 
 - **:material-wifi-arrow-left-right: 双网冗余**
 
-    双频 WiFi6 + 百兆有线，双网同时在线，任一网络发生故障，不影响控制
+    双频 WiFi6 + 百兆有线，双网同时在线，任一网络发生故障，不影响控制。
 
 - **:material-lan-connect: 无网控制**
 
@@ -107,7 +107,7 @@
 
 - **:material-fan-off: 低功耗静音**
 
-    典型功耗 1.5W ~ 2.4W，铝合金被动散热，无风扇，7x24 小时安静运行。
+    典型功耗 1.5W ~ 2.4W，7x24 小时低发热运行，不打扰工作与休息。
 
 - **:material-console-line: 串口与 GPIO 扩展**
 

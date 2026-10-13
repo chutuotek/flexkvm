@@ -9,6 +9,7 @@ FlexKVM uses a TF card (MicroSD) for local storage expansion, supporting file ma
 | Item | Requirement |
 |------|-------------|
 | Card type | MicroSD (TF) card |
+| Capacity | No hard limit |
 | Filesystem | FAT32 / exFAT / ext4 (exFAT recommended — no 4GB limit; NTFS not supported) |
 
 ## Installation

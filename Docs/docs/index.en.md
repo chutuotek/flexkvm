@@ -75,7 +75,7 @@
 
 - **:material-monitor-eye: Remote Desktop Control**
 
-    Pure hardware HDMI capture, up to 1920x1200@60Hz. No dependency on OS, graphics drivers, or remote services — BIOS, blue screens, safe mode are all visible.
+    Pure hardware HDMI capture, up to 1920×1200@60Hz. No dependency on OS, graphics drivers, or remote services — BIOS, blue screens, safe mode are all visible.
 
 - **:material-headset: Bidirectional Audio**
 
@@ -83,7 +83,7 @@
 
 - **:material-robot: AI Remote Control**
 
-    Built-in Agent API and MCP service — AI clients such as Claude and OpenClaw can take screenshots and control keyboard/mouse automatically for unattended operations.
+    Built-in Agent API and MCP service — AI clients such as Claude Code and OpenClaw can take screenshots and control keyboard/mouse automatically for unattended operations.
 
 - **:material-power: Remote Power Control**
 
