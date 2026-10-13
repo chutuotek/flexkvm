@@ -143,8 +143,8 @@ Click "Custom EDID" and enter EDID data in HEX format:
 | Rule | Description |
 |------|-------------|
 | Encoding | Hexadecimal (HEX), two characters per byte |
-| Size | Integer multiples of 128 bytes (1–6 blocks) |
-| Max | 768 bytes |
+| Size | Integer multiples of 128 bytes (1–8 blocks) |
+| Max | 1024 bytes |
 | Header | Must start with `00 FF FF FF FF FF FF 00` |
 | Checksum | Each 128-byte block checksum must be 0 |
 
