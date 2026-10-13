@@ -59,7 +59,7 @@ Click the gear icon on the left side of the card:
 | 5G Band | Enable the 5GHz band | Off | On / Off |
 | WiFi6 | 802.11ax | Off | On / Off |
 | Channel | Wireless channel | AUTO | 2.4G: 1–11, 5G: 36–165 |
-| Max Clients | Simultaneous client limit | 3 | 1–5 |
+| Max Clients | Simultaneous client limit | 3 | 1–64 |
 
 > Configuration changes take effect immediately. In provisioning mode, AP config changes are staged and applied when you save and exit.
 
@@ -67,7 +67,7 @@ Click the gear icon on the left side of the card:
 
 ![AP connection status](./images/ap/setting_ap_open.webp)
 
-When enabled, the card shows: hotspot SSID, band label, connected clients / max (e.g., `1/2` = 1 connected, max 2).
+When enabled, the card shows: hotspot SSID, band label (2.4G / 5G), a WiFi6 badge (when enabled), and the max client limit.
 
 ### Verification
 
