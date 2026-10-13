@@ -36,7 +36,7 @@
 | 1. 看网口灯 | 不亮 → 检查网线两端、换根网线 |
 | 2. 看是否闪烁 | 亮但不闪 → 换路由器端口 |
 | 3. 等 Loading | OLED 显示 `E Loading...` 超过 20 秒 → 确认路由器 DHCP 已开启、地址池未耗尽 |
-| 4. 仍无 IP | 改用[配网模式](../../guide/network/provision.md)，或为设备配[静态 IP](../../guide/network/eth.md#ipv4-配置) |
+| 4. 仍无 IP | 改用[配网模式](../../guide/network/provision.md)，或为设备配[静态 IP](../../guide/network/eth.md#网络配置) |
 
 ### 直连模式拿不到 IP
 
