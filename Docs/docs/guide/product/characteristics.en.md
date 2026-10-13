@@ -4,7 +4,7 @@
 
 | Parameter | Value |
 |:---------:|:-----:|
-| Video input | HDMI 1.4, up to 1920×1200@60fps |
+| Video input | HDMI 1.4, up to 1920×1200@60Hz |
 | Ethernet | 10/100M auto-negotiation, supports Direct Mode (DHCP server) |
 | WiFi | WiFi 6, dual-band 2.4GHz / 5GHz |
 | USB data | USB 2.0 OTG |
@@ -27,7 +27,7 @@
 | Parameter | Value |
 |:---------:|:-----:|
 | Dimensions | 65 × 46 × 22 mm (excl. antenna) |
-| Weight | ~100g |
+| Weight | ~100 g |
 
 ## Environmental
 

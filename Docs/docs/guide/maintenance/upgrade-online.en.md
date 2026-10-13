@@ -34,7 +34,7 @@ Choose the firmware download location:
 
 ## Current Version
 
-Shows the current firmware version (e.g., `v0.1.0`).
+Shows the current firmware version (e.g., `v0.2.0`).
 
 Stable release: `v0.x.x`
 Beta release: `v0.x.x-Beta.x`

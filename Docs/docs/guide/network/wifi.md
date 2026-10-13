@@ -94,7 +94,7 @@ WiFi 连上后，OLED 网络图标的"X"消失，第二行显示 IP 地址。IP 
 
 ![WiFi 连接中](../../quick_start/images/web_connecting_wifi.webp)
 
-连接中会显示状态：
+连接中显示状态：
 
 ![WiFi 连接状态](./images/wifi/web_connecting_wifi2.webp)
 

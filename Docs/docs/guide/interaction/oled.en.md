@@ -56,7 +56,7 @@ While acquiring an IP address, the display shows **E Loading...** or **W Loading
 
 If the IP hasn't been acquired after 20 seconds, check whether your current network supports dynamic IP assignment.
 
-**System version** (bottom line): e.g., `v0.1.2` or `v0.1.3-Beta.1`.
+**System version** (bottom line): e.g., `v0.2.0` or `v0.2.0-Beta.4`.
 
 ### Info Sub-pages
 

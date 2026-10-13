@@ -123,7 +123,7 @@
 
 - **:material-package-variant-closed: Ultra Compact**
 
-    Just 65 × 46 × 22 mm, ~100g — take it anywhere.
+    Just 65 × 46 × 22 mm, ~100 g — take it anywhere.
 
 </div>
 
@@ -134,7 +134,7 @@
 | Item | Spec |
 |------|------|
 | Dimensions | 65 × 46 × 22 mm (excl. antenna) |
-| Weight | ~100g |
+| Weight | ~100 g |
 | Power | 5V / 1A (USB Type-C) |
 | Typical power | 1.5W ~ 2.4W |
 | Video input | HDMI 1.4, up to 1920×1200@60Hz |

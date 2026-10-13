@@ -16,7 +16,7 @@
 | Gitee | [gitee.com/chutuotek/flexkvm/releases](https://gitee.com/chutuotek/flexkvm/releases) | 国内用户，速度更快 |
 | GitHub | [github.com/chutuotek/flexkvm/releases](https://github.com/chutuotek/flexkvm/releases) | 海外用户 |
 
-在发布页找到目标版本，下载 `.tar` 固件包（如 `flexkvm-v0.1.2.tar`）。
+在发布页找到目标版本，下载 `.tar` 固件包（如 `flexkvm-v0.2.0.tar`）。
 
 ## 上传镜像
 

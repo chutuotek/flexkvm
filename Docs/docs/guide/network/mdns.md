@@ -12,7 +12,7 @@ FlexKVM 默认开启 mDNS，目前开放三种服务：
 | HTTP | `_http._tcp` | 80 |
 | HTTPS | `_https._tcp` | 443 |
 
-> 普通模式下访问 `http://` 会自动重定向到 `https://` 加密访问，因此直接使用 HTTPS 地址即可（配网模式除外）。
+> 普通模式下访问 `http://` 自动重定向到 `https://` 加密访问，因此直接使用 HTTPS 地址即可（配网模式除外）。
 
 ## 查看主机名
 
@@ -46,7 +46,7 @@ FlexKVM 默认开启 mDNS，目前开放三种服务：
 - 控制端与 FlexKVM 必须在**同一局域网**内（连接同一路由器，或直连 FlexKVM 热点）
 - **Windows**：需安装 [Apple Bonjour](https://support.apple.com/downloads/bonjour-for-windows)（安装 iTunes 会自带）才能解析 `.local` 域名
 - **macOS / iOS / Linux / Android**：系统原生支持，无需额外配置
-- **VPN / 代理软件（梯子）**：代理接管系统 DNS 后 `.local` 域名可能解析失败。主机名打不开时先关闭代理再试，或在代理规则里把 `*.local` 和设备 IP 设为直连
+- **VPN / 代理软件**：代理接管系统 DNS 后 `.local` 域名可能解析失败。主机名打不开时先关闭代理再试，或在代理规则里把 `*.local` 和设备 IP 设为直连
 - `.local` 是 mDNS 的保留域名，公网 DNS 无法解析；跨网段访问请使用 IP 地址或 [Tailscale](tailscale.md)
 
 ## 启用 / 关闭

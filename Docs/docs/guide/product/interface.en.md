@@ -47,7 +47,7 @@ FlexKVM has four physical buttons. For detailed operation, see [Physical Buttons
 ## HDMI Input
 
 - **Spec**: Standard HDMI Type-A, HDMI 1.4 compatible.
-- **Function**: Receives HDMI video signal from target host, up to 1920x1200@60fps.
+- **Function**: Receives HDMI video signal from target host, up to 1920x1200@60Hz.
 
 ## ATX Port
 

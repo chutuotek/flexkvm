@@ -19,7 +19,7 @@ When reporting bugs via email, please provide the following information:
 Example:
 
 ```
-FlexKVM version: v0.1.2
+FlexKVM version: v0.2.0
 OS version: Windows 10 21H1
 Browser version: Chrome 148.0.7778.178 (Official Build) (64-bit)
 Time of occurrence: 2026-05-22 10:20
