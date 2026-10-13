@@ -174,8 +174,25 @@ The device uses a self-signed HTTPS certificate by default. If the client report
 | On | Yes | AI and the user share the same keyboard/mouse |
 
 - AI and an online user share the same HID device — simultaneous input interferes, so stagger usage.
-- With Agent enabled and no user online, the device keeps a screenshot-ready video channel.
-- Agent endpoints are fully disabled in provisioning mode.
+- Once Agent is enabled, `screenshot` works regardless of whether a user is online.
+- Agent endpoints are fully disabled in provisioning mode (the MCP endpoint is hidden and requests return 404).
+
+## Limits
+
+The interface enforces fixed limits; exceeding them fails or truncates the request. Check these when planning an event batch:
+
+| Item | Limit |
+|------|-------|
+| Events per `control` call | 32 |
+| Total duration per `control` call | 60 seconds (then it times out) |
+| `type_text` length per call | 512 characters |
+| `delay` per call | 5000 ms |
+| `mouse_drag` duration per call | 5000 ms |
+| `mouse_scroll` dy per call | ±127 |
+| Ordinary keys per `press_key` hotkey | 6 (HID report limit) |
+
+- Only one `control` batch runs at a time; a new request while busy returns 503. A batch can be cancelled mid-run.
+- `state` is assembled from several reads, not an atomic snapshot, so it can be slightly inconsistent in rare cases.
 
 ---
 
@@ -183,15 +200,19 @@ The device uses a self-signed HTTPS certificate by default. If the client report
 
 **Getting 401?** → The API Key is missing or wrong. Deleted the key? Generate a new one and update the client.
 
-**Getting 403?** → Agent is disabled. Turn it on under Settings → Agent.
+**Getting 403?** → Two possible meanings: ① Agent is disabled — turn it on under Settings → Agent; ② you reached the MCP endpoint over plain `http://` — MCP requires HTTPS (sending a long-lived Bearer key in plaintext is unsafe), so use `https://`.
+
+**Getting 429?** → Too many failed auth attempts triggered a short rate limit. Wait about a minute and retry, and check that the key is correct.
 
 **The AI says it has no such skill after installing?** → Make sure the repository is in the client's skills directory with `SKILL.md` inside, then restart the client; on OpenClaw check with `openclaw skills list`.
 
-**MCP tools don't show up?** → Check status with `claude mcp list`; on DSH verify the patch file loads and that `serverName` hasn't been renamed; if both fail, see the next TLS item.
+**MCP tools don't show up?** → Check status with `claude mcp list`; on DSH verify the patch file loads, that `serverName` hasn't been renamed, and that the **`FlexKVM_TOKEN` environment variable is set** (the config references it but won't create it); if both fail, see the next TLS item.
 
 **TLS / certificate errors?** → The device uses a self-signed certificate — import the device CA into the system trust store (see "HTTPS Certificate Note" above).
 
-**AI actions do nothing?** → Event batches exceeding 60 seconds stop with a timeout; confirm the target host's keyboard/mouse works (e.g., typing is visible in the BIOS screen).
+**AI actions do nothing?** → First check the Limits section above; confirm the target host's keyboard/mouse works (e.g., typing is visible in the BIOS screen).
+
+**Getting 404 from the endpoint in provisioning mode?** → Agent endpoints are fully disabled in provisioning mode and the MCP endpoint is hidden — this is expected.
 
 ---
 
