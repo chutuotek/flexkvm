@@ -44,7 +44,7 @@ Only affects JPG:
 | Low | Smallest file |
 | Medium | Daily use |
 | High | More detail |
-| Best | Maximum quality |
+| Ultra | Maximum quality |
 
 > PNG is always maximum quality — this setting doesn't affect it.
 

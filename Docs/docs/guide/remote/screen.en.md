@@ -91,7 +91,7 @@ Four levels — higher is sharper, but consumes more bandwidth:
 | High | Need to see fine details | ~4 Mbps |
 | Ultra | Best quality | ~8 Mbps |
 
-> Bandwidth is approximate and varies with screen content. If it's laggy, lower the quality.
+> Bandwidth is approximate and varies with screen content. If it's laggy, lower the quality. This table covers the **live view**; Video Quality under [Recording](recording.en.md) is a separate setting that lists recording bitrates.
 
 ### Codec
 

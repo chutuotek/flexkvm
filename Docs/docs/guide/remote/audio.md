@@ -15,7 +15,7 @@ FlexKVM 通过 USB 虚拟声卡（UAC）在被控设备和你的浏览器之间�
 | ![](../icon/audio/audio-lines.svg) | 麦克风和扬声器都开了 |
 | ![](../icon/audio/mic.svg) | 只开了麦克风 |
 | ![](../icon/audio/volume2.svg) | 只开了扬声器 |
-| ![](../icon/audio/audio-lines-off.svg) | 已关闭或未连接 |
+| ![](../icon/audio/audio-lines-off.svg) | 未使能或未连接 |
 
 ## 音频菜单
 
@@ -27,7 +27,7 @@ FlexKVM 通过 USB 虚拟声卡（UAC）在被控设备和你的浏览器之间�
 |------|------|
 | 已连接 | 正常 |
 | 未连接 | 刷新页面或重新连接远程画面可恢复 |
-| 已禁用 | 音频功能关了 |
+| 未使能 | 音频功能关了，点开启恢复 |
 
 ### 启用声卡
 
