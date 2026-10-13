@@ -50,7 +50,7 @@ Type `help` for the full list. Quick reference:
 
 | Command | Description |
 |---------|-------------|
-| `atx power short\|long` | Short/long press power button |
+| `atx power short|long` | Short/long press power button |
 | `atx reset` | Short press reset button |
 | `atx status` | View ATX and power status |
 
@@ -58,10 +58,11 @@ Type `help` for the full list. Quick reference:
 
 | Command | Description |
 |---------|-------------|
-| `gpio status` | View pin status |
-| `gpio enable\|disable` | Enable/disable |
-| `gpio direction` | Set direction (in/out) |
-| `gpio level` | Set output level (0/1) |
+| `gpio status [a|b]` | View pin status (all pins if omitted) |
+| `gpio enable <a|b>` | Enable the given pin |
+| `gpio disable <a|b>` | Disable the given pin |
+| `gpio direction <a|b> <in|out>` | Set pin direction |
+| `gpio level <a|b> <0|1>` | Set output level |
 
 ### Network Tools
 
@@ -70,7 +71,7 @@ Type `help` for the full list. Quick reference:
 | `network show` | View network interface info |
 | `ping` | Connectivity test |
 | `mdns status` | View mDNS discovery status |
-| `mdns enable\|disable` | Enable/disable mDNS discovery |
+| `mdns enable|disable` | Enable/disable mDNS discovery |
 
 ### System Management
 
@@ -80,6 +81,15 @@ Type `help` for the full list. Quick reference:
 | `reset` | Factory reset (keep logs) |
 | `reset all` | Full reset (clear all) |
 | `exit` | Exit session |
+
+> ⚠️ `reset` / `reset all` are irreversible. Execution requires three confirmations:
+>
+> 1. A warning listing what will be cleared is printed
+> 2. Enter your account password (up to 3 attempts)
+> 3. If 2FA is enabled, enter the TOTP code or a backup code
+> 4. A 3-second countdown runs; press `Ctrl+C` to cancel
+>
+> Failing any step (wrong password/code, `Ctrl+C`, session ended) cancels the reset without clearing anything.
 
 ## Terminal Shortcuts
 

@@ -50,7 +50,7 @@ admin@flexkvm-6jzdd#
 
 | 命令 | 说明 |
 |------|------|
-| `atx power short\|long` | 短按/长按电源键 |
+| `atx power short|long` | 短按/长按电源键 |
 | `atx reset` | 短按复位键 |
 | `atx status` | 查看 ATX 及电源状态 |
 
@@ -58,10 +58,11 @@ admin@flexkvm-6jzdd#
 
 | 命令 | 说明 |
 |------|------|
-| `gpio status` | 查看引脚状态 |
-| `gpio enable\|disable` | 启用/禁用 |
-| `gpio direction` | 设置方向（in/out） |
-| `gpio level` | 设置输出电平（0/1） |
+| `gpio status [a|b]` | 查看引脚状态（不带参数看全部） |
+| `gpio enable <a|b>` | 启用指定引脚 |
+| `gpio disable <a|b>` | 禁用指定引脚 |
+| `gpio direction <a|b> <in|out>` | 设置引脚方向 |
+| `gpio level <a|b> <0|1>` | 设置输出电平 |
 
 ### 网络工具
 
@@ -70,7 +71,7 @@ admin@flexkvm-6jzdd#
 | `network show` | 查看网络接口信息 |
 | `ping` | 连通性测试 |
 | `mdns status` | 查看 mDNS 服务发现状态 |
-| `mdns enable\|disable` | 启用/禁用 mDNS 服务发现 |
+| `mdns enable|disable` | 启用/禁用 mDNS 服务发现 |
 
 ### 系统管理
 
@@ -80,6 +81,15 @@ admin@flexkvm-6jzdd#
 | `reset` | 恢复出厂（保留日志） |
 | `reset all` | 深度恢复（清除全部） |
 | `exit` | 退出会话 |
+
+> ⚠️ `reset` / `reset all` 是不可逆操作，执行时有三重确认：
+>
+> 1. 打印清除范围警告
+> 2. 输入账号密码（最多 3 次）
+> 3. 开启了 2FA 时再输入 TOTP 动态码或备用码
+> 4. 3 秒倒计时，期间按 `Ctrl+C` 可取消
+>
+> 中途任一步失败（密码/验证码错误、Ctrl+C、会话被踢）都取消，不执行清除。
 
 ## 终端操作
 
