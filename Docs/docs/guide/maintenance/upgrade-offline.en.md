@@ -6,6 +6,13 @@ You can upgrade firmware even without internet access — download the firmware 
 
 ![Upgrade interface](./images/setting_ota_offline.webp)
 
+## Before You Start
+
+- [ ] Power the device from a dedicated power adapter — do not rely only on USB power from the target host. Power loss during upgrade can brick the device
+- [ ] Note the current firmware version (Settings → System → About), needed for rollback decisions and support tickets
+- [ ] Make sure the target version is higher than the current one: downgrades and same-version overwrites are not supported
+- [ ] Do not touch power, USB device identity, or network settings while upgrading
+
 ## Download Firmware Package
 
 Download the OTA image file (`.tar` format) from either source on your computer:
@@ -28,7 +35,7 @@ Click **Upload Upgrade Package** → select the `.tar` firmware package on your 
 
 ## Upgrade
 
-Click Upgrade - a dialog shows the image SHA-256 checksum. Confirm it's correct, then click Upgrade - enter password (with 2FA enabled, also enter verification code):
+Click Upgrade - a dialog shows the image SHA-256 checksum, which you can compare against the value published on the firmware releases page (if the releases page doesn't publish one, go straight to the next step) - enter password (with 2FA enabled, also enter verification code):
 
 ![Upgrade package verification](./images/setting_ota_offline_check.webp)
 
@@ -45,6 +52,8 @@ Upgrade success:
 ![Upgrade success](./images/ota_upgrade_success.webp)
 
 > OTA only upgrades to a higher version — downgrades and same-version overwrites are not supported. ⚠️ Keep power stable during upgrade; power loss may cause upgrade failure.
+
+> Power loss mid-upgrade, or the device won't boot afterwards → recover with [Flash Image](./flash.md); that page is still being written, so in an emergency [report the issue](../scenarios/feedback.md) directly with the serial number.
 
 ---
 
