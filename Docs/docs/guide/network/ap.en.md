@@ -41,7 +41,9 @@ Long-press **Button B** for 3–5 seconds (stage 2) to toggle between hotspot an
 
 ### Enable / Disable
 
-Click the toggle on the right side of the card. The hotspot activates immediately when enabled — other devices can discover and connect to it.
+Click the toggle on the right side of the card. After confirming, the hotspot starts; other devices can discover and connect within a few seconds.
+
+> How fast it appears depends on the wireless module startup — usually a few seconds, during which the OLED network icon lights up first. Restarting the radio or switching channels also causes a brief interruption.
 
 > While the hotspot is active, you can access the management interface via the hotspot-assigned IP.
 

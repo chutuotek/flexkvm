@@ -8,7 +8,7 @@ Device at home, you're at the office? Need to manage a server in a colo from a b
 
 | Your situation | Method | Summary |
 |----------------|--------|---------|
-| Near the device, but no network available | **Hotspot direct** | FlexKVM creates its own WiFi 6 hotspot — connect your phone and manage |
+| Near the device, but no network available | **Hotspot direct** | FlexKVM creates its own WiFi hotspot — connect your phone and manage |
 | Away from the device, it's in a remote location | **Tailscale VPN** | Free VPN, end-to-end encrypted — works anywhere with internet |
 
 > Try AP hotspot direct first (zero config, instant), set up Tailscale later if needed.
@@ -17,7 +17,9 @@ Device at home, you're at the office? Need to manage a server in a colo from a b
 
 ## Option 1: AP Hotspot Direct
 
-No network on-site, customer won't let you on their LAN, rack isn't wired yet — FlexKVM becomes a WiFi 6 hotspot. Your phone or laptop connects directly and you're in control.
+No network on-site, customer won't let you on their LAN, rack isn't wired yet — FlexKVM becomes a WiFi hotspot. Your phone or laptop connects directly and you're in control.
+
+> The hotspot runs 802.11 a/b/g/n/ac by default; enable WiFi 6 (802.11ax) manually under **Settings → Network → AP → WiFi6** (off by default).
 
 ### Steps
 

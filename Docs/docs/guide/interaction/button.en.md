@@ -33,7 +33,7 @@ FlexKVM has four physical buttons for provisioning, mode switching, and system m
 | Hold duration | Action | OLED preview | Wait |
 |:------------:|--------|:----------:|:----:|
 | 1–3s | Toggle Direct Mode | Direct-mode icon / Ethernet icon | ~5s |
-| 3–5s | Toggle WiFi ↔ AP Hotspot mode | WiFi or AP icon | 3–10s |
+| 3–5s | Toggle WiFi ↔ AP Hotspot mode | WiFi or AP icon | ~10s to start AP / 3–4s back to WiFi |
 | 5s+ | Return to home screen (cancel) | HOME icon | Instant |
 
 **Stage 1 (1–3s)**: Toggle [Direct Mode](../network/eth-server.md). On a normal wired network → shows the direct-mode icon; release to enable Direct Mode. In Direct Mode → shows the Ethernet icon; release to restore the wired network.
