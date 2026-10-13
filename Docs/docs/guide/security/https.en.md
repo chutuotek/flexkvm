@@ -78,7 +78,7 @@ Click "Custom Certificate" and paste the PEM content into the two text boxes:
 | Private Key | PEM format RSA or EC private key (starts with `-----BEGIN PRIVATE KEY-----`) |
 | Certificate | PEM format X.509 certificate (starts with `-----BEGIN CERTIFICATE-----`) |
 
-> Certificate in another format (.pfx, .jks)? Convert to PEM using OpenSSL first. The system validates that the certificate and private key match; after validation, switches to custom mode. If a custom certificate expires, the system auto-falls back to the self-signed certificate — access is not interrupted.
+> Certificate in another format (.pfx, .jks)? Convert to PEM using OpenSSL first. The system validates that the certificate and private key match; after a successful import you must still **manually select `custom` in the certificate mode dropdown** to activate it (the dropdown lists only imported, usable modes). If a custom certificate expires, the system auto-falls back to the self-signed certificate — access is not interrupted.
 
 ## Verification
 
