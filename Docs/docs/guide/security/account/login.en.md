@@ -24,7 +24,9 @@ On first access, the account creation screen is shown:
 | Field | Requirements |
 |-------|-------------|
 | Username | 4–32 chars, letters/numbers/underscores/dots/hyphens |
-| Password | 8–32 chars, printable characters (no spaces) |
+| Password | 8–32 printable ASCII characters (no spaces); must not contain any of the characters listed below |
+
+Characters not allowed in a password (to prevent command and log injection): `` ; | & ` $ ( ) < > { } [ ] ' " \ * ? ``. For symbols, use `!`, `#`, `%`, `+`, `-`, `_`, `=`, `@`, `^`, `~`.
 
 Fill in and click "Create Account" → auto-login to the main interface.
 

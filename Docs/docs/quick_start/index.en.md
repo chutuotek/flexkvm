@@ -473,8 +473,10 @@ On first access, you need to create an admin account:
 | Field | Requirements |
 |-------|-------------|
 | Username | 4–32 characters, letters / numbers / underscores / dots / hyphens |
-| Password | 8–32 characters, printable characters, no spaces |
+| Password | 8–32 printable ASCII characters, no spaces |
 | Confirm password | Re-enter the same password to confirm |
+
+Characters not allowed in a password (to prevent command and log injection): `` ; | & ` $ ( ) < > { } [ ] ' " \ * ? ``.
 
 Fill in all fields and click "Create Account". The system will take you to the main interface.
 

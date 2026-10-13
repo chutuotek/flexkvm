@@ -14,7 +14,7 @@ Shows the currently logged-in username (e.g., `admin`).
 
 ![Password change](./images/change-passwd.webp)
 
-> Password must be ≥ 8 characters, can use letters, numbers, and special characters. If 2FA is enabled, you'll also need to enter a 2FA code.
+> Password: 8–32 printable ASCII characters, no spaces, and none of `` ; | & ` $ ( ) < > { } [ ] ' " \ * ? `` (to prevent command and log injection). If 2FA is enabled, you'll also need to enter a 2FA code.
 
 ## 2FA Authentication
 
