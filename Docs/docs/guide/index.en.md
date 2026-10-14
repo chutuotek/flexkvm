@@ -218,44 +218,6 @@ TF card storage, ATX power control, UART serial, and GPIO — physical expansion
 
 </div>
 
-### Security
-
-Access control and communication encryption to protect your device.
-
-<div class="grid cards" markdown>
-
-- **:material-login: Login Management**
-
-    Login flow, first-time account creation, password and 2FA verification
-
-    [:octicons-arrow-right-24: View](security/account/login.md)
-
-- **:material-account-cog: Account Security**
-
-    Username, password change, 2FA verification and backup codes, logout
-
-    [:octicons-arrow-right-24: View](security/account/account.md)
-
-- **:material-console: SSH Remote Access**
-
-    Out-of-band management via SSH command line
-
-    [:octicons-arrow-right-24: View](security/ssh.md)
-
-- **:material-lock: HTTPS Certificate**
-
-    Self-signed / custom certificates, encrypt the web management interface
-
-    [:octicons-arrow-right-24: View](security/https.md)
-
-- **:material-text-box-search: Audit Logs**
-
-    System and user operation event records for reviewing activity history
-
-    [:octicons-arrow-right-24: View](security/audit.md)
-
-</div>
-
 ### System Settings
 
 Device-level parameter adjustments, corresponding to the Settings panel (gear icon) in the web interface.
@@ -291,6 +253,44 @@ Device-level parameter adjustments, corresponding to the Settings panel (gear ic
     Emulate USB keyboard/mouse/storage, customize device type
 
     [:octicons-arrow-right-24: View](system/usb.md)
+
+</div>
+
+### Security
+
+Access control and communication encryption to protect your device.
+
+<div class="grid cards" markdown>
+
+- **:material-login: Login Management**
+
+    Login flow, first-time account creation, password and 2FA verification
+
+    [:octicons-arrow-right-24: View](security/account/login.md)
+
+- **:material-account-cog: Account Security**
+
+    Username, password change, 2FA verification and backup codes, logout
+
+    [:octicons-arrow-right-24: View](security/account/account.md)
+
+- **:material-console: SSH Remote Access**
+
+    Out-of-band management via SSH command line
+
+    [:octicons-arrow-right-24: View](security/ssh.md)
+
+- **:material-lock: HTTPS Certificate**
+
+    Self-signed / custom certificates, encrypt the web management interface
+
+    [:octicons-arrow-right-24: View](security/https.md)
+
+- **:material-text-box-search: Audit Logs**
+
+    System and user operation event records for reviewing activity history
+
+    [:octicons-arrow-right-24: View](security/audit.md)
 
 </div>
 

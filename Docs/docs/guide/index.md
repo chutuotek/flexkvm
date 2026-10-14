@@ -218,45 +218,6 @@ TF 卡存储、ATX 电源控制、UART 串口、GPIO 引脚——物理外接的
 
 </div>
 
-### 安全设置
-
-访问控制与通信加密，保护设备安全。
-
-<div class="grid cards" markdown>
-
-- **:material-login: 登录管理**
-
-    登录流程、首次创建账号、密码与 2FA 登录验证
-
-    [:octicons-arrow-right-24: 查看](security/account/login.md)
-
-- **:material-account-cog: 账号安全**
-
-    用户名、修改密码、2FA 验证与备用码、退出登录
-
-    [:octicons-arrow-right-24: 查看](security/account/account.md)
-
-- **:material-console: SSH 远程访问**
-
-    通过 SSH 命令行进行带外管理（OOB）
-
-    [:octicons-arrow-right-24: 查看](security/ssh.md)
-
-- **:material-lock: HTTPS 证书**
-
-    自签名 / 自定义证书，加密 Web 管理页面
-
-    [:octicons-arrow-right-24: 查看](security/https.md)
-
-- **:material-text-box-search: 操作审计**
-
-    系统与用户操作事件记录，追溯操作历史
-
-    [:octicons-arrow-right-24: 查看](security/audit.md)
-
-
-</div>
-
 ### 系统配置
 
 设备本身的参数调整。对应主界面中的设置面板（齿轮图标）。
@@ -292,6 +253,45 @@ TF 卡存储、ATX 电源控制、UART 串口、GPIO 引脚——物理外接的
     模拟 USB 键盘/鼠标/存储设备，自定义设备类型
 
     [:octicons-arrow-right-24: 查看](system/usb.md)
+
+
+</div>
+
+### 安全设置
+
+访问控制与通信加密，保护设备安全。
+
+<div class="grid cards" markdown>
+
+- **:material-login: 登录管理**
+
+    登录流程、首次创建账号、密码与 2FA 登录验证
+
+    [:octicons-arrow-right-24: 查看](security/account/login.md)
+
+- **:material-account-cog: 账号安全**
+
+    用户名、修改密码、2FA 验证与备用码、退出登录
+
+    [:octicons-arrow-right-24: 查看](security/account/account.md)
+
+- **:material-console: SSH 远程访问**
+
+    通过 SSH 命令行进行带外管理（OOB）
+
+    [:octicons-arrow-right-24: 查看](security/ssh.md)
+
+- **:material-lock: HTTPS 证书**
+
+    自签名 / 自定义证书，加密 Web 管理页面
+
+    [:octicons-arrow-right-24: 查看](security/https.md)
+
+- **:material-text-box-search: 操作审计**
+
+    系统与用户操作事件记录，追溯操作历史
+
+    [:octicons-arrow-right-24: 查看](security/audit.md)
 
 
 </div>
