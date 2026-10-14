@@ -246,7 +246,7 @@
 
 ### 离线升级失败
 
-确认上传的固件文件完整且未损坏。如果升级过程中断电导致设备无法启动，请参考[线刷镜像](../../guide/maintenance/flash.md)恢复。
+确认上传的固件文件完整且未损坏。如果升级过程中断电导致设备无法启动，[线刷镜像](../../guide/maintenance/flash.md)页仍在编写中，请直接[提交反馈](../../community/feedback/index.md)并提供序列号。
 
 > 升级前需输入密码确认（开了 2FA 还要验证码）。完整流程 → [在线升级](../../guide/maintenance/upgrade-online.md) · [离线升级](../../guide/maintenance/upgrade-offline.md)
 

@@ -334,7 +334,7 @@ TF 卡存储、ATX 电源控制、UART 串口、GPIO 引脚——物理外接的
 
 - **:material-usb-flash-drive: 线刷镜像**
 
-    设备变砖时通过线刷方式恢复
+    设备变砖时的恢复方式（文档编写中，暂请联系技术支持）
 
     [:octicons-arrow-right-24: 查看](maintenance/flash.md)
 

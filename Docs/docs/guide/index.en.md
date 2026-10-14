@@ -332,7 +332,7 @@ Firmware upgrades, reboot, factory reset, and other system-level operations.
 
 - **:material-usb-flash-drive: Flash Firmware**
 
-    Recover a bricked device via USB flashing
+    Recovery for a bricked device (docs in progress — contact support for now)
 
     [:octicons-arrow-right-24: View](maintenance/flash.md)
 

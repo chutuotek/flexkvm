@@ -246,7 +246,7 @@ Canceling and failing are two different outcomes with different messages: cancel
 
 ### Offline upgrade fails
 
-Make sure the uploaded firmware file is complete and not corrupted. If the device fails to boot after a power loss during upgrade, see [Flash Firmware](../../guide/maintenance/flash.md) to recover.
+Make sure the uploaded firmware file is complete and not corrupted. If the device fails to boot after a power loss during upgrade, the [Flash Firmware](../../guide/maintenance/flash.md) page is still being written — [submit feedback](../../community/feedback/index.en.md) with the serial number instead.
 
 > You must enter your password to confirm before upgrading (plus a verification code if 2FA is on). Full procedure → [Online Upgrade](../../guide/maintenance/upgrade-online.md) · [Offline Upgrade](../../guide/maintenance/upgrade-offline.md)
 
