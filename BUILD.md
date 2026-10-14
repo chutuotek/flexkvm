@@ -14,16 +14,16 @@
 cd Docs
 
 # 安装依赖（首次）
-./build.sh i
+./build.sh deps
 
 # 本地预览，访问 http://127.0.0.1:8000
-mkdocs serve
+./build.sh serve
 
 # 构建网站
-./build.sh b
+./build.sh build
 ```
 
-构建结果输出到 `site/` 目录。
+构建结果输出到 `out/` 目录。
 
 > `./build.sh` 不带参数只显示帮助信息，不会构建。
 
@@ -31,13 +31,15 @@ mkdocs serve
 
 | 命令 | 说明 |
 |------|------|
-| `./build.sh i` | 安装 MkDocs 和所有依赖 |
-| `./build.sh b` | 仅构建网站（包含中英文） |
-| `./build.sh r` | 构建 + 清理无用文件 |
-| `./build.sh o` | 构建 + 压缩 + 清理（推荐生产环境） |
-| `./build.sh c` | 仅清理 `site/` 和 `out/` |
-| `./build.sh mb` / `mr` / `mo` | mike 部署 git 标签版本 + 当前为 latest，输出到 `out/`（`mo` 附 ICP 备案信息） |
-| `./build.sh -h` | 显示帮助信息 |
+| `./build.sh deps` | 安装 MkDocs 和所有依赖 |
+| `./build.sh serve` | 本地预览 → http://127.0.0.1:8000 |
+| `./build.sh build` | 构建网站（包含中英文），默认清理无用文件 |
+| `./build.sh build --gzip` | 构建 + gzip 压缩（推荐生产环境） |
+| `./build.sh build --keep` | 构建但保留 source map 与多余 lunr 文件 |
+| `./build.sh clean` | 仅清理 `site/` 和 `out/` |
+| `./build.sh deploy github` | mike 部署到 GitHub Pages（`gh-pages` 分支） |
+| `./build.sh deploy server` | mike 部署到自建站（`gh-pages-server` 分支，含 ICP 备案号） |
+| `./build.sh help` | 显示帮助信息 |
 
 ## 版本控制（mike）
 

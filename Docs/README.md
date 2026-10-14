@@ -30,7 +30,7 @@
 ### 1. 安装依赖
 
 ```bash
-./build.sh i
+./build.sh deps
 ```
 
 这将自动安装以下依赖：
@@ -41,7 +41,7 @@
 ### 2. 本地预览
 
 ```bash
-mkdocs serve
+./build.sh serve
 ```
 
 访问 http://127.0.0.1:8000 查看文档
@@ -49,26 +49,35 @@ mkdocs serve
 ### 3. 构建网站
 
 ```bash
-./build.sh b
+./build.sh build
 ```
 
-构建结果输出到 `site/` 目录。
+构建结果输出到 `out/` 目录。
 
-> `./build.sh` 不带参数只显示帮助信息，不会构建——构建请用 `b`（或生产用 `o`）。
+> `./build.sh` 不带参数只显示帮助信息，不会构建。
 
 ## 构建命令
 
 | 命令 | 说明 |
 |------|------|
-| `./build.sh i` | 安装 MkDocs 和所有依赖 |
-| `./build.sh b` | 构建网站（包含中英文） |
-| `./build.sh r` | 构建 + 清理无用文件 |
-| `./build.sh o` | 构建 + 压缩 + 清理（推荐生产环境） |
-| `./build.sh c` | 仅清理 `site/` 和 `out/` |
-| `./build.sh mb` | mike 部署所有 git 标签版本 + 当前为 latest |
-| `./build.sh mr` | 同 `mb`，附带清理 |
-| `./build.sh mo` | 同 `mr`，附带 ICP 备案信息（生产环境） |
-| `./build.sh h` | 显示帮助信息（不带参数同样是帮助） |
+| `./build.sh deps` | 安装 MkDocs 和所有依赖（首次） |
+| `./build.sh serve` | 本地预览 → http://127.0.0.1:8000 |
+| `./build.sh build` | 构建网站到 `out/`（默认清理无用文件） |
+| `./build.sh build --gzip` | 构建 + gzip 压缩静态资源（生产环境推荐） |
+| `./build.sh build --keep` | 构建但保留 source map 与多余的 lunr 文件 |
+| `./build.sh clean` | 仅删除 `site/` 和 `out/` |
+| `./build.sh deploy github` | mike 部署到 GitHub Pages（`gh-pages` 分支） |
+| `./build.sh deploy server` | mike 部署到自建站（`gh-pages-server` 分支，含 ICP 备案号） |
+| `./build.sh help` | 显示帮助信息（不带参数同样是帮助） |
+
+环境变量：
+
+| 变量 | 说明 |
+|------|------|
+| `MIKE_BLACKLIST` | `deploy` 时要跳过的 tag（空格分隔），如 `"v0.0.5 v0.0.6"` |
+| `SITE_URL` | 非空时临时注入 `mkdocs.yml` 的 `site_url`，部署结束自动还原。GitHub Pages 需要，如 `https://chutuotek.github.io/flexkvm` |
+
+> CI（`.github/workflows/deploy.yml`）直接调用本脚本：自建站走 `deploy server`，GitHub Pages 走 `SITE_URL=... deploy github`。
 
 ## 版本控制 (mike)
 
@@ -95,6 +104,62 @@ mike list
 ```bash
 SEARCH_LANGS=("zh" "en" "ja")  # 添加日语支持
 ```
+
+## 图片规范
+
+文档配图**统一使用无损 WebP**。
+
+### 为什么
+
+WebP 同时满足三个需求：无损（截图文字、UI 边缘零损失）、体积远小于 PNG（同批图约省 45%）、不需要像有损格式那样在画质与体积间取舍。
+
+仓库内的历史 PNG 已全部转换为无损 WebP 并删除源文件，**不再保留 PNG**。
+
+### 转换方法
+
+单张：
+
+```bash
+cwebp -lossless -m 6 -metadata none 原图.png -o 输出.webp
+```
+
+- `-lossless`：必加，无损编码
+- `-m 6`：压缩档位 0~6，`6` 已是最高档且速度可接受。不建议 `-z 9`——只再小约 1.8%，但耗时是数倍
+- `-metadata none`：丢弃 EXIF 等元数据
+
+批量（多核并行，`cwebp` 单进程无法并行）：
+
+```bash
+find . -iname "*.png" -print0 | xargs -0 -P "$(nproc)" -I{} \
+  sh -c 'cwebp -quiet -lossless -m 6 -metadata none "{}" -o "${1%.png}.webp"' _ {}
+```
+
+### 校验
+
+转换后必须确认是无损格式：
+
+```bash
+webpinfo 图片.webp | grep Format
+# 应输出：Format: Lossless (2)      （有损会显示 Lossy (1)，不合格）
+```
+
+批量校验，列出所有非无损的图：
+
+```bash
+for f in $(find docs -iname "*.webp"); do
+  webpinfo "$f" 2>/dev/null | grep -q "Lossless" || echo "非无损: $f"
+done
+```
+
+> 输出里会有若干"历史遗留"的无损前图片（没有原始 PNG 母版的那批，见下表），属已知例外，不是转换失败。
+
+### 以下几种情况例外
+
+| 情况 | 做法 |
+|------|------|
+| 图标、线框图 | 用 **SVG**（矢量、可缩放、体积极小），不转 WebP |
+| 拿不到原始 PNG 的图 | 保持原样。有损痕迹已烙进像素，转无损画质不会提升，只会让体积数倍膨胀 |
+| 照片等连续色调大图 | 若体积实在过大，可用有损 WebP（`-q 90`），但要确认文字细节仍可辨认 |
 
 ## 项目结构
 

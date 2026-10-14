@@ -39,13 +39,12 @@ FlexKVM/
 
 ```bash
 cd Docs
-./build.sh i        # 安装 MkDocs 及全部依赖（首次）
-mkdocs serve        # 本地预览 → http://127.0.0.1:8000
-./build.sh b        # 仅构建
-./build.sh r        # 构建 + 清理无用文件
-./build.sh o        # 构建 + 压缩 + 清理（生产环境推荐）
-./build.sh mr       # mike 部署所有 git tag 版本 + 当前为 latest，输出到 out/
-mike list           # 查看已部署版本
+./build.sh deps        # 安装 MkDocs 及全部依赖（首次）
+./build.sh serve       # 本地预览 → http://127.0.0.1:8000
+./build.sh build       # 构建到 out/（默认清理无用文件）
+./build.sh build --gzip  # 构建 + gzip 压缩（生产环境推荐）
+./build.sh deploy server  # 部署自建站（含 ICP，gh-pages-server 分支）
+mike list              # 查看已部署版本
 ```
 
 ## 写作约定
@@ -57,7 +56,7 @@ mike list           # 查看已部署版本
 
 ### 内容与格式
 
-- 图片存放于各章节目录的 `images/` 子目录，使用相对路径引用；**优先 .webp 格式**（`mkdocs.yml` 的 `exclude_docs` 会排除 `*.png`）
+- 图片存放于各章节目录的 `images/` 子目录，使用相对路径引用；**必须用无损 WebP**（`cwebp -lossless -m 6 -metadata none`，`webpinfo` 应报 `Lossless`）。仓库不保留 PNG（历史 PNG 已全转为无损 WebP 并删除），引用 PNG 即断图。转换/校验命令见 `Docs/README.md`「图片规范」；图标线框图用 SVG，拿不到原始 PNG 母版的历史图保持原样
 - 操作引导多用 Material 扩展：`!!! tip/admonition`、`=== "标签页"`（tabbed）、`- [x]` 任务列表、表格化参数说明
 - 更新日志不直接手写：`Docs/docs/changelog/dev.md` 通过 snippets 引用 `Changelog/Dev/CHANGELOG_CN.md`（`--8<-- "Changelog/..."` 语法），改版本日志请改 `Changelog/` 下源文件；发版时同步维护 Stable 与 Dev 两份
 - 站点细节（版本别名、ICP、构建清理项）以 `Docs/build.sh` 为准，改动前先读它
@@ -84,7 +83,7 @@ docs(changelog): 更新 v0.1.5 变更日志
 
 ## 开发流程
 
-1. 在 `dev` 分支上开发，合入 `main` 前先在本地 `mkdocs serve` 验证中英文渲染
+1. 在 `dev` 分支上开发，合入 `main` 前先在本地 `./build.sh serve` 验证中英文渲染
 2. 发版：打 `v*` 标签（如 `v0.1.5`），CI 自动执行——遍历所有 tag 构建历史版本 + 当前提交部署为 `latest`，双端发布
 3. 构建失败/部署异常查 `.github/workflows/deploy.yml`：工作流使用两个隔离克隆分别产出 server 版（含 ICP 备案信息，ssh-deploy 到自有服务器）与 GitHub Pages 版（注入 `site_url` 后部署 `gh-pages`）
 
@@ -93,5 +92,5 @@ docs(changelog): 更新 v0.1.5 变更日志
 - `Docs/site/`、`Docs/out/` 是构建产物（gitignored），**不要提交或手动修改**
 - 改动 `mkdocs.yml`、`build.sh`、`deploy.yml` 属于高风险变更，务必本地完整构建一次再提交
 - 删除/重命名页面时，同步清理 `nav`、i18n 翻译、站内链接与 snippets 引用
-- 大图不要直接放不进 `exclude_docs` 的格式（`.png` 会被排除出站点），截图请转 `.webp`
+- 截图请转**无损 WebP**（命令与校验见 `Docs/README.md`「图片规范」）；仓库不保留 PNG，引用 PNG 即断图
 - 本仓库的 `.agents/skills` 供各 agent 工具共用，修改写作规范时注意一致性（AGENTS.md 只做指引，细则以 SKILL.md 为准）
