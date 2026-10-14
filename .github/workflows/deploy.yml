@@ -40,17 +40,10 @@ jobs:
         with:
           python-version: '3.x'
 
+      # 依赖安装复用 build.sh，避免清单在 CI 与脚本里各维护一份
       - name: Install dependencies
-        run: |
-          pip install --upgrade pip
-          pip install mkdocs mkdocs-material \
-            mkdocs-section-index \
-            mkdocs-git-revision-date-localized-plugin \
-            mkdocs-minify-plugin \
-            pymdown-extensions \
-            markdown-checklist \
-            mkdocs-static-i18n \
-            mike
+        working-directory: Docs
+        run: ./build.sh deps
 
       - name: Configure git for mike
         run: |
@@ -59,6 +52,7 @@ jobs:
 
       # =========================================================================
       # Step 1: Build server version (isolated clone)
+      # 自建站：含 ICP 备案号 → gh-pages-server 分支 → SSH 同步到自有服务器
       # =========================================================================
       - name: Build server version - Prepare isolated workspace
         run: |
@@ -68,61 +62,18 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Build server version - Deploy from git tags
+      - name: Build server version - Deploy
         working-directory: ../repo-server/Docs
         run: |
-          BLACKLIST="${{ env.MIKE_BLACKLIST }}"
-          BRANCH="gh-pages-server"
-          REPO_ROOT=$(cd .. && pwd)
-          CURRENT_BRANCH=$(git -C "$REPO_ROOT" branch --show-current)
-          [ -z "$CURRENT_BRANCH" ] && CURRENT_BRANCH="main"
-          DEPLOYED=0
-
-          echo "=== Building server version from git tags ==="
-          echo "Current branch: $CURRENT_BRANCH"
-          echo "Repo root: $REPO_ROOT"
-
-          for tag in $(git -C "$REPO_ROOT" tag -l "v*" | sort -V); do
-            git -C "$REPO_ROOT" show "$tag:Docs/mkdocs.yml" &>/dev/null || continue
-            if echo "$BLACKLIST" | grep -qw "$tag"; then
-              echo "Skipped (blacklisted): $tag"
-              continue
-            fi
-            echo "Deploying: $tag"
-            # Reset any local changes before checkout
-            git -C "$REPO_ROOT" checkout -- .
-            git -C "$REPO_ROOT" checkout "$tag"
-            mike deploy "$tag" --branch "$BRANCH" --ignore-remote-status || true
-            DEPLOYED=$((DEPLOYED + 1))
-          done
-
-          echo "Returning to branch: $CURRENT_BRANCH"
-          git -C "$REPO_ROOT" checkout -- .
-          git -C "$REPO_ROOT" checkout "$CURRENT_BRANCH" 2>/dev/null || git -C "$REPO_ROOT" checkout main 2>/dev/null || true
-          echo "Deployed $DEPLOYED historical versions"
-
-      - name: Build server version - Deploy current as 'latest'
-        working-directory: ../repo-server/Docs
-        run: |
-          echo "=== Deploying current version as 'latest' (server) ==="
-          mike deploy "latest" --branch gh-pages-server --ignore-remote-status
-
-      - name: Build server version - Export
-        working-directory: ../repo-server/Docs
-        run: |
-          TEMP_DIR=".git/mike-temp-server"
-          git worktree add "$TEMP_DIR" gh-pages-server
-          rm -rf out-server
-          cp -r "$TEMP_DIR" out-server
-          git worktree remove "$TEMP_DIR" 2>/dev/null || rm -rf "$TEMP_DIR"
-          printf '<!DOCTYPE html>\n<html>\n<head>\n<meta charset="utf-8">\n<title>Redirecting...</title>\n<meta http-equiv="refresh" content="0; url=latest/">\n<script>window.location.href="latest/";</script>\n</head>\n<body>\n<p>Redirecting to <a href="latest/">latest/</a>...</p>\n</body>\n</html>\n' > out-server/index.html
+          echo "=== Server version: mike deploy + ICP filing + cleanup ==="
+          ./build.sh deploy server
 
       - name: Deploy to own server
         uses: easingthemes/ssh-deploy@v5.1.1
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           ARGS: "-rlgoDzvc --delete"
-          SOURCE: "../repo-server/Docs/out-server/"
+          SOURCE: "../repo-server/Docs/out/"
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
@@ -130,6 +81,7 @@ jobs:
 
       # =========================================================================
       # Step 2: Build GitHub Pages version (isolated clone)
+      # GitHub Pages：注入 site_url → gh-pages 分支
       # =========================================================================
       - name: Build GitHub version - Prepare isolated workspace
         run: |
@@ -139,72 +91,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Build GitHub version - Inject site_url for latest
+      - name: Build GitHub version - Deploy
         working-directory: ../repo-github/Docs
         run: |
-          echo "=== Injecting site_url into mkdocs.yml ==="
-          if ! grep -q "^site_url:" mkdocs.yml; then
-            sed -i '/^repo_url:/a site_url: https://chutuotek.github.io/flexkvm/' mkdocs.yml
-            echo "site_url injected successfully"
-          else
-            echo "site_url already exists, skipping"
-          fi
-          grep -E "^repo_url:|^site_url:" mkdocs.yml
-
-      - name: Build GitHub version - Deploy current as 'latest' first
-        working-directory: ../repo-github/Docs
-        run: |
-          echo "=== Deploying current version as 'latest' (GitHub) - creating fresh branch ==="
-          # Delete any existing gh-pages branch to start fresh
-          git branch -D gh-pages 2>/dev/null || true
-          mike deploy "latest" --branch gh-pages --ignore-remote-status
-
-      - name: Build GitHub version - Deploy from git tags
-        working-directory: ../repo-github/Docs
-        run: |
-          BLACKLIST="${{ env.MIKE_BLACKLIST }}"
-          BRANCH="gh-pages"
-          REPO_ROOT=$(cd .. && pwd)
-          CURRENT_BRANCH=$(git -C "$REPO_ROOT" branch --show-current)
-          [ -z "$CURRENT_BRANCH" ] && CURRENT_BRANCH="main"
-          DEPLOYED=0
-
-          echo "=== Building GitHub Pages version from git tags ==="
-          echo "Current branch: $CURRENT_BRANCH"
-          echo "Repo root: $REPO_ROOT"
-
-          for tag in $(git -C "$REPO_ROOT" tag -l "v*" | sort -V); do
-            git -C "$REPO_ROOT" show "$tag:Docs/mkdocs.yml" &>/dev/null || continue
-            if echo "$BLACKLIST" | grep -qw "$tag"; then
-              echo "Skipped (blacklisted): $tag"
-              continue
-            fi
-            echo "Deploying: $tag"
-            # Reset any local changes before checkout
-            git -C "$REPO_ROOT" checkout -- .
-            git -C "$REPO_ROOT" checkout "$tag"
-            # Inject site_url for GitHub Pages before building
-            if ! grep -q "^site_url:" mkdocs.yml; then
-              sed -i '/^repo_url:/a site_url: https://chutuotek.github.io/flexkvm/' mkdocs.yml
-            fi
-            mike deploy "$tag" --branch "$BRANCH" --ignore-remote-status || true
-            DEPLOYED=$((DEPLOYED + 1))
-          done
-
-          echo "Returning to branch: $CURRENT_BRANCH"
-          git -C "$REPO_ROOT" checkout -- .
-          git -C "$REPO_ROOT" checkout "$CURRENT_BRANCH" 2>/dev/null || git -C "$REPO_ROOT" checkout main 2>/dev/null || true
-          echo "Deployed $DEPLOYED historical versions"
-
-      - name: Build GitHub version - Export
-        working-directory: ../repo-github/Docs
-        run: |
-          TEMP_DIR=".git/mike-temp"
-          git worktree add "$TEMP_DIR" gh-pages
-          rm -rf out
-          cp -r "$TEMP_DIR" out
-          git worktree remove "$TEMP_DIR" 2>/dev/null || rm -rf "$TEMP_DIR"
-          printf '<!DOCTYPE html>\n<html>\n<head>\n<meta charset="utf-8">\n<title>Redirecting...</title>\n<meta http-equiv="refresh" content="0; url=latest/">\n<script>window.location.href="latest/";</script>\n</head>\n<body>\n<p>Redirecting to <a href="latest/">latest/</a>...</p>\n</body>\n</html>\n' > out/index.html
+          echo "=== GitHub Pages version: mike deploy + site_url + cleanup ==="
+          SITE_URL="https://${{ github.repository_owner }}.github.io/flexkvm" ./build.sh deploy github
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
