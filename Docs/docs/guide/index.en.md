@@ -218,7 +218,7 @@ TF card storage, ATX power control, UART serial, and GPIO — physical expansion
 
 </div>
 
-### System Settings
+### System Configuration
 
 Device-level parameter adjustments, corresponding to the Settings panel (gear icon) in the web interface.
 
@@ -256,7 +256,7 @@ Device-level parameter adjustments, corresponding to the Settings panel (gear ic
 
 </div>
 
-### Security
+### Security Settings
 
 Access control and communication encryption to protect your device.
 
