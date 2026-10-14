@@ -53,7 +53,7 @@ Upgrade success:
 
 > OTA only upgrades to a higher version — downgrades and same-version overwrites are not supported. ⚠️ Keep power stable during upgrade; power loss may cause upgrade failure.
 
-> Power loss mid-upgrade, or the device won't boot afterwards → recover with [Flash Image](./flash.md); that page is still being written, so in an emergency [report the issue](../scenarios/feedback.md) directly with the serial number.
+> Power loss mid-upgrade, or the device won't boot afterwards → recover with [Flash Image](./flash.md); that page is still being written, so in an emergency [submit feedback](../../community/feedback/index.en.md) directly with the serial number.
 
 ---
 

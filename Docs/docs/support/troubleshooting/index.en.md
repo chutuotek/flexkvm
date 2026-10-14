@@ -1,6 +1,6 @@
 # Troubleshooting
 
-> Don't panic — step-by-step diagnosis often finds the issue quickly. If none of the steps below resolve the problem, collect diagnostic information and [submit feedback](../../guide/scenarios/feedback.md) — the dev team will help.
+> Don't panic — step-by-step diagnosis often finds the issue quickly. If none of the steps below resolve the problem, collect diagnostic information and [submit feedback](../../community/feedback/index.en.md) — the dev team will help.
 
 Try searching for symptom keywords in the **search bar** at the top of the page first (e.g., "can't connect", "video lag", "upgrade failed").
 

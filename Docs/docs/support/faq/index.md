@@ -110,7 +110,7 @@ FlexKVM 对被控设备**完全透明**——它模拟标准 USB 键盘鼠标和
 
 ### 如何远程重装操作系统？
 
-通过 FlexKVM 的虚拟光驱功能，将系统 ISO 镜像挂载为 USB 光驱，被控设备从光驱启动即可安装。详细步骤参考 [远程重装系统](../../guide/scenarios/reinstall-os.md)。
+通过 FlexKVM 的虚拟光驱功能，将系统 ISO 镜像挂载为 USB 光驱，被控设备从光驱启动即可安装。详细步骤参考 [存储管理](../../guide/peripherals/disk.md)。
 
 ---
 
@@ -138,4 +138,4 @@ FlexKVM 使用自签名 SSL 证书，浏览器无法验证其合法性，属于�
 
 ---
 
-没有找到你的问题？试试在顶部搜索栏输入关键词，或前往 [故障排查](../troubleshooting/index.md) 按症状定位。如需提交 Bug 或建议，请参考 [问题反馈](../../guide/scenarios/feedback.md)。
+没有找到你的问题？试试在顶部搜索栏输入关键词，或前往 [故障排查](../troubleshooting/index.md) 按症状定位。如需提交 Bug 或建议，请参考 [建议反馈](../../community/feedback/index.md)。

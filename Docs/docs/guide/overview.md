@@ -64,6 +64,5 @@
 
 ## 下一步
 
-- 按场景上手 → [场景向导](scenarios/index.md)
 - 查具体功能 → [用户指南](index.md)
 - 遇到问题 → [常见问题与排查](../support/index.md)

@@ -110,7 +110,7 @@ FAT32, exFAT, and ext4. exFAT is recommended (no 4GB single-file limit). NTFS is
 
 ### How do I remotely reinstall the OS?
 
-Use FlexKVM's virtual media feature to mount an ISO image as a USB CD-ROM, then boot the target host from it. See [Remote OS Installation](../../guide/scenarios/reinstall-os.md).
+Use FlexKVM's virtual media feature to mount an ISO image as a USB CD-ROM, then boot the target host from it. See [Storage Management](../../guide/peripherals/disk.md).
 
 ---
 
@@ -144,4 +144,4 @@ FlexKVM uses a self-signed SSL certificate. Your browser cannot verify it, which
 
 Still have questions? Try searching at the top of the page, or go to [Troubleshooting](../troubleshooting/index.md) for symptom-based diagnostics.
 
-To submit a bug or suggestion, see [Feedback](../../guide/scenarios/feedback.md).
+To submit a bug or suggestion, see [Feedback & Suggestions](../../community/feedback/index.en.md).

@@ -64,6 +64,5 @@ Click **Settings** in the menu bar to open the settings panel. Twelve tabs on th
 
 ## Next Steps
 
-- Learn by scenario → [Scenarios](scenarios/index.md)
 - Look up a feature → [User Guide](index.md)
 - Troubleshooting → [Help & Diagnostics](../support/index.md)

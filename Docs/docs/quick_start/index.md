@@ -513,7 +513,6 @@ FlexKVM 自建 WiFi 热点，手机或笔记本直接连上来就能访问——
 
 1. **认识界面** → [界面总览](../guide/overview.md)（菜单栏 12 个按钮与设置面板 12 个 tab 一次讲完）
 2. **认识所有接口** → [接口说明](../guide/product/interface.md)（了解设备全部功能，为后续配置打好基础）
-3. **按场景深入** → [远程重装系统](../guide/scenarios/reinstall-os.md) · [外网访问](../guide/scenarios/remote-access.md) · [安全加固](../guide/scenarios/security.md)
-4. **深入学习配置** → [用户指南](../guide/index.md)
-5. **遇到问题** → [常见问题与排查](../support/index.md)
-6. **加入社群** → [社区与联系](../community/index.md)
+3. **深入学习配置** → [用户指南](../guide/index.md)
+4. **遇到问题** → [常见问题与排查](../support/index.md)
+5. **加入社群** → [社区与联系](../community/index.md)

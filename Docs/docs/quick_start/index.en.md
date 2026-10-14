@@ -512,7 +512,6 @@ After completing basic setup, here's the recommended path:
 
 1. **Get to know the interface** → [Interface Overview](../guide/overview.md) (all 12 menu bar buttons and 12 settings tabs in one pass)
 2. **Get to know all interfaces** → [Interface Reference](../guide/product/interface.md) — understand the full capabilities before diving deeper
-3. **Explore by scenario** → [Remote OS Install](../guide/scenarios/reinstall-os.md) · [Remote Access](../guide/scenarios/remote-access.md) · [Security Hardening](../guide/scenarios/security.md)
-4. **Deep dive into features** → [User Guide](../guide/index.md)
-5. **Having trouble?** → [Help & Diagnostics](../support/index.md)
-6. **Join the community** → [Community & Contact](../community/index.md)
+3. **Deep dive into features** → [User Guide](../guide/index.md)
+4. **Having trouble?** → [Help & Diagnostics](../support/index.md)
+5. **Join the community** → [Community & Contact](../community/index.md)
