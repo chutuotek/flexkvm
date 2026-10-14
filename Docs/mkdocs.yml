@@ -60,7 +60,7 @@ plugins:
             常见问题: FAQ
             故障排查: Troubleshooting
             更新日志: Changelog
-            帮助与支持: Support
+            测试版: Dev
             常见问题与排查: Help & Diagnostics
             产品概览: Product Overview
             设备交互: Device Interaction
@@ -100,11 +100,9 @@ plugins:
             外观: Appearance
             时间与日期: Time & Date
             USB 配置: USB Configuration
-            固件升级: Firmware Upgrade
             在线升级: Online Upgrade
             离线升级: Offline Upgrade
             应用更新: App Update
-            维护与诊断: Maintenance & Diagnostics
             系统日志: System Logs
             操作审计: Audit Logs
             系统维护: System Maintenance
@@ -239,4 +237,6 @@ nav:
     - 建议反馈: community/feedback/index.md
     - 用户社群: community/social/index.md
     - 联系我们: community/contact/index.md
-  - 更新日志: changelog/index.md
+  - 更新日志:
+    - 更新日志: changelog/index.md
+    - 测试版: changelog/dev.md
