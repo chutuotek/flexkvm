@@ -112,7 +112,7 @@ Tailscale 的连接优先级：**直连 → Peer Relay → DERP**。FlexKVM 预�
 
 > 必须先在这里把 tag 授权给你自己，否则下一步 VPS 用 `--advertise-tags=tag:relay` 登录时会报错 `requested tags not permitted`。
 
-### 2. 在 VPS 上安装 Tailscale 并登录
+#### 2. 在 VPS 上安装 Tailscale 并登录
 
 ```bash
 curl -fsSL https://tailscale.com/install.sh | sh
@@ -124,7 +124,7 @@ sudo tailscale up --hostname=relay-01 --advertise-tags=tag:relay
 
 终端会打印登录链接，浏览器打开并登录，确认 VPS 与 FlexKVM 在同一个 tailnet。
 
-### 3. 开放 UDP 端口
+#### 3. 开放 UDP 端口
 
 需要放行两个 UDP 端口（中继端口以 40000 为例，可自行修改）：
 
@@ -138,7 +138,7 @@ sudo firewall-cmd --permanent --add-port=40000/udp && sudo firewall-cmd --perman
 
 阿里云、腾讯云等云厂商还需在**安全组**中添加入方向 UDP 40000 和 UDP 41641 的规则。
 
-### 4. 开启中继模式
+#### 4. 开启中继模式
 
 ```bash
 sudo tailscale set --relay-server-port=40000
@@ -156,7 +156,7 @@ sudo tailscale set --relay-server-port=""
 > sudo tailscale set --relay-server-port=40000 --relay-server-static-endpoints="[公网IP]:40000"
 > ```
 
-### 5. 在管理控制台授权
+#### 5. 在管理控制台授权
 
 打开 [Tailscale 管理控制台](https://login.tailscale.com/admin/acls/file)的 Access Controls（JSON），在现有 `grants` 数组**末尾追加**以下条目（原来已有的规则全部保留，不要动）：
 
@@ -174,7 +174,7 @@ sudo tailscale set --relay-server-port=""
 > 只把真正需要加速的设备加进 `src`，不要用 `"src": ["*"]`——本来不需要中继的设备也会被路由到中继，白白多一跳，增加延迟。
 > 如果你的 tailnet 之前没配置过 ACL（设备默认互通），只需追加这一条，不需要再加其他规则。
 
-### 6. 验证
+#### 6. 验证
 
 在**控制端设备**（如你的电脑）上执行：
 

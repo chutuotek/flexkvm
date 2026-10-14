@@ -159,7 +159,7 @@
 
 - **:material-book-open-page-variant: User Guide**
 
-    Complete feature documentation and configuration tutorials — browse by scenario or by function.
+    Complete feature documentation and configuration tutorials, organized by function.
 
     [:octicons-arrow-right-24: Browse Guide](guide/index.md)
 

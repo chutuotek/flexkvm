@@ -159,7 +159,7 @@
 
 - **:material-book-open-page-variant: 用户指南**
 
-    完整的功能说明和配置教程，按场景或按功能查阅。
+    完整的功能说明和配置教程，按功能分类查阅。
 
     [:octicons-arrow-right-24: 查看指南](guide/index.md)
 
