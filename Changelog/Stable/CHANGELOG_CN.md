@@ -9,7 +9,7 @@
 
 - AI Agent 远程控制：设置 → Agent 生成 API Key 后，AI 客户端可通过 Skill（flexkvm-skill）与 MCP 两种方式控制键鼠、截屏，支持 OpenClaw / Claude Code / Codex / DSH 等；与网页用户并发操作键鼠时自动串行处理
 - Agent 操作日志：设置 → Agent 可查看并下载 AI 客户端的远程操作记录，凭据校验失败也会记入审计
-- WireGuard VPN：设置 → 网络 → WireGuard 新建接口、导入配置、复制公钥，实时查看连接状态
+- WireGuard VPN：设置 → 应用 → WireGuard 生成密钥、配置接口与对端、导出配置，实时查看连接状态
 - ZeroTier 与 frp 内网穿透：设置 → 应用 新增对应配置面板
 - 视频编码器可切换 H.264 / H.265（H.265 同画质约省 30% 码率，需浏览器支持）
 - 系统状态监控：设置 → 状态 实时查看温度、CPU、内存、网络速率与运行时长，支持按日期查看历史曲线并导出 CSV

@@ -9,7 +9,7 @@
 
 - AI Agent remote control: after generating an API Key under Settings → Agent, AI clients can control keyboard/mouse and take screenshots via Skill (flexkvm-skill) or MCP — supporting OpenClaw / Claude Code / Codex / DSH — with keyboard/mouse input serialized against web users
 - Agent operation log: view and download a record of AI client remote operations under Settings → Agent, with credential failures also written to the audit log
-- WireGuard VPN: create interfaces, import configurations, and copy public keys under Settings → Network → WireGuard, with live connection status
+- WireGuard VPN: generate keys, configure the interface and peers, and export configs under Settings → App → WireGuard, with live connection status
 - ZeroTier and frp tunneling: new configuration panels under Settings → App
 - Video codec can be switched between H.264 and H.265 (H.265 saves roughly 30% bitrate at the same quality; the browser must support it)
 - System status monitor: view temperature, CPU, memory, network rate and uptime in real time under Settings → Status, with history curves by date and CSV export
