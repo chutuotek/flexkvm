@@ -17,6 +17,36 @@ Hand the device to an AI client: after enabling Agent and generating an API Key,
 
 > The API Key carries keyboard/mouse control privileges. Only configure it for trusted AI clients. If it leaks, delete and regenerate it immediately. Skill and MCP use the same API Key.
 
+## Operation Log
+
+The operation log records every call an AI client makes through the interface, for confirming that an automation flow ran as intended. Where: Settings → Agent → Operation Log → View log. Only administrators can view and download it.
+
+![Operation log entry](./images/agent/agent_log_entry.webp)
+
+The dialog header shows the current record count and the maximum number of records displayed at once (200). The list is ordered from oldest to newest.
+
+![Operation log dialog](./images/agent/agent_log_modal.webp)
+
+| Action | Description |
+|------|------|
+| Refresh | Fetch the latest records again |
+| Download | Save the complete log file locally as `agent-log-<timestamp>.log` |
+
+Each record contains a UTC timestamp, the caller's IP address, and the operation type:
+
+| Operation | Recorded content |
+|------|------|
+| `snapshot` | Screenshot, with the image byte size |
+| `control` | Keyboard/mouse event batch, with batch id, applied count, result or rejection reason, and an event summary |
+| `cancel` | Batch cancellation, with the requested batch id and the active batch id |
+| `auth failed` | API Key verification failure |
+
+The event summary expands each event, such as `mouse:click(left)`, `mouse:scroll(-3)`, `keyboard:hotkey(ctrl+alt+delete)`, `keyboard:text(12)`, `delay(300)`, and `release_all`. Batches rejected for invalid parameters, exceeded limits, or a busy Agent are recorded too, with the reason in an `error` field.
+
+> `keyboard text` records only the character count (`text(12)`), never the input itself — text typed on the controlled device is often passwords and tokens.
+
+The log file is capped at 256KB; once exceeded, the oldest records are trimmed. The operation log serves viewing and downloading only — it is stored separately from the [audit log](../security/audit.md) and the two do not share a quota. Downloading the log is itself written to the audit log.
+
 ## Two Ways to Connect
 
 Agent supports Skill and MCP invocation. Both give the AI client the same "screenshot + keyboard/mouse control" ability — pick one, or use both:
