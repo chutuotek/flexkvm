@@ -3,6 +3,86 @@
 - language: en-US
 - Author: ZEROK
 
+## v0.2.0 (2026-10-15)
+
+### Added
+
+- AI Agent remote control: after generating an API Key under Settings → Agent, AI clients can control keyboard/mouse and take screenshots via Skill (flexkvm-skill) or MCP — supporting OpenClaw / Claude Code / Codex / DSH — with keyboard/mouse input serialized against web users
+- Agent operation log: view and download a record of AI client remote operations under Settings → Agent, with credential failures also written to the audit log
+- WireGuard VPN: create interfaces, import configurations, and copy public keys under Settings → Network → WireGuard, with live connection status
+- ZeroTier and frp tunneling: new configuration panels under Settings → App
+- Video codec can be switched between H.264 and H.265 (H.265 saves roughly 30% bitrate at the same quality; the browser must support it)
+- System status monitor: view temperature, CPU, memory, network rate and uptime in real time under Settings → Status, with history curves by date and CSV export
+- Recording adds the MKV container (alongside WebM), an automatic quality preset, and codec labels (hardware)/(software) detected per browser
+- TF card supports mounting NTFS partitions for direct read/write; file system check and repair is available for FAT32 / exFAT / ext4 under Settings → Storage
+- EDID modify: override monitor manufacturer, monitor name, serial string and product code, with one-click clearing, without uploading a full EDID; custom EDIDs can also be deleted
+- Screen menu adds "Unplug monitor / Plug monitor" to simulate a monitor disconnect so the host re-detects it
+- Dual fullscreen modes: toolbar fullscreen (`F11`) and picture fullscreen (`Ctrl+F11`)
+- Out-of-range signal is reported separately with actionable advice
+- UART terminal can open in a standalone tab (`/terminal`), shows the disconnect reason, and auto-reconnects on transient drops
+- HTTPS certificate system upgrade: self-signed mode now generates a CA + leaf certificate, the CA certificate can be downloaded and trusted by browsers, and a deployer-issued user sub-CA can be imported
+- File upload and download can both be cancelled, with categorized error messages on failure
+- Mouse move throttling: on by default (125 Hz), adjustable from 10–500 Hz
+- Built-in Logitech preset identities for USB keyboard/mouse (K120 keyboard / M100 mouse) for better driver-free compatibility
+- Keyboard/mouse channel drops are indicated in the menu bar, with status and automatic recovery
+- Admin-only control over picture settings: quality, codec, GOP and EDID controls are greyed out for non-admin users
+- mDNS discovery: reach the web UI and SSH via the `flexkvm-xxxx.local` hostname on the LAN (toggle under Settings → Network → mDNS)
+- App update: check, download, and install app updates (e.g. Tailscale) online under Settings → App, with GitHub / Gitee as download sources (Gitee by default), uninstall support, automatic rollback on failure, and firmware gate checks
+- PWA offline support: cached pages still open without a network connection
+- WiFi supports OWE encryption
+- MTU shown in the Ethernet/Wi-Fi detail panel
+- Login sessions auto-renew, reducing frequent re-logins
+- Page auto-refreshes after the firmware version changes
+- OLED shows a reboot page while the device restarts
+- SSH adds mDNS management commands (`mdns status|enable|disable`)
+
+### Improved
+
+- HDMI plug/unplug and signal changes are detected faster, with a new "negotiating" state for more accurate connection status
+- Remote display connects and reconnects faster, negotiates the best codec parameters per browser capability, and warns about weak networks sooner; the main channel probes and reconnects after long silence
+- USB keyboard/mouse reconnects recover more reliably
+- Tailscale status shows the DNS name, the panel refreshes sooner, and connection details move into a dialog
+- Audit log cleanup: high-frequency HDMI/WebRTC entries removed, WiFi/AP start-stop now audited
+- Mouse sensitivity, scroll rate, and other preferences persist across page refreshes
+- Ethernet Direct mode refuses to enable when its subnet collides with the AP hotspot subnet
+- Wake-on-LAN targets adapt to the local subnet broadcast for a higher success rate
+- Firmware online upgrade keeps all three download sources — GitHub / Gitee / GitCode — with GitCode as the new default
+- UI details: memory usage shown as percentage, settings dropdowns adapt to content width, more robust recovery from network failures, faster first load
+- Settings reorganized: four new tabs — Status, Agent, Capture and Security; screenshot/recording moved under Capture, HTTPS/SSH under Security, and mDNS under Network
+- Settings pages have shareable URLs and survive refresh and back/forward navigation; unknown paths show a localized 404 page
+- Switching between settings pages no longer interrupts the remote display or keyboard/mouse connection
+
+### Removed
+
+- Built-in offline documentation (the former `/docs/`) has been removed; documentation now lives on the online documentation site, and the documentation entries on the About, login and provisioning pages point there
+- The About page no longer shows the model; it now shows the product name and hostname
+
+### Fixed
+
+- Fixed black screen after first HDMI plug-in, after resolution changes, and after stream recovery
+- Fixed stale video peer from page refresh polluting the new connection
+- Fixed the UI still showing "connected" when the video link had stalled
+- Fixed corrupt custom EDID data causing repeated reboots and a device that would not start
+- Fixed USB keyboard/mouse and storage hanging together during early boot
+- Fixed the device becoming unresponsive after a forced (preempting) login
+- Fixed accounts getting wrongly locked after repeated sign-in attempts
+- Fixed WiFi scan getting permanently stuck at "scanning"
+- Fixed failure to connect to some WiFi networks
+- Fixed an invalid static IP netmask corrupting the configuration and falling back to DHCP after reboot
+- Fixed network settings reporting "saved" even when they failed
+- Fixed TF card mount state drifting from reality, with the UI stuck on "mounted"
+- Fixed TF transfer status hanging, download status display issues, and false delete failures with a stale list
+- Fixed upload cancellation not working and failures reported twice
+- Fixed the UART session failing silently on a device read error
+- Fixed microphone capture not stopping after disconnect, leaving the indicator on
+- Fixed web recording not restarting after a failed start
+- Fixed iOS fullscreen issues and long-press magnifier interference
+- Fixed some shortcut editor labels still showing Chinese in the English interface
+- Fixed the Wake-on-LAN device list being hard-capped at 5 entries with no feedback when adding or removing failed
+- Fixed USB keyboard/mouse detection issues and jumpy cursors on some hosts
+- Fixed factory reset restarting even when cleanup failed
+- Multiple security hardenings: old sessions invalidated immediately after a password change, TLS 1.2 restricted to AEAD suites, tighter certificate private key permissions, download path validation, CSRF storage isolation, and more
+
 ## v0.1.5 (2026-08-08)
 
 ### Added
