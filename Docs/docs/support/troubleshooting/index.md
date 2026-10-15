@@ -259,7 +259,7 @@
 | 校验失败 | 下载包损坏 | 重新下载 |
 | 应用不兼容 | 固件版本过低 | 先在 设置 → 升级 里升级固件 |
 
-> 应用更新只支持 Gitee / GitHub 两个源，不需要重启设备，失败自动回滚 → [应用更新](../../guide/maintenance/upgrade-app.md)
+> 应用更新只支持 Gitee / GitHub 两个源，不需要重启设备，失败自动回滚 → [应用管理](../../guide/maintenance/upgrade-app.md)
 
 ---
 

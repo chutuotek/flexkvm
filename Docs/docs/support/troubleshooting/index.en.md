@@ -259,7 +259,7 @@ Make sure the uploaded firmware file is complete and not corrupted. If the devic
 | Verification fails | Corrupted download | Download again |
 | App incompatible | Firmware version too old | Upgrade the firmware first under Settings → Upgrade |
 
-> App updates only support the Gitee / GitHub sources, don't require a reboot, and roll back automatically on failure → [App Update](../../guide/maintenance/upgrade-app.md)
+> App updates only support the Gitee / GitHub sources, don't require a reboot, and roll back automatically on failure → [App Management](../../guide/maintenance/upgrade-app.md)
 
 ---
 
