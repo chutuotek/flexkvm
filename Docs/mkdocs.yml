@@ -73,7 +73,11 @@ plugins:
             直连模式: Direct Mode
             WiFi: WiFi
             AP 热点: AP Hotspot
+            远程组网: Remote Networking
             Tailscale: Tailscale
+            ZeroTier: ZeroTier
+            frp 内网穿透: frp Tunneling
+            WireGuard: WireGuard
             mDNS 服务发现: mDNS Discovery
             网络唤醒 (WoL): Wake-on-LAN (WoL)
             HTTPS 证书: HTTPS Certificate
@@ -192,9 +196,13 @@ nav:
       - 直连模式: guide/network/eth-server.md
       - WiFi: guide/network/wifi.md
       - AP 热点: guide/network/ap.md
-      - Tailscale: guide/network/tailscale.md
       - mDNS 服务发现: guide/network/mdns.md
       - 网络唤醒 (WoL): guide/network/wol.md
+    - 远程组网:
+      - Tailscale: guide/vpn/tailscale.md
+      - ZeroTier: guide/vpn/zerotier.md
+      - frp 内网穿透: guide/vpn/frp.md
+      - WireGuard: guide/vpn/wireguard.md
     - 远程交互:
       - 远程画面: guide/remote/screen.md
       - 截图: guide/remote/screenshot.md

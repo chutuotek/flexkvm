@@ -83,7 +83,7 @@
 | 开关灰色不可用 | Tailscale 未正确预装，联系技术支持 |
 | 提示设备已注册 | 设备已在其他 Tailnet，先在管理后台移除旧设备 |
 
-> 登录方式与连接信息 → [Tailscale](../../guide/network/tailscale.md)
+> 登录方式与连接信息 → [Tailscale](../../guide/vpn/tailscale.md)
 
 ---
 

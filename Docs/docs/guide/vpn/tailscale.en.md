@@ -194,6 +194,25 @@ pong from flexkvm-6jzde-1 (100.118.167.14) via peer-relay(public-ip:40000:vni:39
 
 > If the relay doesn't take effect after configuration, restart the Tailscale service on the VPS and test again: `sudo systemctl restart tailscaled`
 
+## App Management
+
+Tailscale ships as an app on the device, and the **App Management** entry at the bottom of the card handles downloading, installing and uninstalling it:
+
+![Tailscale App Management](./images/tailscale/setting_tailscale_app_management.webp)
+
+| Action | Description |
+|--------|-------------|
+| Download source | Choose whether the package comes from Gitee or GitHub |
+| Check for Updates | Fetch the latest version info; the last check time is shown afterwards |
+| Download / Install Now | Downloads and verifies the package, then installs it; a download can be cancelled |
+| Uninstall App | Stops tailscaled and deletes the app files (with a confirmation) |
+
+- Install/upgrade runs as "stop service → signature verification → swap the directory"; a failed swap rolls back to the previous version, so the device is never left with half an app
+- **Uninstall** also flips the toggle back off; to use Tailscale again, reinstall it, then enable and log in again
+- Only one update task can run at a time — clicking again while downloading or installing shows "Another update task is running, try again later"
+
+> Full details on version states and failure reason categories: [App Management](../maintenance/upgrade-app.md).
+
 ---
 
 ## Troubleshooting

@@ -116,12 +116,6 @@
 
     [:octicons-arrow-right-24: 查看](network/ap.md)
 
-- **:material-vpn: Tailscale**
-
-    无需公网 IP，端到端加密远程访问
-
-    [:octicons-arrow-right-24: 查看](network/tailscale.md)
-
 - **:material-magnify-scan: mDNS 服务发现**
 
     通过主机名访问 FlexKVM，无需记忆 IP 地址
@@ -133,6 +127,38 @@
     通过网络魔术包远程唤醒已关机的设备
 
     [:octicons-arrow-right-24: 查看](network/wol.md)
+
+</div>
+
+### 远程组网
+
+不依赖公网 IP，把设备接入你的虚拟网络或把端口映射出去——都在**设置 → 应用**里。
+
+<div class="grid cards" markdown>
+
+- **:material-vpn: Tailscale**
+
+    无需公网 IP，端到端加密远程访问
+
+    [:octicons-arrow-right-24: 查看](vpn/tailscale.md)
+
+- **:material-lan-connect: ZeroTier**
+
+    加入虚拟二层网络，像在同一局域网里一样互通
+
+    [:octicons-arrow-right-24: 查看](vpn/zerotier.md)
+
+- **:material-swap-horizontal: frp 内网穿透**
+
+    借自己的公网服务器把设备端口映射出去
+
+    [:octicons-arrow-right-24: 查看](vpn/frp.md)
+
+- **:material-shield-lock: WireGuard**
+
+    内核级 VPN，自己管控密钥与对端
+
+    [:octicons-arrow-right-24: 查看](vpn/wireguard.md)
 
 </div>
 
@@ -314,9 +340,9 @@ TF 卡存储、ATX 电源控制、UART 串口、GPIO 引脚——物理外接的
 
     [:octicons-arrow-right-24: 查看](maintenance/upgrade-offline.md)
 
-- **:material-package-up: 应用更新**
+- **:material-package-up: 应用管理**
 
-    更新已安装应用（如 Tailscale），支持多下载源与自动校验
+    独立更新 Tailscale / ZeroTier / frp，支持多下载源、自动校验与卸载
 
     [:octicons-arrow-right-24: 查看](maintenance/upgrade-app.md)
 

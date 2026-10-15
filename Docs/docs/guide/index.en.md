@@ -116,12 +116,6 @@ How to get FlexKVM online and access it remotely.
 
     [:octicons-arrow-right-24: View](network/ap.md)
 
-- **:material-vpn: Tailscale**
-
-    No public IP needed — end-to-end encrypted remote access
-
-    [:octicons-arrow-right-24: View](network/tailscale.md)
-
 - **:material-magnify-scan: mDNS Discovery**
 
     Access FlexKVM by hostname — no need to memorize the IP address
@@ -133,6 +127,38 @@ How to get FlexKVM online and access it remotely.
     Remotely wake powered-off devices via magic packet
 
     [:octicons-arrow-right-24: View](network/wol.md)
+
+</div>
+
+### Remote Networking
+
+No public IP required — join the device to your own virtual network, or map its ports out. All of it lives under **Settings → App**.
+
+<div class="grid cards" markdown>
+
+- **:material-vpn: Tailscale**
+
+    No public IP needed — end-to-end encrypted remote access
+
+    [:octicons-arrow-right-24: View](vpn/tailscale.md)
+
+- **:material-lan-connect: ZeroTier**
+
+    Join a virtual Layer 2 network and reach the device as if it were on your LAN
+
+    [:octicons-arrow-right-24: View](vpn/zerotier.md)
+
+- **:material-swap-horizontal: frp Tunneling**
+
+    Map the device's ports out through a public server of your own
+
+    [:octicons-arrow-right-24: View](vpn/frp.md)
+
+- **:material-shield-lock: WireGuard**
+
+    Kernel-level VPN where you own the keys and the peer list
+
+    [:octicons-arrow-right-24: View](vpn/wireguard.md)
 
 </div>
 
@@ -312,9 +338,9 @@ Firmware upgrades, reboot, factory reset, and other system-level operations.
 
     [:octicons-arrow-right-24: View](maintenance/upgrade-offline.md)
 
-- **:material-package-up: App Update**
+- **:material-package-up: App Management**
 
-    Update installed apps (e.g. Tailscale) — multiple download sources with auto-verification
+    Update Tailscale / ZeroTier / frp independently — multiple sources, auto-verification, uninstall
 
     [:octicons-arrow-right-24: View](maintenance/upgrade-app.md)
 

@@ -83,7 +83,7 @@ Search for symptom keywords in the **search bar** at the top of the page first (
 | Toggle greyed out and unavailable | Tailscale isn't correctly preinstalled — contact support |
 | Message says the device is already registered | The device is in another Tailnet — remove the old device in the admin console first |
 
-> Login methods and connection info → [Tailscale](../../guide/network/tailscale.md)
+> Login methods and connection info → [Tailscale](../../guide/vpn/tailscale.md)
 
 ---
 

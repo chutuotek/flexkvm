@@ -49,7 +49,7 @@ Click **Settings** in the menu bar to open the settings panel. Twelve tabs on th
 | **Status** | Temperature / CPU / memory / network rate curves, history and CSV export | [Status Monitor](system/status.md) |
 | **Network** | mDNS, wired network, AP network, WiFi network | [Wired Network](network/eth.md) · [Direct Mode](network/eth-server.md) · [WiFi](network/wifi.md) · [AP Hotspot](network/ap.md) · [mDNS](network/mdns.md) |
 | **Appearance** | Language, theme (Light / Dark / Auto), accent color | [Appearance](system/appearance.md) |
-| **App** | Updates for installed apps (e.g. Tailscale) and download source | [Tailscale](network/tailscale.md) · [App Update](maintenance/upgrade-app.md) |
+| **App** | Toggles and settings for Tailscale, ZeroTier, frp Tunneling and WireGuard, plus App Management (update / uninstall) for the first three | [Tailscale](vpn/tailscale.md) · [ZeroTier](vpn/zerotier.md) · [frp Tunneling](vpn/frp.md) · [WireGuard](vpn/wireguard.md) · [App Management](maintenance/upgrade-app.md) |
 | **Agent** | Enable Agent, generate and revoke the API Key for AI clients | [AI Agent Control](remote/agent.md) |
 | **System** | Time, OLED settings, LED settings, EDID, USB config | [Time & Date](system/time.md) · [OLED Screen](interaction/oled.md) · [LED Indicator](interaction/led.md) · [USB Configuration](system/usb.md) |
 | **Capture** | Screenshot format and quality, recording parameters | [Screenshot](remote/screenshot.md) · [Recording](remote/recording.md) |

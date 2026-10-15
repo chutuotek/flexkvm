@@ -49,7 +49,7 @@
 | **状态** | 温度 / CPU / 内存 / 网络速率曲线，历史回看与 CSV 导出 | [状态监控](system/status.md) |
 | **网络** | mDNS、有线网络、AP网络、WiFi网络 | [有线网络](network/eth.md) · [直连模式](network/eth-server.md) · [WiFi](network/wifi.md) · [AP 热点](network/ap.md) · [mDNS](network/mdns.md) |
 | **外观** | 语言、主题（浅色 / 深色 / 自动）、强调色 | [外观](system/appearance.md) |
-| **应用** | 已装应用更新（如 Tailscale）、下载源 | [Tailscale](network/tailscale.md) · [应用更新](maintenance/upgrade-app.md) |
+| **应用** | Tailscale、ZeroTier、frp 内网穿透、WireGuard 的开关与配置，以及前三个的应用管理（更新 / 卸载） | [Tailscale](vpn/tailscale.md) · [ZeroTier](vpn/zerotier.md) · [frp 内网穿透](vpn/frp.md) · [WireGuard](vpn/wireguard.md) · [应用管理](maintenance/upgrade-app.md) |
 | **Agent** | 开关 Agent、生成与作废 API Key，供 AI 客户端接入 | [AI Agent 控制](remote/agent.md) |
 | **系统** | 时间、OLED设置、LED设置、EDID、USB配置 | [时间与日期](system/time.md) · [OLED 屏幕](interaction/oled.md) · [LED 指示灯](interaction/led.md) · [USB 配置](system/usb.md) |
 | **采集** | 截图格式与质量、录像参数 | [截图](remote/screenshot.md) · [录像](remote/recording.md) |
