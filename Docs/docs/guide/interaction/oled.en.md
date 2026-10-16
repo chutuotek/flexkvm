@@ -2,7 +2,7 @@
 
 FlexKVM has a 128×64 monochrome OLED display on the front that shows device status, network info, and system version.
 
-After powering on, the OLED cycles through: boot logo → device status screen → auto-sleep (after 60 seconds of inactivity). Press Button A or B to wake. Auto-sleep is disabled in provisioning mode.
+After powering on, the OLED cycles through: boot logo → device status screen → auto-sleep after the configured sleep timeout of inactivity (60 seconds by default). Press Button A or B to wake. Auto-sleep is disabled in provisioning mode.
 
 > Where: Settings → System → OLED Settings
 
@@ -16,7 +16,7 @@ Brightness slider (range 1–10), changes take effect instantly.
 
 ### Sleep Timeout
 
-Time before auto-sleep after inactivity. Options: 10s / 30s / 60s / 120s / 300s / 600s.
+Time before auto-sleep after inactivity; 60s by default. Options: 10s / 30s / 60s / 120s / 300s / 600s.
 
 ## OLED Display
 
@@ -60,7 +60,7 @@ If the IP hasn't been acquired after 20 seconds, check whether your current netw
 
 ### Info Sub-pages
 
-On the main screen, **short-press Button A** to cycle through 7 sub-pages: `Home → HDMI Info → System Info → ETH Info → ETH IPv6 → WiFi Info → WiFi IPv6 → AP Info → Home`. **Short-press Button B** to return to the main screen at any time. The screen automatically resets to the main page after sleep.
+On the main screen, **short-press Button A** to cycle through 7 sub-pages: `Home → HDMI Info → System Info → ETH Info → ETH IPv6 → WiFi Info → WiFi IPv6 → AP Info → Home`. **Short-press Button B** to return to the main screen at any time. After the screen wakes from sleep it stays on the page shown before sleep.
 
 Sub-pages use a full-screen 4-line layout (no status bar), with content starting from line 1.
 
@@ -72,10 +72,12 @@ Video input parameters:
 |:-----|---------|
 | Line 1 | `HDMI` (left) + quality level (right-aligned: LOW / MED / HIGH / ULTRA) |
 | Line 2 | Resolution@refresh rate (e.g. `1920x1080@60Hz`, `--x--` when no signal) |
-| Line 3 | Stream state (Streaming / IDLE / OFFLINE) |
-| Line 4 | Link status (LINK / No Signal / NOT LINK) |
+| Line 3 | Stream state (Streaming / IDLE / Negotiat / No Stream / OFFLINE) |
+| Line 4 | Link status (LINK / LOCKING / OutRange / No Signal / NOT LINK) |
 
-Stream states: **Streaming** — user online + HDMI linked, encoder actively streaming; **IDLE** — HDMI linked but no user connected, encoder on standby; **OFFLINE** — HDMI not detected or link not established.
+Stream states: **Streaming** — user online + HDMI linked, encoder actively streaming; **IDLE** — HDMI linked but no user connected, encoder on standby; **Negotiat** — a signal is present but the DE timing is not locked yet (negotiating); **No Stream** — the link is fine but the timing from the source is not supported (out of range); **OFFLINE** — HDMI not detected or link not established.
+
+Link states: **LINK** — locked; **LOCKING** — negotiating; **OutRange** — timing out of range; **No Signal** — connector detected but not locked; **NOT LINK** — HDMI not detected.
 
 ```
  HDMI          HIGH
