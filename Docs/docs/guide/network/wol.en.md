@@ -13,6 +13,8 @@ The target host must:
 - Be in shutdown, sleep, or hibernation state (not fully unpowered)
 - The target host must be on the same subnet as FlexKVM.
 
+> The magic packet is sent as a directed broadcast on the subnet of every FlexKVM network interface, so whichever subnet the target host sits on is covered — no configuration needed.
+
 ### Enable WoL in BIOS
 
 Enter the target host's BIOS (press Del / F2 during boot) and find these options under **Power Management**:

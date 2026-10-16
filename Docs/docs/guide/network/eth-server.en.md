@@ -81,7 +81,7 @@ Toggle "Direct Mode Enabled" on, set the subnet segment (0–254), and click sav
 | Check | How |
 |-------|-----|
 | OLED | Does the IP start with S? |
-| Web interface | Does the Ethernet card show "Direct Mode: IP"? |
+| Web interface | Does the Ethernet card status show "Connected: x.x.x.x"? (In Direct Mode the OLED prefix is S) |
 | Client | Set the computer's Ethernet to DHCP auto — does it get a `192.168.x.x` IP? |
 
 ---

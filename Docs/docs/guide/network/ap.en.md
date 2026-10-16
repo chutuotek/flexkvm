@@ -51,7 +51,7 @@ Click the toggle on the right side of the card. After confirming, the hotspot st
 
 ### AP Configuration
 
-Click the gear icon on the left side of the card:
+Click the gear icon in the card header:
 
 ![AP config](./images/ap/setting_ap_setting.webp)
 
@@ -62,7 +62,7 @@ Click the gear icon on the left side of the card:
 | Security | Security protocol | WPA_WPA2 | Open / WPA / WPA2 / WPA3 / WPA/WPA2 / WPA2/WPA3 |
 | 5G Band | Enable the 5GHz band | Off | On / Off |
 | WiFi6 | 802.11ax | Off | On / Off |
-| Channel | Wireless channel | AUTO | 2.4G: 1–11, 5G: 36–165 |
+| Channel | Wireless channel | 6 | AUTO or a specific channel; 2.4G: 1–11, 5G: 36–165 |
 | Max Clients | Simultaneous client limit | 3 | 1–64 |
 
 > Configuration changes take effect immediately. In provisioning mode, AP config changes are staged and applied when you save and exit.
@@ -78,7 +78,7 @@ When enabled, the card shows: hotspot SSID, band label (2.4G / 5G), a WiFi6 badg
 | Check | How |
 |-------|-----|
 | OLED | Is the hotspot icon visible? |
-| Web interface | AP card shows "Enabled" + connection count |
+| Web interface | AP card shows the SSID, band label, and max client limit |
 | Client | Search for the hotspot SSID on a phone or computer and connect |
 
 ---
@@ -88,6 +88,7 @@ When enabled, the card shows: hotspot SSID, band label (2.4G / 5G), a WiFi6 badg
 | Symptom | Likely cause | Try this first |
 |---------|-------------|----------------|
 | Hotspot won't start | WiFi is currently on | Turn off WiFi first, then enable hotspot — or use Button B to toggle |
+| Hotspot won't start and reports a subnet conflict | Direct Mode is enabled with the same subnet as the AP network (`192.168.10.x`) | Change the subnet segment in Direct Mode, or turn Direct Mode off first |
 | Client can't connect | Wrong password, special characters in SSID | Verify password, check SSID |
 | Connected but management page won't load | Client IP issue | Confirm client is using DHCP (the hotspot auto-assigns) |
 | Poor performance | WiFi and hotspot both on | Turn off WiFi |

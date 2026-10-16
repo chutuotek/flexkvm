@@ -53,7 +53,7 @@ Click the card's toggle on the right. Turning off WiFi disables the wireless int
 
 ### Network Cards
 
-Scanned WiFi networks are shown as a card list. Each card displays: SSID, signal strength (four bars), frequency band (2.4G / 5G / dual-band), security type, and status label.
+Scanned WiFi networks are shown as a card list. Each card displays: SSID, signal strength (four bars), band label (2.4G / 5G / 2.4G/5G), a lock icon when a password is required, and status label.
 
 Click a card to expand action buttons. Available actions vary by card state:
 
@@ -102,19 +102,20 @@ Connected:
 
 ![WiFi connected](./images/wifi/setting_wificard_connected.webp)
 
-> **Verify**: After connecting → the card shows a "Connected" label and IP address. Password and config are auto-saved for next boot.
+> **Verify**: After connecting → the card shows a "Connected" label and a **Disconnect** button. Password and config are auto-saved for next boot.
 
 **Manually add a network**
 
-Click the **+** button at the top of the list, then fill in SSID, security type, and password:
+Click the **+** button at the top of the list, then fill in SSID, security, and password:
 
 ![Add WiFi](./images/wifi/setting_wifi_add.webp)
 
 | Field | Description |
 |-------|-------------|
 | Network name (SSID) | WiFi name |
-| Security type | Open / WPA / WPA2 / WPA3 / WPA-WPA2 / WPA2-WPA3 / OWE |
+| Security | Open / WPA / WPA2 / WPA3 / WPA-WPA2 / WPA2-WPA3 / OWE |
 | Password | Required for password-based networks; leave blank for Open and OWE |
+| Hidden network | Turn on when the target network does not broadcast its SSID |
 
 > **OWE (Enhanced Open)**: opportunistic encryption for public or guest networks — no password; the client and hotspot negotiate a key automatically.
 
@@ -126,7 +127,7 @@ Click the **Settings** button on a saved network card to open the configuration 
 
 ![WiFi details](./images/wifi/setting_wifi_info.webp)
 
-Read-only display of current network parameters: IP address, IPv6 address, MAC address, subnet mask, gateway, DNS1–3.
+Read-only display of current network parameters: IP address, IPv6 address, MAC address, subnet mask, gateway, DNS1–3, MTU.
 
 ### IPv4 Configuration
 
@@ -168,7 +169,7 @@ Format: `AA:BB:CC:DD:EE:FF` (six groups of hex, colon-separated).
 | Check | How |
 |-------|-----|
 | OLED | Is the IP displayed? |
-| Web interface | WiFi card shows IP address |
+| Web interface | WiFi card shows a "Connected" label |
 | Network test | Ping the IP from another device |
 
 ---
