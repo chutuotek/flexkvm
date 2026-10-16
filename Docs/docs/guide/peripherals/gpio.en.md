@@ -51,7 +51,7 @@ GND ─────────────────────────�
 
 ## Software Configuration
 
-Menu bar → click chip icon → IO menu → **GPIO Control**.
+Menu bar → **IO** → **GPIO**.
 
 ![GPIO interface](images/io.webp)
 

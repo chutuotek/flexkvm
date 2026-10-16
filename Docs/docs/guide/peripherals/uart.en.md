@@ -39,7 +39,7 @@ FlexKVM                 Target Host
 
 ## Software Configuration
 
-Menu bar → click chip icon → IO menu → **UART Serial Terminal**.
+Menu bar → **IO** → **UART**.
 
 ![UART interface](images/io_uart.webp)
 
@@ -49,10 +49,10 @@ Set parameters after enabling UART. **Parameters must match the target host exac
 
 | Parameter | Default | Common values |
 |-----------|:-------:|---------------|
-| Baud rate | 115200 | 9600, 19200, 38400, 57600, 115200 |
+| Baud rate | 115200 | 9600, 19200, 38400, 57600, 115200, 230400, 1500000 |
 | Data bits | 8 | 5/6/7/8 |
 | Stop bits | 1 | 1/2 |
-| Parity | None | None/Odd/Even |
+| Parity | None | None/Even/Odd |
 
 > The default **115200 8N1** is the most common configuration for serial devices.
 
@@ -62,7 +62,7 @@ Set parameters → click Start → a terminal window opens for direct interactio
 
 ![UART terminal window](images/io_uart_term.webp)
 
-Terminal layout: top-left shows current serial configuration (e.g., `115200 8N1`), status indicator next to baud rate (🟢 connected / 🔴 disconnected), right side has export log / clear / disconnect buttons.
+Terminal layout: top-left shows current serial configuration (e.g., `115200 8N1`), status indicator next to baud rate (🟢 connected / 🔴 disconnected), right side has open-in-new-window / export log / clear / close buttons.
 
 ### Ways to Open the Terminal
 
@@ -73,7 +73,7 @@ Terminal layout: top-left shows current serial configuration (e.g., `115200 8N1`
 
 The "start mode" remembers your last choice. If the browser blocks the popup, just open `/terminal` manually.
 
-> Only one window can use the serial port at a time. Click Disconnect in the owning window to release it; while occupied the terminal shows "Serial port is occupied by another window, waiting for release…".
+> Only one window can use the serial port at a time. Click Disconnect in the owning window to release it; while occupied the terminal shows "Serial in use by another window, waiting…".
 
 > Parameters can't be changed while connected. Disconnect first if you need to change them.
 
@@ -83,11 +83,14 @@ Disconnections now show the specific reason instead of a generic failure:
 
 | Message | Meaning | What to do |
 |---------|---------|------------|
-| Serial port is occupied by another window, waiting for release… | Another tab is using the port | Disconnect in the owning window, or close it |
-| Serial port not enabled, enable it in the main UI first | UART not started | Start it from the IO menu in the main UI |
+| Serial in use by another window, waiting… | Another tab is using the port | Disconnect in the owning window, or close it |
+| Serial is disabled, enable it on the main page | UART not started | Start it from the IO menu in the main UI |
 | Main session lost, waiting to reconnect… | Main connection dropped briefly | Auto-reconnects, just wait |
 | Session replaced by another login | Same account logged in elsewhere | Log in again |
-| Serial port disconnected / failed to open | Device-side error or busy port | Check wiring and parameters, then start again |
+| Serial disconnected | Closed by a "Disconnect" command | Start again when needed |
+| Failed to open serial port | Device-side error or busy port | Check wiring and parameters, then start again |
+| Serial device read error, connection closed | Serial device dropped offline | Check wiring and device state, then start again |
+| Connection failed, auto-reconnect stopped | Repeated reconnect failures | Check the network and device state, then start again |
 
 > Transient network drops reconnect automatically; auto-reconnect only stops after repeated failures, with a clear message.
 

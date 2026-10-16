@@ -91,8 +91,8 @@ Optional accessories can mount the ATX controller inside the case: full-height U
 ### Enable
 
 1. Open the **Interface** menu
-2. Toggle the switch in the panel
-3. When properly connected, the device name `atx` will appear
+2. Turn on the **switch** in the panel
+3. The panel shows **Current Module** and **Version Info**; when the ATX controller is properly connected, the current module is `atx`, otherwise it reads "Disconnected"
 
 ### Status Indicators
 
