@@ -212,7 +212,7 @@ Re-plug the ATX controller's USB Type-C data cable, and check that the ATX icon 
 
 ### TF card not detected
 
-Check if the file system is supported. FAT32 / exFAT / ext4 are supported, and exFAT has the best compatibility; convert NTFS cards to exFAT first. Make sure the card is fully inserted (click sound).
+Check if the file system is supported. FAT32 / exFAT / ext4 and NTFS are supported, and exFAT has the best compatibility. If an NTFS partition is in use by Windows or carries a dirty/hibernation flag, ntfs-3g refuses to mount it — eject it safely in Windows or convert it to exFAT. Make sure the card is fully inserted (click sound).
 
 ### Virtual CD-ROM not detected by target host
 
@@ -250,7 +250,7 @@ Make sure the uploaded firmware file is complete and not corrupted. If the devic
 
 > You must enter your password to confirm before upgrading (plus a verification code if 2FA is on). Full procedure → [Online Upgrade](../../guide/maintenance/upgrade-online.md) · [Offline Upgrade](../../guide/maintenance/upgrade-offline.md)
 
-### App update fails
+### App management fails
 
 | Symptom | Possible cause | Solution |
 |---------|----------------|----------|

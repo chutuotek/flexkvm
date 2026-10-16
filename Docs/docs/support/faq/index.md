@@ -16,7 +16,7 @@ IPMI 等企业带外方案需要主板原生支持，价格昂贵、配置复杂
 
 ### 是否需要公网 IP？
 
-不需要。FlexKVM 内置 Tailscale，设备能访问互联网即可建立安全连接。也支持通过自建 WiFi 热点直连，完全不需要互联网（热点默认 802.11 a/b/g/n/ac，WiFi 6 需在 AP 配置里手动开启）。
+不需要。FlexKVM 内置 Tailscale，设备能访问互联网即可建立安全连接。也支持通过自建 **AP 热点**直连，完全不需要互联网（AP 热点默认 2.4GHz 802.11 b/g/n，5GHz 频段与 WiFi 6 需在 AP 配置里手动开启）。
 
 ### WiFi 和有线网络可以同时使用吗？会冲突吗？
 
@@ -106,7 +106,7 @@ FlexKVM 对被控设备**完全透明**——它模拟标准 USB 键盘鼠标和
 
 ### TF 卡支持哪些文件系统？
 
-支持 FAT32、exFAT、ext4。推荐使用 exFAT（无 4GB 单文件限制）。NTFS 不支持挂载，请先转成 exFAT。详见 [存储管理](../../guide/peripherals/disk.md)。
+支持 FAT32、exFAT、ext4，也支持挂载 NTFS 分区（通过 ntfs-3g 读写）。推荐使用 exFAT（无 4GB 单文件限制）。NTFS 分区不支持体检与修复，需要这两项时请先转成 exFAT。详见 [存储管理](../../guide/peripherals/disk.md)。
 
 ### 如何远程重装操作系统？
 

@@ -16,7 +16,7 @@ Remote software depends on the operating system to function. When the system is 
 
 ### Do I need a public IP address?
 
-No. FlexKVM has Tailscale built-in — as long as the device can access the internet, a secure connection can be established. You can also connect directly via its own WiFi hotspot with no internet required at all (the hotspot runs 802.11 a/b/g/n/ac by default; WiFi 6 must be enabled manually in the AP settings).
+No. FlexKVM has Tailscale built-in — as long as the device can access the internet, a secure connection can be established. You can also connect directly via its own **AP hotspot** with no internet required at all (the AP hotspot runs 2.4GHz 802.11 b/g/n by default; the 5GHz band and WiFi 6 must be enabled manually in the AP settings).
 
 ### Can I use WiFi and Ethernet at the same time?
 
@@ -106,7 +106,7 @@ One FlexKVM manages one target host. For multiple hosts, equip each with its own
 
 ### Which file systems does the TF card support?
 
-FAT32, exFAT, and ext4. exFAT is recommended (no 4GB single-file limit). NTFS is not supported — convert it to exFAT first. See [Storage Management](../../guide/peripherals/disk.md).
+FAT32, exFAT, and ext4 are supported, and NTFS partitions can also be mounted (read/write via ntfs-3g). exFAT is recommended (no 4GB single-file limit). NTFS partitions cannot be checked or repaired — convert to exFAT if you need that. See [Storage Management](../../guide/peripherals/disk.md).
 
 ### How do I remotely reinstall the OS?
 
