@@ -39,7 +39,7 @@ Open the package and verify the following items:
 | [3] | USB Type-C cable | 3 | Power, data, and ATX control. All three are identical and interchangeable, 1m length, Type-A to Type-C |
 | [4] | ATX controller | 1 | For remote power control |
 | [5] | ATX Dupont wires | 10 | ATX controller wiring |
-| [6] | Magnetic backplate | 1 | Mounts device on a rack |
+| [6] | Magnetic backplate | 1 | Attaches the device to metal surfaces |
 | [7] | Quick start guide | 1 | Product usage guide |
 
 ![FlexKVM package contents](../images/product/package.webp)

@@ -41,7 +41,7 @@
 | Server crashed, SSH/RDP down — have to haul a monitor to the server room | Hardware-level HDMI capture — see the screen remotely even when the OS is crashed |
 | Headless device BIOS needs tweaking — always need to connect a monitor | Remote keyboard & mouse control all the way to BIOS/UEFI — operate as if you're sitting right there |
 | Remote site system failure — sending someone on-site is expensive and slow | Built-in Tailscale mesh VPN — headquarters can remotely reinstall the OS |
-| No network on-site — can't remotely access the device | Ethernet Direct (DHCP server) + WiFi 6 hotspot dual-channel — connect via phone or laptop, no router needed |
+| No network on-site — can't remotely access the device | Ethernet Direct (DHCP server) + built-in AP hotspot dual-channel — connect via phone or laptop, no router needed |
 
 ---
 
@@ -103,7 +103,7 @@
 
 - **:material-lan-connect: Network-Free Control**
 
-    No router? No problem. Ethernet Direct Mode (DHCP server) + WiFi 6 hotspot — two channels, zero infrastructure. OS installs, BIOS tweaks, troubleshooting — all without a network.
+    No router? No problem. Ethernet Direct Mode (DHCP server) + built-in AP hotspot — two channels, zero infrastructure. OS installs, BIOS tweaks, troubleshooting — all without a network.
 
 - **:material-fan-off: Low Power, Silent**
 
@@ -141,7 +141,7 @@
 | Audio | Bidirectional audio |
 | Wireless | Dual-band WiFi 6 |
 | Wired | RJ-45 100M Ethernet |
-| External storage | Up to 512GB TF card |
+| External storage | TF card |
 | Expansion | 2× GPIO + 1× UART serial |
 | Operating temp | 0°C ~ 70°C |
 
