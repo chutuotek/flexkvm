@@ -8,7 +8,16 @@ FlexKVM emulates a keyboard, mouse, and storage device via USB. You can customiz
 
 ## Switch Device Identity
 
-The dropdown lists built-in identities and any custom ones you've created. After selecting, USB auto-restarts to apply the new configuration.
+The dropdown lists built-in identities and any custom ones you've created. The built-in identities are:
+
+| Name | Manufacturer | Product | VID / PID |
+|------|--------------|---------|-----------|
+| default | ChuTuo Electronics Technology Co., Ltd. | FlexKVM | `0x1250` / `0x04E2` |
+| logitech-k120 | Logitech, Inc. | Keyboard K120 | `0x046d` / `0xc31c` |
+| logitech-m100 | Logitech, Inc. | M100 Optical Mouse | `0x046d` / `0xc05a` |
+| rapoo-keyboard | SIGMACHIP | USB Keyboard | `0x1c4f` / `0x0002` |
+
+After selecting, USB auto-restarts to apply the new configuration.
 
 > ⚠️ Switching identity re-enumerates USB: keyboard, mouse, audio and mass storage (any mounted image) drop briefly and then recover. **Do not do this while installing an OS** — the installation will be interrupted.
 

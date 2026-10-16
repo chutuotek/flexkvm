@@ -17,12 +17,12 @@ Watch the device run in real time — temperature, CPU, memory, network rate, an
 | App uptime | How long the FlexKVM app has been running |
 | System uptime | How long the device has been powered on |
 
-## Live and History
+## Current and History
 
-Switch between **Live** and **History** at the top of the page:
+Switch between **Current** and **History** at the top of the page:
 
-- **Live**: latest values plus a 10-minute curve, refreshed every 5 seconds.
-- **History**: pick a date to review the full-day curve of every metric (history is recorded per minute).
+- **Current**: latest values plus a 10-minute curve, refreshed every 5 seconds.
+- **History**: pick a date and a time range to review that day's temperature / CPU / memory curves (history is recorded per minute and kept for 30 days). Network rate has no history curve — it appears only in the **Current** view.
 
 !!! tip
 
@@ -30,12 +30,12 @@ Switch between **Live** and **History** at the top of the page:
 
 ## Export Data
 
-In the history view, click **Export**:
+In the **History** view, click **Download Day** or **Download All**:
 
 | Option | Description |
 |------|------|
-| Download this day | Export the selected date (`sys_monitor_<date>.csv`) |
-| Download all | Download all history packed into one archive (`sys_monitor_all.tar.gz`, containing per-day CSV files) |
+| Download Day | Export the selected date (`sys_monitor_<date>.csv`) |
+| Download All | Download all history packed into one archive (`sys_monitor_all.tar.gz`, containing per-day CSV files) |
 
 The per-day CSV is a plain text table that opens directly in Excel / WPS, with columns: timestamp, temperature (temp_c), memory total/available (mem_total_mb / mem_avail_mb), and CPU usage (cpu_pct). Network rate appears only in the on-page curves — it is not written to the CSV.
 

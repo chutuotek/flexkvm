@@ -8,7 +8,16 @@ FlexKVM 通过 USB 模拟键盘、鼠标和存储设备。可以自定义设备�
 
 ## 切换设备标识
 
-下拉列表显示内置标识和自定义标识（如果有）。选完后 USB 自动重启应用新配置。
+下拉列表显示内置标识和自定义标识（如果有）。内置标识如下：
+
+| 名称 | 制造商 | 产品名称 | VID / PID |
+|------|--------|----------|-----------|
+| default | ChuTuo Electronics Technology Co., Ltd. | FlexKVM | `0x1250` / `0x04E2` |
+| logitech-k120 | Logitech, Inc. | Keyboard K120 | `0x046d` / `0xc31c` |
+| logitech-m100 | Logitech, Inc. | M100 Optical Mouse | `0x046d` / `0xc05a` |
+| rapoo-keyboard | SIGMACHIP | USB Keyboard | `0x1c4f` / `0x0002` |
+
+选完后 USB 自动重启应用新配置。
 
 > ⚠️ 切换标识会让 USB 重新枚举：键盘、鼠标、音频、大容量存储（已挂载的镜像）都会短暂失效后恢复。**系统安装过程中不要操作**，否则安装会中断。
 
