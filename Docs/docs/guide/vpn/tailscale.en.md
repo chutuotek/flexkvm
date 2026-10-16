@@ -50,18 +50,18 @@ For self-hosted headscale servers or browser-free automated onboarding (e.g. pre
 
 ## Connection Info
 
-After successful login, the interface shows:
+After a successful login the panel shows a **Details** entry whose subtitle displays the Tailscale IP and online status (e.g. `100.x.x.x(online)`). Open it to view:
 
 | Info | Description |
 |------|-------------|
-| Device ID | Unique identifier of this node in the Tailscale network |
-| Creator name | Current network name |
-| Tailscale IP | Assigned IP (`100.x.x.x`) |
+| Tailscale IP | The assigned IP (`100.x.x.x`) |
 | Connection status | Online / Offline |
+| Device ID | Unique identifier of this node in the Tailscale network |
+| Creator name | Current tailnet name |
 | Key expires | Expiration date and time of the node key |
 | Login server | Official (controlplane.tailscale.com) or self-hosted headscale address |
 
-Click the refresh button to update connection status.
+Once logged in, a refresh button appears at the top of the card — click it to update the connection status.
 
 ## Logout
 

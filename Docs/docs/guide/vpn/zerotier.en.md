@@ -29,7 +29,7 @@ Install it from the **App Management** row on the same card:
 
 Toggle the switch to enable — it takes effect immediately: the backend starts the zerotier-one daemon on the device. If the app isn't installed the toggle isn't shown at all, so install it first.
 
-Once enabled, the description under the toggle shows the **version** (e.g. `v1.16.0`); when a newer version is found it appends `(update available)`, and you can update it from **App Management**.
+Once enabled, the description under the toggle shows the **version** (e.g. `v1.16.2`); when a newer version is found it appends `(update available)`, and you can update it from **App Management**.
 
 > **Verify**: the toggle is on and a **refresh** icon appears next to the card title (it's absent while the service is disabled).
 
