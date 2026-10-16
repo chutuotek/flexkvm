@@ -132,31 +132,42 @@
 
 ### 远程组网
 
-不依赖公网 IP，把设备接入你的虚拟网络或把端口映射出去——都在**设置 → 应用**里。
+不依赖公网 IP，把设备接入你的虚拟网络或把端口映射出去——都在**设置 → 应用**里。四种方式互不排斥，可以同时启用。
+
+不确定选哪个：
+
+- 只想从外面打开 Web 界面或 SSH，且已有一台公网服务器 → **frp 内网穿透**
+- 想让设备与自己的电脑、手机像在同一局域网里互通，不想自备服务器 → **Tailscale**
+- 同样要互通，但需要虚拟二层网络（广播、内网发现也要通），或已有 ZeroTier 网络 → **ZeroTier**
+- 要自己管控密钥、不经过任何第三方控制面 → **WireGuard**
+
+> frp 是端口映射：设备不会获得虚拟 IP。Tailscale、ZeroTier、WireGuard 是组网：启用后设备会拿到一个虚拟地址。
+
+> 四种方式最终都用 `https://<虚拟地址或公网地址>` 打开 Web 界面。设备默认使用自签名证书，浏览器首次访问提示「不安全」属于正常现象，处理方式见[登录管理](security/account/login.md)。
 
 <div class="grid cards" markdown>
 
 - **:material-vpn: Tailscale**
 
-    无需公网 IP，端到端加密远程访问
+    需一个 Tailscale 账号；端到端加密，无需公网 IP
 
     [:octicons-arrow-right-24: 查看](vpn/tailscale.md)
 
 - **:material-lan-connect: ZeroTier**
 
-    加入虚拟二层网络，像在同一局域网里一样互通
+    需一个 ZeroTier 网络；虚拟二层网络，像在同一局域网里互通
 
     [:octicons-arrow-right-24: 查看](vpn/zerotier.md)
 
 - **:material-swap-horizontal: frp 内网穿透**
 
-    借自己的公网服务器把设备端口映射出去
+    需一台公网服务器；把设备端口映射出去，不是组网
 
     [:octicons-arrow-right-24: 查看](vpn/frp.md)
 
 - **:material-shield-lock: WireGuard**
 
-    内核级 VPN，自己管控密钥与对端
+    需一个自己的对端；内核级 VPN，自己管控密钥
 
     [:octicons-arrow-right-24: 查看](vpn/wireguard.md)
 

@@ -132,31 +132,42 @@ How to get FlexKVM online and access it remotely.
 
 ### Remote Networking
 
-No public IP required — join the device to your own virtual network, or map its ports out. All of it lives under **Settings → App**.
+No public IP required — join the device to your own virtual network, or map its ports out. All of it lives under **Settings → App**. The four options are not mutually exclusive; you can enable several at once.
+
+Not sure which one to pick:
+
+- Only need to open the web UI or SSH from outside, and already have a public server → **frp Tunneling**
+- Want the device and your own computer or phone to reach each other as if on the same LAN, without running a server → **Tailscale**
+- Same, but you need a virtual Layer 2 network (broadcast and LAN discovery must work too), or you already have a ZeroTier network → **ZeroTier**
+- Want to own the keys yourself and go through no third-party control plane → **WireGuard**
+
+> frp maps ports: the device does not get a virtual IP. Tailscale, ZeroTier and WireGuard are network joins: once enabled, the device gets a virtual address.
+
+> All four end the same way — open the web UI at `https://<virtual-or-public-address>`. The device uses a self-signed certificate, so a browser "not secure" warning on first visit is expected; see [Login Management](security/account/login.md) to handle it.
 
 <div class="grid cards" markdown>
 
 - **:material-vpn: Tailscale**
 
-    No public IP needed — end-to-end encrypted remote access
+    Needs a Tailscale account; end-to-end encrypted, no public IP
 
     [:octicons-arrow-right-24: View](vpn/tailscale.md)
 
 - **:material-lan-connect: ZeroTier**
 
-    Join a virtual Layer 2 network and reach the device as if it were on your LAN
+    Needs a ZeroTier network; virtual Layer 2, reachable as if on your LAN
 
     [:octicons-arrow-right-24: View](vpn/zerotier.md)
 
 - **:material-swap-horizontal: frp Tunneling**
 
-    Map the device's ports out through a public server of your own
+    Needs a public server; maps ports out, not a network join
 
     [:octicons-arrow-right-24: View](vpn/frp.md)
 
 - **:material-shield-lock: WireGuard**
 
-    Kernel-level VPN where you own the keys and the peer list
+    Needs a peer of your own; kernel-level VPN, you own the keys
 
     [:octicons-arrow-right-24: View](vpn/wireguard.md)
 
