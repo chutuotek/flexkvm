@@ -14,7 +14,7 @@
 - Video codec can be switched between H.264 and H.265 (H.265 saves roughly 30% bitrate at the same quality; the browser must support it)
 - System status monitor: view temperature, CPU, memory, network rate and uptime in real time under Settings → Status, with history curves by date and CSV export
 - Recording adds the MKV container (alongside WebM), an automatic quality preset, and codec labels (hardware)/(software) detected per browser
-- TF card supports mounting NTFS partitions for direct read/write; file system check and repair is available for FAT32 / exFAT / ext4 under Settings → Storage
+- TF card supports mounting NTFS partitions for direct read/write; file system check and repair is available for FAT32 / exFAT / ext4 under menu bar → Mirror (Storage Management)
 - EDID modify: override monitor manufacturer, monitor name, serial string and product code, with one-click clearing, without uploading a full EDID; custom EDIDs can also be deleted
 - Screen menu adds "Unplug monitor / Plug monitor" to simulate a monitor disconnect so the host re-detects it
 - Dual fullscreen modes: toolbar fullscreen (`F11`) and picture fullscreen (`Ctrl+F11`)
@@ -27,7 +27,7 @@
 - Keyboard/mouse channel drops are indicated in the menu bar, with status and automatic recovery
 - Admin-only control over picture settings: quality, codec, GOP and EDID controls are greyed out for non-admin users
 - mDNS discovery: reach the web UI and SSH via the `flexkvm-xxxx.local` hostname on the LAN (toggle under Settings → Network → mDNS)
-- App update: check, download, and install app updates (e.g. Tailscale) online under Settings → App, with GitHub / Gitee as download sources (Gitee by default), uninstall support, automatic rollback on failure, and firmware gate checks
+- App management: check, download, and install app updates (e.g. Tailscale) online under Settings → App, with GitHub / Gitee as download sources (Gitee by default), uninstall support, automatic rollback on failure, and firmware gate checks
 - PWA offline support: cached pages still open without a network connection
 - WiFi supports OWE encryption
 - MTU shown in the Ethernet/Wi-Fi detail panel
