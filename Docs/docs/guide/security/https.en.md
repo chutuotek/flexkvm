@@ -57,7 +57,7 @@ Click "Download CA Certificate", import the issued CA into the system and trust 
     sudo update-ca-trust
     ```
 
-You can also configure a CA-signed [custom certificate](#custom-certificate). The system auto-renews before expiry, and falls back to the self-signed certificate if a custom certificate becomes invalid — access is not interrupted.
+You can also configure a CA-signed [custom certificate](#custom-certificate). The system re-issues the self-signed certificate automatically once it expires, and falls back to the self-signed certificate if a custom certificate becomes invalid — access is not interrupted.
 
 ### User Sub-CA
 

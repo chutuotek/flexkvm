@@ -52,7 +52,7 @@ When the device clock deviates significantly from the current time (e.g. RTC dri
 |-------|------------|
 | Wrong username or password | Check case, check for extra spaces |
 | Wrong 2FA code | Verify time sync, wait for a new code |
-| Account locked | Temporarily locked after repeated failures — wait a few minutes and retry |
+| Account locked | Temporarily locked for about 5 minutes after 5 failed attempts — retry later |
 
 ## Multi-Device Login & Preemption
 

@@ -4,7 +4,7 @@ FlexKVM has a built-in SSH server for remote command-line device management — 
 
 > Where: Settings → Security → SSH
 
-> After more than 3 failed attempts, the connection is automatically disconnected with a brief delay before retry is allowed — this prevents brute force attacks.
+> After 3 consecutive failed attempts the connection is automatically disconnected, with increasing backoff — this prevents brute force attacks.
 
 ## Before You Begin
 
@@ -29,6 +29,8 @@ Port 22 (default). Windows includes OpenSSH — works directly in PowerShell or 
 - **Username**: FlexKVM account name
 - **Password**: FlexKVM account password
 - **Key-based login not supported**
+
+Once a new connection authenticates, it takes over the current session: the previous session is disconnected after printing `Session taken over by another admin.`, and the new connection continues.
 
 **2FA enabled?** Login is two-step: enter password first → after password is verified, enter the 6-digit TOTP code (or 8-digit backup code) → access granted. Without 2FA, only password is needed.
 
@@ -111,8 +113,8 @@ Type `help` for the full list. Quick reference:
 | `Connection refused` | SSH service not enabled | Check the SSH toggle |
 | `Connection timed out` | Wrong IP or network unreachable | Verify IP matches OLED, try pinging |
 | `Permission denied` | Wrong username or password | Use the same credentials as the Web interface; check case |
-| Disconnected immediately after login | Another SSH session is active | Close the other session or wait for timeout |
-| Disconnected after wrong password | Exceeded 3 failed attempts | Reconnect — the limit resets |
+| Disconnected immediately after login | Session was taken over by a newer SSH connection | Reconnect; avoid using multiple clients at once |
+| Disconnected after wrong password | 3 consecutive failed attempts | Reconnect — the limit resets |
 
 ---
 
