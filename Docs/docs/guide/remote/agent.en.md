@@ -205,7 +205,7 @@ The device uses a self-signed HTTPS certificate by default. If the client report
 
 - AI and an online user share the same HID device — simultaneous input interferes, so stagger usage.
 - Once Agent is enabled, `screenshot` works regardless of whether a user is online.
-- Agent endpoints are fully disabled in provisioning mode (the MCP endpoint is hidden and requests return 404).
+- In provisioning mode the MCP endpoint is hidden (requests return 404); the REST endpoints (`/api/v1/agent/*`) still follow the Agent switch and API Key authentication.
 
 ## Limits
 
@@ -242,7 +242,7 @@ The interface enforces fixed limits; exceeding them fails or truncates the reque
 
 **AI actions do nothing?** → First check the Limits section above; confirm the target host's keyboard/mouse works (e.g., typing is visible in the BIOS screen).
 
-**Getting 404 from the endpoint in provisioning mode?** → Agent endpoints are fully disabled in provisioning mode and the MCP endpoint is hidden — this is expected.
+**Getting 404 from the MCP endpoint in provisioning mode?** → In provisioning mode the MCP endpoint is hidden — this is expected; the REST endpoints are unaffected.
 
 ---
 

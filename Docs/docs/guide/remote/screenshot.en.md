@@ -12,7 +12,7 @@ Click the **Screenshot** icon.
 |------|--------|
 | ![](../icon/screenshot/camera.svg) | Click to capture a screenshot |
 
-> **Verification**: A successful screenshot triggers a "Screenshot captured" toast notification at the top. The file auto-saves to your browser's download directory. If there's no display signal, the screenshot fails.
+> **Verification**: A successful screenshot triggers a "Screenshot success" toast notification at the top. The file auto-saves to your browser's download directory. If there's no display signal, the screenshot fails.
 
 ## File Naming
 
@@ -44,7 +44,7 @@ Only affects JPG:
 | Low | Smallest file |
 | Medium | Daily use |
 | High | More detail |
-| Ultra | Maximum quality |
+| Best | Maximum quality |
 
 > PNG is always maximum quality — this setting doesn't affect it.
 

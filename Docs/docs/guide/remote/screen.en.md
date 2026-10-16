@@ -22,9 +22,12 @@ Status messages when the display is abnormal:
 
 | Message | Cause |
 |---------|-------|
-| "Remote display not connected" | HDMI not plugged in or target host powered off |
+| "Display unplugged, please plug it back in" | "Unplug display" was used in the display menu |
+| "Remote display not connected" | No video connection, or the target host is powered off |
 | "Host is sleeping" | Host in sleep mode or HDMI signal interrupted |
 | "Negotiating signal…" | HDMI just plugged in or resolution changed — video parameters are being negotiated, recovers automatically |
+| "The host output mode is not supported…" | Host output exceeds the range declared by EDID — lower it on the host |
+| "Restoring video…" | Connected but the first frame has not been presented yet — a brief wait after negotiation |
 
 ### Touchscreen Gestures
 
@@ -46,14 +49,18 @@ Click the display icon in the menu bar to open the menu.
 
 ![remote-menu](./images/screen/remote_menu.webp)
 
+Quality, codec, GOP, EDID, and unplug/plug monitor are administrator operations — the corresponding controls are greyed out for non-administrators. Reconnect is not restricted.
+
 ### Status & Resolution
 
 | Status | Meaning |
 |--------|---------|
+| Unplugged | "Unplug display" was used — HPD driven low |
 | Connected | Normal |
 | Negotiating | HDMI just plugged in or resolution changed, video parameters being negotiated |
 | Signal lost | Host sleeping or HDMI disconnected |
-| Not connected | Connection never established |
+| Signal out of range | Host output resolution or refresh rate exceeds what EDID declares |
+| Not connected | No video connection established |
 
 Resolution format: `widthxheight@refreshHz` (e.g., `1920x1080@60Hz`). `0x0@0Hz` means resolution is currently unavailable.
 
@@ -89,7 +96,7 @@ Four levels — higher is sharper, but consumes more bandwidth:
 | Low | Slow network | ~256 Kbps |
 | Medium | Daily operations | ~2 Mbps |
 | High | Need to see fine details | ~4 Mbps |
-| Ultra | Best quality | ~8 Mbps |
+| Extreme | Best quality | ~8 Mbps |
 
 > Bandwidth is approximate and varies with screen content. If it's laggy, lower the quality. This table covers the **live view**; Video Quality under [Recording](recording.en.md) is a separate setting that lists recording bitrates.
 
@@ -103,19 +110,20 @@ Choose the video codec (H.264 / H.265):
 | H.265 (HEVC) | ~30% lower bitrate at the same quality; the browser must support H.265 |
 
 - Disabled when no HDMI signal is present.
+- The H.265 option is greyed out when the browser cannot decode H.265.
 - Switching while streaming → brief black screen, then automatic renegotiation; when idle the setting is saved and takes effect on the next start.
-- Browser does not support the selected codec → streaming fails; switch back to H.264.
+- Device set to H.265 while the current browser cannot decode it → negotiation fails; an "Incompatible video codec" dialog offers "Switch to H.264". Non-administrators see a prompt to contact an administrator.
 
 ### GOP
 
-Controls the balance between display responsiveness and bandwidth. Range: 1–10.
+Controls the balance between display responsiveness and bandwidth. Range: 1–10; the effective GOP is the multiplier × frame rate.
 
 | Setting | Effect |
 |---------|--------|
 | Lower (1–3) | Fast response, higher bandwidth |
 | Higher (7–10) | Lower bandwidth, slower response, slower recovery from frame loss |
 
-> Not sure? Keep the default of 1.
+> The default is 1. Keep it if unsure.
 
 ### Reconnect & Simulated Unplug
 
@@ -124,9 +132,9 @@ Two groups of actions at the bottom of the display menu:
 | Button | Purpose |
 |--------|---------|
 | Reconnect | Disconnect the current video connection and re-establish it. Try this when the display is laggy or glitching |
-| Unplug monitor / Plug monitor | Simulate physically unplugging the display so the host re-detects it. Use when the host fails to recognize the display or outputs nothing |
+| Unplug display / Plug in display | Simulate physically unplugging the display so the host re-detects it. Use when the host fails to recognize the display or outputs nothing |
 
-> After unplugging, the host acts as if the display was removed; click "Plug monitor" to restore. HDMI hotplug detection is event-driven, so status updates promptly.
+> After unplugging, the host acts as if the display was removed; click "Plug in display" to restore. HDMI hotplug detection is event-driven, so status updates promptly.
 
 ## EDID Configuration
 

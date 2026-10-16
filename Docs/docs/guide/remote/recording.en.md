@@ -13,9 +13,9 @@ Click the **Recording** icon:
 | ![](../icon/recorder/video.svg) | Idle, click to start |
 | ![](../icon/recorder/square.svg) | Recording, click to stop |
 
-**Start**: Click the record button → "Recording started" toast appears. The button turns into a timer (e.g., `05:23`).
+**Start**: Click the record button → "Recording start" toast appears. The button turns into a timer (e.g., `05:23`).
 
-**Stop**: Click the timer → "Recording saved" toast → video auto-saves to your browser's download directory.
+**Stop**: Click the timer → "Recording success" toast → video auto-saves to your browser's download directory.
 
 > Recording doesn't stop automatically — you must click Stop manually. Closing the browser or refreshing the page stops it (unsaved parts are discarded). **A sleeping host or HDMI disconnect does not stop recording**: the timer keeps running while the picture is lost, and recording resumes into the same file once the signal returns.
 
@@ -36,9 +36,11 @@ Adjust in Settings → Capture → **Recording**.
 | Mute Recording | On/Off | When enabled, the video contains no audio |
 | Container | WebM / MKV | Listed according to browser support; WebM is the browser-native format |
 | Video Codec | Listed per container | Auto-detects codecs available on the control device, labeled (hardware)/(software); hardware encoding uses less CPU |
-| Video Quality | Low / Medium / High / Ultra (1 / 2 / 4 / 8 Mbps) | Higher is sharper and larger |
+| Video Quality | Auto / Low (1 Mbps) / Medium (2 Mbps) / High (4 Mbps) / Ultra (8 Mbps) | Higher is sharper and larger |
 
 > The container format matches the video file extension (.webm / .mkv). The codec is how the picture gets compressed: hardware-labeled codecs use dedicated hardware and save the most CPU. Recording is based on WebCodecs: codecs unsupported by the control device never appear in the list, and a saved format that is no longer supported falls back to an available one.
+>
+> **Auto** derives the bitrate from the recording resolution and frame rate. The Mbps figures are the **recording file bitrate**, which is a separate setting from the live estimated bandwidth shown in [Remote Display](screen.md).
 
 ---
 

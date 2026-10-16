@@ -67,7 +67,7 @@ Common shortcuts sent with one click. Layout auto-adjusts based on the "Target O
 
 ![Shortcuts floating](./images/keyboard/keyboard_shotcut_float.webp)
 
-**Custom shortcuts**: Click gear → dialog has three sections — top: select OS, middle: shortcut list (click **+** to add), bottom: import/export/reset.
+**Custom shortcuts**: Click gear → dialog has three sections — top: select OS, middle: shortcut list (click **+** to add), bottom: Import / Export / Reset.
 
 ![Custom shortcuts](./images/keyboard/keyboard_shotcut_custom.webp)
 
@@ -75,8 +75,8 @@ Click a shortcut in the list to modify it:
 
 ![Modify shortcut](./images/keyboard/keyboard_shotcut_add.webp)
 
-- **Name**: Max 32 chars; if blank, the shortcut content is displayed
-- **Shortcut**: Two ways to add: **Record** (click Start Recording, then press keys) or **Manual** (select keys to add/remove)
+- **Name**: if blank, the shortcut content is displayed
+- **Shortcut**: Two ways to add: **Record** (click Start Recording, then press keys) or **Manual** (pick keys by category to add/remove)
 
 ### Virtual Keyboard
 
