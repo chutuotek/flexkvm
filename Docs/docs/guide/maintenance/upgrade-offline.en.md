@@ -9,7 +9,7 @@ You can upgrade firmware even without internet access — download the firmware 
 ## Before You Start
 
 - [ ] Power the device from a dedicated power adapter — do not rely only on USB power from the target host. Power loss during upgrade can brick the device
-- [ ] Note the current firmware version (Settings → System → About), needed for rollback decisions and support tickets
+- [ ] Note the current firmware version (Settings → About), needed for rollback decisions and support tickets
 - [ ] Make sure the target version is higher than the current one: downgrades and same-version overwrites are not supported
 - [ ] Do not touch power, USB device identity, or network settings while upgrading
 

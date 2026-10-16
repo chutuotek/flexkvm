@@ -17,7 +17,7 @@ The log list shows each log's start time, end time, status, and download button.
 Three status types:
 
 - **Recording** (blue): Currently recording
-- **Normal** (green): Recording complete, no anomalies
+- **Completed** (green): Recording complete, no anomalies
 - **Abnormal** (red): Recording complete, system has crashed
 
 Click download → choose directory → wait for progress bar to reach 100% and verification to pass. Filename: `log-YYYY-MM-DDTHH-MM-SS.tar.gz`, e.g., `log-2026-05-19T09-22-08.tar.gz`. If verification fails, re-download.
@@ -28,7 +28,7 @@ Click download → choose directory → wait for progress bar to reach 100% and 
 
 ## Web Log
 
-Click the "Web Log" card → the current browser log auto-downloads to your browser's download directory. Filename: `flexkvm-web-xxxxxxxxx.log` (`xxxxxxxxx` is a timestamp). Intended for vendor debugging.
+Click the "Web Log" card → the current browser log auto-downloads to your browser's download directory. Filename: `flexkvm-web-<ms-timestamp>.log` (e.g. `flexkvm-web-1760500000000.log`). Intended for vendor debugging.
 
 ---
 

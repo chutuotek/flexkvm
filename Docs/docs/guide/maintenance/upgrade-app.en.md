@@ -27,7 +27,7 @@ Click **Check for Updates** and the system fetches that app's latest version inf
 
 > **Verify**:
 >
-> - Update available → the row shows "New version available" plus a **Changelog** entry you can open
+> - Update available → the row shows "Update available" plus a **Changelog** entry you can open
 > - No update → shows "Up to date"
 > - Not checked yet, or the last check failed → shows 'Click "Check for Updates" to see app status'
 
@@ -36,7 +36,7 @@ Click **Check for Updates** and the system fetches that app's latest version inf
 | Status | Meaning |
 |--------|---------|
 | Not installed | The app isn't installed on this device; you can download and install it directly |
-| New version available | A newer remote version exists — read the **Changelog** before downloading |
+| Update available | A newer remote version exists — read the **Changelog** before downloading |
 | Up to date | The installed version is the latest |
 | Incompatible with current firmware | The new version requires newer firmware; the row shows "Requires firmware X or above" and the download button is grayed out |
 | Versions not comparable | The local or remote version format can't be compared; the button becomes **Install Anyway** with the hint "Local or remote version format cannot be compared; you can overwrite-install the current version" |

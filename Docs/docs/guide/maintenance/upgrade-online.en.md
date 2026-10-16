@@ -49,7 +49,7 @@ Click **Check for Updates**. The system does not check automatically — we reco
 
 ## New Version
 
-Shows the new version number (e.g., `v0.1.1`). Click to view the changelog:
+Shows the new version number (e.g., `v0.2.1`). Click **Changelog** to read the update notes:
 
 ![New version changelog](./images/ota_online_log.webp)
 

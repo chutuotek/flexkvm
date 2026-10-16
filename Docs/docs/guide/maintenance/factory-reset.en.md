@@ -10,7 +10,7 @@ Restore FlexKVM to its factory state.
 
 > Need to clear logs too? Use the SSH `reset all` command.
 
-After reset completes, the device **auto-reboots**. During the process, the OLED shows a reset icon, and the 🟢 Status LED and 🔴 Warning LED fast-blink together.
+After reset completes, the device **auto-reboots**. During the process, the OLED shows **RESET**, and the 🟢 Status LED and 🔴 Warning LED fast-blink together.
 
 ## Before You Start
 
@@ -19,7 +19,7 @@ After a reset the device behaves like a new unit — record this information fir
 - [ ] Network settings: static IP / DHCP, WiFi name and password, AP hotspot parameters
 - [ ] Login: administrator username; if 2FA is on, make sure your backup codes still work
 - [ ] Remote access (if used): Tailscale, HTTPS certificate and domain, SSH port and keys
-- [ ] Logs to keep: system log and audit log (`reset all` also wipes audit logs — download them under Settings → Maintenance → Log first)
+- [ ] Logs to keep: system log and audit log (`reset all` also wipes audit logs — download them under Settings → Maintenance first)
 - [ ] Current firmware version (needed for support tickets and rollback decisions)
 
 > If the device is off-site and reachable only over WiFi, make sure someone on site can plug in an Ethernet cable or enter provisioning mode before you reset.
