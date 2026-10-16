@@ -10,22 +10,22 @@ After logging in you land on the **main interface**: the menu bar on top, the re
 
 ## Menu Bar
 
-Twelve buttons from left to right. Click one to open its **menu**:
+Twelve buttons from left to right. Click one to open its **menu** (except **Screenshot** and **Recording**, which run immediately and open no menu):
 
 | Button | What it does | Details |
 |:---:|------|------|
 | **Screenshot** | Save the current remote display as an image | [Screenshot](remote/screenshot.md) |
 | **Recording** | Record the remote display to a video file | [Recording](remote/recording.md) |
 | **Audio** | Toggle sound card, mic input, speaker output | [Audio](remote/audio.md) |
-| **Video** | Resolution, quality, GOP, codec, EDID, unplug/plug monitor, reconnect | [Remote Display](remote/screen.md) |
-| **Keyboard** | Text input, shortcuts, virtual keyboard, paste text | [Keyboard](remote/keyboard.md) |
-| **Mouse** | Absolute / relative mode, sensitivity, scroll reverse | [Mouse](remote/mouse.md) |
+| **Video** | Status, resolution, EDID, quality, codec, GOP, unplug/plug monitor, reconnect | [Remote Display](remote/screen.md) |
+| **Keyboard** | Target OS, paste text, quick text, shortcuts, virtual keyboard, ESC mapping | [Keyboard](remote/keyboard.md) |
+| **Mouse** | Absolute / relative mode, sensitivity, scroll rate, scroll reverse, cursor hide, movement throttling, jiggler | [Mouse](remote/mouse.md) |
 | **Mirror** | Mount and share TF card partitions; the target sees a virtual USB drive or virtual CD-ROM | [Storage Management](peripherals/disk.md) |
-| **Interface** | ATX power control (power on / off / reset) and target status LEDs | [ATX Power Control](peripherals/atx.md) |
+| **Interface** | Enable the ATX controller, current module and version info; once ATX is bound, power/reset buttons and power/HDD indicator LEDs | [ATX Power Control](peripherals/atx.md) |
 | **Wake on LAN** | Send a magic packet to wake a powered-off target | [Wake-on-LAN (WoL)](network/wol.md) |
 | **IO** | Two GPIO channels and one UART serial port; expands into GPIO and UART sections | [GPIO Control](peripherals/gpio.md) · [UART Serial Terminal](peripherals/uart.md) |
 | **Settings** | Open the settings panel (12 tabs, see below) | Next section |
-| **Fullscreen** | Expand the remote display to the whole browser window | [Remote Display](remote/screen.md) |
+| **Fullscreen** | Two modes: toolbar fullscreen (`F11`) and picture fullscreen (`Ctrl+F11`) | [Remote Display](remote/screen.md) |
 
 > Menu bar names do not map one-to-one onto page names: **Mirror** is documented under "Storage Management", **Interface** under "ATX Power Control", and **IO** covers both "GPIO Control" and "UART Serial Terminal".
 
@@ -35,8 +35,8 @@ Results appear as a toast at the top of the page, for example:
 
 | Toast | Triggered by |
 |------|------|
-| Screenshot saved | Clicking **Screenshot** |
-| Recording started / Recording saved | Starting and stopping **Recording** |
+| Screenshot success | Clicking **Screenshot** |
+| Recording start / Recording success | Starting and stopping **Recording** |
 | Screenshot failed | The remote display is not connected |
 
 ## Settings Panel
@@ -45,16 +45,16 @@ Click **Settings** in the menu bar to open the settings panel. Twelve tabs on th
 
 | Tab | What it covers | Details |
 |:---:|--------|------|
-| **About** | Model, system version, serial number, community and doc links | [About Device](system/about.md) |
+| **About** | Product name, hostname, system version, serial number, community links | [About Device](system/about.md) |
 | **Status** | Temperature / CPU / memory / network rate curves, history and CSV export | [Status Monitor](system/status.md) |
 | **Network** | mDNS, wired network, AP network, WiFi network | [Wired Network](network/eth.md) · [Direct Mode](network/eth-server.md) · [WiFi](network/wifi.md) · [AP Hotspot](network/ap.md) · [mDNS](network/mdns.md) |
 | **Appearance** | Language, theme (Light / Dark / Auto), accent color | [Appearance](system/appearance.md) |
 | **App** | Toggles and settings for Tailscale, ZeroTier, frp Tunneling and WireGuard, plus App Management (update / uninstall) for the first three | [Tailscale](vpn/tailscale.md) · [ZeroTier](vpn/zerotier.md) · [frp Tunneling](vpn/frp.md) · [WireGuard](vpn/wireguard.md) · [App Management](maintenance/upgrade-app.md) |
-| **Agent** | Enable Agent, generate and revoke the API Key for AI clients | [AI Agent Control](remote/agent.md) |
+| **Agent** | Enable Agent, generate and revoke the API Key, view the operation log for AI clients | [AI Agent Control](remote/agent.md) |
 | **System** | Time, OLED settings, LED settings, EDID, USB config | [Time & Date](system/time.md) · [OLED Screen](interaction/oled.md) · [LED Indicator](interaction/led.md) · [USB Configuration](system/usb.md) |
 | **Capture** | Screenshot format and quality, recording parameters | [Screenshot](remote/screenshot.md) · [Recording](remote/recording.md) |
 | **Security** | HTTPS certificate, SSH | [HTTPS Certificate](security/https.md) · [SSH Remote Access](security/ssh.md) |
-| **Upgrade** | Offline upgrade, online upgrade (download source, check for updates) | [Online Upgrade](maintenance/upgrade-online.md) · [Offline Upgrade](maintenance/upgrade-offline.md) |
+| **Upgrade** | Offline upgrade; online upgrade (beta switch, download source, current version, check for updates) | [Online Upgrade](maintenance/upgrade-online.md) · [Offline Upgrade](maintenance/upgrade-offline.md) |
 | **Maintenance** | Audit, system log, Web log, reboot, restore factory mode | [Audit Logs](security/audit.md) · [System Logs](maintenance/log.md) · [Reboot](maintenance/reboot.md) · [Factory Reset](maintenance/factory-reset.md) |
 | **Account** | Username, change password, 2FA verification, logout | [Account Security](security/account/account.md) · [Login Management](security/account/login.md) |
 
