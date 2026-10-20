@@ -221,7 +221,9 @@ The interface enforces fixed limits; exceeding them fails or truncates the reque
 | `mouse_scroll` dy per call | ±127 |
 | Ordinary keys per `press_key` hotkey | 6 (HID report limit) |
 
-- Only one `control` batch runs at a time; a new request while busy returns 503. A batch can be cancelled mid-run.
+- Only one `control` batch runs at a time; a new request while busy returns 503. A batch can be cancelled mid-run. Over MCP a busy Agent is not reported as an internal error: the result carries `isError` with `structuredContent.busy = true`, so treat it as retryable.
+- A cancellation can target a batch by id: `batch_id` in the REST body, or the non-standard `params.batch_id` over MCP. Without it the active batch is cancelled. Targeting keeps a late request from killing the next batch that just started.
+- `state` reports the input signal resolution, which stays valid while nobody is watching the stream (`mode` is `idle`); it is `-1` only when there is no signal. Coordinate mapping needs no video session first.
 - `state` is assembled from several reads, not an atomic snapshot, so it can be slightly inconsistent in rare cases.
 
 ---

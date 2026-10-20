@@ -221,7 +221,9 @@ flexkvm: https://<设备地址>/api/v1/mcp (HTTP) - ✔ Connected
 | 单次 `mouse_scroll` 的 dy | ±127 |
 | 单次 `press_key` 热键普通键 | 6 个（HID 报文上限） |
 
-- 同一时刻只允许一个 `control` 批次在执行，忙时新请求返回 503；批次可中途取消。
+- 同一时刻只允许一个 `control` 批次在执行，忙时新请求返回 503；批次可中途取消。MCP 一侧忙时不报内部错误，而是返回 `isError` 并带 `structuredContent.busy = true`，按可重试处理即可。
+- 取消可按批次号定向：REST 在请求体带 `batch_id`，MCP 带非标准扩展字段 `params.batch_id`；不带时取消当前活跃批次。定向取消让迟到的请求不会误杀刚启动的下一批。
+- `state` 返回的宽高是输入信号分辨率，无人看流（`mode` 为 `idle`）时同样有效，无信号才为 `-1`；做坐标映射不必先开一路视频。
 - `state` 由多次读取拼成，不是原子快照，极端情况下可能出现轻微不一致。
 
 ---
