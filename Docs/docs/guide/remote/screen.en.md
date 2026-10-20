@@ -116,12 +116,15 @@ Choose the video codec (H.264 / H.265):
 
 ### GOP
 
-Controls the balance between display responsiveness and bandwidth. Range: 1–10; the effective GOP is the multiplier × frame rate.
+Controls the balance between display responsiveness and bandwidth. Range: 0–10; the effective GOP is the multiplier × frame rate.
 
 | Setting | Effect |
 |---------|--------|
+| 0 | No periodic keyframes |
 | Lower (1–3) | Fast response, higher bandwidth |
 | Higher (7–10) | Lower bandwidth, slower response, slower recovery from frame loss |
+
+> At 0 the encoder stops inserting periodic full frames, which removes the repeating stutter spike. Keyframes are then produced on demand — a viewer joins, or the browser asks for one after packet loss.
 
 > The default is 1. Keep it if unsure.
 
