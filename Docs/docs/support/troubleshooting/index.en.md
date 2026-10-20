@@ -318,6 +318,9 @@ Make sure the uploaded firmware file is complete and not corrupted. If the devic
 | User sub-CA still warns | The client doesn't trust the deployer root CA | Trust the deployer root CA on the client first |
 | Reports a format error | Not PEM format | Convert to PEM with OpenSSL (`.pfx` and `.jks` can't be pasted directly) |
 | Uploading an old certificate fails | Weak signature algorithm, or expired | Use SHA-256 or above, and a certificate within its validity period |
+| The login page keeps showing "Cannot reach the device" | Untrusted certificate or no network | Download and trust the device CA certificate, then retry; if it still fails, check that the device is online and the address is correct |
+
+> This banner appears only when the connection itself fails (no HTTP response at all). A wrong password on a reachable device is a different problem.
 
 > Three certificate modes and import methods per platform → [HTTPS Certificate](../../guide/security/https.md)
 
