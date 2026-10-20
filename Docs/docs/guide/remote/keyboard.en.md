@@ -84,13 +84,24 @@ Opens a virtual keyboard overlay on the display — click with your mouse to typ
 
 ![Virtual keyboard](./images/keyboard/keyboard_float.webp)
 
-**Modifier keys** (Ctrl, Alt, Shift, Win) are toggle-style — click once to hold (turns dark), click again to release (turns light). Multiple modifiers can be held simultaneously.
+**Modifier keys** (Ctrl, Alt, Shift, Win) have two press modes, switched at the right of the title bar:
 
-Example: Click **Ctrl** (dark) → click **A** → sends Ctrl+A → Ctrl stays held for more combos → click **Ctrl** again (light, released).
+| Mode | Behavior | Best for |
+|------|----------|----------|
+| Sticky (default) | Click once to hold (turns dark), click again to release (turns light) | Touch screens; combos like Ctrl then C |
+| Momentary | Held while pressed, released on key-up like ordinary keys | Users used to a physical keyboard |
+
+Sticky mode holds multiple modifiers at once. Example: Click **Ctrl** (dark) → click **A** → sends Ctrl+A → Ctrl stays held for more combos → click **Ctrl** again (light, released).
+
+In Momentary mode, hold a modifier and click other keys; releasing the modifier releases it.
 
 **Regular keys**: Press to hold, release to let go.
 
+> Switching modes releases any held modifiers, so a latched Ctrl cannot leak into the other mode.
+
 > When closing the virtual keyboard or switching pages, all held keys are automatically released — no stuck keys.
+
+> The mode is stored in the browser, so it resets to Sticky in another browser or after clearing site data.
 
 ### Esc Mapping
 
