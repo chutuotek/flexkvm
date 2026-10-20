@@ -67,6 +67,10 @@ Click the gear icon in the card header:
 
 > Configuration changes take effect immediately. In provisioning mode, AP config changes are staged and applied when you save and exit.
 
+> Choosing WPA3 requires clients to support protected management frames (PMF); older devices without PMF cannot connect. Use the WPA2/WPA3 transition mode to keep them working.
+
+> The channel can be AUTO or a specific value. On band-edge channels (such as 2.4G 10/11 and 5G 64/144/165), the hotspot picks a workable bandwidth direction automatically — no manual adjustment needed.
+
 ### Connection Status
 
 ![AP connection status](./images/ap/setting_ap_open.webp)
