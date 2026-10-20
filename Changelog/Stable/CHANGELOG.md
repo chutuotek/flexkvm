@@ -3,6 +3,29 @@
 - language: en-US
 - Author: ZEROK
 
+## v0.2.1 (2026-10-20)
+
+### Added
+
+- Modifier keys on the virtual keyboard support two modes, **Sticky** and **Momentary**: Sticky latches on a click and releases on the next click (previous behavior, default); Momentary holds while pressed and releases on key-up, same as ordinary keys. Switch in the top-right corner of the keyboard; the preference is stored in the browser
+
+### Improved
+
+- A new viewer joining an already-streaming session gets a keyframe immediately instead of waiting for the browser to request one
+- AP hotspot derives the center frequency from the selected channel, so the 5 GHz band no longer starts on channel 36 only; band-edge channels such as 2.4 GHz 10/11 and 5 GHz 64/144/165 now start normally
+- The upgrade card refreshes automatically once download verification finishes, showing "Upgrade Now" without switching tabs
+- The login page shows a top banner when the connection fails (untrusted certificate or no network), telling you to install and trust the device certificate instead of only showing the login form
+- Agent `state` now returns the input resolution while nobody is watching the stream, so AI clients can map coordinates without taking an extra snapshot
+- MCP returns a retryable busy marker while the Agent is busy and supports cancelling a specific batch via `batch_id`
+
+### Fixed
+
+- Fixed the AP hotspot failing to start with WPA3; WPA3 now requires protected management frames (PMF), optional in WPA2/WPA3 transition mode
+- Fixed repeatedly reporting "network not found" or rejected association when connecting to a WPA3 Wi-Fi network
+- Fixed offline upgrades always failing with a version mismatch (error `1006`): offline packages no longer inherit the version left over from the last online check
+- Fixed GOP not being adjustable to 0; the GOP multiplier range is now 0–10, where 0 means no periodic keyframes
+- Fixed Service Worker registration failures going unreported; the reason is now logged to the browser console
+
 ## v0.2.0 (2026-10-15)
 
 ### Added
