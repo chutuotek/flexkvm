@@ -1,8 +1,24 @@
 # Storage Management
 
-FlexKVM uses a TF card (MicroSD) for local storage expansion, supporting file management, virtual CD-ROM, and USB export. The two most common scenarios: sharing an ISO image as a virtual CD-ROM for remote OS installation, and transferring files between the TF card and the target host.
+FlexKVM offers three kinds of storage source: the **TF card** (MicroSD inside the device), **NFS** and **SMB** (network shares on a NAS or a server). All three support file management, and all three can expose media or an image to the target as a virtual USB drive or virtual CD-ROM. The two most common scenarios: sharing an ISO image as a virtual CD-ROM for remote OS installation, and transferring files between a storage source and the target.
 
 > Where: **Mirror** in the menu bar
+
+## Storage Sources
+
+![Storage source switcher](./images/disk/disk_segments.webp)
+
+A three-way switcher at the top of the panel toggles between **TF Card / NFS / SMB**:
+
+| Segment | Description |
+|---------|-------------|
+| **TF Card** | The local TF card; see the sections below |
+| **NFS** | An NFSv4 network share; mount it first |
+| **SMB** | An SMB (CIFS) network share; mount it first |
+
+> **Switching segments only switches the view**: NFS and SMB stay mounted independently, so content is still there when you come back, and the two can be **mounted at the same time** without displacing each other.
+
+> **Only one share exists at a time**: the target sees a single USB mass-storage device, so whichever segment starts a share, the others show **Sharing from \<source\>** and hide their entry.
 
 ## TF Card Requirements
 
@@ -26,11 +42,13 @@ The TF card slot is on the side of the device, below the power LED. Insert with 
 
 | Icon | Meaning |
 |------|---------|
-| ![](../icon/image/hard-drive.svg) | TF card inserted, idle |
-| ![](../icon/image/hard-drive-off.svg) | No TF card |
+| ![](../icon/image/hard-drive.svg) | Any storage source available, idle |
+| ![](../icon/image/hard-drive-off.svg) | No storage source (no TF card, no network storage mounted) |
 | ![](../icon/image/upload.svg) | File upload in progress |
 | ![](../icon/image/download.svg) | File download in progress |
 | ![](../icon/image/server.svg) | Currently shared to host via USB / exporting image |
+
+> When only network storage is available the icon becomes a cloud — storage in that case really is a network drive.
 
 Five operations:
 
@@ -97,6 +115,93 @@ Mount a partition first → check a `.img` or `.iso` file → click **Share File
 | Mounted but not sharing | Unmount partition → Remove card |
 | Inserted but no operation | Remove directly |
 
+## Network Storage (NFS / SMB)
+
+Use a directory on a NAS, a server or another computer as if it were local storage: browse, upload, download, and share an image from it to the target.
+
+### Scope
+
+| Item | Support |
+|------|---------|
+| NFS | **NFSv4 only** |
+| SMB | SMB 3.0 (CIFS) |
+| File listing | The **root** of the mount only — no subfolders |
+| Shareable | A single regular file of at least 512 bytes |
+
+> **No NFSv3**: v3 needs an extra port lookup against the server that this device cannot do reliably. Use NFSv4 — just enable v4 on the server.
+
+### Mount NFS
+
+Switch to the **NFS** segment, fill in two fields and click **Mount**:
+
+![NFS mount form](./images/disk/disk_nfs_form.webp)
+
+| Field | What to enter |
+|-------|---------------|
+| Server | Hostname or IP, e.g. `10.255.200.135` |
+| Export | The **absolute path** the server exports, e.g. `/srv/nfstest` |
+| Read-only | When on, read access only |
+
+> A hostname is resolved to IPv4 once on the device; if resolution fails the mount fails immediately rather than waiting forever.
+
+### Mount SMB
+
+Switch to the **SMB** segment:
+
+![SMB mount form](./images/disk/disk_smb_form.webp)
+
+| Field | What to enter |
+|-------|---------------|
+| Server | Hostname or IP |
+| Share | A **single share name** (not a path), e.g. `share` |
+| Username | `guest` for anonymous |
+| Password | Leave blank when there is none |
+| Read-only | When on, read access only |
+
+> **The share name must not contain `/`**: it would be parsed as a subdirectory and silently change the meaning, so the dialog rejects it.
+
+> **Username and password must not contain commas**: SMB mount options are comma-separated, so one comma can turn the rest into new options (for instance silently making the mount read-only). Rejected on input.
+
+### After mounting
+
+Once mounted, the panel shows the source string, capacity and the file list:
+
+![NFS mounted](./images/disk/disk_nfs_mounted.webp)
+
+| Action | Description |
+|--------|-------------|
+| Upload | **Upload** in the list header, same position as on the TF segment |
+| Download | Select a file, then click **Download** |
+| Delete | Select a file, then click **Delete**; asks for confirmation |
+| Refresh | The refresh icon in the list header; files added externally appear only after a refresh |
+| Unmount | **Unmount** at the top right of the card |
+
+> **The list does not update by itself**: files added or removed on the server appear only after a refresh.
+
+> **Restored on boot**: the mount configuration is persisted and re-mounted automatically after a reboot (in the background — it does not delay startup).
+
+> **Mounting is asynchronous**: clicking **Mount** is acknowledged immediately and the result is pushed later. An unreachable server can take a dozen seconds to fail; the UI also has a 30-second fallback that checks once more, so it never sits at "Mounting" forever.
+
+### Sharing an image from network storage
+
+Select a file → click **Share file**. The target sees it as a virtual CD-ROM.
+
+![Sharing a network storage file](./images/disk/disk_net_shared.webp)
+
+> **Read-only by default**: writing back into a network share is not the intended use, and an accidental write would pollute remote data.
+
+> **Only a single file in the mount root**: subdirectories are not supported, and files under 512 bytes are rejected (the target cannot use media that small).
+
+### One share state across all three segments
+
+While sharing, the segment that started it shows **Stop sharing**; the others show **Sharing from \<source\>** with upload, delete and unmount greyed out:
+
+![Another segment is sharing](./images/disk/disk_net_shared_other.webp)
+
+> **No unmount while sharing**: unmounting yanks the medium out from under a reading target, which then sees the device vanish.
+
+> **No file changes while sharing**: uploads and deletions are rejected. Downloads are unaffected.
+
 ---
 
 ## FAQ
@@ -108,6 +213,14 @@ Mount a partition first → check a `.img` or `.iso` file → click **Share File
 **Upload interrupted?** → Refresh the page and re-upload. Resume is not currently supported. Cancellations and failures are reported separately — a cancellation is not an error.
 
 **OS install failed halfway?** → Did you toggle mouse, keyboard, or audio during installation? These actions cause a brief virtual CD-ROM disconnect.
+
+**NFS/SMB mount failed?** → Only two messages exist: `This mount point is already in use` means the source is still mounted (or an external mount left it behind) — unmount first; anything else is a generic "Mount failed", so check the network: is the server up, are the address and share spelled right, does the server firewall allow NFS port 2049 or SMB port 445. Specific errnos are only in the device log.
+
+**New files in network storage not visible?** → Click the refresh icon in the list header. The device does not watch remote changes.
+
+**Clicked Share and nothing happened?** → If the share failed, a specific reason appears; if it succeeded, the button updates once the state frame arrives. "Unknown error 525" means the file is smaller than 512 bytes.
+
+**Unmount says it is sharing?** → Click **Stop sharing** first, then unmount.
 
 ---
 
