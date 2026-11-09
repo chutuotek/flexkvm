@@ -62,10 +62,11 @@ A ZeroTier network has several member-level options: whether to accept addresses
 | Accept managed addresses and routes | Left at its default (on) | The member address and the interface route for that subnet come from it; turning it off leaves the network with no IP |
 | Default route | Forced off | A default route inside the tunnel would cut off the management path |
 | Global addresses | Forced off | Global addresses never enter the tunnel |
+| DNS pushed by the network | Forced off | ZeroTier never rewrites the device's DNS settings |
 
-Other options (such as control-plane DNS) are not rewritten at join and keep ZeroTier's default behaviour. These values are written into the device's local configuration for that network and **survive a daemon restart**.
+These values are written into the device's local configuration for that network and **survive a restart**.
 
-> In short: **no route takeover** — neither a default route nor global addresses enter the tunnel; but **addresses still arrive** — the member address and the interface route for that subnet work normally.
+> In short: **no route or DNS takeover** — neither a default route nor global addresses enter the tunnel, and DNS is never rewritten; but **addresses still arrive** — the member address and the interface route for that subnet work normally.
 >
 > If you ever need to change these options (troubleshooting or secondary development), the control endpoint is still there, it just isn't exposed in the settings page.
 
