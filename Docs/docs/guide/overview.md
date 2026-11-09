@@ -1,6 +1,6 @@
 # 界面总览
 
-登录后进入**主界面**：上方是菜单栏，中间是远程画面，菜单栏图标点开的浮层叫**菜单**。这篇把菜单栏 12 个按钮和设置面板 12 个 tab 一次讲完，后面再看具体功能页就不会迷路。
+登录后进入**主界面**：上方是菜单栏，中间是远程画面，菜单栏图标点开的浮层叫**菜单**。这篇把菜单栏 13 个按钮和设置面板 12 个 tab 一次讲完，后面再看具体功能页就不会迷路。
 
 ![主界面](../images/flexkvm_desktop.webp)
 
@@ -10,17 +10,18 @@
 
 ## 菜单栏
 
-从左到右 12 个按钮，点一下弹出对应**菜单**（**截图**与**录像**是直接执行的按钮，不弹菜单）：
+从左到右 13 个按钮，点一下弹出对应**菜单**（**截图**与**录像**直接执行，**OCR** 进入框选态，三者都不弹菜单）：
 
 | 按钮 | 作用 | 详见 |
 |:---:|------|------|
 | **截图** | 把当前远程画面存成图片 | [截图](remote/screenshot.md) |
+| **OCR** | 框选画面区域，把里面的文字识别成可复制的文本 | [文字识别](remote/ocr.md) |
 | **录像** | 把远程画面录成视频 | [录像](remote/recording.md) |
 | **音频** | 开关声卡、麦克风输入、扬声器输出 | [音频](remote/audio.md) |
 | **画面** | 状态、分辨率、EDID、画质、编码、GOP、重新连接、拔出/插入显示器 | [远程画面](remote/screen.md) |
-| **键盘** | 被控系统、粘贴文本、快捷文本、快捷键、虚拟键盘、Esc 映射 | [键盘](remote/keyboard.md) |
+| **键盘** | 被控系统、粘贴文本、快捷文本、快捷键、宏、虚拟键盘、Esc 映射 | [键盘](remote/keyboard.md) |
 | **鼠标** | 绝对 / 相对模式、灵敏度、滚动速率、滚轮反转、鼠标隐藏、移动节流、防休止 | [鼠标](remote/mouse.md) |
-| **镜像** | TF 卡分区挂载与共享，被控设备看到虚拟 U 盘或虚拟光驱 | [存储管理](peripherals/disk.md) |
+| **镜像** | TF 卡 / NFS / SMB 存储源的挂载与共享，被控设备看到虚拟 U 盘或虚拟光驱 | [存储管理](peripherals/disk.md) |
 | **外设** | 开关 ATX 控制器、当前模块与版本信息；绑定 ATX 后显示电源按键、复位按键与电源/硬盘指示灯 | [ATX 电源控制](peripherals/atx.md) |
 | **网络唤醒** | 给已关机的被控设备发 Magic Packet 唤醒 | [网络唤醒 (WoL)](network/wol.md) |
 | **IO** | 两路 GPIO 与一路 UART 串口，展开后分 GPIO、UART 两块 | [GPIO 引脚控制](peripherals/gpio.md) · [UART 串口终端](peripherals/uart.md) |
@@ -37,6 +38,7 @@
 |------|------|
 | 截图成功 | 点**截图** |
 | 录像开始 / 录像成功 | 点**录像**开始与结束 |
+| 选区内没有识别到文字 | OCR 框选区域内没有文字 |
 | 截图失败 | 远程画面未连接 |
 
 ## 设置面板
@@ -49,7 +51,7 @@
 | **状态** | 温度 / CPU / 内存 / 网络速率曲线，历史回看与 CSV 导出 | [状态监控](system/status.md) |
 | **网络** | mDNS、有线网络、AP网络、WiFi网络 | [有线网络](network/eth.md) · [直连模式](network/eth-server.md) · [WiFi](network/wifi.md) · [AP 热点](network/ap.md) · [mDNS](network/mdns.md) |
 | **外观** | 语言、主题（浅色 / 深色 / 自动）、强调色 | [外观](system/appearance.md) |
-| **应用** | Tailscale、ZeroTier、frp 内网穿透、WireGuard 的开关与配置，以及前三个的应用管理（更新 / 卸载） | [Tailscale](vpn/tailscale.md) · [ZeroTier](vpn/zerotier.md) · [frp 内网穿透](vpn/frp.md) · [WireGuard](vpn/wireguard.md) · [应用管理](maintenance/upgrade-app.md) |
+| **应用** | Tailscale、ZeroTier、frp 内网穿透、NetBird、EasyTier、WireGuard 的开关与配置，以及前五个的应用管理（更新 / 卸载） | [Tailscale](vpn/tailscale.md) · [ZeroTier](vpn/zerotier.md) · [frp 内网穿透](vpn/frp.md) · [NetBird](vpn/netbird.md) · [EasyTier](vpn/easytier.md) · [WireGuard](vpn/wireguard.md) · [应用管理](maintenance/upgrade-app.md) |
 | **Agent** | 开关 Agent、生成与作废 API Key、查看操作日志，供 AI 客户端接入 | [AI Agent 控制](remote/agent.md) |
 | **系统** | 时间、OLED设置、LED设置、EDID、USB配置 | [时间与日期](system/time.md) · [OLED 屏幕](interaction/oled.md) · [LED 指示灯](interaction/led.md) · [USB 配置](system/usb.md) |
 | **采集** | 截图格式与质量、录像参数 | [截图](remote/screenshot.md) · [录像](remote/recording.md) |

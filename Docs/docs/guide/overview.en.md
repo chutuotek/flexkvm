@@ -1,6 +1,6 @@
 # UI Overview
 
-After logging in you land on the **main interface**: the menu bar on top, the remote display in the middle, and the floating layer each menu bar icon opens is a **menu**. This page covers all 12 menu bar buttons and all 12 settings tabs in one pass, so the feature pages that follow are easy to place.
+After logging in you land on the **main interface**: the menu bar on top, the remote display in the middle, and the floating layer each menu bar icon opens is a **menu**. This page covers all 13 menu bar buttons and all 12 settings tabs in one pass, so the feature pages that follow are easy to place.
 
 ![Main interface](../images/flexkvm_desktop.webp)
 
@@ -10,17 +10,18 @@ After logging in you land on the **main interface**: the menu bar on top, the re
 
 ## Menu Bar
 
-Twelve buttons from left to right. Click one to open its **menu** (except **Screenshot** and **Recording**, which run immediately and open no menu):
+Thirteen buttons from left to right. Click one to open its **menu** (except **Screenshot** and **Recording**, which run immediately, and **OCR**, which enters selection mode — none of the three open a menu):
 
 | Button | What it does | Details |
 |:---:|------|------|
 | **Screenshot** | Save the current remote display as an image | [Screenshot](remote/screenshot.md) |
+| **OCR** | Drag a box over the display and turn the text inside it into copyable text | [Text Recognition](remote/ocr.md) |
 | **Recording** | Record the remote display to a video file | [Recording](remote/recording.md) |
 | **Audio** | Toggle sound card, mic input, speaker output | [Audio](remote/audio.md) |
 | **Video** | Status, resolution, EDID, quality, codec, GOP, unplug/plug monitor, reconnect | [Remote Display](remote/screen.md) |
-| **Keyboard** | Target OS, paste text, quick text, shortcuts, virtual keyboard, ESC mapping | [Keyboard](remote/keyboard.md) |
+| **Keyboard** | Target OS, paste text, quick text, shortcuts, macros, virtual keyboard, ESC mapping | [Keyboard](remote/keyboard.md) |
 | **Mouse** | Absolute / relative mode, sensitivity, scroll rate, scroll reverse, cursor hide, movement throttling, jiggler | [Mouse](remote/mouse.md) |
-| **Mirror** | Mount and share TF card partitions; the target sees a virtual USB drive or virtual CD-ROM | [Storage Management](peripherals/disk.md) |
+| **Mirror** | Mount and share TF card / NFS / SMB storage sources; the target sees a virtual USB drive or virtual CD-ROM | [Storage Management](peripherals/disk.md) |
 | **Interface** | Enable the ATX controller, current module and version info; once ATX is bound, power/reset buttons and power/HDD indicator LEDs | [ATX Power Control](peripherals/atx.md) |
 | **Wake on LAN** | Send a magic packet to wake a powered-off target | [Wake-on-LAN (WoL)](network/wol.md) |
 | **IO** | Two GPIO channels and one UART serial port; expands into GPIO and UART sections | [GPIO Control](peripherals/gpio.md) · [UART Serial Terminal](peripherals/uart.md) |
@@ -37,6 +38,7 @@ Results appear as a toast at the top of the page, for example:
 |------|------|
 | Screenshot success | Clicking **Screenshot** |
 | Recording start / Recording success | Starting and stopping **Recording** |
+| No text found in the selection | The OCR selection contains no text |
 | Screenshot failed | The remote display is not connected |
 
 ## Settings Panel
@@ -49,7 +51,7 @@ Click **Settings** in the menu bar to open the settings panel. Twelve tabs on th
 | **Status** | Temperature / CPU / memory / network rate curves, history and CSV export | [Status Monitor](system/status.md) |
 | **Network** | mDNS, wired network, AP network, WiFi network | [Wired Network](network/eth.md) · [Direct Mode](network/eth-server.md) · [WiFi](network/wifi.md) · [AP Hotspot](network/ap.md) · [mDNS](network/mdns.md) |
 | **Appearance** | Language, theme (Light / Dark / Auto), accent color | [Appearance](system/appearance.md) |
-| **App** | Toggles and settings for Tailscale, ZeroTier, frp Tunneling and WireGuard, plus App Management (update / uninstall) for the first three | [Tailscale](vpn/tailscale.md) · [ZeroTier](vpn/zerotier.md) · [frp Tunneling](vpn/frp.md) · [WireGuard](vpn/wireguard.md) · [App Management](maintenance/upgrade-app.md) |
+| **App** | Toggles and settings for Tailscale, ZeroTier, frp Tunneling, NetBird, EasyTier and WireGuard, plus App Management (update / uninstall) for the first five | [Tailscale](vpn/tailscale.md) · [ZeroTier](vpn/zerotier.md) · [frp Tunneling](vpn/frp.md) · [NetBird](vpn/netbird.md) · [EasyTier](vpn/easytier.md) · [WireGuard](vpn/wireguard.md) · [App Management](maintenance/upgrade-app.md) |
 | **Agent** | Enable Agent, generate and revoke the API Key, view the operation log for AI clients | [AI Agent Control](remote/agent.md) |
 | **System** | Time, OLED settings, LED settings, EDID, USB config | [Time & Date](system/time.md) · [OLED Screen](interaction/oled.md) · [LED Indicator](interaction/led.md) · [USB Configuration](system/usb.md) |
 | **Capture** | Screenshot format and quality, recording parameters | [Screenshot](remote/screenshot.md) · [Recording](remote/recording.md) |
