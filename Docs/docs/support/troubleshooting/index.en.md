@@ -232,6 +232,18 @@ Check whether you toggled mouse, keyboard, or audio during installation — thes
 
 Canceling and failing are two different outcomes with different messages: cancel is a manual abort, while failure reports a cause. After a failed upload, refresh and re-upload (resume is not supported).
 
+### NFS / SMB stays at "Mounting"
+
+First confirm the server is up and the address and share name are correct. Mounting is asynchronous, so an unreachable server takes a dozen seconds to fail; after 30 seconds the UI reports a failure — click **Mount** again to retry.
+
+### New files in network storage are not visible
+
+The device does not watch remote changes. Click the refresh icon in the file list header.
+
+### Unmounting network storage says it is sharing
+
+Click **Stop sharing** on the segment that started the share, then unmount.
+
 ---
 
 ## Upgrade Issues
