@@ -64,6 +64,14 @@ Try lowering the video quality in the display menu, or click "Reconnect". For be
 
 Yes. FlexKVM captures HDMI signals at the hardware level, so BIOS, blue screens, and safe mode are all visible and operable. Make sure the correct **target OS type** is selected in keyboard settings, or BIOS hotkeys may not work.
 
+### Can I copy text off the target's screen?
+
+Yes. Click **OCR** in the menu bar, drag a box over the area you want, and the recognized text is listed line by line — copy a single line or all of it. Recognition runs on the device; no network is needed. See [Text Recognition](../../guide/remote/ocr.md).
+
+### Can a sequence of key presses be saved as one action?
+
+Yes. **Macros** in the keyboard menu save a sequence (up to 8 steps, each with an optional delay) and run it in order with one click. See the "Macros" section of [Keyboard](../../guide/remote/keyboard.md).
+
 ### Does toggling audio or virtual media disconnect USB?
 
 Opening or closing audio, or switching USB device identification, causes a brief USB disconnect and reconnect. The mouse, keyboard, and disk mount on the target host will momentarily drop out then recover. This is normal. Do not toggle audio during OS installation.
@@ -111,6 +119,10 @@ FAT32, exFAT, and ext4 are supported, and NTFS partitions can also be mounted (r
 ### How do I remotely reinstall the OS?
 
 Use FlexKVM's virtual media feature to mount an ISO image as a USB CD-ROM, then boot the target host from it. See [Storage Management](../../guide/peripherals/disk.md).
+
+### The image is on my NAS — do I have to copy it to the TF card?
+
+No. The storage panel can mount an **NFS** or **SMB** share directly, so a directory on your NAS or server works like local storage and the image can be shared from where it is. See the "Network Storage" section of [Storage Management](../../guide/peripherals/disk.md).
 
 ---
 
