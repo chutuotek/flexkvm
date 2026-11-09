@@ -510,7 +510,7 @@ After initial setup, daily use is simple: enter `https://<device-IP>` in your br
 
 After completing basic setup, here's the recommended path:
 
-1. **Get to know the interface** → [Interface Overview](../guide/overview.md) (all 12 menu bar buttons and 12 settings tabs in one pass)
+1. **Get to know the interface** → [Interface Overview](../guide/overview.md) (all 13 menu bar buttons and 12 settings tabs in one pass)
 2. **Get to know all interfaces** → [Interface Reference](../guide/product/interface.md) — understand the full capabilities before diving deeper
 3. **Deep dive into features** → [User Guide](../guide/index.md)
 4. **Having trouble?** → [Help & Diagnostics](../support/index.md)

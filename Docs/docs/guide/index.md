@@ -12,7 +12,7 @@
 
 - **:material-monitor-dashboard: 界面总览**
 
-    菜单栏 12 个按钮与设置面板 12 个 tab 一次讲完
+    菜单栏 13 个按钮与设置面板 12 个 tab 一次讲完
 
     [:octicons-arrow-right-24: 查看](overview.md)
 
@@ -132,18 +132,20 @@
 
 ### 远程组网
 
-不依赖公网 IP，把设备接入你的虚拟网络或把端口映射出去——都在**设置 → 应用**里。四种方式互不排斥，可以同时启用。
+不依赖公网 IP，把设备接入你的虚拟网络或把端口映射出去——都在**设置 → 应用**里。六种方式互不排斥，可以同时启用。
 
 不确定选哪个：
 
 - 只想从外面打开 Web 界面或 SSH，且已有一台公网服务器 → **frp 内网穿透**
 - 想让设备与自己的电脑、手机像在同一局域网里互通，不想自备服务器 → **Tailscale**
 - 同样要互通，但需要虚拟二层网络（广播、内网发现也要通），或已有 ZeroTier 网络 → **ZeroTier**
+- 用 Setup Key 注册、按身份下发访问策略（零信任），或已有自建 NetBird 管理面 → **NetBird**
+- 想用一个 Web 控制台统一下发网络配置（无公共节点可用） → **EasyTier**
 - 要自己管控密钥、不经过任何第三方控制面 → **WireGuard**
 
-> frp 是端口映射：设备不会获得虚拟 IP。Tailscale、ZeroTier、WireGuard 是组网：启用后设备会拿到一个虚拟地址。
+> frp 是端口映射：设备不会获得虚拟 IP。Tailscale、ZeroTier、NetBird、EasyTier、WireGuard 是组网：启用后设备会拿到一个虚拟地址。
 
-> 四种方式最终都用 `https://<虚拟地址或公网地址>` 打开 Web 界面。设备默认使用自签名证书，浏览器首次访问提示「不安全」属于正常现象，处理方式见[登录管理](security/account/login.md)。
+> 六种方式最终都用 `https://<虚拟地址或公网地址>` 打开 Web 界面。设备默认使用自签名证书，浏览器首次访问提示「不安全」属于正常现象，处理方式见[登录管理](security/account/login.md)。
 
 <div class="grid cards" markdown>
 
@@ -158,6 +160,18 @@
     需一个 ZeroTier 网络；虚拟二层网络，像在同一局域网里互通
 
     [:octicons-arrow-right-24: 查看](vpn/zerotier.md)
+
+- **:material-shield-account: NetBird**
+
+    需一个 Setup Key；零信任组网，支持官方或自建管理面
+
+    [:octicons-arrow-right-24: 查看](vpn/netbird.md)
+
+- **:material-graph: EasyTier**
+
+    需一个 Web 控制台；网络名/密码/虚拟 IP 由控制台下发
+
+    [:octicons-arrow-right-24: 查看](vpn/easytier.md)
 
 - **:material-swap-horizontal: frp 内网穿透**
 
@@ -190,6 +204,12 @@
     一键截取当前画面，支持 PNG / JPG 格式
 
     [:octicons-arrow-right-24: 查看](remote/screenshot.md)
+
+- **:material-text-recognition: 文字识别（OCR）**
+
+    框选画面区域，把里面的文字识别成可复制的文本
+
+    [:octicons-arrow-right-24: 查看](remote/ocr.md)
 
 - **:material-video: 录像**
 

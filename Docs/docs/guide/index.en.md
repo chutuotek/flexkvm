@@ -12,7 +12,7 @@ Welcome to the FlexKVM User Guide. Know what you want to do? Pick your entry poi
 
 - **:material-monitor-dashboard: UI Overview**
 
-    All 12 menu bar buttons and 12 settings tabs in one page
+    All 13 menu bar buttons and 12 settings tabs in one page
 
     [:octicons-arrow-right-24: View](overview.md)
 
@@ -132,18 +132,20 @@ How to get FlexKVM online and access it remotely.
 
 ### Remote Networking
 
-No public IP required — join the device to your own virtual network, or map its ports out. All of it lives under **Settings → App**. The four options are not mutually exclusive; you can enable several at once.
+No public IP required — join the device to your own virtual network, or map its ports out. All of it lives under **Settings → App**. These options are not mutually exclusive; you can enable several at once.
 
 Not sure which one to pick:
 
 - Only need to open the web UI or SSH from outside, and already have a public server → **frp Tunneling**
 - Want the device and your own computer or phone to reach each other as if on the same LAN, without running a server → **Tailscale**
 - Same, but you need a virtual Layer 2 network (broadcast and LAN discovery must work too), or you already have a ZeroTier network → **ZeroTier**
+- Register with a Setup Key and authorize access per identity (zero trust), or you already run a self-hosted NetBird management server → **NetBird**
+- Want one web console to push the network configuration (no public entry nodes available) → **EasyTier**
 - Want to own the keys yourself and go through no third-party control plane → **WireGuard**
 
-> frp maps ports: the device does not get a virtual IP. Tailscale, ZeroTier and WireGuard are network joins: once enabled, the device gets a virtual address.
+> frp maps ports: the device does not get a virtual IP. Tailscale, ZeroTier, NetBird, EasyTier and WireGuard are network joins: once enabled, the device gets a virtual address.
 
-> All four end the same way — open the web UI at `https://<virtual-or-public-address>`. The device uses a self-signed certificate, so a browser "not secure" warning on first visit is expected; see [Login Management](security/account/login.md) to handle it.
+> All of them end the same way — open the web UI at `https://<virtual-or-public-address>`. The device uses a self-signed certificate, so a browser "not secure" warning on first visit is expected; see [Login Management](security/account/login.md) to handle it.
 
 <div class="grid cards" markdown>
 
@@ -158,6 +160,18 @@ Not sure which one to pick:
     Needs a ZeroTier network; virtual Layer 2, reachable as if on your LAN
 
     [:octicons-arrow-right-24: View](vpn/zerotier.md)
+
+- **:material-shield-account: NetBird**
+
+    Needs a Setup Key; zero-trust networking with an official or self-hosted management server
+
+    [:octicons-arrow-right-24: View](vpn/netbird.md)
+
+- **:material-graph: EasyTier**
+
+    Needs a web console; network name, password and virtual IP come from it
+
+    [:octicons-arrow-right-24: View](vpn/easytier.md)
 
 - **:material-swap-horizontal: frp Tunneling**
 
@@ -190,6 +204,12 @@ View the target host's display, control keyboard and mouse, stream audio.
     Capture the current screen — PNG / JPG supported
 
     [:octicons-arrow-right-24: View](remote/screenshot.md)
+
+- **:material-text-recognition: Text Recognition (OCR)**
+
+    Drag a box over the display and turn the text inside into copyable text
+
+    [:octicons-arrow-right-24: View](remote/ocr.md)
 
 - **:material-video: Recording**
 

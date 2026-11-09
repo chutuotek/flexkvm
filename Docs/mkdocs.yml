@@ -76,6 +76,8 @@ plugins:
             远程组网: Remote Networking
             Tailscale: Tailscale
             ZeroTier: ZeroTier
+            NetBird: NetBird
+            EasyTier: EasyTier
             frp 内网穿透: frp Tunneling
             WireGuard: WireGuard
             mDNS 服务发现: mDNS Discovery
@@ -85,6 +87,7 @@ plugins:
             远程交互: Remote Interaction
             远程画面: Remote Display
             截图: Screenshot
+            文字识别: Text Recognition
             录像: Recording
             鼠标: Mouse
             键盘: Keyboard
@@ -201,11 +204,14 @@ nav:
     - 远程组网:
       - Tailscale: guide/vpn/tailscale.md
       - ZeroTier: guide/vpn/zerotier.md
+      - NetBird: guide/vpn/netbird.md
+      - EasyTier: guide/vpn/easytier.md
       - frp 内网穿透: guide/vpn/frp.md
       - WireGuard: guide/vpn/wireguard.md
     - 远程交互:
       - 远程画面: guide/remote/screen.md
       - 截图: guide/remote/screenshot.md
+      - 文字识别: guide/remote/ocr.md
       - 录像: guide/remote/recording.md
       - 键盘: guide/remote/keyboard.md
       - 鼠标: guide/remote/mouse.md
