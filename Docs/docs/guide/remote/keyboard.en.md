@@ -78,6 +78,37 @@ Click a shortcut in the list to modify it:
 - **Name**: if blank, the shortcut content is displayed
 - **Shortcut**: Two ways to add: **Record** (click Start Recording, then press keys) or **Manual** (pick keys by category to add/remove)
 
+### Macros
+
+A macro is a **sequence** of key presses: one macro is made of several steps and sends them in order with one click. Useful for fixed action sequences such as "press Ctrl+Shift+Esc, wait, then press Enter".
+
+![Macros](./images/keyboard/keyboard_macro.webp)
+
+> Macros and **shortcuts** are two entries, not two layers of one feature: a shortcut is "press once", a macro is "press a sequence". Macros have their own list and editor dialog; identically named entries do not overwrite each other.
+
+**Create**: Click **+ New macro** to open the editor.
+
+![Macro editor](./images/keyboard/keyboard_macro_editor.webp)
+
+| Field | Description |
+|-------|-------------|
+| Name | Shown in the list; left blank, the current key combination is used |
+| Step bar | Appears with two or more steps; click a segment to edit that step |
+| Current step | The combination for this step; with two or more steps a **Remove step** button appears on the right |
+| Delay after this step | 0–2000 ms, default 100 ms. **The last step executes no delay**, and its input is greyed out |
+| Key selection | **Record** (click Start recording, then press keys) or **Manual** (pick by category — same picker as the shortcut editor) |
+| + Add step | Up to 8 steps; the button disappears at the limit |
+
+**Run**: Click a macro's button in the list to send the whole sequence. In progress / success / failure are reported as a toast at the top of the page.
+
+![Macro with two steps](./images/keyboard/keyboard_macro_editor2.webp)
+
+> **The delay is a wait *after* that step**. In a two-step macro, the 100 ms on step one means "press this step, wait 100 ms, then press the next"; the last step's delay has no effect.
+
+> **A macro never runs half-way**: if any step has no key selected, the whole macro is skipped and the target receives nothing. Before saving, check the step bar for `(no keys)`.
+
+> Macros live in browser storage; switching browsers or clearing site data means rebuilding them.
+
 ### Virtual Keyboard
 
 Opens a virtual keyboard overlay on the display — click with your mouse to type. Layout auto-adjusts based on the "Target OS" setting. Compact layout when the window is narrow. Drag the title bar to move.
