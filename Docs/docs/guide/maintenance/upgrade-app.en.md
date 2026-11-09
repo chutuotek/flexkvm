@@ -1,6 +1,6 @@
 # App Management
 
-On FlexKVM, **Tailscale**, **ZeroTier** and **frp Tunneling** are installed as *apps* — each can be downloaded, updated and uninstalled independently. [Online Upgrade](upgrade-online.md) handles system firmware, App Management handles these apps, and the two don't affect each other.
+On FlexKVM, **Tailscale**, **ZeroTier**, **frp Tunneling**, **NetBird** and **EasyTier** are installed as *apps* — each can be downloaded, updated and uninstalled independently. [Online Upgrade](upgrade-online.md) handles system firmware, App Management handles these apps, and the two don't affect each other.
 
 > Where: Settings → App → open the **App Management** row at the bottom of an app card
 
