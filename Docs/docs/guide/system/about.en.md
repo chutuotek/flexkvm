@@ -12,7 +12,7 @@ View device information, firmware version, and community resources.
 |:-----|-------------|
 | Product Name | Always `FlexKVM` |
 | Hostname | Generated from the device serial number, e.g. `flexkvm-6jzdd`; this is also the name used for [mDNS discovery](../network/mdns.md) |
-| System Version | Current firmware version, e.g. `v0.2.0`. Upgrade → [Online Upgrade](../maintenance/upgrade-online.md) |
+| System Version | Current firmware version, e.g. `v0.2.2`. Upgrade → [Online Upgrade](../maintenance/upgrade-online.md) |
 | SN | Unique identifier — provide when contacting technical support |
 
 > The serial number can be found on the packaging box or in Settings → About. You can also view it on the OLED — **short-press Button A twice** on the home screen to reach the System Info sub-page (the first press goes to HDMI Info).

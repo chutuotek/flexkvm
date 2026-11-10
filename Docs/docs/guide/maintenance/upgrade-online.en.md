@@ -34,7 +34,7 @@ Choose the firmware download location:
 
 ## Current Version
 
-Shows the current firmware version (e.g., `v0.2.0`).
+Shows the current firmware version (e.g., `v0.2.1`).
 
 Stable release: `v0.x.x`
 Beta release: `v0.x.x-Beta.x`
@@ -49,7 +49,7 @@ Click **Check for Updates**. The system does not check automatically — we reco
 
 ## New Version
 
-Shows the new version number (e.g., `v0.2.1`). Click **Changelog** to read the update notes:
+Shows the new version number (e.g., `v0.2.2`). Click **Changelog** to read the update notes:
 
 ![New version changelog](./images/ota_online_log.webp)
 
