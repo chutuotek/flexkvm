@@ -245,13 +245,13 @@ View the target host's display, control keyboard and mouse, stream audio.
 
 ### Peripherals & Expansion
 
-TF card storage, ATX power control, UART serial, and GPIO — physical expansion capabilities.
+Storage sources (TF card and network storage), ATX power control, UART serial, and GPIO — physical expansion capabilities.
 
 <div class="grid cards" markdown>
 
 - **:material-sd: Storage Management**
 
-    TF card specs, partition mounting, USB sharing, file transfer & remote OS install
+    TF card and NFS / SMB network storage, partition mounting, USB sharing, remote OS install
 
     [:octicons-arrow-right-24: View](peripherals/disk.md)
 
@@ -371,7 +371,7 @@ Firmware upgrades, reboot, factory reset, and other system-level operations.
 
 - **:material-package-up: App Management**
 
-    Update Tailscale / ZeroTier / frp independently — multiple sources, auto-verification, uninstall
+    Update Tailscale / ZeroTier / frp / NetBird / EasyTier independently — multiple sources, auto-verification, uninstall
 
     [:octicons-arrow-right-24: View](maintenance/upgrade-app.md)
 

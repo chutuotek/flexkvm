@@ -245,13 +245,13 @@
 
 ### 外设与扩展
 
-TF 卡存储、ATX 电源控制、UART 串口、GPIO 引脚——物理外接的扩展能力。
+存储源（TF 卡与网络存储）、ATX 电源控制、UART 串口、GPIO 引脚——物理外接的扩展能力。
 
 <div class="grid cards" markdown>
 
 - **:material-sd: 存储管理**
 
-    TF 卡规格、分区挂载、USB 共享、文件传输与远程重装系统
+    TF 卡与本机 / NFS / SMB 网络存储、分区挂载、USB 共享、远程重装系统
 
     [:octicons-arrow-right-24: 查看](peripherals/disk.md)
 
@@ -373,7 +373,7 @@ TF 卡存储、ATX 电源控制、UART 串口、GPIO 引脚——物理外接的
 
 - **:material-package-up: 应用管理**
 
-    独立更新 Tailscale / ZeroTier / frp，支持多下载源、自动校验与卸载
+    独立更新 Tailscale / ZeroTier / frp / NetBird / EasyTier，支持多下载源、自动校验与卸载
 
     [:octicons-arrow-right-24: 查看](maintenance/upgrade-app.md)
 

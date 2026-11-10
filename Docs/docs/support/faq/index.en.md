@@ -16,7 +16,7 @@ Remote software depends on the operating system to function. When the system is 
 
 ### Do I need a public IP address?
 
-No. FlexKVM has Tailscale built-in — as long as the device can access the internet, a secure connection can be established. You can also connect directly via its own **AP hotspot** with no internet required at all (the AP hotspot runs 2.4GHz 802.11 b/g/n by default; the 5GHz band and WiFi 6 must be enabled manually in the AP settings).
+No. FlexKVM has Tailscale built in, and also supports ZeroTier, NetBird and EasyTier — as long as the device can access the internet, a secure connection can be established. You can also connect directly via its own **AP hotspot** with no internet required at all (the AP hotspot runs 2.4GHz 802.11 b/g/n by default; the 5GHz band and WiFi 6 must be enabled manually in the AP settings).
 
 ### Can I use WiFi and Ethernet at the same time?
 
