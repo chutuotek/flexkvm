@@ -40,7 +40,7 @@
 |------------|-------------------|
 | Server crashed, SSH/RDP down — have to haul a monitor to the server room | Hardware-level HDMI capture — see the screen remotely even when the OS is crashed |
 | Headless device BIOS needs tweaking — always need to connect a monitor | Remote keyboard & mouse control all the way to BIOS/UEFI — operate as if you're sitting right there |
-| Remote site system failure — sending someone on-site is expensive and slow | Built-in Tailscale mesh VPN — headquarters can remotely reinstall the OS |
+| Remote site system failure — sending someone on-site is expensive and slow | Built-in mesh VPN (Tailscale / ZeroTier / NetBird / EasyTier) — headquarters can remotely reinstall the OS |
 | No network on-site — can't remotely access the device | Ethernet Direct (DHCP server) + built-in AP hotspot dual-channel — connect via phone or laptop, no router needed |
 
 ---
@@ -91,11 +91,15 @@
 
 - **:material-disc: Virtual Optical Drive**
 
-    Use TF card as a virtual CD-ROM — supports bidirectional file transfer, remote OS installation, and more.
+    Mount an ISO image from the TF card or from network storage as a virtual CD-ROM for remote OS installation; bidirectional file transfer included.
 
-- **:material-vpn: Mesh VPN (Tailscale)**
+- **:material-text-recognition: On-Screen Text Recognition (OCR)**
 
-    Built-in Tailscale client. No public IP, no port forwarding — end-to-end encrypted virtual network out of the box.
+    Select any area of the screen and the device turns the text inside it into copyable text, locally. Error codes, BIOS details and log lines no longer need copying by hand — neither the picture nor the text leaves the device.
+
+- **:material-vpn: Mesh VPN**
+
+    Built-in Tailscale, plus ZeroTier, NetBird and EasyTier. No public IP, no port forwarding — end-to-end encrypted virtual network out of the box.
 
 - **:material-wifi-arrow-left-right: Dual-Network Redundancy**
 
@@ -141,7 +145,7 @@
 | Audio | Bidirectional audio |
 | Wireless | Dual-band WiFi 6 |
 | Wired | RJ-45 100M Ethernet |
-| External storage | TF card |
+| External storage | TF card; NFS / SMB network storage can also be mounted |
 | Expansion | 2× GPIO + 1× UART serial |
 | Operating temp | 0°C ~ 70°C |
 
