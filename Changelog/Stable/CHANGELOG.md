@@ -3,6 +3,32 @@
 - language: en-US
 - Author: ZEROK
 
+## v0.2.2 (2026-11-06)
+
+### Added
+
+- Text recognition (OCR): a new **OCR** entry in the menu bar. Drag a box over the remote display and the device turns the text inside it into copyable text, listed line by line with per-line and copy-all buttons
+- Keyboard macros: a new **Macros** section in the keyboard menu. Save a sequence of key presses (up to 8 steps, each with an optional delay) and run it in order with one click
+- NetBird networking: a new NetBird card under Settings → App, registering with the official or a self-hosted management server using a Setup Key
+- EasyTier networking: a new EasyTier card under Settings → App, connecting to a web console that pushes the network configuration
+- Network storage: the storage panel adds **NFS / SMB**, so a directory on a NAS or server can be used directly and an image on it shared with the target
+
+### Improved
+
+- The storage panel is now split into **TF card / NFS / SMB**; network storage and the TF card can be mounted at the same time, and switching segments no longer interrupts a transfer in progress
+- Sharing state is shown by source: the segment that started the share shows **Stop sharing**, the others show **Sharing from \<source\>**
+- The storage icon reflects "any storage source available" and becomes a cloud icon when only network storage is mounted
+- mDNS recovers automatically after an unexpected exit; no more toggling the switch by hand
+
+### Fixed
+
+- Fixed the storage panel hanging at "Mounting" and unmount/share clicks having no visible effect
+- Fixed file deletion and upload still being allowed while a share is active
+- Fixed GOP reverting to 1 in the UI after a page refresh when it was set to 0
+- Fixed Beta devices showing every historical release in the upgrade description
+- Fixed the web UI being unreachable over IPv4 in environments that restrict IPv6 sockets
+- Fixed VPNs taking over system DNS and breaking name resolution in some setups
+
 ## v0.2.1 (2026-10-20)
 
 ### Added
